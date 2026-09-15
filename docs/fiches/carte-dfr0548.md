@@ -33,11 +33,24 @@ Conséquence pratique : ton programme peut tourner parfaitement — écran allum
 
 ## Les branchements
 
+Avant de câbler quoi que ce soit : **interrupteur de la carte sur *off***. On ne visse jamais un fil sur un circuit sous tension.
+
+**Le micro:bit** s'enfiche dans le connecteur de la carte, **écran vers l'extérieur**, boutons A et B accessibles. Le connecteur est détrompé : il ne rentre que dans un sens. S'il résiste, il est à l'envers — ne force pas, retourne-le.
+
+<span class="todo-media">[photo : le micro:bit en train d'être enfiché dans le connecteur de la carte, écran vers l'extérieur]</span>
+
 **Les moteurs** se vissent sur les borniers verts repérés `M1`, `M2`, `M3`, `M4`. Sur le rover, on utilise `M1` et `M2`.
+
+Chaque moteur sort deux fils : desserre la vis, glisse la partie dénudée, resserre. Puis **tire doucement sur le fil** : s'il ressort, il n'était pas serré, et il ressortira tout seul à la première secousse.
+
+<span class="todo-media">[photo : un fil de moteur glissé dans le bornier M1, tournevis sur la vis]</span>
 
 L'ordre des deux fils d'un moteur détermine son sens de rotation. Il n'y a pas de bon ou de mauvais branchement : si un moteur tourne à l'envers, tu peux soit inverser ses deux fils, soit changer `CW` en `CCW` dans le code.
 
-**Le pack d'accus** se visse sur le bornier d'alimentation, en respectant le `+` et le `−`. La carte accepte de 3,5 à 5,5 V ; un pack de quatre accus NiMH fournit environ 4,8 V.
+**Le pack d'accus** se visse sur le bornier d'alimentation, fil rouge sur `+`, fil noir sur `−`. La carte accepte de 3,5 à 5,5 V ; un pack de quatre accus NiMH fournit environ 4,8 V.
+
+> [!CAUTION] La polarité ne se rattrape pas
+> Inverser le `+` et le `−` peut détruire la carte. C'est le seul geste du montage qui abîme du matériel pour de bon. Vérifie deux fois avant de basculer l'interrupteur, et fais contrôler si tu as le moindre doute.
 
 **L'interrupteur** de la carte coupe l'alimentation des moteurs. Prends l'habitude de le laisser sur *off* pendant que tu manipules le rover.
 

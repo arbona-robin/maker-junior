@@ -6,7 +6,7 @@
 <span markdown>**Prérequis** aucun</span>
 </div>
 
-Aujourd'hui tu fabriques le châssis de ton rover, tu y montes deux moteurs, et tu écris le programme qui les fait tourner. À la fin de la séance, ta machine bouge.
+Aujourd'hui tu câbles ton électronique, tu écris le programme qui fait tourner les moteurs, et tu ne fabriques le châssis qu'une fois que tout fonctionne. À la fin de la séance, ta machine bouge.
 
 ---
 
@@ -36,7 +36,195 @@ Le micro:bit décide. La carte exécute. Les accus fournissent l'énergie.
 
 → Pour les détails de la carte : [La carte DFR0548](../../../fiches/carte-dfr0548.md)
 
-## 3. Fabrique ton châssis
+## 3. Assemble ton électronique
+
+> [!NOTE] Pourquoi on câble et on teste avant de fabriquer
+> Une fois la carte sanglée sur le châssis et le pack d'accus par-dessus, les borniers ne sont plus accessibles et les fils passent sous les élastiques. Corriger un fil mal serré demande alors de tout démonter, et de retrouver quel fil va où au milieu du montage.
+>
+> Sur la table, tout est visible et accessible, et une erreur se répare en dix secondes. **On assemble, on fait fonctionner, et on ne monte que ce qui marche déjà.**
+
+Garde l'interrupteur de la carte sur **off** pendant tout le câblage.
+
+### Le micro:bit sur la carte
+
+Enfiche le micro:bit dans le connecteur de la carte, **écran vers l'extérieur**, boutons A et B accessibles. Le connecteur est détrompé : il ne rentre que dans un sens. S'il résiste, c'est qu'il est à l'envers — ne force pas.
+
+<span class="todo-media">[photo : le micro:bit en train d'être enfiché dans le connecteur de la carte, écran vers l'extérieur]</span>
+
+### Les moteurs sur les borniers
+
+Chaque moteur sort deux fils. Desserre la vis du bornier, glisse la partie dénudée du fil, resserre.
+
+- Moteur **gauche** → bornier `M1`
+- Moteur **droit** → bornier `M2`
+
+<span class="todo-media">[photo : un fil de moteur glissé dans le bornier M1, tournevis sur la vis]</span>
+
+> [!TIP] Le test de la traction
+> Tire doucement sur chaque fil après l'avoir vissé. S'il ressort, il n'était pas serré — et il ressortira tout seul à la première secousse du rover.
+
+L'ordre des deux fils d'un moteur décide de son sens de rotation. À ce stade il n'y a pas de bon ordre : on réglera le sens une fois les moteurs montés sur le châssis, à l'étape 10.
+
+### Le pack d'accus
+
+Fil rouge sur `+`, fil noir sur `−`, dans le bornier d'alimentation.
+
+<span class="todo-media">[photo : les deux fils du pack vissés dans le bornier d'alimentation, polarité visible]</span>
+
+> [!CAUTION] La polarité ne se rattrape pas
+> Inverser le `+` et le `−` peut endommager la carte. Vérifie deux fois avant de basculer l'interrupteur, et fais contrôler par l'animateur si tu as le moindre doute.
+
+> [!IMPORTANT] Point de contrôle
+> Fais valider ton câblage avant de mettre sous tension : polarité du pack, fils serrés, micro:bit dans le bon sens.
+
+## 4. Ouvre MakeCode
+
+Va sur [makecode.microbit.org](https://makecode.microbit.org), puis clique sur **Nouveau projet**.
+
+<figure class="screenshot" markdown>
+![La page d'accueil de MakeCode avec la section « Mes projets » et le bouton « Nouveau projet »](../../../assets/rover-s01/20-makecode-accueil.png)
+<figcaption>La page d'accueil. Tous tes projets seront rangés ici.</figcaption>
+</figure>
+
+Nomme-le `rover`.
+
+<figure class="screenshot" markdown>
+![La fenêtre « Créer un projet » avec le nom rover saisi](../../../assets/rover-s01/21-nouveau-projet-rover.png)
+<figcaption>Un nom clair : tu vas revenir dans ce projet pendant plusieurs séances.</figcaption>
+</figure>
+
+→ L'interface expliquée : [Prendre en main MakeCode](../../../fiches/makecode-prise-en-main.md)
+
+## 5. Ton premier programme
+
+Dans le bloc `au démarrage`, mets deux choses : une icône et un son.
+
+<figure class="screenshot" markdown>
+![Le bloc « au démarrage » contenant « montrer l'icône » et « jouer gloussement jusqu'à la fin », et un bloc « toujours » vide à côté](../../../assets/rover-s01/22-au-demarrage-icone-son.png)
+<figcaption>« montrer l'icône » vient de la catégorie Base, « jouer » de la catégorie Musique.</figcaption>
+</figure>
+
+Branche le câble USB sur le micro:bit, clique sur **Télécharger**, et suis les instructions à l'écran.
+
+<figure class="screenshot" markdown>
+![La fenêtre « 1. Connectez votre micro:bit à votre ordinateur »](../../../assets/rover-s01/28-televersement.png)
+<figcaption>Le téléversement en trois étapes, la première fois.</figcaption>
+</figure>
+
+> [!NOTE] Pourquoi une icône et un son dès le démarrage
+> `au démarrage` s'exécute une seule fois, au moment où la carte s'allume. En y mettant une icône et un son, tu te donnes un signal : d'un coup d'œil et d'une oreille, tu sais que **ton** programme est bien celui qui tourne.
+>
+> Sans ce signal, quand plus tard rien ne bougera, tu ne sauras pas si le problème vient du code, du téléversement ou du câblage. Ce réflexe va te servir pendant les onze séances qui viennent.
+
+## 6. Fais clignoter l'écran
+
+Le bloc `au démarrage` ne passe qu'une fois. Pour qu'une action se répète sans fin, il faut le bloc `toujours` : il boucle, indéfiniment, tant que la carte est alimentée.
+
+**À toi.** Écris un programme qui, sans s'arrêter, affiche une flèche vers le haut pendant une seconde, puis éteint l'écran pendant une seconde.
+
+Tu auras besoin de quatre blocs, tous dans la catégorie **Base** : un pour afficher une flèche, un pour marquer une pause, un pour effacer l'écran.
+
+Cherche d'abord. Déplie la solution seulement après avoir essayé.
+
+<details markdown>
+<summary>La solution</summary>
+
+<figure class="screenshot" markdown>
+![Le bloc « toujours » contenant : montrer la flèche Nord, pause 1000 ms, effacer l'écran, pause 1000 ms](../../../assets/rover-s01/23-programme-clignotant.png)
+<figcaption>L'ordre compte : sans les pauses, l'écran changerait trop vite pour que l'œil le voie.</figcaption>
+</figure>
+
+La pause se règle en millisecondes : `1000` ms font une seconde.
+
+</details>
+
+<details markdown>
+<summary>Pour aller plus loin — le même programme, en texte</summary>
+
+En haut de l'écran, bascule de **Blocs** vers **Python** : c'est le même programme, écrit autrement.
+
+<figure class="screenshot" markdown>
+![Le même programme affiché en Python dans MakeCode](../../../assets/rover-s01/24-vue-python.png)
+<figcaption>Les blocs ne sont qu'une façon d'écrire. Dessous, c'est du texte.</figcaption>
+</figure>
+
+</details>
+
+## 7. Ajoute l'extension DF-Driver
+
+Ton programme sait parler à l'écran, mais il ne connaît pas encore les moteurs. Il lui manque le vocabulaire.
+
+Ouvre la catégorie **Extensions**, et colle cette adresse dans la barre de recherche :
+
+```
+https://github.com/DFRobot/pxt-motor
+```
+
+<figure class="screenshot" markdown>
+![La fenêtre Extensions avec l'URL collée et la carte « motor » dans les résultats](../../../assets/rover-s01/25-extension-url-collee.png)
+<figcaption>Clique sur la carte « motor » pour l'ajouter à ton projet.</figcaption>
+</figure>
+
+> [!NOTE] Ce qu'est une extension
+> Une extension est une bibliothèque de blocs écrite par quelqu'un d'autre, que tu ajoutes à ton éditeur. Ici, c'est DFRobot — le fabricant de ta carte — qui l'a écrite, parce qu'eux seuls savent exactement comment leur carte veut qu'on lui parle.
+>
+> MakeCode affiche un avertissement : « extension fournie par l'utilisateur, non approuvée par Microsoft ». C'est normal et attendu : Microsoft ne vérifie que ses propres extensions. Celle-ci vient du fabricant.
+
+Une nouvelle catégorie orange, **DF-Driver**, apparaît dans la palette.
+
+<figure class="screenshot" markdown>
+![La catégorie DF-Driver dépliée, montrant les blocs Servo, Motor et Stepper en orange](../../../assets/rover-s01/26-categorie-df-driver.png)
+<figcaption>Les blocs de l'extension sont en anglais : elle n'est pas traduite.</figcaption>
+</figure>
+
+→ Le détail des blocs : [L'extension DF-Driver](../../../fiches/extension-df-driver.md)
+
+## 8. Fais tourner les moteurs
+
+Reprends ton programme clignotant et glisse les blocs moteurs dedans :
+
+- sous la flèche : `Motor M1 dir CW speed 100` puis `Motor M2 dir CW speed 100`
+- après `effacer l'écran` : `Motor Stop All`
+
+<figure class="screenshot" markdown>
+![Le programme complet : toujours → montrer la flèche Nord, Motor M1 CW 100, Motor M2 CW 100, pause 1000, effacer l'écran, Motor Stop All, pause 1000](../../../assets/rover-s01/27-programme-moteurs.png)
+<figcaption>Le programme de la séance, au complet.</figcaption>
+</figure>
+
+Lis le programme à voix haute, dans l'ordre : flèche affichée, les deux moteurs partent, on attend une seconde, écran éteint, moteurs arrêtés, on attend une seconde, et ça recommence.
+
+Téléverse. La flèche clignote, mais rien ne tourne encore : les moteurs sont alimentés par le pack d'accus, pas par l'USB.
+
+> [!CAUTION] Deux moteurs libres, ça saute
+> Posés sur la table, les moteurs sautent, tirent sur leurs fils et les arrachent des borniers. **Mets tout l'ensemble dans la boîte de test** avant de basculer l'interrupteur, et tiens le câble USB pour qu'il ne tire pas sur la carte.
+
+Bascule maintenant l'interrupteur de la carte sur **on**.
+
+### Ce que tu vérifies, maintenant que tout est accessible
+
+C'est le moment de la séance où une erreur se corrige sans rien démonter. Prends-le au sérieux.
+
+- [ ] Les **deux** moteurs tournent
+- [ ] Ils s'arrêtent tous les deux quand l'écran s'éteint
+- [ ] En coupant le bloc `M2`, tu identifies lequel est branché sur `M1` — colle un morceau de ruban dessus pour t'en souvenir
+- [ ] Aucun fil ne sort de son bornier quand les moteurs vibrent
+
+> [!TIP] Le premier réflexe de débogage
+> Si la flèche s'affiche mais que rien ne tourne, **le problème n'est pas dans le code**. Le programme se déroule, tu le vois à l'écran. Cherche ailleurs : l'interrupteur, les fils dans les borniers, la charge des accus.
+>
+> C'est le raisonnement le plus utile de la séance, et il resservira à chaque panne : séparer ce qui marche de ce qui ne marche pas, au lieu de tout reprendre au hasard.
+
+→ Si ça coince : [Quand ça ne marche pas](../../../fiches/depannage.md)
+
+<figure markdown>
+<video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-matrice-et-moteurs.mp4"></video>
+<figcaption>Ce que tu dois obtenir : l'écran s'allume, les moteurs tournent.</figcaption>
+</figure>
+
+> [!IMPORTANT] Point de contrôle
+> Électronique validée par l'animateur avant de passer au carton. Coupe l'interrupteur et débranche l'USB : tu vas avoir besoin de tes deux mains.
+
+## 9. Fabrique ton châssis
 
 ### Reporte le plan
 
@@ -81,11 +269,13 @@ Marque d'abord le pli avec un outil pointu, **du côté extérieur du pli**, pui
 
 → Les gestes en détail : [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md)
 
-## 4. Monte ton rover
+## 10. Monte ton rover
+
+Ton électronique fonctionne et tu sais quel moteur est sur quel bornier. Tu peux monter sans crainte.
 
 ### Les moteurs
 
-Pose les deux moteurs entre les rabats, axes vers l'extérieur et bien parallèles.
+Pose les deux moteurs entre les rabats, axes vers l'extérieur et bien parallèles. Le moteur marqué `M1` va à gauche.
 
 <div class="photo-row" markdown>
 <figure markdown>
@@ -112,20 +302,15 @@ Verrouille l'ensemble avec deux élastiques croisés.
 > [!TIP] Le test du doigt
 > Fais tourner un moteur et appuie légèrement sur son axe. Si le moteur bouge dans son logement, reprends la fixation maintenant — sinon il se déplacera dès que le rover rencontrera un obstacle.
 
-### La carte et le micro:bit
+### La carte et les accus
 
-Pose la carte DFR0548, micro:bit enfiché dessus, sur le dessus du châssis. Branche les deux moteurs sur les borniers `M1` et `M2`.
-
-<figure markdown>
-![La carte DFR0548 avec le micro:bit posée sur le châssis](../../../assets/rover-s01/07-carte-dfr0548-montee.jpg)
-<figcaption>La carte se pose sur l'étage du dessus, moteurs branchés sur M1 et M2.</figcaption>
-</figure>
-
-### Les accus
-
-Pose le pack d'accus par-dessus et sangle-le avec un deuxième élastique. **Ne le branche pas encore** : on le fera à la toute fin, une fois le programme validé.
+Pose la carte, micro:bit dessus, sur l'étage du haut du châssis, puis le pack d'accus par-dessus, sanglé par un deuxième élastique. Fais passer les fils sans les coincer ni les tendre.
 
 <div class="photo-row" markdown>
+<figure markdown>
+![La carte DFR0548 avec le micro:bit posée sur le châssis](../../../assets/rover-s01/07-carte-dfr0548-montee.jpg)
+<figcaption>La carte se pose sur l'étage du dessus.</figcaption>
+</figure>
 <figure markdown>
 ![Le pack d'accus posé, un élastique tendu au-dessus](../../../assets/rover-s01/08-batterie-pose-elastique.jpg)
 <figcaption>Le pack se pose au-dessus de la carte.</figcaption>
@@ -162,168 +347,33 @@ Enfonce enfin les deux roues sur les axes des moteurs.
 </figure>
 </div>
 
-> [!IMPORTANT] Point de contrôle
-> Avant de passer au code, fais valider deux choses par l'animateur : **les rabats sont d'équerre** et **les axes des moteurs sont parallèles**. Un châssis de travers, ça ne roule pas droit, et aucun programme ne rattrapera ça.
+### Règle le sens de rotation
 
-## 5. Ouvre MakeCode
+Remets sous tension, rover dans la boîte de test. Les deux moteurs sont montés tête-bêche sur le châssis : il est normal qu'à ce stade l'un pousse en avant et l'autre en arrière.
 
-Va sur [makecode.microbit.org](https://makecode.microbit.org), puis clique sur **Nouveau projet**.
+Pour celui qui tourne à l'envers, au choix :
 
-<figure class="screenshot" markdown>
-![La page d'accueil de MakeCode avec la section « Mes projets » et le bouton « Nouveau projet »](../../../assets/rover-s01/20-makecode-accueil.png)
-<figcaption>La page d'accueil. Tous tes projets seront rangés ici.</figcaption>
-</figure>
+- inverse ses deux fils dans le bornier,
+- ou passe son bloc de `CW` à `CCW` dans le programme.
 
-Nomme-le `rover`.
-
-<figure class="screenshot" markdown>
-![La fenêtre « Créer un projet » avec le nom rover saisi](../../../assets/rover-s01/21-nouveau-projet-rover.png)
-<figcaption>Un nom clair : tu vas revenir dans ce projet pendant plusieurs séances.</figcaption>
-</figure>
-
-→ L'interface expliquée : [Prendre en main MakeCode](../../../fiches/makecode-prise-en-main.md)
-
-## 6. Ton premier programme
-
-Dans le bloc `au démarrage`, mets deux choses : une icône et un son.
-
-<figure class="screenshot" markdown>
-![Le bloc « au démarrage » contenant « montrer l'icône » et « jouer gloussement jusqu'à la fin », et un bloc « toujours » vide à côté](../../../assets/rover-s01/22-au-demarrage-icone-son.png)
-<figcaption>« montrer l'icône » vient de la catégorie Base, « jouer » de la catégorie Musique.</figcaption>
-</figure>
-
-Clique sur **Télécharger** et suis les instructions à l'écran.
-
-<figure class="screenshot" markdown>
-![La fenêtre « 1. Connectez votre micro:bit à votre ordinateur »](../../../assets/rover-s01/28-televersement.png)
-<figcaption>Le téléversement en trois étapes, la première fois.</figcaption>
-</figure>
-
-> [!NOTE] Pourquoi une icône et un son dès le démarrage
-> `au démarrage` s'exécute une seule fois, au moment où la carte s'allume. En y mettant une icône et un son, tu te donnes un signal : d'un coup d'œil et d'une oreille, tu sais que **ton** programme est bien celui qui tourne.
->
-> Sans ce signal, quand plus tard rien ne bougera, tu ne sauras pas si le problème vient du code, du téléversement ou du câblage. Ce réflexe va te servir pendant les onze séances qui viennent.
-
-Débranche maintenant le câble USB et alimente la carte par les accus. Le programme repart : **il ne vit pas dans l'ordinateur, il vit dans la carte.**
-
-## 7. Fais clignoter l'écran
-
-Le bloc `au démarrage` ne passe qu'une fois. Pour qu'une action se répète sans fin, il faut le bloc `toujours` : il boucle, indéfiniment, tant que la carte est alimentée.
-
-**À toi.** Écris un programme qui, sans s'arrêter, affiche une flèche vers le haut pendant une seconde, puis éteint l'écran pendant une seconde.
-
-Tu auras besoin de quatre blocs, à chercher dans deux catégories :
-
-- **Base** — un bloc pour afficher une flèche, un bloc pour marquer une pause
-- **Base** — un bloc pour effacer l'écran
-
-Cherche d'abord. Déplie la solution seulement après avoir essayé.
-
-<details markdown>
-<summary>La solution</summary>
-
-<figure class="screenshot" markdown>
-![Le bloc « toujours » contenant : montrer la flèche Nord, pause 1000 ms, effacer l'écran, pause 1000 ms](../../../assets/rover-s01/23-programme-clignotant.png)
-<figcaption>L'ordre compte : sans les pauses, l'écran changerait trop vite pour que l'œil le voie.</figcaption>
-</figure>
-
-La pause se règle en millisecondes : `1000` ms font une seconde.
-
-</details>
-
-<details markdown>
-<summary>Pour aller plus loin — le même programme, en texte</summary>
-
-En haut de l'écran, bascule de **Blocs** vers **Python** : c'est le même programme, écrit autrement.
-
-<figure class="screenshot" markdown>
-![Le même programme affiché en Python dans MakeCode](../../../assets/rover-s01/24-vue-python.png)
-<figcaption>Les blocs ne sont qu'une façon d'écrire. Dessous, c'est du texte.</figcaption>
-</figure>
-
-</details>
-
-## 8. Ajoute l'extension DF-Driver
-
-Ton programme sait parler à l'écran, mais il ne connaît pas encore les moteurs. Il lui manque le vocabulaire.
-
-Ouvre la catégorie **Extensions**, et colle cette adresse dans la barre de recherche :
-
-```
-https://github.com/DFRobot/pxt-motor
-```
-
-<figure class="screenshot" markdown>
-![La fenêtre Extensions avec l'URL collée et la carte « motor » dans les résultats](../../../assets/rover-s01/25-extension-url-collee.png)
-<figcaption>Clique sur la carte « motor » pour l'ajouter à ton projet.</figcaption>
-</figure>
-
-> [!NOTE] Ce qu'est une extension
-> Une extension est une bibliothèque de blocs écrite par quelqu'un d'autre, que tu ajoutes à ton éditeur. Ici, c'est DFRobot — le fabricant de ta carte — qui l'a écrite, parce qu'eux seuls savent exactement comment leur carte veut qu'on lui parle.
->
-> MakeCode affiche un avertissement : « extension fournie par l'utilisateur, non approuvée par Microsoft ». C'est normal et attendu : Microsoft ne vérifie que ses propres extensions. Celle-ci vient du fabricant.
-
-Une nouvelle catégorie orange, **DF-Driver**, apparaît dans la palette.
-
-<figure class="screenshot" markdown>
-![La catégorie DF-Driver dépliée, montrant les blocs Servo, Motor et Stepper en orange](../../../assets/rover-s01/26-categorie-df-driver.png)
-<figcaption>Les blocs de l'extension sont en anglais : elle n'est pas traduite.</figcaption>
-</figure>
-
-→ Le détail des blocs : [L'extension DF-Driver](../../../fiches/extension-df-driver.md)
-
-## 9. Fais tourner les moteurs
-
-Reprends ton programme clignotant et glisse les blocs moteurs dedans :
-
-- sous la flèche : `Motor M1 dir CW speed 100` puis `Motor M2 dir CW speed 100`
-- après `effacer l'écran` : `Motor Stop All`
-
-> [!CAUTION] Avant d'appuyer
-> Ton rover est dans la boîte de test, pas sur la table. Il est encore alimenté par l'USB — garde le câble dans la main pour qu'il ne tire pas la carte.
-
-<figure class="screenshot" markdown>
-![Le programme complet : toujours → montrer la flèche Nord, Motor M1 CW 100, Motor M2 CW 100, pause 1000, effacer l'écran, Motor Stop All, pause 1000](../../../assets/rover-s01/27-programme-moteurs.png)
-<figcaption>Le programme de la séance, au complet.</figcaption>
-</figure>
-
-Lis le programme à voix haute, dans l'ordre : flèche affichée, les deux moteurs partent, on attend une seconde, écran éteint, moteurs arrêtés, on attend une seconde, et ça recommence.
-
-**La flèche s'affiche quand ça tourne, l'écran est noir quand c'est arrêté.** Ce n'est pas de la décoration : c'est ton témoin.
-
-> [!TIP] Le premier réflexe de débogage
-> Si la flèche s'affiche mais que rien ne tourne, **le problème n'est pas dans le code**. Le programme se déroule, tu le vois à l'écran. Cherche ailleurs : les fils dans les borniers, l'interrupteur de la carte, les accus.
->
-> C'est le raisonnement le plus utile de la séance, et il resservira à chaque panne : séparer ce qui marche de ce qui ne marche pas, au lieu de tout reprendre au hasard.
-
-→ Si ça coince : [Quand ça ne marche pas](../../../fiches/depannage.md)
-
-<figure markdown>
-<video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-matrice-et-moteurs.mp4"></video>
-<figcaption>Ce que tu dois obtenir : l'écran s'allume, les moteurs tournent.</figcaption>
-</figure>
-
-## 10. Passe sur batterie
-
-Ton programme est validé. Tu peux couper le cordon.
-
-<span class="todo-media">[photo : les deux fils du pack d'accus vissés dans le bornier d'alimentation de la carte]</span>
-
-Visse les deux fils du pack dans le bornier d'alimentation de la carte, en respectant le `+` et le `−`, puis débranche l'USB et bascule l'interrupteur.
+Les deux solutions se valent. **Note celle que tu as choisie dans ton carnet de bord** — dans deux séances, tu ne t'en souviendras plus.
 
 <figure markdown>
 <video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-rover-roule.mp4"></video>
-<figcaption>Autonome.</figcaption>
+<figcaption>Autonome : plus d'ordinateur, le programme vit dans la carte.</figcaption>
 </figure>
+
+Débranche l'USB s'il est encore là : le programme est dans la carte, il n'a plus besoin de l'ordinateur.
 
 ---
 
 ## Ce que tu dois avoir à la fin
 
+- [ ] Une électronique câblée, testée, et dont tu connais le moteur `M1`
 - [ ] Un châssis découpé et plié, rabats d'équerre
 - [ ] Deux moteurs fixés, axes parallèles, roues qui tournent librement
 - [ ] La carte, le micro:bit et les accus sanglés sur le châssis
-- [ ] Un programme qui affiche une flèche et fait tourner les deux moteurs
+- [ ] Les deux moteurs qui poussent dans le même sens
 - [ ] Le rover qui fonctionne sans l'ordinateur, sur ses accus
 - [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s01.md) rempli
 
