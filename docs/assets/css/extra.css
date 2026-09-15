@@ -1,0 +1,110 @@
+/* Placeholder for a photo or screenshot that has not been shot yet. */
+.todo-media {
+  display: block;
+  margin: 1.2em 0;
+  padding: 0.9em 1.1em;
+  border: 2px dashed var(--md-default-fg-color--lighter);
+  border-radius: 0.4rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.todo-media::before {
+  content: "📷 à photographier — ";
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Safety callouts, written as > [!CAUTION], land on the "warning" type.
+   They carry the cutter and runaway-motor rules, so give them more weight
+   than an ordinary admonition. */
+.md-typeset .admonition.warning {
+  border-left-width: 0.35rem;
+}
+
+.md-typeset .admonition.warning > .admonition-title {
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+}
+
+/* Build photos and screenshots: keep them readable without dominating the page. */
+.md-typeset img,
+.md-typeset video {
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+}
+
+.md-typeset video {
+  width: 100%;
+  max-width: 34rem;
+  display: block;
+}
+
+/* A step's illustration sits at reading width, not full bleed. */
+.md-typeset figure img {
+  max-width: 26rem;
+}
+
+.md-typeset figure figcaption {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.4em;
+  max-width: 26rem;
+  margin-inline: auto;
+}
+
+/* Screenshots carry small UI text: give them more room than build photos. */
+.md-typeset .screenshot img {
+  max-width: 100%;
+}
+
+.md-typeset .screenshot figcaption {
+  max-width: 100%;
+}
+
+/* Two or three photos of the same gesture, side by side on wide screens. */
+.photo-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.9rem;
+  margin: 1.2em 0;
+}
+
+.photo-row figure {
+  margin: 0;
+}
+
+.md-typeset .photo-row figure img {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Block naming in MakeCode: make it look like what is on screen. */
+.md-typeset kbd,
+.md-typeset code {
+  font-size: 0.85em;
+}
+
+/* Session pages open with a short summary band. */
+.session-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  padding: 0.8em 1.1em;
+  margin-bottom: 1.5em;
+  border-left: 4px solid var(--md-accent-fg-color);
+  background: var(--md-code-bg-color);
+  border-radius: 0 0.3rem 0.3rem 0;
+  font-size: 0.78rem;
+}
+
+.session-meta strong {
+  color: var(--md-default-fg-color);
+}
+
+/* "Coming soon" entries in the session index. */
+.md-typeset .upcoming {
+  color: var(--md-default-fg-color--light);
+}

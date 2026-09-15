@@ -1,0 +1,93 @@
+site_name: Le livre du rover
+site_description: Le support des ateliers maker — fabrication, électronique et programmation.
+site_author: Robin Arbona
+docs_dir: docs
+
+theme:
+  name: material
+  language: fr
+  icon:
+    logo: material/robot-mower
+  favicon: assets/favicon.png
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode clair
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+plugins:
+  - search:
+      lang: fr
+  - callouts
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      zoomable: true
+      draggable: true
+
+extra_css:
+  - assets/css/extra.css
+
+extra:
+  social:
+    - icon: material/github
+      link: https://github.com/
+      name: Le dépôt du livre
+
+nav:
+  - Accueil: index.md
+  - Projet Rover:
+      - projets/rover/index.md
+      - Séances:
+          - projets/rover/seances/index.md
+          - "Séance 1 — La base motrice": projets/rover/seances/s01-base-motrice.md
+  - Fiches:
+      - fiches/index.md
+      - "Sécurité à l'atelier": fiches/securite-atelier.md
+      - "Tracer, découper, plier le carton": fiches/carton-tracer-decouper-plier.md
+      - "La carte DFR0548": fiches/carte-dfr0548.md
+      - "Prendre en main MakeCode": fiches/makecode-prise-en-main.md
+      - "L'extension DF-Driver": fiches/extension-df-driver.md
+      - "Quand ça ne marche pas": fiches/depannage.md
+  - Carnet de bord:
+      - carnet-de-bord/index.md
+      - "Rover — séance 1": carnet-de-bord/rover-s01.md
