@@ -228,14 +228,44 @@ C'est le moment de la séance où une erreur se corrige sans rien démonter. Pre
 
 ### Reporte le plan
 
-<span class="todo-media">[plan de découpe coté du châssis, à imprimer]</span>
+<figure class="plan" markdown>
+![Plan de découpe du châssis : plaque de 175 sur 70 mm, cotes horizontales 35, 20, 65, 20, 35 mm et verticales 20, 30, 20 mm, deux rectangles à découper placés à 10 mm des bords, lignes de pli en pointillés](../../../assets/plans/rover-base-chassis-v0.3.png)
+<figcaption>Le châssis du rover, version 0.3.</figcaption>
+</figure>
 
-Recopie le plan sur une feuille de papier quadrillé, puis colle la feuille sur ton carton.
+À télécharger : [le plan à imprimer (PDF)](../../../assets/plans/rover-base-chassis-v0.3.pdf) · [le fichier source (SVG)](../../../assets/plans/rover-base-chassis-v0.3.svg)
+
+La plaque fait **175 × 70 mm**. De gauche à droite : 35, 20, 65, 20, 35 mm. De haut en bas : 20, 30, 20 mm. Les deux rectangles commencent à 10 mm du bord.
 
 | Sur le plan | Ce que ça veut dire |
 |---|---|
 | Trait plein | Tu découpes |
 | Trait pointillé | Tu plies |
+| Trait rouge ou bleu, chiffres | Ce sont les cotes, tu ne les traces pas |
+
+Il te faut maintenant ce plan sur une feuille, que tu colleras sur ton carton. Deux façons de l'obtenir.
+
+### Solution 1 — tu imprimes le plan
+
+Imprime le PDF **à 100 %**, en décochant « ajuster à la page » : c'est la seule façon d'obtenir les vraies dimensions.
+
+Avant de coller, **vérifie à la règle que le grand côté fait bien 175 mm**. Une imprimante mal réglée réduit tout de quelques pour cent, et un châssis trop petit ne laisse plus la place aux moteurs.
+
+### Solution 2 — tu recopies le plan
+
+Sur du papier quadrillé **5 × 5 mm**, et avec une seule consigne :
+
+> [!TIP] Compte les carreaux, ne mesure pas
+> Le plan est dessiné sur une grille de 5 mm : **chaque trait tombe pile sur un trait du quadrillage**, sans exception. La plaque fait 35 carreaux sur 14.
+>
+> Compter va deux fois plus vite que mesurer, et supprime la moitié des erreurs. Sors la règle seulement pour tracer droit, pas pour repérer.
+
+C'est plus long que d'imprimer, mais c'est toi qui tiens le crayon — et savoir relever un plan coté te servira le jour où tu dessineras le tien.
+
+> [!CAUTION] Colle la feuille du bon côté
+> Tu vas rainer tes plis avec un outil, **du côté extérieur du pli**. Si la feuille est collée de ce côté-là, l'outil la déchire et le pli sort sale.
+>
+> Repère donc quelle face sera à l'extérieur une fois plié, et colle la feuille **sur l'autre face**.
 
 <figure markdown>
 ![Le plan recopié sur papier quadrillé et collé sur le carton](../../../assets/rover-s01/01-plan-report-carton.jpg)

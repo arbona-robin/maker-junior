@@ -55,6 +55,21 @@
   margin-inline: auto;
 }
 
+/* Cutting plans are line drawings on a transparent ground: without an
+   explicit white plate they vanish in dark mode. They also carry fine
+   dimension text, so give them the full column. */
+.md-typeset .plan img {
+  max-width: 100%;
+  width: 100%;
+  background: #fff;
+  padding: 0.6rem;
+  box-sizing: border-box;
+}
+
+.md-typeset .plan figcaption {
+  max-width: 100%;
+}
+
 /* Screenshots carry small UI text: give them more room than build photos. */
 .md-typeset .screenshot img {
   max-width: 100%;
