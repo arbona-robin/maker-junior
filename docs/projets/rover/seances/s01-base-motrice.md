@@ -6,24 +6,30 @@
 <span markdown>**Prérequis** aucun</span>
 </div>
 
-Aujourd'hui tu câbles ton électronique, tu écris le programme qui fait tourner les moteurs, et tu ne fabriques le châssis qu'une fois que tout fonctionne. À la fin de la séance, ta machine bouge.
+Aujourd'hui tu câbles ton électronique, tu écris le programme qui fait tourner les moteurs, et tu fabriques le châssis une fois que tout fonctionne. À la fin de la séance, tu assembles le tout !
 
 ---
 
 ## 1. Le moteur tout seul
 
-Regarde la démonstration : un moteur branché directement sur le bloc d'accus, sans rien entre les deux.
+Que peut-on faire avec un moteur branché directement sur le bloc d'accus ?
 
-<span class="todo-media">[photo : le moteur TT branché en direct sur le bloc d'accus, à l'intérieur de la boîte de test]</span>
+<figure markdown>
+![Un moteur TT branché en direct sur un bloc d'accus, à l'intérieur de la boîte en carton de test](../../../assets/rover-s01/15-moteur-sur-accus.jpg)
+<figcaption>Un moteur, deux fils, un bloc d'accus. Rien de plus.</figcaption>
+</figure>
 
-Il tourne à fond, tout de suite, et il ne sait rien faire d'autre. Puis on branche une LED sur une broche du micro:bit : elle s'allume sans problème. Essaie maintenant d'y brancher le moteur — il ne tourne pas, ou à peine.
+Il tourne à fond, tout de suite. Et c'est tout ce qu'il sait faire : pour inverser le sens, il faut intervertir les deux fils à la main.
 
 > [!CAUTION] Le moteur s'échappe du bureau
 > Un moteur alimenté en direct part à pleine vitesse et s'entraîne lui-même hors de la table. Chaque essai de moteur, aujourd'hui et toutes les séances suivantes, se fait **à l'intérieur de la boîte en carton prévue pour ça**. Le rover aussi : tant qu'il n'est pas sur la piste, il tourne dans la boîte.
 
 ## 2. Pourquoi une carte entre les deux
 
-<span class="todo-media">[photo : la carte DFR0548 vue de dessus, avec les borniers M1, M2 et l'entrée d'alimentation repérés]</span>
+<figure markdown>
+![La carte DFR0548 avec son micro:bit, reliée à deux moteurs et à un pack d'accus, le tout posé dans la boîte de test](../../../assets/rover-s01/16-electronique-vue-ensemble.jpg)
+<figcaption>Ce que tu vas câbler : la carte au centre, les deux moteurs, le pack d'accus.</figcaption>
+</figure>
 
 > [!NOTE] Ce qu'une broche peut donner, ce qu'un moteur réclame
 > Une broche du micro:bit fournit quelques milliampères — de quoi allumer une LED. Un moteur en réclame plusieurs centaines. Brancher l'un sur l'autre, c'est demander à un robinet de jardin de remplir une piscine.
@@ -32,38 +38,51 @@ Il tourne à fond, tout de suite, et il ne sait rien faire d'autre. Puis on bran
 >
 > La carte d'extension règle les deux problèmes à la fois. Elle prend le courant du bloc d'accus, et elle reçoit du micro:bit un ordre : quel moteur, dans quel sens, à quelle vitesse.
 
-Le micro:bit décide. La carte exécute. Les accus fournissent l'énergie.
+Le micro:bit commande. La carte exécute. Les accus fournissent l'énergie.
 
 → Pour les détails de la carte : [La carte DFR0548](../../../fiches/carte-dfr0548.md)
 
 ## 3. Assemble ton électronique
 
 > [!NOTE] Pourquoi on câble et on teste avant de fabriquer
-> Une fois la carte sanglée sur le châssis et le pack d'accus par-dessus, les borniers ne sont plus accessibles et les fils passent sous les élastiques. Corriger un fil mal serré demande alors de tout démonter, et de retrouver quel fil va où au milieu du montage.
+> Une fois la carte sanglée sur le châssis et le pack d'accus par-dessus, les borniers deviennent difficilement accessibles et les fils passent sous les élastiques. Corriger un fil mal serré demande alors de tout démonter, et de retrouver quel fil va où au milieu du montage.
 >
-> Sur la table, tout est visible et accessible, et une erreur se répare en dix secondes. **On assemble, on fait fonctionner, et on ne monte que ce qui marche déjà.**
+> Sur la table, tout est visible et accessible, et une erreur se répare rapidement. **On assemble, on fait fonctionner, et on ne monte que ce qui a déjà été testé.**
 
-Garde l'interrupteur de la carte sur **off** pendant tout le câblage.
+Garde l'interrupteur de la carte sur **off** pendant tout le câblage : on ne câble jamais un circuit alimenté.
 
 ### Le micro:bit sur la carte
 
 Enfiche le micro:bit dans le connecteur de la carte, **écran vers l'extérieur**, boutons A et B accessibles. Le connecteur est détrompé : il ne rentre que dans un sens. S'il résiste, c'est qu'il est à l'envers — ne force pas.
 
-<span class="todo-media">[photo : le micro:bit en train d'être enfiché dans le connecteur de la carte, écran vers l'extérieur]</span>
+<figure markdown>
+![Le micro:bit en train d'être enfiché dans le connecteur de la carte d'extension, écran vers l'extérieur](../../../assets/rover-s01/17-microbit-sur-carte.jpg)
+<figcaption>Écran vers l'extérieur, boutons A et B accessibles.</figcaption>
+</figure>
 
 ### Les moteurs sur les borniers
 
-Chaque moteur sort deux fils. Desserre la vis du bornier, glisse la partie dénudée du fil, resserre.
+De chaque moteur sortent deux fils :
 
 - Moteur **gauche** → bornier `M1`
 - Moteur **droit** → bornier `M2`
 
-<span class="todo-media">[photo : un fil de moteur glissé dans le bornier M1, tournevis sur la vis]</span>
+Desserre la vis du bornier, glisse la partie dénudée du fil, resserre.
+
+<figure markdown>
+![Un fil de moteur glissé dans le bornier, tournevis sur la vis](../../../assets/rover-s01/18-fil-dans-bornier.jpg)
+<figcaption>Les borniers sont repérés M1 à M4 sur la carte.</figcaption>
+</figure>
+
+L'ordre des deux fils d'un moteur décide de son sens de rotation. À ce stade il n'y a pas de bon ordre : on réglera le sens une fois les moteurs montés sur le châssis.
 
 > [!TIP] Le test de la traction
 > Tire doucement sur chaque fil après l'avoir vissé. S'il ressort, il n'était pas serré — et il ressortira tout seul à la première secousse du rover.
 
-L'ordre des deux fils d'un moteur décide de son sens de rotation. À ce stade il n'y a pas de bon ordre : on réglera le sens une fois les moteurs montés sur le châssis, à l'étape 10.
+<figure markdown>
+![Une main tire doucement sur un fil vissé dans le bornier pour vérifier qu'il tient](../../../assets/rover-s01/19-test-traction.jpg)
+<figcaption>Un fil qui ressort n'était pas serré. Recommence.</figcaption>
+</figure>
 
 ### Le pack d'accus
 
@@ -217,7 +236,7 @@ C'est le moment de la séance où une erreur se corrige sans rien démonter. Pre
 → Si ça coince : [Quand ça ne marche pas](../../../fiches/depannage.md)
 
 <figure markdown>
-<video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-matrice-et-moteurs.mp4"></video>
+<video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-test-moteurs.mp4"></video>
 <figcaption>Ce que tu dois obtenir : l'écran s'allume, les moteurs tournent.</figcaption>
 </figure>
 
@@ -237,10 +256,10 @@ C'est le moment de la séance où une erreur se corrige sans rien démonter. Pre
 
 La plaque fait **175 × 70 mm**. De gauche à droite : 35, 20, 65, 20, 35 mm. De haut en bas : 20, 30, 20 mm. Les deux rectangles commencent à 10 mm du bord.
 
-| Sur le plan | Ce que ça veut dire |
-|---|---|
-| Trait plein | Tu découpes |
-| Trait pointillé | Tu plies |
+| Sur le plan                   | Ce que ça veut dire                     |
+| ----------------------------- | --------------------------------------- |
+| Trait plein                   | Tu découpes                             |
+| Trait pointillé               | Tu plies                                |
 | Trait rouge ou bleu, chiffres | Ce sont les cotes, tu ne les traces pas |
 
 Il te faut maintenant ce plan sur une feuille, que tu colleras sur ton carton. Deux façons de l'obtenir.
@@ -268,7 +287,7 @@ C'est plus long que d'imprimer, mais c'est toi qui tiens le crayon — et savoir
 > Repère donc quelle face sera à l'extérieur une fois plié, et colle la feuille **sur l'autre face**.
 
 <figure markdown>
-![Le plan recopié sur papier quadrillé et collé sur le carton](../../../assets/rover-s01/01-plan-report-carton.jpg)
+![Le plan posé sur une plaque de carton, sur un tapis de découpe, règle métallique et cutter à côté](../../../assets/rover-s01/01-plan-sur-carton.jpg)
 <figcaption>Le plan collé sur le carton, prêt à être découpé.</figcaption>
 </figure>
 
