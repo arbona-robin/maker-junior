@@ -86,9 +86,7 @@ L'ordre des deux fils d'un moteur décide de son sens de rotation. À ce stade i
 
 ### Le pack d'accus
 
-Fil rouge sur `+`, fil noir sur `−`, dans le bornier d'alimentation.
-
-<span class="todo-media">[photo : les deux fils du pack vissés dans le bornier d'alimentation, polarité visible]</span>
+Fil rouge sur `+`, fil noir sur `−`, dans le bornier d'alimentation — le petit connecteur vert à deux vis, marqué `3.5~5.5V`, à l'écart du bornier des moteurs.
 
 > [!CAUTION] La polarité ne se rattrape pas
 > Inverser le `+` et le `−` peut endommager la carte. Vérifie deux fois avant de basculer l'interrupteur, et fais contrôler par l'animateur si tu as le moindre doute.

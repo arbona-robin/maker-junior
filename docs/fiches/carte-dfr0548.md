@@ -2,7 +2,10 @@
 
 C'est la carte sur laquelle s'enfiche ton micro:bit. Son nom complet est *Micro:bit Driver Expansion Board*, et son rôle tient en une phrase : elle fait le lien entre un micro:bit qui décide et des moteurs qui consomment.
 
-<span class="todo-media">[photo : la carte DFR0548 vue de dessus, borniers moteurs, bornier d'alimentation et interrupteur repérés]</span>
+<figure markdown>
+![La carte DFR0548 vue de dessus : bornier à huit vis repéré M1 à M4, connecteur d'alimentation 3.5~5.5V et interrupteur ON/OFF](../assets/rover-s01/19-test-traction.jpg)
+<figcaption>Tout est sérigraphié sur la carte : les borniers M1 à M4, l'entrée 3.5~5.5V, l'interrupteur.</figcaption>
+</figure>
 
 ## Pourquoi elle existe
 
@@ -37,24 +40,28 @@ Avant de câbler quoi que ce soit : **interrupteur de la carte sur *off***. On n
 
 **Le micro:bit** s'enfiche dans le connecteur de la carte, **écran vers l'extérieur**, boutons A et B accessibles. Le connecteur est détrompé : il ne rentre que dans un sens. S'il résiste, il est à l'envers — ne force pas, retourne-le.
 
-<span class="todo-media">[photo : le micro:bit en train d'être enfiché dans le connecteur de la carte, écran vers l'extérieur]</span>
+<figure markdown>
+![Le micro:bit en train d'être enfiché dans le connecteur de la carte d'extension, écran vers l'extérieur](../assets/rover-s01/17-microbit-sur-carte.jpg)
+<figcaption>Le connecteur est détrompé. S'il résiste, retourne le micro:bit.</figcaption>
+</figure>
 
 **Les moteurs** se vissent sur les borniers verts repérés `M1`, `M2`, `M3`, `M4`. Sur le rover, on utilise `M1` et `M2`.
 
 Chaque moteur sort deux fils : desserre la vis, glisse la partie dénudée, resserre. Puis **tire doucement sur le fil** : s'il ressort, il n'était pas serré, et il ressortira tout seul à la première secousse.
 
-<span class="todo-media">[photo : un fil de moteur glissé dans le bornier M1, tournevis sur la vis]</span>
+<figure markdown>
+![Un fil de moteur glissé dans le bornier, tournevis sur la vis](../assets/rover-s01/18-fil-dans-bornier.jpg)
+<figcaption>Desserrer, glisser le fil dénudé, resserrer — puis tirer dessus pour vérifier.</figcaption>
+</figure>
 
 L'ordre des deux fils d'un moteur détermine son sens de rotation. Il n'y a pas de bon ou de mauvais branchement : si un moteur tourne à l'envers, tu peux soit inverser ses deux fils, soit changer `CW` en `CCW` dans le code.
 
-**Le pack d'accus** se visse sur le bornier d'alimentation, fil rouge sur `+`, fil noir sur `−`. La carte accepte de 3,5 à 5,5 V ; un pack de quatre accus NiMH fournit environ 4,8 V.
+**Le pack d'accus** se visse sur le bornier d'alimentation — le petit connecteur vert à deux vis, marqué `3.5~5.5V`, à l'écart du bornier des moteurs. Fil rouge sur `+`, fil noir sur `−`. La carte accepte de 3,5 à 5,5 V ; un pack de quatre accus NiMH fournit environ 4,8 V.
 
 > [!CAUTION] La polarité ne se rattrape pas
 > Inverser le `+` et le `−` peut détruire la carte. C'est le seul geste du montage qui abîme du matériel pour de bon. Vérifie deux fois avant de basculer l'interrupteur, et fais contrôler si tu as le moindre doute.
 
 **L'interrupteur** de la carte coupe l'alimentation des moteurs. Prends l'habitude de le laisser sur *off* pendant que tu manipules le rover.
-
-<span class="todo-media">[photo : les deux fils du pack vissés dans le bornier d'alimentation, polarité visible]</span>
 
 ## Comment le micro:bit lui parle
 
