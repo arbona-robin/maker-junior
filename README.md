@@ -14,7 +14,13 @@ Les pages de séance décrivent le déroulé ; les fiches de `docs/fiches/` sont
 
 ## Écrire
 
-Les fichiers sont du Markdown ordinaire, lisibles tels quels sur GitHub. Deux conventions :
+**Les pages élèves sont courtes** : l'image d'abord, environ 800 mots affichés pour une séance de 1 h 45. La [séance 1 du rover](docs/projets/rover/seances/s01-base-motrice.md) est l'exemple ; la méthode complète est dans la skill `.claude/skills/nouvelle-seance-maker-junior/`.
+
+```bash
+python3 .claude/skills/nouvelle-seance-maker-junior/mots-affiches.py docs/projets/rover/seances/s01-base-motrice.md
+```
+
+Les fichiers sont du Markdown ordinaire, lisibles tels quels sur GitHub. Quelques conventions :
 
 **Les encadrés** utilisent la syntaxe d'alerte GitHub, transformée en encadré coloré sur le site :
 

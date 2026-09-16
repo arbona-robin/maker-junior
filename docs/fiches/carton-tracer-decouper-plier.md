@@ -22,7 +22,13 @@ Le carton ondulé n'est pas le même matériau dans les deux sens. À l'intérie
 
 ## Reporter le plan
 
-Le plus simple et le plus fiable : recopier le plan sur une feuille de papier quadrillé, puis coller la feuille sur le carton. Tu traces à plat sur du papier, ce qui est confortable, et tu découpes en suivant un trait bien visible.
+On colle le plan sur le carton, et on découpe en suivant ses traits.
+
+**Imprimer** — à 100 %, jamais en « ajuster à la page ». Vérifie une cote à la règle avant de coller : une imprimante mal réglée réduit tout de quelques pour cent.
+
+**Recopier** — sur papier quadrillé 5 × 5 mm. Quand le plan est dessiné sur une grille de 5 mm, chaque trait tombe sur le quadrillage : compte les carreaux au lieu de mesurer, c'est plus rapide et plus juste.
+
+**Colle la feuille sur la face intérieure des plis** : c'est de ce côté que tu marques et plies, en suivant les pointillés.
 
 Si tu traces directement sur le carton, utilise un crayon à papier plutôt qu'un feutre : le feutre bave dans les fibres et le trait s'élargit de deux millimètres.
 
@@ -40,14 +46,12 @@ Pour un résultat net :
 
 Un pli net se prépare. On ne plie jamais un carton brut à la main.
 
-**Marque le pli d'abord.** Passe un outil arrondi — une roue de rainage, le dos d'un cutter fermé, une pointe de compas émoussée — le long de la ligne, contre la règle métallique, en appuyant fermement. Tu écrases les cannelures sur une ligne précise, et le carton saura où plier.
+**Marque le pli à la règle.** Pose la règle métallique **sur sa tranche**, pas à plat, le long de la ligne, et appuie fermement. Tu écrases les cannelures sur une ligne précise, et le carton saura où plier.
 
-**Du bon côté.** Marque **à l'extérieur du pli** : la face qui va se retrouver en dehors une fois plié. Le carton s'ouvre du côté marqué.
-
-**Plie contre la règle**, d'un geste continu, pas par à-coups.
+**Plie contre la règle**, sans la bouger, d'un geste continu, pas par à-coups. La face que tu as marquée se retrouve à l'intérieur du pli.
 
 > [!TIP] Le test de l'équerre
-> Un rabat correctement plié tient droit tout seul, sans qu'on le retienne. S'il s'affaisse ou revient en arrière, le pli a été écrasé au lieu d'être marqué : reprends-le à l'outil, plus fermement.
+> Un rabat correctement plié tient droit tout seul, sans qu'on le retienne. S'il s'affaisse ou revient en arrière, le pli a été écrasé au lieu d'être marqué : reprends-le à la règle, plus fermement.
 
 ## Renforcer
 

@@ -15,15 +15,15 @@ C'est l'outil qui envoie des gens aux urgences chaque année dans les ateliers. 
 >
 > **Sur le tapis de découpe, jamais sur la table.** La lame abîme la table, la table abîme la lame.
 >
-> **Lame rentrée dès que tu poses l'outil.** Même pour deux secondes. Même pour attraper la règle.
+> **Protection remise dès que tu poses l'outil.** La lame ne se rentre pas : c'est la protection qui la couvre. Même pour deux secondes. Même pour attraper la règle.
 
 ### Les gestes qui vont avec
 
 Coupe en tirant la lame vers toi, pas en poussant : tu contrôles mieux. Tiens le cutter presque à plat, à quarante-cinq degrés environ, pas à la verticale.
 
-Et si la lame accroche au lieu de glisser, elle est usée. On la casse d'un cran ou on la change — une lame émoussée demande de la force, et la force fait déraper.
+Et si la lame accroche au lieu de glisser, elle est usée : préviens l'animateur, qui la change. Une lame émoussée demande de la force, et la force fait déraper.
 
-En fin de séance, **les cutters sont comptés**. Un cutter qui manque, c'est un cutter resté ouvert quelque part.
+En fin de séance, **les cutters sont comptés**. Un cutter qui manque, c'est une lame sans protection qui traîne quelque part.
 
 ## Les moteurs
 
