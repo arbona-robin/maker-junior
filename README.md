@@ -7,10 +7,30 @@ Le support écrit des ateliers maker : fabrication, électronique et programmati
 | Dossier | Contenu |
 |---|---|
 | `docs/` | Le livre publié — pages élèves, fiches de référence, carnet de bord, médias |
-| `animation/` | Les fiches d'animation. **Hors du site publié**, lisibles seulement ici |
+| `animation/` | Les fiches d'animation et de projet. **Hors du site publié**, lisibles seulement ici |
+| `animation/gabarits/` | Les gabarits La Plateforme — la forme d'export, vierge |
 | `.github/workflows/` | La publication automatique |
 
 Les pages de séance décrivent le déroulé ; les fiches de `docs/fiches/` sont la référence transverse à laquelle les séances renvoient.
+
+## Deux usages
+
+Le dépôt produit deux choses à partir du même travail.
+
+**Le livre**, dans `docs/`, écrit pour les jeunes : tutoiement, texte court, l'image d'abord.
+
+**Les fiches La Plateforme**, dans `animation/`, écrites pour toi, ta hiérarchie et tes partenaires : fiche communication, synthèse de projet, et une fiche de conduite par séance. Elles suivent les gabarits LP pour pouvoir être exportées en Google Doc à la même forme que celles des collègues — **les titres de section ne se renomment pas**. Ce qui n'entre dans aucun champ va en « Notes de préparation », après le trait horizontal, et sera ignoré à l'export.
+
+C'est ce qui permet d'écrire dans `animation/` ce qui n'a rien à faire sous les yeux d'un jeune : budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel, bilan honnête d'un atelier qui s'est mal passé.
+
+Les deux sorties ne sont pas indépendantes : `animation/<projet>/communication.md` est la source du titre, de l'accroche et de la promesse du parcours, et la page `docs/projets/<projet>/index.md` en est une réécriture pour le jeune. Si l'une change, vérifier l'autre.
+
+Contrôler qu'une fiche est toujours exportable :
+
+```bash
+norm() { grep '^## ' "$1" | sed -E 's/ \(.*//; s/ — .*//'; }
+diff <(norm animation/gabarits/seance.md) <(norm animation/rover/s01.md)
+```
 
 ## Écrire
 

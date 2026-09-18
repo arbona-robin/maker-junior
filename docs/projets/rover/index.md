@@ -1,8 +1,8 @@
 # Projet Rover — fabrique ton rover d'exploration
 
-Tu conçois, tu fabriques et tu pilotes ton propre rover télécommandé, équipé d'un mécanisme que tu choisis toi-même, jusqu'à l'engager dans une compétition publique.
+Un rover, ça ne s'achète pas : ça se fabrique, ça se câble, ça se programme. Tu fabriques le tien de la plaque de carton au programme qui le fait rouler. Et quand tu le pilotes les yeux fermés, le vrai défi commence : en équipe, avec des missions à réussir.
 
-**Ce que tu emportes à la fin :** un rover personnel, qui fonctionne, piloté par radio, homologué et engagé dans les Jeux.
+**Le parcours en deux temps :** d'abord ton rover à toi, que tu montes et programmes seul. Ensuite, à deux ou trois, un rover conçu pour des missions précises — en carton, et avec des pièces que vous dessinez et imprimez en 3D.
 
 ## Le matériel
 
@@ -10,6 +10,7 @@ Tu conçois, tu fabriques et tu pilotes ton propre rover télécommandé, équip
 - 1 carte d'extension DFRobot DFR0548
 - MakeCode, avec l'extension DF-Driver
 - du carton, cutter et règle métallique
+- une imprimante 3D
 - des accus NiMH
 
 → [Les séances](seances/index.md)

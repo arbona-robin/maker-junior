@@ -1,7 +1,7 @@
 ---
 name: nouvelle-seance-maker-junior
-description: Rédiger une nouvelle séance du livre des ateliers Maker Junior (dépôt maker-junior) — page élève, fiche d'animation, carnet de bord, fiches de référence et médias. À utiliser quand l'utilisateur dit "nouvelle séance", "créer la séance N", "prépare la S4", "rédige la page de la séance", ou fournit des photos et captures d'un montage de test à intégrer dans une séance. Couvre les questions à poser, l'arbitrage entre page de séance et fiche de référence, la conversion des médias et la vérification du site.
-version: 1.2.0
+description: Rédiger une nouvelle séance du livre des ateliers Maker Junior (dépôt maker-junior) — page élève, fiche d'animation au gabarit La Plateforme, carnet de bord, fiches de référence et médias. À utiliser quand l'utilisateur dit "nouvelle séance", "créer la séance N", "prépare la S4", "rédige la page de la séance", ou fournit des photos et captures d'un montage de test à intégrer dans une séance. Couvre aussi la rédaction des fiches communication et synthèse de projet au format LP, les objectifs de Bloom et les modalités pédagogiques. Couvre les questions à poser, l'arbitrage entre page de séance et fiche de référence, la conversion des médias et la vérification du site.
+version: 2.0.0
 ---
 
 # Rédiger une séance du livre Maker Junior
@@ -12,7 +12,34 @@ Le livre est le support écrit des ateliers. Une séance s'y publie **avant** l'
 
 **On parle de « projet », jamais de « trimestre ».** Dans le texte comme dans les chemins.
 
-**On n'écrit rien au-delà de la séance qu'on prépare.** Le parcours se déroule en beta : décrire les séances suivantes, leurs phases ou leurs contenus produit des pages à refaire. Dans les index, une séance non écrite apparaît sans description. Pas de « la prochaine fois, tu feras… » en fin de page.
+**Les titres de section des fiches d'animation ne se touchent pas.** Ils viennent des gabarits LP ([`animation/gabarits/`](../../../animation/gabarits/)) et conditionnent l'export vers le document attendu par la hiérarchie : ni renommés, ni réordonnés, ni supprimés. Une section sans contenu porte « — ». Tout ce qui n'entre dans aucun champ va en « Notes de préparation », après le trait horizontal, et sera ignoré à l'export.
+
+## Deux sorties, deux destinataires
+
+Le dépôt produit deux choses à partir du même travail, et les confondre est l'erreur coûteuse.
+
+| | `docs/` | `animation/` |
+|---|---|---|
+| Qui lit | Les jeunes | Toi, ta hiérarchie, tes partenaires |
+| Publié | Sur le site | Non — GitHub seulement |
+| Registre | Tutoiement, notice IKEA, ~800 mots | Opératoire, chiffré, honnête |
+| Format | Libre | Gabarit LP, sections figées |
+
+Budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel, bilan d'atelier : **tout ça vit dans `animation/` et n'entre jamais dans `docs/`.** Le guide LP le dit lui-même de l'objectif général : « c'est pour vous et vos partenaires, pas pour les jeunes ».
+
+La circulation va dans un seul sens : la fiche communication est la **source** du titre, de l'accroche et de la promesse ; `docs/projets/<projet>/index.md` en est une **dérivation**, réécrite pour le jeune. Si l'une change, vérifier l'autre.
+
+Le planning prévisionnel des 12 séances vit dans `animation/<projet>/projet.md`. Il est explicitement prévisionnel, se corrige au fil du parcours, et les séances non arbitrées y sont marquées *à définir* plutôt qu'inventées.
+
+## Les références LP
+
+À charger quand on rédige ou révise une fiche, pas avant :
+
+| Fichier | Quand |
+|---|---|
+| [`references/redaction-lp.md`](references/redaction-lp.md) | Conseils champ par champ pour les trois fiches, et les pièges |
+| [`references/modalites.md`](references/modalites.md) | Choisir la modalité d'une phase — liste fermée |
+| [`references/bloom.md`](references/bloom.md) | Formuler un objectif pédagogique |
 
 ## 1. Lire l'état du dépôt avant de poser la moindre question
 
@@ -26,6 +53,8 @@ ls animation/*/                     # fiches d'animation
 Puis lire **la séance précédente** du même projet en entier. Elle donne la structure, la façon de nommer les blocs, les renvois vers les fiches. La **S1 du rover** sert de référence pour la longueur : elle a été raccourcie après l'atelier (voir §6).
 
 Lire aussi la **fiche d'animation** de la séance précédente (`animation/<projet>/sNN.md`) : ses sections « Bilan après séance » et « Adaptations pour la prochaine fois » contiennent souvent ce qu'il faut corriger maintenant.
+
+Enfin, lire la **fiche synthèse de projet** (`animation/<projet>/projet.md`) : elle donne la place de la séance dans le parcours, son livrable intermédiaire prévu et sa phase. Si la séance qu'on écrit s'écarte du prévisionnel — et c'est fréquent — **c'est la synthèse qu'on met à jour**, pas la séance qu'on force à rentrer dans la case.
 
 ## 2. Les questions à poser
 
@@ -64,7 +93,9 @@ Marquer ce qu'on a déjà déduit du dépôt ou des médias fournis, pour que l'
 
 ### Ce qu'on ne demande pas
 
-Les valeurs numériques visibles sur les captures (vitesse, durée, angle). On les **lit sur les images** et on les annonce à l'utilisateur, en signalant tout écart avec ce qu'il a écrit. Texte et images doivent raconter la même chose ; si l'utilisateur veut d'autres valeurs, il faudra refaire les captures.
+**Les valeurs numériques visibles sur les captures** (vitesse, durée, angle). On les **lit sur les images** et on les annonce à l'utilisateur, en signalant tout écart avec ce qu'il a écrit. Texte et images doivent raconter la même chose ; si l'utilisateur veut d'autres valeurs, il faudra refaire les captures.
+
+**Les objectifs pédagogiques et les modalités.** Ils se déduisent du déroulé et des notions : on les **propose rédigés** — objectifs à la formule de Bloom, modalités prises dans la liste fermée — et l'utilisateur corrige. Lui demander de les formuler, c'est lui faire faire le travail qu'on est là pour faire. → [`references/bloom.md`](references/bloom.md), [`references/modalites.md`](references/modalites.md)
 
 ## 3. Page de séance ou fiche de référence
 
@@ -99,10 +130,14 @@ Les consignes de sécurité font exception : elles sont **en toutes lettres dans
 | `mkdocs.yml` | Ajouter l'entrée dans `nav`. **Mettre à jour** |
 | `docs/carnet-de-bord/<projet>-sNN.md` | Le carnet de la séance. **Créer** |
 | `docs/carnet-de-bord/index.md` | Ajouter le lien. **Mettre à jour** |
-| `animation/<projet>/sNN.md` | La fiche d'animation, hors site. **Créer** |
+| `animation/<projet>/sNN.md` | La fiche d'animation, au gabarit LP. **Créer** |
 | `animation/README.md` | Ajouter le lien. **Mettre à jour** |
+| `animation/<projet>/projet.md` | Recaler la ligne de la séance : titre réel, notions, livrable. **Mettre à jour** |
+| `animation/<projet>/communication.md` | Seulement si la séance change la promesse du parcours |
 | `docs/fiches/<nouvelle>.md` + `docs/fiches/index.md` + `mkdocs.yml` | Seulement si §3 l'a décidé |
 | `docs/fiches/<existante>.md` | Compléter si la séance apporte du nouveau |
+
+La fiche d'animation se rédige **à partir du gabarit** [`animation/gabarits/seance.md`](../../../animation/gabarits/seance.md), copié tel quel puis rempli. On ne part pas de la fiche précédente : elle a ses propres « Notes de préparation » qu'on recopierait sans le vouloir.
 
 Oublier `mkdocs.yml` fait échouer la construction en `--strict`. Oublier les index laisse une page inatteignable.
 
@@ -255,5 +290,16 @@ Puis, à l'œil, sur `.venv/bin/mkdocs serve` :
 - les solutions se déplient
 - les vidéos se lisent
 - rien de `animation/` n'a fuité dans le site ni dans la recherche
+
+Vérifier enfin que la fiche d'animation est **exportable** — c'est-à-dire qu'elle a bien tous les champs du gabarit, dans l'ordre, sans renommage :
+
+```bash
+norm() { grep '^## ' "$1" | sed -E 's/ \(.*//; s/ — .*//'; }
+diff <(norm animation/gabarits/seance.md) <(norm animation/<projet>/sNN.md)
+```
+
+Le `sed` neutralise les minutages et les titres d'activité (`## Activité 1 (45 min) — Câble et programme ton électronique`), qui varient légitimement d'une séance à l'autre. Il doit s'appliquer **aux deux côtés**, sinon le gabarit lui-même ressort en écart. Toute ligne restante est un champ manquant, renommé ou déplacé : l'export casserait.
+
+Même contrôle pour les deux fiches de projet, contre `gabarits/projet.md` et `gabarits/communication.md`.
 
 Enfin : commit **sans trailer d'attribution**, puis `git push`. Le workflow republie le site seul.
