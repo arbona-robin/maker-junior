@@ -16,6 +16,10 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
     Pourquoi elle est là, où se branche quoi.
 
+- **[Rouler droit et tourner](rouler-droit.md)**
+
+    Tourner avec deux roues, régler une dérive, trouver sa vitesse minimale.
+
 - **[Prendre en main MakeCode](makecode-prise-en-main.md)**
 
     L'interface, les catégories, le téléversement.

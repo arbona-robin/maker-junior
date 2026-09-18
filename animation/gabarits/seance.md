@@ -65,6 +65,15 @@ Tout ce qui n'entre pas dans le gabarit va en « Notes de préparation », aprè
 
 **Modalité :**
 
+## Activité 3 (xx min) — <titre>
+
+*Optionnelle. L'activité principale se découpe en 2 ou 3 temps pour remplir l'heure vingt,
+pas forcément à parts égales. Supprimer cette section si la séance n'en compte que deux.*
+
+**Description :**
+
+**Modalité :**
+
 ## Rétrospective (10 min)
 
 *Les jeunes verbalisent. Ne jamais couper cette phase : si le temps manque, réduire l'activité.*

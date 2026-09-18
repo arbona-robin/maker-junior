@@ -34,10 +34,10 @@ Le problème est du côté qui ne tourne pas, et il est presque toujours mécani
 Normal, et attendu : les deux moteurs sont montés tête-bêche sur le châssis. Inverse les deux fils de l'un dans son bornier, ou passe son bloc de `CW` à `CCW`.
 
 **Les moteurs bourdonnent sans tourner.**
-La vitesse est trop basse pour vaincre le frottement de départ, ou les accus sont faibles. Monte la valeur de `speed`, ou change de pack.
+La vitesse est trop basse pour vaincre le frottement de départ, ou les accus sont faibles. Monte la valeur de `speed`, ou change de pack. → [La vitesse minimale de démarrage](rouler-droit.md#la-vitesse-minimale-de-demarrage)
 
 **Le rover tourne au lieu d'avancer droit.**
-Ce n'est pas une panne. Deux moteurs identiques ne tournent jamais exactement à la même vitesse, et le châssis n'est jamais parfaitement symétrique. On s'en occupe.
+Ce n'est pas une panne. Deux moteurs identiques ne tournent jamais exactement à la même vitesse, et le châssis n'est jamais parfaitement symétrique. Vérifie la mécanique d'abord — languette arrière, aplomb, parallélisme des moteurs, roues enfoncées à fond — puis compense dans le code. → [Rouler droit et tourner](rouler-droit.md)
 
 **Le rover roulait, il ne roule plus.**
 Regarde d'abord les accus : c'est la cause la plus fréquente, et la plus vite écartée. Puis les élastiques : un moteur qui a glissé dans son logement débranche souvent un fil au passage.

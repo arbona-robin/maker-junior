@@ -9,3 +9,4 @@ Trois lignes suffisent, à condition qu'elles soient précises. « Ça marchait 
 ## Les pages
 
 - [Rover — séance 1](rover-s01.md)
+- [Rover — séance 2](rover-s02.md)

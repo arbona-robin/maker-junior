@@ -57,6 +57,28 @@ La LED jaune au dos de la carte clignote pendant le transfert. Quand elle s'arr�
 
 Une fois téléversé, le programme est **dans la carte**. Débranche l'USB, alimente par les accus : il repart tout seul. L'ordinateur n'est plus nécessaire.
 
+## Les fonctions
+
+Une fonction est un bloc que **tu** fabriques : tu lui donnes un nom, tu mets des blocs dedans, et tu l'appelles ensuite par son nom.
+
+**Fonctions** → **Créer une fonction…** → nomme-la → **Terminé**.
+
+<figure class="screenshot" markdown>
+![La catégorie Fonctions dépliée dans MakeCode, avec le bouton « Créer une fonction… »](../assets/rover-s02/20-categorie-fonctions.png)
+</figure>
+
+Le nouveau bloc `fonction <nom>` apparaît dans l'espace de travail : glisse tes blocs dedans. Un bloc `appel <nom>` apparaît en même temps dans la catégorie **Fonctions** — c'est lui que tu places dans `toujours` ou dans `au démarrage`.
+
+> [!NOTE] À quoi ça sert
+> À écrire une fois ce qu'on utilise dix fois, et à se relire. `appel avancer` se comprend sans lire le détail ; trois blocs moteur avec des chiffres, non.
+
+Deux règles qui évitent des heures perdues :
+
+- **Un nom qui dit ce que ça fait.** `avancer`, pas `fonction2`.
+- **On modifie la fonction, jamais ses copies.** Change la vitesse dans `avancer`, et tous les appels suivent. C'est tout l'intérêt.
+
+Pour renommer une fonction ou lui ajouter un paramètre : clique sur la roue dentée du bloc `fonction`.
+
 ## Blocs, JavaScript, Python
 
 La bascule en haut de l'écran montre le même programme sous trois formes.

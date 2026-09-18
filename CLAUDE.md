@@ -22,7 +22,7 @@ Elles suivent les gabarits de `animation/gabarits/`, parce qu'elles doivent part
 Contrôle :
 
 ```bash
-norm() { grep '^## ' "$1" | sed -E 's/ \(.*//; s/ — .*//'; }
+norm() { grep '^## ' "$1" | sed -E 's/^## Activité [0-9]+.*/## Activité/; s/ \(.*//; s/ — .*//' | uniq; }
 diff <(norm animation/gabarits/seance.md) <(norm animation/rover/s01.md)
 ```
 

@@ -84,22 +84,24 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 ## Séance 2 — Phase 1 — Découverte & prise en main
 
-**Titre :** Pilote ton rover à distance
-**Notions :** liaison radio entre deux micro:bit · groupe radio et canal · émetteur et récepteur · lecture des boutons
-**Livrable intermédiaire :** rover qui avance, recule et tourne sur commande d'un second micro:bit
+**Titre :** Ton rover obéit
+**Notions :** direction différentielle · fonction et réutilisation du code · diagnostic mécanique avant correction logicielle · vitesse minimale de démarrage · dérive et compensation · événement bouton et boucle `répéter` · boucle ouverte · reproductibilité d'une mesure
+**Livrable intermédiaire :** rover terminé qui roule droit sur 2 mètres, cinq fonctions de mouvement, défi du retour au garage tenté et mesuré
 
 *La séance s'ouvre sur la fin de la S1 : 7 jeunes sur 9 n'avaient pas terminé.*
 
+→ [Fiche d'animation](s02.md) · [Page élève](../../docs/projets/rover/seances/s02-ton-rover-obeit.md)
+
 ## Séance 3 — Phase 1 — Découverte & prise en main
 
-**Titre :** *à définir*
-**Notions :** *à définir*
+**Titre :** Ton rover prend une identité
+**Notions :** *à définir* · début de la fabrication de la télécommande
 **Livrable intermédiaire :** *à définir*
 
 ## Séance 4 — Phase 2 — Exploration & création
 
-**Titre :** *à définir*
-**Notions :** *à définir*
+**Titre :** Pilote ton rover à distance
+**Notions :** liaison radio entre deux micro:bit · groupe radio et canal · émetteur et récepteur · lecture des boutons · réemploi des cinq fonctions de la S2
 **Livrable intermédiaire :** rover individuel terminé et piloté par radio — **fin du temps individuel**
 
 ## Séance 5 — Phase 2 — Exploration & création

@@ -1,6 +1,7 @@
 site_name: Le livre du rover
 site_description: Le support des ateliers maker — fabrication, électronique et programmation.
 site_author: Robin Arbona
+site_url: https://maker.arbona.dev/
 docs_dir: docs
 
 theme:
@@ -80,14 +81,17 @@ nav:
       - Séances:
           - projets/rover/seances/index.md
           - "Séance 1 — La base motrice": projets/rover/seances/s01-base-motrice.md
+          - "Séance 2 — Ton rover obéit": projets/rover/seances/s02-ton-rover-obeit.md
   - Fiches:
       - fiches/index.md
       - "Sécurité à l'atelier": fiches/securite-atelier.md
       - "Tracer, découper, plier le carton": fiches/carton-tracer-decouper-plier.md
       - "La carte DFR0548": fiches/carte-dfr0548.md
+      - "Rouler droit et tourner": fiches/rouler-droit.md
       - "Prendre en main MakeCode": fiches/makecode-prise-en-main.md
       - "L'extension DF-Driver": fiches/extension-df-driver.md
       - "Quand ça ne marche pas": fiches/depannage.md
   - Carnet de bord:
       - carnet-de-bord/index.md
       - "Rover — séance 1": carnet-de-bord/rover-s01.md
+      - "Rover — séance 2": carnet-de-bord/rover-s02.md

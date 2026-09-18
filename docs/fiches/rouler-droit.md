@@ -1,0 +1,68 @@
+# Rouler droit et tourner
+
+Un rover à deux roues motrices n'a pas de volant. Tout ce qu'il sait faire — avancer, tourner, pivoter — vient d'une seule chose : **la différence de vitesse entre ses deux roues**.
+
+## Les deux façons de tourner
+
+> [!NOTE] La direction différentielle
+> Les deux roues à la même vitesse, dans le même sens : le rover avance droit.
+> Une différence entre les deux : il tourne. Plus la différence est grande, plus il tourne court.
+
+| Ce que tu fais | Ce que le rover fait |
+|---|---|
+| Les deux roues en avant, même vitesse | Il avance droit |
+| Une roue plus lente que l'autre | Il décrit une **courbe** |
+| Une roue à l'arrêt | Il pivote autour de cette roue |
+| Les deux roues en sens opposés | Il **pivote sur place** |
+
+Le pivot sur place est précis et tient dans un couloir étroit. La courbe est plus douce et plus rapide, mais il lui faut de la place. Aucune n'est meilleure : elles ne servent pas au même moment.
+
+## Ton rover ne roule pas droit
+
+C'est normal, et ce n'est pas une panne. Deux moteurs identiques ne tournent jamais exactement à la même vitesse, et un châssis n'est jamais parfaitement symétrique.
+
+**Cherche la mécanique en premier.** Compenser dans le code un moteur mal fixé tient jusqu'au premier choc.
+
+1. **La languette arrière** frotte-t-elle, ou traîne-t-elle d'un côté ?
+2. **Le rover est-il d'aplomb ?** Pose-le sur une table plane : il ne doit pas se balancer.
+3. **Les moteurs sont-ils parallèles ?** Bien plaqués contre les rabats, tous les deux.
+4. **Les roues sont-elles enfoncées à fond ?** Fais tourner une roue en l'air et regarde-la de face : si elle voile, elle est mal emmanchée.
+5. **Le pack d'accus est-il centré ?** Tout le poids est là.
+
+## Compenser dans le code
+
+Si le rover dévie encore une fois la mécanique vérifiée, ses deux moteurs ne tournent pas à la même vitesse. On rattrape en leur donnant des valeurs différentes.
+
+**Mets les deux à 80.** Puis monte la valeur du moteur le plus lent, **5 par 5**, et refais un passage à chaque fois.
+
+> [!TIP] Il n'y a pas de bonne valeur
+> Chaque moteur est unique. L'équilibre se trouve quelque part entre 80 et 120, et il est **propre à ton rover**. Recopier les valeurs d'un camarade ne marche pas.
+
+Note tes deux valeurs dans ton carnet de bord : tu les reprendras à chaque séance, et elles bougeront quand ton rover sera plus lourd.
+
+## Mesurer, et non regarder
+
+Un rover qui « a l'air de rouler droit » ne se règle pas. Il faut une mesure, et la même à chaque fois.
+
+- **Un point de départ matérialisé** — un repère en L, pour reposer le rover exactement pareil
+- **Une distance fixe** — 2 mètres sur le banc
+- **Un écart mesuré à l'arrivée**, par rapport à l'axe du couloir
+- **Trois passages**, pas un
+
+> [!NOTE] Les trois passages ne donnent pas le même résultat
+> C'est la découverte la plus utile. Un rover ne fait jamais deux fois exactement la même chose, même sans rien changer. Un réglage qui marche une fois n'est pas un réglage qui marche.
+
+Vise « il ne mord pas les limites de son couloir ». Le zéro parfait n'existe pas, et il n'est pas nécessaire : au pilotage, c'est ta main qui corrigera.
+
+## La vitesse minimale de démarrage
+
+En dessous d'une certaine valeur, ton rover ne démarre pas — mais si tu le pousses d'une pichenette, il continue de rouler.
+
+> [!NOTE] Pourquoi
+> Il faut plus de force pour décoller un objet immobile que pour l'entretenir en mouvement. Sous cette valeur, les moteurs bourdonnent sans vaincre le frottement de départ.
+
+Mesure-la : descends la vitesse petit à petit jusqu'à ce que le rover refuse de partir tout seul. **Cette valeur est ton plancher** — ne programme jamais en dessous.
+
+Elle remonte quand le rover s'alourdit, et quand les accus faiblissent en fin de séance.
+
+→ [Quand ça ne marche pas](depannage.md) · [L'extension DF-Driver](extension-df-driver.md)

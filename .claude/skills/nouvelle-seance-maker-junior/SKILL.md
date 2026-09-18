@@ -294,7 +294,7 @@ Puis, à l'œil, sur `.venv/bin/mkdocs serve` :
 Vérifier enfin que la fiche d'animation est **exportable** — c'est-à-dire qu'elle a bien tous les champs du gabarit, dans l'ordre, sans renommage :
 
 ```bash
-norm() { grep '^## ' "$1" | sed -E 's/ \(.*//; s/ — .*//'; }
+norm() { grep '^## ' "$1" | sed -E 's/^## Activité [0-9]+.*/## Activité/; s/ \(.*//; s/ — .*//' | uniq; }
 diff <(norm animation/gabarits/seance.md) <(norm animation/<projet>/sNN.md)
 ```
 
