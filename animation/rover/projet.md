@@ -97,14 +97,16 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 **Titre :** Ton identité, et le problème de la télécommande
 **Notions :** modélisation 3D et contrainte de conception · impression additive, couches, slicer · capteur embarqué et mesure brute · seuil de décision · variable · `si` / `sinon si` / `sinon`
-**Livrable intermédiaire :** plaque personnelle exportée en `.STL` et lancée à l'impression, programme d'affichage directionnel sur la seconde carte, seuils notés
+**Livrable intermédiaire :** plaque personnelle exportée en `.STL`, programme d'affichage directionnel sur la seconde carte, seuils notés
 
 → [Fiche d'animation](s03.md) · [Page élève](../../docs/projets/rover/seances/s03-identite-et-telecommande.md)
 
 ## Séance 4 — Phase 2 — Exploration & création
 
 **Titre :** Pilote ton rover à distance
-**Notions :** liaison radio entre deux micro:bit · groupe radio et canal · émetteur et récepteur · lecture des boutons · réemploi des cinq fonctions de la S2
+**Notions :** liaison radio entre deux micro:bit · groupe radio et canal · émetteur et récepteur · réemploi des seuils d'inclinaison de la S3 et des cinq fonctions de la S2
+
+*La séance s'ouvre sur la distribution des plaques imprimées, et leur pose sur les rovers. Les photos d'impression sont déjà dans `docs/assets/rover-s04/`.*
 **Livrable intermédiaire :** rover individuel terminé et piloté par radio — **fin du temps individuel**
 
 ## Séance 5 — Phase 2 — Exploration & création

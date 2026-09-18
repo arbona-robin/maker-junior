@@ -7,13 +7,13 @@ Dessiner une pièce à l'écran et la tenir dans la main une heure plus tard. En
 Tu te connectes par [tinkercad.com/joinclass](https://www.tinkercad.com/joinclass), avec le code de classe et ton identifiant d'élève. Pas d'adresse mail : les comptes sont créés par l'animateur.
 
 <figure class="screenshot" markdown>
-![Le tableau de bord Tinkercad, avec le bouton « Créer une première conception 3D »](../assets/rover-s03/21-tinkercad-accueil.png)
+![Le tableau de bord Tinkercad, avec le bouton « Créer une première conception 3D »](../assets/rover-s03/37-tinkercad-accueil.png)
 </figure>
 
 **Conceptions 3D** → **Créer** ouvre le *plan de construction* : la grille sur laquelle tu poses tes formes. Les unités sont des **millimètres**.
 
 <figure class="screenshot" markdown>
-![Le plan de construction vide de Tinkercad, avec la palette des formes simples à droite](../assets/rover-s03/22-plan-de-construction.png)
+![Le plan de construction vide de Tinkercad, avec la palette des formes simples à droite](../assets/rover-s03/38-plan-de-construction.png)
 </figure>
 
 ### Les quatre gestes
@@ -36,7 +36,7 @@ Dès que tu perces une forme de part en part, demande-toi **ce qui reste accroch
 Le cas classique est le texte découpé : l'intérieur des lettres fermées — `o`, `b`, `a`, `d`, `p` — n'est relié à rien. Sur l'écran, ça se voit à peine. À l'impression, ces îlots se détachent, ou s'impriment à côté comme de petites pièces séparées.
 
 <figure class="screenshot" markdown>
-![Dans Tinkercad, les intérieurs des lettres o et b apparaissent comme des îlots détachés du reste de la plaque](../assets/rover-s03/26-contreformes-a-traiter.png)
+![Dans Tinkercad, les intérieurs des lettres o et b apparaissent comme des îlots détachés du reste de la plaque](../assets/rover-s03/29-contreformes-a-traiter.png)
 </figure>
 
 Deux façons de s'en sortir :
@@ -51,18 +51,23 @@ La règle vaut au-delà du texte : **une pièce imprimée est d'un seul tenant, 
 Tinkercad a un outil **Aligner** : tu sélectionnes plusieurs formes, et des poignées apparaissent pour les caler à gauche, au centre, à droite, devant, au milieu, derrière.
 
 <figure class="screenshot" markdown>
-![L'outil d'alignement de Tinkercad, avec ses poignées de positionnement](../assets/rover-s03/25-outils-alignement.png)
+![L'outil d'alignement de Tinkercad, avec ses poignées de positionnement](../assets/rover-s03/23-outils-alignement.png)
 </figure>
 
 Centrer à la souris donne toujours un décalage d'un demi-millimètre qu'on ne voit qu'une fois la pièce imprimée.
 
-### Vérifier avant d'exporter
+### La vue de face, et l'altitude
 
-Regarde ta pièce **de face**, pas seulement de dessus. C'est la seule vue qui montre les épaisseurs et les reliefs.
+Toute forme posée dans Tinkercad a une **altitude** : sa hauteur au-dessus du plan de construction. Vue de dessus, rien ne la trahit — deux formes qui paraissent superposées peuvent très bien flotter l'une au-dessus de l'autre.
 
 <figure class="screenshot" markdown>
-![Vue de face d'une plaque dans Tinkercad, montrant le texte en relief sur l'épaisseur](../assets/rover-s03/27-vue-de-face-relief.png)
+![Vue de face : le texte rouge repose sur le dessus de la plaque beige, avec la poignée d'altitude au-dessus de la forme sélectionnée](../assets/rover-s03/24-vue-de-face-altitude.png)
+<figcaption>Vu de dessus, ce texte semblait posé sur la plaque. Il flotte.</figcaption>
 </figure>
+
+La poignée au sommet de la forme sélectionnée règle cette altitude. C'est elle qui décide si un texte est **posé sur** une plaque ou s'il la **traverse** — et donc si le perçage découpera quelque chose.
+
+**Passe en vue de face avant chaque groupement.** C'est la seule qui montre les épaisseurs, les reliefs et ce qui surplombe dans le vide.
 
 ### Exporter
 
@@ -86,7 +91,7 @@ Une imprimante 3D dépose du plastique fondu **couche par couche**, de bas en ha
 L'imprimante ne comprend pas ton modèle. Elle comprend des déplacements. Le **slicer** tranche ta pièce en couches et écrit la liste des mouvements à exécuter.
 
 <figure class="screenshot" markdown>
-![Le slicer affichant la plaque tranchée, avec l'aperçu des trajets et le réglage de hauteur de couche](../assets/rover-s03/31-slicer-apercu.png)
+![Le slicer affichant la plaque tranchée, avec l'aperçu des trajets et le réglage de hauteur de couche](../assets/rover-s03/39-slicer-apercu.png)
 </figure>
 
 Trois réglages décident de tout :

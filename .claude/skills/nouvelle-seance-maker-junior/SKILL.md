@@ -126,8 +126,8 @@ Les consignes de sécurité font exception : elles sont **en toutes lettres dans
 | Fichier | Quoi |
 |---|---|
 | `docs/projets/<projet>/seances/sNN-<slug>.md` | La page de séance. **Créer** |
-| `docs/projets/<projet>/seances/index.md` | Ajouter la ligne, avec sa description. **Mettre à jour** |
-| `mkdocs.yml` | Ajouter l'entrée dans `nav`. **Mettre à jour** |
+| `docs/projets/<projet>/index.md` | Ajouter la ligne de la séance, avec sa description, dans « Les séances ». **Mettre à jour** |
+| `mkdocs.yml` | Ajouter l'entrée dans `nav`, directement sous le projet. **Mettre à jour** |
 | `docs/carnet-de-bord/<projet>-sNN.md` | Le carnet de la séance. **Créer** |
 | `docs/carnet-de-bord/index.md` | Ajouter le lien. **Mettre à jour** |
 | `animation/<projet>/sNN.md` | La fiche d'animation, au gabarit LP. **Créer** |
@@ -143,7 +143,7 @@ Oublier `mkdocs.yml` fait échouer la construction en `--strict`. Oublier les in
 
 ## 5. Les médias
 
-Dossier : `docs/assets/<projet>-sNN/`. Numérotation : **01-19 pour les photos** dans l'ordre du déroulé, **20-39 pour les captures**, `video-<sujet>.mp4` pour les vidéos. Nommer par le sujet, jamais par le numéro d'origine de l'appareil.
+Dossier : `docs/assets/<projet>-sNN/`. Numérotation : **01-19 pour les photos** dans l'ordre du déroulé, **20 et au-delà pour les captures**, `video-<sujet>.mp4` pour les vidéos. Les captures suivent l'ordre de la page ; celles qui ne servent qu'à une fiche se rangent après. Une séance dense en dépasse largement vingt — renuméroter d'un bloc plutôt que d'ajouter à la suite, le dossier doit se lire dans l'ordre du déroulé. Nommer par le sujet, jamais par le numéro d'origine de l'appareil.
 
 **Toujours regarder chaque image avant de la nommer.** Convertir en aperçu réduit dans `/tmp`, lire, puis décider. Il arrive que des fichiers sans rapport se soient glissés dans le lot : les signaler plutôt que les intégrer.
 
@@ -285,7 +285,7 @@ PY
 
 Puis, à l'œil, sur `.venv/bin/mkdocs serve` :
 
-- la nouvelle séance apparaît dans le menu et dans le sommaire des séances
+- la nouvelle séance apparaît dans le menu et dans la liste de la page du projet
 - les encadrés sont colorés, pas des citations brutes
 - les solutions se déplient
 - les vidéos se lisent

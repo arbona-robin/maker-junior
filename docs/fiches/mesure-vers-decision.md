@@ -16,8 +16,11 @@ série écrire valeur "x" = accélération (mg) x
 
 Téléverse, puis **Afficher données Appareil**. Bouge la carte et regarde les courbes.
 
+> [!NOTE] Ça passe par le câble
+> `série écrire valeur` n'affiche rien sur la carte : il **envoie** les valeurs à l'ordinateur par la liaison série, dans le câble USB. C'est pour ça qu'il faut rester branché pour voir quelque chose, et c'est aussi pour ça que ces blocs ne servent qu'à la mise au point — une fois le rover autonome, personne ne les lit plus.
+
 <figure class="screenshot" markdown>
-![Le graphe des données de l'accéléromètre : quatre courbes qui réagissent aux mouvements de la carte](../assets/rover-s03/34-afficher-donnees.png)
+![Le graphe des données de l'accéléromètre : quatre courbes qui réagissent aux mouvements de la carte](../assets/rover-s03/33-afficher-donnees.png)
 </figure>
 
 Trois questions, à chaque fois :
@@ -54,7 +57,7 @@ Un seuil est la valeur à partir de laquelle tu décides que **ça compte**.
 Les blocs sont dans **Logique** : `si … alors`, et le `+` du bloc pour ajouter `sinon si` et `sinon`.
 
 <figure class="screenshot" markdown>
-![La catégorie Logique de MakeCode, avec les blocs si/alors et les comparaisons](../assets/rover-s03/36-categorie-logique.png)
+![La catégorie Logique de MakeCode, avec les blocs si/alors et les comparaisons](../assets/rover-s03/41-categorie-logique.png)
 </figure>
 
 Range d'abord la mesure dans une variable — elle est lue une fois, et tu la relis autant que tu veux :
@@ -73,7 +76,7 @@ sinon                       → effacer l'écran
 Pour gérer aussi la gauche et la droite, ajoute une seconde variable sur `x` et imbrique son test dans le `sinon` du premier.
 
 <figure class="screenshot" markdown>
-![Le programme avec les variables tangage et roulis, le second test imbriqué dans le sinon du premier](../assets/rover-s03/38-tangage-et-roulis.png)
+![Un bloc si/sinon encore vide, déposé dans le sinon du test de tangage, prêt à recevoir le test du roulis](../assets/rover-s03/35-tangage-et-roulis.png)
 </figure>
 
 L'ordre compte : le premier test qui est vrai gagne, les suivants ne sont même pas lus. Mets en premier ce qui doit primer.

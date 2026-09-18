@@ -86,7 +86,7 @@ Une variable est une **boîte nommée** qui retient une valeur. Tu y ranges quel
 **Variables** → **Créer une variable…** → donne-lui un nom qui dit ce qu'elle contient.
 
 <figure class="screenshot" markdown>
-![La fenêtre « Nom de la nouvelle variable » dans MakeCode](../assets/rover-s03/35-creer-variable.png)
+![La fenêtre « Nom de la nouvelle variable » dans MakeCode](../assets/rover-s03/40-creer-variable.png)
 </figure>
 
 Deux blocs suffisent : `définir <nom> à …` pour y mettre une valeur, et le bloc `<nom>` lui-même pour la relire.

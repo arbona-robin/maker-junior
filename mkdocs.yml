@@ -11,7 +11,6 @@ theme:
     logo: material/robot-mower
   favicon: assets/favicon.png
   features:
-    - navigation.sections
     - navigation.indexes
     - navigation.top
     - navigation.footer
@@ -78,11 +77,9 @@ nav:
   - Accueil: index.md
   - Projet Rover:
       - projets/rover/index.md
-      - Séances:
-          - projets/rover/seances/index.md
-          - "Séance 1 — La base motrice": projets/rover/seances/s01-base-motrice.md
-          - "Séance 2 — Ton rover obéit": projets/rover/seances/s02-ton-rover-obeit.md
-          - "Séance 3 — Identité et télécommande": projets/rover/seances/s03-identite-et-telecommande.md
+      - "Séance 1 — La base motrice": projets/rover/seances/s01-base-motrice.md
+      - "Séance 2 — Ton rover obéit": projets/rover/seances/s02-ton-rover-obeit.md
+      - "Séance 3 — Identité et télécommande": projets/rover/seances/s03-identite-et-telecommande.md
   - Fiches:
       - fiches/index.md
       - "Sécurité à l'atelier": fiches/securite-atelier.md
@@ -96,6 +93,7 @@ nav:
       - "Quand ça ne marche pas": fiches/depannage.md
   - Carnet de bord:
       - carnet-de-bord/index.md
-      - "Rover — séance 1": carnet-de-bord/rover-s01.md
-      - "Rover — séance 2": carnet-de-bord/rover-s02.md
-      - "Rover — séance 3": carnet-de-bord/rover-s03.md
+      - Rover:
+          - "Séance 1": carnet-de-bord/rover-s01.md
+          - "Séance 2": carnet-de-bord/rover-s02.md
+          - "Séance 3": carnet-de-bord/rover-s03.md
