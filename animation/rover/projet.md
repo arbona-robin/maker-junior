@@ -64,7 +64,8 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 ## Ressources numériques
 
 - MakeCode (makecode.microbit.org), gratuit, sans inscription — extension DF-Driver à ajouter par URL
-- Logiciel de modélisation 3D — *à préciser*, avec le trancheur associé
+- Tinkercad en mode classe (comptes créés par l'animateur, sans adresse personnelle des jeunes)
+- Bambu Studio, le trancheur de l'imprimante
 - 1 ordinateur par jeune
 - Le livre en ligne, ouvert en écran partagé pendant l'atelier
 - Plans de découpe imprimés (`docs/assets/plans/`)
@@ -94,9 +95,11 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 ## Séance 3 — Phase 1 — Découverte & prise en main
 
-**Titre :** Ton rover prend une identité
-**Notions :** *à définir* · début de la fabrication de la télécommande
-**Livrable intermédiaire :** *à définir*
+**Titre :** Ton identité, et le problème de la télécommande
+**Notions :** modélisation 3D et contrainte de conception · impression additive, couches, slicer · capteur embarqué et mesure brute · seuil de décision · variable · `si` / `sinon si` / `sinon`
+**Livrable intermédiaire :** plaque personnelle exportée en `.STL` et lancée à l'impression, programme d'affichage directionnel sur la seconde carte, seuils notés
+
+→ [Fiche d'animation](s03.md) · [Page élève](../../docs/projets/rover/seances/s03-identite-et-telecommande.md)
 
 ## Séance 4 — Phase 2 — Exploration & création
 
@@ -162,8 +165,8 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 **Ce qui reste à arbitrer.**
 
-- **Six séances sur douze** (S3, S4, S6, S7, S8, S9) n'ont pas encore de contenu. Les ancrages connus sont la radio en S2, la bascule en équipe et le prototypage en S5, l'homologation puis les missions en fin de parcours.
-- **L'impression 3D n'est pas encore placée.** Elle fait partie du parcours et de la promesse de la fiche communication, mais aucune séance ne la porte pour l'instant. Il faut décider où on l'introduit — vraisemblablement une séance de la phase 2, après le prototypage carton de la S5 — et quel logiciel de modélisation on utilise.
+- **Cinq séances sur douze** (S6, S7, S8, S9, S10) n'ont pas encore de contenu. Les ancrages connus sont la radio en S4, la bascule en équipe et le prototypage en S5, l'homologation puis les missions en fin de parcours.
+- **L'impression 3D est introduite en S3** (plaque d'identité), avec Tinkercad et Bambu Studio. Reste à décider où elle **revient** en phase 2, quand les équipes dessineront les pièces de leur mécanisme : c'est là qu'elle portera vraiment le projet.
 - **La valorisation finale n'est pas confirmée.** Les Jeux, un public, un jury : rien n'est acté. La fiche communication ne promet donc pas d'événement public. À reprendre ici et dans la com dès que c'est tranché.
 - **Ce que chaque jeune emporte** n'est pas décidé : le rover final appartient à une équipe de deux ou trois. Voir la note de [`communication.md`](communication.md).
 

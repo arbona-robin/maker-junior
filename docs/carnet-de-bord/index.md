@@ -10,3 +10,4 @@ Trois lignes suffisent, à condition qu'elles soient précises. « Ça marchait 
 
 - [Rover — séance 1](rover-s01.md)
 - [Rover — séance 2](rover-s02.md)
+- [Rover — séance 3](rover-s03.md)

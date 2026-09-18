@@ -28,6 +28,14 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
     L'installer, et les blocs qu'elle ajoute.
 
+- **[Modéliser et imprimer en 3D](modeliser-imprimer-3d.md)**
+
+    Dessiner dans Tinkercad, exporter, et ce que la machine sait faire.
+
+- **[D'une mesure à une décision](mesure-vers-decision.md)**
+
+    Lire un capteur, choisir un seuil, en tirer une action.
+
 - **[Quand ça ne marche pas](depannage.md)**
 
     Trouver la panne au lieu de tout reprendre au hasard.

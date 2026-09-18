@@ -8,4 +8,7 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 2 — Ton rover obéit](s02-ton-rover-obeit.md)**
   Tu ranges tes commandes en cinq fonctions, tu règles ton rover pour qu'il roule droit, et tu le ramènes au garage.
 
+- **[Séance 3 — Ton identité, et le problème de la télécommande](s03-identite-et-telecommande.md)**
+  Tu dessines ta plaque en 3D, tu la lances à l'impression, et tu découvres que deux boutons ne suffisent pas.
+
 La suite s'ajoute ici au fil du parcours.

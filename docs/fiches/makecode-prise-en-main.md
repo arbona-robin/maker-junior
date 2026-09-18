@@ -79,6 +79,23 @@ Deux règles qui évitent des heures perdues :
 
 Pour renommer une fonction ou lui ajouter un paramètre : clique sur la roue dentée du bloc `fonction`.
 
+## Les variables
+
+Une variable est une **boîte nommée** qui retient une valeur. Tu y ranges quelque chose, tu le relis quand tu veux.
+
+**Variables** → **Créer une variable…** → donne-lui un nom qui dit ce qu'elle contient.
+
+<figure class="screenshot" markdown>
+![La fenêtre « Nom de la nouvelle variable » dans MakeCode](../assets/rover-s03/35-creer-variable.png)
+</figure>
+
+Deux blocs suffisent : `définir <nom> à …` pour y mettre une valeur, et le bloc `<nom>` lui-même pour la relire.
+
+> [!NOTE] À quoi ça sert avec un capteur
+> Lire un capteur deux fois de suite donne deux valeurs différentes — il bouge entre les deux lectures. Range la mesure dans une variable, et tous tes tests parleront bien du **même** instant.
+
+→ [D'une mesure à une décision](mesure-vers-decision.md)
+
 ## Blocs, JavaScript, Python
 
 La bascule en haut de l'écran montre le même programme sous trois formes.

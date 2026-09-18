@@ -82,6 +82,7 @@ nav:
           - projets/rover/seances/index.md
           - "Séance 1 — La base motrice": projets/rover/seances/s01-base-motrice.md
           - "Séance 2 — Ton rover obéit": projets/rover/seances/s02-ton-rover-obeit.md
+          - "Séance 3 — Identité et télécommande": projets/rover/seances/s03-identite-et-telecommande.md
   - Fiches:
       - fiches/index.md
       - "Sécurité à l'atelier": fiches/securite-atelier.md
@@ -90,8 +91,11 @@ nav:
       - "Rouler droit et tourner": fiches/rouler-droit.md
       - "Prendre en main MakeCode": fiches/makecode-prise-en-main.md
       - "L'extension DF-Driver": fiches/extension-df-driver.md
+      - "Modéliser et imprimer en 3D": fiches/modeliser-imprimer-3d.md
+      - "D'une mesure à une décision": fiches/mesure-vers-decision.md
       - "Quand ça ne marche pas": fiches/depannage.md
   - Carnet de bord:
       - carnet-de-bord/index.md
       - "Rover — séance 1": carnet-de-bord/rover-s01.md
       - "Rover — séance 2": carnet-de-bord/rover-s02.md
+      - "Rover — séance 3": carnet-de-bord/rover-s03.md
