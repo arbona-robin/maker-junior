@@ -22,7 +22,7 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
 - **[Prendre en main MakeCode](makecode-prise-en-main.md)**
 
-    L'interface, les catégories, le téléversement.
+    L'interface, le téléversement, les fonctions, les variables et la radio.
 
 - **[L'extension DF-Driver](extension-df-driver.md)**
 

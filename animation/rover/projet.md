@@ -104,10 +104,12 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 ## Séance 4 — Phase 2 — Exploration & création
 
 **Titre :** Pilote ton rover à distance
-**Notions :** liaison radio entre deux micro:bit · groupe radio et canal · émetteur et récepteur · réemploi des seuils d'inclinaison de la S3 et des cinq fonctions de la S2
+**Notions :** protocole — canal partagé et vocabulaire partagé · groupe radio · message clé-valeur · troncature silencieuse au-delà de 8 caractères · comparaison de chaînes · gestionnaire d'événement `quand une donnée est reçue` · linéarisation d'un `si` imbriqué · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S2 et des seuils de la S3
+**Livrable intermédiaire :** rover individuel terminé et piloté par radio, protocole consigné au carnet, plaque montée — **fin du temps individuel**
 
-*La séance s'ouvre sur la distribution des plaques imprimées, et leur pose sur les rovers. Les photos d'impression sont déjà dans `docs/assets/rover-s04/`.*
-**Livrable intermédiaire :** rover individuel terminé et piloté par radio — **fin du temps individuel**
+*La séance s'ouvre sur la remise des plaques imprimées et leur pose sur les rovers, en cinq minutes de lancement — pas en activité. La clôture est le pivot du parcours : annonce du travail en équipe et des missions, sans les chiffres.*
+
+→ [Fiche d'animation](s04.md) · [Page élève](../../docs/projets/rover/seances/s04-pilote-a-distance.md)
 
 ## Séance 5 — Phase 2 — Exploration & création
 
@@ -116,6 +118,24 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 **Livrable intermédiaire :** équipes de 2–3 constituées, plan tracé et premier prototype carton du rover de mission
 
 *C'est le pivot du parcours : le cahier des charges est remis ici, et le travail devient collectif. C'est aussi ici que le relevé de plan au quadrillage trouve sa place — le traçage n'est plus un détour, c'est le sujet.*
+
+**Le cahier des charges, remis en séance 5.** Les obstacles et les échantillons sont **présentés physiquement** ce jour-là : un cahier des charges qu'on peut prendre en main se conçoit mieux qu'un cahier des charges lu.
+
+Le rover d'équipe doit :
+
+- être **pilotable à distance par un ou plusieurs opérateurs**
+- **monter une pente** de 5 cm de haut sur 30 cm de long, soit environ **9,5°**
+- **franchir des obstacles ponctuels** de 1 × 1 cm, de largeur supérieure à celle du rover
+- **ramener deux types d'échantillons** : un métallique fin, de quelques millimètres de haut ; un non métallique plus gros, encombrement 4 × 4 × 10 cm
+- **évoluer entre des obstacles**
+
+Les trois épreuves, à préparer à partir de la S10 et à courir en S12 :
+
+| Épreuve | Forme | Ce qu'elle récompense |
+|---|---|---|
+| Parcours | Chronométré | Vitesse et pilotage |
+| Échantillon non métallique | Capture the flag — premier à le ramener à la base | Préhension du gros objet, stratégie d'équipe |
+| Échantillon métallique | Individuelle — ramener l'échantillon à la base | Captation du petit objet plat |
 
 ## Séance 6 — Phase 2 — Exploration & création
 
@@ -171,6 +191,24 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 - **L'impression 3D est introduite en S3** (plaque d'identité), avec Tinkercad et Bambu Studio. Reste à décider où elle **revient** en phase 2, quand les équipes dessineront les pièces de leur mécanisme : c'est là qu'elle portera vraiment le projet.
 - **La valorisation finale n'est pas confirmée.** Les Jeux, un public, un jury : rien n'est acté. La fiche communication ne promet donc pas d'événement public. À reprendre ici et dans la com dès que c'est tranché.
 - **Ce que chaque jeune emporte** n'est pas décidé : le rover final appartient à une équipe de deux ou trois. Voir la note de [`communication.md`](communication.md).
+
+**Les épreuves — pistes à arbitrer.** Le cahier des charges de la S5 est arrêté ; la forme précise des épreuves ne l'est pas. Deux listes séparées, à prendre ou à laisser indépendamment l'une de l'autre.
+
+*A — Précisions sur les épreuves déjà décidées. Aucune épreuve nouvelle, seulement une façon de les faire compter.*
+
+| Épreuve | Ce qui change | Pourquoi |
+|---|---|---|
+| La pente | Plan à **angle réglable**. On monte par paliers jusqu'au décrochage, et on note le maximum atteint. | Un seuil unique donne « réussi / raté ». Un maximum donne un classement, et rend visibles l'adhérence et la position du centre de gravité. |
+| Le 1 × 1 cm | Annoncer la **garde au sol comme une cote** dès la S5 : « il faut 10 mm sous le châssis ». | Sinon le pack d'accus finit sous le rover sans que personne y pense, et le défaut se découvre à l'homologation. Le rover des photos a déjà ce défaut. |
+| L'échantillon 4 × 4 × 10 | Le poser **debout**, pas couché. | Couché, il se pousse. Debout, il faut le saisir ou le faire basculer : deux familles de solutions, aucune évidente. |
+| Le parcours entre obstacles | Chronométré **en marche arrière**, ou opérateur dos au parcours et coéquipier qui guide à la voix. | C'est ce qui donne du poids à la ligne « un ou plusieurs opérateurs », au lieu d'une case qu'on coche sans y penser. |
+
+*B — Épreuves supplémentaires, si le temps de la S12 le permet. Elles s'ajoutent aux trois déjà prévues.*
+
+- **Le transport fragile** — ramener l'échantillon posé sur un plateau non fixé. Sans elle, les trois épreuves récompensent toutes la vitesse ; celle-ci récompense la douceur, et oblige à un vrai arbitrage de conception.
+- **L'échange d'échantillon** — deux rovers de deux équipes doivent se passer l'objet. Suppose que les deux se soient entendus sur une hauteur de préhension. C'est le protocole de la S4, mais mécanique.
+
+**Une remarque sur l'échantillon métallique.** « Métallique » appelle l'aimant, et l'aimant pose tout de suite la bonne question : un aimant fixe oblige à repousser l'objet jusqu'à la base en marche arrière, un aimant sur bras mobile permet de le lâcher. Le second demande une pièce imprimée — c'est le premier endroit du parcours où l'impression 3D sert le mécanisme et pas la décoration. Ne pas trancher à leur place : la contrainte suffit à faire naître les deux solutions.
 
 **Le découpage LP et le rythme réel ne coïncident pas.** Les phases LP sont 1–3 / 4–9 / 10–12 ; le parcours bascule de l'individuel au collectif entre la S4 et la S5. Ce n'est pas un problème — la S4 clôt le rover individuel à l'intérieur de la phase 2 — mais il faut le savoir en lisant le planning.
 

@@ -17,6 +17,9 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 3 — Ton identité, et le problème de la télécommande](seances/s03-identite-et-telecommande.md)**
   Tu dessines ta plaque en 3D, tu l'envoies à l'impression, et tu fais dire à ta future télécommande dans quel sens tu la penches.
 
+- **[Séance 4 — Pilote ton rover à distance](seances/s04-pilote-a-distance.md)**
+  Tu poses ta plaque imprimée, tu inventes le vocabulaire que tes deux cartes vont partager, et ton rover obéit sans fil.
+
 La suite s'ajoute ici au fil du parcours.
 
 ## Le matériel

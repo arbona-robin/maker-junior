@@ -96,6 +96,75 @@ Deux blocs suffisent : `définir <nom> à …` pour y mettre une valeur, et le b
 
 → [D'une mesure à une décision](mesure-vers-decision.md)
 
+## La radio
+
+Deux micro:bit savent se parler sans fil, sans réseau et sans rien à installer. Les blocs sont dans la catégorie **Radio**.
+
+### Le groupe
+
+Toutes les cartes de la salle émettent sur la même fréquence. Le **groupe** est le numéro qui les trie : une carte ne reçoit que les messages de son propre groupe, et ignore tous les autres.
+
+Un seul bloc, dans `au démarrage`, **sur chacune des deux cartes** :
+
+<figure class="screenshot" markdown>
+![Le bloc « au démarrage » contenant « radio définir groupe 75 », et le curseur qui sert à régler le numéro](../assets/rover-s04/20-groupe-radio.png)
+</figure>
+
+Le numéro va de `0` à `255`. Ce qui compte n'est pas lequel tu choisis, mais que **les deux cartes aient le même**, et que personne d'autre dans la salle ne l'utilise.
+
+> [!NOTE] Groupe ≠ portée
+> Changer de groupe ne rend pas la liaison plus sûre ni plus longue. Ça sépare les conversations, rien de plus : n'importe qui peut régler son groupe sur le tien et écouter.
+
+### Envoyer, recevoir
+
+Le bloc qu'on utilise sur le rover envoie **une clé et une valeur** :
+
+```
+envoyer la valeur  "avancer"  =  180  par radio
+```
+
+La **clé** est un mot : c'est l'ordre. La **valeur** est un nombre qui l'accompagne — une vitesse, une distance, une mesure.
+
+En face, `quand une donnée est reçue par radio` se déclenche tout seul à chaque message, et apporte deux choses : `nom` (la clé) et `valeur` (le nombre).
+
+On teste alors `nom` pour savoir quoi faire. Attention au bloc de comparaison : il en existe deux, et celui qui compare des **textes** a deux cases blanches. Celui qui compare des nombres ne marchera pas ici.
+
+> [!CAUTION] La clé fait 8 caractères, pas un de plus
+> Au-delà, la carte tronque sans prévenir, et deux clés qui commencent pareil deviennent le même message.
+
+<figure class="screenshot" markdown>
+![Deux branches d'un programme, l'une envoyant la clé tournerAGauche, l'autre la clé tournerADroite](../assets/rover-s04/22-cles-trop-longues.png)
+<figcaption><code>tournerAGauche</code> et <code>tournerADroite</code> arrivent toutes les deux comme <code>tournerA</code>.</figcaption>
+</figure>
+
+### Se mettre d'accord avant de coder
+
+Deux machines qui échangent doivent s'entendre sur **le canal** et sur **le vocabulaire**. Cet accord s'appelle un **protocole**, et il s'écrit avant le programme — pas pendant.
+
+| Clé | Valeur | Ce que fait le rover |
+|---|---|---|
+| `avancer` | inclinaison | Les deux moteurs en avant |
+| `reculer` | inclinaison | Les deux moteurs en arrière |
+| `gauche` | inclinaison | Pivot à gauche |
+| `droite` | inclinaison | Pivot à droite |
+| `arreter` | `0` | Tout s'arrête |
+
+Note le tien dans ton carnet de bord. C'est ce que tu reliras quand ton coéquipier programmera l'autre carte.
+
+### Quand rien ne passe
+
+La radio est muette : elle ne signale ni l'échec, ni le succès. **Fais-la parler toi-même** — une flèche, une icône, un son à chaque message envoyé et à chaque message reçu. C'est le seul moyen de voir où la chaîne se coupe.
+
+| Ce que tu vois | Où chercher |
+|---|---|
+| Rien ne s'affiche, même côté émetteur | Le programme n'envoie pas : seuils, conditions |
+| L'émetteur affiche, le récepteur non | Les groupes diffèrent, ou une carte n'est pas alimentée |
+| Le récepteur affiche, mais le mauvais ordre | Les clés ne correspondent pas — vérifie les 8 caractères |
+| Ça marche, puis ça s'arrête | Les accus |
+
+> [!TIP] Retire les témoins à la fin, pas avant
+> Un écran qui clignote pendant une mission gêne. Mais tant que tu règles, laisse-les : c'est ce qui te fait gagner du temps.
+
 ## Blocs, JavaScript, Python
 
 La bascule en haut de l'écran montre le même programme sous trois formes.
