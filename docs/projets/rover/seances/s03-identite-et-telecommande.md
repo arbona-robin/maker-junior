@@ -133,7 +133,7 @@ Nouveau projet MakeCode, nommé `telecommande`.
 ![La fenêtre « Créer un projet » de MakeCode avec le nom telecommande](../../../assets/rover-s03/31-nouveau-projet-telecommande.png)
 </figure>
 
-**Regarde les chiffres avant de décider quoi que ce soit.** Dans `toujours`, écris les quatre valeurs de l'accéléromètre :
+**Regarde les chiffres avant de décider.** Dans `toujours`, écris les quatre valeurs de l'accéléromètre :
 
 <figure class="screenshot" markdown>
 ![Le bloc toujours contenant quatre blocs « série écrire valeur » pour x, y, z et force](../../../assets/rover-s03/32-serie-ecrire-valeurs.png)

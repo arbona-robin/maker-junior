@@ -103,7 +103,7 @@ Branche l'USB, clique sur **Télécharger**, suis les instructions.
 **À toi.** En boucle : flèche vers le haut pendant 1 seconde, écran éteint pendant 1 seconde. Tous les blocs sont dans **Base**.
 
 <details markdown>
-<summary>La solution, après avoir cherché</summary>
+<summary>La solution</summary>
 
 <figure class="screenshot" markdown>
 ![Le bloc « toujours » contenant : montrer la flèche Nord, pause 1000 ms, effacer l'écran, pause 1000 ms](../../../assets/rover-s01/23-programme-clignotant.png)

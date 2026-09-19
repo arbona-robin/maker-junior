@@ -1,6 +1,6 @@
 # Sécurité à l'atelier
 
-Trois dangers seulement, mais réels : la lame, les moteurs, les accus. Rien d'entre eux ne pardonne l'improvisation.
+Trois dangers seulement, mais réels : la lame, les moteurs, les accus.
 
 ## Le cutter
 

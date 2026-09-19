@@ -8,7 +8,7 @@ Il sert à trois moments :
 
 **Après la séance**, pour refaire chez toi, finir ce qui n'était pas fini, ou aller plus loin que ce qu'on a eu le temps de voir.
 
-**Trois séances plus tard**, quand tu as oublié comment on ajoutait une extension ou dans quel sens se montait la roue folle. Tout reste en ligne, rien ne disparaît.
+**Trois séances plus tard**, quand tu as oublié comment on ajoutait une extension ou dans quel sens se montait la roue folle. Tout reste en ligne.
 
 ## Comment c'est rangé
 
@@ -33,7 +33,7 @@ Il sert à trois moments :
 Le texte est court exprès. Les explications longues sont dans des encadrés, qui se repèrent à leur couleur.
 
 > [!CAUTION] Rouge — la sécurité
-> À lire avant le geste, pas après. Ces encadrés ne se sautent pas.
+> À lire avant le geste. Ces encadrés ne se sautent pas.
 
 > [!NOTE] Bleu — le concept
 > Le pourquoi derrière la manipulation. C'est ce qui reste quand le rover est rangé.
@@ -46,7 +46,7 @@ Et quand un exercice t'est posé, la réponse est cachée juste en dessous :
 <details markdown>
 <summary>Un exemple de solution repliée</summary>
 
-Tu cherches d'abord, tu déplies ensuite. Dans cet ordre, sinon ça ne sert à rien.
+Tu cherches d'abord, tu déplies ensuite.
 
 </details>
 

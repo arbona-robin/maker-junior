@@ -75,7 +75,7 @@ Le nouveau bloc `fonction <nom>` apparaît dans l'espace de travail : glisse tes
 Deux règles qui évitent des heures perdues :
 
 - **Un nom qui dit ce que ça fait.** `avancer`, pas `fonction2`.
-- **On modifie la fonction, jamais ses copies.** Change la vitesse dans `avancer`, et tous les appels suivent. C'est tout l'intérêt.
+- **On modifie la fonction, jamais ses copies.** Change la vitesse dans `avancer`, et tous les appels suivent.
 
 Pour renommer une fonction ou lui ajouter un paramètre : clique sur la roue dentée du bloc `fonction`.
 
@@ -166,7 +166,7 @@ La radio est muette : elle ne signale ni l'échec, ni le succès. **Fais-la parl
 | Le récepteur affiche, mais le mauvais ordre | Les clés ne correspondent pas — vérifie les 8 caractères |
 | Ça marche, puis ça s'arrête | Les accus |
 
-> [!TIP] Retire les témoins à la fin, pas avant
+> [!TIP] Retire les témoins à la fin
 > Un écran qui clignote pendant une mission gêne. Mais tant que tu règles, laisse-les : c'est ce qui te fait gagner du temps.
 
 ## Blocs, JavaScript, Python

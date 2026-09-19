@@ -1,6 +1,6 @@
 # Quand ça ne marche pas
 
-Une panne se cherche, elle ne se devine pas. Le réflexe qui fait la différence n'est pas de connaître la réponse : c'est de **séparer ce qui marche de ce qui ne marche pas**, pour ne chercher que dans la moitié qui reste.
+Une panne se cherche, elle ne se devine pas. Le réflexe est de **séparer ce qui marche de ce qui ne marche pas**, pour ne chercher que dans la moitié qui reste.
 
 ## Le principe
 
@@ -44,7 +44,7 @@ Regarde d'abord les accus : c'est la cause la plus fréquente, et la plus vite �
 
 ## Avant d'appeler à l'aide
 
-Trois questions à te poser. Elles résolvent la moitié des pannes, et rendent l'autre moitié beaucoup plus rapide à traiter.
+Trois questions à te poser.
 
 1. **Jusqu'où ça marche ?** Quel est le dernier témoin que tu as vu s'allumer ?
 2. **Qu'est-ce qui a changé ?** Ça marchait il y a cinq minutes — qu'as-tu touché entre-temps ?

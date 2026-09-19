@@ -44,7 +44,7 @@ Deux façons de s'en sortir :
 - **Relier** l'îlot au reste de la pièce par un pont de matière — c'est ce que font les typographies dites « au pochoir »
 - **Effacer** l'îlot, en posant une forme en perçage par-dessus
 
-La règle vaut au-delà du texte : **une pièce imprimée est d'un seul tenant, ou elle est plusieurs pièces.** Il n'y a pas d'entre-deux.
+La règle vaut au-delà du texte : **une pièce imprimée est d'un seul tenant, ou elle est plusieurs pièces.**
 
 ### Aligner plutôt que viser
 
@@ -94,7 +94,7 @@ L'imprimante ne comprend pas ton modèle. Elle comprend des déplacements. Le **
 ![Le slicer affichant la plaque tranchée, avec l'aperçu des trajets et le réglage de hauteur de couche](../assets/rover-s03/39-slicer-apercu.png)
 </figure>
 
-Trois réglages décident de tout :
+Trois réglages :
 
 | Réglage | Ce que ça change |
 |---|---|

@@ -67,8 +67,8 @@ L'ordre des deux fils d'un moteur détermine son sens de rotation. Il n'y a pas 
 
 Le micro:bit et la carte communiquent sur deux fils seulement, par un dialogue qu'on appelle **I2C**. Chaque appareil branché sur ces deux fils possède une adresse ; quand le micro:bit envoie un ordre, il commence par dire à qui il s'adresse, et seul l'appareil concerné répond.
 
-C'est la même idée que d'appeler quelqu'un par son prénom dans une pièce où tout le monde entend. On la retrouvera, en plus grand, le jour où plusieurs rovers partageront le même canal radio.
+C'est la même idée que d'appeler quelqu'un par son prénom dans une pièce où tout le monde entend — et c'est exactement ce que fait la radio quand plusieurs rovers partagent le même groupe.
 
 Tu n'as rien à programmer de tout ça : les blocs de l'extension s'en occupent.
 
-→ [L'extension DF-Driver](extension-df-driver.md)
+→ [L'extension DF-Driver](extension-df-driver.md) · [La radio](makecode-prise-en-main.md#la-radio)

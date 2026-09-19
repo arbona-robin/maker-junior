@@ -50,7 +50,7 @@ Un rover qui « a l'air de rouler droit » ne se règle pas. Il faut une mesure,
 - **Trois passages**, pas un
 
 > [!NOTE] Les trois passages ne donnent pas le même résultat
-> C'est la découverte la plus utile. Un rover ne fait jamais deux fois exactement la même chose, même sans rien changer. Un réglage qui marche une fois n'est pas un réglage qui marche.
+> Un rover ne fait jamais deux fois exactement la même chose, même sans rien changer. Un réglage qui marche une fois n'est pas un réglage qui marche.
 
 Vise « il ne mord pas les limites de son couloir ». Le zéro parfait n'existe pas, et il n'est pas nécessaire : au pilotage, c'est ta main qui corrigera.
 
