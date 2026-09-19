@@ -63,7 +63,7 @@ Sur le rover, `Motor Stop All` est presque toujours le bon choix : il ne laisse 
 
 La catégorie contient aussi `Servo` et plusieurs blocs `Stepper`, pour d'autres types de moteurs. On ne s'en sert pas encore.
 
-## Le détail qui compte
+## Ce que veut dire `speed`
 
 `speed` n'est pas une vitesse en tours par minute, c'est une **puissance envoyée au moteur**. La vitesse réelle dépend de ce que le rover a à pousser.
 

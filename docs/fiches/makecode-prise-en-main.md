@@ -30,7 +30,7 @@ En bas à gauche, le bouton **Télécharger**. En haut au centre, la bascule **B
 
 ## Les deux blocs de départ
 
-Un projet neuf contient déjà deux blocs, et la différence entre eux est la première chose à comprendre.
+Un projet neuf contient déjà deux blocs.
 
 `au démarrage` s'exécute **une seule fois**, au moment où la carte s'allume ou redémarre. C'est là qu'on met ce qui se règle au début.
 
@@ -175,7 +175,7 @@ La bascule en haut de l'écran montre le même programme sous trois formes.
 
 <figure class="screenshot" markdown>
 ![Un programme affiché en Python dans MakeCode](../assets/rover-s01/24-vue-python.png)
-<figcaption>Les blocs sont une façon d'écrire du code, pas une chose différente du code.</figcaption>
+<figcaption>Les blocs sont une façon d'écrire du code.</figcaption>
 </figure>
 
 Tu peux regarder, c'est instructif. Attention : en passant en texte puis en revenant aux blocs, une mise en page peut se perdre. Fais l'aller-retour sur un projet dont tu n'as pas peur de perdre l'agencement.

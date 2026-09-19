@@ -25,7 +25,7 @@ Le dépôt produit deux choses à partir du même travail, et les confondre est 
 | Registre | Tutoiement, notice IKEA, ~800 mots | Opératoire, chiffré, honnête |
 | Format | Libre | Gabarit LP, sections figées |
 
-Budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel, bilan d'atelier : **tout ça vit dans `animation/` et n'entre jamais dans `docs/`.** Le guide LP le dit lui-même de l'objectif général : « c'est pour vous et vos partenaires, pas pour les jeunes ».
+Budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel, bilan d'atelier : **tout ça vit dans `animation/` et n'entre jamais dans `docs/`.** **Durée** et **Prérequis** non plus — ce sont des champs du gabarit LP. La page élève s'ouvre sur une phrase qui dit ce que le jeune va faire et ce qu'il en repart ; pas sur un bandeau de métadonnées. Le guide LP le dit lui-même de l'objectif général : « c'est pour vous et vos partenaires, pas pour les jeunes ».
 
 La circulation va dans un seul sens : la fiche communication est la **source** du titre, de l'accroche et de la promesse ; `docs/projets/<projet>/index.md` en est une **dérivation**, réécrite pour le jeune. Si l'une change, vérifier l'autre.
 
@@ -213,7 +213,9 @@ git show 8fa3561:docs/projets/rover/seances/s01-base-motrice.md
 - **Relire en coupant.** Pour chaque phrase : si je l'enlève, le jeune fait-il le pas moins bien ? Sinon, l'enlever.
 - **Pas de rallonge d'insistance.** Une phrase se termine quand l'information est donnée. Tout ce qui vient après pour appuyer — « avant d'écrire la moindre ligne », « et pas autrement », « sans exception » — se coupe. L'insistance ne fait pas lire davantage, elle allonge.
 - **Pas de formule à effet.** Une tournure qui se comprend en deux temps — « il va maintenant le dire », « deux ordres, un seul message » — se remplace par ce qu'elle veut dire. Le jeune lit en écran partagé, au milieu d'un atelier bruyant : il n'a pas la tête à décoder une image.
-- **Un exercice se présente toujours pareil.** Énoncé visible, solution repliée dans un `<details>`. Si une page montre le programme complet en clair à une section et le replie à la suivante, le jeune ne sait plus quand il est censé chercher. Un programme visible au fil du texte est un pas à recopier ; un programme replié est un exercice.
+- **Un exercice se présente toujours pareil.** Il s'ouvre par **« À toi »** — en gras dans le texte si l'exercice tient en deux lignes, en `### À toi : <ce qu'il faut faire>` s'il a besoin d'une section. Sa solution est **toujours** un `<details>` dont le `<summary>` est exactement **« La solution »**. Tout ce qui commente la solution — une variante de blocs, un renvoi vers une fiche — entre dans ce même `<details>`, jamais dans un second.
+- **Une capture visible est un pas à recopier ; une capture repliée est une solution.** C'est la seule chose qui dit au jeune s'il doit chercher ou suivre. Une page qui montre le programme complet en clair à une section et le replie à la suivante lui retire ce repère. Vérifier avant de livrer : `grep -n "À toi\|<summary>"` sur la page, chaque « À toi » doit avoir sa « La solution » en dessous.
+- **Un `<details>` qui n'est pas une solution porte un `<summary>` qui le dit** : « Pas d'imprimante ? Recopie le plan », « Pour aller plus loin — en Python ». Une variante et un bonus se replient comme une solution ; c'est le titre qui les distingue.
 
 **L'écran partagé** a deux conséquences : une capture se recadre sur ce qu'il faut voir, et on évite ce qui devient illisible en demi-largeur (tableau large, rangée de trois photos quand une suffit).
 

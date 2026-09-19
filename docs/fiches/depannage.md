@@ -1,6 +1,6 @@
 # Quand ça ne marche pas
 
-Une panne se cherche, elle ne se devine pas. Le réflexe est de **séparer ce qui marche de ce qui ne marche pas**, pour ne chercher que dans la moitié qui reste.
+Chercher une panne, c'est **séparer ce qui marche de ce qui ne marche pas**, pour ne chercher que dans la moitié qui reste.
 
 ## Le principe
 
@@ -9,7 +9,7 @@ Une panne se cherche, elle ne se devine pas. Le réflexe est de **séparer ce qu
 >
 > Quand rien ne bouge, la question n'est pas « qu'est-ce qui ne va pas », mais **« jusqu'où ça marche ? »**. Chaque témoin visible — une icône, un son, une LED — te dit qu'un maillon est franchi.
 >
-> C'est pour ça qu'on met une icône et un son dans `au démarrage`, et qu'on affiche une flèche pendant que les moteurs tournent. Ce ne sont pas des décorations, ce sont des points de mesure.
+> C'est pour ça qu'on met une icône et un son dans `au démarrage`, et qu'on affiche une flèche pendant que les moteurs tournent : ce sont des points de mesure.
 
 ## L'arbre de décision
 

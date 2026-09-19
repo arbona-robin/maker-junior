@@ -47,7 +47,7 @@ Les accus NiMH ne prennent pas feu, mais ils délivrent beaucoup de courant d'un
 
 ## En fin de séance
 
-Le rangement fait partie de la sécurité, pas de la corvée.
+Le rangement fait partie de la sécurité.
 
 - Matériel dans ton bac nominatif
 - Chutes de carton triées

@@ -1,14 +1,6 @@
 # Séance 1 — Fabrique et monte la base motrice
 
-<div class="session-meta" markdown>
-<span markdown>**Tu repars avec** une base de rover qui roule</span>
-<span markdown>**Durée** 1 h 45</span>
-<span markdown>**Prérequis** aucun</span>
-</div>
-
-D'abord l'électronique, testée sur la table : une erreur s'y répare sans rien démonter. Ensuite le châssis, et le montage.
-
----
+Tu repars avec une base de rover qui roule. D'abord l'électronique, testée sur la table : une erreur s'y répare sans rien démonter. Ensuite le châssis, et le montage.
 
 ## 1. Le moteur tout seul
 

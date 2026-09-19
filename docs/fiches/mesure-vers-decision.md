@@ -1,8 +1,8 @@
 # D'une mesure à une décision
 
-Un capteur ne dit jamais « penche à gauche ». Il dit `-247`. Tout le travail est là : **transformer un nombre en décision**.
+Un capteur ne dit jamais « penche à gauche ». Il dit `-247`. Il faut donc **transformer un nombre en décision**.
 
-C'est le même geste pour un thermostat, un détecteur de présence, un capteur de ligne ou ta télécommande. Apprends-le une fois, tu le referas tout le parcours.
+C'est le même geste pour un thermostat, un détecteur de présence, un capteur de ligne ou ta télécommande.
 
 ## 1. Regarde avant de décider
 
@@ -47,7 +47,7 @@ Un seuil est la valeur à partir de laquelle tu décides que **ça compte**.
 > [!NOTE] Pourquoi il en faut un
 > Une carte posée à plat n'affiche jamais exactement `0`. Elle oscille, elle vibre, la table n'est pas d'équerre. Sans seuil, ta télécommande part dans tous les sens toute seule.
 
-**Trop bas**, ça se déclenche sans que tu bouges. **Trop haut**, il faut pencher la carte à la verticale pour obtenir quelque chose. Entre les deux, il y a une zone morte confortable — et elle t'appartient.
+**Trop bas**, ça se déclenche sans que tu bouges. **Trop haut**, il faut pencher la carte à la verticale pour obtenir quelque chose. Entre les deux, il y a une zone morte confortable.
 
 > [!TIP] Il n'y a pas de bon seuil
 > Comme pour les vitesses de tes moteurs : le tien dépend de ta main et de ta façon de tenir la carte. Note-le, ne le recopie pas.

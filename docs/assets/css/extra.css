@@ -103,22 +103,6 @@
 }
 
 /* Session pages open with a short summary band. */
-.session-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 1.2rem;
-  padding: 0.8em 1.1em;
-  margin-bottom: 1.5em;
-  border-left: 4px solid var(--md-accent-fg-color);
-  background: var(--md-code-bg-color);
-  border-radius: 0 0.3rem 0.3rem 0;
-  font-size: 0.78rem;
-}
-
-.session-meta strong {
-  color: var(--md-default-fg-color);
-}
-
 /* "Coming soon" entries in the session index. */
 .md-typeset .upcoming {
   color: var(--md-default-fg-color--light);

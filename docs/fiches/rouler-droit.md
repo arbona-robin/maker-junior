@@ -40,7 +40,7 @@ Si le rover dévie encore une fois la mécanique vérifiée, ses deux moteurs ne
 
 Note tes deux valeurs dans ton carnet de bord : tu les reprendras à chaque séance, et elles bougeront quand ton rover sera plus lourd.
 
-## Mesurer, et non regarder
+## Mesurer l'écart
 
 Un rover qui « a l'air de rouler droit » ne se règle pas. Il faut une mesure, et la même à chaque fois.
 
@@ -50,7 +50,7 @@ Un rover qui « a l'air de rouler droit » ne se règle pas. Il faut une mesure,
 - **Trois passages**, pas un
 
 > [!NOTE] Les trois passages ne donnent pas le même résultat
-> Un rover ne fait jamais deux fois exactement la même chose, même sans rien changer. Un réglage qui marche une fois n'est pas un réglage qui marche.
+> Un rover ne fait jamais deux fois exactement la même chose, même sans rien changer. C'est pour ça qu'on compte trois passages et pas un.
 
 Vise « il ne mord pas les limites de son couloir ». Le zéro parfait n'existe pas, et il n'est pas nécessaire : au pilotage, c'est ta main qui corrigera.
 

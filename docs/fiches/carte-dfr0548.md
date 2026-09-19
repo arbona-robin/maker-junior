@@ -1,11 +1,21 @@
 # La carte DFR0548
 
-C'est la carte sur laquelle s'enfiche ton micro:bit. Son nom complet est *Micro:bit Driver Expansion Board*, et son rôle tient en une phrase : elle fait le lien entre un micro:bit qui décide et des moteurs qui consomment.
+C'est la carte sur laquelle s'enfiche ton micro:bit. Son nom complet est *Micro:bit Driver Expansion Board*. Elle fait le lien entre un micro:bit qui décide et des moteurs qui consomment.
 
 <figure markdown>
-![La carte DFR0548 vue de dessus : bornier à huit vis repéré M1 à M4, connecteur d'alimentation 3.5~5.5V et interrupteur ON/OFF](../assets/rover-s01/19-test-traction.jpg)
-<figcaption>Tout est sérigraphié sur la carte : les borniers M1 à M4, l'entrée 3.5~5.5V, l'interrupteur.</figcaption>
+![Schéma de la carte DFR0548 vue de dessus, avec ses zones encadrées et nommées : Motor Interface en haut, Power Input et Power Switch à droite, IIC Interface, Micro:bit IO Interface et Servo Interface à gauche, Micro:bit Adapter en bas](../assets/rover-s01/29-carte-dfr0548-reperes.png)
+<figcaption>Les repères sont ceux du fabricant, en anglais.</figcaption>
 </figure>
+
+| Sur le schéma | Ce que c'est | Tu t'en sers |
+|---|---|---|
+| **Motor Interface** | Les borniers `M1` à `M4` | Oui — `M1` et `M2` |
+| **Power Input** | L'entrée des accus, `3.5~5.5V` | Oui |
+| **Power Switch** | L'interrupteur `ON` / `OFF` des moteurs | Oui |
+| **Micro:bit Adapter** | Le connecteur du micro:bit, en bas | Oui |
+| **Servo Interface** | Les broches à servomoteurs `S1` à `S8` | Pas encore |
+| **IIC Interface** | Le bus qui relie la carte au micro:bit | Non, c'est interne |
+| **Micro:bit IO Interface** | Les broches `P0` à `P16` ressorties | Non |
 
 ## Pourquoi elle existe
 

@@ -120,7 +120,7 @@ Liste ce que tu veux commander : avancer, reculer, gauche, droite, stop…
 
 Puis ce que ta carte sait recevoir : les boutons `A` et `B`, les deux à la fois, le logo tactile, les broches `P0`, `P1`, `P2`. De quoi faire.
 
-Mais essaie de conduire en appuyant sur des boutons. La carte sait aussi **sentir comment tu la tiens** — c'est plus direct.
+Mais essaie de conduire en appuyant sur des boutons. La carte sait aussi **sentir comment tu la tiens**.
 
 > [!CAUTION] Cette carte-là ne monte jamais sur le rover
 > C'est ta télécommande. Elle reste dans ton bac entre les séances.

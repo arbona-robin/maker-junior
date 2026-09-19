@@ -65,8 +65,8 @@ Il dévie encore ? Alors les deux moteurs ne tournent pas exactement à la même
 
 Sur le banc : rover calé sur le repère en L, départ, et tu mesures de combien il a dévié à l'arrivée. **Trois passages** — l'écart change à chaque fois, et c'est déjà une information.
 
-> [!TIP] Parfait n'existe pas
-> Vise « il ne mord pas les limites de son couloir sur 2 mètres ». Le reste se rattrapera à la télécommande.
+> [!TIP] Ce qu'on vise
+> « Il ne mord pas les limites de son couloir sur 2 mètres. » Le reste se rattrapera à la télécommande.
 
 Mesure aussi ta **vitesse minimale** : descends la valeur jusqu'à ce que le rover refuse de démarrer, alors qu'une pichenette suffit à le lancer. Note-la.
 
@@ -74,20 +74,20 @@ Mesure aussi ta **vitesse minimale** : descends la valeur jusqu'à ce que le rov
 
 ## 5. Les quatre autres mouvements
 
-Fabrique `reculer`, `tournerAGauche`, `tournerADroite` et `arreter`, sur le même modèle.
+**À toi.** Fabrique `reculer`, `tournerAGauche`, `tournerADroite` et `arreter`, sur le même modèle.
 
 Pour tourner, essaie les deux façons et garde celle que tu préfères :
 
 - les deux moteurs en sens opposés — le rover **pivote sur place**
 - un seul côté ralenti — le rover décrit une **courbe**
 
+<details markdown>
+<summary>La solution</summary>
+
 <figure class="screenshot" markdown>
 ![Le programme avec les cinq fonctions repliées et le bloc toujours qui les appelle l'une après l'autre](../../../assets/rover-s02/24-programme-cinq-fonctions.png)
 <figcaption>Les cinq fonctions, appelées l'une après l'autre.</figcaption>
 </figure>
-
-<details markdown>
-<summary>Et pour arrêter ?</summary>
 
 Sur les photos, `arreter` contient les deux blocs `Motor` à `speed 0`. `Motor Stop All` fait la même chose en un seul bloc — les deux se valent.
 
@@ -112,7 +112,7 @@ Deux changements dans ton code :
 
 Dans la boucle : ta manœuvre, puis une pause assez longue pour que tu aies le temps de **replacer ton rover sur le point de départ**.
 
-**Réussi si 2 passages sur 3 reviennent dans la zone.** On ne compte pas le meilleur des trois : on compte la régularité.
+**Réussi si 2 passages sur 3 reviennent dans la zone.**
 
 > [!NOTE] Ton rover ne sait pas où il est
 > Il obéit à des durées, pas à des positions. Rien n'a changé entre deux passages, et pourtant il ne s'arrête pas au même endroit.

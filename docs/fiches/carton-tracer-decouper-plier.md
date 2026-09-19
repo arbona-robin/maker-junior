@@ -15,7 +15,7 @@ Les cotes sont en millimètres. Repère aussi les repères de perçage et l'empl
 
 Le carton ondulé n'est pas le même matériau dans les deux sens. À l'intérieur, des vagues de papier — les cannelures — courent dans une direction.
 
-> [!NOTE] Pourquoi ça change tout
+> [!NOTE] Pourquoi le sens compte
 > Le carton est rigide **dans le sens des cannelures**, et mou en travers. Il plie proprement **perpendiculairement** aux cannelures ; parallèlement, il s'écrase et le pli part en bouillie.
 >
 > Avant de tracer, repère le sens des cannelures sur la tranche, et oriente ton plan pour que les lignes de pli les croisent à angle droit.
@@ -34,7 +34,7 @@ Si tu traces directement sur le carton, utilise un crayon à papier plutôt qu'u
 
 ## Découper
 
-→ Les règles de sécurité sont dans [Sécurité à l'atelier](securite-atelier.md). Elles ne se résument pas, elles se lisent.
+→ Les règles de sécurité sont dans [Sécurité à l'atelier](securite-atelier.md).
 
 Pour un résultat net :
 

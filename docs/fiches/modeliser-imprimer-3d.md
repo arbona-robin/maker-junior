@@ -107,7 +107,7 @@ Trois réglages :
 
 ### Concevoir pour la machine
 
-On ne dessine jamais dans le vide. Une pièce se dessine pour **une fonction** et pour **une machine**.
+Une pièce se dessine pour **une fonction** et pour **une machine**.
 
 - **Ça doit tenir sur le plateau** — le tien et celui des autres
 - **Ça doit tenir à l'usage** — assez de matière autour d'un trou, assez d'épaisseur sous un effort
