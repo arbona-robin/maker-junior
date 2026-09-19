@@ -30,7 +30,7 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
 - **[Modéliser et imprimer en 3D](modeliser-imprimer-3d.md)**
 
-    Dessiner dans Tinkercad, exporter, et ce que la machine sait faire.
+    Dessiner dans Tinkercad, exporter, et ce que l'imprimante peut faire.
 
 - **[D'une mesure à une décision](mesure-vers-decision.md)**
 

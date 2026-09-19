@@ -1,6 +1,6 @@
 # L'extension DF-Driver
 
-MakeCode ne connaît pas ta carte moteur. Les blocs qui la pilotent sont fournis à part, dans une extension écrite par DFRobot — le fabricant de la carte.
+MakeCode ne fournit pas les blocs de ta carte moteur. Ils sont publiés à part, dans une extension écrite par DFRobot — le fabricant de la carte.
 
 ## L'installer
 

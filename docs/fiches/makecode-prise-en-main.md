@@ -98,7 +98,7 @@ Deux blocs suffisent : `définir <nom> à …` pour y mettre une valeur, et le b
 
 ## La radio
 
-Deux micro:bit savent se parler sans fil, sans réseau et sans rien à installer. Les blocs sont dans la catégorie **Radio**.
+Deux micro:bit communiquent sans fil, sans réseau et sans rien à installer. Les blocs sont dans la catégorie **Radio**.
 
 ### Le groupe
 

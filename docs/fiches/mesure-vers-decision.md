@@ -33,7 +33,7 @@ Trois questions, à chaque fois :
 
 Il mesure une accélération sur trois axes, en **mg** (millièmes de g). À plat et immobile, la pesanteur donne environ `1000` sur `z` et environ `0` sur `x` et `y`.
 
-| Axe | Ce qu'il sent |
+| Axe | Ce qu'il mesure |
 |---|---|
 | `x` | L'inclinaison gauche / droite — le **roulis** |
 | `y` | L'inclinaison avant / arrière — le **tangage** |

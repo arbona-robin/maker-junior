@@ -27,7 +27,7 @@ En fin de séance, **les cutters sont comptés**. Un cutter qui manque, c'est un
 
 ## Les moteurs
 
-> [!CAUTION] Un moteur alimenté se sauve
+> [!CAUTION] Un moteur alimenté part tout seul
 > Un moteur branché part à pleine vitesse, entraîne ce à quoi il est fixé, et le fait tomber de la table. Avec une roue montée, un rover traverse un bureau en une seconde.
 >
 > **Tout essai de moteur se fait dans la boîte en carton de test.** Le rover y reste tant qu'il n'est pas sur la piste.

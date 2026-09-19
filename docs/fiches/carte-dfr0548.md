@@ -7,19 +7,19 @@ C'est la carte sur laquelle s'enfiche ton micro:bit. Son nom complet est *Micro:
 <figcaption>Les repères sont ceux du fabricant, en anglais.</figcaption>
 </figure>
 
-| Sur le schéma | Ce que c'est | Tu t'en sers |
-|---|---|---|
-| **Motor Interface** | Les borniers `M1` à `M4` | Oui — `M1` et `M2` |
-| **Power Input** | L'entrée des accus, `3.5~5.5V` | Oui |
-| **Power Switch** | L'interrupteur `ON` / `OFF` des moteurs | Oui |
-| **Micro:bit Adapter** | Le connecteur du micro:bit, en bas | Oui |
-| **Servo Interface** | Les broches à servomoteurs `S1` à `S8` | Pas encore |
-| **IIC Interface** | Le bus qui relie la carte au micro:bit | Non, c'est interne |
-| **Micro:bit IO Interface** | Les broches `P0` à `P16` ressorties | Non |
+| Sur le schéma | Ce que c'est |
+|---|---|
+| **Motor Interface** | Les borniers `M1` à `M4` |
+| **Power Input** | L'entrée des accus, `3.5~5.5V` |
+| **Power Switch** | L'interrupteur `ON` / `OFF` des moteurs |
+| **Micro:bit Adapter** | Le connecteur du micro:bit |
+| **Servo Interface** | Les broches à servomoteurs `S1` à `S8` |
+| **IIC Interface** | Le bus entre la carte et le micro:bit |
+| **Micro:bit IO Interface** | Les broches `P0` à `P16` ressorties |
 
 ## Pourquoi elle existe
 
-> [!NOTE] Trois choses qu'une broche ne sait pas faire
+> [!NOTE] Trois choses qu'une broche ne peut pas faire
 > **Fournir assez de courant.** Une broche de micro:bit délivre quelques milliampères — de quoi allumer une LED. Un moteur à courant continu en réclame plusieurs centaines. Branché en direct, le moteur ne tourne pas, et la broche risque de lâcher.
 >
 > **Inverser le sens.** Une broche envoie du courant ou n'en envoie pas. Pour faire tourner un moteur dans l'autre sens, il faut inverser la polarité à ses bornes — ce qu'aucune broche ne peut faire seule.

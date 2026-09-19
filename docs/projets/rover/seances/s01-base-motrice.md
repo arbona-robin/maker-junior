@@ -146,7 +146,7 @@ Ajoute les blocs moteurs à ton programme :
 
 Téléverse. Les moteurs ne tournent pas encore : ils ont besoin des accus.
 
-> [!CAUTION] Les moteurs s'échappent
+> [!CAUTION] Un moteur alimenté part tout seul
 > Tout dans la **boîte de test** avant d'allumer, aujourd'hui et à chaque séance. Tiens le câble USB.
 
 Interrupteur sur **on**, puis vérifie :

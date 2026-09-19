@@ -43,7 +43,7 @@ Glisse tes deux blocs `Motor` dans la fonction. Reprends **Fonctions** : le bloc
 ![La fonction avancer contenant Motor M1 et Motor M2, et le bloc appel avancer placé dans toujours](../../../assets/rover-s02/23-fonction-avancer-appelee.png)
 </figure>
 
-> [!NOTE] Pourquoi s'embêter
+> [!NOTE] À quoi sert une fonction
 > Un programme se lit comme une phrase : `appel avancer` se comprend sans lire le détail. Tu réutiliseras ces fonctions telles quelles quand ton rover aura une télécommande.
 
 ## 4. Fais-le rouler droit
@@ -114,8 +114,8 @@ Dans la boucle : ta manœuvre, puis une pause assez longue pour que tu aies le t
 
 **Réussi si 2 passages sur 3 reviennent dans la zone.**
 
-> [!NOTE] Ton rover ne sait pas où il est
-> Il obéit à des durées, pas à des positions. Rien n'a changé entre deux passages, et pourtant il ne s'arrête pas au même endroit.
+> [!NOTE] Ton rover n'a aucun retour de position
+> Il exécute des durées, pas des positions. Rien n'a changé entre deux passages, et pourtant il ne s'arrête pas au même endroit.
 
 Note tes trois résultats dans le carnet.
 

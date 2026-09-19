@@ -118,14 +118,14 @@ Nomme le fichier `prenom-plaque.stl` et dépose-le où l'animateur te l'indique.
 
 Liste ce que tu veux commander : avancer, reculer, gauche, droite, stop…
 
-Puis ce que ta carte sait recevoir : les boutons `A` et `B`, les deux à la fois, le logo tactile, les broches `P0`, `P1`, `P2`. De quoi faire.
+Puis les entrées de ta carte : les boutons `A` et `B`, les deux à la fois, le logo tactile, les broches `P0`, `P1`, `P2`. Il y en a assez.
 
-Mais essaie de conduire en appuyant sur des boutons. La carte sait aussi **sentir comment tu la tiens**.
+Mais essaie de conduire en appuyant sur des boutons. Ta carte porte aussi un **accéléromètre**, qui mesure son inclinaison sur trois axes.
 
 > [!CAUTION] Cette carte-là ne monte jamais sur le rover
 > C'est ta télécommande. Elle reste dans ton bac entre les séances.
 
-## 7. Regarde ce que dit le capteur
+## 7. Lis les valeurs du capteur
 
 Nouveau projet MakeCode, nommé `telecommande`.
 

@@ -88,7 +88,7 @@ Une imprimante 3D dépose du plastique fondu **couche par couche**, de bas en ha
 
 ### Le slicer
 
-L'imprimante ne comprend pas ton modèle. Elle comprend des déplacements. Le **slicer** tranche ta pièce en couches et écrit la liste des mouvements à exécuter.
+L'imprimante n'exécute pas ton modèle : elle exécute des déplacements. Le **slicer** tranche ta pièce en couches et écrit la liste des mouvements à exécuter.
 
 <figure class="screenshot" markdown>
 ![Le slicer affichant la plaque tranchée, avec l'aperçu des trajets et le réglage de hauteur de couche](../assets/rover-s03/39-slicer-apercu.png)

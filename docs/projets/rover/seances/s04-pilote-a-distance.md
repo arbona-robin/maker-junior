@@ -104,7 +104,7 @@ Pour comparer deux textes, il te faut le bloc de comparaison à **cases blanches
 
 Ajoute `reculer`, `gauche`, `droite` et `arreter`. Fais afficher **une flèche** dans chaque branche : c'est elle qui te dira que le message est arrivé.
 
-Termine par un `sinon`, tout en bas. Il attrape les clés que ton rover ne connaît pas — une faute de frappe, une clé trop longue, le message d'un voisin. Fais-lui afficher une croix : « j'ai reçu quelque chose, je n'ai pas compris » n'est pas la même panne que « je ne reçois rien », et ça ne se cherche pas au même endroit.
+Termine par un `sinon`, tout en bas. Il attrape les clés qui ne correspondent à aucune de tes branches — une faute de frappe, une clé trop longue, le message d'un voisin. Fais-lui afficher une croix : « j'ai reçu quelque chose, je n'ai pas compris » n'est pas la même panne que « je ne reçois rien », et ça ne se cherche pas au même endroit.
 
 <details markdown>
 <summary>La solution</summary>
