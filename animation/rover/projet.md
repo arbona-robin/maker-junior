@@ -138,10 +138,15 @@ Il tient en deux listes, et les deux sont indépendantes. La première dit **ce 
 2. **Le capture the flag**, avec l'échantillon non métallique — les équipes ensemble sur le terrain, la première à ramener l'objet à sa base gagne
 3. **L'échantillon métallique**, épreuve individuelle — ramener la pièce à la base
 4. **La pente maximale** — plan à angle réglable, on monte par paliers jusqu'au décrochage, le rover qui tient l'angle le plus raide gagne
+5. **Le transport fragile** — ramener un échantillon posé sur un plateau non fixé au rover, sans le faire tomber
 
 La pente apparaît dans les deux listes, et c'est volontaire : **9,5° est le plancher** que tout rover doit franchir pour être homologué, la pente maximale est **le défi au-dessus du plancher**. Un rover homologué de justesse court quand même l'épreuve, il la perd. Prévoir un plan incliné à angle réglable et un rapporteur — un plan fixe ne permet que le plancher.
 
 Chaque point de la liste 1 est une contrainte de conception. Chaque ligne de la liste 2 est un jeu. Un rover peut être homologué et perdre toutes les épreuves : c'est voulu, et ça se dit aux équipes dès la S5.
+
+**Le transport fragile est là pour équilibrer les autres.** Le parcours, le capture the flag et la pente récompensent tous la vitesse ou la force ; celui-ci récompense la maîtrise. Sans lui, toutes les équipes optimisent la même chose et les rovers se ressemblent. Reste à fixer quel échantillon il emploie — le 4 × 4 × 10 ou une pièce dédiée — et la hauteur du plateau.
+
+**Cinq épreuves en 1 h 45, c'est serré.** Soit on en court une ou deux en fin de S11, soit on les taille courtes : un passage par équipe, pas de repêchage.
 
 ## Séance 6 — Phase 2 — Exploration & création
 
@@ -198,18 +203,13 @@ Chaque point de la liste 1 est une contrainte de conception. Chaque ligne de la 
 - **La valorisation finale n'est pas confirmée.** Les Jeux, un public, un jury : rien n'est acté. La fiche communication ne promet donc pas d'événement public. À reprendre ici et dans la com dès que c'est tranché.
 - **Ce que chaque jeune emporte** n'est pas décidé : le rover final appartient à une équipe de deux ou trois. Voir la note de [`communication.md`](communication.md).
 
-**Pistes à arbitrer.** Rien ci-dessous n'est décidé. Deux listes, à prendre ou à laisser ligne par ligne.
+**Pistes à arbitrer.** Rien ci-dessous n'est décidé, à prendre ou à laisser ligne par ligne. Les deux propositions qui étaient de vraies épreuves ont été tranchées : la pente maximale et le transport fragile sont en liste 2, l'échange d'échantillon entre équipes est écarté.
 
-*A — Réglages, pas des épreuves. Trois façons de rendre plus exigeant ce qui est déjà prévu. La quatrième — la pente jugée en maximum atteint — est arbitrée et remontée en liste 2.*
+*Ce ne sont pas des épreuves : trois façons de rendre plus exigeant ce qui est déjà prévu.*
 
 1. **La garde au sol est annoncée comme une cote, dès la S5** : « il faut 10 mm libres sous le châssis ». Sinon le pack d'accus finit sous le rover sans que personne y pense, et le défaut se découvre à l'homologation, trop tard pour reconcevoir. Le rover des photos a déjà ce défaut.
 2. **L'échantillon de 4 × 4 × 10 est posé debout.** Couché, il se pousse jusqu'à la base sans rien saisir. Debout, il faut le prendre ou le faire basculer : deux familles de solutions, aucune évidente.
 3. **Le slalom se court en marche arrière**, ou avec l'opérateur dos au parcours et un coéquipier qui le guide à la voix. C'est ce qui donne du poids à « pilotable par un ou plusieurs opérateurs » : sans ça, la ligne se coche sans avoir rien coûté.
-
-*B — Épreuves supplémentaires, si la S12 a la place. Ce sont les deux seules vraies épreuves en attente : elles s'ajouteraient aux quatre de la liste 2.*
-
-1. **Le transport fragile** — ramener l'échantillon posé sur un plateau non fixé. Les trois épreuves actuelles récompensent toutes la vitesse ; celle-ci récompense la maîtrise, et oblige à un arbitrage réel entre les deux.
-2. **L'échange d'échantillon** — deux rovers de deux équipes différentes doivent se passer l'objet. Ça suppose qu'elles se soient entendues à l'avance sur une hauteur de préhension : c'est le protocole de la séance 4, rejoué en mécanique.
 
 *Une remarque, qui n'est pas une épreuve.* « Métallique » appelle l'aimant, et l'aimant pose tout de suite la bonne question : un aimant fixe oblige à repousser l'objet jusqu'à la base en marche arrière, un aimant sur bras mobile permet de le lâcher. Le second demande une pièce imprimée — c'est le premier endroit du parcours où l'impression 3D sert un mécanisme et plus la décoration. Ne rien trancher à leur place : la contrainte suffit à faire naître les deux solutions.
 

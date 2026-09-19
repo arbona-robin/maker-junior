@@ -1,6 +1,6 @@
 # Séance 4 — Pilote ton rover à distance
 
-Tu poses ta plaque imprimée, puis tu construis le protocole qui fait obéir ton rover sans fil.
+Tu poses ta plaque imprimée, tu construis le protocole qui relie tes deux cartes, et tu pilotes ton rover sans fil.
 
 ## 1. Récupère ta plaque
 
@@ -29,7 +29,7 @@ Ta télécommande va envoyer des messages, ton rover va les écouter. Pour qu'il
 - **le même groupe** — sinon ils ne s'entendent pas
 - **le même vocabulaire** — sinon ils s'entendent sans se comprendre
 
-Ces deux accords, c'est un **protocole**. C'est à toi de le définir, avant d'écrire la moindre ligne.
+Ces deux accords, c'est un **protocole**. C'est à toi de le définir.
 
 ## 3. Le même groupe
 
@@ -47,7 +47,7 @@ Dans `au démarrage`, sur **tes deux cartes** :
 
 ## 4. Le même vocabulaire
 
-Reste dans `telecommande`. Ton programme sait déjà dans quel sens tu penches — il va maintenant le dire.
+Reste dans `telecommande`. Ton programme affiche déjà une flèche quand tu penches. Il va maintenant envoyer l'ordre qui va avec.
 
 Dans la branche qui affiche la flèche Nord, ajoute `envoyer la valeur … par radio` :
 
@@ -58,22 +58,27 @@ Dans la branche qui affiche la flèche Nord, ajoute `envoyer la valeur … par r
 Un message porte **une clé** et **une valeur**. La clé est le mot d'ordre : `avancer`. La valeur est un nombre qui voyage avec — ici, de combien tu penches.
 
 > [!CAUTION] Huit caractères, pas un de plus
-> Au-delà, la carte coupe la clé sans prévenir. `tournerAGauche` et `tournerADroite` arrivent toutes les deux comme `tournerA` : deux ordres, un seul message.
+> Au-delà, la carte coupe la clé sans prévenir. `tournerAGauche` et `tournerADroite` arrivent toutes les deux comme `tournerA`.
 
 Prends des clés courtes : `avancer`, `reculer`, `gauche`, `droite`, `arreter`.
 
 ## 5. Tes cinq ordres, à plat
 
-Complète les quatre autres branches. Profites-en pour **mettre tes tests à plat** : les `si` imbriqués de la séance 3 deviennent une seule suite de `sinon si`.
+Complète les quatre autres branches, une par direction.
+
+Profites-en pour **mettre tes tests à plat** : les `si` imbriqués de la séance 3 deviennent une seule suite de `sinon si`.
+
+> [!NOTE] Pourquoi c'est la même chose
+> Les conditions sont lues **dans l'ordre**, et la première qui est vraie gagne — les suivantes ne sont même pas regardées. Imbriqué ou à plat, le rover reçoit les mêmes ordres. À plat se relit.
+
+<details markdown>
+<summary>La solution</summary>
 
 <figure class="screenshot" markdown>
 ![Le programme de la télécommande : cinq branches sinon si à la suite, chacune affichant une flèche et envoyant sa clé par radio](../../../assets/rover-s04/23-telecommande-complete.png)
 </figure>
 
-> [!NOTE] Pourquoi c'est la même chose
-> Les conditions sont lues **dans l'ordre**, et la première qui est vraie gagne — les suivantes ne sont même pas regardées. Imbriqué ou à plat, le rover reçoit les mêmes ordres. À plat se relit.
-
-**Note tes cinq clés dans le carnet.** Ton rover devra utiliser exactement les mêmes.
+</details>
 
 ## 6. Ton rover écoute
 

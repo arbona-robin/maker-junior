@@ -195,6 +195,8 @@ git show 8fa3561:docs/projets/rover/seances/s01-base-motrice.md
 | La légende qui redit le texte | Texte : « écran vers l'extérieur, boutons A et B accessibles » ; légende : idem | 3 légendes sur la page, là où l'image seule ne suffit pas |
 | La phrase d'amorce | « Ton programme sait parler à l'écran, mais il ne connaît pas encore les moteurs. Il lui manque le vocabulaire. » | « **Extensions** → colle cette adresse → clique sur « motor ». » |
 | Le commentaire sur l'importance | « Prends-le au sérieux. » · « C'est le raisonnement le plus utile de la séance » · « Ce réflexe va te servir pendant les onze séances » | Rien |
+| La rallonge d'insistance | « … avant d'écrire la moindre ligne » · « … et il s'écrit avant le programme, pas pendant » · « … sans exception » | « C'est à toi de le définir. » · « Il s'écrit avant le programme. » |
+| La formule à effet | « deux ordres, un seul message » · « il va maintenant le dire » | Ce qui se passe, en clair : « les deux clés arrivent comme `tournerA` » · « il va envoyer l'ordre qui va avec » |
 | Le pourquoi en trois paragraphes | Encadré « Ce qu'une broche peut donner… », trois paragraphes | Deux lignes, puis → la fiche DFR0548 |
 | Deux voies détaillées | « Solution 1 — imprime » et « Solution 2 — recopie », chacune avec sa sous-section | Imprimer par défaut ; « Pas d'imprimante ? Recopie le plan » replié ; le détail dans la fiche carton |
 | Ce que l'image montre déjà | Les cotes du plan recopiées en texte sous le plan | « Trait plein : tu découpes. Pointillé : tu plies. » |
@@ -209,6 +211,9 @@ git show 8fa3561:docs/projets/rover/seances/s01-base-motrice.md
 - **Les encadrés sont courts aussi.** `[!NOTE]` : deux lignes. `[!CAUTION]` : une ligne par règle, sans justification ; la justification est dans la fiche.
 - **Au doute, renvoyer à la fiche** plutôt qu'expliquer dans la séance.
 - **Relire en coupant.** Pour chaque phrase : si je l'enlève, le jeune fait-il le pas moins bien ? Sinon, l'enlever.
+- **Pas de rallonge d'insistance.** Une phrase se termine quand l'information est donnée. Tout ce qui vient après pour appuyer — « avant d'écrire la moindre ligne », « et pas autrement », « sans exception » — se coupe. L'insistance ne fait pas lire davantage, elle allonge.
+- **Pas de formule à effet.** Une tournure qui se comprend en deux temps — « il va maintenant le dire », « deux ordres, un seul message » — se remplace par ce qu'elle veut dire. Le jeune lit en écran partagé, au milieu d'un atelier bruyant : il n'a pas la tête à décoder une image.
+- **Un exercice se présente toujours pareil.** Énoncé visible, solution repliée dans un `<details>`. Si une page montre le programme complet en clair à une section et le replie à la suivante, le jeune ne sait plus quand il est censé chercher. Un programme visible au fil du texte est un pas à recopier ; un programme replié est un exercice.
 
 **L'écran partagé** a deux conséquences : une capture se recadre sur ce qu'il faut voir, et on évite ce qui devient illisible en demi-largeur (tableau large, rangée de trois photos quand une suffit).
 

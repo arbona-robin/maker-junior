@@ -143,7 +143,7 @@ Deux clés qui commencent pareil deviennent **le même message**. Le programme e
 
 ### Se mettre d'accord avant de coder
 
-Deux machines qui échangent doivent s'entendre sur **le canal** et sur **le vocabulaire**. Cet accord s'appelle un **protocole**, et il s'écrit avant le programme — pas pendant.
+Deux machines qui échangent doivent s'entendre sur **le canal** et sur **le vocabulaire**. Cet accord s'appelle un **protocole**, et il s'écrit avant le programme.
 
 | Clé | Valeur | Ce que fait le rover |
 |---|---|---|
