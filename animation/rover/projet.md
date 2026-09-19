@@ -137,6 +137,9 @@ Il tient en deux listes, et les deux sont indépendantes. La première dit **ce 
 1. **Le parcours**, chronométré — un rover à la fois, le meilleur temps gagne
 2. **Le capture the flag**, avec l'échantillon non métallique — les équipes ensemble sur le terrain, la première à ramener l'objet à sa base gagne
 3. **L'échantillon métallique**, épreuve individuelle — ramener la pièce à la base
+4. **La pente maximale** — plan à angle réglable, on monte par paliers jusqu'au décrochage, le rover qui tient l'angle le plus raide gagne
+
+La pente apparaît dans les deux listes, et c'est volontaire : **9,5° est le plancher** que tout rover doit franchir pour être homologué, la pente maximale est **le défi au-dessus du plancher**. Un rover homologué de justesse court quand même l'épreuve, il la perd. Prévoir un plan incliné à angle réglable et un rapporteur — un plan fixe ne permet que le plancher.
 
 Chaque point de la liste 1 est une contrainte de conception. Chaque ligne de la liste 2 est un jeu. Un rover peut être homologué et perdre toutes les épreuves : c'est voulu, et ça se dit aux équipes dès la S5.
 
@@ -197,14 +200,13 @@ Chaque point de la liste 1 est une contrainte de conception. Chaque ligne de la 
 
 **Pistes à arbitrer.** Rien ci-dessous n'est décidé. Deux listes, à prendre ou à laisser ligne par ligne.
 
-*A — Réglages des épreuves déjà prévues. Aucune épreuve nouvelle : seulement une façon différente de les faire compter.*
+*A — Réglages, pas des épreuves. Trois façons de rendre plus exigeant ce qui est déjà prévu. La quatrième — la pente jugée en maximum atteint — est arbitrée et remontée en liste 2.*
 
-1. **La pente se juge en maximum atteint, pas en seuil franchi.** Plan à angle réglable, on monte par paliers jusqu'au décrochage et on note l'angle le plus raide tenu. Un seuil unique donne « réussi / raté » ; un maximum donne un classement, et rend visibles l'adhérence et la position du centre de gravité.
-2. **La garde au sol est annoncée comme une cote, dès la S5** : « il faut 10 mm libres sous le châssis ». Sinon le pack d'accus finit sous le rover sans que personne y pense, et le défaut se découvre à l'homologation, trop tard pour reconcevoir. Le rover des photos a déjà ce défaut.
-3. **L'échantillon de 4 × 4 × 10 est posé debout.** Couché, il se pousse jusqu'à la base sans rien saisir. Debout, il faut le prendre ou le faire basculer : deux familles de solutions, aucune évidente.
-4. **Le slalom se court en marche arrière**, ou avec l'opérateur dos au parcours et un coéquipier qui le guide à la voix. C'est ce qui donne du poids à « pilotable par un ou plusieurs opérateurs » : sans ça, la ligne se coche sans avoir rien coûté.
+1. **La garde au sol est annoncée comme une cote, dès la S5** : « il faut 10 mm libres sous le châssis ». Sinon le pack d'accus finit sous le rover sans que personne y pense, et le défaut se découvre à l'homologation, trop tard pour reconcevoir. Le rover des photos a déjà ce défaut.
+2. **L'échantillon de 4 × 4 × 10 est posé debout.** Couché, il se pousse jusqu'à la base sans rien saisir. Debout, il faut le prendre ou le faire basculer : deux familles de solutions, aucune évidente.
+3. **Le slalom se court en marche arrière**, ou avec l'opérateur dos au parcours et un coéquipier qui le guide à la voix. C'est ce qui donne du poids à « pilotable par un ou plusieurs opérateurs » : sans ça, la ligne se coche sans avoir rien coûté.
 
-*B — Épreuves supplémentaires, si la S12 a la place. Elles s'ajouteraient aux trois de la liste 2.*
+*B — Épreuves supplémentaires, si la S12 a la place. Ce sont les deux seules vraies épreuves en attente : elles s'ajouteraient aux quatre de la liste 2.*
 
 1. **Le transport fragile** — ramener l'échantillon posé sur un plateau non fixé. Les trois épreuves actuelles récompensent toutes la vitesse ; celle-ci récompense la maîtrise, et oblige à un arbitrage réel entre les deux.
 2. **L'échange d'échantillon** — deux rovers de deux équipes différentes doivent se passer l'objet. Ça suppose qu'elles se soient entendues à l'avance sur une hauteur de préhension : c'est le protocole de la séance 4, rejoué en mécanique.
