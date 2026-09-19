@@ -91,7 +91,7 @@ Pour tourner, essaie les deux façons et garde celle que tu préfères :
 
 Sur les photos, `arreter` contient les deux blocs `Motor` à `speed 0`. `Motor Stop All` fait la même chose en un seul bloc — les deux se valent.
 
-→ [L'extension DF-Driver](../../../fiches/extension-df-driver.md)
+→ [La carte DFR0548 et ses blocs](../../../fiches/carte-dfr0548.md#lextension-df-driver)
 
 </details>
 

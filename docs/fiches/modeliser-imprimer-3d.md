@@ -113,4 +113,4 @@ Une pièce se dessine pour **une fonction** et pour **une machine**.
 - **Ça doit tenir à l'usage** — assez de matière autour d'un trou, assez d'épaisseur sous un effort
 - **Ça doit s'imprimer** — une forme qui surplombe dans le vide a besoin de supports, ou d'être réorientée
 
-→ [Quand ça ne marche pas](depannage.md)
+→ [Déboguer](deboguer.md)

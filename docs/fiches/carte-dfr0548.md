@@ -1,4 +1,4 @@
-# La carte DFR0548
+# La carte DFR0548 et ses blocs
 
 C'est la carte sur laquelle s'enfiche ton micro:bit. Son nom complet est *Micro:bit Driver Expansion Board*. Elle fait le lien entre un micro:bit qui décide et des moteurs qui consomment.
 
@@ -42,7 +42,7 @@ Le micro:bit est alimenté par l'USB ou par sa propre pile. Les moteurs sont ali
 
 Conséquence pratique : ton programme peut tourner parfaitement — écran allumé, animations, sons — pendant que les moteurs restent immobiles, simplement parce que le pack est débranché ou l'interrupteur sur *off*. C'est même la panne numéro un.
 
-→ [Quand ça ne marche pas](depannage.md)
+→ [Déboguer](deboguer.md)
 
 ## Les branchements
 
@@ -73,6 +73,23 @@ L'ordre des deux fils d'un moteur détermine son sens de rotation. Il n'y a pas 
 
 **L'interrupteur** de la carte coupe l'alimentation des moteurs. Prends l'habitude de le laisser sur *off* pendant que tu manipules le rover.
 
+## Les dangers
+
+> [!CAUTION] Un moteur alimenté part tout seul
+> Un moteur branché part à pleine vitesse, entraîne ce à quoi il est fixé, et le fait tomber de la table. Avec une roue montée, un rover traverse un bureau en une seconde.
+>
+> **Tout essai de moteur se fait dans la boîte en carton de test.** Le rover y reste tant qu'il n'est pas sur la piste.
+
+Attention aussi aux cheveux longs, aux cordons de sweat et aux manches larges près d'un axe qui tourne : ça s'enroule très vite. Et avant de brancher, vérifie qu'aucun doigt n'est entre une roue et le châssis.
+
+> [!CAUTION] Les accus
+> Les accus NiMH ne prennent pas feu, mais ils délivrent beaucoup de courant d'un coup si on les met en court-circuit.
+>
+> - Respecte le `+` et le `−` en vissant les fils au bornier.
+> - Ne laisse pas deux fils dénudés se toucher.
+> - Si un pack chauffe, débranche-le et préviens.
+> - En fin de séance, les packs vont en charge, pas dans le bac.
+
 ## Comment le micro:bit lui parle
 
 Le micro:bit et la carte communiquent sur deux fils seulement, par un dialogue qu'on appelle **I2C**. Chaque appareil branché sur ces deux fils possède une adresse ; quand le micro:bit envoie un ordre, il commence par dire à qui il s'adresse, et seul l'appareil concerné répond.
@@ -81,4 +98,80 @@ C'est la même idée que d'appeler quelqu'un par son prénom dans une pièce où
 
 Tu n'as rien à programmer de tout ça : les blocs de l'extension s'en occupent.
 
-→ [L'extension DF-Driver](extension-df-driver.md) · [La radio](makecode-prise-en-main.md#la-radio)
+→ [La radio](makecode-prise-en-main.md#la-radio)
+
+MakeCode ne fournit pas les blocs de cette carte. Ils sont publiés à part, dans une extension écrite par DFRobot.
+
+## L'extension DF-Driver
+
+### L'installer
+
+Dans la palette, ouvre **Extensions**, et colle cette adresse dans la barre de recherche :
+
+```
+https://github.com/DFRobot/pxt-motor
+```
+
+<figure class="screenshot" markdown>
+![La fenêtre Extensions, l'URL collée, la carte « motor » dans les résultats](../assets/rover-s01/25-extension-url-collee.png)
+<figcaption>Clique sur la carte « motor » pour l'ajouter au projet.</figcaption>
+</figure>
+
+> [!NOTE] Ce qu'est une extension
+> Une extension est une bibliothèque de blocs écrite par quelqu'un d'autre, que tu ajoutes à ton éditeur. Personne ne réécrit depuis zéro le code qui pilote un composant : on part de ce que le fabricant a publié.
+>
+> MakeCode prévient que l'extension est « fournie par l'utilisateur, non approuvée par Microsoft ». C'est normal — Microsoft ne vérifie que ses propres extensions. Celle-ci vient de DFRobot, qui fabrique la carte.
+>
+> L'extension est attachée **au projet**, pas à l'ordinateur. Un nouveau projet repartira sans elle.
+
+Une catégorie orange, **DF-Driver**, apparaît alors dans la palette.
+
+<figure class="screenshot" markdown>
+![La catégorie DF-Driver dépliée, blocs Servo, Motor et Stepper](../assets/rover-s01/26-categorie-df-driver.png)
+<figcaption>Les blocs de l'extension sont en anglais : elle n'est pas traduite en français.</figcaption>
+</figure>
+
+### Les blocs
+
+#### Faire tourner un moteur
+
+```
+Motor  M1 ▾  dir  CW ▾  speed  100
+```
+
+| Champ | Valeurs | Ce que c'est |
+|---|---|---|
+| Premier menu | `M1` `M2` `M3` `M4` | Quel bornier de la carte. Sur le rover : `M1` et `M2`. |
+| `dir` | `CW` `CCW` | Le sens. `CW` pour *clockwise*, dans le sens des aiguilles d'une montre ; `CCW` dans l'autre. |
+| `speed` | `0` à `255` | La vitesse. `0` arrête, `255` est le maximum. |
+
+Le bloc **lance** le moteur et rend la main aussitôt. Le moteur continue de tourner jusqu'à ce qu'on lui dise d'arrêter : c'est pour ça qu'un programme moteur a toujours une pause puis un arrêt derrière.
+
+#### Arrêter
+
+```
+Motor stop  M1 ▾        ← un seul moteur
+Motor Stop All          ← tous les moteurs
+```
+
+Sur le rover, `Motor Stop All` est presque toujours le bon choix : il ne laisse rien tourner par oubli.
+
+> [!TIP] Un moteur qui tourne à l'envers
+> Ce n'est pas une erreur, c'est l'ordre des deux fils dans le bornier. Deux solutions, aussi valables l'une que l'autre : inverse les fils dans le bornier, ou change `CW` en `CCW` dans le bloc.
+>
+> Note ce que tu as choisi dans ton carnet de bord — dans deux séances, tu ne t'en souviendras plus.
+
+#### Les autres blocs
+
+La catégorie contient aussi `Servo` et plusieurs blocs `Stepper`, pour d'autres types de moteurs. On ne s'en sert pas encore.
+
+### Ce que veut dire `speed`
+
+`speed` n'est pas une vitesse en tours par minute, c'est une **puissance envoyée au moteur**. La vitesse réelle dépend de ce que le rover a à pousser.
+
+> [!NOTE] Le seuil de démarrage
+> En dessous d'une certaine valeur, le moteur ne démarre pas du tout : il bourdonne sans tourner. Il faut plus de puissance pour vaincre le frottement de départ que pour entretenir le mouvement une fois lancé.
+>
+> Et ce seuil n'est pas fixe : un rover chargé démarre plus tard qu'un rover à vide. C'est une chose que tu constateras toi-même en équipant ton rover.
+
+→ [Rouler droit et tourner](rouler-droit.md) · [Déboguer](deboguer.md)

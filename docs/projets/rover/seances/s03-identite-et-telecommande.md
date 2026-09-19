@@ -188,7 +188,7 @@ Remarque où descend `effacer l'écran` — tout au fond, là où **aucun** des 
 
 </details>
 
-→ [D'une mesure à une décision](../../../fiches/mesure-vers-decision.md)
+→ [Les capteurs, et la décision](../../../fiches/makecode-prise-en-main.md#les-capteurs-et-la-decision)
 
 ---
 

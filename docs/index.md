@@ -20,7 +20,7 @@ Il sert à trois moments :
 
 - **[Fiches](fiches/index.md)**
 
-    Les références qui ne dépendent pas d'une séance : la sécurité, le carton, la carte, MakeCode, le dépannage. On y renvoie depuis les séances.
+    Les références qui ne dépendent pas d'une séance : le carton, la carte, MakeCode, la 3D, le débogage. On y renvoie depuis les séances.
 
 - **[Carnet de bord](carnet-de-bord/index.md)**
 

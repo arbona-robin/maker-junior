@@ -65,4 +65,4 @@ Mesure-la : descends la vitesse petit à petit jusqu'à ce que le rover refuse d
 
 Elle remonte quand le rover s'alourdit, et quand les accus faiblissent en fin de séance.
 
-→ [Quand ça ne marche pas](depannage.md) · [L'extension DF-Driver](extension-df-driver.md)
+→ [Déboguer](deboguer.md) · [La carte DFR0548 et ses blocs](carte-dfr0548.md)

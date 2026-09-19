@@ -83,15 +83,12 @@ nav:
       - "Séance 4 — Pilote ton rover à distance": projets/rover/seances/s04-pilote-a-distance.md
   - Fiches:
       - fiches/index.md
-      - "Sécurité à l'atelier": fiches/securite-atelier.md
       - "Tracer, découper, plier le carton": fiches/carton-tracer-decouper-plier.md
-      - "La carte DFR0548": fiches/carte-dfr0548.md
+      - "La carte DFR0548 et ses blocs": fiches/carte-dfr0548.md
       - "Rouler droit et tourner": fiches/rouler-droit.md
       - "Prendre en main MakeCode": fiches/makecode-prise-en-main.md
-      - "L'extension DF-Driver": fiches/extension-df-driver.md
       - "Modéliser et imprimer en 3D": fiches/modeliser-imprimer-3d.md
-      - "D'une mesure à une décision": fiches/mesure-vers-decision.md
-      - "Quand ça ne marche pas": fiches/depannage.md
+      - "Déboguer": fiches/deboguer.md
   - Carnet de bord:
       - carnet-de-bord/index.md
       - Rover:

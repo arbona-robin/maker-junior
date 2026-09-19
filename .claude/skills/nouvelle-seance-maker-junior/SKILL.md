@@ -117,6 +117,12 @@ Si oui → la séance y **renvoie** (`→ [Titre](../../../fiches/xxx.md)`) au l
 
 **b. Sinon, la notion est-elle transverse ?** Une notion mérite une fiche si elle sera consultée hors de cette séance, ou si une séance ultérieure s'appuiera dessus. Un geste d'atelier, un branchement, un outil logiciel : oui. Un détail propre à un montage : non.
 
+**Et même alors, la bonne réponse est presque toujours une section dans une fiche existante.** Le livre couvrira trois parcours : une fiche de plus à chaque notion transverse et l'index devient illisible. Avant d'en créer une, chercher celle qui devrait l'accueillir — une carte et l'extension qui la pilote sont un seul sujet, un capteur et la décision qu'on en tire aussi. On ne crée une fiche que pour un sujet qu'aucune n'englobe.
+
+**La sécurité ne fait pas fiche à part.** Chaque règle vit dans la fiche du geste qu'elle protège : le cutter dans la fiche carton, les moteurs et les accus dans la fiche de la carte. Une fiche sécurité séparée est le meilleur moyen qu'elle ne soit pas lue au moment où elle compte. Elle reste par ailleurs en toutes lettres dans la séance, au moment du geste.
+
+**Les titres de fiche sont des verbes à l'infinitif** quand la fiche décrit ce qu'on fait — *Tracer, découper, plier le carton*, *Rouler droit et tourner*, *Déboguer* — et des noms quand elle décrit un objet — *La carte DFR0548 et ses blocs*. Pas de titre en forme de question ni de circonstance : « Quand ça ne marche pas » se cherche mal et se range mal.
+
 **c. Sinon** → elle reste dans la séance, en encadré `[!NOTE]`.
 
 Les consignes de sécurité font exception : elles sont **en toutes lettres dans la séance, au moment du geste**, et la fiche en donne la version longue. Jamais un simple lien.

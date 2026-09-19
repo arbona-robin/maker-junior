@@ -1,4 +1,4 @@
-# Quand ça ne marche pas
+# Déboguer
 
 Chercher une panne, c'est **séparer ce qui marche de ce qui ne marche pas**, pour ne chercher que dans la moitié qui reste.
 
@@ -52,3 +52,5 @@ Trois questions à te poser.
 
 > [!TIP] Note ta panne
 > Quand tu as trouvé, écris-la dans ton carnet de bord : le symptôme, la cause, la solution. Tu la retrouveras — et quelqu'un d'autre l'aura aussi.
+
+→ [La carte DFR0548 et ses blocs](carte-dfr0548.md) · [Rouler droit et tourner](rouler-droit.md)

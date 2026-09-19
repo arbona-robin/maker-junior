@@ -34,7 +34,24 @@ Si tu traces directement sur le carton, utilise un crayon à papier plutôt qu'u
 
 ## Découper
 
-→ Les règles de sécurité sont dans [Sécurité à l'atelier](securite-atelier.md).
+Le cutter est l'outil qui envoie des gens aux urgences chaque année dans les ateliers. Pas parce qu'il est dangereux en soi, mais parce qu'on l'utilise vite et sans réfléchir.
+
+> [!CAUTION] Les cinq règles du cutter
+> **Règle métallique obligatoire.** Une règle en plastique se fait mordre par la lame, qui dérape ensuite dans la main.
+>
+> **La main d'appui reste derrière la règle.** Jamais devant la lame, jamais dans son axe. Si la lame ripe, elle part droit devant.
+>
+> **Plusieurs passes légères.** Le carton se coupe en trois ou quatre allers-retours. Forcer, c'est faire déraper la lame et déchirer le carton.
+>
+> **Sur le tapis de découpe, jamais sur la table.** La lame abîme la table, la table abîme la lame.
+>
+> **Protection remise dès que tu poses l'outil.** La lame ne se rentre pas : c'est la protection qui la couvre. Même pour deux secondes. Même pour attraper la règle.
+
+Coupe en tirant la lame vers toi, pas en poussant : tu contrôles mieux. Tiens le cutter presque à plat, à quarante-cinq degrés environ, pas à la verticale.
+
+Si la lame accroche au lieu de glisser, elle est usée : préviens l'animateur, qui la change. Une lame émoussée demande de la force, et la force fait déraper.
+
+En fin de séance, **les cutters sont comptés**. Un cutter qui manque, c'est une lame sans protection qui traîne quelque part. Les chutes de carton se trient au même moment.
 
 Pour un résultat net :
 
@@ -60,3 +77,5 @@ Quand une pièce en carton doit encaisser des efforts, deux techniques suffisent
 **Le contrecollage** — coller deux ou trois épaisseurs l'une sur l'autre, cannelures croisées. On obtient une plaque bien plus rigide qu'une simple épaisseur, sans matériel particulier.
 
 **Le gousset** — un petit triangle collé dans un angle. Il empêche l'angle de s'ouvrir, et c'est presque toujours par là qu'une structure en carton lâche.
+
+→ [Modéliser et imprimer en 3D](modeliser-imprimer-3d.md)

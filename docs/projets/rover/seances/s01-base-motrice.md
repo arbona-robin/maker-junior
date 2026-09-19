@@ -19,7 +19,7 @@ Branché sur les accus, il tourne à fond, dans un seul sens.
 > [!NOTE] Le micro:bit commande, la carte exécute
 > Une broche du micro:bit allume une LED, pas un moteur. La carte prend l'énergie des accus, et règle sens et vitesse sur ordre du micro:bit.
 
-→ [La carte DFR0548](../../../fiches/carte-dfr0548.md)
+→ [La carte DFR0548 et ses blocs](../../../fiches/carte-dfr0548.md)
 
 ## 3. Assemble ton électronique
 
@@ -134,7 +134,7 @@ L'avertissement « non approuvée par Microsoft » est normal : l'extension vien
 <figcaption>La catégorie DF-Driver apparaît.</figcaption>
 </figure>
 
-→ [L'extension DF-Driver](../../../fiches/extension-df-driver.md)
+→ [La carte DFR0548 et ses blocs](../../../fiches/carte-dfr0548.md#lextension-df-driver)
 
 ## 8. Fais tourner les moteurs
 
@@ -163,7 +163,7 @@ Interrupteur sur **on**, puis vérifie :
 > [!TIP] La flèche s'affiche, mais rien ne tourne ?
 > Le problème n'est pas dans le code. Vérifie l'interrupteur, les fils, les accus.
 
-→ [Quand ça ne marche pas](../../../fiches/depannage.md)
+→ [Déboguer](../../../fiches/deboguer.md)
 
 > [!IMPORTANT] Point de contrôle
 > Fais valider ton électronique. Puis interrupteur sur **off**, USB débranché.
@@ -207,7 +207,7 @@ Colle la feuille sur la face **intérieure** des plis.
 ![Découpe au cutter le long d'une règle métallique, la main d'appui posée derrière la règle](../../../assets/rover-s01/02-decoupe-regle-metallique.jpg)
 </figure>
 
-→ [Sécurité à l'atelier](../../../fiches/securite-atelier.md)
+→ [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md#decouper)
 
 ### Plie
 

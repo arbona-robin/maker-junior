@@ -4,17 +4,13 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
 <div class="grid cards" markdown>
 
-- **[Sécurité à l'atelier](securite-atelier.md)**
-
-    Le cutter, les outils, les moteurs qui partent tout seuls.
-
 - **[Tracer, découper, plier le carton](carton-tracer-decouper-plier.md)**
 
-    Reporter un plan, couper net, obtenir un pli d'équerre.
+    Reporter un plan, couper net au cutter, obtenir un pli d'équerre.
 
-- **[La carte DFR0548](carte-dfr0548.md)**
+- **[La carte DFR0548 et ses blocs](carte-dfr0548.md)**
 
-    Pourquoi elle est là, où se branche quoi.
+    Pourquoi elle est là, où se branche quoi, et l'extension qui la pilote.
 
 - **[Rouler droit et tourner](rouler-droit.md)**
 
@@ -22,21 +18,13 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
 - **[Prendre en main MakeCode](makecode-prise-en-main.md)**
 
-    L'interface, le téléversement, les fonctions, les variables et la radio.
-
-- **[L'extension DF-Driver](extension-df-driver.md)**
-
-    L'installer, et les blocs qu'elle ajoute.
+    L'interface, le téléversement, les fonctions, les variables, les capteurs et la radio.
 
 - **[Modéliser et imprimer en 3D](modeliser-imprimer-3d.md)**
 
     Dessiner dans Tinkercad, exporter, et ce que l'imprimante peut faire.
 
-- **[D'une mesure à une décision](mesure-vers-decision.md)**
-
-    Lire un capteur, choisir un seuil, en tirer une action.
-
-- **[Quand ça ne marche pas](depannage.md)**
+- **[Déboguer](deboguer.md)**
 
     Trouver la panne au lieu de tout reprendre au hasard.
 

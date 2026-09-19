@@ -145,7 +145,7 @@ Téléverse les deux programmes, débranche l'USB, passe sur accus.
 - [ ] Ton rover qui avance, recule, tourne et s'arrête, sans fil
 - [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s04.md) rempli
 
-→ [Prendre en main MakeCode](../../../fiches/makecode-prise-en-main.md) · [Quand ça ne marche pas](../../../fiches/depannage.md)
+→ [Prendre en main MakeCode](../../../fiches/makecode-prise-en-main.md) · [Déboguer](../../../fiches/deboguer.md)
 
 ## Avant de partir
 
