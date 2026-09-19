@@ -1,4 +1,4 @@
-# Le livre du rover — règles du dépôt
+# Le livre Maker Junior — règles du dépôt
 
 Site MkDocs Material. `docs/` est publié, `animation/` ne l'est pas.
 

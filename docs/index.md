@@ -1,4 +1,4 @@
-# Le livre du rover
+# Le livre Maker Junior
 
 Ce livre est le support des ateliers maker. Tout ce qu'on fabrique, branche et programme en séance est écrit ici — avec les photos, les plans et les programmes.
 

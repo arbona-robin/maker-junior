@@ -1,4 +1,4 @@
-# Le livre du rover
+# Le livre Maker Junior
 
 Le support écrit des ateliers maker : fabrication, électronique et programmation. Écrit en Markdown, publié en site statique avec [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
