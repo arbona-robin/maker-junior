@@ -11,7 +11,7 @@ Tu poses ta plaque imprimée, puis tu construis le protocole qui fait obéir ton
 </figure>
 
 <figure markdown>
-![La plaque bleue terminée sur le plateau, le nom robrov découpé dedans, et un petit morceau de plastique détaché à côté](../../../assets/rover-s04/02-plaque-imprimee.jpg)
+![La plaque bleue terminée sur le plateau de l'imprimante, le nom robrov découpé dedans](../../../assets/rover-s04/02-plaque-imprimee.jpg)
 </figure>
 
 <figure markdown>
@@ -20,10 +20,7 @@ Tu poses ta plaque imprimée, puis tu construis le protocole qui fait obéir ton
 
 </div>
 
-Regarde-la de près avant de la monter : les couches, les lettres, ce qui a bavé. Puis deux élastiques, et elle tient.
-
-> [!NOTE] Le petit morceau à côté
-> C'est l'intérieur d'une lettre que plus rien ne retenait. L'imprimante l'a posé quand même, à plat sur le plateau.
+Regarde-la de près avant de la monter : les couches, les lettres, ce qui a bavé. Puis glisse-la sous les élastiques déjà en place sur ton rover.
 
 ## 2. Deux machines qui ne se sont jamais parlé
 
@@ -32,11 +29,11 @@ Ta télécommande va envoyer des messages, ton rover va les écouter. Pour qu'il
 - **le même groupe** — sinon ils ne s'entendent pas
 - **le même vocabulaire** — sinon ils s'entendent sans se comprendre
 
-Ces deux accords, c'est un **protocole**. Personne ne te le donne : tu l'écris.
+Ces deux accords, c'est un **protocole**. C'est à toi de le définir, avant d'écrire la moindre ligne.
 
 ## 3. Le même groupe
 
-Dans la salle, une douzaine de télécommandes émettent en même temps. Ton groupe, c'est **le numéro de ton ordinateur**.
+Dans la salle, une douzaine de télécommandes émettent en même temps. Pour ne pas piloter le rover du voisin — ni lui le tien — chacun choisit son **groupe**. Le tien, c'est **le numéro de ton ordinateur**.
 
 Dans `au démarrage`, sur **tes deux cartes** :
 
@@ -46,11 +43,11 @@ Dans `au démarrage`, sur **tes deux cartes** :
 </figure>
 
 > [!CAUTION] Le même des deux côtés
-> Une carte sur le groupe 3 n'entend pas une carte sur le groupe 4. Et rien ne te le dira : juste le silence.
+> Une carte sur le groupe 3 n'entend pas une carte sur le groupe 4.
 
 ## 4. Le même vocabulaire
 
-Ouvre `telecommande`. Ton programme sait déjà dans quel sens tu penches — il va maintenant le dire.
+Reste dans `telecommande`. Ton programme sait déjà dans quel sens tu penches — il va maintenant le dire.
 
 Dans la branche qui affiche la flèche Nord, ajoute `envoyer la valeur … par radio` :
 
@@ -61,12 +58,7 @@ Dans la branche qui affiche la flèche Nord, ajoute `envoyer la valeur … par r
 Un message porte **une clé** et **une valeur**. La clé est le mot d'ordre : `avancer`. La valeur est un nombre qui voyage avec — ici, de combien tu penches.
 
 > [!CAUTION] Huit caractères, pas un de plus
-> Au-delà, la carte coupe la clé sans prévenir.
-
-<figure class="screenshot" markdown>
-![Deux branches du programme, l'une envoyant la clé tournerAGauche, l'autre la clé tournerADroite](../../../assets/rover-s04/22-cles-trop-longues.png)
-<figcaption>Ces deux-là arrivent toutes les deux comme <code>tournerA</code>. Le rover tournerait toujours du même côté.</figcaption>
-</figure>
+> Au-delà, la carte coupe la clé sans prévenir. `tournerAGauche` et `tournerADroite` arrivent toutes les deux comme `tournerA` : deux ordres, un seul message.
 
 Prends des clés courtes : `avancer`, `reculer`, `gauche`, `droite`, `arreter`.
 
@@ -107,15 +99,16 @@ Pour comparer deux textes, il te faut le bloc de comparaison à **cases blanches
 
 Ajoute `reculer`, `gauche`, `droite` et `arreter`. Fais afficher **une flèche** dans chaque branche : c'est elle qui te dira que le message est arrivé.
 
+Termine par un `sinon`, tout en bas. Il attrape les clés que ton rover ne connaît pas — une faute de frappe, une clé trop longue, le message d'un voisin. Fais-lui afficher une croix : « j'ai reçu quelque chose, je n'ai pas compris » n'est pas la même panne que « je ne reçois rien », et ça ne se cherche pas au même endroit.
+
 <details markdown>
 <summary>La solution</summary>
 
 <figure class="screenshot" markdown>
 ![Le programme du rover : cinq branches qui comparent nom à chaque clé, appellent la fonction correspondante et affichent une flèche, puis un sinon qui affiche une icône](../../../assets/rover-s04/26-rover-complet.png)
-<figcaption>Deux flèches du milieu sont à corriger : ici <code>gauche</code> affiche Est et <code>droite</code> affiche Ouest. Mets les mêmes que sur ta télécommande.</figcaption>
 </figure>
 
-Le dernier `sinon` attrape les clés que le rover ne connaît pas. Il affiche une croix : tu sauras qu'un message est arrivé et qu'il n'a pas été compris.
+Les flèches sont les mêmes que sur la télécommande, dans le même ordre. C'est ce qui rend le contrôle possible d'un coup d'œil.
 
 </details>
 
@@ -130,9 +123,9 @@ Téléverse les deux programmes, débranche l'USB, passe sur accus.
 
 ## 9. Va plus loin
 
-- **Trop sensible, ou pas assez ?** Une seule sorte de nombre décide de ça, dans ta télécommande. Trouve-la, et change-la.
+- **Trop sensible, ou pas assez ?** Deux nombres décident de ça dans ta télécommande. Trouve lesquels, et dans quel sens les faire varier.
+- **Deux vitesses.** Lente ou rapide, selon un seuil d'inclinaison de plus.
 - **La valeur voyage, et personne ne s'en sert.** Côté rover, `valeur` dit de combien tu penches. Fais-en une vitesse — mais `speed` s'arrête à `255`, et ton inclinaison monte bien plus haut.
-- **Deux vitesses.** Plus simple que la précédente : lente ou rapide, selon un seuil.
 - **Une manœuvre au bouton.** `lorsque le bouton A est pressé` envoie une clé de plus. Côté rover, une branche de plus — et une manœuvre entière qui se déroule toute seule.
 - **Invente ta figure** : demi-tour, créneau, huit. Puis donne-lui un nom de huit caractères.
 

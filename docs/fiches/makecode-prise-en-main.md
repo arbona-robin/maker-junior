@@ -130,12 +130,16 @@ En face, `quand une donnée est reçue par radio` se déclenche tout seul à cha
 On teste alors `nom` pour savoir quoi faire. Attention au bloc de comparaison : il en existe deux, et celui qui compare des **textes** a deux cases blanches. Celui qui compare des nombres ne marchera pas ici.
 
 > [!CAUTION] La clé fait 8 caractères, pas un de plus
-> Au-delà, la carte tronque sans prévenir, et deux clés qui commencent pareil deviennent le même message.
+> Au-delà, la carte tronque sans prévenir.
 
-<figure class="screenshot" markdown>
-![Deux branches d'un programme, l'une envoyant la clé tournerAGauche, l'autre la clé tournerADroite](../assets/rover-s04/22-cles-trop-longues.png)
-<figcaption><code>tournerAGauche</code> et <code>tournerADroite</code> arrivent toutes les deux comme <code>tournerA</code>.</figcaption>
-</figure>
+| Ce que tu tapes | Ce qui part vraiment |
+|---|---|
+| `tournerAGauche` | `tournerA` |
+| `tournerADroite` | `tournerA` |
+| `gauche` | `gauche` |
+| `droite` | `droite` |
+
+Deux clés qui commencent pareil deviennent **le même message**. Le programme est juste, il se relit sans qu'on trouve rien, et le rover désobéit : compte les caractères avant de coder.
 
 ### Se mettre d'accord avant de coder
 

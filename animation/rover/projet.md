@@ -121,21 +121,24 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 **Le cahier des charges, remis en séance 5.** Les obstacles et les échantillons sont **présentés physiquement** ce jour-là : un cahier des charges qu'on peut prendre en main se conçoit mieux qu'un cahier des charges lu.
 
-Le rover d'équipe doit :
+Il tient en deux listes, et les deux sont indépendantes. La première dit **ce que le rover doit savoir faire** — c'est ce qui sera vérifié à l'homologation, rover par rover, sans chronomètre ni adversaire. La seconde dit **ce qu'on leur fera courir** en S12 — c'est la compétition, et elle suppose l'homologation acquise.
 
-- être **pilotable à distance par un ou plusieurs opérateurs**
-- **monter une pente** de 5 cm de haut sur 30 cm de long, soit environ **9,5°**
-- **franchir des obstacles ponctuels** de 1 × 1 cm, de largeur supérieure à celle du rover
-- **ramener deux types d'échantillons** : un métallique fin, de quelques millimètres de haut ; un non métallique plus gros, encombrement 4 × 4 × 10 cm
-- **évoluer entre des obstacles**
+**Liste 1 — Caractéristiques techniques (vérifiées à l'homologation, S11)**
 
-Les trois épreuves, à préparer à partir de la S10 et à courir en S12 :
+1. **Pilotage à distance** par un ou plusieurs opérateurs
+2. **Pente** : monter un plan incliné de 5 cm de haut sur 30 cm de long, soit environ **9,5°**
+3. **Obstacle ponctuel** : franchir une barre de 1 × 1 cm de section, plus large que le rover
+4. **Échantillon métallique** : saisir et transporter une pièce fine, quelques millimètres de haut
+5. **Échantillon non métallique** : saisir et transporter un objet de 4 × 4 × 10 cm
+6. **Slalom** : évoluer entre des obstacles sans les toucher
 
-| Épreuve | Forme | Ce qu'elle récompense |
-|---|---|---|
-| Parcours | Chronométré | Vitesse et pilotage |
-| Échantillon non métallique | Capture the flag — premier à le ramener à la base | Préhension du gros objet, stratégie d'équipe |
-| Échantillon métallique | Individuelle — ramener l'échantillon à la base | Captation du petit objet plat |
+**Liste 2 — Épreuves (courues en S12)**
+
+1. **Le parcours**, chronométré — un rover à la fois, le meilleur temps gagne
+2. **Le capture the flag**, avec l'échantillon non métallique — les équipes ensemble sur le terrain, la première à ramener l'objet à sa base gagne
+3. **L'échantillon métallique**, épreuve individuelle — ramener la pièce à la base
+
+Chaque point de la liste 1 est une contrainte de conception. Chaque ligne de la liste 2 est un jeu. Un rover peut être homologué et perdre toutes les épreuves : c'est voulu, et ça se dit aux équipes dès la S5.
 
 ## Séance 6 — Phase 2 — Exploration & création
 
@@ -192,23 +195,21 @@ Les trois épreuves, à préparer à partir de la S10 et à courir en S12 :
 - **La valorisation finale n'est pas confirmée.** Les Jeux, un public, un jury : rien n'est acté. La fiche communication ne promet donc pas d'événement public. À reprendre ici et dans la com dès que c'est tranché.
 - **Ce que chaque jeune emporte** n'est pas décidé : le rover final appartient à une équipe de deux ou trois. Voir la note de [`communication.md`](communication.md).
 
-**Les épreuves — pistes à arbitrer.** Le cahier des charges de la S5 est arrêté ; la forme précise des épreuves ne l'est pas. Deux listes séparées, à prendre ou à laisser indépendamment l'une de l'autre.
+**Pistes à arbitrer.** Rien ci-dessous n'est décidé. Deux listes, à prendre ou à laisser ligne par ligne.
 
-*A — Précisions sur les épreuves déjà décidées. Aucune épreuve nouvelle, seulement une façon de les faire compter.*
+*A — Réglages des épreuves déjà prévues. Aucune épreuve nouvelle : seulement une façon différente de les faire compter.*
 
-| Épreuve | Ce qui change | Pourquoi |
-|---|---|---|
-| La pente | Plan à **angle réglable**. On monte par paliers jusqu'au décrochage, et on note le maximum atteint. | Un seuil unique donne « réussi / raté ». Un maximum donne un classement, et rend visibles l'adhérence et la position du centre de gravité. |
-| Le 1 × 1 cm | Annoncer la **garde au sol comme une cote** dès la S5 : « il faut 10 mm sous le châssis ». | Sinon le pack d'accus finit sous le rover sans que personne y pense, et le défaut se découvre à l'homologation. Le rover des photos a déjà ce défaut. |
-| L'échantillon 4 × 4 × 10 | Le poser **debout**, pas couché. | Couché, il se pousse. Debout, il faut le saisir ou le faire basculer : deux familles de solutions, aucune évidente. |
-| Le parcours entre obstacles | Chronométré **en marche arrière**, ou opérateur dos au parcours et coéquipier qui guide à la voix. | C'est ce qui donne du poids à la ligne « un ou plusieurs opérateurs », au lieu d'une case qu'on coche sans y penser. |
+1. **La pente se juge en maximum atteint, pas en seuil franchi.** Plan à angle réglable, on monte par paliers jusqu'au décrochage et on note l'angle le plus raide tenu. Un seuil unique donne « réussi / raté » ; un maximum donne un classement, et rend visibles l'adhérence et la position du centre de gravité.
+2. **La garde au sol est annoncée comme une cote, dès la S5** : « il faut 10 mm libres sous le châssis ». Sinon le pack d'accus finit sous le rover sans que personne y pense, et le défaut se découvre à l'homologation, trop tard pour reconcevoir. Le rover des photos a déjà ce défaut.
+3. **L'échantillon de 4 × 4 × 10 est posé debout.** Couché, il se pousse jusqu'à la base sans rien saisir. Debout, il faut le prendre ou le faire basculer : deux familles de solutions, aucune évidente.
+4. **Le slalom se court en marche arrière**, ou avec l'opérateur dos au parcours et un coéquipier qui le guide à la voix. C'est ce qui donne du poids à « pilotable par un ou plusieurs opérateurs » : sans ça, la ligne se coche sans avoir rien coûté.
 
-*B — Épreuves supplémentaires, si le temps de la S12 le permet. Elles s'ajoutent aux trois déjà prévues.*
+*B — Épreuves supplémentaires, si la S12 a la place. Elles s'ajouteraient aux trois de la liste 2.*
 
-- **Le transport fragile** — ramener l'échantillon posé sur un plateau non fixé. Sans elle, les trois épreuves récompensent toutes la vitesse ; celle-ci récompense la douceur, et oblige à un vrai arbitrage de conception.
-- **L'échange d'échantillon** — deux rovers de deux équipes doivent se passer l'objet. Suppose que les deux se soient entendus sur une hauteur de préhension. C'est le protocole de la S4, mais mécanique.
+1. **Le transport fragile** — ramener l'échantillon posé sur un plateau non fixé. Les trois épreuves actuelles récompensent toutes la vitesse ; celle-ci récompense la maîtrise, et oblige à un arbitrage réel entre les deux.
+2. **L'échange d'échantillon** — deux rovers de deux équipes différentes doivent se passer l'objet. Ça suppose qu'elles se soient entendues à l'avance sur une hauteur de préhension : c'est le protocole de la séance 4, rejoué en mécanique.
 
-**Une remarque sur l'échantillon métallique.** « Métallique » appelle l'aimant, et l'aimant pose tout de suite la bonne question : un aimant fixe oblige à repousser l'objet jusqu'à la base en marche arrière, un aimant sur bras mobile permet de le lâcher. Le second demande une pièce imprimée — c'est le premier endroit du parcours où l'impression 3D sert le mécanisme et pas la décoration. Ne pas trancher à leur place : la contrainte suffit à faire naître les deux solutions.
+*Une remarque, qui n'est pas une épreuve.* « Métallique » appelle l'aimant, et l'aimant pose tout de suite la bonne question : un aimant fixe oblige à repousser l'objet jusqu'à la base en marche arrière, un aimant sur bras mobile permet de le lâcher. Le second demande une pièce imprimée — c'est le premier endroit du parcours où l'impression 3D sert un mécanisme et plus la décoration. Ne rien trancher à leur place : la contrainte suffit à faire naître les deux solutions.
 
 **Le découpage LP et le rythme réel ne coïncident pas.** Les phases LP sont 1–3 / 4–9 / 10–12 ; le parcours bascule de l'individuel au collectif entre la S4 et la S5. Ce n'est pas un problème — la S4 clôt le rover individuel à l'intérieur de la phase 2 — mais il faut le savoir en lisant le planning.
 
