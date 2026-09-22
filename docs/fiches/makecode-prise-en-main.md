@@ -86,7 +86,7 @@ Une variable est une **boîte nommée** qui retient une valeur. Tu y ranges quel
 **Variables** → **Créer une variable…** → donne-lui un nom qui dit ce qu'elle contient.
 
 <figure class="screenshot" markdown>
-![La fenêtre « Nom de la nouvelle variable » dans MakeCode](../assets/rover-s03/40-creer-variable.png)
+![La fenêtre « Nom de la nouvelle variable » dans MakeCode](../assets/rover-s03/41-creer-variable.png)
 </figure>
 
 Deux blocs suffisent : `définir <nom> à …` pour y mettre une valeur, et le bloc `<nom>` lui-même pour la relire.
@@ -151,7 +151,7 @@ Un seuil est la valeur à partir de laquelle tu décides que **ça compte**.
 Les blocs sont dans **Logique** : `si … alors`, et le `+` du bloc pour ajouter `sinon si` et `sinon`.
 
 <figure class="screenshot" markdown>
-![La catégorie Logique de MakeCode, avec les blocs si/alors et les comparaisons](../assets/rover-s03/41-categorie-logique.png)
+![La catégorie Logique de MakeCode, avec les blocs si/alors et les comparaisons](../assets/rover-s03/42-categorie-logique.png)
 </figure>
 
 Range d'abord la mesure dans une variable :
@@ -173,7 +173,12 @@ L'ordre compte : le premier test vrai gagne, les suivants ne sont même pas lus.
 > [!CAUTION] `montrer la flèche` bloque 400 ms
 > `montrer la flèche`, `montrer l'icône` et `montrer les LED` **attendent après avoir affiché** — 400 ms, et en blocs cette durée n'est pas réglable. Dans une boucle qui lit un capteur en continu, le programme ne relit la mesure que deux fois et demie par seconde.
 >
-> `allumer x y`, dans **LED**, n'attend pas. Un point sur la grille de 5 × 5 : `x` de `0` à gauche à `4` à droite, `y` de `0` en haut à `4` en bas.
+> `allumer x y`, dans **LED**, n'attend pas.
+
+<figure markdown>
+![Schéma du micro:bit : la grille de 5 sur 5 LED, colonnes numérotées 0 à 4 pour x, lignes numérotées 0 à 4 pour y, avec le repère X vers la droite et Y vers le bas](../assets/rover-s03/34-grille-led-xy.png)
+<figcaption>Le coin en haut à gauche est `0,0`.</figcaption>
+</figure>
 
 Cinq points suffisent à faire une manette lisible : haut `2,0`, bas `2,4`, gauche `0,2`, droite `4,2`, repos `2,2`.
 

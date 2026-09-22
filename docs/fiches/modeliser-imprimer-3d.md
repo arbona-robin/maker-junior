@@ -7,13 +7,13 @@ Dessiner une pièce à l'écran et la tenir dans la main une heure plus tard. En
 Tu te connectes par [tinkercad.com/joinclass](https://www.tinkercad.com/joinclass), avec le code de classe et ton identifiant d'élève. Pas d'adresse mail : les comptes sont créés par l'animateur.
 
 <figure class="screenshot" markdown>
-![Le tableau de bord Tinkercad, avec le bouton « Créer une première conception 3D »](../assets/rover-s03/37-tinkercad-accueil.png)
+![Le tableau de bord Tinkercad, avec le bouton « Créer une première conception 3D »](../assets/rover-s03/38-tinkercad-accueil.png)
 </figure>
 
 **Conceptions 3D** → **Créer** ouvre le *plan de construction* : la grille sur laquelle tu poses tes formes. Les unités sont des **millimètres**.
 
 <figure class="screenshot" markdown>
-![Le plan de construction vide de Tinkercad, avec la palette des formes simples à droite](../assets/rover-s03/38-plan-de-construction.png)
+![Le plan de construction vide de Tinkercad, avec la palette des formes simples à droite](../assets/rover-s03/39-plan-de-construction.png)
 </figure>
 
 ### Les quatre gestes
@@ -91,7 +91,7 @@ Une imprimante 3D dépose du plastique fondu **couche par couche**, de bas en ha
 L'imprimante n'exécute pas ton modèle : elle exécute des déplacements. Le **slicer** tranche ta pièce en couches et écrit la liste des mouvements à exécuter.
 
 <figure class="screenshot" markdown>
-![Le slicer affichant la plaque tranchée, avec l'aperçu des trajets et le réglage de hauteur de couche](../assets/rover-s03/39-slicer-apercu.png)
+![Le slicer affichant la plaque tranchée, avec l'aperçu des trajets et le réglage de hauteur de couche](../assets/rover-s03/40-slicer-apercu.png)
 </figure>
 
 Trois réglages :

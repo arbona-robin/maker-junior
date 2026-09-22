@@ -157,10 +157,15 @@ Le capteur donne un nombre. Toi, tu veux une direction. Il te faut un **seuil** 
 
 Range d'abord la mesure dans une **variable**, `tangage`. Puis décide avec **`si … alors`**, dans **Logique**.
 
-Pour afficher, prends **`allumer x y`** dans **LED** : il allume un point sur la grille de 5 × 5. `x` va de `0` à gauche à `4` à droite, `y` de `0` en haut à `4` en bas.
+Pour afficher, prends **`allumer x y`** dans **LED** : il allume un point sur la grille de 5 × 5.
+
+<figure markdown>
+![Schéma du micro:bit : la grille de 5 sur 5 LED, colonnes numérotées 0 à 4 pour x, lignes numérotées 0 à 4 pour y, avec le repère X vers la droite et Y vers le bas](../../../assets/rover-s03/34-grille-led-xy.png)
+<figcaption>`x` vers la droite, `y` vers le bas. Le coin en haut à gauche est `0,0`.</figcaption>
+</figure>
 
 <figure class="screenshot" markdown>
-![Le programme : effacer l'écran, définir tangage à accélération y, si tangage inférieur à -200 allumer x 2 y 0, sinon si supérieur à 200 allumer x 2 y 4](../../../assets/rover-s03/34-programme-tangage.png)
+![Le programme : effacer l'écran, définir tangage à accélération y, si tangage inférieur à -200 allumer x 2 y 0, sinon si supérieur à 200 allumer x 2 y 4](../../../assets/rover-s03/35-programme-tangage.png)
 <figcaption>−200 et 200 sont les seuils de ce rover. Trouve les tiens.</figcaption>
 </figure>
 
@@ -174,7 +179,7 @@ Pour afficher, prends **`allumer x y`** dans **LED** : il allume un point sur la
 `tangage` gère l'avant et l'arrière. Pour la gauche et la droite, crée une seconde variable `roulis` sur l'axe `x`, et remplis les deux `sinon si` qui attendent.
 
 <figure class="screenshot" markdown>
-![Le programme avec roulis défini et deux blocs sinon si encore sur « vrai », suivis d'un sinon vide](../../../assets/rover-s03/35-tangage-et-roulis.png)
+![Le programme avec roulis défini et deux blocs sinon si encore sur « vrai », suivis d'un sinon vide](../../../assets/rover-s03/36-tangage-et-roulis.png)
 <figcaption>Quatre directions, quatre branches. La cinquième est pour le repos.</figcaption>
 </figure>
 
@@ -182,7 +187,7 @@ Pour afficher, prends **`allumer x y`** dans **LED** : il allume un point sur la
 <summary>La solution</summary>
 
 <figure class="screenshot" markdown>
-![Le programme complet : effacer l'écran en tête, tangage et roulis définis, quatre branches qui allument un point en haut, en bas, à gauche, à droite, et un sinon qui allume le centre](../../../assets/rover-s03/36-programme-complet.png)
+![Le programme complet : effacer l'écran en tête, tangage et roulis définis, quatre branches qui allument un point en haut, en bas, à gauche, à droite, et un sinon qui allume le centre](../../../assets/rover-s03/37-programme-complet.png)
 </figure>
 
 Le premier test vrai gagne, les suivants ne sont même pas lus.
