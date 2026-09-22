@@ -114,13 +114,13 @@ Nomme le fichier `prenom-plaque.stl` et dépose-le où l'animateur te l'indique.
 
 → [Modéliser et imprimer en 3D](../../../fiches/modeliser-imprimer-3d.md)
 
-## 6. Combien d'ordres pour ton rover ?
+## 6. Comment piloter ton rover
 
 Liste ce que tu veux commander : avancer, reculer, gauche, droite, stop…
 
-Puis les entrées de ta carte : les boutons `A` et `B`, les deux à la fois, le logo tactile, les broches `P0`, `P1`, `P2`. Il y en a assez.
+Une voiture ne se conduit pas au bouton : elle a un **volant**. Tu le tournes un peu, elle tourne un peu ; tu le tournes à fond, elle braque. Un bouton, lui, ne connaît que deux états — appuyé ou relâché.
 
-Mais essaie de conduire en appuyant sur des boutons. Ta carte porte aussi un **accéléromètre**, qui mesure son inclinaison sur trois axes.
+Ta carte porte un **accéléromètre**, qui mesure son inclinaison sur trois axes. Tu vas la pencher comme un volant.
 
 > [!CAUTION] Cette carte-là ne monte jamais sur le rover
 > C'est ta télécommande. Elle reste dans ton bac entre les séances.
