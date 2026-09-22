@@ -104,7 +104,7 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 ## Séance 4 — Phase 2 — Exploration & création
 
 **Titre :** Pilote ton rover à distance
-**Notions :** protocole — canal partagé et vocabulaire partagé · groupe radio · message clé-valeur · troncature silencieuse au-delà de 8 caractères · comparaison de chaînes · gestionnaire d'événement `quand une donnée est reçue` · linéarisation d'un `si` imbriqué · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S2 et des seuils de la S3
+**Notions :** protocole — canal partagé et vocabulaire partagé · bande de fréquence, et ce qui la distingue du groupe · protocole imposé et standardisation · message clé-valeur · troncature silencieuse au-delà de 8 caractères · comparaison de chaînes · gestionnaire d'événement `quand une donnée est reçue` · débit d'émission et saturation du récepteur · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S2 et des seuils de la S3
 **Livrable intermédiaire :** rover individuel terminé et piloté par radio, protocole consigné au carnet, plaque montée — **fin du temps individuel**
 
 *La séance s'ouvre sur la remise des plaques imprimées et leur pose sur les rovers, en cinq minutes de lancement — pas en activité. La clôture est le pivot du parcours : annonce du travail en équipe et des missions, sans les chiffres.*

@@ -25,17 +25,19 @@ En deux ou trois phrases, avec tes mots.
 
 ## Mon protocole
 
-**Mon groupe radio :**
+**Ma bande de fréquence :**
 
-Mes cinq clés, telles que je les ai tapées. **Huit caractères maximum.**
+Le protocole m'a été donné. **Pourquoi imposer les mêmes cinq mots à tout le monde**, avec mes mots :
 
-| Ce que ça commande | Ma clé | La valeur envoyée |
+<br><br>
+
+| Ce que ça commande | La clé | La valeur envoyée |
 |---|---|---|
-| Avancer | | |
-| Reculer | | |
-| Tourner à gauche | | |
-| Tourner à droite | | |
-| Arrêter | | |
+| Avancer | `avancer` | |
+| Reculer | `reculer` | |
+| Tourner à gauche | `gauche` | |
+| Tourner à droite | `droite` | |
+| Arrêter | `arreter` | `0` |
 
 **Mes seuils d'inclinaison** — les mêmes qu'en séance 3, ou je les ai changés ?
 

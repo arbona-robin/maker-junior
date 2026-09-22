@@ -186,20 +186,23 @@ Cinq points suffisent à faire une manette lisible : haut `2,0`, bas `2,4`, gauc
 
 Deux micro:bit communiquent sans fil, sans réseau et sans rien à installer. Les blocs sont dans la catégorie **Radio**.
 
-### Le groupe
+### La bande de fréquence
 
-Toutes les cartes de la salle émettent sur la même fréquence. Le **groupe** est le numéro qui les trie : une carte ne reçoit que les messages de son propre groupe, et ignore tous les autres.
-
-Un seul bloc, dans `au démarrage`, **sur chacune des deux cartes** :
+Deux cartes ne se parlent que si elles émettent **au même endroit du spectre**. Un seul bloc, dans `au démarrage`, **sur chacune des deux cartes** :
 
 <figure class="screenshot" markdown>
-![Le bloc « au démarrage » contenant « radio définir groupe 75 », et le curseur qui sert à régler le numéro](../assets/rover-s04/20-groupe-radio.png)
+![Le bloc « au démarrage » contenant « radio régler la bande de fréquence 15 »](../assets/rover-s04/20-bande-de-frequence.png)
 </figure>
 
-Le numéro va de `0` à `255`. Ce qui compte n'est pas lequel tu choisis, mais que **les deux cartes aient le même**, et que personne d'autre dans la salle ne l'utilise.
+Le numéro va de `0` à `83`, un mégahertz par pas à partir de 2400 : la bande `15` est à 2415 MHz. Par défaut, une carte neuve est sur la bande `7`.
 
-> [!NOTE] Groupe ≠ portée
-> Changer de groupe ne rend pas la liaison plus sûre ni plus longue. Ça sépare les conversations, rien de plus : n'importe qui peut régler son groupe sur le tien et écouter.
+> [!NOTE] Bande ou groupe ?
+> `radio définir groupe` trie aussi les conversations, mais toutes les cartes restent sur la même fréquence : elles s'entendent et filtrent à l'arrivée. Quand une salle entière émet en continu, les messages se gênent quoi qu'il arrive. La bande sépare vraiment — c'est elle qu'on utilise ici.
+>
+> Ni l'une ni l'autre ne rend la liaison plus sûre : n'importe qui peut se régler sur la tienne et écouter.
+
+> [!CAUTION] Le simulateur ne suit pas
+> La bande de fréquence ne s'applique qu'à une vraie carte. Dans le simulateur du navigateur, le bloc ne fait rien.
 
 ### Envoyer, recevoir
 
