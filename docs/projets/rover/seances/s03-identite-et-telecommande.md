@@ -155,36 +155,39 @@ Téléverse, garde le câble branché, puis clique sur **Afficher données Appar
 
 Le capteur donne un nombre. Toi, tu veux une direction. Il te faut un **seuil** : à partir de quelle valeur décide-t-on que ça penche vraiment ?
 
-Range d'abord la mesure dans une **variable** — une boîte nommée où tu poses une valeur pour la relire plus loin. Appelle-la `tangage`.
+Range d'abord la mesure dans une **variable**, `tangage`. Puis décide avec **`si … alors`**, dans **Logique**.
 
-Puis décide avec **`si … alors`**, qui n'exécute une branche que si sa condition est vraie ; `sinon` attrape tout le reste.
+Pour afficher, prends **`allumer x y`** dans **LED** : il allume un point sur la grille de 5 × 5. `x` va de `0` à gauche à `4` à droite, `y` de `0` en haut à `4` en bas.
 
 <figure class="screenshot" markdown>
-![Le programme : définir tangage à accélération y, si tangage inférieur à -100 montrer flèche Nord, sinon si supérieur à 100 montrer flèche Sud, sinon effacer l'écran](../../../assets/rover-s03/34-programme-tangage.png)
-<figcaption>−100 et 100 sont les seuils de ce rover. Trouve les tiens.</figcaption>
+![Le programme : effacer l'écran, définir tangage à accélération y, si tangage inférieur à -200 allumer x 2 y 0, sinon si supérieur à 200 allumer x 2 y 4](../../../assets/rover-s03/34-programme-tangage.png)
+<figcaption>−200 et 200 sont les seuils de ce rover. Trouve les tiens.</figcaption>
 </figure>
+
+> [!NOTE] Un point, pas une flèche
+> `montrer la flèche` garde la main **400 ms** avant de rendre la suite du programme. Dans une boucle qui lit le capteur en continu, ta télécommande répond avec un temps de retard. `allumer x y` est instantané.
 
 **Note tes seuils dans le carnet** : la séance 4 les reprendra tels quels.
 
 ### À toi : ajoute le roulis
 
-`tangage` gère l'avant et l'arrière. Pour la gauche et la droite, crée une seconde variable `roulis` sur l'axe `x`, et teste-la **dans le `sinon`** du premier test.
+`tangage` gère l'avant et l'arrière. Pour la gauche et la droite, crée une seconde variable `roulis` sur l'axe `x`, et remplis les deux `sinon si` qui attendent.
 
 <figure class="screenshot" markdown>
-![Un bloc si/sinon vide, sa condition encore sur « vrai », déposé dans le sinon du test de tangage](../../../assets/rover-s03/35-tangage-et-roulis.png)
-<figcaption>Le second test vient se loger ici. À toi de le remplir.</figcaption>
+![Le programme avec roulis défini et deux blocs sinon si encore sur « vrai », suivis d'un sinon vide](../../../assets/rover-s03/35-tangage-et-roulis.png)
+<figcaption>Quatre directions, quatre branches. La cinquième est pour le repos.</figcaption>
 </figure>
 
 <details markdown>
 <summary>La solution</summary>
 
 <figure class="screenshot" markdown>
-![Le programme complet : tangage et roulis définis, les tests de roulis imbriqués dans le sinon du tangage, effacer l'écran dans le sinon le plus profond](../../../assets/rover-s03/36-programme-complet.png)
+![Le programme complet : effacer l'écran en tête, tangage et roulis définis, quatre branches qui allument un point en haut, en bas, à gauche, à droite, et un sinon qui allume le centre](../../../assets/rover-s03/36-programme-complet.png)
 </figure>
 
-Le premier test vrai gagne : deux tests mis à la suite afficheraient deux flèches coup sur coup, et tu ne verrais que la dernière.
+Le premier test vrai gagne, les suivants ne sont même pas lus.
 
-Remarque où descend `effacer l'écran` — tout au fond, là où **aucun** des deux tests n'a rien trouvé.
+`effacer l'écran` est **en tête de la boucle** : chaque tour éteint tout, puis rallume un seul point. Et le dernier `sinon` allume le centre — carte à plat, l'écran n'est jamais vide, et tu vois que ton programme tourne.
 
 </details>
 
@@ -198,7 +201,7 @@ Remarque où descend `effacer l'écran` — tout au fond, là où **aucun** des 
 - [ ] Aucun îlot détaché dans tes lettres fermées
 - [ ] Tes cotes respectées : 70 × 20 × 2 mm
 - [ ] Ta seconde carte reconnue comme ta télécommande
-- [ ] Un programme qui affiche une flèche quand tu penches
+- [ ] Un programme qui allume le bon point quand tu penches
 - [ ] Tes seuils notés dans ton [carnet de bord](../../../carnet-de-bord/rover-s03.md)
 
 ## Avant de partir

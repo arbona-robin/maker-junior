@@ -157,15 +157,25 @@ Les blocs sont dans **Logique** : `si … alors`, et le `+` du bloc pour ajouter
 Range d'abord la mesure dans une variable :
 
 ```
+effacer l'écran
 définir tangage à accélération (mg) y
-si tangage < -100 alors      → montrer la flèche Nord
-sinon si tangage > 100 alors → montrer la flèche Sud
-sinon                        → effacer l'écran
+si tangage < -200 alors      → allumer x 2 y 0
+sinon si tangage > 200 alors → allumer x 2 y 4
+sinon                        → allumer x 2 y 2
 ```
 
-**Le `sinon` n'est pas facultatif.** C'est lui qui éteint l'écran quand la carte revient à plat. Sans lui, la dernière flèche reste affichée.
+**`effacer l'écran` est en tête de la boucle.** Chaque tour éteint tout, puis rallume un seul point. Sans lui, les points s'accumulent.
 
 L'ordre compte : le premier test vrai gagne, les suivants ne sont même pas lus. Mets en premier ce qui doit primer.
+
+### Afficher vite
+
+> [!CAUTION] `montrer la flèche` bloque 400 ms
+> `montrer la flèche`, `montrer l'icône` et `montrer les LED` **attendent après avoir affiché** — 400 ms, et en blocs cette durée n'est pas réglable. Dans une boucle qui lit un capteur en continu, le programme ne relit la mesure que deux fois et demie par seconde.
+>
+> `allumer x y`, dans **LED**, n'attend pas. Un point sur la grille de 5 × 5 : `x` de `0` à gauche à `4` à droite, `y` de `0` en haut à `4` en bas.
+
+Cinq points suffisent à faire une manette lisible : haut `2,0`, bas `2,4`, gauche `0,2`, droite `4,2`, repos `2,2`.
 
 ## La radio
 
