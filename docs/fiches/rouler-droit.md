@@ -2,7 +2,7 @@
 
 Un rover à deux roues motrices n'a pas de volant. Tous ses mouvements — avancer, tourner, pivoter — viennent d'une seule chose : **la différence de vitesse entre ses deux roues**.
 
-## Les deux façons de tourner
+## Les façons de tourner
 
 > [!NOTE] La direction différentielle
 > Les deux roues à la même vitesse, dans le même sens : le rover avance droit.
@@ -12,10 +12,13 @@ Un rover à deux roues motrices n'a pas de volant. Tous ses mouvements — avanc
 |---|---|
 | Les deux roues en avant, même vitesse | Il avance droit |
 | Une roue plus lente que l'autre | Il décrit une **courbe** |
-| Une roue à l'arrêt | Il pivote autour de cette roue |
-| Les deux roues en sens opposés | Il **pivote sur place** |
+| Une roue à l'arrêt | Il **pivote autour de cette roue** |
+| Les deux roues en sens opposés | Il pivote sur place |
 
-Le pivot sur place est précis et tient dans un couloir étroit. La courbe est plus douce et plus rapide, mais il lui faut de la place. Aucune n'est meilleure : elles ne servent pas au même moment.
+> [!IMPORTANT] La convention du parcours
+> On tourne toujours de la même façon : **une roue à l'arrêt, l'autre en marche**. C'est ce que font `tournerAGauche` et `tournerADroite`, de la séance 2 jusqu'aux missions.
+>
+> Les autres façons existent et fonctionnent. Mais quand plusieurs rovers devront se comprendre et être pilotés par plusieurs opérateurs, il faut qu'ils tournent tous pareil.
 
 ## Ton rover ne roule pas droit
 
@@ -45,14 +48,14 @@ Note tes deux valeurs dans ton carnet de bord : tu les reprendras à chaque séa
 Un rover qui « a l'air de rouler droit » ne se règle pas. Il faut une mesure, et la même à chaque fois.
 
 - **Un point de départ matérialisé** — un repère en L, pour reposer le rover exactement pareil
-- **Une distance fixe** — 2 mètres sur le banc
-- **Un écart mesuré à l'arrivée**, par rapport à l'axe du couloir
+- **Une distance fixe** — 1,50 m sur le banc
+- **Un écart mesuré à l'arrivée**, par rapport à la ligne du banc
 - **Trois passages**, pas un
 
 > [!NOTE] Les trois passages ne donnent pas le même résultat
 > Un rover ne fait jamais deux fois exactement la même chose, même sans rien changer. C'est pour ça qu'on compte trois passages et pas un.
 
-Vise « il ne mord pas les limites de son couloir ». Le zéro parfait n'existe pas, et il n'est pas nécessaire : au pilotage, c'est ta main qui corrigera.
+Vise moins d'une largeur de rover d'écart au bout d'1,50 m. Le zéro parfait n'existe pas, et il n'est pas nécessaire : au pilotage, c'est ta main qui corrigera.
 
 ## La vitesse minimale de démarrage
 

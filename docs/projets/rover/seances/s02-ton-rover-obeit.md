@@ -56,17 +56,20 @@ Ton rover tire d'un côté. **Regarde la mécanique avant de toucher au code.**
 - [ ] Les roues sont enfoncées à fond et ne voilent pas
 - [ ] Le pack d'accus est centré
 
-Il dévie encore ? Alors les deux moteurs ne tournent pas exactement à la même vitesse. Mets-les **tous les deux à 80**, puis monte celui qui est le plus lent, 5 par 5, jusqu'à ce que le rover suive son couloir.
+Il dévie encore ? Alors les deux moteurs ne tournent pas exactement à la même vitesse. Mets-les **tous les deux à 80**, puis monte celui qui est le plus lent, 5 par 5, jusqu'à ce que le rover suive la ligne.
 
 > [!NOTE] Il n'y a pas de bonne valeur
 > Chaque moteur est unique. Sur le rover des photos, l'équilibre tombe à 110 ; le tien sera ailleurs, entre 80 et 120. **Note tes deux valeurs dans le carnet.**
 
-<span class="todo-media">[photo : le banc d'essai marqué au scotch — couloirs, ligne de départ, repère en L, ligne des 2 mètres]</span>
+<figure markdown>
+![Le banc d'essai : une longue bande d'adhésif noir tendue au sol, un repère en L à son extrémité, et le rover calé dedans avant le départ](../../../assets/rover-s02/02-banc-dessai.jpg)
+<figcaption>Le L cale le rover au départ, toujours au même endroit.</figcaption>
+</figure>
 
-Sur le banc : rover calé sur le repère en L, départ, et tu mesures de combien il a dévié à l'arrivée. **Trois passages** — l'écart change à chaque fois, et c'est déjà une information.
+Cale ton rover dans le L, lance-le, et mesure de combien il s'est écarté de la ligne au bout d'**1,50 m**. **Trois passages** — l'écart change à chaque fois, et c'est déjà une information.
 
 > [!TIP] Ce qu'on vise
-> « Il ne mord pas les limites de son couloir sur 2 mètres. » Le reste se rattrapera à la télécommande.
+> Un écart de moins d'une largeur de rover au bout d'1,50 m. Le reste se rattrapera à la télécommande.
 
 Mesure aussi ta **vitesse minimale** : descends la valeur jusqu'à ce que le rover refuse de démarrer, alors qu'une pichenette suffit à le lancer. Note-la.
 
@@ -76,10 +79,9 @@ Mesure aussi ta **vitesse minimale** : descends la valeur jusqu'à ce que le rov
 
 **À toi.** Fabrique `reculer`, `tournerAGauche`, `tournerADroite` et `arreter`, sur le même modèle.
 
-Pour tourner, essaie les deux façons et garde celle que tu préfères :
+Pour tourner : **une roue à l'arrêt, l'autre en marche.** Le rover pivote autour de la roue arrêtée.
 
-- les deux moteurs en sens opposés — le rover **pivote sur place**
-- un seul côté ralenti — le rover décrit une **courbe**
+C'est la façon de tourner de tout le parcours. Tous les rovers tournent pareil, et c'est ce qui permettra plus tard à ton programme de piloter le rover d'un coéquipier.
 
 <details markdown>
 <summary>La solution</summary>
@@ -97,9 +99,11 @@ Sur les photos, `arreter` contient les deux blocs `Motor` à `speed 0`. `Motor S
 
 ## 6. Le défi du retour au garage
 
-<span class="todo-media">[photo : le parcours du défi — zone de départ/arrivée, point de départ, zone intermédiaire, obstacle au milieu]</span>
+<figure markdown>
+![Le parcours du défi vu de dessus : une ligne jaune de départ en bas avec le rover derrière, un obstacle blanc au milieu, une ligne bleue au fond](../../../assets/rover-s02/03-parcours-du-defi.jpg)
+</figure>
 
-Ton rover doit atteindre la **zone intermédiaire**, contourner l'obstacle, et revenir dans la **zone de départ**. Trois fois de suite, avec le même programme.
+Départ derrière la **ligne jaune**. Ton rover doit dépasser la **ligne bleue** en contournant l'obstacle, puis revenir derrière la jaune. Trois fois de suite, avec le même programme.
 
 Deux changements dans ton code :
 
@@ -125,7 +129,7 @@ Note tes trois résultats dans le carnet.
 
 - [ ] Rover terminé, les deux roues dans le même sens
 - [ ] Cinq fonctions : `avancer`, `reculer`, `tournerAGauche`, `tournerADroite`, `arreter`
-- [ ] Il roule droit sur 2 mètres sans mordre son couloir
+- [ ] Il roule droit sur 1,50 m sans s'écarter de la ligne
 - [ ] Le défi tenté, les trois résultats notés
 - [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s02.md) rempli
 

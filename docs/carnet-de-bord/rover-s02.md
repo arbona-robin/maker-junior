@@ -22,7 +22,7 @@ En deux ou trois phrases, avec tes mots.
 | `tournerADroite` | ☐ |
 | `arreter` | ☐ |
 
-**Pour tourner, j'ai choisi** — pivot sur place (moteurs en sens opposés) ou courbe (un côté ralenti) ? Pourquoi ?
+**Pour tourner, une roue est à l'arrêt et l'autre en marche.** À quelle vitesse ai-je réglé la roue qui tourne, et pourquoi celle-là ?
 
 <br><br>
 
@@ -42,7 +42,7 @@ Ces valeurs sont **propres à ton rover**. Tu les reprendras à chaque séance.
 
 ## Le banc d'essai
 
-Écart mesuré à l'arrivée, sur 2 mètres :
+Écart mesuré à l'arrivée, sur 1,50 m :
 
 | | Passage 1 | Passage 2 | Passage 3 |
 |---|---|---|---|

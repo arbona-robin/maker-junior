@@ -87,7 +87,7 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 **Titre :** Ton rover obéit
 **Notions :** direction différentielle · fonction et réutilisation du code · diagnostic mécanique avant correction logicielle · vitesse minimale de démarrage · dérive et compensation · événement bouton et boucle `répéter` · boucle ouverte · reproductibilité d'une mesure
-**Livrable intermédiaire :** rover terminé qui roule droit sur 2 mètres, cinq fonctions de mouvement, défi du retour au garage tenté et mesuré
+**Livrable intermédiaire :** rover terminé qui roule droit sur 1,50 m, cinq fonctions de mouvement, défi du retour au garage tenté et mesuré
 
 *La séance s'ouvre sur la fin de la S1 : 7 jeunes sur 9 n'avaient pas terminé.*
 
