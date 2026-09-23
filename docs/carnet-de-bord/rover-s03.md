@@ -44,7 +44,16 @@ En deux ou trois phrases, avec tes mots.
 
 <br><br>
 
-## Le défi du retour au garage
+**Mon programme de vérification** — l'ordre dans lequel j'appelle mes fonctions :
+
+<br>
+
+| | |
+|---|---|
+| Chaque mouvement fait ce que dit son nom | ☐ |
+| Je vois où la séquence commence et où elle s'arrête | ☐ |
+
+## Pour aller plus loin — le défi du retour au garage
 
 | | Passage 1 | Passage 2 | Passage 3 |
 |---|---|---|---|

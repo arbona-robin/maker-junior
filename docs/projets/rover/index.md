@@ -14,8 +14,8 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 2 — Fabrique ton rover et fais-le rouler droit](seances/s02-fabrique-ton-rover.md)**
   Tu découpes ton châssis, tu montes ton rover, tu écris ta première fonction et tu le règles pour qu'il roule droit.
 
-- **[Séance 3 — Ta plaque, et le retour au garage](seances/s03-ta-plaque-et-le-garage.md)**
-  Tu dessines ta plaque en 3D, tu l'envoies à l'impression, puis ton rover apprend ses cinq mouvements et tu le ramènes au garage.
+- **[Séance 3 — Ta plaque, et les mouvements de ton rover](seances/s03-ta-plaque-et-tes-mouvements.md)**
+  Tu dessines ta plaque en 3D, tu l'envoies à l'impression, puis ton rover apprend ses cinq mouvements et tu écris le programme qui les vérifie.
 
 - **[Séance 4 — Pilote ton rover à distance](seances/s04-pilote-a-distance.md)**
   Tu poses ta plaque imprimée, tu fais de ta seconde carte une télécommande, et ton rover obéit sans fil.

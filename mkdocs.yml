@@ -79,7 +79,7 @@ nav:
       - projets/rover/index.md
       - "Séance 1 — Fais tourner tes moteurs": projets/rover/seances/s01-fais-tourner-tes-moteurs.md
       - "Séance 2 — Fabrique ton rover": projets/rover/seances/s02-fabrique-ton-rover.md
-      - "Séance 3 — Ta plaque, et le garage": projets/rover/seances/s03-ta-plaque-et-le-garage.md
+      - "Séance 3 — Ta plaque, et tes mouvements": projets/rover/seances/s03-ta-plaque-et-tes-mouvements.md
       - "Séance 4 — Pilote ton rover à distance": projets/rover/seances/s04-pilote-a-distance.md
   - Fiches:
       - fiches/index.md

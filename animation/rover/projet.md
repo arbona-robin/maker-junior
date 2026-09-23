@@ -93,13 +93,13 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 ## Séance 3 — Phase 1 — Découverte & prise en main
 
-**Titre :** Ta plaque, et le retour au garage
-**Notions :** modélisation 3D et contrainte de conception · impression additive, couches, slicer · direction différentielle · événement bouton et boucle `répéter` · boucle ouverte
-**Livrable intermédiaire :** plaque personnelle exportée en `.STL`, cinq fonctions de mouvement, défi du retour au garage tenté et mesuré
+**Titre :** Ta plaque, et les mouvements de ton rover
+**Notions :** modélisation 3D et contrainte de conception · impression additive, couches, slicer · direction différentielle · programme de vérification : tout appeler, dans un ordre connu
+**Livrable intermédiaire :** plaque personnelle exportée en `.STL`, cinq fonctions de mouvement appelées par un programme de vérification — le défi du retour au garage est en « va plus loin »
 
 *La CAO ouvre la séance, pour être sûr qu'elle soit finie et que les plaques partent à l'impression avant la S4.*
 
-→ [Fiche d'animation](s03.md) · [Page élève](../../docs/projets/rover/seances/s03-ta-plaque-et-le-garage.md)
+→ [Fiche d'animation](s03.md) · [Page élève](../../docs/projets/rover/seances/s03-ta-plaque-et-tes-mouvements.md)
 
 ## Séance 4 — Phase 2 — Exploration & création
 
@@ -217,4 +217,4 @@ Chaque point de la liste 1 est une contrainte de conception. Chaque ligne de la 
 
 **Bloom.** Les cinq objectifs couvrent quatre niveaux : *Appliquer* (réaliser, câbler, programmer) sur la phase 1, *Analyser* (diagnostiquer) sur la phase 2, *Créer* et *Évaluer* (concevoir en équipe et justifier) sur les phases 2 et 3. La progression attendue par le guide LP est respectée.
 
-**Sur la durée.** 12 × 1 h 45 dont plusieurs séances chargées. Mesuré au premier passage : S1, 2 jeunes sur 9 ont terminé ; S2, le groupe s'est arrêté avant les quatre autres mouvements. **Les séances 1 à 4 ont été redécoupées en conséquence** : le châssis passe en S2, les mouvements et le défi du garage en S3 après la plaque, la télécommande en S4. La S4 devient la plus chargée ; on laisse tel quel et on verra au bilan si elle déborde. Prévoir que la phase 2 absorbe du retard, et garder les variantes − comme soupape plutôt que de rogner sur la rétrospective.
+**Sur la durée.** 12 × 1 h 45 dont plusieurs séances chargées. Mesuré au premier passage : S1, 2 jeunes sur 9 ont terminé ; S2, le groupe s'est arrêté avant les quatre autres mouvements. **Les séances 1 à 4 ont été redécoupées en conséquence** : le châssis passe en S2, les mouvements en S3 après la plaque — le défi du garage y devient un « va plus loin » —, la télécommande en S4. La S4 devient la plus chargée ; on laisse tel quel et on verra au bilan si elle déborde. Prévoir que la phase 2 absorbe du retard, et garder les variantes − comme soupape plutôt que de rogner sur la rétrospective.

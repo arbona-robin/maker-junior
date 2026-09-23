@@ -1,6 +1,6 @@
-# Séance 3 — Ta plaque, et le retour au garage
+# Séance 3 — Ta plaque, et les mouvements de ton rover
 
-Tu dessines la plaque qui portera ton nom et tu l'envoies à l'impression. Puis ton rover apprend ses quatre autres mouvements, et tu l'envoies au garage.
+Tu dessines la plaque qui portera ton nom et tu l'envoies à l'impression. Puis ton rover apprend ses cinq mouvements, et tu écris le programme qui les vérifie.
 
 ## 1. Rejoins la classe Tinkercad
 
@@ -114,7 +114,7 @@ Nomme le fichier `prenom-plaque.stl` et dépose-le où l'animateur te l'indique.
 
 → [Modéliser et imprimer en 3D](../../../fiches/modeliser-imprimer-3d.md)
 
-## 6. Les quatre autres mouvements
+## 6. Tes quatre autres mouvements
 
 **À toi.** Fabrique `reculer`, `tournerAGauche`, `tournerADroite` et `arreter`, sur le modèle d'`avancer`.
 
@@ -122,21 +122,36 @@ Pour tourner : **une roue à l'arrêt, l'autre en marche.** Le rover décrit une
 
 C'est ce qui te permettra de viser. Deux moteurs en sens opposés font pivoter le rover sur place : il faut s'arrêter, tourner, repartir. La courbe, elle, se corrige en roulant, comme un volant.
 
+Le but : un programme qui n'utilise plus que tes cinq fonctions.
+
 <details markdown>
 <summary>La solution</summary>
 
-<figure class="screenshot" markdown>
-![Le programme avec les cinq fonctions repliées et le bloc toujours qui les appelle l'une après l'autre](../../../assets/rover-s02/24-programme-cinq-fonctions.png)
-<figcaption>Les cinq fonctions, appelées l'une après l'autre.</figcaption>
-</figure>
+`tournerAGauche` : `M1` à `speed 0`, `M2` en marche. `tournerADroite` : l'inverse. `reculer` : le sens inverse d'`avancer`, sur les deux moteurs.
 
-Sur les photos, `arreter` contient les deux blocs `Motor` à `speed 0`. `Motor Stop All` fait la même chose en un seul bloc — les deux se valent.
+`arreter` contient les deux blocs `Motor` à `speed 0`. `Motor Stop All` fait la même chose en un seul bloc — les deux se valent.
 
 → [La carte DFR0548 et ses blocs](../../../fiches/carte-dfr0548.md#lextension-df-driver)
 
 </details>
 
-## 7. Le défi du retour au garage
+## 7. Vérifie tes cinq mouvements
+
+**À toi.** Dans `toujours`, appelle tes cinq fonctions, **toujours dans le même ordre**, une pause après chacune. Les durées ne comptent pas : tu vérifies que chaque mouvement fait ce que dit son nom.
+
+Termine par une **pause plus longue** avant que la boucle reparte : tu sais où la séquence commence et où elle s'arrête.
+
+<details markdown>
+<summary>La solution</summary>
+
+<figure class="screenshot" markdown>
+![Le programme avec les cinq fonctions repliées et le bloc toujours qui les appelle l'une après l'autre, chacune précédée d'une flèche, et une pause de 5000 ms à la fin](../../../assets/rover-s02/24-programme-cinq-fonctions.png)
+<figcaption>Une flèche avant chaque appel : tu sais quel mouvement tu regardes.</figcaption>
+</figure>
+
+</details>
+
+## 8. Va plus loin — le retour au garage
 
 <figure markdown>
 ![Le parcours du défi vu de dessus : une ligne jaune de départ en bas avec le rover derrière, un obstacle blanc au milieu, une ligne bleue au fond](../../../assets/rover-s02/03-parcours-du-defi.jpg)
@@ -170,7 +185,8 @@ Note tes trois résultats dans le carnet.
 - [ ] Aucun îlot détaché dans tes lettres fermées
 - [ ] Tes cotes respectées : 70 × 20 × 2 mm
 - [ ] Cinq fonctions : `avancer`, `reculer`, `tournerAGauche`, `tournerADroite`, `arreter`
-- [ ] Le défi tenté, les trois résultats notés
+- [ ] Un programme qui les appelle toutes, dans un ordre connu
+- [ ] Chaque mouvement fait ce que dit son nom
 - [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s03.md) rempli
 
 ## Avant de partir
