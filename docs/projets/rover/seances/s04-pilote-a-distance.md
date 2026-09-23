@@ -95,16 +95,20 @@ Ouvre `rover`, celui de la séance 2 et de ses cinq fonctions.
 
 Dans **Radio**, prends `quand une donnée est reçue par radio`. Il t'apporte deux choses : `nom` et `valeur`.
 
-Pour comparer deux textes, il te faut le bloc de comparaison à **cases blanches**, dans **Logique** — pas celui qui compare des nombres.
-
 <figure class="screenshot" markdown>
 ![Le bloc « quand une donnée est reçue par radio » avec ses cinq branches encore vides](../../../assets/rover-s04/23-quand-une-donnee-est-recue.png)
+</figure>
+
+`nom` est un **texte**. Pour le comparer, prends dans **Logique** le bloc d'égalité à **cases blanches** — pas celui qui compare des nombres.
+
+<figure class="screenshot" markdown>
+![La section Comparaison de la catégorie Logique : deux blocs d'égalité et d'infériorité sur des zéros, et en dessous le bloc d'égalité sur deux cases de texte vides](../../../assets/rover-s04/24-comparaison-de-textes.png)
 </figure>
 
 ## 7. La première branche
 
 <figure class="screenshot" markdown>
-![Dans le bloc de réception : si nom = avancer alors appel avancer, puis allumer x 2 y 0](../../../assets/rover-s04/24-premiere-branche.png)
+![Dans le bloc de réception : si nom = avancer alors appel avancer, puis allumer x 2 y 0](../../../assets/rover-s04/25-premiere-branche.png)
 </figure>
 
 `si nom = "avancer"` → `appel avancer`. Ta fonction de la séance 2 n'a pas bougé d'un bloc.
@@ -115,13 +119,13 @@ Ajoute `reculer`, `gauche`, `droite` et `arreter`. Allume dans chaque branche **
 
 Mets aussi `effacer l'écran` en tête, comme dans la télécommande.
 
-Termine par un `sinon` qui **arrête les moteurs** : un ordre que ton rover ne comprend pas ne doit pas le faire rouler.
+Termine par un `sinon` qui **arrête les moteurs** et allume un point que tu n'utilises pour rien d'autre : un ordre incompris ne doit pas faire rouler ton rover, et tu dois pouvoir le reconnaître d'un coup d'œil.
 
 <details markdown>
 <summary>La solution</summary>
 
 <figure class="screenshot" markdown>
-![Le programme du rover : cinq branches qui comparent nom à chaque clé, appellent la fonction correspondante et allument son point, puis un sinon qui arrête les moteurs](../../../assets/rover-s04/25-rover-complet.png)
+![Le programme du rover : cinq branches qui comparent nom à chaque clé, appellent la fonction correspondante et allument son point, puis un sinon qui arrête les moteurs et allume le coin bas-droit](../../../assets/rover-s04/26-rover-complet.png)
 </figure>
 
 Les points sont les mêmes que sur la télécommande, aux mêmes endroits. C'est ce qui rend le contrôle possible d'un coup d'œil.
