@@ -12,27 +12,19 @@ En deux ou trois phrases, avec tes mots.
 
 <br><br>
 
-## Mon rover
+## Mon électronique
 
 | | |
 |---|---|
 | Le micro:bit et la carte sont assemblés | ☐ |
 | Les moteurs sont vissés dans `M1` et `M2`, fils qui tiennent | ☐ |
+| Le pack d'accus est branché, `+` rouge, `−` noir | ☐ |
 | Le programme fait tourner les deux moteurs | ☐ |
-| Le châssis est découpé et plié, rabats d'équerre | ☐ |
-| Les deux moteurs sont fixés, axes parallèles | ☐ |
-| Les roues tournent librement | ☐ |
-| La carte et les accus sont sanglés | ☐ |
-| Les deux moteurs poussent dans le même sens | ☐ |
-| Le rover fonctionne sans l'ordinateur | ☐ |
+| Les deux moteurs s'arrêtent ensemble | ☐ |
 
 **Quel moteur est branché sur `M1` ?** (gauche ou droit)
 
 <br>
-
-**Comment j'ai corrigé le sens de rotation** — fils inversés dans le bornier, ou bloc passé en `CCW` ? Sur quel moteur ?
-
-<br><br>
 
 **Mes réglages** — vitesse, durée des pauses :
 

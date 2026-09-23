@@ -38,7 +38,7 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 1 animateur numérique, maîtrisant MakeCode et le micro:bit.
 
-**+ 1 second adulte sur les séances comportant de la découpe** (S1, S5, et toute séance de prototypage). Douze outils de découpe en service simultané avec un seul adulte est le point de tension du parcours. Sur la S1, le renfort est nécessaire à partir de la 55ᵉ minute, pas dès l'ouverture.
+**+ 1 second adulte sur les séances comportant de la découpe** (S2, S5, et toute séance de prototypage). Douze outils de découpe en service simultané avec un seul adulte est le point de tension du parcours. Sur la S2, le renfort est nécessaire de la 10ᵉ à la 55ᵉ minute.
 
 ## Matériel
 
@@ -77,37 +77,37 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 ## Séance 1 — Phase 1 — Découverte & prise en main
 
-**Titre :** Fabrique et monte la base motrice
-**Notions :** lecture de plan coté et traçage · rainage, pliage et découpe du carton · chaîne de programmation · notion d'extension et de bibliothèque · commande de moteur
-**Livrable intermédiaire :** base du rover assemblée, programme faisant tourner les deux moteurs, carnet de bord renseigné
+**Titre :** Fais tourner tes moteurs
+**Notions :** câblage et polarité · chaîne de programmation · notion d'extension et de bibliothèque · commande de moteur · séparer une panne de code d'une panne de montage
+**Livrable intermédiaire :** électronique câblée et validée, programme faisant tourner les deux moteurs, moteur `M1` marqué, carnet de bord renseigné
 
-→ [Fiche d'animation](s01.md) · [Page élève](../../docs/projets/rover/seances/s01-base-motrice.md)
+→ [Fiche d'animation](s01.md) · [Page élève](../../docs/projets/rover/seances/s01-fais-tourner-tes-moteurs.md)
 
 ## Séance 2 — Phase 1 — Découverte & prise en main
 
-**Titre :** Ton rover obéit
-**Notions :** direction différentielle · fonction et réutilisation du code · diagnostic mécanique avant correction logicielle · vitesse minimale de démarrage · dérive et compensation · événement bouton et boucle `répéter` · boucle ouverte · reproductibilité d'une mesure
-**Livrable intermédiaire :** rover terminé qui roule droit sur 1,50 m, cinq fonctions de mouvement, défi du retour au garage tenté et mesuré
+**Titre :** Fabrique ton rover et fais-le rouler droit
+**Notions :** lecture de plan coté et traçage · rainage, pliage et découpe du carton · réglage du sens de rotation · fonction et réutilisation du code · diagnostic mécanique avant correction logicielle · vitesse minimale de démarrage · dérive et compensation · reproductibilité d'une mesure
+**Livrable intermédiaire :** rover monté qui roule droit sur 1,50 m, fonction `avancer`, réglages notés au carnet
 
-*La séance s'ouvre sur la fin de la S1 : 7 jeunes sur 9 n'avaient pas terminé.*
-
-→ [Fiche d'animation](s02.md) · [Page élève](../../docs/projets/rover/seances/s02-ton-rover-obeit.md)
+→ [Fiche d'animation](s02.md) · [Page élève](../../docs/projets/rover/seances/s02-fabrique-ton-rover.md)
 
 ## Séance 3 — Phase 1 — Découverte & prise en main
 
-**Titre :** Ton identité, et le problème de la télécommande
-**Notions :** modélisation 3D et contrainte de conception · impression additive, couches, slicer · capteur embarqué et mesure brute · seuil de décision · variable · `si` / `sinon si` / `sinon`
-**Livrable intermédiaire :** plaque personnelle exportée en `.STL`, programme d'affichage directionnel sur la seconde carte, seuils notés
+**Titre :** Ta plaque, et le retour au garage
+**Notions :** modélisation 3D et contrainte de conception · impression additive, couches, slicer · direction différentielle · événement bouton et boucle `répéter` · boucle ouverte
+**Livrable intermédiaire :** plaque personnelle exportée en `.STL`, cinq fonctions de mouvement, défi du retour au garage tenté et mesuré
 
-→ [Fiche d'animation](s03.md) · [Page élève](../../docs/projets/rover/seances/s03-identite-et-telecommande.md)
+*La CAO ouvre la séance, pour être sûr qu'elle soit finie et que les plaques partent à l'impression avant la S4.*
+
+→ [Fiche d'animation](s03.md) · [Page élève](../../docs/projets/rover/seances/s03-ta-plaque-et-le-garage.md)
 
 ## Séance 4 — Phase 2 — Exploration & création
 
 **Titre :** Pilote ton rover à distance
-**Notions :** protocole — canal partagé et vocabulaire partagé · bande de fréquence, et ce qui la distingue du groupe · protocole imposé et standardisation · message clé-valeur · troncature silencieuse au-delà de 8 caractères · comparaison de chaînes · gestionnaire d'événement `quand une donnée est reçue` · débit d'émission et saturation du récepteur · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S2 et des seuils de la S3
-**Livrable intermédiaire :** rover individuel terminé et piloté par radio, protocole consigné au carnet, plaque montée — **fin du temps individuel**
+**Notions :** capteur embarqué et mesure brute · seuil de décision · variable · `si` / `sinon si` / `sinon` · protocole — canal partagé et vocabulaire partagé · bande de fréquence, et ce qui la distingue du groupe · protocole imposé et standardisation · message clé-valeur · troncature silencieuse au-delà de 8 caractères · comparaison de chaînes · gestionnaire d'événement `quand une donnée est reçue` · débit d'émission et saturation du récepteur · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S3
+**Livrable intermédiaire :** rover individuel terminé et piloté par radio, seuils et protocole consignés au carnet, plaque montée — **fin du temps individuel**
 
-*La séance s'ouvre sur la remise des plaques imprimées et leur pose sur les rovers, en cinq minutes de lancement — pas en activité. La clôture est le pivot du parcours : annonce du travail en équipe et des missions, sans les chiffres.*
+*La séance s'ouvre sur la remise des plaques imprimées et leur pose sur les rovers, en cinq minutes de lancement — pas en activité. C'est la séance la plus chargée du parcours : télécommande, protocole et récepteur. La clôture est le pivot du parcours : annonce du travail en équipe et des missions, sans les chiffres.*
 
 → [Fiche d'animation](s04.md) · [Page élève](../../docs/projets/rover/seances/s04-pilote-a-distance.md)
 
@@ -217,4 +217,4 @@ Chaque point de la liste 1 est une contrainte de conception. Chaque ligne de la 
 
 **Bloom.** Les cinq objectifs couvrent quatre niveaux : *Appliquer* (réaliser, câbler, programmer) sur la phase 1, *Analyser* (diagnostiquer) sur la phase 2, *Créer* et *Évaluer* (concevoir en équipe et justifier) sur les phases 2 et 3. La progression attendue par le guide LP est respectée.
 
-**Sur la durée.** 12 × 1 h 45 dont plusieurs séances chargées (S1 déjà mesurée : 2 jeunes sur 9 ont terminé). Prévoir que la phase 2 absorbe du retard, et garder les variantes − comme soupape plutôt que de rogner sur la rétrospective.
+**Sur la durée.** 12 × 1 h 45 dont plusieurs séances chargées. Mesuré au premier passage : S1, 2 jeunes sur 9 ont terminé ; S2, le groupe s'est arrêté avant les quatre autres mouvements. **Les séances 1 à 4 ont été redécoupées en conséquence** : le châssis passe en S2, les mouvements et le défi du garage en S3 après la plaque, la télécommande en S4. La S4 devient la plus chargée ; on laisse tel quel et on verra au bilan si elle déborde. Prévoir que la phase 2 absorbe du retard, et garder les variantes − comme soupape plutôt que de rogner sur la rétrospective.

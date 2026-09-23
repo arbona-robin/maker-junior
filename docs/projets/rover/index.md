@@ -8,17 +8,17 @@ Un rover, ça ne s'achète pas : ça se fabrique, ça se câble, ça se programm
 
 Chaque séance est publiée avant l'atelier, et reste en ligne après.
 
-- **[Séance 1 — Fabrique et monte la base motrice](seances/s01-base-motrice.md)**
-  Tu découpes le châssis, tu montes les moteurs, tu écris le programme qui les fait tourner.
+- **[Séance 1 — Fais tourner tes moteurs](seances/s01-fais-tourner-tes-moteurs.md)**
+  Tu câbles ton électronique et tu écris le programme qui fait tourner tes deux moteurs.
 
-- **[Séance 2 — Ton rover obéit](seances/s02-ton-rover-obeit.md)**
-  Tu ranges tes commandes en cinq fonctions, tu règles ton rover pour qu'il roule droit, et tu le ramènes au garage.
+- **[Séance 2 — Fabrique ton rover et fais-le rouler droit](seances/s02-fabrique-ton-rover.md)**
+  Tu découpes ton châssis, tu montes ton rover, tu écris ta première fonction et tu le règles pour qu'il roule droit.
 
-- **[Séance 3 — Ton identité, et le problème de la télécommande](seances/s03-identite-et-telecommande.md)**
-  Tu dessines ta plaque en 3D, tu l'envoies à l'impression, et tu fais dire à ta future télécommande dans quel sens tu la penches.
+- **[Séance 3 — Ta plaque, et le retour au garage](seances/s03-ta-plaque-et-le-garage.md)**
+  Tu dessines ta plaque en 3D, tu l'envoies à l'impression, puis ton rover apprend ses cinq mouvements et tu le ramènes au garage.
 
 - **[Séance 4 — Pilote ton rover à distance](seances/s04-pilote-a-distance.md)**
-  Tu poses ta plaque imprimée, tu inventes le vocabulaire que tes deux cartes vont partager, et ton rover obéit sans fil.
+  Tu poses ta plaque imprimée, tu fais de ta seconde carte une télécommande, et ton rover obéit sans fil.
 
 La suite s'ajoute ici au fil du parcours.
 

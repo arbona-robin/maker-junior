@@ -77,9 +77,9 @@ nav:
   - Accueil: index.md
   - Projet Rover:
       - projets/rover/index.md
-      - "Séance 1 — La base motrice": projets/rover/seances/s01-base-motrice.md
-      - "Séance 2 — Ton rover obéit": projets/rover/seances/s02-ton-rover-obeit.md
-      - "Séance 3 — Identité et télécommande": projets/rover/seances/s03-identite-et-telecommande.md
+      - "Séance 1 — Fais tourner tes moteurs": projets/rover/seances/s01-fais-tourner-tes-moteurs.md
+      - "Séance 2 — Fabrique ton rover": projets/rover/seances/s02-fabrique-ton-rover.md
+      - "Séance 3 — Ta plaque, et le garage": projets/rover/seances/s03-ta-plaque-et-le-garage.md
       - "Séance 4 — Pilote ton rover à distance": projets/rover/seances/s04-pilote-a-distance.md
   - Fiches:
       - fiches/index.md

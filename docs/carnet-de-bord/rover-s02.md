@@ -12,17 +12,19 @@ En deux ou trois phrases, avec tes mots.
 
 <br><br>
 
-## Mes cinq fonctions
+## Mon rover
 
 | | |
 |---|---|
-| `avancer` | ☐ |
-| `reculer` | ☐ |
-| `tournerAGauche` | ☐ |
-| `tournerADroite` | ☐ |
-| `arreter` | ☐ |
+| Le châssis est découpé et plié, rabats d'équerre | ☐ |
+| Les deux moteurs sont fixés, axes parallèles | ☐ |
+| Les roues tournent librement | ☐ |
+| La carte et les accus sont sanglés | ☐ |
+| Les deux roues tournent dans le même sens | ☐ |
+| Le rover fonctionne sans l'ordinateur | ☐ |
+| La fonction `avancer` est appelée dans `toujours` | ☐ |
 
-**Pour tourner, une roue est à l'arrêt et l'autre en marche.** À quelle vitesse ai-je réglé la roue qui tourne, et pourquoi celle-là ?
+**Comment j'ai corrigé le sens de rotation** — fils inversés dans le bornier, ou bloc passé en `CCW` ? Sur quel moteur ?
 
 <br><br>
 
@@ -51,16 +53,6 @@ Ces valeurs sont **propres à ton rover**. Tu les reprendras à chaque séance.
 **Les trois écarts sont-ils identiques ?** À ton avis, pourquoi ?
 
 <br><br>
-
-## Le défi du retour au garage
-
-| | Passage 1 | Passage 2 | Passage 3 |
-|---|---|---|---|
-| Revenu dans la zone ? | ☐ | ☐ | ☐ |
-
-**Réussi si au moins 2 passages sur 3 sont dans la zone.**
-
-<br>
 
 ## Ce qui a coincé
 

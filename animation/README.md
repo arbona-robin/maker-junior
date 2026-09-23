@@ -20,9 +20,9 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 
 - [Fiche communication](rover/communication.md)
 - [Fiche synthèse de projet](rover/projet.md) — planning prévisionnel des 12 séances
-- [Séance 1 — Fabrique et monte la base motrice](rover/s01.md)
-- [Séance 2 — Ton rover obéit](rover/s02.md)
-- [Séance 3 — Ton identité, et le problème de la télécommande](rover/s03.md)
+- [Séance 1 — Fais tourner tes moteurs](rover/s01.md)
+- [Séance 2 — Fabrique ton rover et fais-le rouler droit](rover/s02.md)
+- [Séance 3 — Ta plaque, et le retour au garage](rover/s03.md)
 - [Séance 4 — Pilote ton rover à distance](rover/s04.md)
 
 Une fiche de séance est créée avant l'atelier, complétée après : les sections « Bilan » et « Adaptations pour la prochaine fois » se remplissent une fois la séance passée, et nourrissent la fiche suivante.

@@ -30,26 +30,29 @@ En deux ou trois phrases, avec tes mots.
 
 <br><br>
 
-## Ma télécommande
-
-**Les valeurs que j'ai lues sur l'accéléromètre**, carte à plat puis penchée :
-
-| | `x` | `y` | `z` |
-|---|---|---|---|
-| À plat | | | |
-| Penchée vers l'avant | | | |
-| Penchée vers la gauche | | | |
-
-**Mes seuils** — la séance 4 les reprendra, note-les bien.
+## Mes cinq fonctions
 
 | | |
 |---|---|
-| Seuil pour « penché vers l'avant » | |
-| Seuil pour « penché vers l'arrière » | |
+| `avancer` — de la séance 2 | ☐ |
+| `reculer` | ☐ |
+| `tournerAGauche` | ☐ |
+| `tournerADroite` | ☐ |
+| `arreter` | ☐ |
 
-**Pourquoi il faut un seuil**, avec tes mots — qu'est-ce qui se passerait sans ?
+**Pour tourner, une roue est à l'arrêt et l'autre en marche.** À quelle vitesse ai-je réglé la roue qui tourne, et pourquoi celle-là ?
 
 <br><br>
+
+## Le défi du retour au garage
+
+| | Passage 1 | Passage 2 | Passage 3 |
+|---|---|---|---|
+| Revenu dans la zone ? | ☐ | ☐ | ☐ |
+
+**Réussi si au moins 2 passages sur 3 sont dans la zone.**
+
+<br>
 
 ## Ce qui a coincé
 
@@ -59,7 +62,7 @@ Le symptôme, ce que j'ai cherché, ce qui a marché.
 
 ## Ce que j'ai retenu
 
-Qu'est-ce qui a été le plus difficile : dessiner en 3D, ou faire comprendre à la carte dans quel sens tu penches ?
+Une chose que je ne savais pas avant aujourd'hui.
 
 <br><br>
 

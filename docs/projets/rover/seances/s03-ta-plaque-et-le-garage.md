@@ -1,6 +1,6 @@
-# Séance 3 — Ton identité, et le problème de la télécommande
+# Séance 3 — Ta plaque, et le retour au garage
 
-Tu dessines la plaque qui portera ton nom, tu l'envoies à l'impression, puis tu commences la conception de ta télécommande.
+Tu dessines la plaque qui portera ton nom et tu l'envoies à l'impression. Puis ton rover apprend ses quatre autres mouvements, et tu l'envoies au garage.
 
 ## 1. Rejoins la classe Tinkercad
 
@@ -114,89 +114,53 @@ Nomme le fichier `prenom-plaque.stl` et dépose-le où l'animateur te l'indique.
 
 → [Modéliser et imprimer en 3D](../../../fiches/modeliser-imprimer-3d.md)
 
-## 6. Comment piloter ton rover
+## 6. Les quatre autres mouvements
 
-Liste ce que tu veux commander : avancer, reculer, gauche, droite, stop…
+**À toi.** Fabrique `reculer`, `tournerAGauche`, `tournerADroite` et `arreter`, sur le modèle d'`avancer`.
 
-Une voiture ne se conduit pas au bouton : elle a un **volant**. Tu le tournes un peu, elle tourne un peu ; tu le tournes à fond, elle braque. Un bouton, lui, ne connaît que deux états — appuyé ou relâché.
+Pour tourner : **une roue à l'arrêt, l'autre en marche.** Le rover décrit une courbe autour de la roue arrêtée — il tourne **en avançant**.
 
-Ta carte porte un **accéléromètre**, qui mesure son inclinaison sur trois axes. Tu vas la pencher comme un volant.
-
-> [!CAUTION] Cette carte-là ne monte jamais sur le rover
-> C'est ta télécommande. Elle reste dans ton bac entre les séances.
-
-## 7. Lis les valeurs du capteur
-
-Nouveau projet MakeCode, nommé `telecommande`.
-
-<figure class="screenshot" markdown>
-![La fenêtre « Créer un projet » de MakeCode avec le nom telecommande](../../../assets/rover-s03/31-nouveau-projet-telecommande.png)
-</figure>
-
-**Regarde les chiffres avant de décider.** Dans `toujours`, écris les quatre valeurs de l'accéléromètre :
-
-<figure class="screenshot" markdown>
-![Le bloc toujours contenant quatre blocs « série écrire valeur » pour x, y, z et force](../../../assets/rover-s03/32-serie-ecrire-valeurs.png)
-</figure>
-
-> [!NOTE] La liaison série
-> `série écrire valeur` envoie les chiffres à ton ordinateur par le câble USB. USB débranché, la carte mesure toujours — mais plus personne ne l'écoute.
-
-Téléverse, garde le câble branché, puis clique sur **Afficher données Appareil**. Penche la carte dans tous les sens.
-
-<figure class="screenshot" markdown>
-![Le graphe des données de l'accéléromètre, quatre courbes qui réagissent aux mouvements](../../../assets/rover-s03/33-afficher-donnees.png)
-</figure>
-
-- [ ] Quelle courbe bouge quand tu penches vers l'avant ?
-- [ ] Quelles valeurs quand la carte est à plat ?
-
-## 8. Transforme la mesure en décision
-
-Le capteur donne un nombre. Toi, tu veux une direction. Il te faut un **seuil** : à partir de quelle valeur décide-t-on que ça penche vraiment ?
-
-Range d'abord la mesure dans une **variable**, `tangage`. Puis décide avec **`si … alors`**, dans **Logique**.
-
-Pour afficher, prends **`allumer x y`** dans **LED** : il allume un point sur la grille de 5 × 5.
-
-<figure markdown>
-![Schéma du micro:bit : la grille de 5 sur 5 LED, colonnes numérotées 0 à 4 pour x, lignes numérotées 0 à 4 pour y, avec le repère X vers la droite et Y vers le bas](../../../assets/rover-s03/34-grille-led-xy.png)
-<figcaption>`x` vers la droite, `y` vers le bas. Le coin en haut à gauche est `0,0`.</figcaption>
-</figure>
-
-<figure class="screenshot" markdown>
-![Le programme : effacer l'écran, définir tangage à accélération y, si tangage inférieur à -200 allumer x 2 y 0, sinon si supérieur à 200 allumer x 2 y 4](../../../assets/rover-s03/35-programme-tangage.png)
-<figcaption>−200 et 200 sont les seuils de ce rover. Trouve les tiens.</figcaption>
-</figure>
-
-> [!NOTE] Un point, pas une flèche
-> `montrer la flèche` garde la main **400 ms** avant de rendre la suite du programme. Dans une boucle qui lit le capteur en continu, ta télécommande répond avec un temps de retard. `allumer x y` est instantané.
-
-**Note tes seuils dans le carnet** : la séance 4 les reprendra tels quels.
-
-### À toi : ajoute le roulis
-
-`tangage` gère l'avant et l'arrière. Pour la gauche et la droite, crée une seconde variable `roulis` sur l'axe `x`, et remplis les deux `sinon si` qui attendent.
-
-<figure class="screenshot" markdown>
-![Le programme avec roulis défini et deux blocs sinon si encore sur « vrai », suivis d'un sinon vide](../../../assets/rover-s03/36-tangage-et-roulis.png)
-<figcaption>Quatre directions, quatre branches. La cinquième est pour le repos.</figcaption>
-</figure>
+C'est ce qui te permettra de viser. Deux moteurs en sens opposés font pivoter le rover sur place : il faut s'arrêter, tourner, repartir. La courbe, elle, se corrige en roulant, comme un volant.
 
 <details markdown>
 <summary>La solution</summary>
 
 <figure class="screenshot" markdown>
-![Le programme complet : effacer l'écran en tête, tangage et roulis définis, quatre branches qui allument un point en haut, en bas, à gauche, à droite, et un sinon qui allume le centre](../../../assets/rover-s03/37-programme-complet.png)
+![Le programme avec les cinq fonctions repliées et le bloc toujours qui les appelle l'une après l'autre](../../../assets/rover-s02/24-programme-cinq-fonctions.png)
+<figcaption>Les cinq fonctions, appelées l'une après l'autre.</figcaption>
 </figure>
 
-Le premier test vrai gagne, les suivants ne sont même pas lus.
+Sur les photos, `arreter` contient les deux blocs `Motor` à `speed 0`. `Motor Stop All` fait la même chose en un seul bloc — les deux se valent.
 
-`effacer l'écran` est **en tête de la boucle** : chaque tour éteint tout, puis rallume un seul point. Et le dernier `sinon` allume le centre — carte à plat, l'écran n'est jamais vide, et tu vois que ton programme tourne.
+→ [La carte DFR0548 et ses blocs](../../../fiches/carte-dfr0548.md#lextension-df-driver)
 
 </details>
 
-→ [Les capteurs, et la décision](../../../fiches/makecode-prise-en-main.md#les-capteurs-et-la-decision)
+## 7. Le défi du retour au garage
+
+<figure markdown>
+![Le parcours du défi vu de dessus : une ligne jaune de départ en bas avec le rover derrière, un obstacle blanc au milieu, une ligne bleue au fond](../../../assets/rover-s02/03-parcours-du-defi.jpg)
+</figure>
+
+Départ derrière la **ligne jaune**. Ton rover doit dépasser la **ligne bleue** en contournant l'obstacle, puis revenir derrière la jaune. Trois fois de suite, avec le même programme.
+
+Deux changements dans ton code :
+
+1. **Supprime le bloc `toujours`.** Tu ne veux plus que ça tourne sans fin.
+2. Prends `lorsque le bouton A est pressé`, et mets dedans `répéter 3 fois` — dans la catégorie **Boucles**.
+
+<figure class="screenshot" markdown>
+![La catégorie Boucles dépliée, avec le bloc « répéter 4 fois / faire » en vert](../../../assets/rover-s02/25-categorie-boucles.png)
+</figure>
+
+Dans la boucle : ta manœuvre, puis une pause assez longue pour que tu aies le temps de **replacer ton rover sur le point de départ**.
+
+**Réussi si 2 passages sur 3 reviennent dans la zone.**
+
+> [!NOTE] Ton rover n'a aucun retour de position
+> Il exécute des durées, pas des positions. Rien n'a changé entre deux passages, et pourtant il ne s'arrête pas au même endroit.
+
+Note tes trois résultats dans le carnet.
 
 ---
 
@@ -205,10 +169,10 @@ Le premier test vrai gagne, les suivants ne sont même pas lus.
 - [ ] Ta plaque exportée, nommée `prenom-plaque.stl`, déposée au bon endroit
 - [ ] Aucun îlot détaché dans tes lettres fermées
 - [ ] Tes cotes respectées : 70 × 20 × 2 mm
-- [ ] Ta seconde carte reconnue comme ta télécommande
-- [ ] Un programme qui allume le bon point quand tu penches
-- [ ] Tes seuils notés dans ton [carnet de bord](../../../carnet-de-bord/rover-s03.md)
+- [ ] Cinq fonctions : `avancer`, `reculer`, `tournerAGauche`, `tournerADroite`, `arreter`
+- [ ] Le défi tenté, les trois résultats notés
+- [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s03.md) rempli
 
 ## Avant de partir
 
-Seconde carte dans ton bac — **elle revient la semaine prochaine**. Accus en charge. Un coup d'œil à l'imprimante en sortant.
+Matériel dans ton bac, banc dégagé, accus en charge. Un coup d'œil à l'imprimante en sortant.

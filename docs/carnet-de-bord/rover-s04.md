@@ -23,6 +23,29 @@ En deux ou trois phrases, avec tes mots.
 
 <br><br>
 
+## Ma télécommande
+
+**Les valeurs que j'ai lues sur l'accéléromètre**, carte à plat puis penchée :
+
+| | `x` | `y` | `z` |
+|---|---|---|---|
+| À plat | | | |
+| Penchée vers l'avant | | | |
+| Penchée vers la gauche | | | |
+
+**Mes seuils :**
+
+| | |
+|---|---|
+| Seuil pour « penché vers l'avant » | |
+| Seuil pour « penché vers l'arrière » | |
+| Seuil pour « penché à gauche » | |
+| Seuil pour « penché à droite » | |
+
+**Pourquoi il faut un seuil**, avec tes mots — qu'est-ce qui se passerait sans ?
+
+<br><br>
+
 ## Mon protocole
 
 **Ma bande de fréquence :**
@@ -39,22 +62,15 @@ Le protocole m'a été donné. **Pourquoi imposer les mêmes cinq mots à tout l
 | Tourner à droite | `droite` | |
 | Arrêter | `arreter` | `0` |
 
-**Mes seuils d'inclinaison** — les mêmes qu'en séance 3, ou je les ai changés ?
+## Le contrôle des points
 
 | | |
 |---|---|
-| Seuil avant / arrière | |
-| Seuil gauche / droite | |
-
-## Le contrôle des flèches
-
-| | |
-|---|---|
-| Ma télécommande affiche une flèche quand je penche | ☐ |
-| Mon rover affiche **la même** flèche au même moment | ☐ |
+| Ma télécommande allume un point quand je penche | ☐ |
+| Mon rover allume **le même** point au même moment | ☐ |
 | Mon rover avance, recule, tourne et s'arrête sans fil | ☐ |
 
-**Si les deux flèches n'étaient pas les mêmes**, qu'est-ce qui clochait ?
+**Si les deux points n'étaient pas les mêmes**, qu'est-ce qui clochait ?
 
 <br><br>
 

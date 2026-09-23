@@ -1,6 +1,6 @@
-# Séance 1 — Fabrique et monte la base motrice
+# Séance 1 — Fais tourner tes moteurs
 
-Tu repars avec une base de rover qui roule. D'abord l'électronique, testée sur la table : une erreur s'y répare sans rien démonter. Ensuite le châssis, et le montage.
+Tu câbles ton électronique et tu écris le programme qui fait tourner tes deux moteurs. Tout se teste sur la table : une erreur s'y répare sans rien démonter.
 
 ## 1. Le moteur tout seul
 
@@ -168,135 +168,17 @@ Interrupteur sur **on**, puis vérifie :
 > [!IMPORTANT] Point de contrôle
 > Fais valider ton électronique. Puis interrupteur sur **off**, USB débranché.
 
-## 9. Fabrique ton châssis
-
-<figure class="plan" markdown>
-![Plan de découpe du châssis : plaque de 175 sur 70 mm, cotes horizontales 35, 20, 65, 20, 35 mm et verticales 20, 30, 20 mm, deux rectangles à découper placés à 10 mm des bords, lignes de pli en pointillés](../../../assets/plans/rover-base-chassis-v0.3.png)
-</figure>
-
-Trait plein : tu découpes. Pointillé : tu plies.
-
-### Reporte le plan
-
-Imprime [le plan (PDF)](../../../assets/plans/rover-base-chassis-v0.3.pdf) **à 100 %**. Vérifie à la règle : le grand côté fait 175 mm.
-
-<details markdown>
-<summary>Pas d'imprimante ? Recopie le plan</summary>
-
-Sur papier quadrillé 5 × 5 mm. **Compte les carreaux, ne mesure pas** : la plaque en fait 35 × 14.
-
-Le fichier source : [SVG](../../../assets/plans/rover-base-chassis-v0.3.svg).
-
-</details>
-
-Colle la feuille sur la face **intérieure** des plis.
-
-<figure markdown>
-![Le poste de découpe : tapis vert, plaque de carton, plan imprimé, règle métallique à rebord et outil de découpe posés à côté](../../../assets/rover-s01/01-plan-sur-carton.jpg)
-</figure>
-
-### Découpe
-
-> [!CAUTION] L'outil de découpe
-> - Règle métallique **à rebord**, toujours.
-> - Doigts **posés sur la règle, derrière le rebord**.
-> - **Plusieurs passes légères**, sans forcer.
-> - **Protection de lame remise** dès que tu poses l'outil.
-
-<figure markdown>
-![Découpe : les doigts sont posés à plat sur la règle, derrière le rebord relevé, et la lame passe de l'autre côté du rebord](../../../assets/rover-s01/02-decoupe-regle-a-rebord.jpg)
-<figcaption>Le rebord relevé est ce qui sépare tes doigts de la lame.</figcaption>
-</figure>
-
-→ [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md#decouper)
-
-### Plie
-
-Règle **sur sa tranche**, pas à plat, le long du pointillé : appuie fort, puis plie contre la règle. Les rabats doivent tenir d'équerre tout seuls.
-
-→ [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md)
-
-## 10. Monte ton rover
-
-### Les moteurs
-
-Moteurs entre les rabats, axes parallèles, `M1` à gauche. Deux élastiques croisés.
-
-<div class="photo-row" markdown>
-<figure markdown>
-![Le châssis plié avec les deux moteurs TT posés](../../../assets/rover-s01/03-chassis-plie-moteurs.jpg)
-</figure>
-<figure markdown>
-![Vue de dessus des deux moteurs positionnés sur le châssis](../../../assets/rover-s01/04-moteurs-positionnes.jpg)
-</figure>
-<figure markdown>
-![Les rabats latéraux relevés autour des moteurs](../../../assets/rover-s01/05-rabats-lateraux-releves.jpg)
-</figure>
-</div>
-
-<figure markdown>
-![Les moteurs bloqués par deux élastiques croisés](../../../assets/rover-s01/06-moteurs-bloques-elastiques.jpg)
-</figure>
-
-Appuie sur un axe : si le moteur bouge dans son logement, resserre.
-
-### La carte et les accus
-
-Carte sur l'étage du haut, accus par-dessus, un élastique. Fils ni coincés ni tendus.
-
-<div class="photo-row" markdown>
-<figure markdown>
-![La carte DFR0548 avec le micro:bit posée sur le châssis](../../../assets/rover-s01/07-carte-dfr0548-montee.jpg)
-</figure>
-<figure markdown>
-![Le pack d'accus posé, un élastique tendu au-dessus](../../../assets/rover-s01/08-batterie-pose-elastique.jpg)
-</figure>
-<figure markdown>
-![Le pack d'accus sanglé par un élastique](../../../assets/rover-s01/09-batterie-fixee.jpg)
-</figure>
-</div>
-
-### Les roues
-
-Languette arrière rabattue dessous et scotchée : c'est ta roue folle. Enfonce les deux roues sur les axes.
-
-<figure markdown>
-![La languette arrière rabattue sous le châssis et maintenue au ruban adhésif](../../../assets/rover-s01/10-languette-arriere-scotchee.jpg)
-</figure>
-
-<div class="photo-row" markdown>
-<figure markdown>
-![Une roue jaune et noire posée sur le tapis de découpe](../../../assets/rover-s01/12-roue-tt.jpg)
-</figure>
-<figure markdown>
-![Vue de dessous du rover, une roue montée](../../../assets/rover-s01/11-vue-dessous-roue.jpg)
-</figure>
-<figure markdown>
-![Le rover terminé, vu de trois quarts](../../../assets/rover-s01/13-rover-termine.jpg)
-</figure>
-</div>
-
-### Règle le sens de rotation
-
-Rover dans la boîte de test, interrupteur sur **on**. Un moteur tourne à l'envers : c'est normal. Inverse ses deux fils, ou passe son bloc en `CCW`. **Note ton choix dans le carnet.**
-
-<figure markdown>
-<video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-rover-roule.mp4"></video>
-<figcaption>USB débranché : le programme vit dans la carte.</figcaption>
-</figure>
-
 ---
 
 ## Ce que tu dois avoir à la fin
 
-- [ ] Électronique testée, moteur `M1` repéré
-- [ ] Châssis découpé, rabats d'équerre
-- [ ] Moteurs fixés, roues qui tournent librement
-- [ ] Carte et accus sanglés
-- [ ] Les deux roues poussent dans le même sens
-- [ ] Le rover roule sans l'ordinateur
+- [ ] Le micro:bit sur la carte, écran vers l'extérieur
+- [ ] Les fils des moteurs qui tiennent au test de traction
+- [ ] Le pack d'accus branché, câblage validé
+- [ ] Les deux moteurs qui tournent puis s'arrêtent ensemble
+- [ ] Le moteur `M1` marqué au ruban
 - [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s01.md) rempli
 
 ## Avant de partir
 
-Matériel dans ton bac, chutes triées, **outil de découpe rendu**, accus en charge.
+Matériel dans ton bac, accus en charge.
