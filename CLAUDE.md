@@ -41,6 +41,18 @@ La méthode complète est dans la skill `.claude/skills/nouvelle-seance-maker-ju
 python3 .claude/skills/nouvelle-seance-maker-junior/mots-affiches.py <page>
 ```
 
+## Rendre compte
+
+**Quand le travail s'est passé comme prévu, le dire en deux lignes.** Fait, vérifié, et la question ouverte s'il y en a une. Rien d'autre.
+
+Le détail ne se déroule que s'il change quelque chose pour le lecteur :
+
+- un écart constaté entre ce qui était demandé et ce qui a été trouvé
+- un arbitrage pris tout seul, sur lequel il peut être en désaccord
+- un chiffre, une valeur ou un nom qui modifie ce qu'il va faire ensuite
+
+Le reste — la liste des contrôles passés, le détail de ce qui a été relu, la justification d'un choix évident — n'apporte rien et noie ce qui compte. Une question en attente se met **en dernier, sur sa propre ligne**, pour qu'elle ne se perde pas dans un compte rendu.
+
 ## Commits
 
 **Sans trailer d'attribution** — ni `Co-Authored-By`, ni mention d'outil. C'est une règle du dépôt.
