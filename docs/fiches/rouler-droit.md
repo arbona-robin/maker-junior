@@ -18,7 +18,7 @@ Un rover à deux roues motrices n'a pas de volant. Tous ses mouvements — avanc
 > [!IMPORTANT] La convention du parcours
 > On tourne toujours de la même façon : **une roue à l'arrêt, l'autre en marche**. C'est ce que font `tournerAGauche` et `tournerADroite`, de la séance 2 jusqu'aux missions.
 >
-> Les autres façons existent et fonctionnent. Mais quand plusieurs rovers devront se comprendre et être pilotés par plusieurs opérateurs, il faut qu'ils tournent tous pareil.
+> La raison est le pilotage. Le rover tourne **en avançant**, donc tu corriges ta trajectoire vers ce que tu veux atteindre sans t'arrêter — c'est le plus proche d'un volant qu'un rover à deux roues puisse faire. Le pivot sur place, lui, demande trois gestes : s'arrêter, tourner, repartir.
 
 ## Ton rover ne roule pas droit
 

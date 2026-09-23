@@ -79,9 +79,9 @@ Mesure aussi ta **vitesse minimale** : descends la valeur jusqu'à ce que le rov
 
 **À toi.** Fabrique `reculer`, `tournerAGauche`, `tournerADroite` et `arreter`, sur le même modèle.
 
-Pour tourner : **une roue à l'arrêt, l'autre en marche.** Le rover pivote autour de la roue arrêtée.
+Pour tourner : **une roue à l'arrêt, l'autre en marche.** Le rover décrit une courbe autour de la roue arrêtée — il tourne **en avançant**.
 
-C'est la façon de tourner de tout le parcours. Tous les rovers tournent pareil, et c'est ce qui permettra plus tard à ton programme de piloter le rover d'un coéquipier.
+C'est ce qui te permettra de viser. Deux moteurs en sens opposés font pivoter le rover sur place : il faut s'arrêter, tourner, repartir. La courbe, elle, se corrige en roulant, comme un volant.
 
 <details markdown>
 <summary>La solution</summary>
