@@ -38,7 +38,7 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 1 animateur numérique, maîtrisant MakeCode et le micro:bit.
 
-**+ 1 second adulte sur les séances comportant de la découpe au cutter** (S1, S5, et toute séance de prototypage). Douze cutters en service simultané avec un seul adulte est le point de tension du parcours. Sur la S1, le renfort est nécessaire à partir de la 55ᵉ minute, pas dès l'ouverture.
+**+ 1 second adulte sur les séances comportant de la découpe** (S1, S5, et toute séance de prototypage). Douze outils de découpe en service simultané avec un seul adulte est le point de tension du parcours. Sur la S1, le renfort est nécessaire à partir de la 55ᵉ minute, pas dès l'ouverture.
 
 ## Matériel
 
@@ -53,7 +53,7 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 **Commun**
 
-- Cutters, règles métalliques à rebord, tapis de découpe, crayons
+- Outils de découpe (scalpels), règles métalliques à rebord, tapis de découpe, crayons
 - Ruban adhésif
 - Imprimante 3D et filament
 - Station de charge

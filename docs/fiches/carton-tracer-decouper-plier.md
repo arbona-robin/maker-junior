@@ -34,9 +34,9 @@ Si tu traces directement sur le carton, utilise un crayon à papier plutôt qu'u
 
 ## Découper
 
-Le cutter est l'outil qui envoie des gens aux urgences chaque année dans les ateliers. Pas parce qu'il est dangereux en soi, mais parce qu'on l'utilise vite et sans réfléchir.
+Cutter, scalpel, couteau de précision : c'est l'outil qui envoie des gens aux urgences chaque année dans les ateliers. Pas parce qu'il est dangereux en soi, mais parce qu'on l'utilise vite et sans réfléchir.
 
-> [!CAUTION] Les cinq règles du cutter
+> [!CAUTION] Les cinq règles de l'outil de découpe
 > **Règle métallique à rebord obligatoire.** Une règle en plastique se fait mordre par la lame, qui dérape ensuite dans la main. Le rebord relevé, lui, arrête la lame avant les doigts.
 >
 > **Les doigts se posent sur la règle, derrière le rebord.** Jamais devant la lame, jamais dans son axe. Si la lame ripe, elle part droit devant.
@@ -45,13 +45,13 @@ Le cutter est l'outil qui envoie des gens aux urgences chaque année dans les at
 >
 > **Sur le tapis de découpe, jamais sur la table.** La lame abîme la table, la table abîme la lame.
 >
-> **Protection remise dès que tu poses l'outil.** La lame ne se rentre pas : c'est la protection qui la couvre. Même pour deux secondes. Même pour attraper la règle.
+> **Protection de lame remise dès que tu poses l'outil.** La lame ne se rentre pas : c'est sa protection qui la couvre. Même pour deux secondes. Même pour attraper la règle.
 
-Coupe en tirant la lame vers toi, pas en poussant : tu contrôles mieux. Tiens le cutter presque à plat, à quarante-cinq degrés environ, pas à la verticale.
+Coupe en tirant la lame vers toi, pas en poussant : tu contrôles mieux. Tiens l'outil presque à plat, à quarante-cinq degrés environ, pas à la verticale.
 
 Si la lame accroche au lieu de glisser, elle est usée : préviens l'animateur, qui la change. Une lame émoussée demande de la force, et la force fait déraper.
 
-En fin de séance, **les cutters sont comptés**. Un cutter qui manque, c'est une lame sans protection qui traîne quelque part. Les chutes de carton se trient au même moment.
+En fin de séance, **les outils de découpe sont comptés**. Un outil qui manque, c'est une lame sans protection qui traîne quelque part. Les chutes de carton se trient au même moment.
 
 Pour un résultat net :
 

@@ -135,4 +135,4 @@ Note tes trois résultats dans le carnet.
 
 ## Avant de partir
 
-Matériel dans ton bac, chutes triées, **cutter rendu**, banc dégagé, accus en charge.
+Matériel dans ton bac, chutes triées, **outil de découpe rendu**, banc dégagé, accus en charge.

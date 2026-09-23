@@ -6,7 +6,7 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
 - **[Tracer, découper, plier le carton](carton-tracer-decouper-plier.md)**
 
-    Reporter un plan, couper net au cutter, obtenir un pli d'équerre.
+    Reporter un plan, couper net, obtenir un pli d'équerre.
 
 - **[La carte DFR0548 et ses blocs](carte-dfr0548.md)**
 

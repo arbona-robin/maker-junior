@@ -192,19 +192,19 @@ Le fichier source : [SVG](../../../assets/plans/rover-base-chassis-v0.3.svg).
 Colle la feuille sur la face **intérieure** des plis.
 
 <figure markdown>
-![Le poste de découpe : tapis vert, plaque de carton, plan imprimé, règle métallique à rebord et cutter posés à côté](../../../assets/rover-s01/01-plan-sur-carton.jpg)
+![Le poste de découpe : tapis vert, plaque de carton, plan imprimé, règle métallique à rebord et outil de découpe posés à côté](../../../assets/rover-s01/01-plan-sur-carton.jpg)
 </figure>
 
 ### Découpe
 
-> [!CAUTION] Le cutter
+> [!CAUTION] L'outil de découpe
 > - Règle métallique **à rebord**, toujours.
 > - Doigts **posés sur la règle, derrière le rebord**.
 > - **Plusieurs passes légères**, sans forcer.
-> - **Protection remise** dès que tu poses le cutter.
+> - **Protection de lame remise** dès que tu poses l'outil.
 
 <figure markdown>
-![Découpe au cutter : les doigts sont posés à plat sur la règle, derrière le rebord relevé, et la lame passe de l'autre côté du rebord](../../../assets/rover-s01/02-decoupe-regle-a-rebord.jpg)
+![Découpe : les doigts sont posés à plat sur la règle, derrière le rebord relevé, et la lame passe de l'autre côté du rebord](../../../assets/rover-s01/02-decoupe-regle-a-rebord.jpg)
 <figcaption>Le rebord relevé est ce qui sépare tes doigts de la lame.</figcaption>
 </figure>
 
@@ -299,4 +299,4 @@ Rover dans la boîte de test, interrupteur sur **on**. Un moteur tourne à l'env
 
 ## Avant de partir
 
-Matériel dans ton bac, chutes triées, **cutter rendu**, accus en charge.
+Matériel dans ton bac, chutes triées, **outil de découpe rendu**, accus en charge.

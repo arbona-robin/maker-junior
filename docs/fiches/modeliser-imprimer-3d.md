@@ -79,7 +79,7 @@ Le `.STL` est le format que comprennent toutes les imprimantes 3D. Les autres se
 
 ### Le principe : on ajoute, on n'enlève pas
 
-Une imprimante 3D dépose du plastique fondu **couche par couche**, de bas en haut. C'est l'inverse du travail au cutter, où on retire de la matière.
+Une imprimante 3D dépose du plastique fondu **couche par couche**, de bas en haut. C'est l'inverse de la découpe du carton, où on retire de la matière.
 
 > [!NOTE] Une pièce casse entre ses couches
 > Les couches sont collées les unes aux autres, et ce collage est moins solide que le plastique lui-même. Une pièce se rompt donc presque toujours **dans le sens des couches**.
