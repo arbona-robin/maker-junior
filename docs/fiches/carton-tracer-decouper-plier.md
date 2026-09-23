@@ -37,9 +37,9 @@ Si tu traces directement sur le carton, utilise un crayon à papier plutôt qu'u
 Le cutter est l'outil qui envoie des gens aux urgences chaque année dans les ateliers. Pas parce qu'il est dangereux en soi, mais parce qu'on l'utilise vite et sans réfléchir.
 
 > [!CAUTION] Les cinq règles du cutter
-> **Règle métallique obligatoire.** Une règle en plastique se fait mordre par la lame, qui dérape ensuite dans la main.
+> **Règle métallique à rebord obligatoire.** Une règle en plastique se fait mordre par la lame, qui dérape ensuite dans la main. Le rebord relevé, lui, arrête la lame avant les doigts.
 >
-> **La main d'appui reste derrière la règle.** Jamais devant la lame, jamais dans son axe. Si la lame ripe, elle part droit devant.
+> **Les doigts se posent sur la règle, derrière le rebord.** Jamais devant la lame, jamais dans son axe. Si la lame ripe, elle part droit devant.
 >
 > **Plusieurs passes légères.** Le carton se coupe en trois ou quatre allers-retours. Forcer, c'est faire déraper la lame et déchirer le carton.
 >

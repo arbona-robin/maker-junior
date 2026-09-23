@@ -53,7 +53,7 @@ Le parcours se déroule en deux temps. Pendant les quatre premières séances, c
 
 **Commun**
 
-- Cutters, règles métalliques, tapis de découpe, crayons
+- Cutters, règles métalliques à rebord, tapis de découpe, crayons
 - Ruban adhésif
 - Imprimante 3D et filament
 - Station de charge

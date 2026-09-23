@@ -37,7 +37,7 @@ La Plateforme
 ## Visuels (légendes)
 
 1. Un rover terminé, de trois quarts, posé au sol — on voit le carton, les roues et la carte électronique. *(disponible : `docs/assets/rover-s01/13-rover-termine.jpg`)*
-2. Des mains qui découpent le carton à la règle métallique, sur le tapis de découpe. *(disponible : `docs/assets/rover-s01/02-decoupe-regle-metallique.jpg`)*
+2. Des mains qui découpent le carton à la règle métallique à rebord, sur le tapis de découpe. *(disponible : `docs/assets/rover-s01/02-decoupe-regle-a-rebord.jpg`)*
 3. L'écran de MakeCode avec un programme en blocs colorés. *(disponible : `docs/assets/rover-s01/27-programme-moteurs.png`)*
 4. Une équipe de trois autour de son rover, en plein réglage avant une mission. *(à produire — phase 2)*
 

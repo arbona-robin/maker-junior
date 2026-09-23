@@ -192,19 +192,20 @@ Le fichier source : [SVG](../../../assets/plans/rover-base-chassis-v0.3.svg).
 Colle la feuille sur la face **intérieure** des plis.
 
 <figure markdown>
-![Le plan posé sur une plaque de carton, sur un tapis de découpe, règle métallique et cutter à côté](../../../assets/rover-s01/01-plan-sur-carton.jpg)
+![Le poste de découpe : tapis vert, plaque de carton, plan imprimé, règle métallique à rebord et cutter posés à côté](../../../assets/rover-s01/01-plan-sur-carton.jpg)
 </figure>
 
 ### Découpe
 
 > [!CAUTION] Le cutter
-> - Règle **métallique**, toujours.
-> - Main d'appui **derrière** la règle.
+> - Règle métallique **à rebord**, toujours.
+> - Doigts **posés sur la règle, derrière le rebord**.
 > - **Plusieurs passes légères**, sans forcer.
 > - **Protection remise** dès que tu poses le cutter.
 
 <figure markdown>
-![Découpe au cutter le long d'une règle métallique, la main d'appui posée derrière la règle](../../../assets/rover-s01/02-decoupe-regle-metallique.jpg)
+![Découpe au cutter : les doigts sont posés à plat sur la règle, derrière le rebord relevé, et la lame passe de l'autre côté du rebord](../../../assets/rover-s01/02-decoupe-regle-a-rebord.jpg)
+<figcaption>Le rebord relevé est ce qui sépare tes doigts de la lame.</figcaption>
 </figure>
 
 → [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md#decouper)

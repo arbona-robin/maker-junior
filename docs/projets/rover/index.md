@@ -27,6 +27,6 @@ La suite s'ajoute ici au fil du parcours.
 - 2 micro:bit v2 par personne
 - 1 carte d'extension DFRobot DFR0548
 - MakeCode, avec l'extension DF-Driver
-- du carton, cutter et règle métallique
+- du carton, cutter et règle métallique à rebord
 - une imprimante 3D
 - des accus NiMH
