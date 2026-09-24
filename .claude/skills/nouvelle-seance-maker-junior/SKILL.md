@@ -12,7 +12,7 @@ Le livre est le support écrit des ateliers. Une séance s'y publie **avant** l'
 
 **On parle de « projet », jamais de « trimestre ».** Dans le texte comme dans les chemins.
 
-**Les titres de section des fiches d'animation ne se touchent pas.** Ils viennent des gabarits LP ([`animation/gabarits/`](../../../animation/gabarits/)) et conditionnent l'export vers le document attendu par la hiérarchie : ni renommés, ni réordonnés, ni supprimés. Une section sans contenu porte « — ». Tout ce qui n'entre dans aucun champ va en « Notes de préparation », après le trait horizontal, et sera ignoré à l'export.
+**Les titres de section des fiches d'animation ne se touchent pas.** Ils viennent des gabarits LP ([`animation/gabarits/`](../../../animation/gabarits/)) et conditionnent l'export vers le document attendu par la hiérarchie : ni renommés, ni réordonnés, ni supprimés. Une section sans contenu porte « — ». Dans les fiches séance et projet, ce qui n'entre dans aucun champ n'y figure pas : la fiche reste courte et lisible. La fiche communication garde une section « Notes de préparation », après le trait horizontal, ignorée à l'export.
 
 ## Deux sorties, deux destinataires
 
@@ -143,7 +143,7 @@ Les consignes de sécurité font exception : elles sont **en toutes lettres dans
 | `docs/fiches/<nouvelle>.md` + `docs/fiches/index.md` + `mkdocs.yml` | Seulement si §3 l'a décidé |
 | `docs/fiches/<existante>.md` | Compléter si la séance apporte du nouveau |
 
-La fiche d'animation se rédige **à partir du gabarit** [`animation/gabarits/seance.md`](../../../animation/gabarits/seance.md), copié tel quel puis rempli. On ne part pas de la fiche précédente : elle a ses propres « Notes de préparation » qu'on recopierait sans le vouloir.
+La fiche d'animation se rédige **à partir du gabarit** [`animation/gabarits/seance.md`](../../../animation/gabarits/seance.md), copié tel quel puis rempli. On ne part pas de la fiche précédente : on en recopierait le contenu sans le vouloir.
 
 Oublier `mkdocs.yml` fait échouer la construction en `--strict`. Oublier les index laisse une page inatteignable.
 

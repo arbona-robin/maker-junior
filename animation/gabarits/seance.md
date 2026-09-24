@@ -7,7 +7,7 @@ Gabarit de la fiche séance — La Plateforme Jeunesse.
 Les titres de section ci-dessous sont ceux du document attendu par la hiérarchie :
 ils ne se renomment pas, ne se réordonnent pas et ne se suppriment pas.
 Une section sans contenu porte « — ».
-Tout ce qui n'entre pas dans le gabarit va en « Notes de préparation », après le trait.
+Ce qui n'entre dans aucun champ ne figure pas dans la fiche.
 -->
 
 ## Objectifs pédagogiques
@@ -105,10 +105,3 @@ pas forcément à parts égales. Supprimer cette section si la séance n'en comp
 ## Adaptations pour la prochaine fois
 
 *Ce qu'on change, et où. Cette section nourrit la séance suivante.*
-
----
-
-## Notes de préparation
-
-*Hors gabarit LP — ignoré à l'export. Plans, arbitrages de conception, médias à prendre,
-raisons d'un choix de déroulé : tout ce qui sert à préparer mais n'entre dans aucun champ.*

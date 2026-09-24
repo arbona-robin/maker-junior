@@ -152,9 +152,3 @@ Le planning est prévisionnel : il se corrige au fil du parcours, c'est normal e
 **Notions :**
 
 **Livrable intermédiaire :**
-
----
-
-## Notes de préparation
-
-*Hors gabarit LP — ignoré à l'export.*

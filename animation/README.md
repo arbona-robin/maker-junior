@@ -6,7 +6,7 @@ Ce dossier est hors du site publié. Il vit dans le dépôt, se lit sur GitHub, 
 
 ## Le format
 
-Les fiches suivent les gabarits LP. **Les titres de section ne se renomment pas, ne se réordonnent pas, ne se suppriment pas** : c'est ce qui permettra d'exporter vers un Google Doc de la même forme que celui des collègues, sans reprise manuelle. Ce qui n'entre dans aucun champ va en « Notes de préparation », après le trait horizontal, et sera ignoré à l'export.
+Les fiches suivent les gabarits LP. **Les titres de section ne se renomment pas, ne se réordonnent pas, ne se suppriment pas** : c'est ce qui permettra d'exporter vers un Google Doc de la même forme que celui des collègues, sans reprise manuelle. Dans les fiches séance et projet, ce qui n'entre dans aucun champ n'y figure pas : la fiche reste courte et lisible. La fiche communication garde une section « Notes de préparation », après le trait horizontal, ignorée à l'export.
 
 | Gabarit | Pour quoi |
 |---|---|

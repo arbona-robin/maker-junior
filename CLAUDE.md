@@ -17,7 +17,7 @@ La circulation va dans un seul sens. `animation/<projet>/communication.md` est l
 
 ## Les fiches d'animation s'exportent
 
-Elles suivent les gabarits de `animation/gabarits/`, parce qu'elles doivent partir en Google Doc à la même forme que celles des collègues. **Les titres de section ne se renomment pas, ne se réordonnent pas, ne se suppriment pas.** Une section vide porte « — ». Ce qui n'entre dans aucun champ va en « Notes de préparation », après le trait horizontal.
+Elles suivent les gabarits de `animation/gabarits/`, parce qu'elles doivent partir en Google Doc à la même forme que celles des collègues. **Les titres de section ne se renomment pas, ne se réordonnent pas, ne se suppriment pas.** Une section vide porte « — ». Dans les fiches séance et projet, ce qui n'entre dans aucun champ n'y figure pas : la fiche reste courte et lisible. La fiche communication garde une section « Notes de préparation », après le trait horizontal, ignorée à l'export.
 
 Contrôle :
 

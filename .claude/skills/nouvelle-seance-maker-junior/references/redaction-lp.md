@@ -93,7 +93,7 @@ Le planning est **prévisionnel** et se corrige au fil du parcours : c'est atten
 | 2 — Exploration & création | 4–9 | Concepts clés, projet progressif, alternance tutoriel / autonomie / défi | Les éléments du projet final |
 | 3 — Finalisation & valorisation | 10–12 | Finition, tests, démonstration, bilan collectif | Le projet complet, présentable |
 
-Le rythme réel d'un parcours ne coïncide pas forcément avec ce découpage. Ce n'est pas un problème, mais il faut le signaler dans les notes.
+Le rythme réel d'un parcours ne coïncide pas forcément avec ce découpage. Ce n'est pas un problème, mais il faut le signaler dans la description du projet.
 
 ---
 
