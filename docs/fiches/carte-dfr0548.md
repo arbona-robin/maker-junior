@@ -66,6 +66,12 @@ Chaque moteur sort deux fils : desserre la vis, glisse la partie dénudée, ress
 
 L'ordre des deux fils d'un moteur détermine son sens de rotation. Il n'y a pas de bon ou de mauvais branchement : si un moteur tourne à l'envers, tu peux soit inverser ses deux fils, soit changer `CW` en `CCW` dans le code.
 
+**Les servomoteurs** s'enfichent sur les broches `S1` à `S8`, trois broches par servomoteur. Le connecteur a un sens : **fil orange côté rangée verte, rouge sur la rouge, marron côté rangée noire.** Le bloc `Servo` de DF-Driver prend le même numéro de broche.
+
+<figure markdown>
+![Deux connecteurs de servomoteur enfichés sur S8 et S7, fil orange sur la rangée verte, fil marron sur la rangée noire](../assets/rover-s07/02-branchement-s7-s8.jpg)
+</figure>
+
 **Le pack d'accus** se visse sur le bornier d'alimentation — le petit connecteur vert à deux vis, marqué `3.5~5.5V`, à l'écart du bornier des moteurs. Fil rouge sur `+`, fil noir sur `−`. La carte accepte de 3,5 à 5,5 V ; un pack de quatre accus NiMH fournit environ 4,8 V.
 
 > [!CAUTION] La polarité ne se rattrape pas
@@ -163,7 +169,7 @@ Sur le rover, `Motor Stop All` est presque toujours le bon choix : il ne laisse 
 
 #### Les autres blocs
 
-La catégorie contient aussi `Servo` et plusieurs blocs `Stepper`, pour d'autres types de moteurs. On ne s'en sert pas encore.
+La catégorie contient aussi `Servo S1 degree 0`, pour un servomoteur — la broche, puis l'angle de 0 à 180° —, et plusieurs blocs `Stepper`, pour les moteurs pas à pas.
 
 ### Ce que veut dire `speed`
 

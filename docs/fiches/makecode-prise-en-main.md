@@ -258,6 +258,32 @@ La radio est muette : elle ne signale ni l'échec, ni le succès. **Fais-la parl
 > [!TIP] Retire les témoins à la fin
 > Un écran qui clignote pendant une mission gêne. Mais tant que tu règles, laisse-les : c'est ce qui te fait gagner du temps.
 
+## Changer de mode
+
+Un même programme peut faire plusieurs choses : obéir à la télécommande, obéir à la table, suivre un guidage. Chacune est un **mode**.
+
+**Une variable `mode`, pour tout le programme.** Donne un numéro à chaque mode : `0` télécommande, `1` table, `2` guidage. `au démarrage`, `toujours` et `quand une donnée est reçue` lisent tous la même variable.
+
+**Un geste pour en changer.** Par exemple `quand le logo est touché` : `mode` passe au suivant, et revient à `0` après le dernier. C'est là aussi qu'on règle la radio du nouveau mode — bande de l'équipe, ou bande `83` et groupe.
+
+<span class="todo-media">[capture : quand le logo est touché → mode ← mode + 1 ; si mode > 2 alors mode ← 0 ; si mode = 0 alors bande de l'équipe, sinon bande 83 et groupe]</span>
+
+**Un témoin pour le voir.** Chaque mode allume son point, dans un coin que tes autres témoins n'utilisent pas. Rallume-le à chaque tour de `toujours`, juste après `effacer l'écran`.
+
+| Mode | `mode` | Point |
+|---|---|---|
+| Télécommande | `0` | `0,0` |
+| Table | `1` | `4,0` |
+| Guidage | `2` | `0,4` |
+
+Dans `toujours`, un `si mode = 0 … sinon si mode = 1 …` choisit ce que fait le programme.
+
+> [!NOTE] Pourquoi un témoin
+> Un rover en mode table n'obéit plus à sa télécommande. Sans témoin, on croit à une panne.
+
+> [!TIP] Deux programmes, c'est aussi une solution
+> Un projet par mode, téléversé selon le besoin. Plus simple à écrire, plus lent à changer : il faut l'ordinateur.
+
 ## Blocs, JavaScript, Python
 
 La bascule en haut de l'écran montre le même programme sous trois formes.

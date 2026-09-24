@@ -69,9 +69,30 @@ La poignée au sommet de la forme sélectionnée règle cette altitude. C'est el
 
 **Passe en vue de face avant chaque groupement.** C'est la seule qui montre les épaisseurs, les reliefs et ce qui surplombe dans le vide.
 
+### Partir d'une esquisse
+
+Trois outils de **Formes simples** partent d'un dessin à plat :
+
+| Outil | Tu dessines | Tinkercad | Pour |
+|---|---|---|---|
+| **Faire pivoter l'esquisse** — révolution | La moitié du profil, contre l'axe | Le fait tourner | Roue, moyeu, bouchon |
+| **Extruder l'esquisse** — extrusion | Le contour vu de dessus | Le fait monter tout droit | Plaque, pare-chocs, fourche |
+| **Scribble** — esquisse libre | À main levée | Lui donne une **Hauteur** | Logo, forme sans cote |
+
+<figure class="screenshot" markdown>
+![L'éditeur d'esquisse : un demi-profil dessiné contre l'axe vertical, et l'aperçu 3D de la pièce obtenue](../assets/rover-s06/21-revolution-profil.png)
+</figure>
+
+On quitte l'éditeur par **Terminer l'esquisse**.
+
 ### Exporter
 
+**Regroupe d'abord toutes les formes de la pièce**, puis sélectionne le groupe.
+
 **Exporter** → **La forme sélectionnée** → **.STL**
+
+> [!NOTE] Tout regrouper avant d'exporter
+> Seule la forme sélectionnée part dans le fichier. Une révolution, une extrusion et un Scribble posés l'un sur l'autre restent trois formes tant qu'on ne les regroupe pas : on n'en imprimerait qu'une.
 
 Le `.STL` est le format que comprennent toutes les imprimantes 3D. Les autres servent à autre chose : `.OBJ` et `.glb` pour l'image de synthèse, `.SVG` pour la découpe laser.
 
@@ -104,6 +125,22 @@ Trois réglages :
 
 > [!CAUTION] Un plateau partagé est un risque partagé
 > Toutes les plaques du groupe s'impriment ensemble. Si une pièce se décolle, elle peut faire rater ses voisines. C'est pour ça qu'on vérifie la disposition collectivement avant de lancer.
+
+### Estimer la durée d'impression
+
+Sans installer de slicer : **Kiri:Moto**, dans le navigateur, gratuit et sans compte.
+
+1. Ouvre [grid.space/kiri](https://grid.space/kiri/).
+2. **Fichier** → **Importer** → ton `.STL`.
+3. **Trancher**.
+4. **Exporter** : la fenêtre affiche **estimation du temps**, en heures, minutes, secondes. Pas besoin de télécharger.
+
+<figure class="screenshot" markdown>
+![La fenêtre d'export de Kiri:Moto : estimation du temps 00:33:09](../assets/rover-s06/27-kiri-estimation.png)
+</figure>
+
+> [!NOTE] Un ordre de grandeur
+> Chaque slicer calcule à sa façon, et l'imprimante ne tiendra pas la durée à la minute. Pour suivre un budget, lis toujours tes durées au même endroit.
 
 ### Concevoir pour la machine
 

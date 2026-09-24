@@ -24,5 +24,13 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 - [Séance 2 — Fabrique ton rover et fais-le rouler droit](rover/s02.md)
 - [Séance 3 — Ta plaque, et les mouvements de ton rover](rover/s03.md)
 - [Séance 4 — Pilote ton rover à distance](rover/s04.md)
+- [Séance 5 — Formez votre équipe et concevez le rover de mission](rover/s05.md)
+- [Séance 6 — Dessinez les pièces de votre rover](rover/s06.md)
+- [Séance 7 — Faites bouger une pièce avec un servomoteur](rover/s07.md)
+- [Séance 8 — Faites piloter votre rover par la table](rover/s08.md)
+- [Séance 9 — Guidez votre rover vers une cible](rover/s09.md)
+- [Séance 10 — Votre rover face au cahier des charges](rover/s10.md)
+- [Séance 11 — Présentez votre rover sur une page web](rover/s11.md)
+- [Séance 12 — Vos rovers en épreuve](rover/s12.md)
 
 Une fiche de séance est créée avant l'atelier, complétée après : les sections « Bilan » et « Adaptations pour la prochaine fois » se remplissent une fois la séance passée, et nourrissent la fiche suivante.

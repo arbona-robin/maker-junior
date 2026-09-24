@@ -47,8 +47,6 @@ La Plateforme
 
 Le titre et l'accroche alimentent aussi la page élève [`docs/projets/rover/index.md`](../../docs/projets/rover/index.md) et la carte de la page d'accueil du livre. Si l'un change ici, vérifier l'autre : cette fiche est la source.
 
-**Aucune promesse d'événement public.** Les Jeux, un public, un jury : rien n'est confirmé. La description s'arrête donc aux missions. Si la valorisation finale se précise, c'est un argument fort à réintégrer ici — mais pas avant.
+**Ce que chaque jeune garde** : la page web de présentation du rover de son équipe, publiée. Le rover lui-même appartient à l'équipe.
 
-**Ce que chaque jeune emporte n'est pas tranché.** Le rover final est celui d'une équipe : il ne part pas en trois exemplaires. Le guide LP demande pourtant un livrable personnel et tangible. À décider avant diffusion — c'est la promesse faite aux familles.
-
-**L'impression 3D est annoncée mais pas encore placée** dans le planning des séances. Voir [`projet.md`](projet.md).
+**L'impression 3D est placée** en S3 (plaque personnelle) et en S6 (pièces du rover d'équipe). Voir [`projet.md`](projet.md).

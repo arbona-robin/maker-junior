@@ -1,0 +1,191 @@
+/* ============================================
+   TES RÉGLAGES — tout se change ici
+   ============================================ */
+
+:root {
+  --couleur-principale: #ff6b35;   /* boutons, étiquettes, liens */
+  --couleur-fond: #fdfaf6;         /* fond de la page */
+  --couleur-texte: #1d2433;        /* texte */
+  --couleur-sombre: #141a26;       /* bas de page */
+
+  --police: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --arrondi: 18px;                 /* coins des photos */
+}
+
+
+/* ============================================
+   LA MISE EN PAGE — pas besoin d'y toucher
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--police);
+  background: var(--couleur-fond);
+  color: var(--couleur-texte);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* --- Le haut de la page --- */
+
+.hero {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  color: white;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1) 60%);
+  z-index: -1;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+.menu a:hover {
+  background: var(--couleur-principale);
+}
+
+.hero-texte {
+  max-width: 760px;
+  padding: 0 0 6vh 2vw;
+}
+
+.etiquette {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--couleur-principale);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 8vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.hero .sous-titre {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  opacity: 0.9;
+}
+
+/* --- Les trois fonctionnalités --- */
+
+.fonction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 56px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 96px 24px;
+}
+
+/* une section sur deux : la photo passe à gauche */
+.fonction:nth-of-type(even) img {
+  order: -1;
+}
+
+.fonction .sous-titre {
+  color: var(--couleur-principale);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.fonction img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--arrondi);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.fonction-texte p:last-child {
+  font-size: 1.1rem;
+}
+
+/* --- Le bas de la page --- */
+
+footer {
+  background: var(--couleur-sombre);
+  color: white;
+  text-align: center;
+  padding: 40px 24px;
+}
+
+/* --- Sur téléphone : une seule colonne --- */
+
+@media (max-width: 760px) {
+  .fonction {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 56px 20px;
+  }
+
+  .fonction:nth-of-type(even) img {
+    order: 0;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+}

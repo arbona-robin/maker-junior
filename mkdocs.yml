@@ -81,6 +81,15 @@ nav:
       - "Séance 2 — Fabrique ton rover": projets/rover/seances/s02-fabrique-ton-rover.md
       - "Séance 3 — Ta plaque, et tes mouvements": projets/rover/seances/s03-ta-plaque-et-tes-mouvements.md
       - "Séance 4 — Pilote ton rover à distance": projets/rover/seances/s04-pilote-a-distance.md
+      - "Séance 5 — Formez votre équipe et concevez le rover de mission": projets/rover/seances/s05-formez-votre-equipe.md
+      - "Séance 6 — Dessinez les pièces de votre rover": projets/rover/seances/s06-dessinez-vos-pieces.md
+      - "Séance 7 — Faites bouger une pièce avec un servomoteur": projets/rover/seances/s07-commandez-un-servomoteur.md
+      - "Séance 8 — Faites piloter votre rover par la table": projets/rover/seances/s08-pilote-par-la-table.md
+      - "Séance 9 — Guidez votre rover vers une cible": projets/rover/seances/s09-guidez-votre-rover.md
+      - "Séance 10 — Votre rover face au cahier des charges": projets/rover/seances/s10-revue-de-conception.md
+      - "Séance 11 — Présentez votre rover sur une page web": projets/rover/seances/s11-presentez-votre-rover.md
+      - "Séance 12 — Vos rovers en épreuve": projets/rover/seances/s12-vos-rovers-en-epreuve.md
+      - "Le cahier des charges": projets/rover/cahier-des-charges.md
   - Fiches:
       - fiches/index.md
       - "Tracer, découper, plier le carton": fiches/carton-tracer-decouper-plier.md
@@ -96,3 +105,11 @@ nav:
           - "Séance 2": carnet-de-bord/rover-s02.md
           - "Séance 3": carnet-de-bord/rover-s03.md
           - "Séance 4": carnet-de-bord/rover-s04.md
+          - "Séance 5": carnet-de-bord/rover-s05.md
+          - "Séance 6": carnet-de-bord/rover-s06.md
+          - "Séance 7": carnet-de-bord/rover-s07.md
+          - "Séance 8": carnet-de-bord/rover-s08.md
+          - "Séance 9": carnet-de-bord/rover-s09.md
+          - "Séance 10": carnet-de-bord/rover-s10.md
+          - "Séance 11": carnet-de-bord/rover-s11.md
+          - "Séance 12": carnet-de-bord/rover-s12.md
