@@ -34,7 +34,7 @@ En deux ou trois phrases, avec tes mots.
 
 | | |
 |---|---|
-| `avancer` — de la séance 2 | ☐ |
+| `avancer`, de la séance 2 | ☐ |
 | `reculer` | ☐ |
 | `tournerAGauche` | ☐ |
 | `tournerADroite` | ☐ |
@@ -44,7 +44,7 @@ En deux ou trois phrases, avec tes mots.
 
 <br><br>
 
-**Mon programme de vérification** — l'ordre dans lequel j'appelle mes fonctions :
+**Mon programme de vérification :** l'ordre dans lequel j'appelle mes fonctions :
 
 <br>
 

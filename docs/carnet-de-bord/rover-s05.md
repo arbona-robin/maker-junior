@@ -28,7 +28,7 @@ En deux ou trois phrases, avec tes mots.
 
 ## Notre idée
 
-**Comment on déplace l'échantillon sans le renverser** — colle ou dessine le croquis retenu :
+**Comment on déplace l'échantillon sans le renverser.** Colle ou dessine le croquis retenu :
 
 <br><br><br>
 

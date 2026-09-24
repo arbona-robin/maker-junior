@@ -2,7 +2,7 @@
 
 Les fiches de conduite de séance et les fiches de projet, au format attendu par La Plateforme Jeunesse.
 
-Ce dossier est **hors du site publié**. Il vit dans le dépôt, se lit sur GitHub, mais n'apparaît ni dans le menu du livre ni dans sa recherche. Les élèves ne tombent pas dessus — et c'est ce qui permet d'y écrire ce qui ne les concerne pas : budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel.
+Ce dossier est hors du site publié. Il vit dans le dépôt, se lit sur GitHub, mais n'apparaît ni dans le menu du livre ni dans sa recherche. Les élèves ne tombent pas dessus, ce qui permet d'y écrire ce qui ne les concerne pas : budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel.
 
 ## Le format
 
@@ -10,8 +10,8 @@ Les fiches suivent les gabarits LP. **Les titres de section ne se renomment pas,
 
 | Gabarit | Pour quoi |
 |---|---|
-| [`gabarits/communication.md`](gabarits/communication.md) | La fiche de présentation du parcours — recrutement, familles |
-| [`gabarits/projet.md`](gabarits/projet.md) | La synthèse de projet — hiérarchie, partenaires |
+| [`gabarits/communication.md`](gabarits/communication.md) | La fiche de présentation du parcours, pour le recrutement et les familles |
+| [`gabarits/projet.md`](gabarits/projet.md) | La synthèse de projet, pour la hiérarchie et les partenaires |
 | [`gabarits/seance.md`](gabarits/seance.md) | La fiche de conduite d'une séance |
 
 Les conseils de rédaction champ par champ, la liste des modalités pédagogiques et les verbes de Bloom sont dans les références de la skill `nouvelle-seance-maker-junior`.
@@ -19,7 +19,7 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 ## Le rover
 
 - [Fiche communication](rover/communication.md)
-- [Fiche synthèse de projet](rover/projet.md) — planning prévisionnel des 12 séances
+- [Fiche synthèse de projet](rover/projet.md) : planning prévisionnel des 12 séances et budget
 - [Séance 1 — Fais tourner tes moteurs](rover/s01.md)
 - [Séance 2 — Fabrique ton rover et fais-le rouler droit](rover/s02.md)
 - [Séance 3 — Ta plaque, et les mouvements de ton rover](rover/s03.md)

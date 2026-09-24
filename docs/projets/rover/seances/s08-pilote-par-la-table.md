@@ -6,13 +6,13 @@ La table va piloter votre rover. Elle envoie les mêmes messages que votre tél�
 
 <span class="todo-media">[photo : la table, un rover dessus, en train de suivre une figure]</span>
 
-La table voit le tag du rover, le mesure, puis le fait suivre une figure. Elle envoie `avancer`, `reculer`, `gauche`, `droite`, `arreter` — les clés de ta télécommande.
+La table voit le tag du rover, le mesure, puis le fait suivre une figure. Elle envoie `avancer`, `reculer`, `gauche`, `droite`, `arreter`, les clés de ta télécommande.
 
 ## 2. La bande et le groupe
 
-En séance 4, chaque télécommande avait **sa bande** : douze émetteurs en même temps se seraient gênés.
+En séance 4, chaque télécommande avait sa bande : douze émetteurs en même temps se seraient gênés.
 
-Ici, **un seul émetteur parle à tous les rovers** : la table. Tout le monde est sur la bande `83`, et le **groupe** dit à qui le message s'adresse. Votre groupe, c'est le numéro de votre tag.
+Ici, un seul émetteur parle à tous les rovers : la table. Tout le monde est sur la bande `83`, et le groupe dit à qui le message s'adresse. Votre groupe, c'est le numéro de votre tag.
 
 <span class="todo-media">[capture : au démarrage → radio régler la bande de fréquence 83, radio définir groupe 12]</span>
 
@@ -63,13 +63,13 @@ Dans `quand une donnée est reçue par radio`, range seulement l'ordre et la vit
 
 ## 6. Changez de mode
 
-Votre rover doit obéir à la télécommande, sur la bande de l'équipe, et à la table, sur la bande `83`. Ce sont deux **modes**.
+Votre rover doit obéir à la télécommande, sur la bande de l'équipe, et à la table, sur la bande `83`. Ce sont deux modes.
 
-**Une variable `mode`**, créée une fois, que tout le programme lit : `0` télécommande, `1` table.
+Une variable `mode`, créée une fois, que tout le programme lit : `0` télécommande, `1` table.
 
-**Un geste pour en changer**, par exemple `quand le logo est touché`. Il change `mode` et règle la radio du nouveau mode.
+Un geste pour en changer, par exemple `quand le logo est touché`. Il change `mode` et règle la radio du nouveau mode.
 
-**Un témoin** : un point dans un coin libre de l'écran, un par mode, rallumé à chaque tour de `toujours`.
+Un témoin : un point dans un coin libre de l'écran, un par mode, rallumé à chaque tour de `toujours`.
 
 > [!NOTE] Pourquoi un témoin
 > En mode table, le rover n'obéit plus à sa télécommande. Sans témoin, on croit à une panne.

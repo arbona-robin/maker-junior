@@ -18,13 +18,13 @@ Tu te connectes par [tinkercad.com/joinclass](https://www.tinkercad.com/joinclas
 
 ### Les quatre gestes
 
-**Poser une forme** — tu la fais glisser de la palette vers le plan.
+**Poser une forme** : tu la fais glisser de la palette vers le plan.
 
-**La coter** — le panneau de propriétés donne longueur, largeur, hauteur. Tape les valeurs, ne les ajuste pas à la souris : la souris ne tombe jamais juste.
+**La coter** : le panneau de propriétés donne longueur, largeur, hauteur. Tape les valeurs, ne les ajuste pas à la souris : la souris ne tombe jamais juste.
 
-**Percer** — toute forme peut passer de **Solide** à **Perçage**. Une forme en perçage ne s'imprime pas : elle creuse ce qu'elle touche. C'est comme ça qu'on fait un trou.
+**Percer** : toute forme peut passer de **Solide** à **Perçage**. Une forme en perçage ne s'imprime pas : elle creuse ce qu'elle touche. C'est comme ça qu'on fait un trou.
 
-**Regrouper** — <kbd>Ctrl</kbd> + <kbd>G</kbd>. Les formes sélectionnées deviennent une seule pièce, et les perçages sont creusés pour de bon.
+**Regrouper** : <kbd>Ctrl</kbd> + <kbd>G</kbd>. Les formes sélectionnées deviennent une seule pièce, et les perçages sont creusés pour de bon.
 
 > [!TIP] Regroupe en dernier
 > Tant que tu n'as pas regroupé, tu peux tout déplacer et tout recoter. Après, c'est un bloc.
@@ -33,7 +33,7 @@ Tu te connectes par [tinkercad.com/joinclass](https://www.tinkercad.com/joinclas
 
 Dès que tu perces une forme de part en part, demande-toi **ce qui reste accroché à quoi**.
 
-Le cas classique est le texte découpé : l'intérieur des lettres fermées — `o`, `b`, `a`, `d`, `p` — n'est relié à rien. Sur l'écran, ça se voit à peine. À l'impression, ces îlots se détachent, ou s'impriment à côté comme de petites pièces séparées.
+Le cas classique est le texte découpé : l'intérieur des lettres fermées (`o`, `b`, `a`, `d`, `p`) n'est relié à rien. Sur l'écran, ça se voit à peine. À l'impression, ces îlots se détachent, ou s'impriment à côté comme de petites pièces séparées.
 
 <figure class="screenshot" markdown>
 ![Dans Tinkercad, les intérieurs des lettres o et b apparaissent comme des îlots détachés du reste de la plaque](../assets/rover-s03/29-contreformes-a-traiter.png)
@@ -41,7 +41,7 @@ Le cas classique est le texte découpé : l'intérieur des lettres fermées — 
 
 Deux façons de s'en sortir :
 
-- **Relier** l'îlot au reste de la pièce par un pont de matière — c'est ce que font les typographies dites « au pochoir »
+- **Relier** l'îlot au reste de la pièce par un pont de matière. C'est ce que font les typographies dites « au pochoir »
 - **Effacer** l'îlot, en posant une forme en perçage par-dessus
 
 La règle vaut au-delà du texte : **une pièce imprimée est d'un seul tenant, ou elle est plusieurs pièces.**
@@ -58,14 +58,14 @@ Centrer à la souris donne toujours un décalage d'un demi-millimètre qu'on ne 
 
 ### La vue de face, et l'altitude
 
-Toute forme posée dans Tinkercad a une **altitude** : sa hauteur au-dessus du plan de construction. Vue de dessus, rien ne la trahit — deux formes qui paraissent superposées peuvent très bien flotter l'une au-dessus de l'autre.
+Toute forme posée dans Tinkercad a une **altitude** : sa hauteur au-dessus du plan de construction. Vue de dessus, rien ne la trahit : deux formes qui paraissent superposées peuvent très bien flotter l'une au-dessus de l'autre.
 
 <figure class="screenshot" markdown>
 ![Vue de face : le texte rouge repose sur le dessus de la plaque beige, avec la poignée d'altitude au-dessus de la forme sélectionnée](../assets/rover-s03/24-vue-de-face-altitude.png)
 <figcaption>Vu de dessus, ce texte semblait posé sur la plaque. Il flotte.</figcaption>
 </figure>
 
-La poignée au sommet de la forme sélectionnée règle cette altitude. C'est elle qui décide si un texte est **posé sur** une plaque ou s'il la **traverse** — et donc si le perçage découpera quelque chose.
+La poignée au sommet de la forme sélectionnée règle cette altitude. C'est elle qui décide si un texte est **posé sur** une plaque ou s'il la **traverse**, et donc si le perçage découpera quelque chose.
 
 **Passe en vue de face avant chaque groupement.** C'est la seule qui montre les épaisseurs, les reliefs et ce qui surplombe dans le vide.
 
@@ -75,9 +75,9 @@ Trois outils de **Formes simples** partent d'un dessin à plat :
 
 | Outil | Tu dessines | Tinkercad | Pour |
 |---|---|---|---|
-| **Faire pivoter l'esquisse** — révolution | La moitié du profil, contre l'axe | Le fait tourner | Roue, moyeu, bouchon |
-| **Extruder l'esquisse** — extrusion | Le contour vu de dessus | Le fait monter tout droit | Plaque, pare-chocs, fourche |
-| **Scribble** — esquisse libre | À main levée | Lui donne une **Hauteur** | Logo, forme sans cote |
+| **Faire pivoter l'esquisse** (révolution) | La moitié du profil, contre l'axe | Le fait tourner | Roue, moyeu, bouchon |
+| **Extruder l'esquisse** (extrusion) | Le contour vu de dessus | Le fait monter tout droit | Plaque, pare-chocs, fourche |
+| **Scribble** (esquisse libre) | À main levée | Lui donne une **Hauteur** | Logo, forme sans cote |
 
 <figure class="screenshot" markdown>
 ![L'éditeur d'esquisse : un demi-profil dessiné contre l'axe vertical, et l'aperçu 3D de la pièce obtenue](../assets/rover-s06/21-revolution-profil.png)
@@ -146,8 +146,8 @@ Sans installer de slicer : **Kiri:Moto**, dans le navigateur, gratuit et sans co
 
 Une pièce se dessine pour **une fonction** et pour **une machine**.
 
-- **Ça doit tenir sur le plateau** — le tien et celui des autres
-- **Ça doit tenir à l'usage** — assez de matière autour d'un trou, assez d'épaisseur sous un effort
-- **Ça doit s'imprimer** — une forme qui surplombe dans le vide a besoin de supports, ou d'être réorientée
+- **Ça doit tenir sur le plateau** : le tien et celui des autres
+- **Ça doit tenir à l'usage** : assez de matière autour d'un trou, assez d'épaisseur sous un effort
+- **Ça doit s'imprimer** : une forme qui surplombe dans le vide a besoin de supports, ou d'être réorientée
 
 → [Déboguer](deboguer.md)

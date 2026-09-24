@@ -28,7 +28,7 @@ Ce qu'on a trouvé en jouant la table :
 | Le rover rejoint la cible du faux émetteur | ☐ |
 | Le rover rejoint la cible de la table | ☐ |
 
-**Si on n'a pas fait le guidage — le point du cahier des charges qu'on a avancé :**
+**Si on n'a pas fait le guidage, le point du cahier des charges qu'on a avancé :**
 
 <br><br>
 

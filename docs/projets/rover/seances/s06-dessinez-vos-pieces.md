@@ -18,7 +18,7 @@ En séance 3, tu as assemblé des formes. Cette fois, tu dessines un contour à 
 ![La palette Formes simples, la forme Faire pivoter l'esquisse sélectionnée et posée sur le plan de travail](../../../assets/rover-s06/20-revolution-forme.png)
 </figure>
 
-Dessine **la moitié du profil**, contre l'axe. Tinkercad le fait tourner autour. Pour une roue, un moyeu, un bouchon.
+Dessine la moitié du profil, contre l'axe. Tinkercad le fait tourner autour. Pour une roue, un moyeu, un bouchon.
 
 <figure class="screenshot" markdown>
 ![L'éditeur d'esquisse : un demi-profil dessiné contre l'axe vertical, et l'aperçu 3D de la pièce obtenue en haut à droite](../../../assets/rover-s06/21-revolution-profil.png)
@@ -29,7 +29,7 @@ Dessine **la moitié du profil**, contre l'axe. Tinkercad le fait tourner autour
 
 ### L'extrusion
 
-**Extruder l'esquisse**. Dessine **le contour vu de dessus** : il monte tout droit. Pour une plaque, un pare-chocs, une fourche.
+**Extruder l'esquisse**. Dessine le contour vu de dessus : il monte tout droit. Pour une plaque, un pare-chocs, une fourche.
 
 <figure class="screenshot" markdown>
 ![L'éditeur d'esquisse : un contour fermé dessiné par-dessus la pièce existante, visible en transparence](../../../assets/rover-s06/22-extrusion-contour.png)
@@ -56,13 +56,13 @@ Des milliers de pièces sont partagées en ligne. Cherche par exemple `servo arm
 
 <span class="todo-media">[capture : une recherche dans la galerie de pièces partagées]</span>
 
-Tu peux la copier et la modifier. **Note le nom de son auteur** dans ton carnet.
+Tu peux la copier et la modifier. Note le nom de son auteur dans ton carnet.
 
 ## 4. Vérifiez la durée d'impression
 
-Votre équipe a **3 h d'impression pour tout le projet**. Une pièce ratée compte, sauf si c'est la machine qui a raté.
+Votre équipe a 3 h d'impression pour tout le projet. Une pièce ratée compte, sauf si c'est la machine qui a raté.
 
-**Sélectionne toutes les formes de ta pièce et regroupe-les**, puis exporte-la en `.STL`. Ouvre ensuite [Kiri:Moto](https://grid.space/kiri/).
+Sélectionne toutes les formes de ta pièce et regroupe-les, puis exporte-la en `.STL`. Ouvre ensuite [Kiri:Moto](https://grid.space/kiri/).
 
 > [!NOTE] Tout regrouper avant d'exporter
 > Une forme non regroupée part seule dans le fichier : on n'imprime qu'une partie de la pièce.

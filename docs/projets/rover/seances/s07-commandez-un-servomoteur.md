@@ -8,7 +8,7 @@ Regardez-les : sont-elles conformes à votre dessin ? Notez au carnet la durée 
 
 ## 2. Un moteur qui va à une position
 
-Le moteur des roues tourne sans s'arrêter. Le **servomoteur**, lui, va à l'**angle** que tu lui donnes, entre 0 et 180°, et il s'y tient.
+Le moteur des roues tourne sans s'arrêter. Le **servomoteur**, lui, va à l'angle que tu lui donnes, entre 0 et 180°, et il s'y tient.
 
 <figure markdown>
 ![Deux servomoteurs, un bleu et un noir, chacun avec son bras en plastique blanc, reliés par leurs câbles orange, rouge et marron à la carte du rover](../../../assets/rover-s07/01-deux-servomoteurs.jpg)
@@ -20,7 +20,7 @@ Le moteur des roues tourne sans s'arrêter. Le **servomoteur**, lui, va à l'**a
 > - Branche et débranche toujours accus coupés.
 > - Ne force pas le bras d'un servomoteur alimenté : ses engrenages cassent.
 
-Un servomoteur sur `S8`, l'autre sur `S7`. Le connecteur a un sens : **fil orange côté vert, fil marron côté noir.**
+Un servomoteur sur `S8`, l'autre sur `S7`. Le connecteur a un sens : fil orange côté vert, fil marron côté noir.
 
 <figure markdown>
 ![Les deux connecteurs enfichés sur les broches S8 et S7 de la carte, fil orange en haut sur la rangée verte, fil marron en bas sur la rangée noire](../../../assets/rover-s07/02-branchement-s7-s8.jpg)
@@ -62,7 +62,7 @@ Relisez votre croquis de la séance 5. Pousser l'échantillon est permis ; le sa
 Si vous l'utilisez : ajoutez une clé au protocole, par exemple `pince`.
 
 > [!CAUTION] Huit caractères au plus
-> Et une branche pour elle dans le rover, **avant** le `sinon`. Sinon, le rover s'arrête à chaque appui.
+> Et une branche pour elle dans le rover, avant le `sinon`. Sinon, le rover s'arrête à chaque appui.
 
 La table n'envoie pas cette clé : elle ne sert qu'avec la télécommande.
 

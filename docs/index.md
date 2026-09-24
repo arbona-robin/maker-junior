@@ -1,6 +1,6 @@
 # Le livre Maker Junior
 
-Ce livre est le support des ateliers maker. Tout ce qu'on fabrique, branche et programme en séance est écrit ici — avec les photos, les plans et les programmes.
+Ce livre est le support des ateliers maker. Tout ce qu'on fabrique, branche et programme en séance est écrit ici, avec les photos, les plans et les programmes.
 
 Il sert à trois moments :
 
@@ -32,13 +32,13 @@ Il sert à trois moments :
 
 Le texte est court exprès. Les explications longues sont dans des encadrés, qui se repèrent à leur couleur.
 
-> [!CAUTION] Rouge — la sécurité
+> [!CAUTION] Rouge : la sécurité
 > À lire avant le geste. Ces encadrés ne se sautent pas.
 
-> [!NOTE] Bleu — le concept
+> [!NOTE] Bleu : le concept
 > Le pourquoi derrière la manipulation. C'est ce qui reste quand le rover est rangé.
 
-> [!TIP] Vert — la vérification
+> [!TIP] Vert : la vérification
 > Un test rapide pour savoir si tu peux passer à la suite.
 
 Et quand un exercice t'est posé, la réponse est cachée juste en dessous :
@@ -56,4 +56,4 @@ Le parcours se déroule pour la première fois. Les séances sont publiées avan
 
 <span class="todo-media">[photo : un exemple d'emplacement réservé pour une image pas encore prise]</span>
 
-Si tu repères une erreur, une étape qui ne marche pas comme c'est écrit, ou une explication qui manque — dis-le. Le livre est corrigé entre deux séances.
+Si tu repères une erreur, une étape qui ne marche pas comme c'est écrit, ou une explication qui manque, dis-le. Le livre est corrigé entre deux séances.

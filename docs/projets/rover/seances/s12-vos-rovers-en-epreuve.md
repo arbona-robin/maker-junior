@@ -6,7 +6,7 @@ Deux épreuves, toutes les équipes en piste. Puis vous faites le bilan du proje
 
 - Accus chargés, télécommande chargée
 - Mode télécommande
-- **La bande de votre équipe** : au capture the flag, tout le monde pilote en même temps
+- La bande de votre équipe : au capture the flag, tout le monde pilote en même temps
 
 > [!CAUTION] Une bande par équipe
 > Deux équipes sur la même bande, et deux rovers obéissent à la même télécommande.
@@ -25,8 +25,8 @@ Sur la table, toutes les équipes en même temps. L'échantillon est debout au c
 
 | | Points |
 |---|---|
-| Échantillon ramené **debout** dans la zone | **+2** pour votre équipe |
-| Échantillon renversé | **−1** pour l'équipe qui l'a renversé |
+| Échantillon ramené debout dans la zone | +2 pour votre équipe |
+| Échantillon renversé | −1 pour l'équipe qui l'a renversé |
 
 Trois manches, ou 15 minutes.
 

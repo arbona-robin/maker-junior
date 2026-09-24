@@ -17,7 +17,7 @@ Pose ton rover sur la pente, puis fais-lui pousser l'échantillon. Réussit-il l
 À deux ou trois. Notez au carnet :
 
 - les membres de l'équipe
-- **votre numéro**, donné par l'animateur — c'est l'id de votre tag, votre bande à la télécommande et votre groupe sur la table
+- votre numéro, donné par l'animateur : c'est à la fois l'id de votre tag, votre bande à la télécommande et votre groupe sur la table
 - qui s'occupe de quoi : le châssis et la pente, l'échantillon, le programme
 
 > [!NOTE] Responsable ne veut pas dire seul
@@ -51,7 +51,7 @@ Puis choisissez-en une ensemble.
 
 ## 5. Tracez le plan du châssis
 
-Partez du plan de la séance 2 et modifiez-le. Sur papier quadrillé : **compte les carreaux, ne mesure pas.**
+Partez du plan de la séance 2 et modifiez-le. Sur papier quadrillé, compte les carreaux, ne mesure pas.
 
 → [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md)
 
@@ -64,7 +64,7 @@ Partez du plan de la séance 2 et modifiez-le. Sur papier quadrillé : **compte 
 
 Le prototype n'a pas besoin d'être beau. Il sert à vérifier les dimensions.
 
-**Le support de tag** en fait partie : un carré de carton un peu plus grand que le tag, le tag collé dessus, fixé à plat sur le dessus du rover. La marge blanche reste visible.
+Le support de tag en fait partie : un carré de carton un peu plus grand que le tag, le tag collé dessus, fixé à plat sur le dessus du rover. La marge blanche reste visible.
 
 <span class="todo-media">[photo : un prototype carton de châssis, l'échantillon posé à côté]</span>
 

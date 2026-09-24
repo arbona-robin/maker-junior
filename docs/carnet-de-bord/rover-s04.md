@@ -19,7 +19,7 @@ En deux ou trois phrases, avec tes mots.
 | Elle est sortie de l'imprimante conforme à mon dessin | ☐ |
 | Elle est montée sur mon rover | ☐ |
 
-**Ce qui n'est pas sorti comme prévu** — une lettre bouchée, un îlot tombé, un bord qui a décollé :
+**Ce qui n'est pas sorti comme prévu :** une lettre bouchée, un îlot tombé, un bord qui a décollé :
 
 <br><br>
 
@@ -42,7 +42,7 @@ En deux ou trois phrases, avec tes mots.
 | Seuil pour « penché à gauche » | |
 | Seuil pour « penché à droite » | |
 
-**Pourquoi il faut un seuil**, avec tes mots — qu'est-ce qui se passerait sans ?
+**Pourquoi il faut un seuil**, avec tes mots. Qu'est-ce qui se passerait sans ?
 
 <br><br>
 

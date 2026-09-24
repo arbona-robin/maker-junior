@@ -13,7 +13,7 @@ Les cotes sont en millimètres. Repère aussi les repères de perçage et l'empl
 
 ## Le sens des cannelures
 
-Le carton ondulé n'est pas le même matériau dans les deux sens. À l'intérieur, des vagues de papier — les cannelures — courent dans une direction.
+Le carton ondulé n'est pas le même matériau dans les deux sens. À l'intérieur, des vagues de papier, les cannelures, courent dans une direction.
 
 > [!NOTE] Pourquoi le sens compte
 > Le carton est rigide **dans le sens des cannelures**, et mou en travers. Il plie proprement **perpendiculairement** aux cannelures ; parallèlement, il s'écrase et le pli part en bouillie.
@@ -24,9 +24,9 @@ Le carton ondulé n'est pas le même matériau dans les deux sens. À l'intérie
 
 On colle le plan sur le carton, et on découpe en suivant ses traits.
 
-**Imprimer** — à 100 %, jamais en « ajuster à la page ». Vérifie une cote à la règle avant de coller : une imprimante mal réglée réduit tout de quelques pour cent.
+**Imprimer** : à 100 %, jamais en « ajuster à la page ». Vérifie une cote à la règle avant de coller : une imprimante mal réglée réduit tout de quelques pour cent.
 
-**Recopier** — sur papier quadrillé 5 × 5 mm. Quand le plan est dessiné sur une grille de 5 mm, chaque trait tombe sur le quadrillage : compte les carreaux au lieu de mesurer, c'est plus rapide et plus juste.
+**Recopier** : sur papier quadrillé 5 × 5 mm. Quand le plan est dessiné sur une grille de 5 mm, chaque trait tombe sur le quadrillage : compte les carreaux au lieu de mesurer, c'est plus rapide et plus juste.
 
 **Colle la feuille sur la face intérieure des plis** : c'est de ce côté que tu marques et plies, en suivant les pointillés.
 
@@ -74,8 +74,8 @@ Un pli net se prépare. On ne plie jamais un carton brut à la main.
 
 Quand une pièce en carton doit encaisser des efforts, deux techniques suffisent le plus souvent.
 
-**Le contrecollage** — coller deux ou trois épaisseurs l'une sur l'autre, cannelures croisées. On obtient une plaque bien plus rigide qu'une simple épaisseur, sans matériel particulier.
+**Le contrecollage** : coller deux ou trois épaisseurs l'une sur l'autre, cannelures croisées. On obtient une plaque bien plus rigide qu'une simple épaisseur, sans matériel particulier.
 
-**Le gousset** — un petit triangle collé dans un angle. Il empêche l'angle de s'ouvrir, et c'est presque toujours par là qu'une structure en carton lâche.
+**Le gousset** : un petit triangle collé dans un angle. Il empêche l'angle de s'ouvrir, et c'est presque toujours par là qu'une structure en carton lâche.
 
 → [Modéliser et imprimer en 3D](modeliser-imprimer-3d.md)

@@ -24,7 +24,7 @@ En deux ou trois phrases, avec tes mots.
 | Le rover fonctionne sans l'ordinateur | ☐ |
 | La fonction `avancer` est appelée dans `toujours` | ☐ |
 
-**Comment j'ai corrigé le sens de rotation** — fils inversés dans le bornier, ou bloc passé en `CCW` ? Sur quel moteur ?
+**Comment j'ai corrigé le sens de rotation :** fils inversés dans le bornier, ou bloc passé en `CCW` ? Sur quel moteur ?
 
 <br><br>
 

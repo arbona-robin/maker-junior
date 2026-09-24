@@ -2,7 +2,7 @@
 
 Un rover, ça ne s'achète pas : ça se fabrique, ça se câble, ça se programme. Tu fabriques le tien de la plaque de carton au programme qui le fait rouler. Et quand tu le pilotes les yeux fermés, le vrai défi commence : en équipe, avec des missions à réussir.
 
-**Le parcours en deux temps :** d'abord ton rover à toi, que tu montes et programmes seul. Ensuite, à deux ou trois, un rover conçu pour des missions précises — en carton, et avec des pièces que vous dessinez et imprimez en 3D.
+Le parcours se fait en deux temps. D'abord ton rover à toi, que tu montes et programmes seul. Ensuite, à deux ou trois, un rover conçu pour des missions précises, en carton et avec des pièces que vous dessinez et imprimez en 3D.
 
 ## Les séances
 

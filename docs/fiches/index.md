@@ -1,6 +1,6 @@
 # Fiches
 
-Les références qui ne dépendent pas d'une séance. Les pages de séance y renvoient plutôt que de tout répéter — c'est ici que tu reviens quand tu as oublié un geste ou un branchement.
+Les références qui ne dépendent pas d'une séance. Les pages de séance y renvoient plutôt que de tout répéter. C'est ici que tu reviens quand tu as oublié un geste ou un branchement.
 
 <div class="grid cards" markdown>
 

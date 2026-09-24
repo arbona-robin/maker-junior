@@ -142,7 +142,7 @@ Appelle-la `avancer`, puis **Terminé**.
 ![La fenêtre « Modifier la fonction » avec le nom avancer en cours de saisie](../../../assets/rover-s02/21-creer-fonction-avancer.png)
 </figure>
 
-Glisse tes deux blocs `Motor` dans la fonction. Reprends **Fonctions** : le bloc `appel avancer` est apparu — mets-le dans `toujours`, à la place des blocs que tu viens de déplacer.
+Glisse tes deux blocs `Motor` dans la fonction. Reprends **Fonctions** : le bloc `appel avancer` est apparu. Mets-le dans `toujours`, à la place des blocs que tu viens de déplacer.
 
 <figure class="screenshot" markdown>
 ![La fonction avancer contenant Motor M1 et Motor M2, et le bloc appel avancer placé dans toujours](../../../assets/rover-s02/23-fonction-avancer-appelee.png)
@@ -171,7 +171,7 @@ Il dévie encore ? Alors les deux moteurs ne tournent pas exactement à la même
 <figcaption>Le L cale le rover au départ, toujours au même endroit.</figcaption>
 </figure>
 
-Cale ton rover dans le L, lance-le, et mesure de combien il s'est écarté de la ligne au bout d'**1,50 m**. **Trois passages** — l'écart change à chaque fois, et c'est déjà une information.
+Cale ton rover dans le L, lance-le, et mesure de combien il s'est écarté de la ligne au bout d'**1,50 m**. Fais trois passages : l'écart change à chaque fois, et c'est déjà une information.
 
 > [!TIP] Ce qu'on vise
 > Un écart de moins d'une largeur de rover au bout d'1,50 m. Le reste se rattrapera à la télécommande.

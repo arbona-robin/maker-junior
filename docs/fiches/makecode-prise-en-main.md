@@ -12,7 +12,7 @@ Sur la page d'accueil, **Nouveau projet**, puis un nom.
 </figure>
 
 > [!TIP] Un projet, plusieurs séances
-> Donne un nom clair dès le début — `rover` — et reviens dans le même projet d'une séance à l'autre plutôt que d'en créer un nouveau à chaque fois.
+> Donne un nom clair dès le début, par exemple `rover`, et reviens dans le même projet d'une séance à l'autre plutôt que d'en créer un nouveau à chaque fois.
 >
 > Les projets sont enregistrés dans le navigateur, pas dans un compte. Sur un autre ordinateur, tu ne les retrouveras pas. Si tu changes de poste, utilise le bouton de partage pour récupérer un lien vers ton projet.
 
@@ -20,11 +20,11 @@ Sur la page d'accueil, **Nouveau projet**, puis un nom.
 
 Trois zones, de gauche à droite.
 
-**Le simulateur** — un micro:bit dessiné qui exécute ton programme en direct, avant même de le téléverser. Il affiche l'écran, réagit aux boutons, joue les sons. Pratique pour tester une animation sans brancher la carte.
+**Le simulateur** : un micro:bit dessiné qui exécute ton programme en direct, avant même de le téléverser. Il affiche l'écran, réagit aux boutons, joue les sons. Pratique pour tester une animation sans brancher la carte.
 
-**La palette** — les catégories de blocs, chacune sa couleur. Base, Entrée, Musique, LED, Radio, Boucles, Logique, Variables, Maths, puis Extensions et Avancé.
+**La palette** : les catégories de blocs, chacune sa couleur. Base, Entrée, Musique, LED, Radio, Boucles, Logique, Variables, Maths, puis Extensions et Avancé.
 
-**L'espace de travail** — où tu assembles tes blocs.
+**L'espace de travail** : où tu assembles tes blocs.
 
 En bas à gauche, le bouton **Télécharger**. En haut au centre, la bascule **Blocs / JavaScript / Python**.
 
@@ -53,7 +53,7 @@ Branche le micro:bit en USB, clique sur **Télécharger**, et suis les instructi
 La LED jaune au dos de la carte clignote pendant le transfert. Quand elle s'arrête, le programme démarre.
 
 > [!TIP] Sache que ton programme tourne
-> Mets toujours une icône et un son dans `au démarrage`. Quand quelque chose ne marchera pas, tu sauras au premier coup d'œil si c'est bien ton programme qui s'exécute — et tu t'épargneras de chercher dans le code un problème qui est dans les fils.
+> Mets toujours une icône et un son dans `au démarrage`. Quand quelque chose ne marchera pas, tu sauras au premier coup d'œil si c'est bien ton programme qui s'exécute, et tu t'épargneras de chercher dans le code un problème qui est dans les fils.
 
 Une fois téléversé, le programme est **dans la carte**. Débranche l'USB, alimente par les accus : il repart tout seul. L'ordinateur n'est plus nécessaire.
 
@@ -67,7 +67,7 @@ Une fonction est un bloc que **tu** fabriques : tu lui donnes un nom, tu mets de
 ![La catégorie Fonctions dépliée dans MakeCode, avec le bouton « Créer une fonction… »](../assets/rover-s02/20-categorie-fonctions.png)
 </figure>
 
-Le nouveau bloc `fonction <nom>` apparaît dans l'espace de travail : glisse tes blocs dedans. Un bloc `appel <nom>` apparaît en même temps dans la catégorie **Fonctions** — c'est lui que tu places dans `toujours` ou dans `au démarrage`.
+Le nouveau bloc `fonction <nom>` apparaît dans l'espace de travail : glisse tes blocs dedans. Un bloc `appel <nom>` apparaît en même temps dans la catégorie **Fonctions**. C'est lui que tu places dans `toujours` ou dans `au démarrage`.
 
 > [!NOTE] À quoi ça sert
 > À écrire une fois ce qu'on utilise dix fois, et à se relire. `appel avancer` se comprend sans lire le détail ; trois blocs moteur avec des chiffres, non.
@@ -92,15 +92,15 @@ Une variable est une **boîte nommée** qui retient une valeur. Tu y ranges quel
 Deux blocs suffisent : `définir <nom> à …` pour y mettre une valeur, et le bloc `<nom>` lui-même pour la relire.
 
 > [!NOTE] À quoi ça sert avec un capteur
-> Lire un capteur deux fois de suite donne deux valeurs différentes — il bouge entre les deux lectures. Range la mesure dans une variable, et tous tes tests parleront bien du **même** instant.
+> Lire un capteur deux fois de suite donne deux valeurs différentes : il bouge entre les deux lectures. Range la mesure dans une variable, et tous tes tests parleront bien du **même** instant.
 
 ## Les capteurs, et la décision
 
-Un capteur ne dit jamais « penche à gauche ». Il dit `-247`. Il faut donc **transformer un nombre en décision** — et c'est le même geste pour un thermostat, un détecteur de présence, un capteur de ligne ou une télécommande.
+Un capteur ne dit jamais « penche à gauche ». Il dit `-247`. Il faut donc **transformer un nombre en décision**, et c'est le même geste pour un thermostat, un détecteur de présence, un capteur de ligne ou une télécommande.
 
 ### 1. Regarde avant de décider
 
-La faute classique est d'écrire le test avant d'avoir vu les chiffres. On se trompe de signe, d'ordre de grandeur, d'axe — et on cherche ensuite dans le code un problème qui n'y est pas.
+La faute classique est d'écrire le test avant d'avoir vu les chiffres. On se trompe de signe, d'ordre de grandeur, d'axe, et on cherche ensuite dans le code un problème qui n'y est pas.
 
 Affiche les valeurs brutes, dans `toujours` :
 
@@ -111,7 +111,7 @@ série écrire valeur "x" = accélération (mg) x
 Téléverse, puis **Afficher données Appareil**. Bouge la carte et regarde les courbes.
 
 > [!NOTE] La communication série
-> `série écrire valeur` n'affiche rien sur la carte : il **envoie** les valeurs à l'ordinateur par la liaison série, dans le câble USB. C'est pour ça qu'il faut rester branché pour voir quelque chose, et c'est aussi pour ça que ces blocs ne servent qu'à la mise au point — une fois le rover autonome, personne ne les lit plus.
+> `série écrire valeur` n'affiche rien sur la carte : il **envoie** les valeurs à l'ordinateur par la liaison série, dans le câble USB. C'est pour ça qu'il faut rester branché pour voir quelque chose, et c'est aussi pour ça que ces blocs ne servent qu'à la mise au point : une fois le rover autonome, personne ne les lit plus.
 
 <figure class="screenshot" markdown>
 ![Le graphe des données de l'accéléromètre : quatre courbes qui réagissent aux mouvements de la carte](../assets/rover-s03/33-afficher-donnees.png)
@@ -129,8 +129,8 @@ Il mesure une accélération sur trois axes, en **mg** (millièmes de g). À pla
 
 | Axe | Ce qu'il mesure |
 |---|---|
-| `x` | L'inclinaison gauche / droite — le **roulis** |
-| `y` | L'inclinaison avant / arrière — le **tangage** |
+| `x` | L'inclinaison gauche / droite, le **roulis** |
+| `y` | L'inclinaison avant / arrière, le **tangage** |
 | `z` | Le haut et le bas |
 | `force` | L'intensité totale, tous axes confondus |
 
@@ -171,7 +171,7 @@ L'ordre compte : le premier test vrai gagne, les suivants ne sont même pas lus.
 ### Afficher vite
 
 > [!CAUTION] `montrer la flèche` bloque 400 ms
-> `montrer la flèche`, `montrer l'icône` et `montrer les LED` **attendent après avoir affiché** — 400 ms, et en blocs cette durée n'est pas réglable. Dans une boucle qui lit un capteur en continu, le programme ne relit la mesure que deux fois et demie par seconde.
+> `montrer la flèche`, `montrer l'icône` et `montrer les LED` **attendent après avoir affiché** 400 ms, et en blocs cette durée n'est pas réglable. Dans une boucle qui lit un capteur en continu, le programme ne relit la mesure que deux fois et demie par seconde.
 >
 > `allumer x y`, dans **LED**, n'attend pas.
 
@@ -197,7 +197,7 @@ Deux cartes ne se parlent que si elles émettent **au même endroit du spectre**
 Le numéro va de `0` à `83`, un mégahertz par pas à partir de 2400 : la bande `15` est à 2415 MHz. Par défaut, une carte neuve est sur la bande `7`.
 
 > [!NOTE] Bande ou groupe ?
-> `radio définir groupe` trie aussi les conversations, mais toutes les cartes restent sur la même fréquence : elles s'entendent et filtrent à l'arrivée. Quand une salle entière émet en continu, les messages se gênent quoi qu'il arrive. La bande sépare vraiment — c'est elle qu'on utilise ici.
+> `radio définir groupe` trie aussi les conversations, mais toutes les cartes restent sur la même fréquence : elles s'entendent et filtrent à l'arrivée. Quand une salle entière émet en continu, les messages se gênent quoi qu'il arrive. La bande sépare vraiment les cartes : c'est elle qu'on utilise ici.
 >
 > Ni l'une ni l'autre ne rend la liaison plus sûre : n'importe qui peut se régler sur la tienne et écouter.
 
@@ -212,7 +212,7 @@ Le bloc qu'on utilise sur le rover envoie **une clé et une valeur** :
 envoyer la valeur  "avancer"  =  180  par radio
 ```
 
-La **clé** est un mot : c'est l'ordre. La **valeur** est un nombre qui l'accompagne — une vitesse, une distance, une mesure.
+La **clé** est un mot : c'est l'ordre. La **valeur** est un nombre qui l'accompagne : une vitesse, une distance, une mesure.
 
 En face, `quand une donnée est reçue par radio` se déclenche tout seul à chaque message, et apporte deux choses : `nom` (la clé) et `valeur` (le nombre).
 
@@ -246,13 +246,13 @@ Note le tien dans ton carnet de bord. C'est ce que tu reliras quand ton coéquip
 
 ### Quand rien ne passe
 
-La radio est muette : elle ne signale ni l'échec, ni le succès. **Fais-la parler toi-même** — une flèche, une icône, un son à chaque message envoyé et à chaque message reçu. C'est le seul moyen de voir où la chaîne se coupe.
+La radio est muette : elle ne signale ni l'échec, ni le succès. **Fais-la parler toi-même** : une flèche, une icône, un son à chaque message envoyé et à chaque message reçu. C'est le seul moyen de voir où la chaîne se coupe.
 
 | Ce que tu vois | Où chercher |
 |---|---|
 | Rien ne s'affiche, même côté émetteur | Le programme n'envoie pas : seuils, conditions |
 | L'émetteur affiche, le récepteur non | Les groupes diffèrent, ou une carte n'est pas alimentée |
-| Le récepteur affiche, mais le mauvais ordre | Les clés ne correspondent pas — vérifie les 8 caractères |
+| Le récepteur affiche, mais le mauvais ordre | Les clés ne correspondent pas : vérifie les 8 caractères |
 | Ça marche, puis ça s'arrête | Les accus |
 
 > [!TIP] Retire les témoins à la fin
@@ -264,7 +264,7 @@ Un même programme peut faire plusieurs choses : obéir à la télécommande, ob
 
 **Une variable `mode`, pour tout le programme.** Donne un numéro à chaque mode : `0` télécommande, `1` table, `2` guidage. `au démarrage`, `toujours` et `quand une donnée est reçue` lisent tous la même variable.
 
-**Un geste pour en changer.** Par exemple `quand le logo est touché` : `mode` passe au suivant, et revient à `0` après le dernier. C'est là aussi qu'on règle la radio du nouveau mode — bande de l'équipe, ou bande `83` et groupe.
+**Un geste pour en changer.** Par exemple `quand le logo est touché` : `mode` passe au suivant, et revient à `0` après le dernier. C'est là aussi qu'on règle la radio du nouveau mode : bande de l'équipe, ou bande `83` et groupe.
 
 <span class="todo-media">[capture : quand le logo est touché → mode ← mode + 1 ; si mode > 2 alors mode ← 0 ; si mode = 0 alors bande de l'équipe, sinon bande 83 et groupe]</span>
 

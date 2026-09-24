@@ -20,13 +20,13 @@ Cochez ce que vous avez déjà vérifié. Aujourd'hui, vous le montrez.
 | Pente | Le rover monte le plan incliné à 10° |
 | Échantillon | Il le déplace de 50 cm, toujours debout ; le tag est en place |
 | Gabarit | Il tient dans 25 × 25 × 20 cm ; votre électronique ; votre total d'impression |
-| Table | La télécommande, votre passage d'un mode à l'autre, le pilotage par la table — et le guidage si vous l'avez fait |
+| Table | La télécommande, votre passage d'un mode à l'autre, le pilotage par la table, et le guidage si vous l'avez fait |
 
 <span class="todo-media">[photo : la station pente, un rover d'équipe sur le plan incliné]</span>
 
-**C'est vous qui cochez.** L'adulte ou l'équipe qui regarde dit ce qu'elle a vu.
+C'est vous qui cochez. L'adulte ou l'équipe qui regarde dit ce qu'elle a vu.
 
-Entre deux stations, vous passez par la **station correction** : réparez ce qui vient de rater.
+Entre deux stations, vous passez par la station de correction : réparez ce qui vient de rater.
 
 ## 3. Choisissez vos corrections
 

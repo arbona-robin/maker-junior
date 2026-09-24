@@ -60,73 +60,97 @@ Le planning est prévisionnel : il se corrige au fil du parcours, c'est normal e
 ## Séance 1 — Phase 1 — Découverte & prise en main
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 2 — Phase 1 — Découverte & prise en main
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 3 — Phase 1 — Découverte & prise en main
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 4 — Phase 2 — Exploration & création
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 5 — Phase 2 — Exploration & création
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 6 — Phase 2 — Exploration & création
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 7 — Phase 2 — Exploration & création
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 8 — Phase 2 — Exploration & création
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 9 — Phase 2 — Exploration & création
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 10 — Phase 3 — Finalisation & valorisation
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 11 — Phase 3 — Finalisation & valorisation
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ## Séance 12 — Phase 3 — Finalisation & valorisation
 
 **Titre :**
+
 **Notions :**
+
 **Livrable intermédiaire :**
 
 ---

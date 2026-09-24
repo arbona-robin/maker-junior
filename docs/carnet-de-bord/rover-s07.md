@@ -19,7 +19,7 @@ En deux ou trois phrases, avec tes mots.
 | Les deux balaient de 0° à 180° | ☐ |
 | Jusqu'où va le bras : de ______ ° à ______ ° | |
 
-**Notre décision** — servomoteur ou pas, et pourquoi :
+**Notre décision :** servomoteur ou pas, et pourquoi.
 
 <br><br>
 

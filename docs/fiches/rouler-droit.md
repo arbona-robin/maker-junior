@@ -1,6 +1,6 @@
 # Rouler droit et tourner
 
-Un rover à deux roues motrices n'a pas de volant. Tous ses mouvements — avancer, tourner, pivoter — viennent d'une seule chose : **la différence de vitesse entre ses deux roues**.
+Un rover à deux roues motrices n'a pas de volant. Tous ses mouvements (avancer, tourner, pivoter) viennent d'une seule chose : **la différence de vitesse entre ses deux roues**.
 
 ## Les façons de tourner
 
@@ -18,7 +18,7 @@ Un rover à deux roues motrices n'a pas de volant. Tous ses mouvements — avanc
 > [!IMPORTANT] La convention du parcours
 > On tourne toujours de la même façon : **une roue à l'arrêt, l'autre en marche**. C'est ce que font `tournerAGauche` et `tournerADroite`, de la séance 3 jusqu'aux missions.
 >
-> La raison est le pilotage. Le rover tourne **en avançant**, donc tu corriges ta trajectoire vers ce que tu veux atteindre sans t'arrêter — c'est le plus proche d'un volant qu'un rover à deux roues puisse faire. Le pivot sur place, lui, demande trois gestes : s'arrêter, tourner, repartir.
+> La raison est le pilotage. Le rover tourne **en avançant**, donc tu corriges ta trajectoire vers ce que tu veux atteindre sans t'arrêter. C'est le plus proche d'un volant qu'un rover à deux roues puisse faire. Le pivot sur place, lui, demande trois gestes : s'arrêter, tourner, repartir.
 
 ## Ton rover ne roule pas droit
 
@@ -47,8 +47,8 @@ Note tes deux valeurs dans ton carnet de bord : tu les reprendras à chaque séa
 
 Un rover qui « a l'air de rouler droit » ne se règle pas. Il faut une mesure, et la même à chaque fois.
 
-- **Un point de départ matérialisé** — un repère en L, pour reposer le rover exactement pareil
-- **Une distance fixe** — 1,50 m sur le banc
+- **Un point de départ matérialisé** : un repère en L, pour reposer le rover exactement pareil
+- **Une distance fixe** : 1,50 m sur le banc
 - **Un écart mesuré à l'arrivée**, par rapport à la ligne du banc
 - **Trois passages**, pas un
 
@@ -59,12 +59,12 @@ Vise moins d'une largeur de rover d'écart au bout d'1,50 m. Le zéro parfait n'
 
 ## La vitesse minimale de démarrage
 
-En dessous d'une certaine valeur, ton rover ne démarre pas — mais si tu le pousses d'une pichenette, il continue de rouler.
+En dessous d'une certaine valeur, ton rover ne démarre pas, mais si tu le pousses d'une pichenette, il continue de rouler.
 
 > [!NOTE] Pourquoi
 > Il faut plus de force pour décoller un objet immobile que pour l'entretenir en mouvement. Sous cette valeur, les moteurs bourdonnent sans vaincre le frottement de départ.
 
-Mesure-la : descends la vitesse petit à petit jusqu'à ce que le rover refuse de partir tout seul. **Cette valeur est ton plancher** — ne programme jamais en dessous.
+Mesure-la : descends la vitesse petit à petit jusqu'à ce que le rover refuse de partir tout seul. **Cette valeur est ton plancher** : ne programme jamais en dessous.
 
 Elle remonte quand le rover s'alourdit, et quand les accus faiblissent en fin de séance.
 

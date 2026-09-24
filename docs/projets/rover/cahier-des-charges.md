@@ -11,7 +11,7 @@ Ce numéro est à la fois l'id de votre tag, votre bande à la télécommande et
 | | Ce qu'il faut | Comment on vérifie |
 |---|---|---|
 | **Pente** | 10° : 30 cm de long, environ 5,2 cm de haut | ☐ Il monte jusqu'en haut à la télécommande, sans reculer |
-| **Échantillon** | La pièce ci-dessous, 40 × 40 × 56 mm, **posée debout** — poussée, saisie ou soulevée, au choix | ☐ Déplacé de 50 cm, toujours debout à l'arrivée |
+| **Échantillon** | La pièce ci-dessous (40 × 40 × 56 mm), posée debout. Poussée, saisie ou soulevée, au choix | ☐ Déplacé de 50 cm, toujours debout à l'arrivée |
 | **Tag** | 90 mm de noir, et sa marge blanche : 112 mm de côté une fois découpé | ☐ À plat, visible du dessus, marge blanche comprise, en place après la pente |
 | **Encombrement** | 25 × 25 × 20 cm au maximum, tout compris | ☐ Il entre dans le gabarit |
 | **Électronique** | Au maximum : 1 carte DFR0548, 2 micro:bit, 4 moteurs, 2 servomoteurs | ☐ On compte |
@@ -42,7 +42,7 @@ Votre rover fonctionne selon plusieurs modes.
 |---|---|---|
 | **Télécommande** | De votre télécommande, sur la bande *votre numéro* : les cinq clés de la séance 4 | ☐ Obéir aux cinq clés |
 | **Table** | De la table, sur la bande `83`, groupe *votre numéro* : les mêmes cinq clés. La valeur, de `0` à `1023`, donne la vitesse | ☐ `avancer` : 5 cm au moins en 1,5 s<br>☐ `gauche` et `droite` : deux sens opposés<br>☐ Plus de message pendant 1 s : il s'arrête<br>☐ Il suit la figure de la table |
-| **Guidage** — *optionnel* | De la table, sur la bande `83`, groupe *votre numéro* :<br>`cap`, de `-180` à `180` : les degrés à tourner pour viser la cible, négatif à gauche — 10 fois par seconde<br>`dist`, de `0` à `999` : la distance à la cible, en cm — 2 fois par seconde | ☐ Rejoindre la cible. Quand tourner, de quel côté, quand s'arrêter : à vous de le trouver |
+| **Guidage** (optionnel) | De la table, sur la bande `83`, groupe *votre numéro* :<br>`cap`, de `-180` à `180` : les degrés à tourner pour viser la cible (négatif à gauche), 10 fois par seconde<br>`dist`, de `0` à `999` : la distance à la cible, en cm, 2 fois par seconde | ☐ Rejoindre la cible. Quand tourner, de quel côté, quand s'arrêter : à vous de le trouver |
 | **Changer de mode** | Comment : c'est à vous de choisir | ☐ L'écran montre le mode actif |
 
 > [!TIP] Tester le guidage sans la table

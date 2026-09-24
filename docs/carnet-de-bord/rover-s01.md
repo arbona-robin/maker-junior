@@ -26,7 +26,7 @@ En deux ou trois phrases, avec tes mots.
 
 <br>
 
-**Mes réglages** — vitesse, durée des pauses :
+**Mes réglages :** vitesse, durée des pauses.
 
 <br><br>
 

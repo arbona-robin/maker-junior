@@ -7,7 +7,7 @@ Chercher une panne, c'est **séparer ce qui marche de ce qui ne marche pas**, po
 > [!NOTE] Diviser pour trouver
 > Ton rover est une chaîne : l'ordinateur écrit le programme, l'USB le transmet, la carte l'exécute, les accus alimentent, les fils transportent, les moteurs tournent.
 >
-> Quand rien ne bouge, la question n'est pas « qu'est-ce qui ne va pas », mais **« jusqu'où ça marche ? »**. Chaque témoin visible — une icône, un son, une LED — te dit qu'un maillon est franchi.
+> Quand rien ne bouge, la question n'est pas « qu'est-ce qui ne va pas », mais **« jusqu'où ça marche ? »**. Chaque témoin visible (une icône, un son, une LED) te dit qu'un maillon est franchi.
 >
 > C'est pour ça qu'on met une icône et un son dans `au démarrage`, et qu'on affiche une flèche pendant que les moteurs tournent : ce sont des points de mesure.
 
@@ -20,7 +20,7 @@ La carte n'est pas alimentée, ou le programme n'a pas été téléversé. Rebra
 Le programme a démarré et s'est arrêté ou bloqué. Regarde ce qui suit dans ton code, et vérifie que tes actions répétées sont bien dans `toujours` et non dans `au démarrage`.
 
 **La flèche s'affiche, mais aucun moteur ne tourne.**
-Le programme se déroule — **le problème n'est pas dans le code.** Dans l'ordre :
+Le programme se déroule : **le problème n'est pas dans le code.** Dans l'ordre :
 
 1. L'interrupteur de la carte est-il sur *on* ?
 2. Le pack d'accus est-il branché, et les accus chargés ?
@@ -37,7 +37,7 @@ Normal, et attendu : les deux moteurs sont montés tête-bêche sur le châssis.
 La vitesse est trop basse pour vaincre le frottement de départ, ou les accus sont faibles. Monte la valeur de `speed`, ou change de pack. → [La vitesse minimale de démarrage](rouler-droit.md#la-vitesse-minimale-de-demarrage)
 
 **Le rover tourne au lieu d'avancer droit.**
-Ce n'est pas une panne. Deux moteurs identiques ne tournent jamais exactement à la même vitesse, et le châssis n'est jamais parfaitement symétrique. Vérifie la mécanique d'abord — languette arrière, aplomb, parallélisme des moteurs, roues enfoncées à fond — puis compense dans le code. → [Rouler droit et tourner](rouler-droit.md)
+Ce n'est pas une panne. Deux moteurs identiques ne tournent jamais exactement à la même vitesse, et le châssis n'est jamais parfaitement symétrique. Vérifie la mécanique d'abord (languette arrière, aplomb, parallélisme des moteurs, roues enfoncées à fond), puis compense dans le code. → [Rouler droit et tourner](rouler-droit.md)
 
 **Le rover roulait, il ne roule plus.**
 Regarde d'abord les accus : c'est la cause la plus fréquente, et la plus vite écartée. Puis les élastiques : un moteur qui a glissé dans son logement débranche souvent un fil au passage.
@@ -47,10 +47,10 @@ Regarde d'abord les accus : c'est la cause la plus fréquente, et la plus vite �
 Trois questions à te poser.
 
 1. **Jusqu'où ça marche ?** Quel est le dernier témoin que tu as vu s'allumer ?
-2. **Qu'est-ce qui a changé ?** Ça marchait il y a cinq minutes — qu'as-tu touché entre-temps ?
+2. **Qu'est-ce qui a changé ?** Ça marchait il y a cinq minutes : qu'as-tu touché entre-temps ?
 3. **Est-ce que ça marche sur le rover d'à côté ?** Échange une pièce avec un binôme : c'est le moyen le plus rapide de savoir si le problème est dans la pièce ou dans le montage.
 
 > [!TIP] Note ta panne
-> Quand tu as trouvé, écris-la dans ton carnet de bord : le symptôme, la cause, la solution. Tu la retrouveras — et quelqu'un d'autre l'aura aussi.
+> Quand tu as trouvé, écris-la dans ton carnet de bord : le symptôme, la cause, la solution. Tu la retrouveras, et quelqu'un d'autre aussi.
 
 → [La carte DFR0548 et ses blocs](carte-dfr0548.md) · [Rouler droit et tourner](rouler-droit.md)

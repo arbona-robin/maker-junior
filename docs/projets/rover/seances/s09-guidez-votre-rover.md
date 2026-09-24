@@ -6,7 +6,7 @@ La table ne donne plus d'ordres : elle envoie des mesures. C'est votre rover qui
 
 | Clé | Valeur | Ce que c'est | Combien de fois par seconde |
 |---|---|---|---|
-| `cap` | de `-180` à `180` | de combien de degrés tourner pour viser la cible — négatif : à gauche | 10 |
+| `cap` | de `-180` à `180` | de combien de degrés tourner pour viser la cible (négatif : à gauche) | 10 |
 | `dist` | de `0` à `999` | la distance à la cible, en centimètres | 2 |
 
 ## 2. Jouez la table
@@ -29,8 +29,8 @@ Votre télécommande peut jouer la table le temps des essais : elle envoie `cap`
 
 Deux façons de faire :
 
-- **un projet à part**, `table-de-poche`, que tu téléverses le temps des essais ;
-- **un mode de plus** dans ta télécommande. Les boutons `A` et `B` servent déjà : change de mode avec le logo.
+- un projet à part, `table-de-poche`, que tu téléverses le temps des essais ;
+- un mode de plus dans ta télécommande. Les boutons `A` et `B` servent déjà : change de mode avec le logo.
 
 → [Changer de mode](../../../fiches/makecode-prise-en-main.md#changer-de-mode)
 

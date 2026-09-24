@@ -47,7 +47,7 @@ Passe le texte en **Perçage** : il devient transparent. Il ne s'imprimera pas, 
 ![Le panneau Texte avec la bascule Solide / Perçage, Perçage sélectionné, et les lettres devenues transparentes sur la plaque](../../../assets/rover-s03/25-texte-en-percage.png)
 </figure>
 
-Sélectionne la plaque et le texte, puis **Regroupe** — <kbd>Ctrl</kbd> + <kbd>G</kbd>. L'icône est **le carré et le rond soudés en une seule forme bleue**.
+Sélectionne la plaque et le texte, puis **Regroupe** (<kbd>Ctrl</kbd> + <kbd>G</kbd>). L'icône est **le carré et le rond soudés en une seule forme bleue**.
 
 <figure class="screenshot" markdown>
 ![Le panneau Union avec l'infobulle « Regrouper en union, Ctrl + G » et les trois icônes de groupement, celle du milieu sélectionnée](../../../assets/rover-s03/26-regrouper-en-union.png)
@@ -66,7 +66,7 @@ Le premier reste **Solide** : pose-le à l'extrémité de la plaque, débordant 
 ![Un cylindre solide orange posé à l'extrémité de la plaque, qu'il déborde](../../../assets/rover-s03/27-cylindre-du-trou.png)
 </figure>
 
-Le second passe en **Perçage** : plus petit, centré dans le premier — avec l'outil Aligner. C'est lui qui fait le trou.
+Le second passe en **Perçage** : plus petit, centré dans le premier avec l'outil Aligner. C'est lui qui fait le trou.
 
 > [!TIP] Laisse de la matière
 > Au moins **3 mm** entre le trou et le bord de l'oreille. Sinon l'anneau arrache le coin au premier trousseau de clés.
@@ -83,7 +83,7 @@ Ton imprimante empile des couches de plastique, de bas en haut, et ne pose rien 
 
 Regarde ta plaque et réponds à deux questions.
 
-**Est-ce que tout tient ?** Cherche les morceaux qui ne touchent plus rien. L'intérieur des lettres fermées — `o`, `b`, `a`, `d` — n'est relié à rien.
+**Est-ce que tout tient ?** Cherche les morceaux qui ne touchent plus rien. L'intérieur des lettres fermées (`o`, `b`, `a`, `d`) n'est relié à rien.
 
 <figure class="screenshot" markdown>
 ![Dans Tinkercad, les intérieurs des lettres o et b apparaissent comme des îlots détachés du reste de la plaque](../../../assets/rover-s03/29-contreformes-a-traiter.png)
@@ -118,7 +118,7 @@ Nomme le fichier `prenom-plaque.stl` et dépose-le où l'animateur te l'indique.
 
 **À toi.** Fabrique `reculer`, `tournerAGauche`, `tournerADroite` et `arreter`, sur le modèle d'`avancer`.
 
-Pour tourner : **une roue à l'arrêt, l'autre en marche.** Le rover décrit une courbe autour de la roue arrêtée — il tourne **en avançant**.
+Pour tourner : **une roue à l'arrêt, l'autre en marche.** Le rover décrit une courbe autour de la roue arrêtée : il tourne en avançant.
 
 C'est ce qui te permettra de viser. Deux moteurs en sens opposés font pivoter le rover sur place : il faut s'arrêter, tourner, repartir. La courbe, elle, se corrige en roulant, comme un volant.
 
@@ -136,7 +136,7 @@ Termine par une **pause plus longue** avant que la boucle reparte : tu sais où 
 
 `tournerAGauche` : `M1` à `speed 0`, `M2` en marche. `tournerADroite` : l'inverse. `reculer` : le sens inverse d'`avancer`, sur les deux moteurs.
 
-`arreter` contient les deux blocs `Motor` à `speed 0`. `Motor Stop All` fait la même chose en un seul bloc — les deux se valent.
+`arreter` contient les deux blocs `Motor` à `speed 0`. `Motor Stop All` fait la même chose en un seul bloc. Les deux se valent.
 
 → [La carte DFR0548 et ses blocs](../../../fiches/carte-dfr0548.md#lextension-df-driver)
 
@@ -153,7 +153,7 @@ Départ derrière la **ligne jaune**. Ton rover doit dépasser la **ligne bleue*
 Deux changements dans ton code :
 
 1. **Supprime le bloc `toujours`.** Tu ne veux plus que ça tourne sans fin.
-2. Prends `lorsque le bouton A est pressé`, et mets dedans `répéter 3 fois` — dans la catégorie **Boucles**.
+2. Prends `lorsque le bouton A est pressé`, et mets dedans `répéter 3 fois`, dans la catégorie **Boucles**.
 
 <figure class="screenshot" markdown>
 ![La catégorie Boucles dépliée, avec le bloc « répéter 4 fois / faire » en vert](../../../assets/rover-s02/25-categorie-boucles.png)
