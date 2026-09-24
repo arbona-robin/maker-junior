@@ -160,8 +160,11 @@ magick photo.HEIC -auto-orient -strip -resize '2000x2000>' -quality 85 sortie.jp
 # Capture Retina : moitié de résolution, le texte reste net
 magick capture.png -strip -resize '1638x>' sortie.png
 
-# Vidéo : H.264 720p, sans audio (bruit d'atelier, voix)
-ffmpeg -i video.MOV -vf scale=-2:720 -c:v libx264 -crf 24 -preset slow \
+# Vidéo : H.264 720p, 8 bits, sans audio (bruit d'atelier, voix)
+# -pix_fmt yuv420p est indispensable : les vidéos d'iPhone sont en 10 bits,
+# et un H.264 10 bits ne se lit pas sur la plupart des Android.
+ffmpeg -i video.MOV -vf scale=-2:720 -c:v libx264 -profile:v high -level 3.1 \
+       -pix_fmt yuv420p -crf 24 -preset slow \
        -an -movflags +faststart sortie.mp4
 ```
 

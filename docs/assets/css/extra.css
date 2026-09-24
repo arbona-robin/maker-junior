@@ -38,20 +38,20 @@
 
 .md-typeset video {
   width: 100%;
-  max-width: 34rem;
+  max-width: min(34rem, 100%);
   display: block;
 }
 
 /* A step's illustration sits at reading width, not full bleed. */
 .md-typeset figure img {
-  max-width: 26rem;
+  max-width: min(26rem, 100%);
 }
 
 .md-typeset figure figcaption {
   font-size: 0.75rem;
   color: var(--md-default-fg-color--light);
   margin-top: 0.4em;
-  max-width: 26rem;
+  max-width: min(26rem, 100%);
   margin-inline: auto;
 }
 
