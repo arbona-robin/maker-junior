@@ -22,7 +22,10 @@ Cochez ce que vous avez déjà vérifié. Aujourd'hui, vous le montrez.
 | Gabarit | Il tient dans 25 × 25 × 20 cm ; votre électronique ; votre total d'impression |
 | Table | La télécommande, votre passage d'un mode à l'autre, le pilotage par la table, et le guidage si vous l'avez fait |
 
-<span class="todo-media">[photo : la station pente, un rover d'équipe sur le plan incliné]</span>
+<figure markdown>
+![Le plan incliné en carton, l'échantillon posé debout en haut de la pente, et au premier plan un rover qui porte un tag](../../../assets/rover-s05/01-plan-incline-echantillon-tag.jpg)
+<figcaption>La station pente.</figcaption>
+</figure>
 
 C'est vous qui cochez. L'adulte ou l'équipe qui regarde dit ce qu'elle a vu.
 

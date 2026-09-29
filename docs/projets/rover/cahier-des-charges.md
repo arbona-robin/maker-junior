@@ -52,5 +52,5 @@ Votre rover fonctionne selon plusieurs modes.
 
 | Épreuve | Règles |
 |---|---|
-| **Le parcours** | Slalom et pente, chronométrés. Un rover à la fois, deux passages, le meilleur temps gagne |
+| **Le parcours** | Slalom entre des portes de 25 × 20 cm, la taille maximale du rover, et pente, chronométrés. Un rover à la fois, deux passages, le meilleur temps gagne |
 | **Le capture the flag** | Sur la table, toutes les équipes en même temps, à la télécommande. Échantillon debout au centre, départ et retour dans une zone commune. Ramené **debout** : **+2**. Renversé : **−1** pour l'équipe qui l'a renversé, et il est remis au centre. Trois manches, ou 15 minutes |

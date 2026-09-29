@@ -136,7 +136,7 @@ Sans installer de slicer : **Kiri:Moto**, dans le navigateur, gratuit et sans co
 4. **Exporter** : la fenêtre affiche **estimation du temps**, en heures, minutes, secondes. Pas besoin de télécharger.
 
 <figure class="screenshot" markdown>
-![La fenêtre d'export de Kiri:Moto : estimation du temps 00:33:09](../assets/rover-s06/27-kiri-estimation.png)
+![La fenêtre d'export de Kiri:Moto : estimation du temps 00:33:09](../assets/rover-s06/28-kiri-estimation.png)
 </figure>
 
 > [!NOTE] Un ordre de grandeur

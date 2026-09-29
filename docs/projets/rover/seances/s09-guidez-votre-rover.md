@@ -38,12 +38,13 @@ Deux façons de faire :
 
 L'inclinaison donne le cap. Les boutons `A` et `B` font baisser et monter la distance.
 
-<details markdown>
-<summary>La solution</summary>
+La méthode :
 
-<span class="todo-media">[capture : toujours → envoyer la valeur cap = roulis ÷ 5 ; boutons A et B qui font varier dist et l'envoient]</span>
+1. Reprends la lecture du roulis de ta télécommande. Il va d'environ `-1000` à `1000` : ramène-le entre `-180` et `180`.
+2. Envoie-le sous la clé `cap`, plusieurs fois par seconde.
+3. Crée une variable `dist`. Les boutons la font baisser ou monter, et l'envoient sous la clé `dist`.
 
-</details>
+Vérifie sur l'écran de ton rover qu'il reçoit bien les deux clés.
 
 ## 4. Écrivez le mode guidage
 

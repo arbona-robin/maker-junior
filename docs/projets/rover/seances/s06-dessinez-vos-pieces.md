@@ -54,9 +54,11 @@ Dessine la moitié du profil, contre l'axe. Tinkercad le fait tourner autour. Po
 
 Des milliers de pièces sont partagées en ligne. Cherche par exemple `servo arm`, `TT motor mount`, `gripper`.
 
-<span class="todo-media">[capture : une recherche dans la galerie de pièces partagées]</span>
+<figure class="screenshot" markdown>
+![La galerie de Tinkercad : la recherche « rover » affiche des modèles partagés, chacun avec le nom de son auteur](../../../assets/rover-s06/25-galerie-recherche.png)
+</figure>
 
-Tu peux la copier et la modifier. Note le nom de son auteur dans ton carnet.
+Coche **Copie autorisée** : tu ne vois plus que les pièces que tu as le droit de copier et de modifier. Note le nom de leur auteur dans ton carnet.
 
 ## 4. Vérifiez la durée d'impression
 
@@ -70,19 +72,19 @@ Sélectionne toutes les formes de ta pièce et regroupe-les, puis exporte-la en 
 **Fichier** → **Importer** → ton `.STL`.
 
 <figure class="screenshot" markdown>
-![Le menu Fichier de Kiri:Moto ouvert, l'entrée Importer en surbrillance](../../../assets/rover-s06/25-kiri-importer.png)
+![Le menu Fichier de Kiri:Moto ouvert, l'entrée Importer en surbrillance](../../../assets/rover-s06/26-kiri-importer.png)
 </figure>
 
 **Trancher**.
 
 <figure class="screenshot" markdown>
-![Le bouton Trancher enfoncé, la pièce découpée en couches sur le plateau](../../../assets/rover-s06/26-kiri-trancher.png)
+![Le bouton Trancher enfoncé, la pièce découpée en couches sur le plateau](../../../assets/rover-s06/27-kiri-trancher.png)
 </figure>
 
 **Exporter** : lis **estimation du temps**. Pas besoin de télécharger.
 
 <figure class="screenshot" markdown>
-![La fenêtre d'export de Kiri:Moto : estimation du temps 00:33:09](../../../assets/rover-s06/27-kiri-estimation.png)
+![La fenêtre d'export de Kiri:Moto : estimation du temps 00:33:09](../../../assets/rover-s06/28-kiri-estimation.png)
 <figcaption>00:33:09 : 33 minutes.</figcaption>
 </figure>
 

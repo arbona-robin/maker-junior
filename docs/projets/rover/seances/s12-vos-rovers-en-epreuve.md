@@ -13,7 +13,7 @@ Deux épreuves, toutes les équipes en piste. Puis vous faites le bilan du proje
 
 ## 2. Le parcours
 
-Un slalom et une pente, chronométrés. Un rover à la fois, deux passages, le meilleur temps compte.
+Un slalom entre des portes de 25 × 20 cm, la taille maximale du rover, et une pente, chronométrés. Un rover à la fois, deux passages, le meilleur temps compte.
 
 <span class="todo-media">[photo : le parcours, slalom et plan incliné]</span>
 

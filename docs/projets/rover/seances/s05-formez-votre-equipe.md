@@ -4,7 +4,9 @@ Votre rover roule et obéit à sa télécommande. Aujourd'hui, vous formez une �
 
 ## 1. Découvrez le cahier des charges
 
-<span class="todo-media">[photo : le plan incliné, l'échantillon debout et un tag, posés sur la table de présentation]</span>
+<figure markdown>
+![Le plan incliné en carton, l'échantillon posé debout en haut de la pente, et au premier plan un rover qui porte un tag](../../../assets/rover-s05/01-plan-incline-echantillon-tag.jpg)
+</figure>
 
 Le cahier des charges dit ce que votre rover devra faire. Lisez-le en entier.
 
@@ -47,11 +49,9 @@ Chacun dessine une solution pour l'échantillon, vue de dessus et de côté. Pla
 
 Puis choisissez-en une ensemble.
 
-<span class="todo-media">[photo : un croquis d'équipe, rover vu de dessus et de côté, tag et échantillon dessinés]</span>
-
 ## 5. Tracez le plan du châssis
 
-Partez du plan de la séance 2 et modifiez-le. Sur papier quadrillé, compte les carreaux, ne mesure pas.
+Sur papier quadrillé, compte les carreaux, ne mesure pas. Vous pouvez partir du plan de la séance 2 et le modifier, ou dessiner le vôtre.
 
 → [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md)
 
@@ -65,8 +65,6 @@ Partez du plan de la séance 2 et modifiez-le. Sur papier quadrillé, compte les
 Le prototype n'a pas besoin d'être beau. Il sert à vérifier les dimensions.
 
 Le support de tag en fait partie : un carré de carton un peu plus grand que le tag, le tag collé dessus, fixé à plat sur le dessus du rover. La marge blanche reste visible.
-
-<span class="todo-media">[photo : un prototype carton de châssis, l'échantillon posé à côté]</span>
 
 > [!TIP] Le test des proportions
 > Posez l'échantillon à côté du prototype. Tout tient dans 25 × 25 × 20 cm ?
