@@ -22,7 +22,14 @@ Tu poses ta plaque imprimée, tu transformes ta seconde carte en télécommande,
 
 Regarde-la de près avant de la monter : les couches, les lettres, ce qui a bavé. Puis glisse-la sous les élastiques déjà en place sur ton rover.
 
-## 2. Comment piloter ton rover
+## 2. Termine tes mouvements
+
+Tes cinq fonctions ne sont pas toutes faites ? Termine-les : → [Tes quatre autres mouvements](s03-ta-plaque-et-tes-mouvements.md#6-tes-quatre-autres-mouvements)
+
+> [!IMPORTANT] Point de contrôle
+> Montre ton programme de vérification à l'animateur. Quand chaque mouvement fait ce que dit son nom, il te donne ta seconde carte.
+
+## 3. Comment piloter ton rover
 
 Liste ce que tu veux commander : avancer, reculer, gauche, droite, stop…
 
@@ -33,7 +40,7 @@ Ta carte porte un **accéléromètre**, qui mesure son inclinaison sur trois axe
 > [!CAUTION] Cette carte-là ne monte jamais sur le rover
 > C'est ta télécommande. Elle reste dans ton bac entre les séances.
 
-## 3. Lis les valeurs du capteur
+## 4. Lis les valeurs du capteur
 
 Nouveau projet MakeCode, nommé `telecommande`.
 
@@ -59,7 +66,7 @@ Téléverse, garde le câble branché, puis clique sur **Afficher données Appar
 - [ ] Quelle courbe bouge quand tu penches vers l'avant ?
 - [ ] Quelles valeurs quand la carte est à plat ?
 
-## 4. Transforme la mesure en décision
+## 5. Transforme la mesure en décision
 
 Le capteur donne un nombre. Toi, tu veux une direction. Il te faut un **seuil** : à partir de quelle valeur décide-t-on que ça penche vraiment ?
 
@@ -106,7 +113,7 @@ Le premier test vrai gagne, les suivants ne sont même pas lus.
 
 → [Les capteurs, et la décision](../../../fiches/makecode-prise-en-main.md#les-capteurs-et-la-decision)
 
-## 5. Deux machines qui ne se sont jamais parlé
+## 6. Deux machines qui ne se sont jamais parlé
 
 Ta télécommande va envoyer des messages, ton rover va les écouter. Pour qu'ils se comprennent, il leur faut deux accords :
 
@@ -115,7 +122,7 @@ Ta télécommande va envoyer des messages, ton rover va les écouter. Pour qu'il
 
 Ces deux accords, c'est un **protocole**. Celui-ci t'est donné, parce que plus tard, ton rover devra obéir à la télécommande d'un coéquipier, et se faire comprendre d'un rover qui n'est pas le tien. Un protocole ne vaut que si tout le monde emploie le même.
 
-## 6. La même fréquence
+## 7. La même fréquence
 
 Dans la salle, une douzaine de télécommandes émettent en même temps. Pour ne pas piloter le rover du voisin, ni lui le tien, chacun prend **sa bande de fréquence**. La tienne, c'est **le numéro de ton ordinateur**.
 
@@ -132,7 +139,7 @@ Dans `au démarrage`, sur **tes deux cartes** :
 > [!NOTE] Pourquoi la fréquence et pas le groupe
 > `radio définir groupe` existe aussi, mais les cartes restent alors sur la même fréquence : elles s'entendent toutes et trient à l'arrivée. À douze qui émettent sans arrêt, les messages se gênent. Changer de bande, c'est parler ailleurs dans le spectre.
 
-## 7. Le même vocabulaire
+## 8. Le même vocabulaire
 
 Reste dans `telecommande`. Ton programme allume déjà le bon point quand tu penches. Il va maintenant envoyer l'ordre qui va avec.
 
@@ -157,7 +164,7 @@ Un message porte **une clé** et **une valeur**. La clé est le mot d'ordre. La 
 > [!CAUTION] Huit caractères, pas un de plus
 > Au-delà, la carte coupe la clé sans prévenir. `tournerAGauche` et `tournerADroite` arrivent toutes les deux comme `tournerA`. C'est la raison de ces cinq mots-là.
 
-## 8. Tes cinq ordres
+## 9. Tes cinq ordres
 
 **À toi.** Complète les quatre autres branches en suivant le tableau. Puis ajoute une `pause (ms)` de `100` tout en bas du `toujours`.
 
@@ -173,7 +180,7 @@ Un message porte **une clé** et **une valeur**. La clé est le mot d'ordre. La 
 
 </details>
 
-## 9. Ton rover écoute
+## 10. Ton rover écoute
 
 Ouvre `rover`, celui de tes cinq fonctions.
 
@@ -189,7 +196,7 @@ Dans **Radio**, prends `quand une donnée est reçue par radio`. Il t'apporte de
 ![La section Comparaison de la catégorie Logique : deux blocs d'égalité et d'infériorité sur des zéros, et en dessous le bloc d'égalité sur deux cases de texte vides](../../../assets/rover-s04/24-comparaison-de-textes.png)
 </figure>
 
-## 10. La première branche
+## 11. La première branche
 
 <figure class="screenshot" markdown>
 ![Dans le bloc de réception : si nom = avancer alors appel avancer, puis allumer x 2 y 0](../../../assets/rover-s04/25-premiere-branche.png)
@@ -216,7 +223,7 @@ Les points sont les mêmes que sur la télécommande, aux mêmes endroits. C'est
 
 </details>
 
-## 11. Pilote
+## 12. Pilote
 
 Téléverse les deux programmes, débranche l'USB, passe sur accus.
 
@@ -225,7 +232,7 @@ Téléverse les deux programmes, débranche l'USB, passe sur accus.
 >
 > Même point des deux côtés : le message passe. Point allumé seulement sur la télécommande : le rover n'entend pas : vérifie ta bande de fréquence. Le point reste au centre des deux côtés : ce sont tes seuils.
 
-## 12. Va plus loin
+## 13. Va plus loin
 
 - **Trop sensible, ou pas assez ?** Deux nombres décident de ça dans ta télécommande. Trouve lesquels, et dans quel sens les faire varier.
 - **Deux vitesses.** Lente ou rapide, selon un seuil d'inclinaison de plus.

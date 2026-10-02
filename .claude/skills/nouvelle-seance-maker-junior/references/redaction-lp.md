@@ -12,6 +12,14 @@ Guide de rédaction de La Plateforme Jeunesse, appliqué à ce dépôt. Les gaba
 
 Confondre les registres est l'erreur la plus fréquente. Un budget ou un objectif en langage Bloom sur une page lue par un jeune, ou une accroche marketing dans une synthèse : les deux ratent leur cible.
 
+**Le style, dans les trois fiches : un rapport sobre.** Les fiches partent à la hiérarchie, et les tournures apprêtées leur font perdre en crédibilité.
+
+- Dire la chose directement. « À démontrer au lancement : », pas « Trois choses qui ne s'inventent pas, à démontrer au lancement : ». Une phrase qui annonce ou qualifie ce qui suit au lieu de le dire se coupe.
+- Pas de formule à effet : « Trois postes, pas douze : c'est voulu » s'écrit « Trois postes, pour limiter le nombre de lames utilisées en même temps ».
+- Pas de tiret cadratin en incise : une virgule, des parenthèses ou deux phrases.
+- Le gras pour une seule information clé par bloc au plus, jamais en tête de chaque puce ou paragraphe.
+- Une liste seulement quand les éléments sont vraiment parallèles ; sinon un paragraphe.
+
 ---
 
 ## 📣 Fiche Communication

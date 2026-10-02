@@ -182,4 +182,4 @@ Note tes trois résultats dans le carnet.
 
 ## Avant de partir
 
-Matériel dans ton bac, banc dégagé, accus en charge. Un coup d'œil à l'imprimante en sortant.
+Matériel dans ton bac, banc dégagé, accus en charge.
