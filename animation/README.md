@@ -34,3 +34,15 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 - [Séance 12 — Vos rovers en épreuve](rover/s12.md)
 
 Une fiche de séance est créée avant l'atelier, complétée après : les sections « Bilan » et « Adaptations pour la prochaine fois » se remplissent une fois la séance passée, et nourrissent la fiche suivante.
+
+## Export vers le Google Doc
+
+Le dépôt est la source, le Google Doc du projet en est l'export. Son identifiant est dans [`export.yml`](export.yml).
+
+```bash
+.venv/bin/pip install -r outils/requirements.txt          # une fois
+.venv/bin/python outils/sync_gdoc.py diff rover [s01]     # ce qui diffère, et les commentaires ouverts
+.venv/bin/python outils/sync_gdoc.py push rover [s01]     # écrit le dépôt dans le Doc
+```
+
+Le push refuse d'écrire si le Doc a été modifié depuis le précédent : lancer `diff`, reporter dans la fiche ce qui doit l'être, puis `push --force`. Il faut les identifiants OAuth dans `~/.config/maker-junior/credentials.json`.
