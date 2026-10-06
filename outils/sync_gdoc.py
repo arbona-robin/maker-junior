@@ -12,7 +12,8 @@ Le Doc contient une fiche par tableau à deux colonnes : le titre de section à
 gauche, le contenu à droite, une ligne par section `##` de la fiche du dépôt.
 La trame des tableaux est fixe. Seuls varient le nombre de lignes « Activité N »
 d'une séance, le nombre de lignes « Séance N » de la synthèse et le nombre de
-tableaux de séance. Le contenu vient toujours du dépôt.
+tableaux de séance : un tableau de séance absent du dépôt est supprimé au push
+complet. Le contenu vient toujours du dépôt.
 
 Identifiants OAuth : ~/.config/maker-junior/credentials.json (hors dépôt).
 """
@@ -559,11 +560,18 @@ def push(docs, doc_id, projet, filtre, force):
         sys.exit("Le Doc a été modifié depuis le dernier push. Lancer diff, reporter dans le dépôt "
                  "ce qui doit l'être, puis push --force.")
 
+    marqueurs, bilan = {}, []
+    if not filtre:
+        for nom in sorted(set(tables_du_doc(doc.doc)) - set(noms_fiches(projet)), reverse=True):
+            el = tables_du_doc(doc.doc)[nom]
+            doc.ecrire([{"deleteContentRange": {"range": {
+                "startIndex": el["startIndex"], "endIndex": el["endIndex"]}}}])
+            bilan.append(f"{nom} : supprimée, absente du dépôt")
+
     tables = tables_du_doc(doc.doc)
     seances = sorted(n for n in tables if n.startswith("s"))
     modele = tables[seances[0]]
     prefixe = "\n".join(lignes_cellule(rangs(modele)[0]["tableCells"][0])).split(" · ")[0]
-    marqueurs, bilan = {}, []
 
     for nom in noms_fiches(projet):
         if filtre and nom != filtre:

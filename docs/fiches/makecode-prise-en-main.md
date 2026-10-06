@@ -134,6 +134,15 @@ Il mesure une accélération sur trois axes, en **mg** (millièmes de g). À pla
 | `z` | Le haut et le bas |
 | `force` | L'intensité totale, tous axes confondus |
 
+### Le capteur de lumière
+
+Le micro:bit mesure la lumière avec **son écran**. `niveau d'intensité lumineuse`, dans **Entrées**, va de `0` (noir) à `255` (pleine lumière).
+
+Deux conséquences : l'écran doit voir la pièce, et il ne doit rien afficher pendant la mesure. Une icône allumée fausse la valeur.
+
+> [!CAUTION] Un objet qui se voit lui-même
+> Si la lumière de ta lampe arrive sur l'écran du micro:bit, elle s'allume, se voit, s'éteint, et recommence.
+
 ### 2. Choisis un seuil
 
 Un seuil est la valeur à partir de laquelle tu décides que **ça compte**.
@@ -167,6 +176,24 @@ sinon                        → allumer x 2 y 2
 **`effacer l'écran` est en tête de la boucle.** Chaque tour éteint tout, puis rallume un seul point. Sans lui, les points s'accumulent.
 
 L'ordre compte : le premier test vrai gagne, les suivants ne sont même pas lus. Mets en premier ce qui doit primer.
+
+### 4. Ne réagis qu'au changement
+
+Dans `toujours`, la décision se prend plusieurs fois par seconde. Si l'action est longue (une animation, un son, un message radio), elle redémarre à chaque tour.
+
+La parade est une **variable d'état** : elle garde en mémoire ce que l'objet fait déjà.
+
+```
+si lumière < seuil et allumee = 0 alors
+    allumer, définir allumee à 1
+sinon si lumière > seuil et allumee = 1 alors
+    éteindre, définir allumee à 0
+```
+
+On ne déclenche qu'au **changement** : on s'arme, on se désarme. C'est le même raisonnement pour toutes les alertes.
+
+> [!TIP] Deux seuils
+> À la limite, la mesure oscille et l'objet clignote. Un seuil pour allumer, un autre un peu plus haut pour éteindre : entre les deux, rien ne bouge. C'est l'**hystérésis**.
 
 ### Afficher vite
 
@@ -229,6 +256,13 @@ On teste alors `nom` pour savoir quoi faire. Attention au bloc de comparaison : 
 | `droite` | `droite` |
 
 Deux clés qui commencent pareil deviennent **le même message**. Le programme est juste, il se relit sans qu'on trouve rien, et le rover désobéit : compte les caractères avant de coder.
+
+### Message diffusé, message adressé
+
+Quand toutes les cartes sont sur la même bande, elles entendent **tous** les messages.
+
+- Un message **diffusé** concerne tout le monde : `tous` = `1`, et toutes les lampes s'allument.
+- Un message **adressé** ne concerne qu'une carte. L'adresse peut être dans la valeur : `tour` = `7` est pour la lampe 7, chaque carte compare la valeur à son numéro. Elle peut aussi être dans la clé : `lampe7`, comparée avec `joindre` (**Texte**).
 
 ### Se mettre d'accord avant de coder
 

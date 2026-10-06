@@ -8,6 +8,14 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
     Reporter un plan, couper net, obtenir un pli d'équerre.
 
+- **[Câbler un circuit](cabler-un-circuit.md)**
+
+    La boucle, la LED et sa résistance, les broches du micro:bit, la masse commune, le schéma.
+
+- **[La matrice de LED RGB](matrice-rgb.md)**
+
+    Trois fils, une luminosité à brider, un numéro et une couleur par LED.
+
 - **[La carte DFR0548 et ses blocs](carte-dfr0548.md)**
 
     Pourquoi elle est là, où se branche quoi, et l'extension qui la pilote.

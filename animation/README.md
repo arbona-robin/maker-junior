@@ -16,7 +16,7 @@ Les fiches suivent les gabarits LP. **Les titres de section ne se renomment pas,
 
 Les conseils de rédaction champ par champ, la liste des modalités pédagogiques et les verbes de Bloom sont dans les références de la skill `nouvelle-seance-maker-junior`.
 
-## Le rover
+## Rover
 
 - [Fiche communication](rover/communication.md)
 - [Fiche synthèse de projet](rover/projet.md) : planning prévisionnel des 12 séances et budget
@@ -33,11 +33,27 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 - [Séance 11 — Présentez votre rover sur une page web](rover/s11.md)
 - [Séance 12 — Vos rovers en épreuve](rover/s12.md)
 
+## Objets connectés
+
+- [Fiche communication](objets-connectes/communication.md)
+- [Fiche synthèse de projet](objets-connectes/projet.md) : planning prévisionnel des 10 séances et budget
+- [Séance 1 — Fabrique ta lampe et allume-la](objets-connectes/s01.md)
+- [Séance 2 — Compose la lumière de ta lampe](objets-connectes/s02.md)
+- [Séance 3 — Fais-la s'allumer quand il fait nuit](objets-connectes/s03.md)
+- [Séance 4 — Dessine l'emblème de ta lampe](objets-connectes/s04.md)
+- [Séance 5 — Fais parler les lampes entre elles](objets-connectes/s05.md)
+- [Séance 6 — Choisissez votre produit](objets-connectes/s06.md)
+- [Séance 7 — Construisez la structure de votre produit](objets-connectes/s07.md)
+- [Séance 8 — Faites fonctionner votre produit et montrez ses données](objets-connectes/s08.md)
+- [Séance 9 — Testez et installez votre produit](objets-connectes/s09.md)
+- [Séance 10 — Présentez vos objets connectés](objets-connectes/s10.md)
+- [Le pont et le tableau de bord](objets-connectes/pont.md)
+
 Une fiche de séance est créée avant l'atelier, complétée après : les sections « Bilan » et « Adaptations pour la prochaine fois » se remplissent une fois la séance passée, et nourrissent la fiche suivante.
 
 ## Export vers le Google Doc
 
-Le dépôt est la source, le Google Doc du projet en est l'export. Son identifiant est dans [`export.yml`](export.yml).
+Le dépôt est la source, le Google Doc de chaque projet en est l'export. Leurs identifiants sont dans [`export.yml`](export.yml). Les commandes prennent le nom du projet : `rover`, `objets-connectes`.
 
 ```bash
 .venv/bin/pip install -r outils/requirements.txt          # une fois

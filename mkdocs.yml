@@ -90,9 +90,24 @@ nav:
       - "Séance 11 — Présentez votre rover sur une page web": projets/rover/seances/s11-presentez-votre-rover.md
       - "Séance 12 — Vos rovers en épreuve": projets/rover/seances/s12-vos-rovers-en-epreuve.md
       - "Le cahier des charges": projets/rover/cahier-des-charges.md
+  - Projet Objets connectés:
+      - projets/objets-connectes/index.md
+      - "Séance 1 — Fabrique ta lampe et allume-la": projets/objets-connectes/seances/s01-fabrique-ta-lampe.md
+      - "Séance 2 — Compose la lumière de ta lampe": projets/objets-connectes/seances/s02-compose-ta-lumiere.md
+      - "Séance 3 — Fais-la s'allumer quand il fait nuit": projets/objets-connectes/seances/s03-quand-il-fait-nuit.md
+      - "Séance 4 — Dessine l'emblème de ta lampe": projets/objets-connectes/seances/s04-dessine-ton-embleme.md
+      - "Séance 5 — Fais parler les lampes entre elles": projets/objets-connectes/seances/s05-fais-parler-les-lampes.md
+      - "Séance 6 — Choisissez votre produit": projets/objets-connectes/seances/s06-choisissez-votre-produit.md
+      - "Séance 7 — Construisez la structure de votre produit": projets/objets-connectes/seances/s07-construisez-la-structure.md
+      - "Séance 8 — Faites fonctionner votre produit et montrez ses données": projets/objets-connectes/seances/s08-faites-le-fonctionner.md
+      - "Séance 9 — Testez et installez votre produit": projets/objets-connectes/seances/s09-testez-et-installez.md
+      - "Séance 10 — Présentez vos objets connectés": projets/objets-connectes/seances/s10-presentez-vos-objets.md
+      - "Le catalogue des produits": projets/objets-connectes/catalogue.md
   - Fiches:
       - fiches/index.md
       - "Tracer, découper, plier le carton": fiches/carton-tracer-decouper-plier.md
+      - "Câbler un circuit": fiches/cabler-un-circuit.md
+      - "La matrice de LED RGB": fiches/matrice-rgb.md
       - "La carte DFR0548 et ses blocs": fiches/carte-dfr0548.md
       - "Rouler droit et tourner": fiches/rouler-droit.md
       - "Prendre en main MakeCode": fiches/makecode-prise-en-main.md
@@ -113,3 +128,14 @@ nav:
           - "Séance 10": carnet-de-bord/rover-s10.md
           - "Séance 11": carnet-de-bord/rover-s11.md
           - "Séance 12": carnet-de-bord/rover-s12.md
+      - Objets connectés:
+          - "Séance 1": carnet-de-bord/objets-connectes-s01.md
+          - "Séance 2": carnet-de-bord/objets-connectes-s02.md
+          - "Séance 3": carnet-de-bord/objets-connectes-s03.md
+          - "Séance 4": carnet-de-bord/objets-connectes-s04.md
+          - "Séance 5": carnet-de-bord/objets-connectes-s05.md
+          - "Séance 6": carnet-de-bord/objets-connectes-s06.md
+          - "Séance 7": carnet-de-bord/objets-connectes-s07.md
+          - "Séance 8": carnet-de-bord/objets-connectes-s08.md
+          - "Séance 9": carnet-de-bord/objets-connectes-s09.md
+          - "Séance 10": carnet-de-bord/objets-connectes-s10.md

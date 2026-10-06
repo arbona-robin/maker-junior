@@ -18,9 +18,13 @@ Il sert à trois moments :
 
     Le parcours complet, séance par séance. C'est là que tu vas le plus souvent.
 
+- **[Projet Objets connectés](projets/objets-connectes/index.md)**
+
+    Invente et fabrique tes objets connectés.
+
 - **[Fiches](fiches/index.md)**
 
-    Les références qui ne dépendent pas d'une séance : le carton, la carte, MakeCode, la 3D, le débogage. On y renvoie depuis les séances.
+    Les références qui ne dépendent pas d'une séance : le carton, les circuits, la carte, la matrice, MakeCode, la 3D, le débogage. On y renvoie depuis les séances.
 
 - **[Carnet de bord](carnet-de-bord/index.md)**
 

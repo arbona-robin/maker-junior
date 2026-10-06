@@ -4,12 +4,12 @@ Vous remplissez la page web de votre rover, qui sera publiée : ce que vous avez
 
 ## 1. Ouvrez le gabarit
 
-→ [Télécharger le gabarit](../../../assets/gabarit-page-rover.zip) · [Le voir en ligne](../../../assets/gabarit-page-rover/index.html)
+→ [Télécharger le gabarit](../../../assets/gabarit-page.zip) · [Le voir en ligne](../../../assets/gabarit-page/index.html)
 
 Décompresse-le. Tu trouves `index.html`, `style.css` et un dossier `images`.
 
 <figure class="screenshot" markdown>
-![Le gabarit ouvert dans le navigateur : une photo de rover en plein écran, le titre Nom du rover, et un menu de trois liens en haut à droite](../../../assets/rover-s11/20-gabarit.png)
+![Le gabarit ouvert dans le navigateur : une photo en plein écran, le titre Nom de votre création, et un menu de trois liens en haut à droite](../../../assets/gabarit-page-apercu.png)
 </figure>
 
 Ouvre `index.html` deux fois : dans l'éditeur, et dans le navigateur.
@@ -19,8 +19,8 @@ Ouvre `index.html` deux fois : dans l'éditeur, et dans le navigateur.
 Le texte se place entre une balise ouvrante et une balise fermante.
 
 ```html
-<h1>Nom du rover</h1>
-<p class="sous-titre">Une phrase qui donne envie de le découvrir.</p>
+<h1>Nom de votre création</h1>
+<p class="sous-titre">Une phrase qui donne envie de la découvrir.</p>
 ```
 
 `<h1>` est le titre, `<p>` un paragraphe. La balise fermante a une barre : `</p>`.
@@ -65,8 +65,8 @@ Change le code couleur, enregistre, recharge : l'étiquette, les sous-titres et 
 1. Copie une section entière, du commentaire jusqu'à `</section>` compris :
 
 ```html
-  <!-- Fonctionnalité 3 -->
-  <section class="fonction" id="pilotage">
+  <!-- Section 3 -->
+  <section class="fonction" id="fonction-3">
     ...
   </section>
 ```
@@ -76,7 +76,7 @@ Change le code couleur, enregistre, recharge : l'étiquette, les sous-titres et 
 3. Change son `id` : un mot à toi, sans espace ni accent. Deux sections ne peuvent pas avoir le même.
 
 ```html
-  <!-- Fonctionnalité 4 -->
+  <!-- Section 4 -->
   <section class="fonction" id="tag">
 ```
 
@@ -84,9 +84,9 @@ Change le code couleur, enregistre, recharge : l'étiquette, les sous-titres et 
 
 ```html
     <nav class="menu">
-      <a href="#pente">La pente</a>
-      <a href="#echantillon">L'échantillon</a>
-      <a href="#pilotage">Le pilotage</a>
+      <a href="#fonction-1">Ce qu'il fait</a>
+      <a href="#fonction-2">Comment il marche</a>
+      <a href="#fonction-3">Notre idée</a>
       <a href="#tag">Le tag</a>
     </nav>
 ```

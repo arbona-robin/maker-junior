@@ -42,6 +42,12 @@ Ce n'est pas une panne. Deux moteurs identiques ne tournent jamais exactement à
 **Le rover roulait, il ne roule plus.**
 Regarde d'abord les accus : c'est la cause la plus fréquente, et la plus vite écartée. Puis les élastiques : un moteur qui a glissé dans son logement débranche souvent un fil au passage.
 
+**La LED posée sur le cuivre ne s'allume pas.**
+Retourne-la d'abord. Puis vérifie les pinces : une sur `GND`, l'autre sur `3V` ou sur la broche que ton programme met à `1`. Enfin, les boucles des pattes touchent-elles bien le cuivre ? → [Câbler un circuit](cabler-un-circuit.md)
+
+**La matrice reste éteinte, ou fait n'importe quoi.**
+Dans l'ordre : le fil de signal sur `DIN` et pas sur `DOUT`, le `GND` de la matrice relié à celui du micro:bit, le pack branché. Des couleurs fausses en fin de séance : les accus. → [La matrice de LED RGB](matrice-rgb.md)
+
 ## Avant d'appeler à l'aide
 
 Trois questions à te poser.

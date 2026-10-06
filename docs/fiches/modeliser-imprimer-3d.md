@@ -85,6 +85,17 @@ Trois outils de **Formes simples** partent d'un dessin à plat :
 
 On quitte l'éditeur par **Terminer l'esquisse**.
 
+### S'ajuster sur une pièce qui existe
+
+Une pièce qui coiffe, entoure ou porte un composant se dessine à partir de **ses cotes réelles**.
+
+1. Mesure le composant au pied à coulisse : chaque capteur, chaque moteur est un peu différent.
+2. Ajoute le **jeu** : 0,3 à 0,5 mm sur chaque cote intérieure. Une pièce qui fait exactement la cote ne rentre pas.
+3. Note au carnet le jeu qui a marché : il resservira.
+
+> [!TIP] Trop serré, trop lâche
+> Trop serré : lime l'intérieur. Trop lâche : un morceau de ruban adhésif. On ne réimprime pas pour un demi-millimètre.
+
 ### Exporter
 
 **Regroupe d'abord toutes les formes de la pièce**, puis sélectionne le groupe.

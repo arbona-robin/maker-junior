@@ -75,7 +75,7 @@ Un second adulte est utile à toutes les séances, vu le matériel en jeu (outil
 - Le livre en ligne, ouvert en écran partagé pendant l'atelier
 - Plans de découpe imprimés (`docs/assets/plans/`)
 - Carnet de bord numérique (éditeur de texte)
-- Gabarit de la page web de présentation du rover (S11) : [`docs/assets/gabarit-page-rover.zip`](../../docs/assets/gabarit-page-rover.zip)
+- Gabarit de la page web de présentation (S11), commun à tous les parcours : [`docs/assets/gabarit-page.zip`](../../docs/assets/gabarit-page.zip)
 - Les tags des rovers, 1 à 20, un par page : [`docs/assets/tags/tags-rover-01-20.pdf`](../../docs/assets/tags/tags-rover-01-20.pdf) : carré noir de 90 mm, marge blanche de 11,2 mm, cadre de découpe, à imprimer à 100 %
 
 ## Budget

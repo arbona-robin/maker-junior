@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tableau de bord</title>
+<style>
+  :root {
+    --fond: #f4f5f9;
+    --carte: #ffffff;
+    --texte: #1d2433;
+    --doux: #6b7385;
+    --bord: #e1e4ec;
+    --accent: #3f51b5;
+    --ok: #2e9d5b;
+    --alerte: #d84315;
+    --eteint: #c4c9d4;
+    --log-fond: #141a26;
+    --log-texte: #d6dbe6;
+    --rayon: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #11151d;
+      --carte: #1b212d;
+      --texte: #e6e9f0;
+      --doux: #98a0b3;
+      --bord: #2b3240;
+      --accent: #8c9eff;
+      --eteint: #3a4252;
+      --log-fond: #0b0e14;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: var(--fond);
+    color: var(--texte);
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    height: 100vh;
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--bord);
+    background: var(--carte);
+  }
+  header h1 { font-size: 1.15rem; margin: 0 auto 0 0; }
+  .etat-pont { font-size: 0.9rem; color: var(--doux); }
+  .etat-pont b { color: var(--texte); }
+  button {
+    font: inherit;
+    font-size: 0.9rem;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--bord);
+    background: var(--carte);
+    color: var(--texte);
+    cursor: pointer;
+  }
+  button.principal { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button[aria-pressed="true"] { background: var(--texte); color: var(--carte); }
+  .bandeau {
+    display: none;
+    padding: 10px 20px;
+    background: var(--alerte);
+    color: #fff;
+    font-weight: 600;
+  }
+  .bandeau.visible { display: block; }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    min-height: 0;
+  }
+  .grille {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 16px;
+    padding: 20px;
+    overflow: auto;
+  }
+  .vide { color: var(--doux); margin: auto; text-align: center; max-width: 28rem; line-height: 1.5; }
+  .carte {
+    flex: 0 1 300px;
+    background: var(--carte);
+    border: 1px solid var(--bord);
+    border-radius: var(--rayon);
+    padding: 14px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: opacity 0.3s;
+  }
+  .carte.hors-ligne { opacity: 0.45; }
+  .carte.sans-serie { border-color: var(--alerte); }
+  .entete { display: flex; align-items: flex-start; gap: 8px; }
+  .nom {
+    font-weight: 700;
+    font-size: 1.05rem;
+    outline: none;
+    border-bottom: 1px dashed transparent;
+    flex: 1;
+    min-width: 0;
+  }
+  .nom:hover, .nom:focus { border-bottom-color: var(--doux); }
+  .meta { font-size: 0.78rem; color: var(--doux); }
+  .barres { display: flex; align-items: flex-end; gap: 2px; height: 16px; }
+  .barres span { width: 4px; background: var(--eteint); border-radius: 1px; }
+  .barres span.on { background: var(--ok); }
+  .mesures { display: flex; flex-wrap: wrap; gap: 12px; }
+  .mesure { flex: 1 1 120px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .cle { font-size: 0.8rem; color: var(--doux); font-family: ui-monospace, Menlo, monospace; }
+  .valeur { font-size: 1.5rem; font-weight: 700; }
+  .grand { font-size: 2.4rem; font-weight: 800; }
+  .voyant { width: 46px; height: 46px; border-radius: 50%; background: var(--eteint); }
+  .voyant.on { background: var(--ok); box-shadow: 0 0 18px var(--ok); }
+  .interrupteur {
+    width: 64px; height: 34px; border-radius: 999px; border: none; padding: 3px;
+    background: var(--eteint); position: relative;
+  }
+  .interrupteur::after {
+    content: ""; position: absolute; top: 3px; left: 3px; width: 28px; height: 28px;
+    border-radius: 50%; background: #fff; transition: left 0.2s;
+  }
+  .interrupteur.on { background: var(--ok); }
+  .interrupteur.on::after { left: 33px; }
+  svg { display: block; }
+  aside {
+    display: flex;
+    flex-direction: column;
+    background: var(--log-fond);
+    color: var(--log-texte);
+    min-height: 0;
+  }
+  .outils-log { display: flex; gap: 8px; padding: 10px; border-bottom: 1px solid #2b3240; }
+  .outils-log select, .outils-log button { font-size: 0.8rem; background: #1b212d; color: var(--log-texte); border-color: #2b3240; }
+  .outils-log select { flex: 1; border-radius: 999px; padding: 6px 10px; }
+  .log {
+    flex: 1;
+    overflow: auto;
+    margin: 0;
+    padding: 10px;
+    font: 0.78rem/1.5 ui-monospace, Menlo, monospace;
+    white-space: pre;
+  }
+  .log .sys { color: #ffcc80; }
+  .log .ignore { color: #6b7385; }
+  body.projection header .secondaire, body.projection aside { display: none; }
+  body.projection main { grid-template-columns: 1fr; }
+  body.projection .carte { flex-basis: 380px; }
+  body.projection .valeur { font-size: 2rem; }
+  body.projection .nom { font-size: 1.4rem; }
+  @media (max-width: 800px) {
+    main { grid-template-columns: 1fr; grid-template-rows: 1fr 40vh; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tableau de bord</h1>
+  <span class="etat-pont" id="etat">Pont : <b>non connecté</b></span>
+  <button class="principal" id="connecter">Connecter le pont</button>
+  <button class="secondaire" id="demo" aria-pressed="false">Mode démo</button>
+  <button id="projection" aria-pressed="false">Projection</button>
+</header>
+
+<div class="bandeau" id="bandeau">Pont débranché : l'affichage est figé, les objets continuent de fonctionner.</div>
+
+<main>
+  <section class="grille" id="grille">
+    <p class="vide" id="vide">Aucun micro:bit pour l'instant. Branche le pont et clique sur « Connecter le pont », ou lance le mode démo.</p>
+  </section>
+  <aside>
+    <div class="outils-log">
+      <select id="filtre"><option value="">Tous les micro:bit</option></select>
+      <button id="pause" aria-pressed="false">Pause</button>
+      <button id="effacer">Effacer</button>
+    </div>
+    <pre class="log" id="log"></pre>
+  </aside>
+</main>
+
+<script>
+/*
+  Tableau de bord du projet Objets connectés.
+
+  Le pont (un micro:bit branché en USB) envoie une ligne par message radio reçu :
+      numéro de série,clé,valeur,signal
+  La page renvoie au pont une ligne « clé,valeur » quand on bascule un interrupteur.
+
+  Chaque clé choisit son affichage d'après son début (voir AFFICHAGES).
+  Un micro:bit sans message depuis 30 secondes passe hors ligne, en fin de grille.
+*/
+
+const HORS_LIGNE_MS = 30000;
+const LOG_MAX = 500;
+const IGNOREES = ["tous", "tour"];
+
+const AFFICHAGES = [
+  { debut: "temp", type: "jauge", min: -10, max: 40, unite: "°C" },
+  { debut: "lum", type: "jauge", min: 0, max: 255, unite: "" },
+  { debut: "son", type: "jauge", min: 0, max: 255, unite: "" },
+  { debut: "hum", type: "jauge", min: 0, max: 100, unite: "%" },
+  { debut: "incl", type: "jauge", min: -90, max: 90, unite: "°" },
+  { debut: "accel", type: "courbe", unite: "mg" },
+  { debut: "dist", type: "nombre", unite: "cm" },
+  { debut: "compte", type: "compteur" },
+  { debut: "bouton", type: "voyant" },
+  { debut: "etat", type: "voyant" },
+  { debut: "presence", type: "voyant" },
+  { debut: "inter", type: "interrupteur" },
+];
+
+const microbits = new Map();   // numéro de série → { serie, premier, dernier, signal, cles: Map }
+let ordreArrivee = 0;
+let port = null, ecrivain = null, pontActif = false;
+let enPause = false;
+
+const $ = (id) => document.getElementById(id);
+
+function affichagePour(cle) {
+  return AFFICHAGES.find((a) => cle.startsWith(a.debut)) || { type: "courbe", unite: "" };
+}
+
+function nomMemorise(serie) {
+  try { return localStorage.getItem("nom-" + serie); } catch { return null; }
+}
+function memoriserNom(serie, nom) {
+  try { localStorage.setItem("nom-" + serie, nom); } catch {}
+}
+function nomDe(m) {
+  if (m.serie === "0") return "Sans numéro de série";
+  return nomMemorise(m.serie) || "micro:bit " + m.serie;
+}
+
+/* ---------- Journal ---------- */
+
+function heure() {
+  return new Date().toLocaleTimeString("fr-FR");
+}
+function journal(texte, classe, serie) {
+  if (enPause) return;
+  const filtre = $("filtre").value;
+  if (filtre && serie !== undefined && serie !== filtre) return;
+  if (filtre && serie === undefined && classe !== "sys") return;
+  const ligne = document.createElement("div");
+  if (classe) ligne.className = classe;
+  ligne.textContent = heure() + "  " + texte;
+  const log = $("log");
+  const enBas = log.scrollTop + log.clientHeight >= log.scrollHeight - 20;
+  log.appendChild(ligne);
+  while (log.childNodes.length > LOG_MAX) log.removeChild(log.firstChild);
+  if (enBas) log.scrollTop = log.scrollHeight;
+}
+
+/* ---------- Réception ---------- */
+
+function recevoir(ligne) {
+  const parties = ligne.trim().split(",");
+  if (parties.length < 3) return;
+  const [serie, cle, valeurTexte, signalTexte] = parties;
+  const valeur = parseFloat(valeurTexte);
+  if (Number.isNaN(valeur)) return;
+  const signal = parseInt(signalTexte, 10);
+
+  let m = microbits.get(serie);
+  const nouveau = !m;
+  if (nouveau) {
+    m = { serie, premier: ordreArrivee++, dernier: 0, signal: null, cles: new Map(), etaitHorsLigne: false };
+    microbits.set(serie, m);
+    ajouterAuFiltre(serie);
+  }
+  const revenu = !nouveau && Date.now() - m.dernier > HORS_LIGNE_MS;
+  m.dernier = Date.now();
+  if (!Number.isNaN(signal)) m.signal = signal;
+
+  const nom = nomDe(m);
+  if (nouveau) journal("Nouveau : " + nom, "sys", serie);
+  if (revenu) journal("De retour en ligne : " + nom, "sys", serie);
+  m.etaitHorsLigne = false;
+
+  if (IGNOREES.includes(cle)) {
+    journal(nom + "  " + cle + " = " + valeur + "  (lampes)", "ignore", serie);
+    rendre();
+    return;
+  }
+  journal(nom + "  " + cle + " = " + valeur, "", serie);
+
+  let k = m.cles.get(cle);
+  if (!k) { k = { valeurs: [], min: valeur, max: valeur }; m.cles.set(cle, k); }
+  k.valeurs.push(valeur);
+  if (k.valeurs.length > 60) k.valeurs.shift();
+  k.min = Math.min(k.min, valeur);
+  k.max = Math.max(k.max, valeur);
+  rendre();
+}
+
+/* ---------- Affichage ---------- */
+
+function barres(signal) {
+  // -100 dBm (faible) à -40 dBm (fort) → 0 à 4 barres
+  const n = signal == null ? 0 : Math.max(0, Math.min(4, Math.round((signal + 100) / 15)));
+  return '<div class="barres" title="' + (signal == null ? "" : signal + " dBm") + '">' +
+    [1, 2, 3, 4].map((i) => '<span class="' + (i <= n ? "on" : "") + '" style="height:' + (i * 4) + 'px"></span>').join("") +
+    "</div>";
+}
+
+function depuis(ms) {
+  const s = Math.round(ms / 1000);
+  if (s < 60) return "il y a " + s + " s";
+  const min = Math.round(s / 60);
+  return "il y a " + min + " min";
+}
+
+function jauge(v, a) {
+  const t = Math.max(0, Math.min(1, (v - a.min) / (a.max - a.min)));
+  const angle = Math.PI * (1 - t);
+  const x = 60 + 48 * Math.cos(angle), y = 60 - 48 * Math.sin(angle);
+  return '<svg width="120" height="68" viewBox="0 0 120 68">' +
+    '<path d="M12 60 A48 48 0 0 1 108 60" fill="none" stroke="var(--eteint)" stroke-width="10" stroke-linecap="round"/>' +
+    (t > 0 ? '<path d="M12 60 A48 48 0 0 1 ' + x.toFixed(1) + " " + y.toFixed(1) +
+      '" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round"/>' : "") +
+    "</svg>";
+}
+
+function courbe(valeurs) {
+  if (valeurs.length < 2) return '<svg width="140" height="44"></svg>';
+  const min = Math.min(...valeurs), max = Math.max(...valeurs);
+  const ecart = max - min || 1;
+  const pts = valeurs.map((v, i) =>
+    (i * 140 / (valeurs.length - 1)).toFixed(1) + "," + (40 - (v - min) / ecart * 36).toFixed(1)).join(" ");
+  return '<svg width="140" height="44" viewBox="0 0 140 44"><polyline points="' + pts +
+    '" fill="none" stroke="var(--accent)" stroke-width="2"/></svg>';
+}
+
+function arrondi(v) {
+  return Math.abs(v) >= 100 ? Math.round(v) : Math.round(v * 10) / 10;
+}
+
+function widget(cle, k, serie) {
+  const a = affichagePour(cle);
+  const v = k.valeurs[k.valeurs.length - 1];
+  let corps = "";
+  if (a.type === "jauge") corps = jauge(v, a) + '<span class="valeur">' + arrondi(v) + " " + a.unite + "</span>";
+  else if (a.type === "nombre") corps = '<span class="grand">' + arrondi(v) + '</span><span class="meta">' + a.unite + "</span>";
+  else if (a.type === "compteur") corps = '<span class="grand">' + Math.round(v) + "</span>";
+  else if (a.type === "voyant") corps = '<div class="voyant ' + (v ? "on" : "") + '"></div><span class="meta">' + (v ? "allumé" : "éteint") + "</span>";
+  else if (a.type === "interrupteur") corps = '<button class="interrupteur ' + (v ? "on" : "") +
+    '" data-cle="' + cle + '" data-valeur="' + (v ? 0 : 1) + '" aria-label="Basculer ' + cle + '"></button><span class="meta">' + (v ? "allumé" : "éteint") + "</span>";
+  else corps = courbe(k.valeurs) + '<span class="valeur">' + arrondi(v) + (a.unite ? " " + a.unite : "") + "</span>";
+  return '<div class="mesure"><span class="cle">' + cle + "</span>" + corps + "</div>";
+}
+
+function rendre() {
+  const grille = $("grille");
+  const maintenant = Date.now();
+  const liste = [...microbits.values()].filter((m) => m.cles.size > 0 || m.serie === "0");
+  $("vide").style.display = liste.length ? "none" : "";
+
+  liste.sort((a, b) => {
+    const ha = maintenant - a.dernier > HORS_LIGNE_MS, hb = maintenant - b.dernier > HORS_LIGNE_MS;
+    if (ha !== hb) return ha ? 1 : -1;
+    return a.premier - b.premier;
+  });
+
+  const enEdition = document.activeElement && document.activeElement.classList.contains("nom")
+    ? document.activeElement.dataset.serie : null;
+
+  liste.forEach((m) => {
+    let carte = grille.querySelector('.carte[data-serie="' + m.serie + '"]');
+    if (!carte) {
+      carte = document.createElement("article");
+      carte.className = "carte";
+      carte.dataset.serie = m.serie;
+      carte.innerHTML = '<div class="entete"><span class="nom" spellcheck="false"></span><span class="signal"></span></div>' +
+        '<div class="meta etat-carte"></div><div class="mesures"></div>';
+      const nom = carte.querySelector(".nom");
+      nom.dataset.serie = m.serie;
+      if (m.serie !== "0") nom.contentEditable = "true";
+      nom.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); nom.blur(); } });
+      nom.addEventListener("blur", () => {
+        const texte = nom.textContent.trim();
+        if (texte) { memoriserNom(m.serie, texte); journal("Renommé : " + texte, "sys", m.serie); majFiltre(); }
+        rendre();
+      });
+      grille.appendChild(carte);
+    }
+    const hors = maintenant - m.dernier > HORS_LIGNE_MS;
+    carte.classList.toggle("hors-ligne", hors);
+    carte.classList.toggle("sans-serie", m.serie === "0");
+    if (enEdition !== m.serie) carte.querySelector(".nom").textContent = nomDe(m);
+    carte.querySelector(".signal").innerHTML = barres(m.signal);
+    carte.querySelector(".etat-carte").textContent = m.serie === "0"
+      ? "Un produit émet sans « radio émettre le numéro de série »."
+      : (hors ? "Hors ligne, dernier message " : "En ligne, dernier message ") + depuis(maintenant - m.dernier) + " · n° " + m.serie;
+    carte.querySelector(".mesures").innerHTML =
+      [...m.cles.entries()].map(([cle, k]) => widget(cle, k, m.serie)).join("");
+    grille.appendChild(carte);   // replace la carte dans l'ordre du tri
+  });
+
+  // Passage hors ligne, une seule fois dans le journal
+  microbits.forEach((m) => {
+    if (!m.etaitHorsLigne && m.dernier && maintenant - m.dernier > HORS_LIGNE_MS) {
+      m.etaitHorsLigne = true;
+      journal("Hors ligne : " + nomDe(m), "sys", m.serie);
+    }
+  });
+}
+
+/* ---------- Filtre du journal ---------- */
+
+function ajouterAuFiltre(serie) {
+  const opt = document.createElement("option");
+  opt.value = serie;
+  opt.textContent = nomDe(microbits.get(serie));
+  $("filtre").appendChild(opt);
+}
+function majFiltre() {
+  [...$("filtre").options].forEach((o) => { if (o.value) o.textContent = nomDe(microbits.get(o.value)); });
+}
+
+/* ---------- Le pont ---------- */
+
+async function connecter() {
+  if (!("serial" in navigator)) {
+    alerterNavigateur();
+    return;
+  }
+  try {
+    port = await navigator.serial.requestPort();
+    await port.open({ baudRate: 115200 });
+  } catch (e) {
+    journal("Connexion annulée ou impossible : " + e.message, "sys");
+    return;
+  }
+  pontActif = true;
+  $("bandeau").classList.remove("visible");
+  $("etat").innerHTML = "Pont : <b>connecté</b>";
+  $("connecter").textContent = "Pont connecté";
+  $("connecter").disabled = true;
+  journal("Pont connecté", "sys");
+
+  const encodeur = new TextEncoderStream();
+  encodeur.readable.pipeTo(port.writable);
+  ecrivain = encodeur.writable.getWriter();
+
+  const decodeur = new TextDecoderStream();
+  port.readable.pipeTo(decodeur.writable).catch(() => {});
+  const lecteur = decodeur.readable.getReader();
+  let tampon = "";
+  try {
+    while (true) {
+      const { value, done } = await lecteur.read();
+      if (done) break;
+      tampon += value;
+      const lignes = tampon.split(/\r?\n/);
+      tampon = lignes.pop();
+      lignes.forEach(recevoir);
+    }
+  } catch (e) {
+    /* débranché */
+  }
+  pontDebranche();
+}
+
+function pontDebranche() {
+  if (!pontActif) return;
+  pontActif = false;
+  ecrivain = null;
+  $("bandeau").classList.add("visible");
+  $("etat").innerHTML = "Pont : <b>débranché</b>";
+  $("connecter").textContent = "Reconnecter le pont";
+  $("connecter").disabled = false;
+  journal("Pont débranché", "sys");
+}
+
+function alerterNavigateur() {
+  $("bandeau").textContent = "Ce navigateur ne lit pas le port série : ouvre cette page dans Chrome ou Edge.";
+  $("bandeau").classList.add("visible");
+}
+
+async function envoyer(cle, valeur) {
+  journal("Envoi au pont : " + cle + " = " + valeur, "sys");
+  if (demo) { simulerOrdre(cle, valeur); return; }
+  if (!ecrivain) { journal("Pas de pont connecté : ordre non envoyé", "sys"); return; }
+  await ecrivain.write(cle + "," + valeur + "\n");
+}
+
+/* ---------- Mode démo ---------- */
+
+let demo = null;
+const DEMO = [
+  { serie: "-101", nom: "Station météo", f: (t) => [["temp", 19 + 3 * Math.sin(t / 40)], ["lum", 120 + 80 * Math.sin(t / 25)]] },
+  { serie: "-102", nom: "Sémaphore du bruit", f: (t) => [["son", Math.max(0, 60 + 50 * Math.sin(t / 7) + 30 * Math.random())]] },
+  { serie: "-103", nom: "Compteur de passages", f: (t) => [["presence", Math.random() < 0.3 ? 1 : 0], ["compte", Math.floor(t / 9)]] },
+  { serie: "-104", nom: "Salle B", f: (t) => [["etat", Math.floor(t / 30) % 2], ["interA", demoInter]] },
+  { serie: "-105", nom: "Capteur bavard", f: (t) => [["vibra", Math.round(300 + 200 * Math.sin(t / 5))]], arret: 40 },
+  { serie: "-107", nom: "Moniteur d'imprimante", f: (t) => [["accel", 1000 + Math.round(150 * Math.random())], ["incl", Math.round(30 * Math.sin(t / 15))]] },
+];
+let demoInter = 0, demoT = 0;
+
+function simulerOrdre(cle, valeur) {
+  if (cle === "interA") { demoInter = valeur; recevoir("-104,interA," + valeur + ",-55"); }
+}
+
+function basculerDemo() {
+  if (demo) {
+    clearInterval(demo);
+    demo = null;
+    $("demo").setAttribute("aria-pressed", "false");
+    journal("Mode démo arrêté", "sys");
+    return;
+  }
+  $("demo").setAttribute("aria-pressed", "true");
+  journal("Mode démo : faux micro:bit, sans pont", "sys");
+  DEMO.forEach((d) => { if (!nomMemorise(d.serie)) memoriserNom(d.serie, d.nom); });
+  const tick = () => {
+    demoT += 2;
+    DEMO.forEach((d, i) => {
+      if (d.arret && demoT > d.arret) return;
+      if ((demoT / 2 + i) % 3 !== 0) return;   // chacun émet toutes les 6 s environ
+      const signal = -45 - i * 12 - Math.round(Math.random() * 6);
+      d.f(demoT).forEach(([cle, v]) => recevoir(d.serie + "," + cle + "," + v.toFixed(1) + "," + signal));
+    });
+    if (demoT % 20 === 0) recevoir("-106,tour,3,-60");
+  };
+  for (let i = 0; i < 3; i++) tick();
+  demo = setInterval(tick, 2000);
+}
+
+/* ---------- Boutons ---------- */
+
+$("connecter").addEventListener("click", connecter);
+$("demo").addEventListener("click", basculerDemo);
+$("projection").addEventListener("click", () => {
+  const on = document.body.classList.toggle("projection");
+  $("projection").setAttribute("aria-pressed", String(on));
+});
+$("pause").addEventListener("click", () => {
+  enPause = !enPause;
+  $("pause").setAttribute("aria-pressed", String(enPause));
+  $("pause").textContent = enPause ? "Reprendre" : "Pause";
+});
+$("effacer").addEventListener("click", () => { $("log").textContent = ""; });
+$("filtre").addEventListener("change", () => { $("log").textContent = ""; });
+$("grille").addEventListener("click", (e) => {
+  const b = e.target.closest(".interrupteur");
+  if (b) envoyer(b.dataset.cle, Number(b.dataset.valeur));
+});
+if ("serial" in navigator) {
+  navigator.serial.addEventListener("disconnect", pontDebranche);
+} else {
+  alerterNavigateur();
+}
+
+setInterval(rendre, 1000);
+
+const params = new URLSearchParams(location.search);
+if (params.has("demo")) basculerDemo();
+if (params.has("projection")) $("projection").click();
+</script>
+</body>
+</html>
