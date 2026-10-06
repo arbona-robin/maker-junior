@@ -164,7 +164,7 @@ Le premier parcours demande 69 € d'achats : matrices, bornes et ruban de cuivr
 
 **Notions :** servomoteur et moteur à courant continu · choisir un composant pour une fonction · cahier des charges · contraintes d'implantation
 
-**Livrable intermédiaire :** équipe formée, cahier des charges en cinq lignes validé, croquis, matériel réservé au magasin
+**Livrable intermédiaire :** équipe formée, première partie du cahier des charges remplie et validée, croquis, matériel réservé au magasin
 
 ## Séance 7 — Phase 2 — Exploration & création
 
@@ -186,7 +186,7 @@ Le premier parcours demande 69 € d'achats : matrices, bornes et ruban de cuivr
 
 **Titre :** Testez et installez votre produit
 
-**Notions :** cas limites · test d'endurance · portée radio réelle · implantation · scénario de démonstration et plan B
+**Notions :** vérification contre un cahier des charges · cas limites · test d'endurance · portée radio réelle · implantation · scénario de démonstration et plan B
 
 **Livrable intermédiaire :** produit installé à son emplacement, stable sans intervention, photographié ; présentation d'une minute répétée, entretien réparti
 

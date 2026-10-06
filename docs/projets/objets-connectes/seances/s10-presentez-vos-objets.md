@@ -54,7 +54,7 @@ Trois sections : à quoi il sert, ce qu'il mesure jusqu'au tableau de bord, votr
 > [!NOTE] Un choix, une raison
 > Pas « on a mis le capteur en hauteur ». Plutôt : « on a mis le capteur en hauteur parce que la salle est grande. »
 
-Votre cahier des charges de la séance 6 vous sert de brouillon.
+Votre [cahier des charges](../cahier-des-charges.md) vous sert de brouillon.
 
 ## 6. Ajoutez vos lampes
 

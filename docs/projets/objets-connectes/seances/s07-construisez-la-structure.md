@@ -32,7 +32,7 @@ Pour chaque pièce :
 
 → [S'ajuster sur une pièce qui existe](../../../fiches/modeliser-imprimer-3d.md#sajuster-sur-une-piece-qui-existe) · [Estimer la durée d'impression](../../../fiches/modeliser-imprimer-3d.md#estimer-la-duree-dimpression)
 
-**Toutes les pièces de l'équipe : 3 heures d'impression au plus.**
+**Toutes les pièces de l'équipe : 3 heures d'impression au plus.** Notez chaque durée dans le [suivi d'impression](../cahier-des-charges.md#notre-suivi-dimpression).
 
 ## 5. Orientez et exportez
 

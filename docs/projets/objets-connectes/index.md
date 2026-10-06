@@ -38,7 +38,7 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 10 — Présentez vos objets connectés](seances/s10-presentez-vos-objets.md)**
   La page web de votre objet, que vous gardez, et la démonstration.
 
-Pour choisir votre produit : **[le catalogue](catalogue.md)**.
+Pour votre produit : **[le catalogue](catalogue.md)** et **[le cahier des charges](cahier-des-charges.md)**.
 
 ## Le matériel
 

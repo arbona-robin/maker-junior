@@ -16,7 +16,11 @@ Un cas limite, c'est ce qui ne devrait pas arriver. Par exemple :
 
 ## 2. Testez
 
-Pour chacun : ce que vous avez fait, ce qui s'est passé, ce que vous corrigez.
+D'abord le cahier des charges : cochez chaque exigence que vous avez vérifiée.
+
+→ [Le cahier des charges du produit](../cahier-des-charges.md#ce-que-tout-produit-doit-faire)
+
+Puis vos cas limites. Pour chacun : ce que vous avez fait, ce qui s'est passé, ce que vous corrigez.
 
 Laissez votre produit allumé toute la séance : est-il encore là à la fin ?
 
@@ -83,6 +87,7 @@ Tout le groupe, dans l'ordre de la visite, au chronomètre.
 
 ## Ce que vous devez avoir à la fin
 
+- [ ] Le cahier des charges coché
 - [ ] Trois cas limites testés, notés au carnet
 - [ ] Le produit installé, vu depuis sa place
 - [ ] Le panneau

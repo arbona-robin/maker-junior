@@ -37,15 +37,11 @@ Tu as une autre idée ? Note-la aussi, et vérifie les quatre conditions.
 
 ## 5. Le cahier des charges
 
-Cinq lignes, une par question :
+→ [Le cahier des charges du produit](../cahier-des-charges.md)
 
-1. À quoi ça sert ?
-2. Pour qui ?
-3. Où c'est installé ?
-4. Comment c'est alimenté : accus, ou prise USB ?
-5. Quelles mesures il envoie, avec quelles clés ? → [la langue commune](../catalogue.md#la-langue-commune)
+Remplissez la première partie, « Votre produit » : une ligne par question.
 
-<span class="todo-media">[photo : un cahier des charges en cinq lignes, écrit à la main]</span>
+Lisez la seconde, « Ce que tout produit doit faire » : votre idée doit pouvoir tout cocher en séance 9.
 
 ## 6. Le croquis et le matériel
 
@@ -72,7 +68,7 @@ Sur place, vérifiez :
 ## Ce que vous devez avoir à la fin
 
 - [ ] Une équipe, un produit
-- [ ] Le cahier des charges en cinq lignes, validé
+- [ ] Le cahier des charges rempli, validé
 - [ ] Le croquis
 - [ ] Le matériel réservé
 - [ ] L'emplacement vérifié

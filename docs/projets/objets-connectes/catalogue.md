@@ -73,6 +73,8 @@ Votre idée n'est pas dans la liste ? Elle est bienvenue, à quatre conditions :
 3. Il se construit avec ce qu'il y a au magasin : vérifiez-le avec l'animateur.
 4. Il parle la langue commune.
 
+Et comme tous les produits, il doit pouvoir cocher le [cahier des charges](cahier-des-charges.md#ce-que-tout-produit-doit-faire).
+
 > [!TIP] Une idée trop grande ?
 > Gardez une mesure et une action. Le reste viendra si vous avez le temps.
 

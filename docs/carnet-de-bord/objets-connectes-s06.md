@@ -22,14 +22,13 @@ En deux ou trois phrases, avec tes mots.
 
 ## Notre cahier des charges
 
-1. À quoi ça sert :
-2. Pour qui :
-3. Où c'est installé :
-4. Comment c'est alimenté :
-5. Quel message radio : clé, valeur, rythme :
+**L'exigence commune qui nous paraît la plus difficile**, et pourquoi :
+
+<br><br>
 
 | | |
 |---|---|
+| La première partie du cahier des charges est remplie | ☐ |
 | L'emplacement est vérifié : prise, fixation, radio | ☐ |
 | Le matériel est réservé | ☐ |
 
