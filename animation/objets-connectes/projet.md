@@ -52,7 +52,7 @@ Utile : avoir suivi le projet Rover. La radio, les capteurs, MakeCode et Tinkerc
 
 **Commun**
 
-- Bornes de connexion à levier
+- Bornes de connexion à levier, pour le chantier
 - Câbles Dupont, fil souple multibrin
 - Trois postes de découpe : outil de découpe, règle métallique à rebord, tapis
 - Pied à coulisse, règles
@@ -64,7 +64,7 @@ Utile : avoir suivi le projet Rover. La radio, les capteurs, MakeCode et Tinkerc
 
 ## Ressources numériques
 
-- MakeCode (makecode.microbit.org), gratuit et sans inscription, avec l'extension `neopixel` ajoutée depuis la fenêtre Extensions
+- MakeCode (makecode.microbit.org), gratuit et sans inscription, avec l'extension `neopixel-extended` ajoutée par son adresse (github.com/pasalt/pxt-neopixel-matrix-extension), blocs en anglais
 - Chrome ou Edge, pour Afficher données et pour le pont USB
 - Tinkercad en mode classe (comptes créés par l'animateur, sans adresse personnelle des jeunes)
 - Slicer de l'imprimante sur le poste de l'animateur
@@ -92,7 +92,7 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 | Boîtier 2 × AAA avec connecteur micro:bit | 12 | 2 € | 24 € | Proposé |
 | Accus NiMH AAA | 24 | 2 € | 48 € | Proposé |
 | Matrice RGB 8 × 8 WS2812, lots de 3 | 4 | 10 € | 40 € | À acheter |
-| Bornes de connexion à levier, boîte de 50 | 1 | 19 € | 19 € | À acheter |
+| Bornes de connexion à levier, boîte de 50, pour le chantier | 1 | 19 € | 19 € | Proposé |
 | Ruban de cuivre adhésif conducteur, 10 mm × 20 m | 1 | 10 € | 10 € | À acheter |
 | Matrice RGB, lot de 3 de rechange | 1 | 10 € | 10 € | Proposé |
 | Adaptateur secteur USB 5 V, produits installés près d'une prise | 6 | 5 € | 30 € | Proposé |
@@ -116,7 +116,7 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 
 Un parcours coûte environ 178 €, soit 15 € par jeune : 100 € de consommables d'impression, de découpe et de fabrication, et 78 € de casse. La casse est calculée sur ce que les jeunes manipulent toute l'année (micro:bit, matrices, boîtiers et accus des lampes, soit 520 €).
 
-Le premier parcours demande 69 € d'achats : matrices, bornes et ruban de cuivre. Les matrices se réutilisent, les lampes restant à l'atelier. S'y ajoutent 40 € proposés (rechange, adaptateurs secteur), les capteurs du chantier après inventaire, et 72 € de boîtiers et d'accus AAA si le stock n'en a pas.
+Le premier parcours demande 50 € d'achats : matrices et ruban de cuivre. Les matrices se réutilisent, les lampes restant à l'atelier. S'y ajoutent 59 € proposés (rechange, adaptateurs secteur, bornes à levier), les capteurs du chantier après inventaire, et 72 € de boîtiers et d'accus AAA si le stock n'en a pas.
 
 ## Séance 1 — Phase 1 — Découverte & prise en main
 
@@ -130,7 +130,7 @@ Le premier parcours demande 69 € d'achats : matrices, bornes et ruban de cuivr
 
 **Titre :** Compose la lumière de ta lampe
 
-**Notions :** alimentation séparée et masse commune · adressage d'un élément dans un ensemble · index en deux dimensions · couleur en trois nombres · luminosité bridée
+**Notions :** alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée · boucle d'animation
 
 **Livrable intermédiaire :** matrice câblée et fixée sur la lampe, une couleur choisie et une animation
 

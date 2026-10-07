@@ -48,7 +48,7 @@ Retour dans ton projet `lampe`.
 <details markdown>
 <summary>La solution</summary>
 
-<span class="todo-media">[capture : toujours → si niveau d'intensité lumineuse < seuil alors ambiance, sinon bande effacer et bande afficher]</span>
+<span class="todo-media">[capture : toujours → si niveau d'intensité lumineuse < seuil alors ambiance, sinon strip clear all colors et strip show changes]</span>
 
 </details>
 

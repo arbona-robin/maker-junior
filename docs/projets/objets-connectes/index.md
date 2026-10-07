@@ -46,6 +46,6 @@ Pour votre produit : **[le catalogue](catalogue.md)** et **[le cahier des charge
 - 1 matrice de 64 LED RGB
 - du ruban de cuivre, une LED, des câbles à pinces
 - un boîtier d'accus NiMH
-- MakeCode, avec l'extension `neopixel`
+- MakeCode, avec l'extension `neopixel-extended`
 - Tinkercad et une imprimante 3D
 - du carton, un outil de découpe et une règle métallique à rebord

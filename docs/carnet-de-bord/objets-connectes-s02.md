@@ -18,17 +18,19 @@ En deux ou trois phrases, avec tes mots.
 |---|---|
 | La matrice est câblée, masse commune comprise | ☐ |
 | La luminosité est réglée dans le programme | ☐ |
-| La matrice est fixée dans la lampe | ☐ |
+| Mon image s'affiche | ☐ |
+| Mon animation tourne | ☐ |
+| La matrice est fixée sur la lampe | ☐ |
 
 **Ma luminosité :**
 
 <br>
 
-**Ma couleur (rouge, vert, bleu) :**
+**Mon image et mon animation, en une phrase :**
 
 <br>
 
-**Mon animation, en une phrase :**
+**Pourquoi rien ne s'affiche sans `show changes` :**
 
 <br><br>
 
