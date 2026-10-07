@@ -16,6 +16,10 @@
 
 La matrice prend son énergie au pack. Le micro:bit ne lui envoie que le signal.
 
+<figure class="plan" markdown>
+![Schéma du montage : le + du pack va sur V de la matrice ; le − du pack va sur G et sur le GND du micro:bit, c'est la masse commune ; P1 va sur DI ; P2 et GND vont aux deux bandes de cuivre ; le micro:bit est alimenté par son boîtier 2 × AAA](../assets/objets-connectes-s02/03-schema-montage.png)
+</figure>
+
 > [!CAUTION] Lis le dos de la carte
 > L'ordre des broches change d'un modèle à l'autre. Le signal entre par `DI`. Par `DO`, la matrice ne s'allume pas.
 

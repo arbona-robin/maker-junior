@@ -24,6 +24,10 @@ Ta lampe reçoit une matrice de 64 LED de couleur. Tu la câbles, tu dessines to
 ![Le montage complet : le pack de quatre accus, la matrice, le micro:bit, reliés par des câbles Dupont et des pinces crocodile](../../../assets/objets-connectes-s02/01-montage-matrice.jpg)
 </figure>
 
+<figure class="plan" markdown>
+![Schéma du montage : le + du pack va sur V de la matrice ; le − du pack va sur G et sur le GND du micro:bit, c'est la masse commune ; P1 va sur DI ; P2 et GND vont aux deux bandes de cuivre ; le micro:bit est alimenté par son boîtier 2 × AAA](../../../assets/objets-connectes-s02/03-schema-montage.png)
+</figure>
+
 Un câble Dupont sur chaque broche de la matrice, puis des pinces :
 
 1. `V` au `+` du pack.
