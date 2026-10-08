@@ -97,8 +97,3 @@ Une clé `inter` suivie de la lettre de votre équipe (`interA`) s'affiche comme
 - [ ] Le produit câblé, qui mesure, décide et agit
 - [ ] Votre micro:bit en ligne sur le tableau de bord, avec son nom
 - [ ] Vos mesures affichées, toutes les 5 à 10 secondes
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s08.md) rempli
-
-## Avant de partir
-
-Produit éteint, accus en charge, schéma dans le bac de l'équipe.

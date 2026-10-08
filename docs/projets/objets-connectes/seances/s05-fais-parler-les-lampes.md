@@ -108,8 +108,3 @@ Mets l'adresse dans la clé : `lampe7` veut dire « pour la lampe 7 », et la va
 - [ ] Ton emblème accroché
 - [ ] Ta lampe qui réagit à `tous` et à son tour
 - [ ] La vague, au moins en groupe
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s05.md) rempli : le permis d'objet connecté
-
-## Avant de partir
-
-Lampe dans ton bac, accus en charge.

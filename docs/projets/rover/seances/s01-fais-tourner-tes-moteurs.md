@@ -1,27 +1,18 @@
 # Séance 1 — Fais tourner tes moteurs
 
-Tu câbles ton électronique et tu écris le programme qui fait tourner tes deux moteurs. Tout se teste sur la table : une erreur s'y répare sans rien démonter.
+1. **[Câble ton électronique](#1-cable-ton-electronique)** : la carte, le micro:bit, les deux moteurs et les accus sont branchés, et l'animateur a validé.
+2. **[Ton premier programme](#2-ton-premier-programme)** : ta carte affiche une icône, joue un son, puis fait clignoter une flèche.
+3. **[Fais tourner tes moteurs](#3-fais-tourner-tes-moteurs)** : tes deux moteurs tournent et s'arrêtent ensemble, au rythme de la flèche.
 
-## 1. Le moteur tout seul
+## 1. Câble ton électronique
 
-<figure markdown>
-![Un moteur TT branché en direct sur un bloc d'accus, à l'intérieur de la boîte en carton de test](../../../assets/rover-s01/15-moteur-sur-accus.jpg)
-</figure>
-
-Branché sur les accus, il tourne à fond, dans un seul sens.
-
-## 2. Pourquoi une carte entre les deux
+**Ce que tu vas obtenir :**
 
 <figure markdown>
 ![La carte DFR0548 avec son micro:bit, reliée à deux moteurs et à un pack d'accus, le tout posé dans la boîte de test](../../../assets/rover-s01/16-electronique-vue-ensemble.jpg)
 </figure>
 
-> [!NOTE] Le micro:bit commande, la carte exécute
-> Une broche du micro:bit allume une LED, pas un moteur. La carte prend l'énergie des accus, et règle sens et vitesse sur ordre du micro:bit.
-
 → [La carte DFR0548 et ses blocs](../../../fiches/carte-dfr0548.md)
-
-## 3. Assemble ton électronique
 
 Interrupteur de la carte sur **off** pendant tout le câblage.
 
@@ -57,7 +48,11 @@ Rouge sur `+`, noir sur `−`, dans le petit bornier marqué `3.5~5.5V`.
 > [!IMPORTANT] Point de contrôle
 > Fais valider ton câblage avant de mettre sous tension.
 
-## 4. Ouvre MakeCode
+## 2. Ton premier programme
+
+**Ce que tu vas obtenir :** au branchement, ta carte affiche un cœur et joue un son. Puis une flèche s'allume et s'éteint, chaque seconde.
+
+### Ouvre MakeCode
 
 [makecode.microbit.org](https://makecode.microbit.org) → **Nouveau projet** → nomme-le `rover`.
 
@@ -71,13 +66,17 @@ Rouge sur `+`, noir sur `−`, dans le petit bornier marqué `3.5~5.5V`.
 
 → [Prendre en main MakeCode](../../../fiches/makecode-prise-en-main.md)
 
-## 5. Ton premier programme
+### L'icône et le son
 
 Dans `au démarrage` : une icône (**Base**) et un son (**Musique**).
 
-<figure class="screenshot" markdown>
-![Le bloc « au démarrage » contenant « montrer l'icône » et « jouer gloussement jusqu'à la fin », et un bloc « toujours » vide à côté](../../../assets/rover-s01/22-au-demarrage-icone-son.png)
-</figure>
+```blocks
+basic.showIcon(IconNames.Heart)
+music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
+basic.forever(function () {
+	
+})
+```
 
 Branche l'USB, clique sur **Télécharger**, suis les instructions.
 
@@ -88,7 +87,7 @@ Branche l'USB, clique sur **Télécharger**, suis les instructions.
 > [!NOTE] Pourquoi une icône et un son
 > Ils te prouvent que **ton** programme tourne. Si plus tard rien ne bouge, tu sauras que le problème n'est pas là.
 
-## 6. Fais clignoter l'écran
+### Fais clignoter l'écran
 
 `toujours` répète son contenu sans fin.
 
@@ -97,25 +96,33 @@ Branche l'USB, clique sur **Télécharger**, suis les instructions.
 <details markdown>
 <summary>La solution</summary>
 
-<figure class="screenshot" markdown>
-![Le bloc « toujours » contenant : montrer la flèche Nord, pause 1000 ms, effacer l'écran, pause 1000 ms](../../../assets/rover-s01/23-programme-clignotant.png)
-<figcaption>1000 ms = 1 seconde.</figcaption>
-</figure>
+```blocks
+basic.showIcon(IconNames.Heart)
+music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
+basic.forever(function () {
+    basic.showArrow(ArrowNames.North)
+    basic.pause(1000)
+    basic.clearScreen()
+    basic.pause(1000)
+})
+```
+
+1000 ms = 1 seconde.
 
 </details>
 
-<details markdown>
-<summary>Pour aller plus loin — en Python</summary>
+> [!TIP] Ça marche si…
+> Le cœur s'affiche et le son joue au branchement, puis la flèche clignote.
 
-En haut, bascule de **Blocs** à **Python** : c'est le même programme.
+## 3. Fais tourner tes moteurs
 
-<figure class="screenshot" markdown>
-![Le même programme affiché en Python dans MakeCode](../../../assets/rover-s01/24-vue-python.png)
+**Ce que tu vas obtenir :**
+
+<figure markdown>
+<video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-test-moteurs.mp4"></video>
 </figure>
 
-</details>
-
-## 7. Ajoute l'extension DF-Driver
+### Ajoute l'extension DF-Driver
 
 **Extensions** → colle cette adresse → clique sur « motor ».
 
@@ -136,13 +143,23 @@ L'avertissement « non approuvée par Microsoft » est normal : l'extension vien
 
 → [La carte DFR0548 et ses blocs](../../../fiches/carte-dfr0548.md#lextension-df-driver)
 
-## 8. Fais tourner les moteurs
+### Ajoute les blocs moteurs
 
-Ajoute les blocs moteurs à ton programme :
+Ils sont dans **DF-Driver** : `Motor M1 dir CW speed` et `Motor Stop All`.
 
-<figure class="screenshot" markdown>
-![Le programme complet : toujours → montrer la flèche Nord, Motor M1 CW 100, Motor M2 CW 100, pause 1000, effacer l'écran, Motor Stop All, pause 1000](../../../assets/rover-s01/27-programme-moteurs.png)
-</figure>
+```blocks
+basic.showIcon(IconNames.Heart)
+music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
+basic.forever(function () {
+    basic.showArrow(ArrowNames.North)
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 100)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 100)
+    basic.pause(1000)
+    basic.clearScreen()
+    motor.motorStopAll()
+    basic.pause(1000)
+})
+```
 
 Téléverse. Les moteurs ne tournent pas encore : ils ont besoin des accus.
 
@@ -155,11 +172,6 @@ Interrupteur sur **on**, puis vérifie :
 - [ ] Tu sais lequel est sur `M1` (sors le bloc `M2` pour voir) : marque-le au ruban
 - [ ] Aucun fil ne sort de son bornier
 
-<figure markdown>
-<video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-test-moteurs.mp4"></video>
-<figcaption>Ce que tu dois obtenir.</figcaption>
-</figure>
-
 > [!TIP] La flèche s'affiche, mais rien ne tourne ?
 > Le problème n'est pas dans le code. Vérifie l'interrupteur, les fils, les accus.
 
@@ -168,17 +180,7 @@ Interrupteur sur **on**, puis vérifie :
 > [!IMPORTANT] Point de contrôle
 > Fais valider ton électronique. Puis interrupteur sur **off**, USB débranché.
 
----
+## Va plus loin
 
-## Ce que tu dois avoir à la fin
-
-- [ ] Le micro:bit sur la carte, écran vers l'extérieur
-- [ ] Les fils des moteurs qui tiennent au test de traction
-- [ ] Le pack d'accus branché, câblage validé
-- [ ] Les deux moteurs qui tournent puis s'arrêtent ensemble
-- [ ] Le moteur `M1` marqué au ruban
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s01.md) rempli
-
-## Avant de partir
-
-Matériel dans ton bac, accus en charge.
+- **Les deux sens.** Ton rover tournera à gauche, à droite, en arrière. Essaie `CCW`, et regarde les LED de sens sur la carte.
+- **En Python.** En haut de MakeCode, bascule de **Blocs** à **Python** : c'est le même programme.

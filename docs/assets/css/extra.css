@@ -107,3 +107,14 @@
 .md-typeset .upcoming {
   color: var(--md-default-fg-color--light);
 }
+
+/* Code MakeCode en attente de rendu (ou affiché tel quel sans réseau). */
+.md-typeset div.makecode-blocks {
+  white-space: pre;
+  font-family: var(--md-code-font-family);
+  font-size: 0.75rem;
+  background: var(--md-code-bg-color);
+  padding: 0.8em 1em;
+  border-radius: 0.3rem;
+  overflow-x: auto;
+}

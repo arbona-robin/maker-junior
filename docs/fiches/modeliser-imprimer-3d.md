@@ -83,7 +83,25 @@ Trois outils de **Formes simples** partent d'un dessin à plat :
 ![L'éditeur d'esquisse : un demi-profil dessiné contre l'axe vertical, et l'aperçu 3D de la pièce obtenue](../assets/rover-s06/21-revolution-profil.png)
 </figure>
 
+<figure class="screenshot" markdown>
+![L'éditeur d'esquisse : un contour fermé dessiné par-dessus la pièce existante, visible en transparence](../assets/rover-s06/22-extrusion-contour.png)
+</figure>
+
+<figure class="screenshot" markdown>
+![Un tracé à main levée extrudé sur la pièce, le panneau Scribble ouvert avec Hauteur à 10 et le bouton Modifier le griffonnage](../assets/rover-s06/24-scribble.png)
+</figure>
+
 On quitte l'éditeur par **Terminer l'esquisse**.
+
+### Trouver une pièce qui existe
+
+Des milliers de pièces sont partagées dans la galerie de Tinkercad. Cherche par exemple `servo arm`, `TT motor mount`, `gripper`.
+
+<figure class="screenshot" markdown>
+![La galerie de Tinkercad : la recherche « rover » affiche des modèles partagés, chacun avec le nom de son auteur](../assets/rover-s06/25-galerie-recherche.png)
+</figure>
+
+Coche **Copie autorisée** : tu ne vois plus que les pièces que tu as le droit de copier et de modifier. Garde le nom de leur auteur, pour le citer.
 
 ### S'ajuster sur une pièce qui existe
 
@@ -91,7 +109,7 @@ Une pièce qui coiffe, entoure ou porte un composant se dessine à partir de **s
 
 1. Mesure le composant au pied à coulisse : chaque capteur, chaque moteur est un peu différent.
 2. Ajoute le **jeu** : 0,3 à 0,5 mm sur chaque cote intérieure. Une pièce qui fait exactement la cote ne rentre pas.
-3. Note au carnet le jeu qui a marché : il resservira.
+3. Garde le jeu qui a marché : il resservira.
 
 > [!TIP] Trop serré, trop lâche
 > Trop serré : lime l'intérieur. Trop lâche : un morceau de ruban adhésif. On ne réimprime pas pour un demi-millimètre.

@@ -6,7 +6,7 @@ Le support écrit des ateliers maker : fabrication, électronique et programmati
 
 | Dossier | Contenu |
 |---|---|
-| `docs/` | Le livre publié — pages élèves, fiches de référence, carnet de bord, médias |
+| `docs/` | Le livre publié — pages élèves, fiches de référence, médias |
 | `animation/` | Les fiches d'animation et de projet. **Hors du site publié**, lisibles seulement ici |
 | `animation/gabarits/` | Les gabarits La Plateforme — la forme d'export, vierge |
 | `.github/workflows/` | La publication automatique |

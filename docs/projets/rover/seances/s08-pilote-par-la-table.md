@@ -1,143 +1,128 @@
 # Séance 8 — Faites piloter votre rover par la table
 
-La table va piloter votre rover. Elle envoie les mêmes messages que votre télécommande : quatre changements dans votre programme suffisent.
+> [!NOTE] Nouveau concept : une clé et une valeur
+> Un message radio peut porter un mot **et** un nombre. La table envoie vos cinq mots, chacun avec une vitesse de `0` à `1023`. L'animateur le montre en début de séance.
+>
+> → [Envoyer, recevoir](../../../fiches/makecode-prise-en-main.md#envoyer-recevoir)
 
-## 1. Regardez la table piloter
+1. **[Ce que demande la table](#1-ce-que-demande-la-table)** : votre programme comprend la table.
+2. **[Passez sur la table](#2-passez-sur-la-table)** : la table pilote votre rover le long d'une figure.
 
-<figure markdown>
-![Un rover portant son tag sur la table, et à côté l'écran de la table qui montre la vue de la caméra, le tag repéré et une figure en triangle](../../../assets/rover-s08/01-table-pilote-le-rover.jpg)
-</figure>
+## 1. Ce que demande la table
+
+**Ce que vous allez obtenir :** un programme qui comprend la table.
 
 <video controls playsinline preload="metadata" src="../../../../assets/rover-s08/video-table-pilote.mp4"></video>
 
-La table voit le tag du rover, le mesure, puis le fait suivre une figure.
+La table parle à tous les rovers sur la bande `83`. Le **groupe** dit à qui le message s'adresse : c'est votre numéro. `radio définir groupe` est dans **Radio**.
 
-<figure class="screenshot" markdown>
-![La vue de la caméra au-dessus de la table : les repères aux quatre coins, le rover repéré par son tag 10, et le cercle qu'il doit suivre](../../../assets/rover-s08/20-vue-camera-table.png)
-<figcaption>Ce que voit la caméra : les repères des coins, le tag 10 et le cercle à suivre.</figcaption>
-</figure> Elle envoie `avancer`, `reculer`, `gauche`, `droite`, `arreter`, les clés de ta télécommande.
+Votre rover doit recevoir `nom` et `valeur`, et passer de la télécommande à la table. Le cahier des charges dit le reste.
 
-## 2. La bande et le groupe
+→ [Le cahier des charges](../cahier-des-charges.md#le-pilotage)
 
-En séance 4, chaque télécommande avait sa bande : douze émetteurs en même temps se seraient gênés.
+**À vous.** Répartissez-vous le travail : la télécommande, le rover, le changement de mode. Pas le temps de tout faire ? Commencez par ce qui compte le plus pour votre rover.
 
-Ici, un seul émetteur parle à tous les rovers : la table. Tout le monde est sur la bande `83`, et le groupe dit à qui le message s'adresse. Votre groupe, c'est votre numéro.
+### La télécommande envoie la vitesse
 
-Un bouton par source : `A` met le rover sur la table, `B` le remet sur ta télécommande.
+La table envoie les cinq mots de ta télécommande, chacun avec une **valeur** de `0` à `1023` : la vitesse. Ta télécommande va faire pareil, avec `envoyer la valeur … = …`, dans **Radio**. La valeur, c'est l'inclinaison : `valeur absolue`, dans **Maths**, la rend positive dans les deux sens.
 
-<figure class="screenshot" markdown>
-![Lorsque le bouton A est pressé : radio régler la bande de fréquence 83, radio définir groupe 10. Lorsque le bouton B est pressé : radio régler la bande de fréquence 10, radio définir groupe 0](../../../assets/rover-s08/21-boutons-bande-groupe.png)
-<figcaption>Ici, l'équipe numéro 10.</figcaption>
-</figure>
+```blocks
+basic.forever(function () {
+    basic.clearScreen()
+    if (input.acceleration(Dimension.Y) < -200) {
+        radio.sendValue("avancer", Math.abs(input.acceleration(Dimension.Y)))
+        led.plot(2, 0)
+    } else if (input.acceleration(Dimension.Y) > 200) {
+        radio.sendString("reculer")
+        led.plot(2, 4)
+    } else if (input.acceleration(Dimension.X) < -200) {
+        radio.sendString("gauche")
+        led.plot(0, 2)
+    } else if (input.acceleration(Dimension.X) > 200) {
+        radio.sendString("droite")
+        led.plot(4, 2)
+    } else {
+        radio.sendString("arreter")
+        led.plot(2, 2)
+    }
+    basic.pause(100)
+})
+```
 
-## 3. La valeur devient la vitesse
+La première branche est faite, les quatre autres envoient encore un mot seul.
 
-La table envoie une valeur de `0` à `1023`. Ton moteur accepte de `0` à `255`. Et dans tes cinq fonctions, les vitesses sont écrites en chiffres depuis la séance 2.
+**À toi.** Les quatre autres branches se font de même. Vers l'avant et l'arrière, la valeur vient de `y` ; à gauche et à droite, de `x`. Pour `arreter`, `0`. Les mots de votre servomoteur aussi, si vous en avez un.
 
-> [!NOTE] Une variable pour tout le programme
-> Créée une fois, une variable se lit partout : dans le gestionnaire radio, dans `toujours`, dans tes fonctions.
+> [!CAUTION] Un mot fait 8 caractères au plus
+> Au-delà, la carte le coupe sans prévenir. Les cinq mots du protocole tiennent tous dedans.
 
-### À toi : la vitesse variable
+Ton rover n'obéit plus : il attend encore un mot seul.
 
-Dans le gestionnaire radio, range la valeur reçue dans `vitesse` avec `projeter`, dans **Maths** : de `0`–`1023` vers `0`–`255`.
+### Le rover prend la vitesse
 
-Puis calcule une vitesse par moteur, `vM1` et `vM2`. Ta compensation de la séance 2 devient un écart, par exemple `20 + vitesse` pour le moteur le plus lent. Dans tes cinq fonctions, remplace les chiffres par `vM1` et `vM2`.
+Ton rover a besoin de l'autre `quand une donnée est reçue par radio`, celui qui apporte `nom` et `valeur`. La valeur va de `0` à `1023`, tes moteurs de `0` à `255` : `projeter`, dans **Maths**, passe de l'un à l'autre. `limiter`, lui aussi dans **Maths**, garde une vitesse entre `0` et `255`.
 
-> [!TIP] `limiter` et les valeurs de départ
-> `limiter` garde la vitesse entre `0` et `255` : sans lui, `20 + 255` dépasse. Et donne une valeur de départ à `vM1` et `vM2` dans `au démarrage`.
+Le rover, avec sa première branche et sa première fonction transformées :
 
-<details markdown>
-<summary>La solution</summary>
+```blocks
+function avancer () {
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, vM1)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, vM2)
+}
+radio.onReceivedValue(function (name, value) {
+    vitesse = Math.map(value, 0, 1023, 0, 255)
+    vM1 = Math.constrain(20 + vitesse, 0, 255)
+    vM2 = Math.constrain(vitesse, 0, 255)
+    basic.clearScreen()
+    if (name == "avancer") {
+        avancer()
+        led.plot(2, 0)
+    }
+})
+let vM2 = 0
+let vM1 = 0
+let vitesse = 0
+```
 
-<figure class="screenshot" markdown>
-![Quand une donnée est reçue par radio : vitesse reçoit projeter valeur de 0 et 1023 à 0 et 255 ; vM1 reçoit limiter 20 + vitesse entre 0 et 255 ; vM2 reçoit limiter 0 + vitesse entre 0 et 255](../../../assets/rover-s08/22-projeter-limiter.png)
-<figcaption>Ici, le moteur M1 est le plus lent : il reçoit 20 de plus.</figcaption>
-</figure>
+- `vitesse` : la valeur reçue, ramenée à `0`–`255`.
+- `vM1` et `vM2` : une vitesse par moteur. Ta compensation de la séance 2 devient un écart, ici `20 +` pour `M1`, le plus lent sur ce rover.
+- `avancer` lit `vM1` et `vM2` au lieu de vitesses écrites en chiffres.
 
-<figure class="screenshot" markdown>
-![La fonction avancer : Motor M1 speed vM1, Motor M2 speed vM2 ; au démarrage, vM1 et vM2 reçoivent leur valeur de départ](../../../assets/rover-s08/23-avancer-vitesses.png)
-</figure>
+**À toi.** Pour les quatre autres : les branches vont dans le nouveau gestionnaire et comparent `nom` au lieu de `receivedString`, les fonctions lisent `vM1` et `vM2`. L'ancien gestionnaire se supprime.
 
-Diviser par 4 donne presque le même résultat que `projeter`.
+### Le changement de mode
 
-</details>
+Un bouton par source : `A` pour la table, `B` pour la télécommande. Ici, l'équipe 10 :
 
-## 4. Le gestionnaire range, la boucle agit
+```blocks
+input.onButtonPressed(Button.A, function () {
+    radio.setFrequencyBand(83)
+    radio.setGroup(10)
+})
+input.onButtonPressed(Button.B, function () {
+    radio.setFrequencyBand(10)
+    radio.setGroup(0)
+})
+```
 
-Jusqu'ici, `quand une donnée est reçue par radio` appelait tes fonctions. Désormais, il ne fait que ranger.
-
-**À toi.** La méthode :
-
-1. Crée une variable `ordre`. Dans le gestionnaire, range `nom` dedans, à côté du calcul des vitesses.
-2. Déplace tes `si … sinon si` dans `toujours`. Ils testent maintenant `ordre`.
-3. Relis le gestionnaire : plus aucun appel de fonction, plus aucune pause.
-
-> [!NOTE] Pas de pause dans le gestionnaire
-> La carte ne garde que quatre messages en attente. Si le gestionnaire attend, les suivants sont perdus.
-
-## 5. Le silence arrête le rover
-
-**À toi.** La méthode :
-
-1. Crée une variable `dernier message`.
-2. Dans le gestionnaire, range-y `temps écoulé (ms)` : c'est l'heure du message.
-3. Dans `toujours`, compare l'heure actuelle à `dernier message`. Plus de 1000 ms d'écart : arrête les moteurs.
-
-> [!TIP] Pour vérifier
-> Rover sur la table, éteins ta télécommande : il doit s'arrêter en une seconde.
-
-## 6. Changez de mode
-
-Votre rover doit obéir à la télécommande, sur la bande de l'équipe, et à la table, sur la bande `83`. Ce sont deux modes.
-
-Une variable `mode`, créée une fois, que tout le programme lit : `0` télécommande, `1` table.
-
-Un geste pour en changer : les boutons `A` et `B` de la section 2. Chacun règle la radio et change `mode`.
-
-Un témoin : un point dans un coin libre de l'écran, un par mode, rallumé à chaque tour de `toujours`.
-
-> [!NOTE] Pourquoi un témoin
-> En mode table, le rover n'obéit plus à sa télécommande. Sans témoin, on croit à une panne.
-
-### À toi : les deux modes
-
-La méthode :
-
-1. Crée la variable `mode`.
-2. Dans tes deux boutons, ajoute une ligne qui la change : `1` avec `A`, `0` avec `B`.
-3. Dans `toujours`, juste après `effacer l'écran`, allume le point `0,0` en mode `0` et le point `4,0` en mode `1`.
-
-Appuie sur `A`, puis sur `B` : le point doit changer de coin.
-
-Vous préférez deux programmes, un par mode ? C'est permis. Notez votre choix au carnet.
-
-→ [Changer de mode](../../../fiches/makecode-prise-en-main.md#changer-de-mode)
+Une variable `mode` : `1` avec `A`, `0` avec `B`. Dans `toujours`, juste après `effacer l'écran`, un point témoin par mode : `0,0` et `4,0`. Deux programmes, un par mode, c'est permis aussi.
 
 > [!TIP] Tester sans la table
 > Mets ta télécommande sur la bande `83` et votre groupe. Si le rover lui obéit, il obéira à la table.
 
-## 7. Passez sur la table
+## 2. Passez sur la table
+
+**Ce que vous allez obtenir :** votre rover suit la figure de la table.
 
 Une équipe à la fois, dans l'ordre du tableau. La table vérifie :
 
 - `avancer` : 5 cm au moins en 1,5 s
 - `gauche` et `droite` : deux sens opposés
-- la table se tait : le rover s'arrête en 1 s
 
----
+L'arrêt quand la table se tait, c'est pour la séance 9.
 
-## Ce que vous devez avoir à la fin
+## Va plus loin
 
-- [ ] Bande `83` et votre groupe
-- [ ] La vitesse variable dans tes cinq fonctions, compensation gardée
-- [ ] Aucune pause dans le gestionnaire
-- [ ] L'arrêt après 1 s de silence
-- [ ] Deux modes, et le témoin qui dit lequel est actif
-- [ ] Votre rover qui suit la figure de la table
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s08.md) rempli
+- **Le démarrage en douceur.** Penché juste au seuil, ton rover bourdonne sans partir. Projette vers ta vitesse minimale de la séance 2 plutôt que vers `0`.
 
 → [Prendre en main MakeCode](../../../fiches/makecode-prise-en-main.md) · [Déboguer](../../../fiches/deboguer.md)
-
-## Avant de partir
-
-Programme enregistré. Accus en charge.

@@ -157,8 +157,3 @@ Reprends le programme du bouton de la séance 1 : quand tu touches les bandes, l
 - [ ] La luminosité réglée dans le programme
 - [ ] Ton image, et ton animation
 - [ ] La matrice fixée sur la lampe
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s02.md) rempli
-
-## Avant de partir
-
-Débranche une pince du pack. Lampe dans ton bac, accus en charge.

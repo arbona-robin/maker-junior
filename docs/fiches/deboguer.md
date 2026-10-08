@@ -56,7 +56,4 @@ Trois questions à te poser.
 2. **Qu'est-ce qui a changé ?** Ça marchait il y a cinq minutes : qu'as-tu touché entre-temps ?
 3. **Est-ce que ça marche sur le rover d'à côté ?** Échange une pièce avec un binôme : c'est le moyen le plus rapide de savoir si le problème est dans la pièce ou dans le montage.
 
-> [!TIP] Note ta panne
-> Quand tu as trouvé, écris-la dans ton carnet de bord : le symptôme, la cause, la solution. Tu la retrouveras, et quelqu'un d'autre aussi.
-
 → [La carte DFR0548 et ses blocs](carte-dfr0548.md) · [Rouler droit et tourner](rouler-droit.md)

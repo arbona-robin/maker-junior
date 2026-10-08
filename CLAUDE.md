@@ -39,6 +39,8 @@ La méthode complète est dans la skill `.claude/skills/nouvelle-seance-maker-ju
 ```bash
 .venv/bin/mkdocs build --strict     # échoue sur tout lien mort
 python3 .claude/skills/nouvelle-seance-maker-junior/mots-affiches.py <page>
+node outils/blocs/dessiner-blocs.js   # dessine les programmes ```blocks qui n'ont pas encore d'image
+node outils/feuilles/imprimer.js      # refait les PDF des feuilles imprimables (feuille d'équipe du rover)
 ```
 
 ## Rendre compte

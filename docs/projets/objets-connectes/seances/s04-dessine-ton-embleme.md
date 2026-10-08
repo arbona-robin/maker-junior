@@ -103,8 +103,3 @@ Des motifs en creux qui traversent : posé devant la matrice, il laisse passer l
 - [ ] Ton emblème dans les cotes, trou d'accroche compris
 - [ ] Rien de détaché
 - [ ] Le fichier `lampe-<ton prénom>.stl` dans le dossier partagé
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s04.md) rempli
-
-## Avant de partir
-
-Lampe dans ton bac. L'animateur imprime les emblèmes avant la prochaine séance.

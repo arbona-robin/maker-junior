@@ -26,10 +26,6 @@ Il sert à trois moments :
 
     Les références qui ne dépendent pas d'une séance : le carton, les circuits, la carte, la matrice, MakeCode, la 3D, le débogage. On y renvoie depuis les séances.
 
-- **[Carnet de bord](carnet-de-bord/index.md)**
-
-    Ce que tu notes après chaque séance.
-
 </div>
 
 ## Trois conventions dans les pages

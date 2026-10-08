@@ -98,17 +98,13 @@ Attention aussi aux cheveux longs, aux cordons de sweat et aux manches larges pr
 
 ## Comment le micro:bit lui parle
 
-Le micro:bit et la carte communiquent sur deux fils seulement, par un dialogue qu'on appelle **I2C**. Chaque appareil branché sur ces deux fils possède une adresse ; quand le micro:bit envoie un ordre, il commence par dire à qui il s'adresse, et seul l'appareil concerné répond.
-
-C'est la même idée que d'appeler quelqu'un par son prénom dans une pièce où tout le monde entend. C'est exactement ce que fait la radio quand plusieurs rovers partagent le même groupe.
+Le micro:bit et la carte communiquent par deux fils, selon un dialogue appelé **I2C**. Chaque appareil branché sur ces fils a une adresse : le micro:bit dit à qui il parle, et seul l'appareil concerné répond.
 
 Tu n'as rien à programmer de tout ça : les blocs de l'extension s'en occupent.
 
-→ [La radio](makecode-prise-en-main.md#la-radio)
+## L'extension DF-Driver
 
 MakeCode ne fournit pas les blocs de cette carte. Ils sont publiés à part, dans une extension écrite par DFRobot.
-
-## L'extension DF-Driver
 
 ### L'installer
 
@@ -141,8 +137,8 @@ Une catégorie orange, **DF-Driver**, apparaît alors dans la palette.
 
 #### Faire tourner un moteur
 
-```
-Motor  M1 ▾  dir  CW ▾  speed  100
+```blocks
+motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 100)
 ```
 
 | Champ | Valeurs | Ce que c'est |
@@ -155,21 +151,42 @@ Le bloc **lance** le moteur et rend la main aussitôt. Le moteur continue de tou
 
 #### Arrêter
 
+```blocks
+motor.motorStop(motor.Motors.M1)
+motor.motorStopAll()
 ```
-Motor stop  M1 ▾        ← un seul moteur
-Motor Stop All          ← tous les moteurs
-```
+
+Le premier arrête un seul moteur, le second tous.
 
 Sur le rover, `Motor Stop All` est presque toujours le bon choix : il ne laisse rien tourner par oubli.
 
 > [!TIP] Un moteur qui tourne à l'envers
 > Ce n'est pas une erreur, c'est l'ordre des deux fils dans le bornier. Deux solutions, aussi valables l'une que l'autre : inverse les fils dans le bornier, ou change `CW` en `CCW` dans le bloc.
->
-> Note ce que tu as choisi dans ton carnet de bord : dans deux séances, tu ne t'en souviendras plus.
+
+#### Le servomoteur
+
+Le moteur des roues tourne sans s'arrêter. Le **servomoteur**, lui, va à l'angle qu'on lui donne, entre 0 et 180°, et s'y tient. Pour une pince, un bras, une trappe.
+
+<figure markdown>
+![Deux servomoteurs, un bleu et un noir, chacun avec son bras en plastique blanc, reliés par leurs câbles orange, rouge et marron à la carte du rover](../assets/rover-s07/01-deux-servomoteurs.jpg)
+</figure>
+
+Il se branche sur les broches `S1` à `S8`, fil orange côté rangée verte (voir « Les branchements »). Dans **DF-Driver**, `Servo` prend une broche et un angle :
+
+```blocks
+motor.servo(motor.Servos.S8, 90)
+```
+
+Le bloc arrive de la palette réglé sur `S1` : choisis la broche où tu l'as branché.
+
+**Pour l'essayer** : au bouton `A`, le bras va à 0°, attend une seconde, va à 180°, attend une seconde, quatre fois. Puis essaie d'autres angles : où le bras s'arrête-t-il vraiment ?
+
+> [!CAUTION] Le bras d'un servomoteur
+> Branche et débranche accus coupés. Ne force pas le bras d'un servomoteur alimenté : ses engrenages sont en plastique et cassent.
 
 #### Les autres blocs
 
-La catégorie contient aussi `Servo S1 degree 0`, qui commande un servomoteur (la broche, puis l'angle de 0 à 180°), et plusieurs blocs `Stepper`, pour les moteurs pas à pas.
+La catégorie contient aussi plusieurs blocs `Stepper`, pour les moteurs pas à pas.
 
 ### Ce que veut dire `speed`
 

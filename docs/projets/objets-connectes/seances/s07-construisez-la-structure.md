@@ -68,8 +68,3 @@ En carton ou en récupération, à taille réelle quand c'est possible. Posez ch
 - [ ] Les pièces dessinées, orientées, exportées
 - [ ] Le total d'impression sous 3 heures
 - [ ] La structure montée à blanc
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s07.md) rempli
-
-## Avant de partir
-
-Structure à sa place, matériel dans le bac de l'équipe. L'animateur lance les impressions.

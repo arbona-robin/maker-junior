@@ -1,0 +1,8 @@
+{
+  "name": "dessiner-blocs",
+  "private": true,
+  "description": "Dessine les blocs MakeCode des pages en SVG",
+  "dependencies": {
+    "puppeteer-core": "^23.0.0"
+  }
+}

@@ -99,8 +99,3 @@ Dans l'ordre de la répétition. À votre objet :
 - [ ] Vos couleurs
 - [ ] La page qui s'ouvre dans le navigateur
 - [ ] La démonstration faite
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s10.md) rempli
-
-## Avant de partir
-
-Le dossier de la page enregistré, copié là où l'animateur l'indique. Le magasin rangé.

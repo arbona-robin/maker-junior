@@ -12,7 +12,7 @@ Un cas limite, c'est ce qui ne devrait pas arriver. Par exemple :
 - le produit est trop loin du pont
 - les accus faiblissent
 
-Écrivez vos trois cas limites au carnet, **avant** de tester.
+Écrivez vos trois cas limites **avant** de tester.
 
 ## 2. Testez
 
@@ -88,15 +88,10 @@ Tout le groupe, dans l'ordre de la visite, au chronomètre.
 ## Ce que vous devez avoir à la fin
 
 - [ ] Le cahier des charges coché
-- [ ] Trois cas limites testés, notés au carnet
+- [ ] Trois cas limites testés
 - [ ] Le produit installé, vu depuis sa place
 - [ ] Le panneau
 - [ ] La présentation d'une minute, répétée
 - [ ] Le plan B
 - [ ] Les photos pour votre page
 - [ ] L'entretien réparti
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s09.md) rempli
-
-## Avant de partir
-
-Le produit reste à sa place, alimenté. Le reste dans le bac de l'équipe.

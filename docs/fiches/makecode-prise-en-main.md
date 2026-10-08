@@ -104,8 +104,10 @@ La faute classique est d'écrire le test avant d'avoir vu les chiffres. On se tr
 
 Affiche les valeurs brutes, dans `toujours` :
 
-```
-série écrire valeur "x" = accélération (mg) x
+```blocks
+basic.forever(function () {
+    serial.writeValue("x", input.acceleration(Dimension.X))
+})
 ```
 
 Téléverse, puis **Afficher données Appareil**. Bouge la carte et regarde les courbes.
@@ -114,7 +116,7 @@ Téléverse, puis **Afficher données Appareil**. Bouge la carte et regarde les 
 > `série écrire valeur` n'affiche rien sur la carte : il **envoie** les valeurs à l'ordinateur par la liaison série, dans le câble USB. C'est pour ça qu'il faut rester branché pour voir quelque chose, et c'est aussi pour ça que ces blocs ne servent qu'à la mise au point : une fois le rover autonome, personne ne les lit plus.
 
 <figure class="screenshot" markdown>
-![Le graphe des données de l'accéléromètre : quatre courbes qui réagissent aux mouvements de la carte](../assets/rover-s03/33-afficher-donnees.png)
+![Afficher données Appareil : la courbe de x en haut, celle de y en dessous, qui montent et descendent quand on incline la carte, et la liste des valeurs reçues](../assets/rover-s04/21-afficher-donnees-x-y.png)
 </figure>
 
 Trois questions, à chaque fois, et pour n'importe quel capteur :
@@ -163,14 +165,19 @@ Les blocs sont dans **Logique** : `si … alors`, et le `+` du bloc pour ajouter
 ![La catégorie Logique de MakeCode, avec les blocs si/alors et les comparaisons](../assets/rover-s03/42-categorie-logique.png)
 </figure>
 
-Range d'abord la mesure dans une variable :
+Compare directement la mesure au seuil :
 
-```
-effacer l'écran
-définir tangage à accélération (mg) y
-si tangage < -200 alors      → allumer x 2 y 0
-sinon si tangage > 200 alors → allumer x 2 y 4
-sinon                        → allumer x 2 y 2
+```blocks
+basic.forever(function () {
+    basic.clearScreen()
+    if (input.acceleration(Dimension.Y) < -200) {
+        led.plot(2, 0)
+    } else if (input.acceleration(Dimension.Y) > 200) {
+        led.plot(2, 4)
+    } else {
+        led.plot(2, 2)
+    }
+})
 ```
 
 **`effacer l'écran` est en tête de la boucle.** Chaque tour éteint tout, puis rallume un seul point. Sans lui, les points s'accumulent.
@@ -183,11 +190,17 @@ Dans `toujours`, la décision se prend plusieurs fois par seconde. Si l'action e
 
 La parade est une **variable d'état** : elle garde en mémoire ce que l'objet fait déjà.
 
-```
-si lumière < seuil et allumee = 0 alors
-    allumer, définir allumee à 1
-sinon si lumière > seuil et allumee = 1 alors
-    éteindre, définir allumee à 0
+```blocks
+basic.forever(function () {
+    if (input.lightLevel() < 50 && allumee == 0) {
+        basic.showIcon(IconNames.Heart)
+        allumee = 1
+    } else if (input.lightLevel() > 50 && allumee == 1) {
+        basic.clearScreen()
+        allumee = 0
+    }
+})
+let allumee = 0
 ```
 
 On ne déclenche qu'au **changement** : on s'arme, on se désarme. C'est le même raisonnement pour toutes les alertes.
@@ -217,9 +230,9 @@ Deux micro:bit communiquent sans fil, sans réseau et sans rien à installer. Le
 
 Deux cartes ne se parlent que si elles émettent **au même endroit du spectre**. Un seul bloc, dans `au démarrage`, **sur chacune des deux cartes** :
 
-<figure class="screenshot" markdown>
-![Le bloc « au démarrage » contenant « radio régler la bande de fréquence 15 »](../assets/rover-s04/20-bande-de-frequence.png)
-</figure>
+```blocks
+radio.setFrequencyBand(15)
+```
 
 Le numéro va de `0` à `83`, un mégahertz par pas à partir de 2400 : la bande `15` est à 2415 MHz. Par défaut, une carte neuve est sur la bande `7`.
 
@@ -233,20 +246,29 @@ Le numéro va de `0` à `83`, un mégahertz par pas à partir de 2400 : la bande
 
 ### Envoyer, recevoir
 
-Le bloc qu'on utilise sur le rover envoie **une clé et une valeur** :
+Deux façons d'envoyer un message.
 
+**Un mot.** `envoyer la chaîne "avancer" par radio` envoie un texte de 19 caractères au plus. En face, `quand une donnée est reçue par radio` se déclenche à chaque message et apporte le mot reçu, `receivedString`. C'est ce que fait la télécommande du rover.
+
+**Une clé et une valeur.** `envoyer la valeur "avancer" = 180 par radio` envoie un mot et un nombre : une vitesse, une distance, une mesure. En face, un bloc du même nom, `quand une donnée est reçue par radio`, apporte cette fois `nom` (la clé) et `valeur` (le nombre). C'est ce que fait la table.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    radio.sendValue("temp", input.temperature())
+})
+radio.onReceivedValue(function (name, value) {
+    if (name == "temp") {
+        basic.showNumber(value)
+    }
+})
 ```
-envoyer la valeur  "avancer"  =  180  par radio
-```
 
-La **clé** est un mot : c'est l'ordre. La **valeur** est un nombre qui l'accompagne : une vitesse, une distance, une mesure.
+Bouton `A` : la carte envoie sa température, avec la clé `temp`. Celle qui la reçoit l'affiche.
 
-En face, `quand une donnée est reçue par radio` se déclenche tout seul à chaque message, et apporte deux choses : `nom` (la clé) et `valeur` (le nombre).
-
-On teste alors `nom` pour savoir quoi faire. Attention au bloc de comparaison : il en existe deux, et celui qui compare des **textes** a deux cases blanches. Celui qui compare des nombres ne marchera pas ici.
+Dans les deux cas, on teste le mot reçu pour savoir quoi faire. Attention au bloc de comparaison : il en existe deux, et celui qui compare des **textes** a deux cases blanches. Celui qui compare des nombres ne marchera pas ici.
 
 > [!CAUTION] La clé fait 8 caractères, pas un de plus
-> Au-delà, la carte tronque sans prévenir.
+> Avec une clé et une valeur, la carte tronque la clé sans prévenir au-delà de 8 caractères.
 
 | Ce que tu tapes | Ce qui part vraiment |
 |---|---|
@@ -268,15 +290,13 @@ Quand toutes les cartes sont sur la même bande, elles entendent **tous** les me
 
 Deux machines qui échangent doivent s'entendre sur **le canal** et sur **le vocabulaire**. Cet accord s'appelle un **protocole**, et il s'écrit avant le programme.
 
-| Clé | Valeur | Ce que fait le rover |
-|---|---|---|
-| `avancer` | inclinaison | Les deux moteurs en avant |
-| `reculer` | inclinaison | Les deux moteurs en arrière |
-| `gauche` | inclinaison | Pivot à gauche |
-| `droite` | inclinaison | Pivot à droite |
-| `arreter` | `0` | Tout s'arrête |
-
-Note le tien dans ton carnet de bord. C'est ce que tu reliras quand ton coéquipier programmera l'autre carte.
+| Mot | Ce que fait le rover |
+|---|---|
+| `avancer` | Les deux moteurs en avant |
+| `reculer` | Les deux moteurs en arrière |
+| `gauche` | Tourne à gauche |
+| `droite` | Tourne à droite |
+| `arreter` | Tout s'arrête |
 
 ### Quand rien ne passe
 
@@ -285,33 +305,64 @@ La radio est muette : elle ne signale ni l'échec, ni le succès. **Fais-la parl
 | Ce que tu vois | Où chercher |
 |---|---|
 | Rien ne s'affiche, même côté émetteur | Le programme n'envoie pas : seuils, conditions |
-| L'émetteur affiche, le récepteur non | Les groupes diffèrent, ou une carte n'est pas alimentée |
-| Le récepteur affiche, mais le mauvais ordre | Les clés ne correspondent pas : vérifie les 8 caractères |
+| L'émetteur affiche, le récepteur non | Les bandes diffèrent, ou une carte n'est pas alimentée |
+| Le récepteur affiche, mais le mauvais ordre | Les mots ne correspondent pas : vérifie l'orthographe, et les 8 caractères pour une clé |
 | Ça marche, puis ça s'arrête | Les accus |
 
 > [!TIP] Retire les témoins à la fin
 > Un écran qui clignote pendant une mission gêne. Mais tant que tu règles, laisse-les : c'est ce qui te fait gagner du temps.
 
+## S'arrêter quand le signal se perd
+
+Dans un train, le conducteur appuie régulièrement sur une pédale ; s'il ne le fait plus, le train freine seul. C'est le **dispositif de l'homme mort**. Une carte qui obéit à la radio peut faire pareil : sans message depuis un moment, elle revient à un état sûr.
+
+Le programme se partage en deux :
+
+- **le gestionnaire range** : le message reçu, et l'heure à laquelle il est arrivé ;
+- **`toujours` agit** : trop longtemps sans message, il passe à l'état sûr ; sinon, il fait ce que dit le dernier message.
+
+`temps d’exécution (ms)`, dans **Entrée**, donne le nombre de millisecondes depuis l'allumage de la carte : c'est son horloge.
+
+```blocks
+radio.onReceivedString(function (receivedString) {
+    message = receivedString
+    dernierMessage = input.runningTime()
+})
+basic.forever(function () {
+    if (input.runningTime() - dernierMessage > 1000) {
+        basic.showIcon(IconNames.No)
+    } else if (message == "oui") {
+        basic.showIcon(IconNames.Yes)
+    }
+})
+let dernierMessage = 0
+let message = ""
+```
+
+Ici, plus d'une seconde sans message : la croix s'affiche.
+
+> [!NOTE] Pas de pause dans le gestionnaire
+> La carte ne garde que quatre messages en attente. Si le gestionnaire attend, les suivants sont perdus.
+
 ## Changer de mode
 
-Un même programme peut faire plusieurs choses : obéir à la télécommande, obéir à la table, suivre un guidage. Chacune est un **mode**.
+Un même programme peut faire plusieurs choses : écouter une source, puis une autre. Chacune est un **mode**.
 
-**Une variable `mode`, pour tout le programme.** Donne un numéro à chaque mode : `0` télécommande, `1` table, `2` guidage. `au démarrage`, `toujours` et `quand une donnée est reçue` lisent tous la même variable.
+**Une variable `mode`, pour tout le programme.** Donne un numéro à chaque mode : `0`, `1`… `au démarrage`, `toujours` et `quand une donnée est reçue` lisent tous la même variable.
 
-**Un geste pour en changer.** Un bouton par mode (`A` pour l'un, `B` pour l'autre), ou le logo : à chaque contact, `mode` passe au suivant et revient à `0` après le dernier. C'est là aussi qu'on règle la radio du nouveau mode : bande de l'équipe, ou bande `83` et groupe.
+**Un geste pour en changer.** Un bouton par mode (`A` pour l'un, `B` pour l'autre), ou le logo : à chaque contact, `mode` passe au suivant et revient à `0` après le dernier. C'est là aussi qu'on règle la radio du nouveau mode, si elle change.
 
 **Un témoin pour le voir.** Chaque mode allume son point, dans un coin que tes autres témoins n'utilisent pas. Rallume-le à chaque tour de `toujours`, juste après `effacer l'écran`.
 
 | Mode | `mode` | Point |
 |---|---|---|
-| Télécommande | `0` | `0,0` |
-| Table | `1` | `4,0` |
-| Guidage | `2` | `0,4` |
+| Premier mode | `0` | `0,0` |
+| Second mode | `1` | `4,0` |
 
 Dans `toujours`, un `si mode = 0 … sinon si mode = 1 …` choisit ce que fait le programme.
 
 > [!NOTE] Pourquoi un témoin
-> Un rover en mode table n'obéit plus à sa télécommande. Sans témoin, on croit à une panne.
+> Une carte dans le mauvais mode n'obéit plus à ce qu'on attend d'elle. Sans témoin, on croit à une panne.
 
 > [!TIP] Deux programmes, c'est aussi une solution
 > Un projet par mode, téléversé selon le besoin. Plus simple à écrire, plus lent à changer : il faut l'ordinateur.

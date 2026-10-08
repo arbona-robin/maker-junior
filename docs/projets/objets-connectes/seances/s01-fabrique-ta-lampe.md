@@ -146,7 +146,7 @@ Pose un doigt à cheval sur les deux bandes, et regarde la courbe.
 > [!NOTE] Ton doigt ferme la boucle
 > La peau conduit un peu le courant. Quand ton doigt relie les deux bandes, la valeur lue sur `P2` chute.
 
-Note au carnet ta valeur au repos et ta valeur quand tu touches.
+Note ta valeur au repos et ta valeur quand tu touches.
 
 ## 10. Affiche quelque chose quand on touche
 
@@ -194,10 +194,5 @@ Quand on touche les bandes, une petite animation : plusieurs icônes à la suite
 - [ ] Ta lampe montée, micro:bit et piles en place
 - [ ] La LED allumée par `3V`, puis par le programme
 - [ ] La LED qui clignote
-- [ ] Tes valeurs au repos et au toucher notées au carnet
+- [ ] Tes valeurs au repos et au toucher notées
 - [ ] Une icône qui s'affiche quand tu touches le cuivre
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s01.md) rempli
-
-## Avant de partir
-
-Lampe, LED et pinces dans ton bac.

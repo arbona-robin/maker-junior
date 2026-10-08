@@ -32,6 +32,10 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
     Dessiner dans Tinkercad, exporter, et ce que l'imprimante peut faire.
 
+- **[Faire une page web](faire-une-page-web.md)**
+
+    Le gabarit, les balises, les photos et les couleurs de ta page.
+
 - **[Déboguer](deboguer.md)**
 
     Trouver la panne au lieu de tout reprendre au hasard.

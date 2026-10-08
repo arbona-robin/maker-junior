@@ -20,7 +20,7 @@ Cochez ce que vous avez déjà vérifié. Aujourd'hui, vous le montrez.
 | Pente | Le rover monte le plan incliné à 10° |
 | Échantillon | Il le déplace de 50 cm, toujours debout ; le tag est en place |
 | Gabarit | Il tient dans 25 × 25 × 20 cm ; votre électronique ; votre total d'impression |
-| Table | La télécommande, votre passage d'un mode à l'autre, le pilotage par la table, et le guidage si vous l'avez fait |
+| Table | La télécommande, votre passage d'un mode à l'autre, le pilotage par la table |
 
 <figure markdown>
 ![Le plan incliné en carton, l'échantillon posé debout en haut de la pente, et au premier plan un rover qui porte un tag](../../../assets/rover-s05/01-plan-incline-echantillon-tag.jpg)
@@ -33,7 +33,7 @@ Entre deux stations, vous passez par la station de correction : réparez ce qui 
 
 ## 3. Choisissez vos corrections
 
-Pour chaque « pas encore », notez au carnet : ce que vous changez, et qui s'en occupe.
+Pour chaque « pas encore », écrivez dans « Nos décisions », sur votre feuille d'équipe, ce que vous changez et qui s'en occupe.
 
 Commencez par celle qui compte le plus pour les épreuves.
 
@@ -48,8 +48,3 @@ Entraînez-vous sur le parcours : slalom et pente, chronométrés. Notez votre t
 - [ ] Les quatre stations passées
 - [ ] Le cahier des charges coché
 - [ ] Au moins une correction engagée, ou un temps d'entraînement noté
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s10.md) rempli
-
-## Avant de partir
-
-Le cahier des charges coché dans le bac de l'équipe : il vous sert la prochaine fois. Accus en charge.

@@ -1,6 +1,9 @@
 # Séance 2 — Fabrique ton rover et fais-le rouler droit
 
-Tu découpes ton châssis, tu montes ton rover, et tu le règles pour qu'il roule droit.
+1. **[Fabrique ton châssis](#1-fabrique-ton-chassis)** : découpé, plié, les rabats d'équerre.
+2. **[Monte ton rover](#2-monte-ton-rover)** : tout tient, et les deux roues tournent dans le même sens.
+3. **[Ta première fonction](#3-ta-premiere-fonction)** : `avancer`, appelée dans `toujours`.
+4. **[Fais-le rouler droit](#4-fais-le-rouler-droit)** : moins d'une largeur de rover d'écart sur 1,50 m.
 
 ## 1. Fabrique ton châssis
 
@@ -17,7 +20,7 @@ Imprime [le plan (PDF)](../../../assets/plans/rover-base-chassis-v0.3.pdf) **à 
 <details markdown>
 <summary>Pas d'imprimante ? Recopie le plan</summary>
 
-Sur papier quadrillé 5 × 5 mm. **Compte les carreaux, ne mesure pas** : la plaque en fait 35 × 14.
+Sur papier quadrillé 5 × 5 mm. **Compte les carreaux** : la plaque en fait 35 × 14.
 
 Le fichier source : [SVG](../../../assets/plans/rover-base-chassis-v0.3.svg).
 
@@ -42,15 +45,22 @@ Colle la feuille sur la face **intérieure** des plis.
 <figcaption>Le rebord relevé est ce qui sépare tes doigts de la lame.</figcaption>
 </figure>
 
-→ [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md#decouper)
-
 ### Plie
 
-Règle **sur sa tranche**, pas à plat, le long du pointillé : appuie fort, puis plie contre la règle. Les rabats doivent tenir d'équerre tout seuls.
+Règle **sur sa tranche**, pas à plat, le long du pointillé : appuie fort, puis plie contre la règle.
 
 → [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md)
 
+> [!TIP] Ça marche si…
+> Les rabats tiennent d'équerre tout seuls.
+
 ## 2. Monte ton rover
+
+**Ce que tu vas obtenir :**
+
+<figure markdown>
+![Le rover terminé, vu de trois quarts](../../../assets/rover-s01/13-rover-termine.jpg)
+</figure>
 
 ### Les moteurs
 
@@ -105,12 +115,9 @@ Languette arrière rabattue dessous et scotchée : c'est ta roue folle. Enfonce 
 <figure markdown>
 ![Vue de dessous du rover, une roue montée](../../../assets/rover-s01/11-vue-dessous-roue.jpg)
 </figure>
-<figure markdown>
-![Le rover terminé, vu de trois quarts](../../../assets/rover-s01/13-rover-termine.jpg)
-</figure>
 </div>
 
-## 3. Les deux roues dans le même sens
+### Les deux roues dans le même sens
 
 Pose ton rover **sur l'arrière, roues en l'air**, dans la boîte de test. Lance ton programme de la séance 1.
 
@@ -119,18 +126,21 @@ Pose ton rover **sur l'arrière, roues en l'air**, dans la boîte de test. Lance
 <figcaption>Roues en l'air : tu vois les deux sens sans courir après ton rover.</figcaption>
 </figure>
 
-Un moteur tourne à l'envers : c'est normal. Inverse ses deux fils, ou passe son bloc en `CCW`. **Note ton choix dans le carnet.**
+Un moteur tourne à l'envers : c'est normal. Inverse ses deux fils, ou passe son bloc en `CCW`.
 
 <figure markdown>
 <video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-rover-roule.mp4"></video>
 <figcaption>USB débranché : le programme vit dans la carte.</figcaption>
 </figure>
 
-## 4. Ta première fonction
+> [!IMPORTANT] Point de contrôle
+> Fais valider ton montage avant de passer au code.
 
-Une fonction est un bloc que tu fabriques, que tu nommes, et que tu réutilises ensuite par son nom.
+## 3. Ta première fonction
 
-**Fonctions** → **Créer une fonction…**
+**Ce que tu vas obtenir :** tes deux blocs moteurs rangés dans un bloc à toi, `avancer`.
+
+**Avancé** → **Fonctions** → **Créer une fonction…**
 
 <figure class="screenshot" markdown>
 ![La catégorie Fonctions dépliée dans MakeCode, avec le bouton « Créer une fonction… »](../../../assets/rover-s02/20-categorie-fonctions.png)
@@ -144,14 +154,29 @@ Appelle-la `avancer`, puis **Terminé**.
 
 Glisse tes deux blocs `Motor` dans la fonction. Reprends **Fonctions** : le bloc `appel avancer` est apparu. Mets-le dans `toujours`, à la place des blocs que tu viens de déplacer.
 
-<figure class="screenshot" markdown>
-![La fonction avancer contenant Motor M1 et Motor M2, et le bloc appel avancer placé dans toujours](../../../assets/rover-s02/23-fonction-avancer-appelee.png)
-</figure>
+```blocks
+function avancer () {
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 110)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 110)
+}
+basic.showIcon(IconNames.Happy)
+music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
+basic.forever(function () {
+    basic.showArrow(ArrowNames.North)
+    avancer()
+    basic.pause(1000)
+    basic.clearScreen()
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 0)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 0)
+})
+```
 
-> [!NOTE] À quoi sert une fonction
-> Un programme se lit comme une phrase : `appel avancer` se comprend sans lire le détail. Tu réutiliseras ces fonctions telles quelles quand ton rover aura une télécommande.
+> [!TIP] Ça marche si…
+> Ton rover fait exactement la même chose qu'avant : le programme est rangé autrement, il n'a pas changé.
 
-## 5. Fais-le rouler droit
+## 4. Fais-le rouler droit
+
+**Ce que tu vas obtenir :** sur 1,50 m, ton rover s'écarte de la ligne de moins d'une largeur de rover.
 
 Ton rover tire d'un côté. **Regarde la mécanique avant de toucher au code.**
 
@@ -164,34 +189,18 @@ Ton rover tire d'un côté. **Regarde la mécanique avant de toucher au code.**
 Il dévie encore ? Alors les deux moteurs ne tournent pas exactement à la même vitesse. Mets-les **tous les deux à 80**, puis monte celui qui est le plus lent, 5 par 5, jusqu'à ce que le rover suive la ligne.
 
 > [!NOTE] Il n'y a pas de bonne valeur
-> Chaque moteur est unique. Sur le rover des photos, l'équilibre tombe à 110 ; le tien sera ailleurs, entre 80 et 120. **Note tes deux valeurs dans le carnet.**
+> Chaque moteur est unique. Sur le rover des photos, l'équilibre tombe à 110 ; le tien sera ailleurs, entre 80 et 120.
 
 <figure markdown>
 ![Le banc d'essai : une longue bande d'adhésif noir tendue au sol, un repère en L à son extrémité, et le rover calé dedans avant le départ](../../../assets/rover-s02/02-banc-dessai.jpg)
 <figcaption>Le L cale le rover au départ, toujours au même endroit.</figcaption>
 </figure>
 
-Cale ton rover dans le L, lance-le, et mesure de combien il s'est écarté de la ligne au bout d'**1,50 m**. Fais trois passages : l'écart change à chaque fois, et c'est déjà une information.
-
-> [!TIP] Ce qu'on vise
-> Un écart de moins d'une largeur de rover au bout d'1,50 m. Le reste se rattrapera à la télécommande.
+Cale ton rover dans le L, lance-le, et mesure de combien il s'est écarté de la ligne au bout d'**1,50 m**. Fais trois passages : l'écart change à chaque fois.
 
 Mesure aussi ta **vitesse minimale** : descends la valeur jusqu'à ce que le rover refuse de démarrer, alors qu'une pichenette suffit à le lancer. Note-la.
 
 → [Rouler droit et tourner](../../../fiches/rouler-droit.md)
 
----
-
-## Ce que tu dois avoir à la fin
-
-- [ ] Châssis découpé, rabats d'équerre
-- [ ] Moteurs fixés, roues qui tournent librement
-- [ ] Carte et accus sanglés
-- [ ] Les deux roues dans le même sens
-- [ ] La fonction `avancer`, appelée dans `toujours`
-- [ ] Il roule droit sur 1,50 m sans s'écarter de la ligne
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s02.md) rempli
-
-## Avant de partir
-
-Matériel dans ton bac, chutes triées, **outil de découpe rendu**, banc dégagé, accus en charge.
+> [!IMPORTANT] Point de contrôle
+> Montre un passage à l'animateur.

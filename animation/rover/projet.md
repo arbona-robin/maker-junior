@@ -14,7 +14,7 @@ Concevoir, fabriquer et piloter un rover télécommandé, du châssis en carton 
 
 ## Livrable du parcours
 
-Deux rovers. Celui que chaque jeune fabrique, câble et programme seul pendant les quatre premières séances. Puis celui que son équipe de deux ou trois conçoit à partir d'un cahier des charges, confronté à ce cahier des charges en revue de conception puis engagé dans les épreuves. Chaque équipe présente son rover sur une page web publiée : c'est ce que chaque jeune garde du projet.
+Deux rovers. Celui que chaque jeune fabrique, câble et programme seul pendant les cinq premières séances. Puis celui que son équipe de deux ou trois conçoit à partir d'un cahier des charges, confronté à ce cahier des charges en revue de conception puis engagé dans les épreuves. Chaque équipe présente son rover sur une page web publiée : c'est ce que chaque jeune garde du projet.
 
 ## Objectifs pédagogiques
 
@@ -26,7 +26,7 @@ Deux rovers. Celui que chaque jeune fabrique, câble et programme seul pendant l
 
 ## Description du projet
 
-Le parcours se déroule en deux temps. Pendant les quatre premières séances, chaque jeune construit seul un rover télécommandé complet : châssis en carton découpé sur plan, motorisation, électronique, programme et pilotage par radio avec un second micro:bit. Personne ne passe à la suite sans avoir fait rouler le sien. On remet ensuite aux jeunes un cahier des charges et ils se regroupent par deux ou trois pour concevoir un nouveau rover, conçu pour accomplir des missions précises, avec du carton et des pièces qu'ils modélisent et impriment en 3D. Ils apprennent la lecture de plan et les gestes de découpe, la modélisation et l'impression 3D, le câblage et la polarité, la programmation par blocs, la liaison radio, la commande d'un servomoteur, le dialogue avec la table selon un protocole imposé, une méthode de dépannage qui sépare le code du montage, le travail à plusieurs sur un objet commun, et la présentation de leur rover sur une page web. La démarche est celle de l'atelier : on fabrique dès la première séance, on teste, on corrige, on documente au carnet de bord. À partir de la séance 5, chaque notion nouvelle tient en 30 minutes au plus, et le reste de la séance appartient à l'équipe, pour appliquer la notion au rover ou poursuivre sa conception. Le travail devient collectif à partir de la séance 5, au milieu de la phase 2. Le parcours se termine par une revue de conception, où chaque équipe vérifie si son rover répond au cahier des charges, puis par les épreuves.
+Le parcours se déroule en deux temps. Pendant les cinq premières séances, chaque jeune construit seul un rover télécommandé complet : châssis en carton découpé sur plan, motorisation, électronique, programme et pilotage par radio avec un second micro:bit. Personne ne passe à la suite sans avoir fait rouler le sien. On remet ensuite aux jeunes un cahier des charges et ils se regroupent par deux ou trois pour concevoir un nouveau rover, conçu pour accomplir des missions précises, avec du carton et des pièces qu'ils modélisent et impriment en 3D. Ils apprennent la lecture de plan et les gestes de découpe, la modélisation et l'impression 3D, le câblage et la polarité, la programmation par blocs, la liaison radio, la commande d'un servomoteur, le dialogue avec la table selon un protocole imposé, une méthode de dépannage qui sépare le code du montage, le travail à plusieurs sur un objet commun, et la présentation de leur rover sur une page web. La démarche est celle de l'atelier : on fabrique dès la première séance, on teste, on corrige, on documente. De la séance 6 à la séance 9, et en séance 11, l'animateur montre un concept ou un outil pendant quelques minutes en début de séance ; le reste appartient à l'équipe, qui s'organise pour l'appliquer au rover ou poursuivre sa conception. Le travail devient collectif à partir de la séance 6, au milieu de la phase 2. Le parcours se termine par une revue de conception, où chaque équipe vérifie si son rover répond au cahier des charges, puis par les épreuves.
 
 ## Prérequis
 
@@ -62,8 +62,9 @@ Un second adulte est utile à toutes les séances, vu le matériel en jeu (outil
 - Matériaux de récupération (bouchons, pots, pailles, chutes…), en bac commun
 - Plan incliné à 10°, échantillons imprimés (40 × 40 × 56 mm), AprilTag 36h11 imprimés et découpés (un par équipe, numéros 1 à 20)
 - Servomoteurs, deux au plus par équipe
-- En phase 2, l'électronique des rovers individuels est remise en commun. Les rovers sont photographiés puis démontés à la clôture de la S5, et chaque équipe prend dans ce stock ce que le cahier des charges autorise.
-- La table et son pont radio (protocoles A1 et B1), avec une Kinect ou une webcam
+- La [feuille d'équipe](../../docs/assets/rover-cahier-des-charges/feuille-equipe-rover.pdf), imprimée recto verso, une par équipe : vérifications, rôles, suivi d'impression et décisions s'y écrivent. Du papier brouillon à disposition pour le reste. Source : `outils/feuilles/feuille-equipe-rover.html`, à réimprimer avec `node outils/feuilles/imprimer.js` si le cahier des charges change
+- En phase 2, l'électronique des rovers individuels est remise en commun. Les rovers sont photographiés à la clôture de la S5, puis restent montés : chaque équipe y prend les pièces dont elle a besoin, dans la limite du cahier des charges.
+- La table et son pont radio (protocole A1), avec une Kinect ou une webcam
 
 ## Ressources numériques
 
@@ -74,7 +75,6 @@ Un second adulte est utile à toutes les séances, vu le matériel en jeu (outil
 - 1 ordinateur par jeune
 - Le livre en ligne, ouvert en écran partagé pendant l'atelier
 - Plans de découpe imprimés (`docs/assets/plans/`)
-- Carnet de bord numérique (éditeur de texte)
 - Gabarit de la page web de présentation (S11), commun à tous les parcours : [`docs/assets/gabarit-page.zip`](../../docs/assets/gabarit-page.zip)
 - Les tags des rovers, 1 à 20, un par page : [`docs/assets/tags/tags-rover-01-20.pdf`](../../docs/assets/tags/tags-rover-01-20.pdf) : carré noir de 90 mm, marge blanche de 11,2 mm, cadre de découpe, à imprimer à 100 %
 
@@ -138,7 +138,7 @@ Elle servirait aussi aux autres ateliers créatifs de La Plateforme, pour des ma
 
 **Notions :** câblage et polarité · chaîne de programmation · notion d'extension et de bibliothèque · commande de moteur · séparer une panne de code d'une panne de montage
 
-**Livrable intermédiaire :** électronique câblée et validée, programme faisant tourner les deux moteurs, moteur `M1` marqué, carnet de bord renseigné
+**Livrable intermédiaire :** électronique câblée et validée, programme faisant tourner les deux moteurs, moteur `M1` marqué
 
 ## Séance 2 — Phase 1 — Découverte & prise en main
 
@@ -146,7 +146,7 @@ Elle servirait aussi aux autres ateliers créatifs de La Plateforme, pour des ma
 
 **Notions :** lecture de plan coté et traçage · rainage, pliage et découpe du carton · réglage du sens de rotation · fonction et réutilisation du code · diagnostic mécanique avant correction logicielle · vitesse minimale de démarrage · dérive et compensation · reproductibilité d'une mesure
 
-**Livrable intermédiaire :** rover monté qui roule droit sur 1,50 m, fonction `avancer`, réglages notés au carnet
+**Livrable intermédiaire :** rover monté qui roule droit sur 1,50 m, fonction `avancer`
 
 ## Séance 3 — Phase 1 — Découverte & prise en main
 
@@ -158,31 +158,31 @@ Elle servirait aussi aux autres ateliers créatifs de La Plateforme, pour des ma
 
 ## Séance 4 — Phase 2 — Exploration & création
 
-**Titre :** Pilote ton rover à distance
+**Titre :** Fabrique ta télécommande
 
-**Notions :** capteur embarqué et mesure brute · seuil de décision · variable · `si` / `sinon si` / `sinon` · protocole : canal partagé et vocabulaire partagé · bande de fréquence, et ce qui la distingue du groupe · protocole imposé et standardisation · message clé-valeur · troncature silencieuse au-delà de 8 caractères · comparaison de chaînes · gestionnaire d'événement `quand une donnée est reçue` · débit d'émission et saturation du récepteur · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S3
+**Notions :** capteur embarqué et mesure brute (axes `x` et `y`) · seuil de décision · `si` / `sinon si` / `sinon` · liaison radio entre deux micro:bit · bande de fréquence comme canal · protocole : canal partagé et vocabulaire partagé · message d'un mot
 
-**Livrable intermédiaire :** rover individuel terminé et piloté par radio, seuils et protocole consignés au carnet, plaque montée. Fin du temps individuel.
+**Livrable intermédiaire :** télécommande qui lit l'inclinaison et envoie les cinq mots du protocole, plaque montée
 
 ## Séance 5 — Phase 2 — Exploration & création
 
-**Titre :** Formez votre équipe et concevez le rover de mission
+**Titre :** Pilote ton rover, formez votre équipe
 
-**Notions :** lecture d'un cahier des charges · répartition des rôles dans une équipe · prototypage carton · relevé et tracé d'un plan à partir d'une idée
+**Notions :** comparaison de textes · gestionnaire d'événement `quand une donnée est reçue par radio` · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S3 · lecture d'un cahier des charges · distinction entre caractéristique vérifiée et épreuve courue · composition d'une équipe
 
-**Livrable intermédiaire :** équipes de 2 ou 3 constituées, plan tracé et premier prototype carton du rover de mission, support de tag en carton compris
+**Livrable intermédiaire :** rover individuel piloté par radio, équipes de 2 ou 3 constituées avec leur numéro, cahier des charges lu. Fin du temps individuel.
 
 ## Séance 6 — Phase 2 — Exploration & création
 
-**Titre :** Dessinez les pièces de votre rover
+**Titre :** Concevez votre rover
 
-**Notions :** CAO par esquisse : révolution, extrusion, esquisse libre · pièces partagées : trouver, réemployer, modifier, citer l'auteur · durée d'impression estimée dans Kiri:Moto · choix du procédé : impression, carton, récupération
+**Notions :** esquisse : révolution, extrusion, esquisse libre · contrainte de conception · croquis de solution · répartition des rôles · choix du procédé : carton, impression, récupération · pièces partagées, auteur cité · durée d'impression estimée dans Kiri:Moto · budget d'impression
 
-**Livrable intermédiaire :** pièces de l'équipe dessinées et parties à l'impression, ou fabriquées en carton ou en récupération
+**Livrable intermédiaire :** croquis d'équipe, rôles répartis, châssis carton commencé avec son support de tag, premières pièces 3D dessinées et notées dans le suivi d'impression
 
 ## Séance 7 — Phase 2 — Exploration & création
 
-**Titre :** Faites bouger une pièce avec un servomoteur
+**Titre :** Le servomoteur
 
 **Notions :** servomoteur : un angle, pas une vitesse · branchement sur les broches `S7` et `S8` de la DFR0548 · commande d'un actionneur par bouton, puis depuis la télécommande
 
@@ -192,17 +192,17 @@ Elle servirait aussi aux autres ateliers créatifs de La Plateforme, pour des ma
 
 **Titre :** Faites piloter votre rover par la table
 
-**Notions :** protocole imposé A1 · bande et groupe · la valeur reçue devient une vitesse · variable lue par tout le programme · gestionnaire radio qui ne bloque pas · arrêt sur silence · changement de mode et son témoin à l'écran
+**Notions :** la télécommande envoie la vitesse, comme la table · message clé-valeur, clé de 8 caractères au plus · vitesse tirée de l'inclinaison · premières variables · la valeur reçue devient une vitesse · bande et groupe · changement de mode et son témoin à l'écran
 
-**Livrable intermédiaire :** rover conforme à A1, piloté par la table comme par sa télécommande
+**Livrable intermédiaire :** rover piloté par la table comme par sa télécommande, qui envoie la vitesse
 
 ## Séance 9 — Phase 2 — Exploration & création
 
-**Titre :** Guidez votre rover vers une cible
+**Titre :** Le dispositif de l'homme mort
 
-**Notions :** recevoir une mesure et non un ordre · décision à bord · condition sur un signe et un seuil · mode manuel et mode autonome
+**Notions :** dispositif de l'homme mort · le gestionnaire radio range, la boucle exécute · horloge de la carte · arrêt après une seconde sans message
 
-**Livrable intermédiaire :** rover qui réagit à `cap` et `dist`, testé avec un micro:bit émetteur
+**Livrable intermédiaire :** rover conforme au protocole A1, qui s'arrête quand la table se tait
 
 ## Séance 10 — Phase 3 — Finalisation & valorisation
 

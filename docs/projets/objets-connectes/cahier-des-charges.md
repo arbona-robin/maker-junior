@@ -22,7 +22,7 @@ Ce que votre produit doit faire. La première partie, c'est vous qui l'écrivez,
 | | Ce qu'il faut | Comment on vérifie |
 |---|---|---|
 | **Utilité** | Il sert à quelqu'un d'autre que l'équipe | ☐ Vous le dites en une phrase : ce qu'il fait, pour qui |
-| **Mesure** | Au moins une mesure, et un seuil choisi d'après des valeurs relevées | ☐ Les valeurs et le seuil sont notés au carnet |
+| **Mesure** | Au moins une mesure, et un seuil choisi d'après des valeurs relevées | ☐ Les valeurs et le seuil sont connus |
 | **Action** | Il agit ou il prévient quand le seuil est franchi, une fois par changement | ☐ On franchit le seuil : il réagit une fois, pas en boucle |
 | **Langue commune** | Bande `40`, numéro de série émis, une clé de 8 caractères au plus par mesure, toutes les 5 à 10 secondes | ☐ En ligne sur le tableau de bord, avec le bon affichage |
 | **Autonomie** | Il fonctionne sans le pont ni l'ordinateur | ☐ Pont débranché, il continue |

@@ -1,87 +1,146 @@
-# Séance 5 — Formez votre équipe et concevez le rover de mission
+# Séance 5 — Pilote ton rover, formez votre équipe
 
-Votre rover roule et obéit à sa télécommande. Aujourd'hui, vous formez une équipe et vous commencez un nouveau rover, conçu pour des missions précises.
+1. **[Ton rover obéit](#1-ton-rover-obeit)** : tu inclines la télécommande, le rover allume le même point et bouge.
+2. **[Découvrez le cahier des charges](#2-decouvrez-le-cahier-des-charges)** : ce que votre rover d'équipe devra faire.
+3. **[Formez votre équipe](#3-formez-votre-equipe)** : à deux ou trois, avec votre numéro.
 
-## 1. Découvrez le cahier des charges
+Ta télécommande n'envoie pas encore ses cinq mots ? Termine d'abord la [séance 4](s04-pilote-a-distance.md).
+
+## 1. Ton rover obéit
+
+**Ce que tu vas obtenir :** tu inclines la télécommande, ton rover allume le même point qu'elle et fait le mouvement demandé.
+
+### Ton rover écoute
+
+Dans MakeCode, ouvre ton projet `rover`.
+
+Dans `au démarrage`, règle la même bande de fréquence que ta télécommande :
+
+```blocks
+radio.setFrequencyBand(15)
+```
+
+Dans **Radio**, prends `quand une donnée est reçue par radio`, celui qui t'apporte le mot reçu : `receivedString`. Il en existe un autre, avec `nom` et `valeur` : ce n'est pas lui.
+
+```blocks
+radio.onReceivedString(function (receivedString) {
+	
+})
+```
+
+`receivedString` est un **texte**. Pour le comparer, prends dans **Logique** le bloc d'égalité à **cases blanches**, pas celui qui compare des nombres.
+
+<figure class="screenshot" markdown>
+![La section Comparaison de la catégorie Logique : deux blocs d'égalité et d'infériorité sur des zéros, et en dessous le bloc d'égalité sur deux cases de texte vides](../../../assets/rover-s04/24-comparaison-de-textes.png)
+</figure>
+
+### La première branche
+
+```blocks
+function avancer () {
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 110)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 110)
+}
+radio.onReceivedString(function (receivedString) {
+    basic.clearScreen()
+    if (receivedString == "avancer") {
+        avancer()
+        led.plot(2, 0)
+    }
+})
+```
+
+`si receivedString = "avancer"` → `appel avancer`. Ta fonction n'a pas bougé d'un bloc.
+
+#### À toi : les quatre autres
+
+Ajoute `reculer`, `gauche`, `droite` et `arreter`. Dans chaque branche, allume **le même point que ta télécommande** : il te dira que le message est arrivé.
+
+Termine par un `sinon` qui **arrête les moteurs** et allume un point libre, par exemple `4,4` : un ordre incompris ne doit pas faire rouler ton rover.
+
+<details markdown>
+<summary>La solution</summary>
+
+```blocks
+function avancer () {
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 110)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 110)
+}
+function reculer () {
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CCW, 110)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CCW, 110)
+}
+function tournerAGauche () {
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 0)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 110)
+}
+function tournerADroite () {
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 110)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 0)
+}
+function arreter () {
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 0)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 0)
+}
+radio.setFrequencyBand(15)
+radio.onReceivedString(function (receivedString) {
+    basic.clearScreen()
+    if (receivedString == "avancer") {
+        avancer()
+        led.plot(2, 0)
+    } else if (receivedString == "reculer") {
+        reculer()
+        led.plot(2, 4)
+    } else if (receivedString == "gauche") {
+        tournerAGauche()
+        led.plot(0, 2)
+    } else if (receivedString == "droite") {
+        tournerADroite()
+        led.plot(4, 2)
+    } else if (receivedString == "arreter") {
+        arreter()
+        led.plot(2, 2)
+    } else {
+        arreter()
+        led.plot(4, 4)
+    }
+})
+```
+
+</details>
+
+### Pilote
+
+Téléverse les deux programmes, débranche l'USB, passe sur accus.
+
+> [!TIP] Le contrôle en un coup d'œil
+> Penche ta télécommande et regarde **les deux écrans**.
+>
+> Même point des deux côtés : le message passe. Point allumé seulement sur la télécommande : le rover n'entend pas : vérifie ta bande de fréquence. Le point reste au centre des deux côtés : ce sont tes seuils.
+
+> [!IMPORTANT] Point de contrôle
+> Montre ton rover à l'animateur : il avance, recule, tourne et s'arrête à la télécommande.
+
+Ton rover roule ? Aide un camarade, sans prendre son clavier.
+
+## 2. Découvrez le cahier des charges
+
+**Ce que tu vas obtenir :** tu sais ce que ton rover ne sait pas encore faire.
 
 <figure markdown>
 ![Le plan incliné en carton, l'échantillon posé debout en haut de la pente, et au premier plan un rover qui porte un tag](../../../assets/rover-s05/01-plan-incline-echantillon-tag.jpg)
 </figure>
 
-Le cahier des charges dit ce que votre rover devra faire. Lisez-le en entier.
-
 → [Le cahier des charges](../cahier-des-charges.md)
 
 Pose ton rover sur la pente, puis fais-lui pousser l'échantillon. Réussit-il les deux ?
 
-## 2. Formez votre équipe
+## 3. Formez votre équipe
 
-À deux ou trois. Notez au carnet :
+L'animateur annonce les équipes et donne à chacune son numéro : c'est à la fois l'id de votre tag, votre bande à la télécommande et votre groupe sur la table. Écrivez-le sur votre [feuille d'équipe](../../../assets/rover-cahier-des-charges/feuille-equipe-rover.pdf), avec vos noms.
 
-- les membres de l'équipe
-- votre numéro, donné par l'animateur : c'est à la fois l'id de votre tag, votre bande à la télécommande et votre groupe sur la table
-- qui s'occupe de quoi : le châssis et la pente, l'échantillon, le programme
+## Va plus loin
 
-> [!NOTE] Responsable ne veut pas dire seul
-> Le responsable d'une partie en répond. Toute l'équipe y travaille.
+- **Deux vitesses.** Un mot de plus, `vite`, envoyé quand tu penches très fort vers l'avant. Ton rover a besoin d'une fonction de plus.
 
-## 3. Reliez chaque point à une partie du rover
-
-**À toi.** Pour chaque point du cahier des charges, cherchez quelle partie du rover il concerne : le châssis, la prise de l'échantillon, le support de tag, le programme.
-
-<details markdown>
-<summary>La solution</summary>
-
-| Point | Partie du rover |
-|---|---|
-| Pente de 10° | Châssis : roues, poids, position des accus |
-| Échantillon debout | Préhension : pare-chocs, fourche ou pince |
-| Tag | Support de tag |
-| 25 × 25 × 20 cm | Tout le rover |
-| 3 h d'impression | Le choix des pièces à imprimer |
-| Télécommande et table | Programme |
-
-</details>
-
-## 4. Dessinez votre idée
-
-Chacun dessine une solution pour l'échantillon, vue de dessus et de côté. Placez le tag, les moteurs et les accus.
-
-Puis choisissez-en une ensemble.
-
-## 5. Tracez le plan du châssis
-
-Sur papier quadrillé, compte les carreaux, ne mesure pas. Vous pouvez partir du plan de la séance 2 et le modifier, ou dessiner le vôtre.
-
-→ [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md)
-
-## 6. Construisez le prototype en carton
-
-> [!CAUTION] Avant la première découpe
-> - Règle métallique **à rebord**, doigts derrière le rebord.
-> - Plusieurs passes légères.
-> - Protection sur la lame dès que tu poses l'outil.
-
-Le prototype n'a pas besoin d'être beau. Il sert à vérifier les dimensions.
-
-Le support de tag en fait partie : un carré de carton un peu plus grand que le tag, le tag collé dessus, fixé à plat sur le dessus du rover. La marge blanche reste visible.
-
-> [!TIP] Le test des proportions
-> Posez l'échantillon à côté du prototype. Tout tient dans 25 × 25 × 20 cm ?
-
----
-
-## Ce que vous devez avoir à la fin
-
-- [ ] Une équipe, un numéro
-- [ ] Les rôles notés au carnet
-- [ ] Un croquis retenu
-- [ ] Un plan tracé
-- [ ] Un prototype carton, avec son support de tag
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s05.md) rempli
-
-## Avant de partir
-
-L'animateur prend ton rover en photo. Puis démonte-le : l'électronique va dans les bacs du stock commun, chaque pièce dans le sien.
-
-Prototype et plan dans le bac de l'équipe. Accus en charge.
+→ [Prendre en main MakeCode](../../../fiches/makecode-prise-en-main.md) · [Déboguer](../../../fiches/deboguer.md)

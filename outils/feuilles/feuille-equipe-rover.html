@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Rover — feuille d'équipe</title>
+<style>
+  @page { size: A4; margin: 12mm 14mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10.5pt; color: #111; margin: 0; }
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  h1 { font-size: 17pt; margin: 0 0 1mm; }
+  .sous-titre { color: #555; margin: 0 0 5mm; }
+  h2 { font-size: 12.5pt; margin: 6mm 0 2mm; border-bottom: 1.5pt solid #111; padding-bottom: 1mm; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 0.6pt solid #888; padding: 2.2mm 2.5mm; vertical-align: top; text-align: left; }
+  th { background: #eee; font-size: 9.5pt; }
+  td.case { width: 11mm; text-align: center; font-size: 15pt; line-height: 1; }
+  td.point { width: 30mm; font-weight: bold; }
+  .champs td { height: 11mm; }
+  .champs td.libelle { width: 38mm; font-weight: bold; background: #f6f6f6; }
+  .vide td { height: 10mm; }
+  .note { color: #555; font-size: 9pt; margin: 1.5mm 0 0; }
+  code { font-family: Menlo, Consolas, monospace; font-size: 9.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <h1>Cahier des charges du rover</h1>
+  <p class="sous-titre">Feuille d'équipe. Elle reste dans le bac. Cochez une case quand vous l'avez vérifiée.</p>
+
+  <table class="champs">
+    <tr><td class="libelle">Équipe</td><td></td><td class="libelle">Notre numéro</td><td style="width:25mm"></td></tr>
+  </table>
+  <p class="note">Le numéro est l'id du tag, la bande de la télécommande et le groupe sur la table.</p>
+
+  <h2>Le rover</h2>
+  <table>
+    <tr><th>Point</th><th>Ce qu'il faut</th><th>On vérifie</th><th></th></tr>
+    <tr><td class="point">Pente</td><td>10° : 30 cm de long, 5,2 cm de haut</td><td>Il monte jusqu'en haut à la télécommande, sans reculer</td><td class="case">☐</td></tr>
+    <tr><td class="point">Échantillon</td><td>40 × 40 × 56 mm, debout. Poussé, saisi ou soulevé</td><td>Déplacé de 50 cm, toujours debout</td><td class="case">☐</td></tr>
+    <tr><td class="point">Tag</td><td>112 mm de côté, marge blanche comprise</td><td>À plat, visible du dessus, en place après la pente</td><td class="case">☐</td></tr>
+    <tr><td class="point">Encombrement</td><td>25 × 25 × 20 cm au plus, tout compris</td><td>Il entre dans le gabarit</td><td class="case">☐</td></tr>
+    <tr><td class="point">Électronique</td><td>1 carte DFR0548, 2 micro:bit, 4 moteurs, 2 servomoteurs au plus</td><td>On compte</td><td class="case">☐</td></tr>
+    <tr><td class="point">Impression 3D</td><td>3 h au plus pour l'équipe, durée lue dans Kiri:Moto</td><td>Total du suivi, au verso : 3 h au plus</td><td class="case">☐</td></tr>
+  </table>
+
+  <h2>Le pilotage</h2>
+  <table>
+    <tr><th>Mode</th><th>Ce que le rover reçoit</th><th>On vérifie</th><th></th></tr>
+    <tr><td class="point">Télécommande</td><td>Bande : notre numéro. Les cinq mots, avec une vitesse tirée de l'inclinaison</td><td>Il obéit aux cinq mots, plus vite quand on penche plus</td><td class="case">☐</td></tr>
+    <tr><td class="point" rowspan="4">Table</td><td rowspan="4">Bande <code>83</code>, groupe : notre numéro. Les mêmes cinq mots, avec leur vitesse</td><td><code>avancer</code> : 5 cm au moins en 1,5 s</td><td class="case">☐</td></tr>
+    <tr><td><code>gauche</code> et <code>droite</code> : deux sens opposés</td><td class="case">☐</td></tr>
+    <tr><td>Plus de message pendant 1 s : il s'arrête</td><td class="case">☐</td></tr>
+    <tr><td>Il suit la figure de la table</td><td class="case">☐</td></tr>
+    <tr><td class="point">Changer de mode</td><td>À vous de choisir comment</td><td>L'écran montre le mode actif</td><td class="case">☐</td></tr>
+  </table>
+</section>
+
+<section class="page">
+  <h2 style="margin-top:0">Notre équipe</h2>
+  <table class="champs">
+    <tr><td class="libelle">Membres</td><td colspan="3"></td></tr>
+    <tr><td class="libelle">Châssis et pente</td><td></td><td class="libelle">Échantillon</td><td></td></tr>
+    <tr><td class="libelle">Programme</td><td colspan="3"></td></tr>
+  </table>
+
+  <h2>Notre suivi d'impression</h2>
+  <table class="vide">
+    <tr><th>Pièce</th><th style="width:30mm">Durée</th><th style="width:30mm">Total</th></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </table>
+  <p class="note">Une pièce ratée compte, sauf si c'est la machine qui a raté.</p>
+
+  <h2>Nos décisions</h2>
+  <p class="note" style="margin:0 0 2mm">Un servomoteur ou pas, une correction après la revue : ce que vous décidez, pourquoi, et qui s'en occupe.</p>
+  <table class="vide">
+    <tr><th style="width:20mm">Séance</th><th>Ce qu'on décide, et pourquoi</th><th style="width:32mm">Qui</th></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </table>
+</section>
+
+</body>
+</html>

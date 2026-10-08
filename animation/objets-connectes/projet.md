@@ -71,7 +71,6 @@ Utile : avoir suivi le projet Rover. La radio, les capteurs, MakeCode et Tinkerc
 - Le [tableau de bord](../../docs/tableau-de-bord/index.html), une page web qui se configure d'après les clés reçues, et le programme du pont : voir [`pont.md`](pont.md)
 - 1 ordinateur par jeune
 - Le livre en ligne, ouvert en écran partagé pendant l'atelier
-- Carnet de bord numérique
 - Gabarit de la page web de présentation (S10), commun à tous les parcours : [`docs/assets/gabarit-page.zip`](../../docs/assets/gabarit-page.zip), un éditeur de texte et un navigateur
 
 ## Budget
@@ -140,7 +139,7 @@ Le premier parcours demande 50 € d'achats : matrices et ruban de cuivre. Les m
 
 **Notions :** mesure brute · Afficher données · seuil · variable d'état · ne réagir qu'au changement
 
-**Livrable intermédiaire :** lampe qui s'allume seule sous le seuil et s'éteint au-dessus, seuil noté au carnet
+**Livrable intermédiaire :** lampe qui s'allume seule sous le seuil et s'éteint au-dessus
 
 ## Séance 4 — Phase 1 — Découverte & prise en main
 

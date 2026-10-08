@@ -1,120 +1,29 @@
 # Séance 11 — Présentez votre rover sur une page web
 
-Vous remplissez la page web de votre rover, qui sera publiée : ce que vous avez construit, et pourquoi vous l'avez construit comme ça.
+> [!NOTE] Nouveau concept : la page web
+> Une page web est un fichier texte, fait de balises. Vous partez d'un gabarit et vous remplacez ses textes, ses photos et ses couleurs. L'animateur le montre en début de séance.
+>
+> → [Faire une page web](../../../fiches/faire-une-page-web.md)
 
-## 1. Ouvrez le gabarit
+1. **[Qui fait quoi](#1-qui-fait-quoi)** : une partie de l'équipe écrit la page, l'autre termine le rover.
+2. **[Racontez trois choix](#2-racontez-trois-choix)** : trois choses que fait votre rover, chacune avec sa raison.
 
-→ [Télécharger le gabarit](../../../assets/gabarit-page.zip) · [Le voir en ligne](../../../assets/gabarit-page/index.html)
+## 1. Qui fait quoi
 
-Décompresse-le. Tu trouves `index.html`, `style.css` et un dossier `images`.
+**Ce que vous allez obtenir :** la page de votre rover, qui s'ouvre dans le navigateur, et votre rover prêt pour les épreuves.
 
-<figure class="screenshot" markdown>
-![Le gabarit ouvert dans le navigateur : une photo en plein écran, le titre Nom de votre création, et un menu de trois liens en haut à droite](../../../assets/gabarit-page-apercu.png)
-</figure>
+Une partie de l'équipe écrit la page, l'autre termine les corrections de la revue. Échangez à mi-temps.
 
-Ouvre `index.html` deux fois : dans l'éditeur, et dans le navigateur.
+> [!CAUTION] Avant de mettre une photo
+> Pas de visage ni de nom de famille.
 
-## 2. Lisez une balise
+## 2. Racontez trois choix
 
-Le texte se place entre une balise ouvrante et une balise fermante.
-
-```html
-<h1>Nom de votre création</h1>
-<p class="sous-titre">Une phrase qui donne envie de la découvrir.</p>
-```
-
-`<h1>` est le titre, `<p>` un paragraphe. La balise fermante a une barre : `</p>`.
-
-Remplace le titre par le nom de votre rover. Enregistre, recharge le navigateur.
-
-## 3. Changez les photos
-
-Mets vos photos dans le dossier `images`. Puis écris leur nom dans `src` :
-
-```html
-<img src="images/fonction-1.jpg" alt="Le rover sur le plan incliné">
-```
-
-`alt` décrit l'image pour qui ne la voit pas.
-
-> [!TIP] L'image ne s'affiche pas ?
-> Vérifie le nom du fichier, lettre par lettre, extension comprise.
-
-## 4. Racontez trois choix
+**Ce que vous allez obtenir :** trois sections, chacune avec un choix de conception et sa raison.
 
 Chaque section présente une chose que fait votre rover : un sous-titre, un titre, une description, une photo. Remplacez les textes d'exemple.
 
 > [!NOTE] Un choix, une raison
 > Pas « on a mis une fourche ». Plutôt : « on a mis une fourche parce que l'échantillon doit rester debout. »
 
-Votre carnet de la séance 10, « Ce dont on est le plus fiers », vous sert de brouillon.
-
-## 5. Choisissez vos couleurs
-
-Ouvre `style.css`. Tout en haut, **TES RÉGLAGES** :
-
-```css
---couleur-principale: #ff6b35;
-```
-
-Change le code couleur, enregistre, recharge : l'étiquette, les sous-titres et le menu changent ensemble.
-
-<details markdown>
-<summary>Pour aller plus loin — ajouter une section</summary>
-
-1. Copie une section entière, du commentaire jusqu'à `</section>` compris :
-
-```html
-  <!-- Section 3 -->
-  <section class="fonction" id="fonction-3">
-    ...
-  </section>
-```
-
-2. Colle-la juste avant `<!-- Le bas de la page -->`.
-
-3. Change son `id` : un mot à toi, sans espace ni accent. Deux sections ne peuvent pas avoir le même.
-
-```html
-  <!-- Section 4 -->
-  <section class="fonction" id="tag">
-```
-
-4. Ajoute son lien dans le menu, en haut de la page. Le `#` suivi de l'`id` :
-
-```html
-    <nav class="menu">
-      <a href="#fonction-1">Ce qu'il fait</a>
-      <a href="#fonction-2">Comment il marche</a>
-      <a href="#fonction-3">Notre idée</a>
-      <a href="#tag">Le tag</a>
-    </nav>
-```
-
-5. Remplace les textes et la photo : `images/fonction-4.jpg`, par exemple.
-
-La photo se place toute seule du bon côté.
-
-</details>
-
-## 6. Terminez vos corrections
-
-Une partie de l'équipe écrit la page, l'autre corrige le rover. Échangez à mi-temps.
-
-> [!CAUTION] Avant de mettre une photo
-> Pas de visage ni de nom de famille.
-
----
-
-## Ce que vous devez avoir à la fin
-
-- [ ] Le nom du rover et de l'équipe
-- [ ] Vos photos à la place des photos d'exemple
-- [ ] Trois sections, chacune avec son choix et sa raison
-- [ ] Vos couleurs
-- [ ] La page qui s'ouvre dans le navigateur
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s11.md) rempli
-
-## Avant de partir
-
-Le dossier de la page enregistré, copié là où l'animateur l'indique. Rover chargé pour les épreuves.
+Les pièces trouvées dans la galerie : citez leur auteur.

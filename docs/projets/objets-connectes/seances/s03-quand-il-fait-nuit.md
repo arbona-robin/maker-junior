@@ -26,7 +26,7 @@ Téléverse, USB branché, puis **Afficher données Appareil**.
 
 ## 3. Relève tes valeurs
 
-Note au carnet la valeur :
+Note la valeur :
 
 - dans la salle éclairée
 - la main au-dessus de la carte
@@ -37,7 +37,7 @@ Note au carnet la valeur :
 
 Ton seuil est entre la pénombre et la salle éclairée. Il dépend de l'endroit où tu poseras ta lampe : le tien n'est pas celui du voisin.
 
-Note-le au carnet.
+Note-le.
 
 ## 5. La décision
 
@@ -112,11 +112,6 @@ Fais monter la luminosité petit à petit à l'allumage, avec un son du haut-par
 
 ## Ce que tu dois avoir à la fin
 
-- [ ] Tes valeurs et ton seuil notés au carnet
+- [ ] Tes valeurs et ton seuil notés
 - [ ] La lampe qui s'allume seule dans le noir, et s'éteint à la lumière
 - [ ] La variable `allumee` : plus de hoquet
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s03.md) rempli
-
-## Avant de partir
-
-Lampe dans ton bac, accus en charge.

@@ -25,7 +25,7 @@ Aucun n'est obligatoire.
 
 → [Le catalogue des produits](../catalogue.md)
 
-Lis-le en entier. Note au carnet tes deux produits préférés.
+Lis-le en entier. Choisis tes deux produits préférés.
 
 Tu as une autre idée ? Note-la aussi, et vérifie les quatre conditions.
 
@@ -72,8 +72,3 @@ Sur place, vérifiez :
 - [ ] Le croquis
 - [ ] Le matériel réservé
 - [ ] L'emplacement vérifié
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/objets-connectes-s06.md) rempli
-
-## Avant de partir
-
-Cahier des charges et croquis dans le bac de l'équipe.

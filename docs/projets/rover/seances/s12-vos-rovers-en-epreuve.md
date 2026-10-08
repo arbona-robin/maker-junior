@@ -49,8 +49,3 @@ Puis chacun colle une gommette sur son moment préféré du projet.
 - [ ] Le parcours couru
 - [ ] Le capture the flag joué
 - [ ] Vos post-its au tableau
-- [ ] Ton [carnet de bord](../../../carnet-de-bord/rover-s12.md) rempli
-
-## Avant de partir
-
-Rovers rangés, table et parcours dégagés.

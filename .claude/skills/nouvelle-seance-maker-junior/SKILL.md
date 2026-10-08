@@ -1,6 +1,6 @@
 ---
 name: nouvelle-seance-maker-junior
-description: Rédiger une nouvelle séance du livre des ateliers Maker Junior (dépôt maker-junior) — page élève, fiche d'animation au gabarit La Plateforme, carnet de bord, fiches de référence et médias. À utiliser quand l'utilisateur dit "nouvelle séance", "créer la séance N", "prépare la S4", "rédige la page de la séance", ou fournit des photos et captures d'un montage de test à intégrer dans une séance. Couvre aussi la rédaction des fiches communication et synthèse de projet au format LP, les objectifs de Bloom et les modalités pédagogiques. Couvre les questions à poser, l'arbitrage entre page de séance et fiche de référence, la conversion des médias et la vérification du site.
+description: Rédiger une nouvelle séance du livre des ateliers Maker Junior (dépôt maker-junior) — page élève, fiche d'animation au gabarit La Plateforme, fiches de référence et médias. À utiliser quand l'utilisateur dit "nouvelle séance", "créer la séance N", "prépare la S4", "rédige la page de la séance", ou fournit des photos et captures d'un montage de test à intégrer dans une séance. Couvre aussi la rédaction des fiches communication et synthèse de projet au format LP, les objectifs de Bloom et les modalités pédagogiques. Couvre les questions à poser, l'arbitrage entre page de séance et fiche de référence, la conversion des médias et la vérification du site.
 version: 2.0.0
 ---
 
@@ -25,7 +25,7 @@ Le dépôt produit deux choses à partir du même travail, et les confondre est 
 | Registre | Tutoiement, notice IKEA, ~800 mots | Opératoire, chiffré, honnête |
 | Format | Libre | Gabarit LP, sections figées |
 
-Budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel, bilan d'atelier : **tout ça vit dans `animation/` et n'entre jamais dans `docs/`.** **Durée** et **Prérequis** non plus — ce sont des champs du gabarit LP. La page élève s'ouvre sur une phrase qui dit ce que le jeune va faire et ce qu'il en repart ; pas sur un bandeau de métadonnées. Le guide LP le dit lui-même de l'objectif général : « c'est pour vous et vos partenaires, pas pour les jeunes ».
+Budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel, bilan d'atelier : **tout ça vit dans `animation/` et n'entre jamais dans `docs/`.** **Durée** et **Prérequis** non plus — ce sont des champs du gabarit LP. La page élève s'ouvre sur le plan de la séance (§6) ; pas sur un bandeau de métadonnées. Le guide LP le dit lui-même de l'objectif général : « c'est pour vous et vos partenaires, pas pour les jeunes ».
 
 La circulation va dans un seul sens : la fiche communication est la **source** du titre, de l'accroche et de la promesse ; `docs/projets/<projet>/index.md` en est une **dérivation**, réécrite pour le jeune. Si l'une change, vérifier l'autre.
 
@@ -76,20 +76,21 @@ Marquer ce qu'on a déjà déduit du dépôt ou des médias fournis, pour que l'
 7. **Les exercices posés aux jeunes** : l'énoncé, et où chercher les blocs ou les pièces. La solution se déplie après, jamais avant.
 8. **Les dangers spécifiques** à cette séance. Les règles générales (cutter, moteurs) sont déjà dans les fiches ; ne demander que ce qui est nouveau.
 9. Ce qui a **changé depuis la séance précédente** dans le montage, le code ou le matériel.
+10. **Ce que tu présentes à l'oral** : démonstration, explication d'une notion, raison d'un choix imposé. La page ne le redit pas.
 
 ### Ressources
 
-10. Photos et vidéos du montage de test — préciser dans quel ordre elles ont été prises si ce n'est pas l'ordre des noms de fichiers.
-11. Captures d'écran (MakeCode, logiciel de CAO…).
-12. Plans, gabarits, fichiers à imprimer.
-13. Matériel, par jeune et en commun.
+11. Photos et vidéos du montage de test — préciser dans quel ordre elles ont été prises si ce n'est pas l'ordre des noms de fichiers.
+12. Captures d'écran (MakeCode, logiciel de CAO…).
+13. Plans, gabarits, fichiers à imprimer.
+14. Matériel, par jeune et en commun.
 
 ### Animation
 
-14. Minutage des phases.
-15. Variante + et variante −.
-16. Points de vigilance.
-17. Besoin en adultes, si différent de l'habituel.
+15. Minutage des phases.
+16. Variante + et variante −.
+17. Points de vigilance.
+18. Besoin en adultes, si différent de l'habituel.
 
 ### Ce qu'on ne demande pas
 
@@ -134,8 +135,6 @@ Les consignes de sécurité font exception : elles sont **en toutes lettres dans
 | `docs/projets/<projet>/seances/sNN-<slug>.md` | La page de séance. **Créer** |
 | `docs/projets/<projet>/index.md` | Ajouter la ligne de la séance, avec sa description, dans « Les séances ». **Mettre à jour** |
 | `mkdocs.yml` | Ajouter l'entrée dans `nav`, directement sous le projet. **Mettre à jour** |
-| `docs/carnet-de-bord/<projet>-sNN.md` | Le carnet de la séance. **Créer** |
-| `docs/carnet-de-bord/index.md` | Ajouter le lien. **Mettre à jour** |
 | `animation/<projet>/sNN.md` | La fiche d'animation, au gabarit LP. **Créer** |
 | `animation/README.md` | Ajouter le lien. **Mettre à jour** |
 | `animation/<projet>/projet.md` | Recaler la ligne de la séance : titre réel, notions, livrable. **Mettre à jour** |
@@ -171,6 +170,38 @@ ffmpeg -i video.MOV -vf scale=-2:720 -c:v libx264 -profile:v high -level 3.1 \
 Les originaux sont supprimés après vérification. **Confirmer avec l'utilisateur avant de supprimer** — c'est irréversible.
 
 Attention : en zsh, les tableaux commencent à l'indice 1. Une boucle de renommage indexée à 0 décale tout silencieusement. Préférer un mapping explicite, un appel par fichier.
+
+### Les programmes MakeCode : écrits, pas capturés
+
+Un programme MakeCode s'écrit dans la page en JavaScript MakeCode, dans un bloc de code `blocks` :
+
+````markdown
+```blocks
+basic.forever(function () {
+    serial.writeValue("x", input.acceleration(Dimension.X))
+})
+```
+````
+
+Puis on produit son image :
+
+```bash
+cd outils/blocs && npm install      # une fois
+node outils/blocs/dessiner-blocs.js # à chaque programme nouveau ou modifié
+```
+
+Le script envoie chaque programme qui n'a pas encore d'image au rendu officiel de MakeCode (makecode.microbit.org, en français, extension DF-Driver chargée), et enregistre un PNG dans `docs/assets/blocks/`, nommé d'après le contenu du code. Ces images se commitent comme les photos. À la construction, le hook `outils/blocs/makecode_blocks.py` remplace chaque bloc `blocks` par son image : le lecteur n'a besoin ni de réseau ni de MakeCode. Un programme sans image reste dessiné à l'ouverture de la page par `docs/assets/js/makecode-blocks.js`, si le lecteur a du réseau.
+
+- **Un appel de fonction a besoin de sa définition dans le même bloc**, sinon il s'affiche en bloc gris. Inclure la fonction, même si elle prend de la place.
+- **Les noms de blocs à citer dans le texte se lisent sur l'image**, pas de mémoire : en français, `radio.onReceivedString` et `radio.onReceivedValue` s'appellent tous les deux « quand une donnée est reçue par radio », l'un avec `receivedString`, l'autre avec `nom` et `valeur`.
+- **Regarder chaque image produite** avant de livrer : un bloc gris ou rouge signale une erreur dans le code.
+- Les images d'un code modifié changent de nom ; supprimer les anciennes devenues inutiles.
+
+Les captures d'écran restent pour tout ce qui n'est pas un programme : fenêtres, menus, palette, simulateur.
+
+### Les feuilles imprimées
+
+Une page faite pour être lue à l'écran ne s'imprime pas bien. Ce qui part sur papier (la feuille d'équipe du rover) est une page HTML à part dans `outils/feuilles/`, mise en PDF par `node outils/feuilles/imprimer.js`, rangée dans `docs/assets/`. La page web garde les explications et les images, la feuille ne garde que les intitulés courts, les valeurs et les cases. **Une valeur changée dans le cahier des charges se reporte dans la feuille, puis on réimprime.**
 
 ### Médias manquants
 
@@ -225,10 +256,27 @@ git show 8fa3561:docs/projets/rover/seances/s01-base-motrice.md
 - **Nommer le composant et la grandeur.** Un capteur *mesure* quelque chose qui a un nom : « l'accéléromètre mesure l'inclinaison », pas « la carte sent comment tu la tiens ». Une machine *peut* ou *ne peut pas*, elle ne *sait* pas. Paraphraser en mots de perception rend la phrase vague et infantilise le lecteur — et prive le jeune du mot qu'il devra chercher dans la palette, dans une fiche ou sur un moteur de recherche.
   L'exception est le vocabulaire technique établi : en radio on **émet**, on **écoute**, on **entend**, on échange des **messages** sur un **canal** ; un moteur **obéit** à une commande. Ce ne sont pas des images, ce sont les termes du domaine.
 - **Pas de formule à effet.** Une tournure qui se comprend en deux temps — « il va maintenant le dire », « deux ordres, un seul message » — se remplace par ce qu'elle veut dire. Le jeune lit en écran partagé, au milieu d'un atelier bruyant : il n'a pas la tête à décoder une image.
-- **À partir de la séance 5, les exercices donnent la méthode, pas le code.** Les étapes sont décrites en liste numérotée, sans capture du programme à recopier ni solution repliée : le jeune a appris à chercher dans la palette et doit maintenant construire seul. Les solutions déjà données par l'animateur (captures qu'il a fournies) restent.
+- **De la séance 6 à la 9, et en 11, la séance montre un concept, puis l'équipe s'organise.** L'animateur présente un concept ou un outil en quelques minutes. Tous ne l'appliqueront pas : la page suit donc le travail de l'équipe, pas le concept. Le concept tient dans un encadré `> [!NOTE] Nouveau concept : …`, deux lignes juste sous le titre, avant le plan, avec un lien vers la fiche qui le détaille. La fiche explique le concept en général, avec des exemples neutres, valables pour tous les projets. Le code propre au projet (le programme du rover, ses variables, ses boutons) reste dans la page de séance. Le reste du temps appartient à l'équipe. Les équipes n'avancent pas au même rythme et priorisent ce qui compte pour leur rover : la page propose le travail sans exiger que tout soit fait, et ne formalise pas ce qu'on laisse de côté.
+- **À partir de la séance 6, quand les jeunes travaillent en équipe, les exercices donnent la méthode, pas le code.** Un concept difficile montre le programme partiel du projet, une seule branche faite, dans la page de séance. Les étapes sont décrites en liste numérotée, sans capture du programme à recopier ni solution repliée : le jeune a appris à chercher dans la palette et doit maintenant construire seul. Les solutions déjà données par l'animateur (captures qu'il a fournies) restent.
+- **Ce que l'animateur dit à l'oral ne s'écrit pas.** La démonstration d'ouverture, le pourquoi d'un protocole imposé : la page garde les blocs, les valeurs et les consignes, pas le discours.
+- **Un exemple de programme montre le programme dans l'état où le jeune l'a.** Si ses cinq branches existent déjà, l'exemple les montre toutes, avec le bloc à ajouter dans la première. Un extrait tronqué lui fait croire qu'il doit effacer le reste.
+- **Un même nom pour deux choses se signale.** Les `x` et `y` de l'accéléromètre ne sont pas ceux de `allumer x y` : une phrase le dit, là où les deux se croisent.
+- **Dire de quel objet on parle.** Les seuils sont ceux de la télécommande, pas du rover. Avec deux cartes sur la table, « ce rover » pour l'une ou l'autre égare le jeune.
+- **Un bloc utilisé pour la première fois dans le parcours se présente avec sa catégorie** : « `série écrire valeur` est dans **Avancé** → **Communication Série** », « `accélération (mg)` est dans **Entrée** ». Le jeune ne retrouve pas un bloc dont il ne connaît que le nom, et une image de programme ne dit pas où chercher. Les fois suivantes, le nom suffit. Avant d'écrire, vérifier dans les séances précédentes si le bloc a déjà été présenté.
 - **Un exercice se présente toujours pareil.** Il s'ouvre par **« À toi »** — en gras dans le texte si l'exercice tient en deux lignes, en `### À toi : <ce qu'il faut faire>` s'il a besoin d'une section. Sa solution est **toujours** un `<details>` dont le `<summary>` est exactement **« La solution »**. Tout ce qui commente la solution — une variante de blocs, un renvoi vers une fiche — entre dans ce même `<details>`, jamais dans un second.
 - **Une capture visible est un pas à recopier ; une capture repliée est une solution.** C'est la seule chose qui dit au jeune s'il doit chercher ou suivre. Une page qui montre le programme complet en clair à une section et le replie à la suivante lui retire ce repère. Vérifier avant de livrer : `grep -n "À toi\|<summary>"` sur la page, chaque « À toi » doit avoir sa « La solution » en dessous.
 - **Un `<details>` qui n'est pas une solution porte un `<summary>` qui le dit** : « Pas d'imprimante ? Recopie le plan », « Pour aller plus loin — en Python ». Une variante et un bonus se replient comme une solution ; c'est le titre qui les distingue.
+
+### La structure de la page
+
+La S4 du rover est l'exemple.
+
+- **La page s'ouvre sur le plan**, juste sous le titre : une liste numérotée des étapes, chacune un lien vers sa section, suivi d'une ligne qui dit le résultat. Ni phrase d'introduction (elle redit le plan), ni titre au-dessus du plan, ni consigne « passe à l'étape suivante ».
+- **Trois ou quatre étapes**, en `## N. Titre`. Les pas en `###`, les exercices en `#### À toi : …`.
+- **Chaque étape s'ouvre sur « Ce que tu vas obtenir : »**, en une phrase courte : « le point du côté où tu penches la carte s'allume, le centre à plat ». Le jeune sait ce qu'il cherche avant la manière de faire. Une étape triviale, que la ligne du plan décrit déjà, s'en passe.
+- **Chaque étape se ferme sur une vérification** : un `[!TIP] Ça marche si…` quand le jeune peut constater lui-même, un `[!IMPORTANT] Point de contrôle` quand il faut l'animateur, notamment quand le résultat ne se voit pas encore (une télécommande dont le récepteur arrive à la séance suivante).
+- **« Va plus loin »** : une ou deux pistes, qui servent le projet. Une piste qui ne correspond à rien dans le rover (une diagonale qui n'est aucun ordre du protocole) ne vaut pas mieux que rien. Vérifier qu'elle marche : un texte affiché depuis un bouton est haché par un `toujours` qui efface l'écran ; il se met dans `au démarrage`.
+- **Pas de fin de page.** Ni « Avant de partir » (le rangement, l'animateur le dit), ni checklist « Ce que tu dois avoir à la fin » (le plan et les vérifications de fin d'étape la remplacent). Le livre n'a pas de carnet de bord : la page n'en parle pas.
 
 **L'écran partagé** a deux conséquences : une capture se recadre sur ce qu'il faut voir, et on évite ce qui devient illisible en demi-largeur (tableau large, rangée de trois photos quand une suffit).
 
@@ -271,7 +319,7 @@ git show 8fa3561:docs/projets/rover/seances/s01-base-motrice.md
 
 **Le nom des blocs** se recopie tel qu'il est à l'écran. L'éditeur MakeCode est en français (`au démarrage`, `toujours`, `pause (ms)`, `Télécharger`), l'extension DF-Driver ne l'est pas (`Motor M1 dir CW speed 100`). Ne jamais traduire ce que le jeune va chercher des yeux dans la palette.
 
-Fin de page : la checklist « Ce que tu dois avoir à la fin », le rituel de rangement, le lien vers le carnet de bord. Rien sur la séance suivante.
+La page se termine sur « Va plus loin ». Rien sur la séance suivante.
 
 ## 7. Vérifier
 
@@ -287,7 +335,9 @@ Mesurer le texte **affiché** de la page élève — sans balises, chemins ni te
 python3 .claude/skills/nouvelle-seance-maker-junior/mots-affiches.py docs/projets/<projet>/seances/sNN-*.md
 ```
 
-Au-delà d'environ 800 mots pour 1 h 45 (S1 du rover : 758), relire §6 et couper avant de livrer. Annoncer le chiffre à l'utilisateur. Vérifier ensuite que les médias résolvent réellement, ce que la construction ne teste pas :
+Au-delà d'environ 800 mots pour 1 h 45 (S1 du rover : 758), relire §6 et couper avant de livrer. Annoncer le chiffre à l'utilisateur.
+
+Couper ne veut pas dire tout réduire à une ligne. Une méthode en trois pas (prendre le bloc, l'afficher, ajuster le seuil) et la raison d'un bloc qui surprend (`effacer l'écran` en tête de boucle) restent : sans elles le jeune décroche. Une première coupe de la S4 à 540 mots était trop forte. Si une page dépasse encore après coupe, une étape entière peut passer à la séance suivante, quand celle-ci a de la place : c'est ce qui a mis le récepteur radio du rover en S5. Vérifier ensuite que les médias résolvent réellement, ce que la construction ne teste pas :
 
 ```bash
 python3 - <<'PY'

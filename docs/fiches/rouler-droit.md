@@ -41,7 +41,7 @@ Si le rover dévie encore une fois la mécanique vérifiée, ses deux moteurs ne
 > [!TIP] Il n'y a pas de bonne valeur
 > Chaque moteur est unique. L'équilibre se trouve quelque part entre 80 et 120, et il est **propre à ton rover**. Recopier les valeurs d'un camarade ne marche pas.
 
-Note tes deux valeurs dans ton carnet de bord : tu les reprendras à chaque séance, et elles bougeront quand ton rover sera plus lourd.
+Tes deux valeurs bougeront quand ton rover sera plus lourd : tu les reprendras.
 
 ## Mesurer l'écart
 
