@@ -132,7 +132,7 @@ Le `.STL` est le format que comprennent toutes les imprimantes 3D. Les autres se
 Une imprimante 3D dépose du plastique fondu **couche par couche**, de bas en haut. C'est l'inverse de la découpe du carton, où on retire de la matière.
 
 > [!NOTE] Une pièce casse entre ses couches
-> Les couches sont collées les unes aux autres, et ce collage est moins solide que le plastique lui-même. Une pièce se rompt donc presque toujours **dans le sens des couches**.
+> Les couches sont collées les unes aux autres, et ce collage est moins solide que le plastique lui-même. Une pièce se rompt donc presque toujours **entre deux couches**.
 >
 > Conséquence directe : on oriente une pièce pour que les efforts qu'elle subira soient **dans le plan des couches**, pas perpendiculaires.
 
@@ -153,7 +153,7 @@ Trois réglages :
 | **Adhérence** | Si la première couche ne colle pas au plateau, tout le reste rate |
 
 > [!CAUTION] Un plateau partagé est un risque partagé
-> Toutes les plaques du groupe s'impriment ensemble. Si une pièce se décolle, elle peut faire rater ses voisines. C'est pour ça qu'on vérifie la disposition collectivement avant de lancer.
+> Quand plusieurs pièces partagent un plateau, une pièce qui se décolle peut faire rater ses voisines. C'est pour ça qu'on vérifie la disposition collectivement avant de lancer.
 
 ### Estimer la durée d'impression
 

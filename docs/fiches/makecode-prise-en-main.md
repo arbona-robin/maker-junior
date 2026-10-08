@@ -91,9 +91,6 @@ Une variable est une **boîte nommée** qui retient une valeur. Tu y ranges quel
 
 Deux blocs suffisent : `définir <nom> à …` pour y mettre une valeur, et le bloc `<nom>` lui-même pour la relire.
 
-> [!NOTE] À quoi ça sert avec un capteur
-> Lire un capteur deux fois de suite donne deux valeurs différentes : il bouge entre les deux lectures. Range la mesure dans une variable, et tous tes tests parleront bien du **même** instant.
-
 ## Les capteurs, et la décision
 
 Un capteur ne dit jamais « penche à gauche ». Il dit `-247`. Il faut donc **transformer un nombre en décision**, et c'est le même geste pour un thermostat, un détecteur de présence, un capteur de ligne ou une télécommande.
@@ -127,7 +124,7 @@ Trois questions, à chaque fois, et pour n'importe quel capteur :
 
 ### L'accéléromètre du micro:bit
 
-Il mesure une accélération sur trois axes, en **mg** (millièmes de g). À plat et immobile, la pesanteur donne environ `1000` sur `z` et environ `0` sur `x` et `y`.
+Il mesure une accélération sur trois axes, en **mg** (millièmes de g). À plat, écran vers le haut, la pesanteur donne environ `-1000` sur `z` et environ `0` sur `x` et `y`.
 
 | Axe | Ce qu'il mesure |
 |---|---|

@@ -9,7 +9,7 @@ Le carton est le matériau du prototype : gratuit, rapide, et il se refait quand
 | **Trait plein** | Tu découpes |
 | **Trait pointillé** | Tu plies |
 
-Les cotes sont en millimètres. Repère aussi les repères de perçage et l'emplacement des pièces avant de commencer : une fois le carton coupé, on ne rattrape pas.
+Les cotes sont en millimètres. Repère aussi les perçages et l'emplacement des pièces avant de commencer : une fois le carton coupé, on ne rattrape pas.
 
 ## Le sens des cannelures
 
@@ -34,7 +34,7 @@ Si tu traces directement sur le carton, utilise un crayon à papier plutôt qu'u
 
 ## Découper
 
-Cutter, scalpel, couteau de précision : c'est l'outil qui envoie des gens aux urgences chaque année dans les ateliers. Pas parce qu'il est dangereux en soi, mais parce qu'on l'utilise vite et sans réfléchir.
+Cutter, scalpel, couteau de précision : une lame qui ripe coupe la main qui la tient. D'où ces règles.
 
 > [!CAUTION] Les cinq règles de l'outil de découpe
 > **Règle métallique à rebord obligatoire.** Une règle en plastique se fait mordre par la lame, qui dérape ensuite dans la main. Le rebord relevé, lui, arrête la lame avant les doigts.
@@ -47,7 +47,7 @@ Cutter, scalpel, couteau de précision : c'est l'outil qui envoie des gens aux u
 >
 > **Protection de lame remise dès que tu poses l'outil.** La lame ne se rentre pas : c'est sa protection qui la couvre. Même pour deux secondes. Même pour attraper la règle.
 
-Coupe en tirant la lame vers toi, pas en poussant : tu contrôles mieux. Tiens l'outil presque à plat, à quarante-cinq degrés environ, pas à la verticale.
+Coupe en tirant la lame vers toi, pas en poussant : tu contrôles mieux. Tiens l'outil incliné à 45° environ, pas à la verticale.
 
 Si la lame accroche au lieu de glisser, elle est usée : préviens l'animateur, qui la change. Une lame émoussée demande de la force, et la force fait déraper.
 

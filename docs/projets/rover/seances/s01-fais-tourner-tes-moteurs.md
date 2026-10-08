@@ -22,7 +22,7 @@ Interrupteur de la carte sur **off** pendant tout le câblage.
 ![Le micro:bit en train d'être enfiché dans le connecteur de la carte d'extension, écran vers l'extérieur](../../../assets/rover-s01/17-microbit-sur-carte.jpg)
 </figure>
 
-**Écran vers l'extérieur.** S'il résiste, il est à l'envers : ne force pas.
+**Écran vers l'extérieur.** Le connecteur entre aussi à l'envers : vérifie avant d'allumer.
 
 ### Les moteurs sur les borniers
 

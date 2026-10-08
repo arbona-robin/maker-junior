@@ -64,7 +64,7 @@ En dessous d'une certaine valeur, ton rover ne démarre pas, mais si tu le pouss
 > [!NOTE] Pourquoi
 > Il faut plus de force pour décoller un objet immobile que pour l'entretenir en mouvement. Sous cette valeur, les moteurs bourdonnent sans vaincre le frottement de départ.
 
-Mesure-la : descends la vitesse petit à petit jusqu'à ce que le rover refuse de partir tout seul. **Cette valeur est ton plancher** : ne programme jamais en dessous.
+Mesure-la : descends la vitesse petit à petit jusqu'à ce que le rover refuse de partir tout seul.
 
 Elle remonte quand le rover s'alourdit, et quand les accus faiblissent en fin de séance.
 

@@ -34,13 +34,11 @@ Le partage des rôles est donc :
 | **La carte** | exécute : elle commute la puissance et découpe le courant |
 | **Les accus** | fournissent l'énergie |
 
-## Deux sources d'énergie, séparées
+## D'où vient l'énergie
 
-C'est le point qui surprend le plus au début.
+Le pack d'accus, branché sur la carte, alimente les moteurs **et** le micro:bit : c'est pour ça que le rover roule USB débranché. L'USB, lui, n'alimente que le micro:bit.
 
-Le micro:bit est alimenté par l'USB ou par sa propre pile. Les moteurs sont alimentés par le pack d'accus branché sur la carte. **Ce ne sont pas les mêmes circuits.**
-
-Conséquence pratique : ton programme peut tourner parfaitement (écran allumé, animations, sons) pendant que les moteurs restent immobiles, simplement parce que le pack est débranché ou l'interrupteur sur *off*. C'est même la panne numéro un.
+Conséquence pratique : câble USB branché, ton programme peut tourner parfaitement (écran allumé, animations, sons) pendant que les moteurs restent immobiles, simplement parce que le pack est débranché ou l'interrupteur sur *off*. C'est la panne numéro un.
 
 → [Déboguer](deboguer.md)
 
@@ -48,11 +46,11 @@ Conséquence pratique : ton programme peut tourner parfaitement (écran allumé,
 
 Avant de câbler quoi que ce soit : **interrupteur de la carte sur *off***. On ne visse jamais un fil sur un circuit sous tension.
 
-**Le micro:bit** s'enfiche dans le connecteur de la carte, **écran vers l'extérieur**, boutons A et B accessibles. Le connecteur est détrompé : il ne rentre que dans un sens. S'il résiste, il est à l'envers : ne force pas, retourne-le.
+**Le micro:bit** s'enfiche dans le connecteur de la carte, **écran vers l'extérieur**, boutons A et B accessibles. Le connecteur entre dans les deux sens : vérifie l'écran avant d'allumer.
 
 <figure markdown>
 ![Le micro:bit en train d'être enfiché dans le connecteur de la carte d'extension, écran vers l'extérieur](../assets/rover-s01/17-microbit-sur-carte.jpg)
-<figcaption>Le connecteur est détrompé. S'il résiste, retourne le micro:bit.</figcaption>
+<figcaption>Écran vers l'extérieur : le connecteur entre aussi à l'envers.</figcaption>
 </figure>
 
 **Les moteurs** se vissent sur les borniers verts repérés `M1`, `M2`, `M3`, `M4`. Sur le rover, on utilise `M1` et `M2`.

@@ -15,7 +15,7 @@ Un circuit, c'est une boucle : le courant part d'une borne de la source, travers
 
 **Elle a un sens.** La patte longue (`+`) va vers le `+` de la source. Montée à l'envers, elle ne s'allume pas, et elle ne s'abîme pas.
 
-**Sur le micro:bit, elle se branche sans résistance.** `3V` et les broches ne fournissent pas assez pour la griller. Sur un pack d'accus, plus puissant, il lui faut une résistance (220 Ω), sinon elle grille.
+**Sur le micro:bit, elle se branche sans résistance.** `3V` et les broches ne fournissent pas assez pour la griller. Sur un pack d'accus, qui donne plus de tension, il lui faut une résistance (220 Ω), sinon elle grille.
 
 <figure markdown>
 ![Une LED aux pattes repliées et enroulées en boucle](../assets/objets-connectes-s01/04-led-pattes-enroulees.jpg)

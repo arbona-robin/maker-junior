@@ -28,7 +28,7 @@ Le programme se déroule : **le problème n'est pas dans le code.** Dans l'ordre
 4. Les numéros des blocs correspondent-ils aux borniers utilisés ?
 
 **Un seul moteur tourne.**
-Le problème est du côté qui ne tourne pas, et il est presque toujours mécanique ou électrique. Échange les deux fiches des moteurs dans les borniers : si la panne suit le moteur, c'est le moteur ou ses fils ; si elle reste sur le même bornier, c'est la carte ou le code.
+Le problème est du côté qui ne tourne pas, et il est presque toujours mécanique ou électrique. Échange les fils des deux moteurs dans les borniers : si la panne suit le moteur, c'est le moteur ou ses fils ; si elle reste sur le même bornier, c'est la carte ou le code.
 
 **Les moteurs tournent en sens opposés.**
 Normal, et attendu : les deux moteurs sont montés tête-bêche sur le châssis. Inverse les deux fils de l'un dans son bornier, ou passe son bloc de `CW` à `CCW`.

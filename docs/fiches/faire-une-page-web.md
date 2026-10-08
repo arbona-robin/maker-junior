@@ -25,7 +25,7 @@ Le texte se place entre une balise ouvrante et une balise fermante.
 
 `<h1>` est le titre, `<p>` un paragraphe. La balise fermante a une barre : `</p>`.
 
-Remplace le titre par le nom de votre rover. Enregistre, recharge le navigateur.
+Remplace le titre par le nom de votre création. Enregistre, recharge le navigateur.
 
 ## Changer les photos
 
