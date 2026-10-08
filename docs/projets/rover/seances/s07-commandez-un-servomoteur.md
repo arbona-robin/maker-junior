@@ -31,6 +31,4 @@ Ajoutez des mots au protocole, au moins un par position : par exemple `ouvrir` e
 > [!CAUTION] Une branche par mot
 > Dans le rover, avant le `sinon`. Sinon, le rover s'arrête à chaque appui.
 
-La table n'envoie pas ces mots : ils ne servent qu'avec la télécommande.
-
 Pas de servomoteur ? Montez vos pièces imprimées, ou avancez votre châssis.

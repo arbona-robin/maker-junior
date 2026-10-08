@@ -40,7 +40,7 @@ def on_page_markdown(markdown, page, config, files):
         alt = alt.replace("\\", "").replace("[", "(").replace("]", ")")
         return (
             '<figure class="screenshot makecode-rendu" markdown>\n'
-            f'![{alt}]({src}){{ width="{largeur}" loading="lazy" }}\n'
+            f'![{alt}]({src}){{ width="{largeur}" }}\n'
             "</figure>"
         )
 

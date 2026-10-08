@@ -38,7 +38,7 @@ Chaque équipe écrit sur des post-its :
 
 - une réussite
 - une chose que vous changeriez
-- ce que les épreuves ont montré, et que la revue n'avait pas vu
+- ce que les épreuves ont montré, et que vous n'aviez pas vu avant
 
 Puis chacun colle une gommette sur son moment préféré du projet.
 

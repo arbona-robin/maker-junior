@@ -10,14 +10,14 @@
 
 ## 1. Votre rover sur le papier
 
-**Ce que vous allez obtenir :** un croquis d'équipe, vu de dessus et de côté, avec le tag, les moteurs, les accus et votre solution pour l'échantillon.
+**Ce que vous allez obtenir :** un croquis d'équipe, vu de dessus et de côté, avec le tag, les moteurs, les accus, et la façon dont votre rover déplace l'échantillon.
 
 → [Le cahier des charges](../cahier-des-charges.md)
 
 **À vous.** La méthode :
 
 1. Pour chaque point du cahier des charges, cherchez la partie du rover qu'il touche : le châssis, la prise de l'échantillon, le support de tag, le programme.
-2. Chacun dessine une solution pour l'échantillon.
+2. Chacun dessine comment le rover déplace l'échantillon sans le renverser : il le pousse, il le saisit, ou il le soulève.
 3. Choisissez-en une ensemble, et dessinez le rover entier.
 
 ## 2. Qui fait quoi

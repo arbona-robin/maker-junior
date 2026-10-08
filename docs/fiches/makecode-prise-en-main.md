@@ -243,11 +243,31 @@ Le numéro va de `0` à `83`, un mégahertz par pas à partir de 2400 : la bande
 
 ### Envoyer, recevoir
 
-Deux façons d'envoyer un message.
+Trois façons d'envoyer un message. En face, trois blocs portent le même nom, `quand une donnée est reçue par radio` : chacun n'entend que son type de message.
 
-**Un mot.** `envoyer la chaîne "avancer" par radio` envoie un texte de 19 caractères au plus. En face, `quand une donnée est reçue par radio` se déclenche à chaque message et apporte le mot reçu, `receivedString`. C'est ce que fait la télécommande du rover.
+**Un nombre.** `envoyer le nombre … par radio`. Le bloc qui reçoit apporte `receivedNumber`.
 
-**Une clé et une valeur.** `envoyer la valeur "avancer" = 180 par radio` envoie un mot et un nombre : une vitesse, une distance, une mesure. En face, un bloc du même nom, `quand une donnée est reçue par radio`, apporte cette fois `nom` (la clé) et `valeur` (le nombre). C'est ce que fait la table.
+```blocks
+input.onButtonPressed(Button.A, function () {
+    radio.sendNumber(7)
+})
+radio.onReceivedNumber(function (receivedNumber) {
+    basic.showNumber(receivedNumber)
+})
+```
+
+**Un mot.** `envoyer la chaîne … par radio`, 19 caractères au plus. Le bloc qui reçoit apporte `receivedString`.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    radio.sendString("bonjour")
+})
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString)
+})
+```
+
+**Une clé et une valeur.** `envoyer la valeur … = …`, un mot et un nombre : une vitesse, une distance, une mesure. Le bloc qui reçoit apporte `nom` (la clé) et `valeur` (le nombre).
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -260,9 +280,9 @@ radio.onReceivedValue(function (name, value) {
 })
 ```
 
-Bouton `A` : la carte envoie sa température, avec la clé `temp`. Celle qui la reçoit l'affiche.
+Ici, la carte envoie sa température avec la clé `temp`, et celle qui la reçoit l'affiche.
 
-Dans les deux cas, on teste le mot reçu pour savoir quoi faire. Attention au bloc de comparaison : il en existe deux, et celui qui compare des **textes** a deux cases blanches. Celui qui compare des nombres ne marchera pas ici.
+Avec un mot ou une clé, on teste ce qui est reçu pour savoir quoi faire. Attention au bloc de comparaison : il en existe deux, et celui qui compare des **textes** a deux cases blanches. Celui qui compare des nombres ne marchera pas ici.
 
 > [!CAUTION] La clé fait 8 caractères, pas un de plus
 > Avec une clé et une valeur, la carte tronque la clé sans prévenir au-delà de 8 caractères.

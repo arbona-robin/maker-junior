@@ -27,9 +27,9 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 - [Séance 5 — Pilote ton rover, formez votre équipe](rover/s05.md)
 - [Séance 6 — Concevez votre rover](rover/s06.md)
 - [Séance 7 — Le servomoteur](rover/s07.md)
-- [Séance 8 — Faites piloter votre rover par la table](rover/s08.md)
+- [Séance 8 — Pilotez votre rover en vitesse](rover/s08.md)
 - [Séance 9 — Le dispositif de l'homme mort](rover/s09.md)
-- [Séance 10 — Votre rover face au cahier des charges](rover/s10.md)
+- [Séance 10 — Votre rover sur la table](rover/s10.md)
 - [Séance 11 — Présentez votre rover sur une page web](rover/s11.md)
 - [Séance 12 — Vos rovers en épreuve](rover/s12.md)
 

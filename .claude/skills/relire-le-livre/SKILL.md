@@ -31,6 +31,7 @@ Pour chaque fichier, se poser ces questions :
 | Question | Exemple de défaut |
 |---|---|
 | **Chaque paragraphe dit-il une seule chose, et juste ?** Relire phrase par phrase : une comparaison doit être exacte, un renvoi doit mener au même sujet, deux notions voisines ne se mélangent pas dans un paragraphe. | L'I2C comparé au groupe radio, alors que la radio diffuse à tous ; la phrase sur l'extension collée au paragraphe sur l'I2C. |
+| **Chaque bloc et chaque notion servent-ils ?** Un bloc qui ne change rien au résultat se retire, même s'il est « plus propre ». Vérifier dans la doc ou le code source plutôt que supposer. | `limiter` entre 0 et 255 alors que le bloc `Motor` plafonne déjà seul. |
 | **L'ordre se suit-il ?** Chaque outil est présenté avant d'être utilisé, chaque section s'appuie sur les précédentes. | Un exemple avec des blocs DF-Driver avant la section qui installe l'extension. |
 | **La fiche est-elle générale ?** Une fiche de `docs/fiches/` sert plusieurs projets : concepts, exemples neutres. Le code propre à un projet est dans la séance. | `vM1`, la table, la bande 83 dans la fiche MakeCode. |
 | **Chaque chose est-elle dite à un seul endroit ?** La séance renvoie à la fiche, la fiche ne recopie pas la séance. | Le même pas à pas dans la fiche et dans la page. |

@@ -29,14 +29,14 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 7 — Le servomoteur](seances/s07-commandez-un-servomoteur.md)**
   Vous commandez un servomoteur à l'angle près, et vous décidez s'il sert votre rover.
 
-- **[Séance 8 — Faites piloter votre rover par la table](seances/s08-pilote-par-la-table.md)**
-  Votre télécommande envoie la vitesse, comme la table, et la table pilote votre rover.
+- **[Séance 8 — Pilotez votre rover en vitesse](seances/s08-pilotez-en-vitesse.md)**
+  Votre télécommande envoie la vitesse avec chaque mot : plus vous penchez, plus le rover va vite.
 
 - **[Séance 9 — Le dispositif de l'homme mort](seances/s09-homme-mort.md)**
   Sans message pendant une seconde, votre rover s'arrête seul.
 
-- **[Séance 10 — Votre rover face au cahier des charges](seances/s10-revue-de-conception.md)**
-  Vous passez votre rover au cahier des charges, et vous corrigez ce qui manque.
+- **[Séance 10 — Votre rover sur la table](seances/s10-votre-rover-sur-la-table.md)**
+  Un bouton pour la table, un pour la télécommande, et la table pilote votre rover.
 
 - **[Séance 11 — Présentez votre rover sur une page web](seances/s11-presentez-votre-rover.md)**
   Vous remplissez la page web de votre rover et vous expliquez vos choix.

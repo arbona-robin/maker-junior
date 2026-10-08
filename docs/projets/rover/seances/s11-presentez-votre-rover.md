@@ -12,7 +12,7 @@
 
 **Ce que vous allez obtenir :** la page de votre rover, qui s'ouvre dans le navigateur, et votre rover prêt pour les épreuves.
 
-Une partie de l'équipe écrit la page, l'autre termine les corrections de la revue. Échangez à mi-temps.
+Une partie de l'équipe écrit la page, l'autre termine le rover. Échangez à mi-temps.
 
 > [!CAUTION] Avant de mettre une photo
 > Pas de visage ni de nom de famille.

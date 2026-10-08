@@ -14,7 +14,7 @@ Concevoir, fabriquer et piloter un rover télécommandé, du châssis en carton 
 
 ## Livrable du parcours
 
-Deux rovers. Celui que chaque jeune fabrique, câble et programme seul pendant les cinq premières séances. Puis celui que son équipe de deux ou trois conçoit à partir d'un cahier des charges, confronté à ce cahier des charges en revue de conception puis engagé dans les épreuves. Chaque équipe présente son rover sur une page web publiée : c'est ce que chaque jeune garde du projet.
+Deux rovers. Celui que chaque jeune fabrique, câble et programme seul pendant les cinq premières séances. Puis celui que son équipe de deux ou trois conçoit à partir d'un cahier des charges, vérifié avec l'animateur au fil des séances, puis engagé dans les épreuves. Chaque équipe présente son rover sur une page web publiée : c'est ce que chaque jeune garde du projet.
 
 ## Objectifs pédagogiques
 
@@ -26,7 +26,7 @@ Deux rovers. Celui que chaque jeune fabrique, câble et programme seul pendant l
 
 ## Description du projet
 
-Le parcours se déroule en deux temps. Pendant les cinq premières séances, chaque jeune construit seul un rover télécommandé complet : châssis en carton découpé sur plan, motorisation, électronique, programme et pilotage par radio avec un second micro:bit. Personne ne passe à la suite sans avoir fait rouler le sien. On remet ensuite aux jeunes un cahier des charges et ils se regroupent par deux ou trois pour concevoir un nouveau rover, conçu pour accomplir des missions précises, avec du carton et des pièces qu'ils modélisent et impriment en 3D. Ils apprennent la lecture de plan et les gestes de découpe, la modélisation et l'impression 3D, le câblage et la polarité, la programmation par blocs, la liaison radio, la commande d'un servomoteur, le dialogue avec la table selon un protocole imposé, une méthode de dépannage qui sépare le code du montage, le travail à plusieurs sur un objet commun, et la présentation de leur rover sur une page web. La démarche est celle de l'atelier : on fabrique dès la première séance, on teste, on corrige, on documente. De la séance 6 à la séance 9, et en séance 11, l'animateur montre un concept ou un outil pendant quelques minutes en début de séance ; le reste appartient à l'équipe, qui s'organise pour l'appliquer au rover ou poursuivre sa conception. Le travail devient collectif à partir de la séance 6, au milieu de la phase 2. Le parcours se termine par une revue de conception, où chaque équipe vérifie si son rover répond au cahier des charges, puis par les épreuves.
+Le parcours se déroule en deux temps. Pendant les cinq premières séances, chaque jeune construit seul un rover télécommandé complet : châssis en carton découpé sur plan, motorisation, électronique, programme et pilotage par radio avec un second micro:bit. Personne ne passe à la suite sans avoir fait rouler le sien. On remet ensuite aux jeunes un cahier des charges et ils se regroupent par deux ou trois pour concevoir un nouveau rover, conçu pour accomplir des missions précises, avec du carton et des pièces qu'ils modélisent et impriment en 3D. Ils apprennent la lecture de plan et les gestes de découpe, la modélisation et l'impression 3D, le câblage et la polarité, la programmation par blocs, la liaison radio, la commande d'un servomoteur, le dialogue avec la table selon un protocole imposé, une méthode de dépannage qui sépare le code du montage, le travail à plusieurs sur un objet commun, et la présentation de leur rover sur une page web. La démarche est celle de l'atelier : on fabrique dès la première séance, on teste, on corrige, on documente. De la séance 6 à la séance 9, et en séance 11, l'animateur montre un concept ou un outil pendant quelques minutes en début de séance ; le reste appartient à l'équipe, qui s'organise pour l'appliquer au rover ou poursuivre sa conception. Le travail devient collectif à partir de la séance 6, au milieu de la phase 2. À chaque séance d'équipe, l'animateur passe le cahier des charges en revue avec chaque groupe. Le parcours se termine par le passage sur la table, la page web, puis les épreuves.
 
 ## Prérequis
 
@@ -190,11 +190,11 @@ Elle servirait aussi aux autres ateliers créatifs de La Plateforme, pour des ma
 
 ## Séance 8 — Phase 2 — Exploration & création
 
-**Titre :** Faites piloter votre rover par la table
+**Titre :** Pilotez votre rover en vitesse
 
-**Notions :** la télécommande envoie la vitesse, comme la table · message clé-valeur, clé de 8 caractères au plus · vitesse tirée de l'inclinaison · premières variables · la valeur reçue devient une vitesse · bande et groupe · changement de mode et son témoin à l'écran
+**Notions :** message clé-valeur, clé de 8 caractères au plus · vitesse tirée de l'inclinaison · premières variables · la valeur reçue devient une vitesse
 
-**Livrable intermédiaire :** rover piloté par la table comme par sa télécommande, qui envoie la vitesse
+**Livrable intermédiaire :** télécommande qui envoie chaque mot avec une vitesse, rover qui la prend
 
 ## Séance 9 — Phase 2 — Exploration & création
 
@@ -202,15 +202,15 @@ Elle servirait aussi aux autres ateliers créatifs de La Plateforme, pour des ma
 
 **Notions :** dispositif de l'homme mort · le gestionnaire radio range, la boucle exécute · horloge de la carte · arrêt après une seconde sans message
 
-**Livrable intermédiaire :** rover conforme au protocole A1, qui s'arrête quand la table se tait
+**Livrable intermédiaire :** rover qui s'arrête seul quand la télécommande s'éteint
 
 ## Séance 10 — Phase 3 — Finalisation & valorisation
 
-**Titre :** Votre rover face au cahier des charges
+**Titre :** Votre rover sur la table
 
-**Notions :** revue de conception · écart entre l'attendu et l'obtenu · vérification par un tiers · priorisation des corrections
+**Notions :** bande et groupe : un émetteur qui parle à tous · changement de mode et son témoin à l'écran · protocole imposé A1
 
-**Livrable intermédiaire :** cahier des charges coché, écarts relevés et corrections engagées
+**Livrable intermédiaire :** rover qui passe de la télécommande à la table, vérifié sur la table
 
 ## Séance 11 — Phase 3 — Finalisation & valorisation
 

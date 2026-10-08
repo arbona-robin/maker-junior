@@ -5,14 +5,13 @@
 >
 > → [S'arrêter quand le signal se perd](../../../fiches/makecode-prise-en-main.md#sarreter-quand-le-signal-se-perd)
 
-1. **[Votre rover s'arrête seul](#1-votre-rover-sarrete-seul)** : sans message, il s'arrête.
-2. **[Repassez sur la table](#2-repassez-sur-la-table)** : la table se tait, votre rover s'arrête.
+1. **[Votre rover s'arrête seul](#1-votre-rover-sarrete-seul)** : télécommande éteinte, il s'arrête en une seconde.
 
 ## 1. Votre rover s'arrête seul
 
 **Ce que vous allez obtenir :** tu éteins ta télécommande pendant que ton rover roule, il s'arrête en une seconde.
 
-Si la télécommande s'éteint, si la table plante, si le rover sort de la zone, il ne reçoit plus rien et garde son dernier ordre. Le cahier des charges demande qu'il s'arrête.
+Si la télécommande s'éteint ou si le rover sort de sa portée, il ne reçoit plus rien et garde son dernier ordre. Le cahier des charges demande qu'il s'arrête.
 
 Ton rover note **l'heure de chaque message**, et vérifie sans arrêt depuis combien de temps il n'en a pas reçu.
 
@@ -36,8 +35,8 @@ radio.onReceivedValue(function (name, value) {
     ordre = name
     dernierMessage = input.runningTime()
     vitesse = Math.map(value, 0, 1023, 0, 255)
-    vM1 = Math.constrain(20 + vitesse, 0, 255)
-    vM2 = Math.constrain(vitesse, 0, 255)
+    vM1 = 20 + vitesse
+    vM2 = vitesse
 })
 basic.forever(function () {
     basic.clearScreen()
@@ -63,16 +62,6 @@ let ordre = ""
 **À toi.** Les quatre autres branches vont dans `toujours`, en `sinon si` à la suite de `avancer`, et testent `ordre` au lieu de `nom`.
 
 Testez à la télécommande : rover qui roule, télécommande éteinte.
-
-## 2. Repassez sur la table
-
-**Ce que vous allez obtenir :** la table se tait, votre rover s'arrête.
-
-Une équipe à la fois, dans l'ordre du tableau. La table vérifie :
-
-- `avancer` : 5 cm au moins en 1,5 s
-- `gauche` et `droite` : deux sens opposés
-- la table se tait : le rover s'arrête en 1 s
 
 ## Va plus loin
 
