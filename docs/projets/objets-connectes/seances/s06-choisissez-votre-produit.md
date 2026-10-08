@@ -1,74 +1,56 @@
 # Séance 6 — Choisissez votre produit
 
-Vos lampes sont finies. Maintenant, en équipe, vous choisissez un objet connecté qui servira à tout le monde, et vous écrivez ce qu'il devra faire.
+> [!NOTE] Nouveau concept : capteur et effecteur
+> Un capteur mesure, un effecteur agit : une LED, un buzzer, un moteur. Le **servomoteur** va à un angle et le tient ; le **moteur à courant continu** tourne sans savoir où il en est. L'animateur les montre en début de séance.
+>
+> → [Le servomoteur](../../../fiches/carte-dfr0548.md#le-servomoteur)
 
-## 1. Le tableau de bord
+1. **[Choisissez votre produit](#1-choisissez-votre-produit)** : une équipe, un objet qui sert à tout le monde.
+2. **[Votre produit sur le papier](#2-votre-produit-sur-le-papier)** : ce qu'il fait, un croquis, le matériel réservé.
+3. **[Allez voir l'emplacement](#3-allez-voir-lemplacement)** : la radio passe depuis sa place.
 
-<span class="todo-media">[capture : le tableau de bord, quelques micro:bit en ligne]</span>
+## 1. Choisissez votre produit
 
-C'est là que tous les produits afficheront leurs mesures.
+**Ce que vous allez obtenir :** une équipe de deux ou trois, et un produit.
 
-## 2. Le magasin
+<figure class="screenshot" markdown>
+![Le tableau de bord : un bloc par micro:bit en ligne, avec son nom et ses mesures en jauge, en courbe ou en voyant, et à droite le journal des messages reçus](../../../assets/objets-connectes-s06/20-tableau-de-bord.png)
+</figure>
+
+C'est sur ce tableau de bord que tous les produits afficheront leurs mesures.
+
+Au magasin, chaque composant porte une étiquette : ce qu'il mesure ou ce qu'il fait, et comment il se branche. Manipule ce qui t'intéresse.
 
 <span class="todo-media">[photo : la table du magasin, capteurs et effecteurs étiquetés]</span>
 
-Chaque composant porte une étiquette : ce qu'il mesure ou ce qu'il fait, et comment il se branche. Manipule ce qui t'intéresse.
-
-<span class="todo-media">[photo : un servomoteur et un moteur TT côte à côte]</span>
-
-> [!NOTE] Servomoteur ou moteur ?
-> Le **servomoteur** va à un angle et le tient : force-le, il résiste et revient. Le **moteur à courant continu** tourne sans savoir où il en est, et il lui faut une carte de puissance.
-
-Aucun n'est obligatoire.
-
-## 3. Le catalogue
-
 → [Le catalogue des produits](../catalogue.md)
 
-Lis-le en entier. Choisis tes deux produits préférés.
+Lis-le en entier, et choisis tes deux produits préférés. Une autre idée ? Vérifie les quatre conditions : → [Inventez le vôtre](../catalogue.md#inventez-le-votre)
 
-Tu as une autre idée ? Note-la aussi, et vérifie les quatre conditions.
+Puis formez votre équipe, autour d'un produit du catalogue ou d'une idée à vous.
 
-→ [Inventez le vôtre](../catalogue.md#inventez-le-votre)
+## 2. Votre produit sur le papier
 
-## 4. Formez votre équipe
-
-À deux ou trois, autour d'un produit du catalogue ou d'une idée à vous.
-
-## 5. Le cahier des charges
+**Ce que vous allez obtenir :** votre feuille d'équipe remplie, un croquis, le matériel réservé.
 
 → [Le cahier des charges du produit](../cahier-des-charges.md)
 
-Remplissez la première partie, « Votre produit » : une ligne par question.
+Sur votre [feuille d'équipe](../../../assets/objets-connectes-cahier-des-charges/feuille-equipe-objets.pdf), remplissez « Votre produit » : une ligne par question. Lisez « Ce que tout produit doit faire » : votre idée doit pouvoir tout cocher en séance 9.
 
-Lisez la seconde, « Ce que tout produit doit faire » : votre idée doit pouvoir tout cocher en séance 9.
+Dessinez votre produit, avec la place de chaque composant. Puis la liste du matériel : réservez-le au magasin.
 
-## 6. Le croquis et le matériel
+## 3. Allez voir l'emplacement
 
-Dessinez votre produit, avec la place de chaque composant.
-
-Puis la liste du matériel. Réservez-le au magasin.
-
-## 7. Allez voir l'emplacement
+**Ce que vous allez obtenir :** un emplacement où la radio passe, et où le produit tient.
 
 Sur place, vérifiez :
 
-- [ ] une prise à proximité, si votre produit est sur secteur
-- [ ] comment il sera fixé
-- [ ] que la radio passe : posez un micro:bit émetteur à l'emplacement, et regardez le tableau de bord
+- une prise à proximité, si votre produit est sur secteur
+- comment il sera fixé
+- que la radio passe : posez un micro:bit émetteur à l'emplacement, et regardez le tableau de bord
 
 > [!TIP] La radio ne passe pas ?
-> Les murs arrêtent les ondes. Déplacez l'emplacement maintenant, pas en séance 9.
+> Les murs arrêtent les ondes. Changez d'emplacement maintenant, pas en séance 9.
 
 > [!IMPORTANT] Point de contrôle
-> Faites valider votre cahier des charges, votre emplacement et votre matériel.
-
----
-
-## Ce que vous devez avoir à la fin
-
-- [ ] Une équipe, un produit
-- [ ] Le cahier des charges rempli, validé
-- [ ] Le croquis
-- [ ] Le matériel réservé
-- [ ] L'emplacement vérifié
+> Faites valider votre feuille d'équipe, votre emplacement et votre matériel.

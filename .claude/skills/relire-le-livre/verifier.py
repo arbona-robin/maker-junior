@@ -137,6 +137,9 @@ for f in TOUT:
         cites.add(m.group(1))
 for f in glob.glob("docs/assets/*-s[0-9][0-9]/*") + glob.glob("docs/assets/rover-cahier-des-charges/*"):
     rel = f.replace("docs/assets/", "")
+    # Un SVG à côté du PNG de même nom est sa source : on le garde.
+    if f.endswith(".svg") and os.path.exists(f[:-4] + ".png"):
+        continue
     if rel not in cites:
         signaler("médias", f, 0, "fichier que plus aucune page n'utilise")
 

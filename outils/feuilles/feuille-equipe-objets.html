@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Objets connectés — feuille d'équipe</title>
+<style>
+  @page { size: A4; margin: 12mm 14mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10.5pt; color: #111; margin: 0; }
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  h1 { font-size: 17pt; margin: 0 0 1mm; }
+  .sous-titre { color: #555; margin: 0 0 5mm; }
+  h2 { font-size: 12.5pt; margin: 6mm 0 2mm; border-bottom: 1.5pt solid #111; padding-bottom: 1mm; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 0.6pt solid #888; padding: 2.2mm 2.5mm; vertical-align: top; text-align: left; }
+  th { background: #eee; font-size: 9.5pt; }
+  td.case { width: 11mm; text-align: center; font-size: 15pt; line-height: 1; }
+  td.point { width: 30mm; font-weight: bold; }
+  .champs td { height: 11mm; }
+  .champs td.libelle { width: 38mm; font-weight: bold; background: #f6f6f6; }
+  .vide td { height: 10mm; }
+  .note { color: #555; font-size: 9pt; margin: 1.5mm 0 0; }
+  code { font-family: Menlo, Consolas, monospace; font-size: 9.5pt; }
+</style>
+</head>
+<body>
+<section class="page">
+  <h1>Cahier des charges du produit</h1>
+  <p class="sous-titre">Feuille d'équipe. Elle reste dans le bac. Cochez une case quand vous l'avez vérifiée.</p>
+
+  <table class="champs">
+    <tr><td class="libelle">Équipe</td><td></td><td class="libelle">Produit</td><td></td></tr>
+  </table>
+
+  <h2>Votre produit</h2>
+  <table class="champs">
+    <tr><td class="libelle">À quoi il sert</td><td></td></tr>
+    <tr><td class="libelle">Pour qui</td><td></td></tr>
+    <tr><td class="libelle">Où il est installé</td><td></td></tr>
+    <tr><td class="libelle">Secteur ou accus</td><td></td></tr>
+    <tr><td class="libelle">Ce qu'il mesure, avec quelles clés</td><td></td></tr>
+    <tr><td class="libelle">Ce qu'il fait au seuil</td><td></td></tr>
+  </table>
+
+  <h2>Ce que tout produit doit faire</h2>
+  <table>
+    <tr><th>Point</th><th>Ce qu'il faut</th><th>On vérifie</th><th></th></tr>
+    <tr><td class="point">Utilité</td><td>Il sert à quelqu'un d'autre que l'équipe</td><td>Vous le dites en une phrase : ce qu'il fait, pour qui</td><td class="case">☐</td></tr>
+    <tr><td class="point">Mesure</td><td>Au moins une mesure, et un seuil choisi d'après des valeurs relevées</td><td>Les valeurs et le seuil sont connus</td><td class="case">☐</td></tr>
+    <tr><td class="point">Action</td><td>Il agit ou prévient quand le seuil est franchi, une fois par changement</td><td>On franchit le seuil : il réagit une fois</td><td class="case">☐</td></tr>
+    <tr><td class="point">Langue commune</td><td>Bande <code>40</code>, numéro de série émis, clé de 8 caractères au plus, toutes les 5 à 10 s</td><td>En ligne sur le tableau de bord</td><td class="case">☐</td></tr>
+    <tr><td class="point">Autonomie</td><td>Il fonctionne sans le pont ni l'ordinateur</td><td>Pont débranché, il continue</td><td class="case">☐</td></tr>
+    <tr><td class="point">Endurance</td><td>Il tient une séance entière sans qu'on y touche</td><td>Allumé au début de la S9, en ligne à la fin</td><td class="case">☐</td></tr>
+    <tr><td class="point">Implantation</td><td>À l'emplacement prévu, sans gêner, sans rien abîmer</td><td>Vu sur le tableau de bord depuis sa place</td><td class="case">☐</td></tr>
+    <tr><td class="point">Câblage</td><td>Selon votre schéma, fils repérables ; moteur et servomoteur par la carte DFR0548</td><td>L'animateur compare schéma et câblage</td><td class="case">☐</td></tr>
+    <tr><td class="point">Impression 3D</td><td>3 h au plus pour l'équipe, durée lue dans Kiri:Moto</td><td>Total du suivi, au verso : 3 h au plus</td><td class="case">☐</td></tr>
+  </table>
+</section>
+
+<section class="page">
+  <h2 style="margin-top:0">Notre équipe</h2>
+  <table class="champs">
+    <tr><td class="libelle">Membres</td><td></td></tr>
+    <tr><td class="libelle">Qui fait quoi</td><td></td></tr>
+  </table>
+
+  <h2>Notre suivi d'impression</h2>
+  <table class="vide">
+    <tr><th>Pièce</th><th style="width:30mm">Durée</th><th style="width:30mm">Total</th></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </table>
+  <p class="note">Une pièce ratée compte, sauf si c'est la machine qui a raté.</p>
+
+  <h2>Nos décisions</h2>
+  <p class="note" style="margin:0 0 2mm">Ce que vous décidez, pourquoi, et qui s'en occupe.</p>
+  <table class="vide">
+    <tr><th style="width:20mm">Séance</th><th>Ce qu'on décide, et pourquoi</th><th style="width:32mm">Qui</th></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </table>
+
+  <h2>Ce que vous présentez</h2>
+  <table>
+    <tr><th>Quoi</th><th style="width:25mm">Quand</th><th></th></tr>
+    <tr><td>Le panneau à côté du produit : son nom, ce qu'il fait, vos prénoms</td><td>Séance 9</td><td class="case">☐</td></tr>
+    <tr><td>La présentation d'une minute, et le plan B</td><td>Séance 9</td><td class="case">☐</td></tr>
+    <tr><td>La page web du produit, avec un choix justifié par le cahier des charges</td><td>Séance 10</td><td class="case">☐</td></tr>
+  </table>
+</section>
+
+</body>
+</html>

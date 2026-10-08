@@ -12,13 +12,19 @@ import struct
 
 LANGUE = "fr"
 EXTENSION = "motor=github:DFRobot/pxt-motor"
+MATRICE = "neopixel-extended=github:pasalt/pxt-neopixel-matrix-extension"
+
+
+def extension(code: str) -> str:
+    """L'extension à charger : celle de la matrice si le code l'utilise, DF-Driver sinon."""
+    return MATRICE if "neopixelExtended" in code else EXTENSION
 DOSSIER = "assets/blocks"
 BLOC = re.compile(r"^```blocks\n(.*?)\n```[ \t]*$", re.M | re.S)
 
 
 def cle_bloc(code: str) -> str:
     """Même calcul que dans dessiner-blocs.js."""
-    texte = f"{LANGUE}|{EXTENSION}|{code.strip()}"
+    texte = f"{LANGUE}|{extension(code)}|{code.strip()}"
     return hashlib.sha1(texte.encode("utf-8")).hexdigest()[:12]
 
 

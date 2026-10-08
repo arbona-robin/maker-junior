@@ -40,7 +40,8 @@ La méthode complète est dans la skill `.claude/skills/nouvelle-seance-maker-ju
 .venv/bin/mkdocs build --strict     # échoue sur tout lien mort
 python3 .claude/skills/nouvelle-seance-maker-junior/mots-affiches.py <page>
 node outils/blocs/dessiner-blocs.js   # dessine les programmes ```blocks qui n'ont pas encore d'image
-node outils/feuilles/imprimer.js      # refait les PDF des feuilles imprimables (feuille d'équipe du rover)
+node outils/feuilles/imprimer.js      # refait les PDF des feuilles imprimables (feuilles d'équipe)
+node outils/captures/capturer.js      # refait les captures d'écran automatisées (MakeCode, tableau de bord)
 ```
 
 ## Rendre compte

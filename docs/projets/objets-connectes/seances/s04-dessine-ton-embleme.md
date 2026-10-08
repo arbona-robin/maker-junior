@@ -1,14 +1,13 @@
 # Séance 4 — Dessine l'emblème de ta lampe
 
-Tu dessines en 3D l'emblème qui décorera ta lampe : ta forme, ton motif, ton nom. Il s'imprime avant la prochaine séance.
+1. **[Dessine ton emblème](#1-dessine-ton-embleme)** : ta forme, ton motif, et un trou pour l'accrocher.
+2. **[Vérifie et exporte](#2-verifie-et-exporte)** : ton emblème validé part à l'impression.
 
-## 1. L'emblème
+## 1. Dessine ton emblème
+
+**Ce que tu vas obtenir :**
 
 <span class="todo-media">[photo : un emblème imprimé accroché à la lampe par un élastique]</span>
-
-Il s'accroche à la lampe par un élastique, passé dans son trou.
-
-## 2. Les contraintes
 
 | | |
 |---|---|
@@ -16,40 +15,36 @@ Il s'accroche à la lampe par un élastique, passé dans son trou.
 | Épaisseur | **3 mm** |
 | Trou d'accroche | **5 mm**, avec 3 mm de matière autour |
 
-> [!CAUTION] Une contrainte de groupe
-> Tous les emblèmes s'impriment ensemble, sur un seul plateau. Un emblème hors cotes ne part pas à l'impression.
-
-## 3. Ouvre Tinkercad
+> [!CAUTION] Les cotes ne se discutent pas
+> Tous les emblèmes partent sur un seul plateau. Un emblème hors cotes ne part pas à l'impression.
 
 [tinkercad.com/joinclass](https://www.tinkercad.com/joinclass) → code de classe, identifiant → **Créer** → nomme-la `lampe-<ton prénom>`.
 
 → [Modéliser et imprimer en 3D](../../../fiches/modeliser-imprimer-3d.md#tinkercad)
 
-## 4. Ta forme
+### Ta forme
+
+Pars d'une forme simple (**Cylindre**, **Étoile**, **Cœur**, **Boîte**), ou dessine la tienne avec **Scribble**. Hauteur : 3 mm. Tape les cotes dans le panneau, ne les ajuste pas à la souris.
 
 <span class="todo-media">[capture : une forme de base posée et cotée, 50 × 50 × 3 mm au plus]</span>
 
-Pars d'une forme simple (**Cylindre**, **Étoile**, **Cœur**, **Boîte**), ou dessine la tienne avec **Scribble**. Hauteur : 3 mm.
+### Ton motif
 
-Tape les cotes dans le panneau, ne les ajuste pas à la souris.
-
-## 5. Ton motif
+Ton nom, un symbole, un motif : en **relief** (posé dessus), ou en **creux** (en **Perçage**, qui traverse). Centre avec l'outil **Aligner**, pas à l'œil.
 
 <span class="todo-media">[capture : un texte et une forme posés sur la base, en relief]</span>
-
-Ajoute ton nom, un symbole, un motif : en **relief** (posé dessus), ou en **creux** (en **Perçage**, qui traverse).
-
-Centre avec l'outil **Aligner**, pas à l'œil.
 
 <figure class="screenshot" markdown>
 ![L'outil d'alignement de Tinkercad, avec ses poignées pour centrer les formes sélectionnées](../../../assets/rover-s03/23-outils-alignement.png)
 </figure>
 
-## 6. Le trou d'accroche
+### Le trou d'accroche
 
-Un **Cylindre** en **Perçage**, de 5 mm, près du bord. Laisse au moins 3 mm de matière autour : sinon l'élastique arrache le bord.
+Un **Cylindre** en **Perçage**, de 5 mm, près du bord. Au moins 3 mm de matière autour.
 
-## 7. Vérifie
+## 2. Vérifie et exporte
+
+**Ce que tu vas obtenir :** ton emblème validé, exporté en `.STL`, prêt pour l'imprimante.
 
 **Vue de face** : ce qui doit être en relief est posé sur la base, ce qui doit être en creux la traverse.
 
@@ -62,44 +57,12 @@ Un **Cylindre** en **Perçage**, de 5 mm, près du bord. Laisse au moins 3 mm de
 
 → [Les îlots détachés](../../../fiches/modeliser-imprimer-3d.md#les-ilots-detaches)
 
-## 8. Regroupe et exporte
-
-Sélectionne tout, **Regroupe** (<kbd>Ctrl</kbd> + <kbd>G</kbd>).
-
-**Exporter** → **La forme sélectionnée** → **.STL**. Nomme le fichier `lampe-<ton prénom>.stl` et dépose-le dans le dossier partagé.
-
 > [!IMPORTANT] Point de contrôle
 > Fais valider ton emblème avant d'exporter : cotes, trou, rien de détaché.
 
-## 9. L'impression
+Sélectionne tout, **Regroupe** (<kbd>Ctrl</kbd> + <kbd>G</kbd>). Puis **Exporter** → **La forme sélectionnée** → **.STL**. Nomme le fichier `lampe-<ton prénom>.stl` et dépose-le dans le dossier partagé.
 
-<span class="todo-media">[capture : le plateau du slicer avec les emblèmes du groupe]</span>
+## Va plus loin
 
-> [!NOTE] On ajoute, on n'enlève pas
-> L'imprimante dépose du plastique fondu couche par couche, de bas en haut. Elle ne pose rien dans le vide.
-
-→ [Modéliser et imprimer en 3D : l'impression](../../../fiches/modeliser-imprimer-3d.md#limpression)
-
-## 10. Va plus loin
-
-<details markdown>
-<summary>Deux hauteurs</summary>
-
-Un relief à 2 mm et un autre à 4 mm : ton emblème prend du volume.
-
-</details>
-
-<details markdown>
-<summary>Un emblème qui laisse passer la lumière</summary>
-
-Des motifs en creux qui traversent : posé devant la matrice, il laisse passer la lumière par ses trous.
-
-</details>
-
----
-
-## Ce que tu dois avoir à la fin
-
-- [ ] Ton emblème dans les cotes, trou d'accroche compris
-- [ ] Rien de détaché
-- [ ] Le fichier `lampe-<ton prénom>.stl` dans le dossier partagé
+- **Deux hauteurs.** Un relief à 2 mm et un autre à 4 mm : ton emblème prend du volume.
+- **Un emblème qui laisse passer la lumière.** Des motifs en creux qui traversent : posé devant la matrice, il laisse passer la lumière par ses trous.

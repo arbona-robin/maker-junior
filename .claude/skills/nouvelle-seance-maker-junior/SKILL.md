@@ -197,7 +197,7 @@ Le script envoie chaque programme qui n'a pas encore d'image au rendu officiel d
 - **Regarder chaque image produite** avant de livrer : un bloc gris ou rouge signale une erreur dans le code.
 - Les images d'un code modifié changent de nom ; supprimer les anciennes devenues inutiles.
 
-Les captures d'écran restent pour tout ce qui n'est pas un programme : fenêtres, menus, palette, simulateur.
+Les captures d'écran restent pour tout ce qui n'est pas un programme : fenêtres, menus, palette, simulateur. Quand c'est possible, elles s'automatisent dans `outils/captures/capturer.js` : le navigateur pilote MakeCode, Kiri:Moto ou le tableau de bord, et photographie la zone utile. Une capture automatisée se refait d'une commande quand l'interface change. Restent à la main : Tinkercad (connexion à la classe), les données d'une vraie carte, et les photos.
 
 ### Les feuilles imprimées
 

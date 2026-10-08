@@ -1,16 +1,23 @@
 # Séance 8 — Faites fonctionner votre produit et montrez ses données
 
-Vous câblez et programmez votre produit. Il envoie ses mesures, et elles s'affichent sur le tableau de bord.
+> [!NOTE] Nouveau concept : le chemin de la donnée
+> Une mesure va du capteur au micro:bit, puis par radio au **pont**, un micro:bit branché à l'ordinateur de l'animateur, et enfin au tableau de bord. L'animateur le montre en début de séance.
+>
+> → [La langue commune](../catalogue.md#la-langue-commune)
 
-## 1. Le schéma d'abord
+1. **[Câblez](#1-cablez)** : selon votre schéma, alimentation comprise.
+2. **[Programmez et émettez](#2-programmez-et-emettez)** : votre produit mesure, décide, agit, et envoie ses mesures.
+3. **[Sur le tableau de bord](#3-sur-le-tableau-de-bord)** : votre micro:bit en ligne, ses mesures affichées.
+
+## 1. Câblez
+
+**Ce que vous allez obtenir :** votre produit câblé, vérifié avant la première mise sous tension.
 
 <span class="todo-media">[photo : un schéma de câblage dessiné à la main, composants, broches, alimentation]</span>
 
 Avant de toucher un fil, dessinez le schéma : chaque composant, sa broche, son alimentation, la masse commune.
 
-→ [Câbler un circuit : le schéma de câblage](../../../fiches/cabler-un-circuit.md#le-schema-de-cablage)
-
-## 2. L'alimentation
+→ [Le schéma de câblage](../../../fiches/cabler-un-circuit.md#le-schema-de-cablage)
 
 | Votre produit | Son alimentation |
 |---|---|
@@ -18,82 +25,54 @@ Avant de toucher un fil, dessinez le schéma : chaque composant, sa broche, son 
 | Mobile, ou loin d'une prise | Boîtier d'accus |
 
 > [!CAUTION] Jamais les deux à la fois
-> Secteur **ou** accus, pas les deux branchés ensemble.
+> Secteur **ou** accus, pas les deux branchés ensemble. Un moteur ou un servomoteur passe toujours par la carte DFR0548, jamais par une broche du micro:bit.
 
-Un moteur ou un servomoteur ne se branche jamais sur une broche du micro:bit : il passe par la carte DFR0548.
-
-## 3. Câblez
+Un fil par fonction, étiqueté.
 
 <span class="todo-media">[photo : un câblage propre, fils étiquetés]</span>
-
-Un fil par fonction. Étiquetez-les : dans trois semaines, vous ne vous en souviendrez plus.
 
 > [!IMPORTANT] Point de contrôle
 > Faites vérifier votre câblage contre votre schéma avant la première mise sous tension.
 
-## 4. Programmez
+## 2. Programmez et émettez
 
-Comme la lampe : mesurer, décider, agir.
+**Ce que vous allez obtenir :** votre produit mesure, décide, agit, et envoie une mesure toutes les 5 à 10 secondes.
 
-1. La mesure, rangée dans une variable.
-2. La décision, avec un seuil et un état si votre produit déclenche une alerte.
-3. L'action.
+Comme la lampe : la mesure, la décision avec un seuil, et un état si votre produit déclenche une alerte, puis l'action.
 
-## 5. Émettez
+Pour émettre : la bande `40`, et `radio régler le numéro de série de transmission`, dans **Radio**, pour que le tableau de bord reconnaisse votre micro:bit. Puis une clé par mesure, toutes les 5 à 10 secondes. Par exemple, pour une température :
 
-Dans `au démarrage` :
-
-<span class="todo-media">[capture : au démarrage → radio régler la bande de fréquence 40, radio émettre le numéro de série vrai]</span>
-
-Puis, toutes les 5 à 10 secondes, une clé par mesure :
-
-```
-envoyer la valeur "temp" = température (°C)
+```blocks
+radio.setFrequencyBand(40)
+radio.setTransmitSerialNumber(true)
+basic.forever(function () {
+    radio.sendValue("temp", input.temperature())
+    basic.pause(5000)
+})
 ```
 
 Choisissez vos clés dans les clés connues : le tableau de bord saura comment les afficher.
 
-→ [Le catalogue : la langue commune](../catalogue.md#la-langue-commune)
+→ [La langue commune](../catalogue.md#la-langue-commune)
 
 > [!TIP] Économisez les accus
-> Pas d'émission dans `toujours` sans pause. Écran éteint quand il n'a rien à dire.
+> Pas d'émission sans pause. Écran éteint quand il n'a rien à dire.
 
-## 6. Le tableau de bord
+## 3. Sur le tableau de bord
 
-<span class="todo-media">[capture : le tableau de bord, un bloc par micro:bit, une jauge, un voyant, une courbe]</span>
+**Ce que vous allez obtenir :**
 
-Le **pont** est un micro:bit branché en USB à l'ordinateur de l'animateur. Il écoute la bande `40` et recopie chaque message vers le tableau de bord.
+<figure class="screenshot" markdown>
+![Le tableau de bord : un bloc par micro:bit en ligne, avec son nom et ses mesures en jauge, en courbe ou en voyant, et à droite le journal des messages reçus](../../../assets/objets-connectes-s06/20-tableau-de-bord.png)
+</figure>
 
-Votre micro:bit apparaît dès son premier message. Donnez-lui le nom de votre produit.
+Votre micro:bit apparaît dès son premier message. Donnez-lui le nom de votre produit. L'affichage ne convient pas à votre mesure ? Changez de clé.
 
 > [!TIP] Il n'apparaît pas ?
-> `radio émettre le numéro de série` est-il dans `au démarrage` ? La bande est-elle la `40` ?
+> `radio régler le numéro de série de transmission` est-il dans `au démarrage` ? La bande est-elle la `40` ?
 
-> [!NOTE] Le système et sa supervision
-> Débranchez le pont : le tableau de bord se fige, mais vos produits continuent de fonctionner. Le tableau de bord regarde le système, il ne le commande pas.
+Débranchez le pont : le tableau de bord se fige, mais vos produits continuent de fonctionner.
 
-L'affichage ne convient pas à votre mesure ? Changez de clé.
+## Va plus loin
 
-## 7. Le chemin de la donnée
-
-Suivez votre mesure à voix haute : capteur, micro:bit, radio, pont, ordinateur, tableau de bord.
-
-## 8. Va plus loin
-
-<details markdown>
-<summary>Un interrupteur sur le tableau de bord</summary>
-
-Une clé `inter` suivie de la lettre de votre équipe (`interA`) s'affiche comme un interrupteur. Votre produit l'écoute aussi, avec `quand une donnée est reçue`. Il doit fonctionner sans : l'ordre ne fait que forcer un état.
-
-→ [Le catalogue : la langue commune](../catalogue.md#la-langue-commune)
-
-</details>
-
----
-
-## Ce que vous devez avoir à la fin
-
-- [ ] Le schéma de câblage
-- [ ] Le produit câblé, qui mesure, décide et agit
-- [ ] Votre micro:bit en ligne sur le tableau de bord, avec son nom
-- [ ] Vos mesures affichées, toutes les 5 à 10 secondes
+- **Un interrupteur sur le tableau de bord.** Une clé `inter` suivie de la lettre de votre équipe (`interA`) s'affiche comme un interrupteur. Votre produit l'écoute aussi, avec `quand une donnée est reçue par radio`. Il doit fonctionner sans : l'ordre ne fait que forcer un état.

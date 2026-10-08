@@ -11,7 +11,7 @@ Tous les produits parlent la même langue. Le tableau de bord les reconnaît et 
 | | |
 |---|---|
 | Bande | `40`, la même que les lampes |
-| Numéro de série | `radio émettre le numéro de série` **vrai**, dans `au démarrage` : c'est à lui que le tableau de bord reconnaît ton micro:bit |
+| Numéro de série | `radio régler le numéro de série de transmission` **vrai**, dans `au démarrage` : c'est à lui que le tableau de bord reconnaît ton micro:bit |
 | Clé | Ce que tu mesures, **8 caractères au plus**, sans accent. Son début choisit l'affichage |
 | Valeur | Un nombre |
 | Rythme | Toutes les 5 à 10 secondes, et tout de suite quand quelque chose change |

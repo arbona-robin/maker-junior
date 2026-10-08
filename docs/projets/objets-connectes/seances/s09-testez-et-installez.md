@@ -1,32 +1,29 @@
 # Séance 9 — Testez et installez votre produit
 
-Vous cherchez ce qui peut faire tomber votre produit en panne, puis vous l'installez à sa place et vous répétez sa présentation.
+> [!NOTE] Nouveau concept : le cas limite
+> Un cas limite, c'est ce qui ne devrait pas arriver : un capteur débranché, des accus faibles, un produit trop loin du pont. On l'écrit avant de tester, puis on le provoque. L'animateur le montre en début de séance.
+>
+> → [Déboguer](../../../fiches/deboguer.md)
 
-## 1. Vos cas limites
+1. **[Testez](#1-testez)** : la feuille d'équipe cochée, trois cas limites essayés.
+2. **[Installez-le](#2-installez-le)** : à sa place, vu sur le tableau de bord.
+3. **[Préparez la présentation](#3-preparez-la-presentation)** : le panneau, une minute répétée, le plan B.
 
-Un cas limite, c'est ce qui ne devrait pas arriver. Par exemple :
+## 1. Testez
 
-- le capteur est débranché
-- personne ne passe pendant une heure
-- deux produits émettent en même temps
-- le produit est trop loin du pont
-- les accus faiblissent
+**Ce que vous allez obtenir :** votre feuille d'équipe cochée, et trois cas limites essayés.
 
-Écrivez vos trois cas limites **avant** de tester.
+Écrivez vos trois cas limites **avant** de tester. Par exemple : le capteur est débranché, personne ne passe pendant une heure, deux produits émettent en même temps, les accus faiblissent.
 
-## 2. Testez
-
-D'abord le cahier des charges : cochez chaque exigence que vous avez vérifiée.
-
-→ [Le cahier des charges du produit](../cahier-des-charges.md#ce-que-tout-produit-doit-faire)
-
-Puis vos cas limites. Pour chacun : ce que vous avez fait, ce qui s'est passé, ce que vous corrigez.
+Puis cochez « Ce que tout produit doit faire » sur votre [feuille d'équipe](../../../assets/objets-connectes-cahier-des-charges/feuille-equipe-objets.pdf). Pour chaque cas limite : ce que vous avez fait, ce qui s'est passé, ce que vous corrigez.
 
 Laissez votre produit allumé toute la séance : est-il encore là à la fin ?
 
 <span class="todo-media">[photo : une équipe qui débranche un capteur et regarde le tableau de bord]</span>
 
-## 3. Installez-le
+## 2. Installez-le
+
+**Ce que vous allez obtenir :**
 
 <span class="todo-media">[photo : un produit fixé à son emplacement définitif]</span>
 
@@ -35,63 +32,30 @@ Laissez votre produit allumé toute la séance : est-il encore là à la fin ?
 > [!CAUTION] Avant de fixer
 > Rien de percé ni collé sans l'accord de l'animateur. Le produit ne gêne ni le passage ni une sortie.
 
-## 4. La radio, depuis sa place
-
-Votre message arrive-t-il au tableau de bord depuis la position finale ?
-
-> [!TIP] Il n'arrive pas ?
+> [!TIP] Le message n'arrive pas ?
 > Les murs arrêtent les ondes. Déplacez le produit de quelques mètres, ou demandez à déplacer le pont.
 
 > [!IMPORTANT] Point de contrôle
 > Votre produit est installé, et vu sur le tableau de bord depuis sa place.
 
-## 5. Photographiez-le
+Photographiez-le pour votre page web : installé, en fonctionnement, et un détail qui montre votre meilleure idée. Pas de visage.
 
-<span class="todo-media">[photo : un produit installé, photographié pour la page web]</span>
+## 3. Préparez la présentation
 
-Votre produit installé, en fonctionnement, et un détail qui montre votre meilleure idée. Pas de visage. Ces photos serviront à votre page web.
-
-## 6. Le panneau
+**Ce que vous allez obtenir :** un panneau, une minute de présentation répétée, un plan B.
 
 <span class="todo-media">[photo : le panneau en carton à côté d'un produit installé]</span>
 
-Un carton à côté du produit : son nom, ce qu'il fait en une phrase, « conçu et fabriqué par » et vos prénoms.
+Le panneau, à côté du produit : son nom, ce qu'il fait en une phrase, « conçu et fabriqué par » et vos prénoms.
 
-## 7. Votre présentation
-
-Une minute, pas plus :
+La présentation, une minute, pas plus :
 
 1. Ce que fait votre produit, et pour qui.
 2. Un choix technique, et pourquoi vous l'avez fait.
 3. La démonstration.
 
-Répartissez-vous les rôles : qui parle, qui démontre, qui dépanne.
+Répartissez-vous les rôles : qui parle, qui démontre, qui dépanne. Et si votre produit tombe en panne devant le public : que dites-vous, que montrez-vous ? C'est votre plan B.
 
-## 8. Le plan B
+Qui recharge les accus, qui vérifie qu'il est en ligne, à qui signaler une panne : écrivez-le dans « Nos décisions ».
 
-Si votre produit tombe en panne devant le public : que dites-vous, que montrez-vous ? Écrivez-le.
-
-## 9. Qui s'en occupe ?
-
-| | |
-|---|---|
-| Qui recharge les accus | |
-| Qui vérifie qu'il est en ligne | |
-| À qui signaler une panne | |
-
-## 10. La répétition
-
-Tout le groupe, dans l'ordre de la visite, au chronomètre.
-
----
-
-## Ce que vous devez avoir à la fin
-
-- [ ] Le cahier des charges coché
-- [ ] Trois cas limites testés
-- [ ] Le produit installé, vu depuis sa place
-- [ ] Le panneau
-- [ ] La présentation d'une minute, répétée
-- [ ] Le plan B
-- [ ] Les photos pour votre page
-- [ ] L'entretien réparti
+Pour finir, la répétition : tout le groupe, dans l'ordre de la visite, au chronomètre.

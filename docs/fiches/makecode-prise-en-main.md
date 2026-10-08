@@ -135,7 +135,7 @@ Il mesure une accélération sur trois axes, en **mg** (millièmes de g). À pla
 
 ### Le capteur de lumière
 
-Le micro:bit mesure la lumière avec **son écran**. `niveau d'intensité lumineuse`, dans **Entrées**, va de `0` (noir) à `255` (pleine lumière).
+Le micro:bit mesure la lumière avec **son écran**. `niveau d'intensité lumineuse`, dans **Entrée**, va de `0` (noir) à `255` (pleine lumière).
 
 Deux conséquences : l'écran doit voir la pièce, et il ne doit rien afficher pendant la mesure. Une icône allumée fausse la valeur.
 

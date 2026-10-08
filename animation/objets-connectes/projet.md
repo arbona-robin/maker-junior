@@ -61,6 +61,7 @@ Utile : avoir suivi le projet Rover. La radio, les capteurs, MakeCode et Tinkerc
 - Chargeur d'accus, multimètre
 - Pour le chantier : capteurs selon l'inventaire, servomoteurs, moteurs TT, cartes DFR0548, breadboards, adaptateurs secteur USB 5 V
 - 1 micro:bit pour le pont USB
+- La [feuille d'équipe](../../docs/assets/objets-connectes-cahier-des-charges/feuille-equipe-objets.pdf), imprimée recto verso, une par équipe : produit, vérifications, suivi d'impression, décisions. Source : `outils/feuilles/feuille-equipe-objets.html`, à réimprimer avec `node outils/feuilles/imprimer.js` si le cahier des charges change
 
 ## Ressources numériques
 
@@ -163,7 +164,7 @@ Le premier parcours demande 50 € d'achats : matrices et ruban de cuivre. Les m
 
 **Notions :** servomoteur et moteur à courant continu · choisir un composant pour une fonction · cahier des charges · contraintes d'implantation
 
-**Livrable intermédiaire :** équipe formée, première partie du cahier des charges remplie et validée, croquis, matériel réservé au magasin
+**Livrable intermédiaire :** équipe formée, première partie de la feuille d'équipe remplie et validée, croquis, matériel réservé au magasin
 
 ## Séance 7 — Phase 2 — Exploration & création
 

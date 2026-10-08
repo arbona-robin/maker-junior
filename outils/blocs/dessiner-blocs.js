@@ -16,6 +16,9 @@ const puppeteer = require("puppeteer-core");
 
 const LANGUE = "fr";
 const EXTENSION = "motor=github:DFRobot/pxt-motor";
+const MATRICE = "neopixel-extended=github:pasalt/pxt-neopixel-matrix-extension";
+// L'extension à charger : celle de la matrice si le code l'utilise, DF-Driver sinon.
+const extension = (code) => (code.includes("neopixelExtended") ? MATRICE : EXTENSION);
 const RACINE = path.resolve(__dirname, "../..");
 const DOCS = path.join(RACINE, "docs");
 const SORTIE = path.join(DOCS, "assets/blocks");
@@ -23,7 +26,7 @@ const CHROME = process.env.CHROME || "/Applications/Google Chrome.app/Contents/M
 const BLOC = /^```blocks\n([\s\S]*?)\n```[ \t]*$/gm;
 
 function cle(code) {
-  return crypto.createHash("sha1").update(`${LANGUE}|${EXTENSION}|${code.trim()}`, "utf8").digest("hex").slice(0, 12);
+  return crypto.createHash("sha1").update(`${LANGUE}|${extension(code)}|${code.trim()}`, "utf8").digest("hex").slice(0, 12);
 }
 
 function pages(dossier) {
@@ -57,7 +60,7 @@ function pages(dossier) {
   const navigateur = await puppeteer.launch({ executablePath: CHROME, headless: "new" });
   const onglet = await navigateur.newPage();
   await onglet.goto(`http://127.0.0.1:${serveur.address().port}/`);
-  const rendus = await onglet.evaluate((blocs, langue, extension) => new Promise((resolve, reject) => {
+  const rendus = await onglet.evaluate((blocs, langue) => new Promise((resolve, reject) => {
     const origine = "https://makecode.microbit.org";
     const resultats = {};
     let restants = blocs.length;
@@ -69,7 +72,7 @@ function pages(dossier) {
       if (!m || m.source !== "makecode") return;
       if (m.type === "renderready") {
         for (const b of blocs) {
-          cadre.contentWindow.postMessage({ type: "renderblocks", id: b.id, code: b.code, options: { package: extension } }, origine);
+          cadre.contentWindow.postMessage({ type: "renderblocks", id: b.id, code: b.code, options: { package: b.paquet } }, origine);
         }
       } else if (m.type === "renderblocks") {
         resultats[m.id] = { svg: m.svg, erreur: m.error };
@@ -77,7 +80,7 @@ function pages(dossier) {
       }
     });
     document.body.appendChild(cadre);
-  }), [...aFaire].map(([id, b]) => ({ id, code: b.code })), LANGUE, EXTENSION);
+  }), [...aFaire].map(([id, b]) => ({ id, code: b.code, paquet: extension(b.code) })), LANGUE);
   // Le SVG de MakeCode embarque toute la feuille de style de l'éditeur (environ 1,5 Mo) :
   // on le photographie en PNG, à double résolution, fond transparent.
   await onglet.setViewport({ width: 1600, height: 1200, deviceScaleFactor: 2 });

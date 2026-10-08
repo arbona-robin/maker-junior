@@ -27,11 +27,7 @@ La matrice prend son énergie au pack. Le micro:bit ne lui envoie que le signal.
 
 ## L'extension
 
-MakeCode → **Extensions** → colle cette adresse :
-
-```
-https://github.com/pasalt/pxt-neopixel-matrix-extension
-```
+MakeCode → **Extensions** → tape `neopixel` → clique sur **neopixel-matrix-extension**.
 
 Une catégorie **neopixel-extended** apparaît. Ses blocs sont en anglais : cherche-les tels qu'ils sont écrits.
 
@@ -50,7 +46,20 @@ Des couleurs fausses ou un scintillement en fin de séance : les accus faiblisse
 
 `set NeoPixel 8x8` est une grille de 8 × 8 : une case par LED, une couleur par case, choisie dans une palette. Une case grise s'allume en gris : pour l'éteindre, choisis le noir.
 
-<span class="todo-media">[capture : le bloc set NeoPixel 8x8 avec un visage dessiné]</span>
+```blocks
+strip.setMatrix64(
+    neopixelExtended.rowOf8(0x000000, 0x000000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x000000, 0x000000),
+    neopixelExtended.rowOf8(0x000000, 0xff0000, 0x000000, 0x000000, 0x000000, 0x000000, 0xff0000, 0x000000),
+    neopixelExtended.rowOf8(0xff0000, 0x000000, 0xff0000, 0x000000, 0x000000, 0xff0000, 0x000000, 0xff0000),
+    neopixelExtended.rowOf8(0xff0000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0xff0000),
+    neopixelExtended.rowOf8(0xff0000, 0x000000, 0xff0000, 0x000000, 0x000000, 0xff0000, 0x000000, 0xff0000),
+    neopixelExtended.rowOf8(0xff0000, 0x000000, 0x000000, 0xff0000, 0xff0000, 0x000000, 0x000000, 0xff0000),
+    neopixelExtended.rowOf8(0x000000, 0xff0000, 0x000000, 0x000000, 0x000000, 0x000000, 0xff0000, 0x000000),
+    neopixelExtended.rowOf8(0x000000, 0x000000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x000000, 0x000000)
+)
+strip.show()
+let strip: neopixelExtended.Strip = null
+```
 
 ## Préparer, puis afficher
 

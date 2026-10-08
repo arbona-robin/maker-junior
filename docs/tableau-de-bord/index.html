@@ -399,7 +399,7 @@ function rendre() {
     if (enEdition !== m.serie) carte.querySelector(".nom").textContent = nomDe(m);
     carte.querySelector(".signal").innerHTML = barres(m.signal);
     carte.querySelector(".etat-carte").textContent = m.serie === "0"
-      ? "Un produit émet sans « radio émettre le numéro de série »."
+      ? "Un produit émet sans « radio régler le numéro de série de transmission »."
       : (hors ? "Hors ligne, dernier message " : "En ligne, dernier message ") + depuis(maintenant - m.dernier) + " · n° " + m.serie;
     carte.querySelector(".mesures").innerHTML =
       [...m.cles.entries()].map(([cle, k]) => widget(cle, k, m.serie)).join("");

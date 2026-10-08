@@ -1,21 +1,23 @@
 # Séance 3 — Fais-la s'allumer quand il fait nuit
 
-Ta lampe mesure la lumière de la pièce. Tu choisis à partir de quand il fait nuit, et elle s'allume toute seule.
+1. **[Regarde les valeurs](#1-regarde-les-valeurs)** : tu sais ce que mesure ta carte, du plein jour au noir, et tu choisis ton seuil.
+2. **[La décision](#2-la-decision)** : sous ton seuil, la lampe s'allume ; au-dessus, elle s'éteint.
+3. **[Une seule fois](#3-une-seule-fois)** : couverte, la lampe s'allume une fois, sans hoqueter.
 
-## 1. Le capteur de lumière
+## 1. Regarde les valeurs
 
-Le micro:bit mesure la lumière avec son écran. La valeur va de `0` (noir) à `255` (pleine lumière).
+**Ce que tu vas obtenir :** tes valeurs, de la salle éclairée au noir, et ton seuil.
 
-> [!NOTE] Un capteur donne un nombre
-> Il ne dit pas « il fait nuit ». C'est toi qui décides à partir de quel nombre il fait nuit.
-
-→ [Prendre en main MakeCode : le capteur de lumière](../../../fiches/makecode-prise-en-main.md#le-capteur-de-lumiere)
-
-## 2. Regarde les valeurs
+Le micro:bit mesure la lumière avec **son écran** : `niveau d'intensité lumineuse`, dans **Entrée**, de `0` (noir) à `255` (pleine lumière).
 
 Nouveau projet : `lumiere`. Dans `toujours` :
 
-<span class="todo-media">[capture : toujours → série écrire valeur "lumiere" = niveau d'intensité lumineuse, pause 200 ms]</span>
+```blocks
+basic.forever(function () {
+    serial.writeValue("lumiere", input.lightLevel())
+    basic.pause(200)
+})
+```
 
 Téléverse, USB branché, puis **Afficher données Appareil**.
 
@@ -24,94 +26,86 @@ Téléverse, USB branché, puis **Afficher données Appareil**.
 > [!CAUTION] L'écran reste éteint
 > Le capteur, c'est l'écran. Une icône affichée pendant la mesure fausse la valeur.
 
-## 3. Relève tes valeurs
+Remplis ce tableau :
 
-Note la valeur :
-
-- dans la salle éclairée
-- la main au-dessus de la carte
-- près de la fenêtre
-- lumière de la salle éteinte
-
-## 4. Choisis ton seuil
+| Où | Valeur |
+|---|---|
+| Salle éclairée | |
+| Main au-dessus de la carte | |
+| Près de la fenêtre | |
+| Lumière de la salle éteinte | |
 
 Ton seuil est entre la pénombre et la salle éclairée. Il dépend de l'endroit où tu poseras ta lampe : le tien n'est pas celui du voisin.
 
-Note-le.
+→ [Le capteur de lumière](../../../fiches/makecode-prise-en-main.md#le-capteur-de-lumiere)
 
-## 5. La décision
+## 2. La décision
+
+**Ce que tu vas obtenir :** tu couvres la carte, la matrice s'allume ; tu la découvres, elle s'éteint.
 
 Retour dans ton projet `lampe`.
 
-**À toi.** Dans `toujours` : si la lumière est sous ton seuil, affiche ton ambiance. Sinon, éteins la matrice.
+**À toi.** Dans `toujours` : si la lumière est sous ton seuil, allume ton ambiance. Sinon, éteins la matrice avec `clear all colors` et `show changes`.
 
 <details markdown>
 <summary>La solution</summary>
 
-<span class="todo-media">[capture : toujours → si niveau d'intensité lumineuse < seuil alors ambiance, sinon strip clear all colors et strip show changes]</span>
+```blocks
+basic.forever(function () {
+    if (input.lightLevel() < 40) {
+        strip.showColor(0xff8000)
+    } else {
+        strip.clear()
+        strip.show()
+    }
+})
+let strip: neopixelExtended.Strip = null
+```
+
+`40` est le seuil de ce montage. Prends le tien.
 
 </details>
 
-Couvre la carte. Regarde ton animation.
+## 3. Une seule fois
 
-## 6. Le piège
+**Ce que tu vas obtenir :** couverte, ta lampe s'allume une fois ; découverte, elle s'éteint une fois.
 
-Ton animation redémarre au début à chaque tour de `toujours`. La lampe hoquette.
+Si ton ambiance est une animation, elle redémarre au début à chaque tour de `toujours` : la lampe hoquette. Il faut qu'elle se souvienne si elle est déjà allumée.
 
-> [!NOTE] L'état
-> La lampe doit se souvenir si elle est allumée ou éteinte. Une variable, `allumee`, qui vaut `0` ou `1`, garde cet **état**.
+Une variable, `allumee`, qui vaut `0` ou `1`, garde cet **état**. La lampe ne s'allume que s'il fait sombre **et** qu'elle était éteinte ; puis `allumee` passe à `1`. Même chose dans l'autre sens.
 
-On ne s'allume que si :
-
-- il fait sombre
-- **et** la lampe était éteinte.
-
-Puis `allumee` passe à `1`. Même chose dans l'autre sens.
-
-**À toi.** Ajoute la variable `allumee` à ton programme.
+**À toi.** Ajoute la variable `allumee` à ton programme. Une variable se crée dans **Variables** → **Créer une variable…**.
 
 <details markdown>
 <summary>La solution</summary>
 
-<span class="todo-media">[capture : si lumière < seuil et allumee = 0 alors ambiance, définir allumee à 1 ; sinon si lumière > seuil et allumee = 1 alors éteindre, définir allumee à 0]</span>
+```blocks
+basic.forever(function () {
+    if (input.lightLevel() < 40 && allumee == 0) {
+        strip.showColor(0xff8000)
+        allumee = 1
+    } else if (input.lightLevel() > 40 && allumee == 1) {
+        strip.clear()
+        strip.show()
+        allumee = 0
+    }
+})
+let allumee = 0
+let strip: neopixelExtended.Strip = null
+```
 
-Le même raisonnement sert à toutes les alertes : on s'arme, on se désarme.
-
-→ [Prendre en main MakeCode : ne réagir qu'au changement](../../../fiches/makecode-prise-en-main.md#4-ne-reagis-quau-changement)
+→ [Ne réagis qu'au changement](../../../fiches/makecode-prise-en-main.md#4-ne-reagis-quau-changement)
 
 </details>
 
-## 7. Elle s'allume, elle s'éteint, elle s'allume…
-
-Si ta matrice éclaire l'écran du micro:bit, la lampe se voit elle-même : elle s'allume, mesure sa propre lumière, s'éteint, et recommence.
+Si ta matrice éclaire l'écran du micro:bit, la lampe se voit elle-même : elle s'allume, mesure sa propre lumière, s'éteint, et recommence. L'écran du micro:bit regarde la pièce, pas la lampe.
 
 <span class="todo-media">[photo : la lampe, micro:bit à l'avant, écran tourné vers la pièce]</span>
-
-L'écran du micro:bit regarde la pièce, pas la lampe. Masque la lumière qui passe vers lui si besoin.
 
 > [!IMPORTANT] Point de contrôle
 > Couvre ta lampe : elle s'allume une fois. Découvre-la : elle s'éteint une fois.
 
-## 8. Va plus loin
+## Va plus loin
 
-<details markdown>
-<summary>Deux seuils au lieu d'un</summary>
-
-À la limite, la valeur oscille et la lampe clignote. Avec un seuil pour s'allumer (`40`) et un autre pour s'éteindre (`60`), entre les deux elle ne bouge pas. Ça s'appelle l'**hystérésis**.
-
-</details>
-
-<details markdown>
-<summary>Un réveil en douceur</summary>
-
-Fais monter la luminosité petit à petit à l'allumage, avec un son du haut-parleur de la carte.
-
-</details>
-
----
-
-## Ce que tu dois avoir à la fin
-
-- [ ] Tes valeurs et ton seuil notés
-- [ ] La lampe qui s'allume seule dans le noir, et s'éteint à la lumière
-- [ ] La variable `allumee` : plus de hoquet
+- **Deux seuils.** À la limite, la valeur oscille et la lampe clignote. Un seuil pour s'allumer (`40`), un autre pour s'éteindre (`60`) : entre les deux, elle ne bouge pas.
+- **Un réveil en douceur.** La luminosité monte petit à petit à l'allumage, avec un son.

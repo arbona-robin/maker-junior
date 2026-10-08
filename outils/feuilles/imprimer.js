@@ -13,6 +13,7 @@ const RACINE = path.join(__dirname, "..", "..");
 
 const SORTIES = {
   "feuille-equipe-rover.html": "docs/assets/rover-cahier-des-charges/feuille-equipe-rover.pdf",
+  "feuille-equipe-objets.html": "docs/assets/objets-connectes-cahier-des-charges/feuille-equipe-objets.pdf",
 };
 
 (async () => {

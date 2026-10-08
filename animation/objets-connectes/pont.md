@@ -41,7 +41,7 @@ Le point central de l'écran clignote à chaque message reçu, le coin en haut �
 | Pont → page | `numéro de série,clé,valeur,signal` | `-1934561230,temp,21,-62` |
 | Page → pont | `clé,valeur` | `interA,1` |
 
-Le numéro de série vaut `0` quand l'émetteur n'a pas `radio émettre le numéro de série` : la page affiche alors une carte d'alerte « Sans numéro de série ».
+Le numéro de série vaut `0` quand l'émetteur n'a pas `radio régler le numéro de série de transmission` : la page affiche alors une carte d'alerte « Sans numéro de série ».
 
 ## Ce que fait la page
 
