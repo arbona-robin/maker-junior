@@ -8,7 +8,7 @@ Fabrique et pilote ton rover d'exploration
 
 ## Accroche
 
-Un rover, ça ne s'achète pas : ça se fabrique, ça se câble, ça se programme. Tu fabriques le tien de la plaque de carton au programme qui le fait rouler. Et quand tu le pilotes les yeux fermés, le vrai défi commence : en équipe, avec des missions à réussir.
+Un rover, ça ne s'achète pas : ça se fabrique, ça se câble, ça se programme. Tu fabriques le tien, de la première pièce au programme qui le fait rouler. Puis le vrai défi commence : en équipe, avec des missions à réussir.
 
 ## Description
 

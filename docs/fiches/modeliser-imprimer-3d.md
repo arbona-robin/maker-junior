@@ -80,11 +80,20 @@ Trois outils de **Formes simples** partent d'un dessin à plat :
 | **Scribble** (esquisse libre) | À main levée | Lui donne une **Hauteur** | Logo, forme sans cote |
 
 <figure class="screenshot" markdown>
+![La palette Formes simples, la forme Faire pivoter l'esquisse sélectionnée et posée sur le plan de travail](../assets/rover-s06/20-revolution-forme.png)
+<figcaption>Pose l'outil sur le plan de travail : l'éditeur d'esquisse s'ouvre.</figcaption>
+</figure>
+
+<figure class="screenshot" markdown>
 ![L'éditeur d'esquisse : un demi-profil dessiné contre l'axe vertical, et l'aperçu 3D de la pièce obtenue](../assets/rover-s06/21-revolution-profil.png)
 </figure>
 
 <figure class="screenshot" markdown>
 ![L'éditeur d'esquisse : un contour fermé dessiné par-dessus la pièce existante, visible en transparence](../assets/rover-s06/22-extrusion-contour.png)
+</figure>
+
+<figure class="screenshot" markdown>
+![Le contour extrudé en volume, posé sur la pièce en révolution](../assets/rover-s06/23-extrusion-posee.png)
 </figure>
 
 <figure class="screenshot" markdown>
@@ -138,7 +147,7 @@ Une imprimante 3D dépose du plastique fondu **couche par couche**, de bas en ha
 
 ### Le slicer
 
-L'imprimante n'exécute pas ton modèle : elle exécute des déplacements. Le **slicer** tranche ta pièce en couches et écrit la liste des mouvements à exécuter.
+L'imprimante n'exécute pas ton modèle : elle exécute des déplacements. Le **slicer** tranche ta pièce en couches et écrit la liste des mouvements à exécuter. Ce fichier s'appelle du **G-code** : une ligne par ordre, du genre « va en X 20 Y 35 en poussant du plastique ». C'est lui qu'on envoie à l'imprimante.
 
 <figure class="screenshot" markdown>
 ![Le slicer affichant la plaque tranchée, avec l'aperçu des trajets et le réglage de hauteur de couche](../assets/rover-s03/40-slicer-apercu.png)
@@ -159,10 +168,19 @@ Trois réglages :
 
 Sans installer de slicer : **Kiri:Moto**, dans le navigateur, gratuit et sans compte.
 
-1. Ouvre [grid.space/kiri](https://grid.space/kiri/).
-2. **Fichier** → **Importer** → ton `.STL`.
-3. **Trancher**.
-4. **Exporter** : la fenêtre affiche **estimation du temps**, en heures, minutes, secondes. Pas besoin de télécharger.
+Ouvre [grid.space/kiri](https://grid.space/kiri/), puis **Fichier** → **Importer** → ton `.STL`.
+
+<figure class="screenshot" markdown>
+![Le menu Fichier de Kiri:Moto ouvert, l'entrée Importer en surbrillance](../assets/rover-s06/26-kiri-importer.png)
+</figure>
+
+**Trancher** : la pièce se découpe en couches.
+
+<figure class="screenshot" markdown>
+![Le bouton Trancher enfoncé, la pièce découpée en couches sur le plateau](../assets/rover-s06/27-kiri-trancher.png)
+</figure>
+
+**Exporter** : la fenêtre affiche **estimation du temps**, en heures, minutes, secondes. Pas besoin de télécharger.
 
 <figure class="screenshot" markdown>
 ![La fenêtre d'export de Kiri:Moto : estimation du temps 00:33:09](../assets/rover-s06/28-kiri-estimation.png)

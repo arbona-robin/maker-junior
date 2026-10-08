@@ -1,6 +1,6 @@
 # Projet Rover — fabrique ton rover d'exploration
 
-Un rover, ça ne s'achète pas : ça se fabrique, ça se câble, ça se programme. Tu fabriques le tien de la plaque de carton au programme qui le fait rouler. Et quand tu le pilotes les yeux fermés, le vrai défi commence : en équipe, avec des missions à réussir.
+Un rover, ça ne s'achète pas : ça se fabrique, ça se câble, ça se programme. Tu fabriques le tien, de la première pièce au programme qui le fait rouler. Puis le vrai défi commence : en équipe, avec des missions à réussir.
 
 Le parcours se fait en deux temps. D'abord ton rover à toi, que tu montes et programmes seul. Ensuite, à deux ou trois, un rover conçu pour des missions précises, en carton et avec des pièces que vous dessinez et imprimez en 3D.
 
@@ -21,7 +21,7 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
   Tu poses ta plaque imprimée, et tu fais de ta seconde carte une télécommande qui envoie ses ordres par radio.
 
 - **[Séance 5 — Pilote ton rover, formez votre équipe](seances/s05-formez-votre-equipe.md)**
-  Ton rover obéit à ta télécommande. Puis vous découvrez le cahier des charges, le parcours et les pentes, et vous formez votre équipe.
+  Ton rover obéit à ta télécommande. Puis vous découvrez le cahier des charges, le parcours et la pente, et vous formez votre équipe.
 
 - **[Séance 6 — Concevez votre rover](seances/s06-concevez-votre-rover.md)**
   Vous dessinez votre rover d'équipe, vous vous répartissez le travail, et vous fabriquez ses pièces en carton et en 3D.

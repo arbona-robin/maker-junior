@@ -1,6 +1,9 @@
 # Séance 12 — Vos rovers en épreuve
 
-Deux épreuves, toutes les équipes en piste. Puis vous faites le bilan du projet.
+1. **[Préparez votre rover](#1-preparez-votre-rover)** : accus chargés, mode télécommande, la bande de votre équipe.
+2. **[Le parcours](#2-le-parcours)** : slalom et pente, chronométrés.
+3. **[Le capture the flag](#3-le-capture-the-flag)** : toutes les équipes en même temps.
+4. **[Le bilan](#4-le-bilan)** : ce qui a marché, ce que vous changeriez.
 
 ## 1. Préparez votre rover
 
@@ -30,7 +33,7 @@ Sur la table, toutes les équipes en même temps. L'échantillon est debout au c
 
 Trois manches, ou 15 minutes.
 
-→ [Le cahier des charges](../cahier-des-charges.md)
+→ [Le cahier des charges](../cahier-des-charges.md#les-epreuves)
 
 ## 4. Le bilan
 
@@ -41,11 +44,3 @@ Chaque équipe écrit sur des post-its :
 - ce que les épreuves ont montré, et que vous n'aviez pas vu avant
 
 Puis chacun colle une gommette sur son moment préféré du projet.
-
----
-
-## Ce que vous devez avoir à la fin
-
-- [ ] Le parcours couru
-- [ ] Le capture the flag joué
-- [ ] Vos post-its au tableau

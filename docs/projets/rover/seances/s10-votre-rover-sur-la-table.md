@@ -14,7 +14,7 @@
 
 <video controls playsinline preload="metadata" src="../../../../assets/rover-s08/video-table-pilote.mp4"></video>
 
-`radio définir groupe` est dans **Radio**.
+Votre télécommande d'équipe passe sur la bande de votre numéro : c'est celle que règle le bouton `B`. `radio définir groupe` est dans **Radio**.
 
 Un bouton par source : `A` pour la table, `B` pour la télécommande. Ici, l'équipe 10 :
 
@@ -39,6 +39,11 @@ Une variable `mode` : `1` avec `A`, `0` avec `B`. Dans `toujours`, juste après 
 ## 2. Passez sur la table
 
 **Ce que vous allez obtenir :** votre rover suit la figure de la table, et s'arrête quand elle se tait.
+
+<figure class="screenshot" markdown>
+![La vue de la caméra au-dessus de la table : les repères aux quatre coins, le rover repéré par son tag 10, et le cercle qu'il doit suivre](../../../assets/rover-s08/20-vue-camera-table.png)
+<figcaption>Ce que voit la caméra : les repères des coins, le tag 10 et la figure à suivre. Sans tag visible, pas de rover.</figcaption>
+</figure>
 
 Une équipe à la fois, dans l'ordre du tableau. En attendant votre tour, avancez votre rover. La table vérifie :
 

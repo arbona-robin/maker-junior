@@ -156,18 +156,18 @@ Glisse tes deux blocs `Motor` dans la fonction. Reprends **Fonctions** : le bloc
 
 ```blocks
 function avancer () {
-    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 110)
-    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 110)
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 100)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 100)
 }
-basic.showIcon(IconNames.Happy)
-music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
+basic.showIcon(IconNames.Heart)
+music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
 basic.forever(function () {
     basic.showArrow(ArrowNames.North)
     avancer()
     basic.pause(1000)
     basic.clearScreen()
-    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 0)
-    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 0)
+    motor.motorStopAll()
+    basic.pause(1000)
 })
 ```
 

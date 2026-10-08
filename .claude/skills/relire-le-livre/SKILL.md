@@ -15,7 +15,7 @@ python3 .claude/skills/relire-le-livre/verifier.py
 .venv/bin/mkdocs build --strict
 ```
 
-Le script signale ce qui se voit sans comprendre le texte : style banni, code propre au rover dans une fiche générale, bloc DF-Driver avant l'installation de l'extension, titres qui divergent entre le menu, la page du projet, la page et la fiche d'animation, sections du gabarit, médias inutilisés. La construction stricte signale les liens et ancres morts.
+Le script signale ce qui se voit sans comprendre le texte : style banni, code propre au rover dans une fiche générale, bloc DF-Driver avant l'installation de l'extension, titres qui divergent entre le menu, la page du projet, la page et la fiche d'animation, sections du gabarit, médias inutilisés, médias cités mais absents du disque, et ce qui reste à produire (emplacements `todo-media`, visuels de communication « à produire »). La construction stricte signale les liens et ancres morts.
 
 ## 2. La relecture
 
@@ -38,7 +38,7 @@ Pour chaque fichier, se poser ces questions :
 | **Les valeurs concordent-elles ?** Cahier des charges, feuille d'équipe, pages, fiches d'animation. | 3 h d'impression ici, 4 h là ; 25 × 25 × 20 cm partout ? |
 | **Les renvois disent-ils vrai ?** « En séance 4… », « la S9 », « comme en S2 » : la séance citée fait-elle encore ça ? | Après un redécoupage, « la table, en S9 » alors qu'elle est en S8. |
 | **Les noms de blocs sont-ils ceux de l'écran ?** Les vérifier sur les images rendues (`docs/assets/blocks/`), pas de mémoire. | « temps écoulé (ms) » au lieu de « temps d'exécution (ms) ». |
-| **La page suit-elle le format de sa séance ?** S1 à S5 guidées ; S6 à S9 et S11 : encadré « Nouveau concept » sous le titre, puis le travail de l'équipe. Voir la skill `nouvelle-seance-maker-junior`, §6. | Un concept détaillé dans la page au lieu de la fiche. |
+| **La page suit-elle le format de sa séance ?** S1 à S5 guidées ; S6 à S11 : encadré « Nouveau concept » sous le titre, puis le travail de l'équipe. Voir la skill `nouvelle-seance-maker-junior`, §6. | Un concept détaillé dans la page au lieu de la fiche. |
 
 ## 3. Le rapport
 

@@ -140,8 +140,8 @@ function arreter () {
     motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 0)
     motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 0)
 }
-basic.showIcon(IconNames.Happy)
-music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
+basic.showIcon(IconNames.Heart)
+music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
 basic.forever(function () {
     basic.showArrow(ArrowNames.North)
     avancer()

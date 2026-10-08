@@ -133,12 +133,35 @@ for f in ANIMATION:
 # 6. Médias : présents sur le disque, et utilisés.
 cites = set()
 for f in TOUT:
-    for m in re.finditer(r"assets/([^)\s\"']+)", open(f, encoding="utf-8").read()):
+    for m in re.finditer(r"assets/([^)\s\"'`]+)", open(f, encoding="utf-8").read()):
         cites.add(m.group(1))
 for f in glob.glob("docs/assets/*-s[0-9][0-9]/*") + glob.glob("docs/assets/rover-cahier-des-charges/*"):
     rel = f.replace("docs/assets/", "")
     if rel not in cites:
         signaler("médias", f, 0, "fichier que plus aucune page n'utilise")
+
+# 7. Médias cités mais absents du disque.
+for f in TOUT:
+    base = os.path.dirname(f)
+    for n, ligne in hors_code(f):
+        for m in re.finditer(r"(?:\]\(|src=\")([^)\"\s]+\.(?:png|jpe?g|svg|mp4|pdf|zip|gif))", ligne):
+            cible = m.group(1)
+            if cible.startswith("http"):
+                continue
+            chemin = os.path.normpath(os.path.join(base, cible))
+            # Les <video> ont un « ../ » de plus : MkDocs ne réécrit pas leur chemin.
+            if "<video" in ligne:
+                chemin = os.path.normpath(os.path.join(base, "x", cible))
+            if not os.path.exists(chemin):
+                signaler("médias manquants", f, n, f"introuvable : {cible}")
+
+# 8. Ce qui reste à produire : emplacements réservés, visuels de communication.
+for f in PAGES + FICHES + ANIMATION + sorted(glob.glob("animation/*/communication.md")):
+    for n, ligne in enumerate(lignes(f), 1):
+        for m in re.finditer(r'<span class="todo-media">\[([^\]]+)\]</span>', ligne):
+            signaler("à produire", f, n, m.group(1))
+        if re.search(r"\bTODO\b|\(à produire[^)]*\)", ligne) and "todo-media" not in ligne:
+            signaler("à produire", f, n, ligne.strip()[:100])
 
 # Rapport
 if not rapport:
