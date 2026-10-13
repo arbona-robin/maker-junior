@@ -126,7 +126,7 @@ let strip: neopixelExtended.Strip = null
 
 <span class="todo-media">[vidéo : la lampe qui respire]</span>
 
-**À toi : deux images.** Elles alternent, chacune une seconde.
+**À toi : un cœur qui bat.** Deux images dans `toujours` : un grand cœur, 200 ms, puis un petit, 600 ms. Chaque image a son `show changes`.
 
 <details markdown>
 <summary>La solution</summary>
@@ -134,34 +134,36 @@ let strip: neopixelExtended.Strip = null
 ```blocks
 basic.forever(function () {
     strip.setMatrix64(
-        neopixelExtended.rowOf8(0x000000, 0x000000, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0x000000, 0x000000),
-        neopixelExtended.rowOf8(0x000000, 0xffff00, 0x000000, 0x000000, 0x000000, 0x000000, 0xffff00, 0x000000),
-        neopixelExtended.rowOf8(0xffff00, 0x000000, 0xffff00, 0x000000, 0x000000, 0xffff00, 0x000000, 0xffff00),
-        neopixelExtended.rowOf8(0xffff00, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0xffff00),
-        neopixelExtended.rowOf8(0xffff00, 0x000000, 0xffff00, 0x000000, 0x000000, 0xffff00, 0x000000, 0xffff00),
-        neopixelExtended.rowOf8(0xffff00, 0x000000, 0x000000, 0xffff00, 0xffff00, 0x000000, 0x000000, 0xffff00),
-        neopixelExtended.rowOf8(0x000000, 0xffff00, 0x000000, 0x000000, 0x000000, 0x000000, 0xffff00, 0x000000),
-        neopixelExtended.rowOf8(0x000000, 0x000000, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0x000000, 0x000000)
-    )
-    strip.show()
-    basic.pause(1000)
-    strip.setMatrix64(
-        neopixelExtended.rowOf8(0x000000, 0xffff00, 0xffff00, 0x000000, 0x000000, 0xffff00, 0xffff00, 0x000000),
-        neopixelExtended.rowOf8(0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00),
-        neopixelExtended.rowOf8(0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00),
-        neopixelExtended.rowOf8(0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00),
-        neopixelExtended.rowOf8(0x000000, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0x000000),
-        neopixelExtended.rowOf8(0x000000, 0x000000, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0x000000, 0x000000),
-        neopixelExtended.rowOf8(0x000000, 0x000000, 0x000000, 0xffff00, 0xffff00, 0x000000, 0x000000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0xff0000, 0xff0000, 0x000000, 0x000000, 0xff0000, 0xff0000, 0x000000),
+        neopixelExtended.rowOf8(0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000),
+        neopixelExtended.rowOf8(0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000),
+        neopixelExtended.rowOf8(0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000),
+        neopixelExtended.rowOf8(0x000000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0x000000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x000000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0x000000, 0x000000, 0xff0000, 0xff0000, 0x000000, 0x000000, 0x000000),
         neopixelExtended.rowOf8(0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000)
     )
     strip.show()
-    basic.pause(1000)
+    basic.pause(200)
+    strip.setMatrix64(
+        neopixelExtended.rowOf8(0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0xff0000, 0xff0000, 0x000000, 0x000000, 0xff0000, 0xff0000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0x000000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x000000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0x000000, 0x000000, 0xff0000, 0xff0000, 0x000000, 0x000000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000),
+        neopixelExtended.rowOf8(0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000, 0x000000)
+    )
+    strip.show()
+    basic.pause(600)
 })
 let strip: neopixelExtended.Strip = null
 ```
 
 </details>
+
+<span class="todo-media">[vidéo : le cœur qui bat sur la matrice]</span>
 
 ## 4. Pose-la sur la lampe
 
@@ -175,4 +177,5 @@ Deux élastiques tiennent la matrice. Le papier calque devant adoucit la lumièr
 
 - **Un arc-en-ciel.** `show rainbow from 1 to 360`.
 - **Fais-la défiler.** Dans `toujours` : `rotate pixels by 8`, `show changes`, une pause de 200 ms. Décaler de 8, c'est décaler d'une ligne : essaie avec 1.
+- **Des yeux qui bougent.** Trois images : ils regardent à gauche, au centre, à droite. Une quatrième, les yeux fermés, et ils clignent.
 - **Ton bouton de cuivre.** Quand tu touches les bandes, la matrice change d'image.
