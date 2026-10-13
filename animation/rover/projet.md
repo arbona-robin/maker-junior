@@ -21,12 +21,12 @@ Deux rovers. Celui que chaque jeune fabrique, câble et programme seul pendant l
 - Être capable de réaliser une pièce conforme à un plan coté, en carton découpé comme en impression 3D
 - Être capable de câbler une carte d'extension et ses moteurs sans erreur de polarité, contrôle de traction validé
 - Être capable de programmer en MakeCode un déplacement commandé par radio, sans aide
-- Être capable de diagnostiquer une panne en isolant le code, le câblage et l'alimentation
+- Être capable, face à une panne, de vérifier dans l'ordre l'alimentation, le câblage puis le programme, avec la fiche Déboguer
 - Être capable de concevoir en équipe un rover répondant à un cahier des charges, et de justifier ses choix devant le groupe
 
 ## Description du projet
 
-Le parcours se déroule en deux temps. Pendant les cinq premières séances, chaque jeune construit seul un rover télécommandé complet : châssis en carton découpé sur plan, motorisation, électronique, programme et pilotage par radio avec un second micro:bit. Personne ne passe à la suite sans avoir fait rouler le sien. On remet ensuite aux jeunes un cahier des charges et ils se regroupent par deux ou trois pour concevoir un nouveau rover, conçu pour accomplir des missions précises, avec du carton et des pièces qu'ils modélisent et impriment en 3D. Ils apprennent la lecture de plan et les gestes de découpe, la modélisation et l'impression 3D, le câblage et la polarité, la programmation par blocs, la liaison radio, la commande d'un servomoteur, le dialogue avec la table selon un protocole imposé, une méthode de dépannage qui sépare le code du montage, le travail à plusieurs sur un objet commun, et la présentation de leur rover sur une page web. La démarche est celle de l'atelier : on fabrique dès la première séance, on teste, on corrige, on documente. De la séance 6 à la séance 11, l'animateur montre un concept ou un outil pendant quelques minutes en début de séance ; le reste appartient à l'équipe, qui s'organise pour l'appliquer au rover ou poursuivre sa conception. Le travail devient collectif à partir de la séance 6, au milieu de la phase 2. À chaque séance d'équipe, l'animateur passe le cahier des charges en revue avec chaque groupe. Le parcours se termine par le passage sur la table, la page web, puis les épreuves.
+Le parcours se déroule en deux temps. Pendant les cinq premières séances, chaque jeune construit seul un rover télécommandé complet : châssis en carton découpé sur plan, motorisation, électronique, programme et pilotage par radio avec un second micro:bit. Personne ne passe à la suite sans avoir fait rouler le sien. On remet ensuite aux jeunes un cahier des charges et ils se regroupent par deux ou trois pour concevoir un nouveau rover, conçu pour accomplir des missions précises, avec du carton et des pièces qu'ils modélisent et impriment en 3D. Ils apprennent la lecture de plan et les gestes de découpe, la modélisation et l'impression 3D, le câblage et la polarité, la programmation par blocs, la liaison radio, la commande d'un servomoteur, le dialogue avec la table selon un protocole imposé, une méthode de dépannage : l'alimentation, le câblage, puis le programme, le travail à plusieurs sur un objet commun, et la présentation de leur rover sur une page web. La démarche est celle de l'atelier : on câble et on programme dès la première séance, on fabrique dès la deuxième, puis on teste, on corrige, on documente. De la séance 6 à la séance 11, l'animateur montre un concept ou un outil pendant quelques minutes en début de séance ; le reste appartient à l'équipe, qui s'organise pour l'appliquer au rover ou poursuivre sa conception. Le travail devient collectif à partir de la 6e séance. À chaque séance d'équipe, l'animateur passe le cahier des charges en revue avec chaque groupe. Le parcours se termine par trois temps : le rover d'équipe piloté par une table équipée d'une caméra, une page web pour le présenter, puis les épreuves, une course chronométrée et un jeu de capture.
 
 ## Prérequis
 
@@ -38,7 +38,7 @@ Utile : avoir déjà manipulé un ordinateur, ou déjà ouvert un éditeur de co
 
 1 animateur numérique, maîtrisant MakeCode et le micro:bit.
 
-Un second adulte est utile à toutes les séances, vu le matériel en jeu (outils de découpe, imprimante, accus, table). Il est indispensable dès qu'on découpe : en S2, et à chaque séance de S5 à S11, puisque le carton y reste libre.
+Un second adulte est utile à toutes les séances, vu le matériel en jeu (outils de découpe, imprimante, accus, table). Il l'est surtout dès qu'on découpe : en S2, puis à chaque séance de S6 à S11, où les outils de découpe restent en libre accès.
 
 ## Matériel
 
@@ -49,6 +49,7 @@ Un second adulte est utile à toutes les séances, vu le matériel en jeu (outil
 - 1 kit châssis : 2 moteurs TT + roues, élastiques
 - Carton, papier quadrillé 5 × 5 mm réel
 - 1 boîtier d'accus NiMH
+- 1 boîtier 2 × AAA, pour la télécommande
 - 1 bac nominatif
 
 **Commun**
@@ -61,7 +62,7 @@ Un second adulte est utile à toutes les séances, vu le matériel en jeu (outil
 - Poste de démonstration : moteur et bloc d'accus, multimètre
 - Matériaux de récupération (bouchons, pots, pailles, chutes…), en bac commun
 - Plan incliné à 10°, échantillons imprimés (40 × 40 × 56 mm), AprilTag 36h11 imprimés et découpés (un par équipe, numéros 1 à 20)
-- Servomoteurs, deux au plus par équipe
+- Servomoteurs, deux par équipe
 - La [feuille d'équipe](../../docs/assets/rover-cahier-des-charges/feuille-equipe-rover.pdf), imprimée recto verso, une par équipe : vérifications, rôles, suivi d'impression et décisions s'y écrivent. Du papier brouillon à disposition pour le reste. Source : `outils/feuilles/feuille-equipe-rover.html`, à réimprimer avec `node outils/feuilles/imprimer.js` si le cahier des charges change
 - En phase 2, l'électronique des rovers individuels est remise en commun. Les rovers sont photographiés à la clôture de la S5, puis restent montés : chaque équipe y prend les pièces dont elle a besoin, dans la limite du cahier des charges.
 - La table et son pont radio (protocole A1), avec une Kinect ou une webcam
@@ -85,16 +86,20 @@ Pour 12 jeunes. Prix indicatifs TTC.
 | Poste                                                                                                                                                                                                                                                                                                                                                                  | Qté   | Prix unitaire | Total   | Statut     |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------- | ------- | ---------- |
 | **Électronique**                                                                                                                                                                                                                                                                                                                                                       |       |               |         |            |
-| micro:bit v2                                                                                                                                                                                                                                                                                                                                                           | 24    | 20 €          | 480 €   | Possédé    |
+| micro:bit v2 | 20 | 20 € | 400 € | Possédé |
+| micro:bit v2, pour compléter à 24 | 4 | 20 € | 80 € | À acheter |
 | Carte DFRobot DFR0548                                                                                                                                                                                                                                                                                                                                                  | 12    | 12 €          | 144 €   | Possédé    |
 | Moteur TT et sa roue                                                                                                                                                                                                                                                                                                                                                   | 24    | 4 €           | 96 €    | Possédé    |
 | Boîtier 4 × AA                                                                                                                                                                                                                                                                                                                                                         | 12    | 2 €           | 24 €    | Possédé    |
 | Accus NiMH AA                                                                                                                                                                                                                                                                                                                                                          | 48    | 3 €           | 144 €   | Possédé    |
+| Boîtier 2 × AAA, pour la télécommande | 20 | 2 € | 40 € | Possédé |
+| Accus NiMH AAA | 40 | 3 € | 120 € | Possédé |
 | Câble USB                                                                                                                                                                                                                                                                                                                                                              | 12    | 3 €           | 36 €    | Possédé    |
 | Servomoteur                                                                                                                                                                                                                                                                                                                                                            | 12    | 3 €           | 36 €    | Possédé    |
-| *Sous-total électronique*                                                                                                                                                                                                                                                                                                                                              |       |               | *960 €* |            |
+| *Sous-total électronique* | | | *1 120 €* | |
 | **Équipement commun**                                                                                                                                                                                                                                                                                                                                                  |       |               |         |            |
 | Chargeur d'accus                                                                                                                                                                                                                                                                                                                                                       | 1     | 35 €          | 35 €    | Possédé    |
+| Second chargeur d'accus | 1 | 35 € | 35 € | Proposé |
 | Multimètre                                                                                                                                                                                                                                                                                                                                                             | 1     | 20 €          | 20 €    | Possédé    |
 | Outil de découpe                                                                                                                                                                                                                                                                                                                                                       | 3     | 8 €           | 24 €    | Possédé    |
 | Règle métallique à rebord                                                                                                                                                                                                                                                                                                                                              | 3     | 10 €          | 30 €    | Possédé    |
@@ -107,36 +112,21 @@ Pour 12 jeunes. Prix indicatifs TTC.
 | Option B : découpe laser xTool S1 40 W classe 1, [pack tout-en-un](https://www.a4.fr/pack-tout-en-un-decoupeuse-graveuse-laser-40-w-xtool-s1-classe-1.html) avec extracteur de fumée (2 680 €) et [kit de sécurité incendie](https://www.a4.fr/kit-de-securite-incendie-pour-machines-xtool-s1-et-m1-ultra.html) avec détection de flamme et extinction au CO₂ (163 €) | 1     | 2 843 €       | 2 843 € | Proposé    |
 | **Par parcours**                                                                                                                                                                                                                                                                                                                                                       |       |               |         |            |
 | Consommables, forfait : élastiques, carton, papier quadrillé, ruban adhésif, colle, impression des tags et des plans, une bobine de filament                                                                                                                                                                                                                           | 1     | 100 €         | 100 €   | À racheter |
-| Casse : 15 % de l'électronique                                                                                                                                                                                                                                                                                                                                         | 1     | 144 €         | 144 €   | À racheter |
+| Casse : 15 % de l'électronique | 1 | 168 € | 168 € | À racheter |
 | Option A : tapis de coupe adhésifs, lame pour matériaux épais, carton gris en feuilles                                                                                                                                                                                                                                                                                 | 1     | 120 €         | 120 €   | À racheter |
 | Option B : filtres de l'extracteur de fumée                                                                                                                                                                                                                                                                                                                            | 1 jeu | 120 €         | 120 €   | À racheter |
 
-Un parcours coûte environ 364 €, soit 30 € par jeune : 100 € de consommables, 144 € de casse et 120 € de consommables propres à la machine de découpe. Le reste du matériel se réutilise d'un parcours à l'autre.
+Un parcours coûte environ 388 €, soit 32 € par jeune : 100 € de consommables, 168 € de casse et 120 € de consommables propres à la machine de découpe. Le reste du matériel se réutilise d'un parcours à l'autre.
 
-Le matériel déjà possédé vaut 1 105 €, sans compter l'imprimante 3D, les ordinateurs et la table. L'atelier a trois postes de découpe manuelle, pour limiter le nombre de lames utilisées en même temps.
+Le matériel déjà possédé vaut 1 185 €, sans compter l'imprimante 3D, les ordinateurs et la table. L'atelier a trois postes de découpe manuelle, pour limiter le nombre de lames utilisées en même temps.
 
-**Investissement proposé : une découpe laser, pour 2 843 € avec le kit incendie.** Une Cricut, à 500 €, serait une solution plus limitée.
-
-L'atelier dispose déjà d'une imprimante 3D, qui fabrique des pièces en volume. La découpe laser fabrique des pièces à plat (châssis, plaques, supports, gabarits) et elle grave. Avec l'électronique et la programmation déjà enseignées, l'atelier couvrirait toute la chaîne d'un fablab : concevoir à l'ordinateur, fabriquer, assembler, programmer.
-
-Dans le parcours Rover, le châssis serait dessiné puis découpé par la machine, comme les pièces imprimées en S6. Le temps passé au cutter irait à la conception, et les jeunes manipuleraient moins de lames. La machine proposée est de classe 1 : elle est fermée, elle filtre les fumées, et le kit incendie détecte les flammes et les éteint automatiquement.
-
-Elle servirait aussi aux autres ateliers créatifs de La Plateforme, pour des maquettes, de la signalétique ou des objets en bois gravés que les jeunes emportent.
-
-À l'usage, les deux machines coûtent la même chose, 120 € de consommables par parcours. La découpe laser utilise en plus le carton de récupération, et elle est la seule des deux à travailler le bois et à graver.
-
-|                   | Option A : Cricut                                  | Option B : découpe laser                                                                         |
-| ----------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Carton            | Carton gris en feuilles, acheté au format du tapis | Tout carton plat, récupération comprise                                                          |
-| Bois              | Non                                                | Découpe et gravure                                                                               |
-| Sécurité          | Lame dans la machine, pas de fumée                 | Fumées et risque d'inflammation du carton : filtration et kit incendie, surveillance d'un adulte |
-| Coût par parcours | Tapis, lame et carton gris à racheter              | Filtres à remplacer                                                                              |
+**Investissement proposé : une découpe laser, 2 843 € avec le kit incendie.** L'imprimante 3D fabrique des pièces en volume ; la découpe laser fabrique les pièces à plat (châssis, plaques, supports) et elle grave. Dans le parcours Rover, le châssis serait dessiné puis découpé par la machine : le temps passé au cutter irait à la conception, avec moins de lames en main. La machine est de classe 1 : fermée, fumées filtrées, flammes détectées et éteintes automatiquement. Elle servirait aussi aux autres ateliers maker et créatifs de La Plateforme. Une Cricut, à 500 €, coûterait autant à l'usage (120 € par parcours), mais ne coupe que du carton gris acheté en feuilles, ni bois ni gravure.
 
 ## Séance 1 — Phase 1 — Découverte & prise en main
 
 **Titre :** Fais tourner tes moteurs
 
-**Notions :** câblage et polarité · chaîne de programmation · notion d'extension et de bibliothèque · commande de moteur · séparer une panne de code d'une panne de montage
+**Notions :** câblage et polarité · chaîne de programmation · notion d'extension et de bibliothèque · commande de moteur · une icône au démarrage pour savoir si le programme tourne
 
 **Livrable intermédiaire :** électronique câblée et validée, programme faisant tourner les deux moteurs, moteur `M1` marqué
 

@@ -111,7 +111,7 @@ radio.onReceivedString(function (receivedString) {
 
 ### Pilote
 
-Téléverse les deux programmes, débranche l'USB, passe sur accus.
+Téléverse les deux programmes, débranche l'USB, passe sur accus. On pilote sur la table de robotique, nulle part ailleurs.
 
 > [!TIP] Le contrôle en un coup d'œil
 > Penche ta télécommande et regarde **les deux écrans**.
@@ -135,9 +135,11 @@ Ton rover roule ? Aide un camarade, sans prendre son clavier.
 
 Pose ton rover sur la pente, puis fais-lui pousser l'échantillon. Réussit-il les deux ?
 
+Pour saisir ou soulever l'échantillon, il existe un moteur qui va à un angle et s'y tient : le **servomoteur**. L'animateur te le montre ; tu apprendras à le programmer en séance 7.
+
 ## 3. Formez votre équipe
 
-L'animateur annonce les équipes et donne à chacune son numéro : c'est à la fois l'id de votre tag, votre bande à la télécommande et votre groupe sur la table. Écrivez-le sur votre [feuille d'équipe](../../../assets/rover-cahier-des-charges/feuille-equipe-rover.pdf), avec vos noms.
+Formez votre équipe, à deux ou trois. L'animateur donne à chacune son numéro : c'est à la fois l'id de votre tag, votre bande à la télécommande et votre groupe sur la table. Écrivez-le sur votre [feuille d'équipe](../../../assets/rover-cahier-des-charges/feuille-equipe-rover.pdf), avec vos noms.
 
 ## Va plus loin
 

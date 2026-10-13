@@ -1,6 +1,6 @@
 # Rouler droit et tourner
 
-Un rover à deux roues motrices n'a pas de volant. Tous ses mouvements (avancer, tourner, pivoter) viennent d'une seule chose : **la différence de vitesse entre ses deux roues**.
+Un rover à deux roues motrices n'a pas de roues orientables. Tous ses mouvements (avancer, tourner, pivoter) viennent d'une seule chose : **la différence de vitesse entre ses deux roues**.
 
 ## Les façons de tourner
 
@@ -18,7 +18,7 @@ Un rover à deux roues motrices n'a pas de volant. Tous ses mouvements (avancer,
 > [!IMPORTANT] La convention du parcours
 > On tourne toujours de la même façon : **une roue à l'arrêt, l'autre en marche**. C'est ce que font `tournerAGauche` et `tournerADroite`, de la séance 3 jusqu'aux missions.
 >
-> La raison est le pilotage. Le rover tourne **en avançant**, donc tu corriges ta trajectoire vers ce que tu veux atteindre sans t'arrêter. C'est le plus proche d'un volant qu'un rover à deux roues puisse faire. Le pivot sur place, lui, demande trois gestes : s'arrêter, tourner, repartir.
+> La raison est le pilotage. Le rover tourne **en avançant**, donc tu corriges ta trajectoire vers ce que tu veux atteindre sans t'arrêter. Le pivot sur place, lui, demande trois gestes : s'arrêter, tourner, repartir.
 
 ## Ton rover ne roule pas droit
 

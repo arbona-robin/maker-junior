@@ -96,7 +96,7 @@ pas forcément à parts égales. Supprimer cette section si la séance n'en comp
 
 ## Points de vigilance
 
-*Sécurité, matériel destructible, moments de tension, valeurs qui doivent rester alignées avec le livre.*
+*Sécurité, matériel destructible, moments de tension.*
 
 ## Bilan après séance
 

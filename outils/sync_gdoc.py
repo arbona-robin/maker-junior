@@ -3,10 +3,16 @@
     .venv/bin/python outils/sync_gdoc.py diff rover [s01]   # compare, lecture seule
     .venv/bin/python outils/sync_gdoc.py push rover [s01]   # écrit le dépôt dans le Doc
     .venv/bin/python outils/sync_gdoc.py copie rover        # copie de test, privée
+    .venv/bin/python outils/sync_gdoc.py repondre rover ID "texte" [--resoudre]
 
 Option --doc ID : travailler sur un autre Doc que celui de animation/export.yml
 (une copie de test, par exemple). Option --force : pousser même si le Doc a été
 modifié depuis le dernier push.
+
+À chaque push, le texte du Doc tel qu'il vient d'être écrit est gardé dans
+animation/.gdoc/<projet>.json. diff s'en sert pour montrer ce qui a été modifié
+dans le Doc depuis (et que le prochain push effacerait), et push refuse d'écraser
+ces modifications sans --force.
 
 Le Doc contient une fiche par tableau à deux colonnes : le titre de section à
 gauche, le contenu à droite, une ligne par section `##` de la fiche du dépôt.
@@ -40,7 +46,7 @@ IMAGES = {}  # id d'objet du Doc → URL source, tenu à jour à chaque lecture
 CONFIG = Path.home() / ".config" / "maker-junior"
 SCOPES = [
     "https://www.googleapis.com/auth/documents",
-    "https://www.googleapis.com/auth/drive.readonly",
+    "https://www.googleapis.com/auth/drive",  # répondre aux commentaires et les résoudre
     "https://www.googleapis.com/auth/drive.file",
 ]
 VARIABLE = re.compile(r"^Activité \d+$|^Séance \d+ — ")
@@ -59,7 +65,8 @@ def connexion():
         creds.refresh(Request())
     elif not creds or not creds.valid:
         flow = InstalledAppFlow.from_client_secrets_file(str(CONFIG / "credentials.json"), SCOPES)
-        creds = flow.run_local_server(port=0)
+        # Le lien s'affiche au lieu de s'ouvrir : on choisit soi-même la session du navigateur.
+        creds = flow.run_local_server(port=0, open_browser=False)
     jeton.write_text(creds.to_json())
     jeton.chmod(0o600)
     return build("docs", "v1", credentials=creds), build("drive", "v3", credentials=creds)
@@ -323,7 +330,7 @@ def commentaires(drive, doc_id):
     while True:
         r = drive.comments().list(
             fileId=doc_id, pageToken=page, includeDeleted=False,
-            fields="nextPageToken,comments(content,resolved,author/displayName,quotedFileContent/value,replies(content,author/displayName))",
+            fields="nextPageToken,comments(id,content,resolved,author/displayName,quotedFileContent/value,replies(content,author/displayName))",
         ).execute()
         sortie += [c for c in r.get("comments", []) if not c.get("resolved")]
         page = r.get("nextPageToken")
@@ -331,11 +338,71 @@ def commentaires(drive, doc_id):
             return sortie
 
 
+# --- Ce qui a changé dans le Doc depuis le dernier push ----------------------
+
+def contenu_du_doc(doc):
+    """{fiche: [[titre, lignes], …]} : le texte de chaque tableau, rang par rang."""
+    return {nom: [["\n".join(lignes_cellule(r["tableCells"][0])), lignes_cellule(r["tableCells"][1])]
+                  for r in rangs(el)[1:]]
+            for nom, el in tables_du_doc(doc).items()}
+
+
+def instantane(projet, doc=None, seulement=None):
+    """Lit, ou écrit si `doc` est donné, le texte du Doc au dernier push.
+    Avec `seulement`, seule cette fiche est remplacée dans l'instantané."""
+    fichier = ANIMATION / ".gdoc" / f"{projet}.json"
+    ancien = json.loads(fichier.read_text()) if fichier.exists() else None
+    if doc is None:
+        return ancien
+    fiches = contenu_du_doc(doc)
+    if seulement and ancien:
+        ancien["fiches"][seulement] = fiches[seulement]
+        fiches = ancien["fiches"]
+    fichier.parent.mkdir(exist_ok=True)
+    fichier.write_text(json.dumps({"revision": doc["revisionId"], "fiches": fiches},
+                                  ensure_ascii=False, indent=1))
+
+
+def modifie_dans_le_doc(doc, projet, filtre):
+    """Les lignes modifiées dans le Doc depuis le dernier push, fiche par fiche."""
+    avant = instantane(projet)
+    if avant is None:
+        return None
+    maintenant, rapport = contenu_du_doc(doc), []
+    for nom in sorted(set(avant["fiches"]) | set(maintenant)):
+        if filtre and nom != filtre:
+            continue
+        a = {cle(t): (t, c) for t, c in avant["fiches"].get(nom, [])}
+        m = {cle(t): (t, c) for t, c in maintenant.get(nom, [])}
+        lignes = []
+        for k in list(a) + [k for k in m if k not in a]:
+            if k not in m or k not in a:
+                lignes.append(f"  {k} : {'supprimée' if k not in m else 'ajoutée'} dans le Doc")
+                continue
+            ua, um = unites(a[k][1]), unites(m[k][1])
+            if ua != um or a[k][0] != m[k][0]:
+                lignes.append(f"  {k}")
+                lignes += [f"    {'avant' if l[0] == '-' else 'Doc  '} {l[2:]}"
+                           for l in difflib.ndiff(ua, um) if l[0] in "-+"]
+        if lignes:
+            rapport += [f"{nom} :"] + lignes
+    return rapport
+
+
 def diff(docs, drive, doc_id, projet, filtre):
     doc = docs.documents().get(documentId=doc_id, includeTabsContent=True).execute()
     memoriser_images(doc)
     tables = tables_du_doc(doc)
     print(f"{doc['title']} · révision {doc['revisionId'][:12]}\n")
+    modifs = modifie_dans_le_doc(doc, projet, filtre)
+    if modifs is None:
+        print("Modifié dans le Doc depuis le dernier push : inconnu (pas encore d'instantané)\n")
+    elif modifs:
+        print("Modifié dans le Doc depuis le dernier push (le prochain push l'effacerait) :")
+        print("\n".join(modifs) + "\n")
+    else:
+        print("Modifié dans le Doc depuis le dernier push : rien\n")
+    print("Différences entre le Doc et le dépôt (ce que le push écrirait) :\n")
     for nom in noms_fiches(projet):
         if filtre and nom != filtre:
             continue
@@ -351,7 +418,7 @@ def diff(docs, drive, doc_id, projet, filtre):
     print(f"Commentaires ouverts : {len(ouverts)}")
     for c in ouverts:
         cite = c.get("quotedFileContent", {}).get("value", "")
-        print(f"  {c['author']['displayName']} sur « {cite[:60]} » : {c['content']}")
+        print(f"  [{c['id']}] {c['author']['displayName']} sur « {cite[:60]} » : {c['content']}")
         for rep in c.get("replies", []):
             print(f"      ↳ {rep['author']['displayName']} : {rep['content']}")
 
@@ -544,6 +611,23 @@ def tables_imbriquees(contenu, profondeur=0):
                     yield from tables_imbriquees(c["content"], profondeur + 1)
 
 
+def sauts_de_page(doc):
+    """Un saut de page avant chaque tableau, sauf le premier : une fiche par page."""
+    contenu, requetes, precedent = corps(doc.doc), [], None
+    for i, el in enumerate(contenu):
+        if "table" not in el:
+            continue
+        if precedent is not None:
+            entre = [e["paragraph"] for e in contenu[precedent + 1:i] if "paragraph" in e]
+            deja = any("pageBreak" in r for p in entre for r in p["elements"])
+            if entre and not deja:
+                requetes.append({"insertPageBreak": {"location": {"index": contenu[i - 1]["startIndex"]}}})
+        precedent = i
+    if requetes:
+        doc.ecrire(list(reversed(requetes)))  # de la fin vers le début : les index restent justes
+    return len(requetes)
+
+
 def etat(doc_id, revision=None):
     fichier = CONFIG / "revisions.json"
     revisions = json.loads(fichier.read_text()) if fichier.exists() else {}
@@ -555,10 +639,14 @@ def etat(doc_id, revision=None):
 
 def push(docs, doc_id, projet, filtre, force):
     doc = Doc(docs, doc_id)
+    modifs = modifie_dans_le_doc(doc.doc, projet, filtre)
+    if modifs and not force:
+        sys.exit("Modifié dans le Doc depuis le dernier push :\n" + "\n".join(modifs) +
+                 "\n\nReporter dans le dépôt ce qui doit l'être, puis push --force.")
     connue = etat(doc_id)
-    if connue and connue != doc.doc["revisionId"] and not force:
-        sys.exit("Le Doc a été modifié depuis le dernier push. Lancer diff, reporter dans le dépôt "
-                 "ce qui doit l'être, puis push --force.")
+    if modifs is None and connue and connue != doc.doc["revisionId"] and not force:
+        sys.exit("Le Doc a été modifié depuis le dernier push, et aucun instantané ne dit quoi. "
+                 "Lancer diff, reporter dans le dépôt ce qui doit l'être, puis push --force.")
 
     marqueurs, bilan = {}, []
     if not filtre:
@@ -607,12 +695,30 @@ def push(docs, doc_id, projet, filtre, force):
         bilan.append(f"{nom} : {'créée, ' if cree else ''}{modifies} section(s) écrite(s)")
 
     poser(doc, marqueurs)
+    doc.relire()
+    if not filtre and (n := sauts_de_page(doc)):
+        bilan.append(f"{n} saut(s) de page ajouté(s)")
+        doc.relire()
     etat(doc_id, doc.doc["revisionId"])
+    if doc_id == yaml.safe_load((ANIMATION / "export.yml").read_text())[projet]["doc"]:
+        instantane(projet, doc.doc, seulement=filtre)
     print("\n".join(bilan))
+
+
+def repondre(drive, doc_id, commentaire, texte, resoudre):
+    """Répond à un commentaire du Doc, et le marque comme résolu si demandé."""
+    corps_reponse = {"content": texte}
+    if resoudre:
+        corps_reponse["action"] = "resolve"
+    drive.replies().create(fileId=doc_id, commentId=commentaire, body=corps_reponse, fields="id").execute()
+    print(f"{commentaire} : réponse ajoutée{', commentaire résolu' if resoudre else ''}")
 
 
 if __name__ == "__main__":
     args, autre_doc, force = sys.argv[1:], None, False
+    resoudre = "--resoudre" in args
+    if resoudre:
+        args.remove("--resoudre")
     if "--force" in args:
         args.remove("--force")
         force = True
@@ -620,15 +726,19 @@ if __name__ == "__main__":
         i = args.index("--doc")
         autre_doc = args[i + 1]
         del args[i:i + 2]
-    if len(args) < 2 or args[0] not in ("diff", "push", "copie"):
+    if len(args) < 2 or args[0] not in ("diff", "push", "copie", "repondre"):
         sys.exit(__doc__)
     commande, projet = args[0], args[1]
-    filtre = args[2] if len(args) > 2 else None
+    filtre = args[2] if len(args) > 2 and commande != "repondre" else None
     doc_id = autre_doc or yaml.safe_load((ANIMATION / "export.yml").read_text())[projet]["doc"]
     docs, drive = connexion()
     if commande == "copie":
         copie = drive.files().copy(fileId=doc_id, body={"name": "TEST sync, à supprimer"}).execute()
         print(copie["id"])
+    elif commande == "repondre":
+        if len(args) < 4:
+            sys.exit(__doc__)
+        repondre(drive, doc_id, args[2], args[3], resoudre)
     elif commande == "diff":
         diff(docs, drive, doc_id, projet, filtre)
     else:

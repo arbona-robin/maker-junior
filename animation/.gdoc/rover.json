@@ -1,0 +1,1998 @@
+{
+ "revision": "AHj4eMQ2GImaXFHkONUPDC3oERLdNP8wOU8QHZ6CryAxNFu6sq_gaTLa0_HSI3QmayutLll52bFpWU11uMbK6_sFV8M0u8sf0mHgTUlDxik",
+ "fiches": {
+  "communication": [
+   [
+    "Titre",
+    [
+     "Fabrique et pilote ton rover d'exploration"
+    ]
+   ],
+   [
+    "Accroche",
+    [
+     "Un rover, ça ne s'achète pas : ça se fabrique, ça se câble, ça se programme. Tu fabriques le tien, de la première pièce au programme qui le fait rouler. Puis le vrai défi commence : en équipe, avec des missions à réussir."
+    ]
+   ],
+   [
+    "Description",
+    [
+     "Pendant ce parcours, tu construis un rover télécommandé de A à Z : le châssis en carton, les moteurs, l'électronique et le programme qui le fait avancer. Quand chacun maîtrise le sien, vous vous mettez à deux ou trois pour en concevoir un nouveau, conçu pour des missions précises. Cette fois, les pièces que le carton ne sait pas faire, vous les dessinez à l'ordinateur et vous les imprimez en 3D. Tu apprends à lire un plan et à découper proprement, à modéliser et imprimer une pièce, à câbler sans griller ta carte, à programmer en blocs avec MakeCode, à piloter par radio, et à trouver une panne au lieu de tout recommencer au hasard. Tu apprends aussi à construire à plusieurs sur un même objet, et à défendre tes idées. À la fin, ton équipe met son rover à l'épreuve des missions."
+    ]
+   ],
+   [
+    "Durée",
+    [
+     "1 h 45"
+    ]
+   ],
+   [
+    "Séances",
+    [
+     "12 séances"
+    ]
+   ],
+   [
+    "Âge",
+    [
+     "11–17 ans"
+    ]
+   ],
+   [
+    "Places",
+    [
+     "12 max."
+    ]
+   ],
+   [
+    "Lieu",
+    [
+     "La Plateforme"
+    ]
+   ],
+   [
+    "Visuels (légendes)",
+    [
+     "1. Un rover terminé, de trois quarts, posé au sol : on voit le carton, les roues et la carte électronique.",
+     "[image https://maker.arbona.dev/assets/rover-s01/13-rover-termine.jpg]",
+     "2. Des mains qui découpent le carton à la règle métallique à rebord, sur le tapis de découpe.",
+     "[image https://maker.arbona.dev/assets/rover-s01/02-decoupe-regle-a-rebord.jpg]",
+     "3. L'écran de MakeCode avec un programme en blocs colorés.",
+     "[image https://maker.arbona.dev/assets/rover-s01/27-programme-moteurs.png]",
+     "4. Une équipe de trois autour de son rover, en plein réglage avant une mission. (à produire en phase 2)"
+    ]
+   ]
+  ],
+  "projet": [
+   [
+    "Titre du projet",
+    [
+     "Rover d'exploration"
+    ]
+   ],
+   [
+    "Objectif général",
+    [
+     "Concevoir, fabriquer et piloter un rover télécommandé, du châssis en carton à la programmation radio, puis relever en équipe une série de missions définies par un cahier des charges."
+    ]
+   ],
+   [
+    "Livrable du parcours",
+    [
+     "Deux rovers. Celui que chaque jeune fabrique, câble et programme seul pendant les cinq premières séances. Puis celui que son équipe de deux ou trois conçoit à partir d'un cahier des charges, vérifié avec l'animateur au fil des séances, puis engagé dans les épreuves. Chaque équipe présente son rover sur une page web publiée : c'est ce que chaque jeune garde du projet."
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de réaliser une pièce conforme à un plan coté, en carton découpé comme en impression 3D",
+     "• Être capable de câbler une carte d'extension et ses moteurs sans erreur de polarité, contrôle de traction validé",
+     "• Être capable de programmer en MakeCode un déplacement commandé par radio, sans aide",
+     "• Être capable, face à une panne, de vérifier dans l'ordre l'alimentation, le câblage puis le programme, avec la fiche Déboguer",
+     "• Être capable de concevoir en équipe un rover répondant à un cahier des charges, et de justifier ses choix devant le groupe"
+    ]
+   ],
+   [
+    "Description du projet",
+    [
+     "Le parcours se déroule en deux temps. Pendant les cinq premières séances, chaque jeune construit seul un rover télécommandé complet : châssis en carton découpé sur plan, motorisation, électronique, programme et pilotage par radio avec un second micro:bit. Personne ne passe à la suite sans avoir fait rouler le sien. On remet ensuite aux jeunes un cahier des charges et ils se regroupent par deux ou trois pour concevoir un nouveau rover, conçu pour accomplir des missions précises, avec du carton et des pièces qu'ils modélisent et impriment en 3D. Ils apprennent la lecture de plan et les gestes de découpe, la modélisation et l'impression 3D, le câblage et la polarité, la programmation par blocs, la liaison radio, la commande d'un servomoteur, le dialogue avec la table selon un protocole imposé, une méthode de dépannage : l'alimentation, le câblage, puis le programme, le travail à plusieurs sur un objet commun, et la présentation de leur rover sur une page web. La démarche est celle de l'atelier : on câble et on programme dès la première séance, on fabrique dès la deuxième, puis on teste, on corrige, on documente. De la séance 6 à la séance 11, l'animateur montre un concept ou un outil pendant quelques minutes en début de séance ; le reste appartient à l'équipe, qui s'organise pour l'appliquer au rover ou poursuivre sa conception. Le travail devient collectif à partir de la 6e séance. À chaque séance d'équipe, l'animateur passe le cahier des charges en revue avec chaque groupe. Le parcours se termine par trois temps : le rover d'équipe piloté par une table équipée d'une caméra, une page web pour le présenter, puis les épreuves, une course chronométrée et un jeu de capture."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Indispensable : aucun. Le parcours est conçu pour des débutants complets, en fabrication comme en programmation.",
+     "Utile : avoir déjà manipulé un ordinateur, ou déjà ouvert un éditeur de code par blocs (Scratch, MakeCode)."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur numérique, maîtrisant MakeCode et le micro:bit.",
+     "Un second adulte est utile à toutes les séances, vu le matériel en jeu (outils de découpe, imprimante, accus, table). Il l'est surtout dès qu'on découpe : en S2, puis à chaque séance de S6 à S11, où les outils de découpe restent en libre accès."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• 2 micro:bit v2 (un embarqué, un en télécommande)",
+     "• 1 carte d'extension DFRobot DFR0548",
+     "• 1 kit châssis : 2 moteurs TT + roues, élastiques",
+     "• Carton, papier quadrillé 5 × 5 mm réel",
+     "• 1 boîtier d'accus NiMH",
+     "• 1 boîtier 2 × AAA, pour la télécommande",
+     "• 1 bac nominatif",
+     "Commun",
+     "• Trois postes de découpe, chacun avec un outil de découpe (scalpel), une règle métallique à rebord et un tapis de découpe, et des crayons",
+     "• Ruban adhésif",
+     "• Imprimante 3D et filament",
+     "• Un chargeur d'accus",
+     "• Boîtes en carton de test, une par poste au minimum",
+     "• Poste de démonstration : moteur et bloc d'accus, multimètre",
+     "• Matériaux de récupération (bouchons, pots, pailles, chutes…), en bac commun",
+     "• Plan incliné à 10°, échantillons imprimés (40 × 40 × 56 mm), AprilTag 36h11 imprimés et découpés (un par équipe, numéros 1 à 20)",
+     "• Servomoteurs, deux par équipe",
+     "• La feuille d'équipe, imprimée recto verso, une par équipe : vérifications, rôles, suivi d'impression et décisions s'y écrivent. Du papier brouillon à disposition pour le reste. Source : outils/feuilles/feuille-equipe-rover.html, à réimprimer avec node outils/feuilles/imprimer.js si le cahier des charges change",
+     "• En phase 2, l'électronique des rovers individuels est remise en commun. Les rovers sont photographiés à la clôture de la S5, puis restent montés : chaque équipe y prend les pièces dont elle a besoin, dans la limite du cahier des charges.",
+     "• La table et son pont radio (protocole A1), avec une Kinect ou une webcam"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode (makecode.microbit.org), gratuit et sans inscription, avec l'extension DF-Driver à ajouter par URL",
+     "• Tinkercad en mode classe (comptes créés par l'animateur, sans adresse personnelle des jeunes)",
+     "• Slicer de l'imprimante sur le poste de l'animateur",
+     "• Kiri:Moto (grid.space/kiri), slicer dans le navigateur, sans compte : les jeunes y estiment la durée de leurs pièces",
+     "• 1 ordinateur par jeune",
+     "• Le livre en ligne, ouvert en écran partagé pendant l'atelier",
+     "• Plans de découpe imprimés (docs/assets/plans/)",
+     "• Gabarit de la page web de présentation (S11), commun à tous les parcours : docs/assets/gabarit-page.zip",
+     "• Les tags des rovers, 1 à 20, un par page : docs/assets/tags/tags-rover-01-20.pdf : carré noir de 90 mm, marge blanche de 11,2 mm, cadre de découpe, à imprimer à 100 %"
+    ]
+   ],
+   [
+    "Budget",
+    [
+     "Pour 12 jeunes. Prix indicatifs TTC.",
+     "Poste | Qté | Prix unitaire | Total | Statut",
+     "Électronique |  |  |  | ",
+     "micro:bit v2 | 20 | 20 € | 400 € | Possédé",
+     "micro:bit v2, pour compléter à 24 | 4 | 20 € | 80 € | À acheter",
+     "Carte DFRobot DFR0548 | 12 | 12 € | 144 € | Possédé",
+     "Moteur TT et sa roue | 24 | 4 € | 96 € | Possédé",
+     "Boîtier 4 × AA | 12 | 2 € | 24 € | Possédé",
+     "Accus NiMH AA | 48 | 3 € | 144 € | Possédé",
+     "Boîtier 2 × AAA, pour la télécommande | 20 | 2 € | 40 € | Possédé",
+     "Accus NiMH AAA | 40 | 3 € | 120 € | Possédé",
+     "Câble USB | 12 | 3 € | 36 € | Possédé",
+     "Servomoteur | 12 | 3 € | 36 € | Possédé",
+     "Sous-total électronique |  |  | 1 120 € | ",
+     "Équipement commun |  |  |  | ",
+     "Chargeur d'accus | 1 | 35 € | 35 € | Possédé",
+     "Second chargeur d'accus | 1 | 35 € | 35 € | Proposé",
+     "Multimètre | 1 | 20 € | 20 € | Possédé",
+     "Outil de découpe | 3 | 8 € | 24 € | Possédé",
+     "Règle métallique à rebord | 3 | 10 € | 30 € | Possédé",
+     "Tapis de découpe A3 | 3 | 12 € | 36 € | Possédé",
+     "Imprimante 3D | 1 |  |  | Possédé",
+     "Ordinateurs | 12 |  |  | Possédé",
+     "La table, son pont radio et sa caméra | 1 |  |  | Possédé",
+     "Découpe numérique (investissement proposé, une des deux) |  |  |  | ",
+     "Option A : Cricut Maker 5 | 1 | 500 € | 500 € | Proposé",
+     "Option B : découpe laser xTool S1 40 W classe 1, pack tout-en-un avec extracteur de fumée (2 680 €) et kit de sécurité incendie avec détection de flamme et extinction au CO₂ (163 €) | 1 | 2 843 € | 2 843 € | Proposé",
+     "Par parcours |  |  |  | ",
+     "Consommables, forfait : élastiques, carton, papier quadrillé, ruban adhésif, colle, impression des tags et des plans, une bobine de filament | 1 | 100 € | 100 € | À racheter",
+     "Casse : 15 % de l'électronique | 1 | 168 € | 168 € | À racheter",
+     "Option A : tapis de coupe adhésifs, lame pour matériaux épais, carton gris en feuilles | 1 | 120 € | 120 € | À racheter",
+     "Option B : filtres de l'extracteur de fumée | 1 jeu | 120 € | 120 € | À racheter",
+     "Un parcours coûte environ 388 €, soit 32 € par jeune : 100 € de consommables, 168 € de casse et 120 € de consommables propres à la machine de découpe. Le reste du matériel se réutilise d'un parcours à l'autre.",
+     "Le matériel déjà possédé vaut 1 185 €, sans compter l'imprimante 3D, les ordinateurs et la table. L'atelier a trois postes de découpe manuelle, pour limiter le nombre de lames utilisées en même temps.",
+     "Investissement proposé : une découpe laser, 2 843 € avec le kit incendie. L'imprimante 3D fabrique des pièces en volume ; la découpe laser fabrique les pièces à plat (châssis, plaques, supports) et elle grave. Dans le parcours Rover, le châssis serait dessiné puis découpé par la machine : le temps passé au cutter irait à la conception, avec moins de lames en main. La machine est de classe 1 : fermée, fumées filtrées, flammes détectées et éteintes automatiquement. Elle servirait aussi aux autres ateliers maker et créatifs de La Plateforme. Une Cricut, à 500 €, coûterait autant à l'usage (120 € par parcours), mais ne coupe que du carton gris acheté en feuilles, ni bois ni gravure."
+    ]
+   ],
+   [
+    "Séance 1 — Phase 1 — Découverte & prise en main",
+    [
+     "Titre : Fais tourner tes moteurs",
+     "Notions : câblage et polarité · chaîne de programmation · notion d'extension et de bibliothèque · commande de moteur · une icône au démarrage pour savoir si le programme tourne",
+     "Livrable intermédiaire : électronique câblée et validée, programme faisant tourner les deux moteurs, moteur M1 marqué"
+    ]
+   ],
+   [
+    "Séance 2 — Phase 1 — Découverte & prise en main",
+    [
+     "Titre : Fabrique ton rover et fais-le rouler droit",
+     "Notions : lecture de plan coté et traçage · rainage, pliage et découpe du carton · réglage du sens de rotation · fonction et réutilisation du code · diagnostic mécanique avant correction logicielle · vitesse minimale de démarrage · dérive et compensation · reproductibilité d'une mesure",
+     "Livrable intermédiaire : rover monté qui roule droit sur 1,50 m, fonction avancer"
+    ]
+   ],
+   [
+    "Séance 3 — Phase 1 — Découverte & prise en main",
+    [
+     "Titre : Ta plaque, et les mouvements de ton rover",
+     "Notions : modélisation 3D et contrainte de conception · impression additive, couches, slicer · direction différentielle · programme de vérification : tout appeler, dans un ordre connu",
+     "Livrable intermédiaire : plaque personnelle exportée en .STL, cinq fonctions de mouvement appelées par un programme de vérification. Le défi du retour au garage est en « va plus loin »."
+    ]
+   ],
+   [
+    "Séance 4 — Phase 2 — Exploration & création",
+    [
+     "Titre : Fabrique ta télécommande",
+     "Notions : capteur embarqué et mesure brute (axes x et y) · seuil de décision · si / sinon si / sinon · liaison radio entre deux micro:bit · bande de fréquence comme canal · protocole : canal partagé et vocabulaire partagé · message d'un mot",
+     "Livrable intermédiaire : télécommande qui lit l'inclinaison et envoie les cinq mots du protocole, plaque montée"
+    ]
+   ],
+   [
+    "Séance 5 — Phase 2 — Exploration & création",
+    [
+     "Titre : Pilote ton rover, formez votre équipe",
+     "Notions : comparaison de textes · gestionnaire d'événement quand une donnée est reçue par radio · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S3 · lecture d'un cahier des charges · distinction entre caractéristique vérifiée et épreuve courue · composition d'une équipe",
+     "Livrable intermédiaire : rover individuel piloté par radio, équipes de 2 ou 3 constituées avec leur numéro, cahier des charges lu. Fin du temps individuel."
+    ]
+   ],
+   [
+    "Séance 6 — Phase 2 — Exploration & création",
+    [
+     "Titre : Concevez votre rover",
+     "Notions : esquisse : révolution, extrusion, esquisse libre · contrainte de conception · croquis de solution · répartition des rôles · choix du procédé : carton, impression, récupération · pièces partagées, auteur cité · durée d'impression estimée dans Kiri:Moto · budget d'impression",
+     "Livrable intermédiaire : croquis d'équipe, rôles répartis, châssis carton commencé avec son support de tag, premières pièces 3D dessinées et notées dans le suivi d'impression"
+    ]
+   ],
+   [
+    "Séance 7 — Phase 2 — Exploration & création",
+    [
+     "Titre : Le servomoteur",
+     "Notions : servomoteur : un angle, pas une vitesse · branchement sur les broches S7 et S8 de la DFR0548 · commande d'un actionneur par bouton, puis depuis la télécommande",
+     "Livrable intermédiaire : deux servomoteurs commandés par le programme, montés sur le rover si l'équipe en a l'usage"
+    ]
+   ],
+   [
+    "Séance 8 — Phase 2 — Exploration & création",
+    [
+     "Titre : Pilotez votre rover en vitesse",
+     "Notions : message clé-valeur, clé de 8 caractères au plus · vitesse tirée de l'inclinaison · premières variables · la valeur reçue devient une vitesse",
+     "Livrable intermédiaire : télécommande qui envoie chaque mot avec une vitesse, rover qui la prend"
+    ]
+   ],
+   [
+    "Séance 9 — Phase 2 — Exploration & création",
+    [
+     "Titre : Le dispositif de l'homme mort",
+     "Notions : dispositif de l'homme mort · le gestionnaire radio range, la boucle exécute · horloge de la carte · arrêt après une seconde sans message",
+     "Livrable intermédiaire : rover qui s'arrête seul quand la télécommande s'éteint"
+    ]
+   ],
+   [
+    "Séance 10 — Phase 3 — Finalisation & valorisation",
+    [
+     "Titre : Votre rover sur la table",
+     "Notions : bande et groupe : un émetteur qui parle à tous · changement de mode et son témoin à l'écran · protocole imposé A1",
+     "Livrable intermédiaire : rover qui passe de la télécommande à la table, vérifié sur la table"
+    ]
+   ],
+   [
+    "Séance 11 — Phase 3 — Finalisation & valorisation",
+    [
+     "Titre : Présentez votre rover sur une page web",
+     "Notions : page web à partir d'un gabarit HTML · balise, titre, paragraphe, image · variable CSS · justifier un choix de conception",
+     "Livrable intermédiaire : page de présentation du rover remplie, avec trois choix de conception justifiés"
+    ]
+   ],
+   [
+    "Séance 12 — Phase 3 — Finalisation & valorisation",
+    [
+     "Titre : Vos rovers en épreuve",
+     "Notions : démonstration · bilan de projet",
+     "Livrable intermédiaire : épreuves courues, bilan collectif"
+    ]
+   ]
+  ],
+  "s01": [
+   [
+    "Séance 1",
+    [
+     "Fais tourner tes moteurs"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de câbler la carte d'extension, les deux moteurs et le pack d'accus sans erreur de polarité, validé au point de contrôle",
+     "• Être capable d'écrire et de téléverser un programme commandant la rotation des deux moteurs",
+     "• Être capable d'expliquer le rôle de la carte d'extension"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Câblage et polarité · chaîne de programmation · notion d'extension et de bibliothèque · commande de moteur · une icône au démarrage pour savoir si le programme tourne."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Électronique câblée et validée · programme faisant tourner les deux moteurs · moteur M1 marqué au ruban."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Aucun. C'est la première séance du parcours : tout est nouveau, le livre compris."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• 1 micro:bit v2 + 1 carte DFRobot DFR0548",
+     "• 2 moteurs TT",
+     "• 1 boîtier d'accus NiMH chargé",
+     "Commun",
+     "• Ruban adhésif (marquage du moteur M1), tournevis",
+     "• Station de charge",
+     "• Boîtes en carton de test, une par poste au minimum",
+     "• Bacs nominatifs",
+     "• Poste de démonstration : moteur + pinces croco + bloc d'accus, LED + résistance, multimètre"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• 1 ordinateur par jeune, MakeCode accessible",
+     "• Extension DF-Driver, ajoutée par URL en séance",
+     "• Le livre en ligne, ouvert sur la page de la séance"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Accueil et présentation du parcours. Démonstration du moteur branché directement sur le bloc d'accus, dans la boîte de test : c'est la première fois qu'on montre cette règle, et on la montre en l'appliquant. Puis la LED sur une broche du micro:bit, puis la tentative du moteur sur la même broche.",
+     "Comparaison, conclusions, annonce du livrable du jour.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (30 min)",
+    [
+     "Câble ton électronique",
+     "Description :",
+     "Interrupteur sur off pendant toute l'opération.",
+     "1. Micro:bit enfiché sur la carte, écran vers l'extérieur. Le connecteur n'est pas détrompé : il entre aussi à l'envers. Vérifier le sens de chaque micro:bit au point de contrôle.",
+     "2. Moteur gauche sur M1, moteur droit sur M2. Fils vissés, puis test de traction sur chaque fil.",
+     "3. Pack d'accus au bornier d'alimentation, + rouge, − noir.",
+     "Point de contrôle animateur : polarité du pack, serrage des fils, sens du micro:bit. Avant toute mise sous tension. C'est le contrôle qui évite les cartes mortes.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (50 min)",
+    [
+     "Programme tes moteurs",
+     "Description :",
+     "Avant d'ouvrir MakeCode, montrer le tour de main : partager l'écran en deux, le livre à gauche, MakeCode à droite.",
+     "Progression en cinq paliers.",
+     "1. Le témoin de démarrage : au démarrage : icône + son. On sait que le programme tourne. Téléversement par USB.",
+     "2. La boucle : toujours, et pourquoi il faut des pauses. Exercice : flèche 1 s, écran effacé 1 s. Montrer d'abord dans quelle catégorie chercher, donner la réponse seulement après.",
+     "3. L'extension : coller l'URL, l'avertissement Microsoft expliqué, la catégorie DF-Driver qui apparaît.",
+     "4. Les moteurs : Motor M1 dir CW speed 100 et Motor M2 dir CW speed 100 dans le toujours, Motor Stop All après effacer l'écran. L'ensemble va dans la boîte de test avant de basculer l'interrupteur : deux moteurs libres sautent et arrachent leurs fils.",
+     "5. Le banc d'essai : les deux moteurs tournent, ils s'arrêtent ensemble, on identifie M1 en coupant le bloc M2 et on marque le moteur au ruban, on vérifie qu'aucun fil ne sort sous la vibration.",
+     "Le réflexe de débogage est le point le plus important de l'heure : si la flèche s'affiche et que rien ne tourne, le problème n'est pas dans le code. Le faire formuler par les jeunes plutôt que l'énoncer.",
+     "Point de contrôle animateur : électronique validée en fin de séance. Interrupteur coupé, USB débranché.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Démonstrations collectives. Tour de table.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Matériel dans le bac nominatif, accus en charge. Annonce de la séance suivante : « la semaine prochaine, tu fabriques le châssis et ton rover roule ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Tester les deux sens de rotation, identifier les LED de sens sur la carte. Programme : gauche 2 s, stop 2 s, droite 2 s, stop 2 s, avancer 2 s, stop 2 s, reculer 2 s, stop 2 s."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "L'exercice du clignotement (palier 2) est donné en solution directement, et on passe à l'extension. Le jeune repart avec ses deux moteurs qui tournent, c'est ce qui compte."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• La polarité du pack d'accus. C'est le seul geste de la séance qui peut détruire du matériel. Contrôle systématique, aucun jeune ne bascule l'interrupteur sans validation.",
+     "• Les moteurs qui s'échappent. Aucun essai hors de la boîte de test, y compris pour l'animateur pendant la démonstration."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "Avancement : séance très chargée, 2 jeunes sur 9 ont terminé. La séance a tout de même été utile.",
+     "La page élève a été peu utilisée. Trop de texte : les jeunes ne lisent pas, la masse paraît insurmontable. Tout était nouveau, le livre compris, mais la page était de toute façon trop verbeuse.",
+     "Les règles métalliques plates ont été remplacées par des règles à rebord : le rebord sépare la main de la lame.",
+     "Les outils imprimés en 3D pour la découpe ont été peu utiles. La règle métallique est plus efficace pour marquer les plis : les distances sont courtes."
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "• Le châssis et le montage passent en S2 : la S1 s'arrête à l'électronique testée.",
+     "• Apprendre aux jeunes à partager l'écran en deux : le livre d'un côté, MakeCode de l'autre.",
+     "• Pages élèves plus courtes.",
+     "• Plus d'outils imprimés en 3D pour le carton : les plis se marquent à la règle métallique, posée sur sa tranche."
+    ]
+   ]
+  ],
+  "s02": [
+   [
+    "Séance 2",
+    [
+     "Fabrique ton rover et fais-le rouler droit"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de réaliser une plaque de châssis conforme au plan, rabats d'équerre et roues tournant librement",
+     "• Être capable de regrouper ses commandes moteur dans une fonction nommée, appelée par son nom",
+     "• Être capable de diagnostiquer une trajectoire qui dévie en cherchant la cause mécanique avant de compenser par le réglage"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Lecture de plan coté et traçage · rainage, pliage et découpe du carton · réglage du sens de rotation · fonction et réutilisation du code · diagnostic mécanique avant correction logicielle (languette arrière, aplomb, parallélisme des moteurs, voile de roue, centrage du pack) · vitesse minimale de démarrage et frottement statique · dérive et compensation · reproductibilité d'une mesure."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Rover monté, les deux roues dans le même sens · fonction avancer appelée dans toujours · rover qui roule droit sur les 1,50 m du banc."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 1 : électronique câblée et validée, moteur M1 marqué au ruban."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur et 1 second adulte sur l'activité 1, de la 10ᵉ à la 55ᵉ minute, auprès des trois postes de découpe."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Son électronique de la séance 1, moteur M1 marqué",
+     "• 2 roues, élastiques",
+     "• 1 plaque de carton",
+     "• Boîtier d'accus chargé, bac nominatif",
+     "Commun",
+     "• Les trois postes de découpe : outil de découpe (scalpel), règle métallique à rebord, tapis de découpe",
+     "• Crayons",
+     "• Ruban adhésif (languette arrière)",
+     "• Plan coté du châssis imprimé à 100 %, papier quadrillé 5 × 5 mm pour la variante +",
+     "• Boîtes en carton de test",
+     "• Banc d'essai : la table de robotique à rebord, adhésif de couleur pour le marquage, mètre ruban, équerre",
+     "• Double décimètre pour mesurer les écarts",
+     "• Station de charge"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• 1 ordinateur par jeune, MakeCode accessible, projet rover de la séance 1",
+     "• Le livre en ligne, ouvert sur la page de la séance"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Lecture du plan en collectif : contour, lignes de pli, emplacement de la carte, sens des cannelures.",
+     "Consignes de découpe démontrées avant toute découpe : règle métallique à rebord, doigts posés sur la règle derrière le rebord, plusieurs passes légères, protection remise dès qu'on pose l'outil. Montrer la différence avec une règle plate : sur la règle à rebord, la main appuie sur le plat et le rebord fait barrage.",
+     "Annonce du livrable : un rover qui roule droit.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (45 min)",
+    [
+     "Fabrique le châssis et monte le rover",
+     "Description :",
+     "1. Plan imprimé collé sur le carton, face intérieure des plis, en respectant le sens des cannelures. Le pli doit croiser les cannelures à angle droit.",
+     "2. Découpe, à tour de rôle sur les trois postes. En attendant son tour, on colle son plan ou on prépare l'électronique pour le montage.",
+     "3. Marquage du pli à la règle métallique posée sur sa tranche, pliage contre la règle, vérification de l'équerre.",
+     "4. Moteurs entre les rabats (le moteur marqué M1 à gauche), élastiques croisés, carte, accus sanglés, roues, languette arrière scotchée.",
+     "5. Contrôle de tenue : moteur en rotation, appui léger du doigt sur la roue. Si le moteur bouge dans son logement, reprendre la fixation.",
+     "6. Réglage du sens, rover posé sur l'arrière, roues en l'air, dans la boîte de test : les moteurs sont montés tête-bêche, l'un tourne donc à l'envers. Inverser ses deux fils ou passer son bloc en CCW.",
+     "Ceux qui ont terminé tôt posent le marquage du banc d'essai à l'adhésif (la ligne sur 1,50 m et son repère en L) et servent de dépanneurs.",
+     "Point de contrôle animateur : montage validé avant de passer au code : rabats d'équerre, moteurs tenus, roues libres, les deux roues dans le même sens. Un rover mal monté fausse tout le réglage qui suit.",
+     "Modalité : Tutoriel guidé pas à pas, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (35 min)",
+    [
+     "Ta première fonction, et rouler droit",
+     "Description :",
+     "Le regroupement en fonctions : démonstration MakeCode en trois minutes. Créer une fonction avancer, y déposer les deux blocs moteur, l'appeler par son nom depuis toujours. Les quatre autres viendront en séance 3.",
+     "L'ordre compte : on va droit avant de faire autre chose. La marche droite conditionne tout le reste du parcours.",
+     "1. La fonction avancer : créer, nommer, y glisser les deux blocs Motor, appeler depuis toujours.",
+     "2. Le réglage pour rouler droit. D'abord la mécanique : languette arrière, aplomb, parallélisme des moteurs, roues enfoncées, pack centré. Ensuite seulement la compensation : les deux moteurs à 80, puis monter le plus lent 5 par 5.",
+     "3. Le protocole de mesure sur le banc : rover calé dans le repère en L, trajet le long de la ligne sur 1,50 m, écart latéral mesuré à l'arrivée. Critère visible : moins d'une largeur de rover d'écart. Trois passages au minimum : l'écart varie, et cette variation est une information.",
+     "4. La vitesse minimale de démarrage : la valeur en dessous de laquelle le rover ne part pas seul, alors qu'une pichenette suffit à le lancer. Propre à chaque rover, elle remontera quand le rover sera chargé.",
+     "La règle à faire formuler par les jeunes : on répare la mécanique avant de bricoler le code. Compenser par le logiciel un moteur mal fixé tient jusqu'au premier choc.",
+     "Deuxième règle, à dire avant les essais : il n'y a pas de bonne valeur. Chaque moteur est unique, l'équilibre se trouve entre 80 et 120, et recopier les valeurs d'un camarade ne marche pas.",
+     "Le protocole de mesure est imposé, et les essais tournent sur trois postes.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Démonstrations collectives sur le banc.",
+     "Question centrale : « qu'est-ce qui faisait dévier ton rover, et comment l'as-tu trouvé ? » Puis : « tes trois écarts étaient-ils identiques ? » Faire formuler que rien n'a changé entre deux passages, et que pourtant le rover n'arrive pas au même endroit.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Matériel dans le bac nominatif, chutes triées, outils de découpe comptés et rangés, banc dégagé, accus en charge.",
+     "Annonce de la séance 3 : « la semaine prochaine, ton rover prend une identité, et il apprend à tourner ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Recopier le plan sur papier quadrillé au lieu de l'imprimer, avec la consigne « compte les carreaux » · poser le marquage du banc d'essai · poser le parcours du défi de la séance 3 : ligne jaune, obstacle, ligne bleue."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Châssis prédécoupé par l'animateur pour qui n'a pas fini la découpe à la 40ᵉ minute. Objectif réduit au rover monté qui roule tout droit sans mesure ; le réglage au banc passe en début de séance 3."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• La découpe est le moment à risque : trois postes seulement, utilisés à tour de rôle, et le second adulte auprès d'eux.",
+     "• Ne pas laisser passer au code un rover dont le montage n'est pas validé. Tout le travail de réglage repose dessus.",
+     "• Trois postes d'essai seulement. Rappeler qu'on va au banc avec une hypothèse à tester, pas pour regarder rouler. Pendant l'attente, on code ou on affine son montage.",
+     "• Les accus faiblissent en cours de séance et modifient les réglages : c'est une cause de dérive à nommer, pas à cacher.",
+     "• Aucune valeur de vitesse n'est « la bonne ». Si un jeune recopie celles d'un camarade, son rover ne roulera pas droit, et c'est une bonne occasion de le faire constater plutôt que de l'expliquer."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "Avancement : la séance a été menée dans sa version précédente : reprise de la S1 (châssis et montage), puis les cinq mouvements et le défi. Le groupe s'est arrêté avant les quatre autres mouvements."
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "• Le châssis et le montage passent de la S1 à la S2 ; les quatre autres mouvements et le défi du garage passent en S3, après la plaque ; la télécommande passe de la S3 à la S4."
+    ]
+   ]
+  ],
+  "s03": [
+   [
+    "Séance 3",
+    [
+     "Ta plaque, et les mouvements de ton rover"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de concevoir en CAO une pièce personnelle respectant un gabarit imposé (dimensions, épaisseur, perçage)",
+     "• Être capable de décrire le trajet d'un modèle 3D jusqu'à l'objet imprimé, en nommant le rôle du slicer et le principe additif",
+     "• Être capable d'expliquer comment un rover à deux roues change de direction, et de produire un virage autour d'une roue à l'arrêt"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Modélisation 3D : forme, texte en relief, perçage, groupement · contrainte de conception (fonction et moyen de production) · impression additive, couches, adhérence, remplissage, durée · rôle du slicer · direction différentielle · programme de vérification : appeler toutes les fonctions, dans un ordre connu, avec une pause longue qui marque la fin de la séquence."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Fichier .STL de la plaque exporté et nommé selon la convention · cinq fonctions de mouvement dans le projet rover, appelées par un programme de vérification."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Aucun en CAO. Séance 2 : rover monté qui roule droit, fonction avancer dans le projet rover."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Son rover, accus chargés, bac nominatif",
+     "Commun",
+     "• Imprimante 3D et filament",
+     "• Une pièce imprimée ratée à effeuiller (démonstration des couches)",
+     "• Deux pièces cassées, l'une dans le sens des couches, l'autre en travers",
+     "• Banc d'essai marqué en séance 2",
+     "• Le parcours du défi, pour la variante + : adhésif jaune et bleu, l'obstacle",
+     "• Boîtes en carton de test",
+     "• Station de charge"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• Tinkercad, comptes préparés en mode classe, code de classe à communiquer en séance, sans adresse personnelle des jeunes",
+     "• Le slicer en ligne (Kiri:Moto), sur le poste animateur, et une plaque d'exemple à y charger",
+     "• MakeCode et le projet rover, le livre en ligne"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Le programme du jour : une pièce à soi, qu'on emportera bien après le rover, puis un rover qui apprend à tourner.",
+     "Présentation de la plaque : elle sert d'abord d'immatriculation sur le rover, fixée par élastique, puis de porte-clés une fois le rover démonté. Elle se conçoit donc en pensant aux deux usages.",
+     "Les gestes de la CAO sont démontrés au vidéoprojecteur, jeunes loin de leur ordinateur : poser une forme, la coter, ajouter du texte en relief, percer, regrouper. Présentation des contraintes de la plaque. Puis la connexion à la classe Tinkercad, tous ensemble ; ensuite chacun avance à son rythme.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (45 min)",
+    [
+     "Ta plaque, de l'écran à l'objet",
+     "Description :",
+     "Chacun conçoit sa plaque à partir de zéro, dans la classe Tinkercad.",
+     "Contrainte double, annoncée d'emblée : la plaque doit tenir sur le rover, et les plaques de tout le groupe doivent tenir sur un seul plateau. On conçoit toujours pour une fonction et pour une machine.",
+     "La plaque mesure 70 × 20 × 2 mm, avec un relief qui ne dépasse pas +2 mm et seulement ponctuellement, et un perçage de porte-clés avec au moins 3 mm de matière jusqu'au bord, sans quoi la pièce casse au premier arrachement de clés.",
+     "À démontrer au lancement :",
+     "• L'outil Aligner. Centrer le texte à la souris donne un décalage d'un demi-millimètre qu'on ne voit qu'une fois la pièce imprimée.",
+     "• Le trou de porte-clés se fait avec deux cylindres, l'un dans l'autre : un cylindre solide débordant du bout de la plaque, qui fabrique l'oreille arrondie, puis un cylindre plus petit en perçage, centré dedans, qui fait le trou.",
+     "• La vérification avant export, ci-dessous.",
+     "La vérification avant export est le moment pédagogique de l'activité. Plutôt qu'annoncer le piège d'avance, on fait raisonner : l'imprimante empile des couches et ne pose rien dans le vide. Deux questions : est-ce que tout tient ? est-ce que tout s'imprime ? Si non, on modifie.",
+     "Le cas qui tombe à tous les coups : texte passé en perçage, l'intérieur des lettres fermées (o, b, a, d) n'est plus relié à rien, les îlots tombent ou s'impriment à côté. Deux solutions au choix du jeune : relier par un pont de matière, ou effacer avec un cylindre en perçage. Le problème est apparu sur le montage de test.",
+     "Export en .STL, nommé selon la convention imposée, déposé à l'endroit convenu.",
+     "Point de contrôle animateur : dimensions respectées, perçage à la bonne distance du bord, nom présent et lisible, aucun îlot détaché dans les lettres fermées, et le fichier se termine bien par .stl. Avant export : après, la plaque part telle quelle.",
+     "Les dix dernières minutes passent de l'écran à l'objet. Le principe additif : on n'enlève pas de la matière, on empile des couches de plastique fondu. Une pièce ratée passe de main en main et s'effeuille. Deux pièces cassées circulent : l'une a cédé entre les couches, l'autre non. Une pièce imprimée casse presque toujours entre ses couches, ce qui décidera plus tard de l'orientation des supports de mécanisme.",
+     "Le slicer en ligne est montré à l'écran sur une plaque d'exemple. La machine ne comprend pas le modèle, elle comprend des déplacements : le slicer tranche l'objet et écrit la liste des mouvements. Aperçu couche par couche au curseur, puis le remplissage, qui montre qu'une pièce n'est pas pleine. Les trois réglages qui comptent : hauteur de couche (finesse contre durée), remplissage, et le temps que ça prend.",
+     "Les impressions sont lancées par l'animateur après la séance. Les plaques sont remises au début de la séance 4.",
+     "Modalité : Production individuelle en autonomie, puis démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 2 (35 min)",
+    [
+     "Tes quatre autres mouvements",
+     "Description :",
+     "Tourner (10 min). La notion est introduite en cinq minutes, avant que chacun code.",
+     "La direction différentielle : « les roues de ton rover ne s'orientent pas. Avec deux roues motrices, comment tourne-t-on ? » Un rover est poussé à la main, une roue bloquée, puis les deux roues en sens opposés. Les jeunes formulent eux-mêmes les façons de tourner.",
+     "Puis on impose la convention du parcours : une roue à l'arrêt, l'autre en marche. Les autres façons ne sont pas fausses. La raison à donner : le rover tourne en avançant, donc on corrige sa trajectoire sans s'arrêter, ce qui servira pour approcher l'échantillon et slalomer en phase 2.",
+     "Les quatre fonctions, et leur test (25 min). Une seule tâche : reculer, tournerAGauche, tournerADroite, arreter, sur le modèle d'avancer faite en séance 2, et testées au fur et à mesure par un programme qui n'utilise que les cinq fonctions. Le virage se fait une roue à l'arrêt : c'est imposé, pas au choix.",
+     "Dans toujours, on les appelle toutes, dans un ordre connu, une pause après chacune. Les durées ne comptent pas. Ce qui compte, c'est qu'on sache à chaque instant quel mouvement on regarde, grâce à une flèche avant chaque appel, et une pause longue avant que la boucle reparte, pour savoir où la séquence commence et où elle s'arrête.",
+     "C'est un geste de test à nommer : on vérifie tout, dans un ordre qu'on connaît d'avance, et un écart saute aux yeux.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Question centrale : « comment as-tu su que chaque fonction faisait ce que dit son nom ? » Puis : « à quoi t'a servi la pause longue ? »",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Rangement, banc dégagé, accus en charge.",
+     "Annonce de la séance 4 : « la semaine prochaine, vos plaques seront imprimées, et vous fabriquez votre télécommande ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Le défi du retour au garage, en « va plus loin » sur la page élève. Départ derrière la ligne jaune, dépasser la ligne bleue en contournant l'obstacle, revenir derrière la jaune. L'obstacle interdit le simple « tout droit puis marche arrière ». Le toujours est remplacé par lorsque le bouton A est pressé contenant répéter 3 fois, avec une pause pour replacer le rover. Réussite : 2 passages sur 3. Ce qu'on découvre : le rover obéit à des durées, il ne sait pas où il est."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Les quatre fonctions fournies, valeurs à compléter."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Les dimensions doivent être imposées dès la première minute de la CAO, sinon les plaques sortiront hors cotes et ne tiendront ni sur le rover ni sur le plateau.",
+     "• Prévoir la transmission des fichiers (dossier partagé, clé, envoi) : mal cadrée, cette étape mange dix minutes. Filet de sécurité : l'animateur peut se connecter à la classe Tinkercad et exporter lui-même les plaques manquantes.",
+     "• L'extension .stl saute au téléchargement selon le navigateur. Le constater sur le montage de test a coûté une impression ; le vérifier au point de contrôle coûte trois secondes.",
+     "• Un plateau partagé est un risque partagé : si une pièce décolle, elle peut faire rater ses voisines. Le dire sans dramatiser justifie la vérification avant export.",
+     "• La CAO passe en premier, pour qu'elle soit finie dans la séance : la plaque doit partir à l'impression avant la S4. Les mouvements supportent mieux d'être écourtés.",
+     "• Le programme de vérification ne se règle pas. Un jeune qui ajuste ses durées pour obtenir une jolie figure a quitté l'exercice : on vérifie que chaque appel produit le bon mouvement, rien de plus.",
+     "• Le défi du garage, s'il est tenté, mesure la régularité, pas la performance. Le dire avant, pas après.",
+     "• Les accus faiblissent en cours de séance et modifient les réglages : c'est une cause de dérive à nommer, pas à cacher."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "Séance encore chargée, mais très satisfaisante. Les principales étapes de Tinkercad, faites ensemble pas à pas, ont pris trop de temps."
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "• Montrer les outils de conception en démonstration, jeunes loin de leur ordinateur, puis se connecter tous ensemble : chacun avance ensuite à son rythme."
+    ]
+   ]
+  ],
+  "s04": [
+   [
+    "Séance 4",
+    [
+     "Fabrique ta télécommande"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de définir un protocole d'échange entre deux machines, en nommant le canal et les mots d'ordre, avant de programmer",
+     "• Être capable de produire une télécommande qui convertit l'inclinaison mesurée en cinq ordres envoyés par radio, au mot près du protocole"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Capteur embarqué et mesure brute (axes x et y) · seuil de décision · si / sinon si / sinon · liaison radio entre deux micro:bit · bande de fréquence comme canal · protocole : canal partagé et vocabulaire partagé · message d'un mot (chaîne) · point témoin à l'écran."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Télécommande qui lit l'accéléromètre, allume un point par direction et envoie les cinq mots du protocole sur sa bande. Plaque imprimée montée sur le rover."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 3 : les cinq fonctions de mouvement dans le projet rover. Ceux qui ne les ont pas terminées les finissent pendant le lancement."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Son rover terminé et ses accus chargés",
+     "• 1 seconde carte micro:bit, la télécommande, distribuée une fois les cinq fonctions vérifiées, et jamais montée sur le rover",
+     "• Sa plaque imprimée",
+     "• Élastiques de rechange : ceux du rover servent déjà, la plaque se glisse dessous",
+     "• Bac nominatif",
+     "Commun",
+     "• Quelques rebuts d'impression du plateau : îlots tombés, pièces décollées",
+     "• 2 câbles USB de rechange",
+     "• Station de charge"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode, projet rover déjà existant sur le poste de chaque jeune ; telecommande se crée en séance",
+     "• La liste des numéros de poste, affichée ou distribuée : c'est la bande de fréquence de chacun",
+     "• Le protocole écrit au tableau : les cinq mots, à recopier au caractère près",
+     "• Le livre en ligne"
+    ]
+   ],
+   [
+    "Lancement (20 min)",
+    [
+     "Remise des plaques, nominative (5 min). Chacun regarde la sienne de près : les couches visibles, les lettres, les bords. On fait circuler deux ou trois rebuts du plateau (un îlot tombé, une pièce décollée) et on les relie à la vérification faite en séance 3 : est-ce que tout tient, est-ce que tout s'imprime ? La plaque se glisse sous les élastiques déjà en place sur le rover.",
+     "Démonstration au vidéoprojecteur (5 min). L'accéléromètre d'abord : les valeurs x et y dans Afficher données, qui bougent quand on penche la carte. Le principe de la télécommande se pose ici, en une minute : on incline la carte dans la direction où le rover doit aller, et à plat il s'arrête. Puis les blocs radio du jour : régler la bande de fréquence, envoyer une chaîne. On montre ce qu'ils font, sans les assembler.",
+     "Fin des mouvements (10 min). En séance 3, une partie du groupe n'a pas terminé les fonctions tournerAGauche, tournerADroite, reculer ou arreter. Ces jeunes les finissent maintenant. Chacun fait vérifier son programme de vérification par l'animateur : quand chaque mouvement fait ce que dit son nom, il reçoit sa seconde carte, avec une phrase à ne pas escamoter : celle-ci ne sera jamais montée sur le rover, c'est ta télécommande. Ceux qui avaient fini passent à l'activité 1 dès la vérification.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 1 (35 min)",
+    [
+     "Allume la bonne LED selon l'inclinaison",
+     "Description :",
+     "Explorer la mesure (12 min). Nouveau projet telecommande, puis série écrire valeur sur x et y. Lecture dans Afficher données Appareil en inclinant la carte dans tous les sens. Observer les signes, les ordres de grandeur, ce qui se passe à plat. Personne ne code encore de décision : on regarde d'abord ce que dit le capteur.",
+     "Transformer la mesure en décision (23 min). si / sinon si / sinon qui comparent directement accélération (mg) y à un seuil, pour allumer un point dans la direction où l'on penche. Chacun choisit ses seuils : à partir de quelle valeur considère-t-on que ça penche vraiment ?",
+     "C'est la première conditionnelle du parcours. Pas de variable : le si lit le capteur directement, ce qui suffit ici. Les variables arrivent en S8, où elles servent vraiment.",
+     "L'affichage se fait avec allumer x y, sans en faire une notion.",
+     "Insister sur effacer l'écran en tête de boucle : sans lui les points s'accumulent. Et sur le sinon qui allume le centre : l'écran n'est jamais vide, donc un écran noir signifie que le programme ne tourne pas.",
+     "L'exercice de la gauche et de la droite clôt l'activité : accélération (mg) x, testée dans les deux sinon si qui suivent ceux de l'axe y. La page replie le programme complet en solution. Le point à faire trouver : le premier test vrai gagne, les suivants ne sont pas lus.",
+     "Nommer le geste une fois, parce qu'il resservira tout le parcours : transformer une mesure en décision, c'est ce que fait un thermostat, un capteur de ligne, un détecteur de présence.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (35 min)",
+    [
+     "Se mettre d'accord avant de coder",
+     "Description :",
+     "Poser le problème (10 min). Deux machines qui n'ont jamais communiqué. Qu'est-ce qu'il leur faut ? Faire émerger les deux conditions plutôt que les donner :",
+     "• Le même canal. Chacun prend sa bande de fréquence, égale au numéro de son poste. Deux cartes qui ne sont pas sur la même bande n'émettent pas au même endroit du spectre et ne s'entendent pas du tout. C'est la bande qu'on utilise, et la différence vaut d'être expliquée : elle reviendra en S10, quand la table parlera à tous les rovers sur une seule bande.",
+     "• Le même vocabulaire. Un canal partagé ne suffit pas : encore faut-il que le mot envoyé soit celui que l'autre attend.",
+     "Nommer alors la chose : ces deux accords s'appellent un protocole.",
+     "Le protocole est imposé, pas construit avec eux, et c'est un choix à assumer devant le groupe : avancer, reculer, gauche, droite, arreter. La raison se dit en une phrase : en phase 2, un rover devra obéir à la télécommande d'un coéquipier et se faire comprendre d'un rover qui n'est pas le sien. Un protocole ne vaut que si tout le monde emploie le même. L'écrire au tableau et l'y laisser toute la séance.",
+     "Le message est un seul mot, envoyé avec envoyer la chaîne … par radio. Écrire les cinq mots au tableau et les faire relire à voix haute : arreter s'écrit sans accent, et un mot mal écrit arrive sans que le rover le reconnaisse.",
+     "Coder l'émetteur (25 min). radio régler la bande de fréquence dans au démarrage, puis envoyer la chaîne … par radio greffé dans chaque branche du programme de l'activité 1. Une pause de 100 ms en fin de boucle : sans elle, le rover recevra plus de messages qu'il n'en traite et répondra en retard.",
+     "Le rover n'écoute qu'en S5 : l'envoi ne se voit pas encore. Le point témoin de chaque branche montre l'ordre choisi, et la relecture fait le reste.",
+     "Point de contrôle animateur : bande égale au numéro du poste, cinq mots lus à voix haute et identiques au tableau, un point par branche, pause de 100 ms.",
+     "Ceux qui ont fini en avance cherchent ce qui règle la sensibilité : les seuils, et dans quel sens les faire varier. Ou ils mettent leur télécommande à leur nom : afficher texte dans au démarrage. Pas dans un bouton : toujours efface l'écran tous les 100 ms et hacherait le texte.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Chacun montre sa télécommande : on l'incline, le point suit.",
+     "Question : « le protocole vous a été imposé. Qu'est-ce qui se serait passé si chacun avait choisi ses mots dans son coin, et qu'il fallait maintenant faire dialoguer deux rovers ? »",
+     "Annonce de la S5 : le rover obéira à la télécommande.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Rangement. Les deux cartes dans le bac, accus en charge.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Les pistes de l'activité 2 (sensibilité, télécommande à son nom) · tenir le rôle de tuteur auprès d'un camarade bloqué sur ses seuils."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Un seul axe d'inclinaison (y, sans x) et seuils fournis · bande et cinq mots écrits au tableau, à recopier · deux ordres seulement (avancer et arreter), puis on complète si le temps le permet."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Les projets MakeCode vivent dans le navigateur du poste : un changement d'ordinateur les fait disparaître. Vérifier l'attribution des postes avant l'ouverture, et garder un projet de secours partageable par lien.",
+     "• La seconde carte est la télécommande, définitivement. Le dire à la distribution. Si elle finit sur un rover, le jeune n'a plus de quoi piloter.",
+     "• Une bande de fréquence par poste, sans doublon. Deux jeunes sur la même bande pilotent le rover l'un de l'autre. Ça amuse cinq minutes, puis ça coûte un dépannage inutile, et la panne ressemble à s'y méprendre à un bug de code.",
+     "• La bande de fréquence ne s'applique pas dans le simulateur. Un jeune qui teste dans le navigateur ne verra aucune isolation ; ça ne se vérifie que sur les cartes."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "La séance s'est bien passée, mais un seul jeune a fini avec un rover pilotable. Elle était trop dense : conditions, LED en matrice, seuils, accéléromètre, radio, et la remise des impressions 3D en plus. Plusieurs notions n'étaient pas nécessaires au livrable : les variables tangage et roulis, les axes z et force."
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "• Plus de variable : le si compare directement accélération (mg) x ou y au seuil. Les variables arrivent en S8.",
+     "• Seuls x et y sont lus.",
+     "• La télécommande envoie un seul mot avec envoyer la chaîne … par radio, et le rover écoute avec quand une donnée est reçue par radio, dans sa version qui apporte receivedString. La clé, la valeur et la limite des 8 caractères arrivent en S8, quand la télécommande envoie la vitesse.",
+     "• Le récepteur passe en S5 : la S4 s'arrête à la télécommande."
+    ]
+   ]
+  ],
+  "s05": [
+   [
+    "Séance 5",
+    [
+     "Pilote ton rover, formez votre équipe"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de produire le programme récepteur du rover, qui appelle les cinq fonctions de la S3 selon le mot reçu, et de le piloter par radio",
+     "• Être capable de diagnostiquer une liaison muette en comparant les témoins visuels des deux cartes, et d'en déduire où la chaîne se coupe",
+     "• Être capable de reformuler ce que le cahier des charges demande au rover d'équipe et les règles des deux épreuves"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Comparaison de textes · gestionnaire d'événement quand une donnée est reçue par radio (avec receivedString) · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S3 · lecture d'un cahier des charges · distinction entre caractéristique vérifiée et épreuve courue · composition d'une équipe."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Chaque rover individuel piloté par radio, ou l'étape atteinte relevée par l'animateur. Équipes de 2 ou 3 constituées, chacune avec son numéro. Cahier des charges lu, feuille d'équipe rangée dans le bac."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 4 : télécommande qui envoie les cinq mots. Ceux qui ne l'ont pas finie la terminent en début d'activité 1."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur et 1 second adulte pendant l'activité 1, pour dépanner les rovers."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Son rover individuel et sa télécommande, accus chargés",
+     "Commun",
+     "• Le plan incliné réglé à 10°, un échantillon imprimé (40 × 40 × 56 mm), un tag découpé et une porte du parcours (25 × 20 cm), posés sur une table de présentation",
+     "• Un bras ou une pince de démonstration à servomoteur, commandé au bouton",
+     "• La feuille d'équipe imprimée recto verso, une par équipe",
+     "• Les tags numérotés 1 à 20, imprimés à 100 % depuis tags-rover-01-20.pdf et découpés sur le cadre gris. Vérifier à la règle que le carré noir mesure 90 mm.",
+     "• Un bac par équipe, étiqueté",
+     "• La table de robotique à rebord : on ne pilote que là"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode, projets telecommande et rover de chaque jeune",
+     "• La page cahier des charges, ouverte au vidéoprojecteur",
+     "• Le livre en ligne : séance 5, séance 4 pour finir la télécommande"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Rappel de la S4 en une question : « ta télécommande allume-t-elle ses cinq points ? » Ceux qui répondent non la terminent avant d'ouvrir le projet rover.",
+     "Au vidéoprojecteur, les deux blocs du jour : quand une donnée est reçue par radio, dans sa version qui apporte receivedString, et le bloc d'égalité à cases blanches, dans Logique. MakeCode a deux blocs d'égalité et celui par défaut compare des nombres : sans cette indication, on perd dix minutes par jeune.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (40 min)",
+    [
+     "Le rover écoute, et pilote",
+     "Description :",
+     "Retour dans le projet rover. Rien n'y est à refaire : les cinq fonctions sont là, elles vont être appelées par la radio au lieu de l'être en série. Le dire explicitement : c'est le retour sur investissement des fonctions, promis en séance 2.",
+     "Même bande que la télécommande dans au démarrage. quand une donnée est reçue par radio est le premier gestionnaire d'événement que les jeunes rencontrent hors des boutons : il ne se met ni dans toujours ni dans au démarrage, il se déclenche tout seul à l'arrivée d'un message.",
+     "La première branche est donnée sur la page (si receivedString = \"avancer\" → appel avancer), les quatre autres sont à produire. Chaque branche allume aussi le même point que la télécommande : c'est l'instrument de débogage de la séance, pas une décoration.",
+     "Un dernier sinon attrape les mots inconnus et arrête les moteurs. Il fait partie de l'énoncé, pas des bonus : un ordre incompris ne doit pas faire rouler un véhicule.",
+     "Téléversement des deux programmes, USB débranché, passage sur accus, et pilotage sur la table de robotique.",
+     "Le contrôle visuel est la méthode à installer, parce qu'elle resservira tout le reste du parcours : on penche la télécommande et on regarde les deux écrans. Même point, le message passe. Point à l'émission seulement, le rover n'entend pas : vérifier la bande de fréquence. Le point reste au centre des deux côtés, ce sont les seuils.",
+     "Point de contrôle animateur : bande identique sur les deux cartes, cinq mots strictement identiques des deux côtés (les faire lire à voix haute plutôt que les regarder), bloc de comparaison de textes, un point dans chaque branche. Le rover avance, recule, tourne et s'arrête à la télécommande.",
+     "Ceux dont le rover roule aident un camarade, sans prendre le clavier, ou passent aux deux vitesses de la page.",
+     "Modalité : Tutoriel guidé pas à pas, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (25 min)",
+    [
+     "Ce que le rover d'équipe devra faire",
+     "Description :",
+     "Les objets d'abord (10 min). Le plan incliné, l'échantillon debout, le tag, une porte du parcours. Faire tenter la pente à deux ou trois rovers individuels, puis leur faire pousser l'échantillon, qui tombe. Les jeunes constatent eux-mêmes que le rover de la S4 ne répond pas au cahier des charges. Puis le bras de démonstration à servomoteur, commandé au bouton : pour saisir ou soulever l'échantillon, le cahier des charges autorise deux servomoteurs. On en parle et on le montre, sans l'expliquer : on apprendra à le programmer en S7.",
+     "Le cahier des charges et les épreuves (15 min). Au vidéoprojecteur, point par point. La première partie se vérifie avec l'animateur, au fil des séances, sans éliminer personne. La seconde se court en S12 : le parcours (slalom entre des portes de la taille maximale du rover, puis la pente) et le capture the flag. Un rover qui remplit tout le cahier des charges peut perdre les épreuves.",
+     "Annoncer le mode table sans le détailler : il arrive en S10.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 3 (15 min)",
+    [
+     "Les équipes",
+     "Description :",
+     "Les jeunes forment leurs équipes de 2 ou 3. L'animateur veille à ce qu'aucun ne reste isolé. Attribuer à chacune son numéro et le noter au tableau. Ce numéro unique sert à la fois d'identifiant du tag, de bande en mode télécommande et de groupe sur la table. Comme une équipe occupe plusieurs postes, on ne reprend pas la numérotation de la S4.",
+     "Chaque équipe se trouve un nom, et écrit ses membres et son numéro sur sa feuille d'équipe.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Chaque équipe dit ce qui lui paraît le plus difficile dans le cahier des charges.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "L'animateur photographie chaque rover individuel qui roule. Les rovers restent montés : les équipes y prendront les pièces dont elles ont besoin. Cahiers des charges dans le bac d'équipe, accus en charge.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Deux vitesses : un mot de plus, vite, envoyé au-delà d'un second seuil, et une fonction de plus dans le rover · le rôle de tuteur auprès d'un camarade bloqué sur la comparaison de textes."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Programme de la télécommande fourni pour qui ne l'a pas fini en S4 · deux mots seulement (avancer et arreter), puis on complète si le temps le permet."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Aucun jeune ne reste isolé : repérer ceux qui n'ont pas d'équipe et les intégrer avant de distribuer les numéros.",
+     "• Les projets MakeCode vivent dans le navigateur du poste. Un jeune qui change d'ordinateur ne retrouve pas son programme de la S4 : vérifier l'attribution des postes avant l'ouverture.",
+     "• Le bloc de comparaison de textes n'est pas celui proposé par défaut. Le montrer explicitement avant de lâcher le groupe.",
+     "• La bande de fréquence ne s'applique pas dans le simulateur : la liaison ne se vérifie que sur les cartes."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s06": [
+   [
+    "Séance 6",
+    [
+     "Concevez votre rover"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de décomposer le cahier des charges en parties du rover, et de produire en équipe un croquis de solution",
+     "• Être capable de répartir la fabrication entre carton, impression 3D et récupération, en tenant un budget d'impression de 3 h"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Esquisse : révolution, extrusion, esquisse libre · contrainte de conception · croquis de solution · répartition des rôles dans une équipe · choix du procédé : carton, impression, récupération · pièces partagées : trouver, réemployer, citer l'auteur · durée d'impression estimée dans Kiri:Moto · budget d'impression."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Un croquis d'équipe, vu de dessus et de côté. Rôles écrits sur la feuille d'équipe. Le châssis carton commencé, support de tag compris, et au moins une pièce 3D dessinée ou trouvée, sa durée notée dans le suivi d'impression."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 5 : équipes formées, numéro attribué, cahier des charges lu. Séance 3 : prise en main de Tinkercad."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur et 1 second adulte pendant l'activité 2, auprès des postes de découpe."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Papier quadrillé 5 × 5 mm réel, crayon",
+     "Commun",
+     "• Les rovers individuels, où les équipes prennent les pièces dont elles ont besoin",
+     "• Les trois postes de découpe (outil, règle métallique à rebord, tapis), ruban adhésif, carton, colle",
+     "• Le bac de récupération",
+     "• Le tag de chaque équipe, l'échantillon, le plan incliné",
+     "• La feuille d'équipe de chaque équipe",
+     "• Pieds à coulisse ou règles, pour relever les cotes"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• Tinkercad en mode classe, et sa galerie de pièces partagées",
+     "• Kiri:Moto (grid.space/kiri), dans le navigateur de chaque poste",
+     "• Bambu Studio, sur le poste de l'animateur, pour lancer les impressions",
+     "• Le plan du châssis de la S2, imprimé, pour les équipes qui veulent partir de lui",
+     "• Le livre en ligne : Modéliser et imprimer en 3D, Tracer, découper, plier le carton"
+    ]
+   ],
+   [
+    "Lancement (15 min)",
+    [
+     "L'esquisse, démontrée au vidéoprojecteur. En S3, on a assemblé des formes ; cette fois, on part d'un dessin à plat. Trois outils de « Formes simples », sur une même pièce : la révolution (un demi-profil contre l'axe), l'extrusion (le contour vu de dessus), l'esquisse libre (à main levée, puis une hauteur). La pièce de démonstration est l'échantillon du cahier des charges.",
+     "Le concept est montré à tous, mais seuls ceux qui font de la 3D l'appliquent. Puis la consigne de la séance : l'équipe dessine son rover, se répartit le travail entre carton et 3D, et fabrique.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (25 min)",
+    [
+     "Votre rover sur le papier",
+     "Description :",
+     "Pour chaque point du cahier des charges, l'équipe cherche la partie du rover qu'il touche : châssis, prise de l'échantillon, support de tag, programme. Chacun dessine ensuite comment le rover déplace l'échantillon sans le renverser (le pousser, le saisir ou le soulever), et l'équipe retient une idée, dessinée sur le rover entier.",
+     "Circuler en posant une seule question : « comment l'échantillon reste-t-il debout ? »",
+     "Modalité : Prototype papier / storyboard"
+    ]
+   ],
+   [
+    "Activité 2 (50 min)",
+    [
+     "Qui fait quoi, et on fabrique",
+     "Description :",
+     "L'équipe répartit trois responsabilités (châssis et pente, échantillon, programme), les écrit sur sa feuille d'équipe, puis décide pour chaque pièce : carton, 3D ou récupération. Un seul châssis par équipe : à trois, on ne trace pas trois plans.",
+     "Le carton. Redire les consignes de découpe avant la première lame. Les équipes découpent à tour de rôle sur les trois postes. Le prototype sert à vérifier les dimensions (25 × 25 × 20 cm au plus) et la place des moteurs, des accus et du tag.",
+     "La 3D. Dès qu'une équipe a une pièce prête, lui montrer la chaîne, à son poste : regrouper, exporter en .STL, puis dans Kiri:Moto importer, trancher, et lire l'estimation du temps. Le budget : 3 h pour toute l'équipe sur tout le projet. L'équipe note chaque pièce et sa durée dans le suivi d'impression de sa feuille, et montre le fichier et le suivi avant tout envoi. Une pièce qui n'est pas dans le suivi ne part pas à l'impression. Les pièces partagées de la galerie sont permises, auteur cité.",
+     "Circuler en posant une seule question : « pourquoi celle-ci en 3D, et pas en carton ? »",
+     "Point de contrôle animateur : à 20 minutes de la fin, chaque équipe a son châssis carton commencé et au moins une pièce en cours, fichier prêt ou carton découpé.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Chaque équipe présente son croquis en une minute : sa solution pour l'échantillon, et qui fait quoi.",
+     "Modalité : Présentation / démonstration orale"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Prototypes et pièces dans le bac d'équipe, fichiers transmis. L'animateur photographie le prototype de chaque équipe et lance les impressions après la séance.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Deux solutions concurrentes pour l'échantillon, prototypées toutes les deux, et choix argumenté · adapter une pièce partagée à une cote relevée sur le rover · réduire de moitié la durée d'impression d'une pièce."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Plan de la S2 fourni agrandi, à modifier seulement · rôles attribués par l'animateur · croquis guidé par trois questions : où est le tag, où sont les accus, comment l'échantillon est-il tenu · pièce entièrement en carton, sans modélisation."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Trois postes de découpe pour douze jeunes : la découpe se fait par roulement, et le second adulte reste auprès des postes.",
+     "• Avec une seule imprimante, 4 à 6 équipes à 3 h chacune représentent 12 à 18 h d'impression entre les séances 6 et 10. Lancer les impressions dès la fin de la séance.",
+     "• Une pièce lancée compte dans le budget, même si l'impression rate à cause de son dessin. Un échec de la machine ne compte pour personne.",
+     "• Regrouper toutes les formes avant d'exporter : sans groupement, seule la forme sélectionnée part à l'impression. Vérifier dans Kiri:Moto que la pièce apparaît entière.",
+     "• Relever les cotes sur le rover, pas de mémoire.",
+     "• Éviter que l'équipe s'enferme trop tôt dans une solution pour l'échantillon : la S7 (servomoteurs) peut la faire évoluer."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s07": [
+   [
+    "Séance 7",
+    [
+     "Le servomoteur"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de brancher deux servomoteurs sur les broches S8 et S7 de la DFR0548, fil orange côté vert et fil marron côté noir, et de les commander à un angle donné",
+     "• Être capable de monter un servomoteur sur le rover et de le commander depuis la télécommande, quand le croquis de l'équipe le prévoit"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Servomoteur : une consigne d'angle, pas de vitesse · débattement de 0 à 180° · connecteur à trois fils et son sens · bloc Servo S1 degree de l'extension DF-Driver · commande d'un actionneur par bouton, puis par radio · mots radio supplémentaires, un par position, traités avant le sinon qui arrête tout."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Un programme qui fait balayer les deux servomoteurs de 0° à 180°, l'un après l'autre, quand on appuie sur le bouton A. Pour les équipes qui en ont l'usage, le servomoteur monté sur le rover et commandé depuis la télécommande."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 5 : programme du rover à cinq mots. Séance 6 : croquis de l'équipe, pièces imprimées ou en carton."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur et 1 second adulte pendant l'activité 1, pour le montage et la découpe."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• —",
+     "Commun",
+     "• Servomoteurs du stock commun, deux par équipe, avec leurs bras et leurs vis",
+     "• Les pièces imprimées après la S6, remises au lancement",
+     "• Tournevis cruciformes fins",
+     "• Carton, les trois postes de découpe, bac de récupération",
+     "• Un servomoteur de démonstration monté sur une carte, bras visible de loin"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode, projet du rover de l'équipe, extension DF-Driver",
+     "• Le livre en ligne : La carte DFR0548 et ses blocs"
+    ]
+   ],
+   [
+    "Lancement (15 min)",
+    [
+     "Remise des pièces imprimées aux équipes, avec la durée consommée. Chacun vérifie qu'elles sont conformes.",
+     "Le servomoteur, démontré. Sur le servomoteur de démonstration, changer l'angle devant le groupe : le bras va à la position demandée et s'y tient, alors que le moteur des roues tourne tant qu'on l'alimente. Le branchement, accus débranchés : fil orange (signal) côté rangée verte, rouge sur la rouge, marron côté rangée noire, un servomoteur sur S8, l'autre sur S7. Le bloc Servo de DF-Driver : une broche, un angle. Il arrive de la palette réglé sur S1 : c'est l'erreur à anticiper.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (75 min)",
+    [
+     "Le mécanisme de l'équipe",
+     "Description :",
+     "Chaque équipe teste ses deux servomoteurs avec un programme de balayage (bouton A, de 0° à 180°, quatre fois, sur S8 puis S7), puis essaie d'autres angles pour voir où le bras s'arrête vraiment.",
+     "Le servomoteur a été montré en S5 : le croquis de la S6 le prévoit déjà, ou non. L'essai peut encore faire changer d'avis : c'est alors une décision à écrire sur la feuille d'équipe.",
+     "Les équipes qui l'utilisent le montent sur le rover et le commandent depuis la télécommande. Il faut des mots de plus, au moins un par position (ouvrir et fermer, par exemple), chacun testé dans le rover avant le sinon qui arrête les moteurs. Avec deux servomoteurs, l'équipe peut faire une pince à deux mâchoires, ou un bras et une pince. Les autres équipes montent leurs pièces imprimées ou poursuivent le châssis.",
+     "Point de contrôle animateur : les deux servomoteurs balaient ; les équipes dont le croquis le prévoit l'ont monté sur le rover.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Chaque équipe montre son mécanisme, ou dit en une phrase pourquoi son rover s'en passe.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Servomoteurs et vis dans le bac d'équipe, accus en charge. L'animateur photographie le rover de chaque équipe et range la photo dans le dossier de l'équipe.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Mouvement progressif : le bras passe de 0 à 180° par pas de 5°, avec une pause · commande proportionnelle à l'inclinaison de la télécommande · deux servomoteurs synchronisés en pince."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Programme de test fourni, seuls les angles sont à changer · montage du servomoteur sur une pièce carton fournie · équipe qui pousse l'échantillon : pas de servomoteur, suite du châssis."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Brancher et débrancher les servomoteurs accus coupés.",
+     "• Ne pas forcer le bras d'un servomoteur alimenté : ses engrenages sont en plastique et cassent.",
+     "• Depuis la S5, le sinon du rover arrête les moteurs sur tout mot inconnu. Un nouveau mot sans sa branche fait donc s'arrêter le rover à chaque appui. Le comportement est correct, mais il ressemble à une panne.",
+     "• La table n'envoie que les cinq mots d'A1 : les mots du servomoteur ne servent qu'en mode télécommande."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s08": [
+   [
+    "Séance 8",
+    [
+     "Pilotez votre rover en vitesse"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de modifier la télécommande pour qu'elle envoie chaque mot avec une vitesse tirée de l'inclinaison",
+     "• Être capable de modifier le rover pour qu'il prenne cette vitesse, projetée de 0–1023 vers 0–255, en gardant sa compensation de la S2"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Message clé-valeur · clé de 8 caractères au plus · vitesse tirée de l'inclinaison (valeur absolue) · gestionnaire quand une donnée est reçue avec nom et valeur · premières variables, lues par tout le programme · projeter · compensation de la S2 gardée en écart."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Télécommande qui envoie chaque mot avec une vitesse tirée de l'inclinaison. Rover d'équipe qui n'a plus qu'un gestionnaire radio, et qui va plus vite quand on penche plus."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 5 : programme du rover à cinq mots. Séance 7 : mots du servomoteur, pour les équipes qui en ont un."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• —",
+     "Commun",
+     "• La table de robotique à rebord : on ne pilote que là",
+     "• Le chargeur d'accus"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode, projet du rover et de la télécommande de l'équipe",
+     "• Le livre en ligne : Prendre en main MakeCode, section « Envoyer, recevoir »"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "La clé et la valeur, au vidéoprojecteur : un message radio peut porter un mot et un nombre. La table, qu'on découvrira en S10, envoie les cinq mots avec une vitesse ; la télécommande va faire pareil, avec l'inclinaison comme vitesse. Une vitesse fixe n'apporterait rien de plus que le mot seul.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (80 min)",
+    [
+     "La télécommande et le rover en vitesse",
+     "Description :",
+     "L'équipe se répartit le travail : la télécommande d'un côté, le rover de l'autre. La page montre chaque programme avec une seule branche faite.",
+     "La télécommande. envoyer la chaîne devient envoyer la valeur, avec le même mot. La valeur est l'inclinaison : valeur absolue de y vers l'avant et l'arrière, de x sur les côtés, 0 pour arreter. La limite des 8 caractères d'une clé arrive ici ; les cinq mots tiennent dedans. Les mots du servomoteur (S7) passent au même format.",
+     "Le rover. Un seul gestionnaire, quand une donnée est reçue, qui apporte nom et valeur ; celui de la S5, avec receivedString, disparaît. La valeur va de 0 à 1023, le moteur de 0 à 255 : projeter (catégorie Maths). Deux variables, vM1 et vM2, remplacent les vitesses écrites en chiffres dans les cinq fonctions. Ce sont les premières variables du parcours. La compensation de la S2 devient un écart ajouté au moteur le plus lent (20 + vitesse). Au-delà de 255, le bloc Motor plafonne seul : pas besoin de limiter.",
+     "Point de contrôle animateur : le rover roule doucement quand on penche un peu la télécommande, plus vite quand on penche fort.",
+     "Les équipes n'avancent pas au même rythme : une équipe en retard choisit ce qui compte le plus pour son rover, et laisse le reste. L'aider à prioriser plutôt qu'à tout faire.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Question : « votre télécommande envoie maintenant un mot et un nombre. Qu'est-ce que le nombre vous apporte ? »",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Programmes sauvegardés, accus en charge. L'animateur photographie le rover de chaque équipe et range la photo dans le dossier de l'équipe.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Projeter vers la vitesse minimale plutôt que vers 0, en « va plus loin » sur la page."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "projeter donné · la télécommande garde une vitesse fixe, seul le rover est modifié."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Le rover ne comprend plus l'ancienne télécommande dès qu'il a changé de gestionnaire : modifier les deux, puis tester ensemble.",
+     "• Penchée juste au seuil, la télécommande envoie autour de 200 : le rover peut bourdonner sans partir. C'est la piste du « va plus loin ».",
+     "• Les mots du servomoteur (S7) passent eux aussi en clé et valeur."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s09": [
+   [
+    "Séance 9",
+    [
+     "Le dispositif de l'homme mort"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable d'expliquer le principe de l'homme mort : sans signal pendant un temps donné, la machine s'arrête d'elle-même",
+     "• Être capable de réorganiser le programme du rover pour que le gestionnaire radio range l'ordre et que la boucle l'exécute, et que le rover s'arrête en moins d'une seconde quand la télécommande s'éteint"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Dispositif de l'homme mort · le gestionnaire radio range, la boucle exécute · pas de pause dans un gestionnaire · horloge de la carte : temps d’exécution (ms) · durée depuis le dernier message, comparée à un seuil."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Rover d'équipe qui s'arrête en moins d'une seconde quand la télécommande s'éteint. La table le vérifiera en S10."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 8 : rover qui reçoit nom et valeur, piloté en vitesse par la télécommande."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• —",
+     "Commun",
+     "• La table de robotique à rebord : on ne pilote que là",
+     "• Le chargeur d'accus"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode, projet du rover de l'équipe",
+     "• Le livre en ligne : Prendre en main MakeCode, section « S'arrêter quand le signal se perd »"
+    ]
+   ],
+   [
+    "Lancement (15 min)",
+    [
+     "Le dispositif de l'homme mort. Dans un train, le conducteur appuie régulièrement sur une pédale ; s'il ne le fait plus, le train freine seul. Poser la question : « votre rover roule, la télécommande s'éteint. Que fait-il ? » Il garde son dernier ordre et continue.",
+     "Puis le principe, au vidéoprojecteur : le gestionnaire ne fait que ranger le mot reçu, l'heure du message (temps d’exécution (ms)) et la vitesse ; toujours agit, et arrête les moteurs si plus d'une seconde est passée depuis le dernier message. Une pause dans le gestionnaire fait perdre les messages suivants : la carte n'en garde que quatre.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (75 min)",
+    [
+     "Chaque équipe applique",
+     "Description :",
+     "Chaque équipe réorganise son programme : ordre et dernierMessage dans le gestionnaire, les si … sinon si dans toujours, précédés du test de silence. La page montre le programme avec la seule branche avancer.",
+     "Test à la télécommande : rover qui roule, télécommande éteinte, il doit s'arrêter en une seconde. Une équipe en retard sur sa conception peut juger que ce n'est pas sa priorité : l'aider à choisir.",
+     "Les équipes qui ont fini poursuivent leur rover.",
+     "Point de contrôle animateur : télécommande éteinte, le rover s'arrête en une seconde.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Question : « où d'autre faudrait-il un homme mort ? » Laisser venir les exemples : tondeuse, drone, ascenseur.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Programmes sauvegardés, accus en charge. L'animateur photographie le rover de chaque équipe et range la photo dans le dossier de l'équipe.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Un témoin du silence : un point allumé quand le rover s'arrête faute de message."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Test de silence fourni en bloc à recopier · seuil porté à 2 s pour les équipes dont la télécommande émet irrégulièrement."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Une pause dans le gestionnaire est le bug le plus probable, et il ressemble à un rover qui obéit mal. Regarder le gestionnaire en premier.",
+     "• dernierMessage vaut 0 au démarrage : le rover reste à l'arrêt tant qu'il n'a rien reçu. C'est le comportement voulu.",
+     "• Les mots du servomoteur passent par le même gestionnaire : leurs branches vont aussi dans toujours."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s10": [
+   [
+    "Séance 10",
+    [
+     "Votre rover sur la table"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de faire passer le rover du mode télécommande au mode table (bande 83, groupe égal au numéro de l'équipe), avec un témoin à l'écran",
+     "• Être capable d'expliquer pourquoi la table sépare les rovers par le groupe sur une seule bande, alors qu'en S4 chaque télécommande avait sa bande"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Bande et groupe : un émetteur qui parle à tous · changement de mode et son témoin à l'écran · protocole imposé A1."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Rover d'équipe qui passe de la télécommande à la table d'un bouton, piloté par la table le long d'une figure (arlab demo), et qui s'arrête quand la table se tait."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 8 : rover piloté en vitesse. Séance 9 : arrêt après une seconde sans message. Séance 6 : tag monté à plat sur le rover, sans quoi la table ne voit pas le rover."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur. Un second adulte est utile pour tenir la table pendant que l'animateur passe voir les équipes."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• —",
+     "Commun",
+     "• La table, son pont radio et sa caméra, en service avant l'ouverture",
+     "• Un rover de référence déjà conforme à A1, pour la démonstration",
+     "• Supports de tag de secours en carton et ruban adhésif",
+     "• Le plan incliné, l'échantillon et des portes de 25 × 20 cm, pour s'entraîner en attendant",
+     "• La feuille d'équipe de chaque équipe",
+     "• Le chargeur d'accus"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode, projet du rover de l'équipe",
+     "• arlab demo sur le poste de la table",
+     "• Le livre en ligne : Prendre en main MakeCode, sections « La bande de fréquence » et « Changer de mode »"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "La table, démontrée : poser le rover de référence et lancer arlab demo, la table le mesure puis lui fait suivre une figure. Puis la bande et le groupe : en S4, chacun avait sa bande parce que douze télécommandes émettaient en même temps ; ici, un seul émetteur, la table, parle à tous les rovers sur la bande 83, et le groupe (le numéro de l'équipe) dit à qui s'adresse le message. Faire formuler la différence par un jeune.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (25 min)",
+    [
+     "Préparer le passage sur la table",
+     "Description :",
+     "Les boutons A (table) et B (télécommande) règlent la bande et le groupe, et modifient mode. Chaque mode allume son point dans un coin libre, rallumé à chaque tour de toujours après effacer l'écran. L'argument est le débogage : en mode table, le rover n'obéit plus à sa télécommande, et sans témoin on croit à une panne. Deux programmes distincts sont aussi une réponse valable.",
+     "Tester à la télécommande, réglée sur la bande 83 et le bon groupe : si le rover lui obéit, il obéira à la table.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (55 min)",
+    [
+     "Chaque équipe sur la table",
+     "Description :",
+     "Les équipes passent une par une, dans l'ordre affiché au tableau, environ 8 minutes chacune. arlab demo mesure le rover et le pilote. Les autres avancent leur rover ou s'entraînent sur le parcours : personne n'attend sans rien faire. L'animateur en profite pour passer le cahier des charges en revue avec chaque groupe.",
+     "Point de contrôle animateur : avancer déplace le rover d'au moins 5 cm en 1,5 s, gauche et droite tournent en sens opposés, et le rover s'arrête en 1 s quand la table se tait.",
+     "Modalité : Atelier en rotation (stations)"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Question : « votre télécommande et la table envoient maintenant les mêmes messages. Qu'est-ce que ça vous a évité ? »",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Programmes sauvegardés, accus en charge. L'animateur photographie le rover de chaque équipe. Nommer les équipes passées sur la table.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Chronométrer le parcours d'entraînement et noter le temps."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Deux programmes distincts, un par mode, téléversés selon le besoin."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Sans tag, pas de passage sur la table : supports de tag de secours prêts.",
+     "• Un groupe par équipe, sans doublon : deux rovers sur le même groupe obéissent tous les deux à la table.",
+     "• La caméra ne voit qu'une zone de 180 × 100 cm. Un rover qui en sort n'est plus mesuré.",
+     "• Une équipe pas prête à son tour passe après la suivante, et revient."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s11": [
+   [
+    "Séance 11",
+    [
+     "Présentez votre rover sur une page web"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de compléter un gabarit HTML (titre, paragraphes, images) pour produire la page de présentation du rover, qui s'affiche sans erreur dans le navigateur",
+     "• Être capable de justifier trois choix de conception de l'équipe par le cahier des charges, un par section"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Page web : un fichier texte que le navigateur affiche · balise ouvrante et fermante · titre, paragraphe, image (<h1>, <p>, <img>) · l'attribut src et le chemin d'une image · variable CSS : un réglage à un seul endroit · justifier un choix de conception."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "La page de présentation du rover, remplie et ouverte dans le navigateur : nom du rover et de l'équipe, photos de l'équipe, trois choix de conception justifiés, couleurs choisies."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 10 : rover passé sur la table, feuille d'équipe cochée au fil des séances. Photos des rovers prises aux clôtures des S5 à S9."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur. Un second adulte est utile pour les dernières corrections sur les rovers."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• —",
+     "Commun",
+     "• Un téléphone ou un appareil pour les photos manquantes",
+     "• Outils et bac de récupération, pour les dernières corrections"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• Le gabarit commun à tous les parcours gabarit-page.zip, téléchargeable depuis la page élève : index.html, style.css et un dossier images avec quatre emplacements de photo",
+     "• Un éditeur de texte et un navigateur",
+     "• Les photos de l'équipe, rassemblées dans un dossier",
+     "• Les feuilles d'équipe cochées"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Projeter le gabarit ouvert dans le navigateur, puis le même fichier ouvert dans l'éditeur, et montrer que chaque bloc de texte à gauche correspond à un élément de la page à droite.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (30 min)",
+    [
+     "Le gabarit",
+     "Description :",
+     "Lire le gabarit (10 min). Une balise ouvre, une balise ferme, et le texte se trouve entre les deux. Changer le titre, enregistrer, recharger le navigateur : le titre change.",
+     "Remplacer une photo (10 min). Mettre le fichier dans images, écrire son nom dans src et une description dans alt. Le geste est le même pour les quatre photos, y compris celle du haut de page.",
+     "Changer une couleur (5 min). En tête de style.css, sous « TES RÉGLAGES », changer --couleur-principale. L'étiquette, les sous-titres et le survol du menu changent ensemble, ce qui montre l'intérêt d'une variable : un réglage à un seul endroit.",
+     "L'erreur la plus fréquente (5 min). Une balise mal fermée ou un nom d'image mal écrit. Provoquer l'erreur volontairement, puis la réparer.",
+     "Modalité : Tutoriel guidé pas à pas"
+    ]
+   ],
+   [
+    "Activité 2 (50 min)",
+    [
+     "Vos choix, et le rover",
+     "Description :",
+     "L'équipe se répartit : une partie rédige la page, l'autre termine le rover. On échange à mi-temps.",
+     "La page doit présenter trois choix de conception, un par section, avec pour chacun le point du cahier des charges qu'il sert. Par exemple, « on a mis une fourche parce que l'échantillon doit rester debout », et non « on a mis une fourche ».",
+     "Point de contrôle animateur : chaque page s'ouvre dans le navigateur, avec les photos de l'équipe et trois choix justifiés.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Les pages sont projetées l'une après l'autre. Chaque équipe lit un de ses choix, et les autres posent une question.",
+     "Modalité : Mini-exposition / galerie (vernissage)"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Pages enregistrées et copiées là où l'animateur les récupère. Rovers chargés pour les épreuves.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Changer la police et l'arrondi dans « TES RÉGLAGES » · ajouter une quatrième section en copiant l'une des trois, avec son lien dans le menu · ajouter une vidéo du rover sur la pente · une section par membre de l'équipe."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Seuls les textes sont à remplacer, les photos d'exemple restent · photos de l'équipe déjà placées dans le dossier images, sous les mêmes noms que les photos d'exemple."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Les pages sont publiées : pas de nom de famille ni de visage. Le vérifier avant de prendre les photos.",
+     "• Les photos d'iPhone sont lourdes et peuvent contenir la position GPS. Les réduire avant de les mettre dans le dossier.",
+     "• C'est la dernière séance avant les épreuves : la page ne doit pas prendre tout le temps prévu pour les corrections."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s12": [
+   [
+    "Séance 12",
+    [
+     "Vos rovers en épreuve"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de piloter le rover de l'équipe sur les deux épreuves en respectant leurs règles",
+     "• Être capable de porter un regard critique sur le rover de l'équipe en nommant une réussite et une chose à changer, justifiée par ce que les épreuves ont montré"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Démonstration en conditions réelles · écart entre l'essai et l'épreuve · bilan de projet."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Les deux épreuves courues par toutes les équipes, avec les temps et les scores affichés. Le bilan de projet de chaque équipe, sur post-its."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 11 : rover chargé, prêt pour les épreuves."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur et 1 second adulte, pour le chronomètre et la remise en place pendant le capture the flag."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Sa télécommande, chargée",
+     "Commun",
+     "• Le parcours, monté avant l'ouverture : un slalom entre des portes de 25 cm de large et 20 cm de haut, la taille maximale autorisée pour le rover, et le plan incliné à 10°",
+     "• La table, avec la zone commune de départ et d'arrivée marquée et l'échantillon au centre",
+     "• Chronomètre, tableau des scores",
+     "• Accus chargés de secours, chargeur",
+     "• Post-its"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• La page cahier des charges, section « Les épreuves », projetée"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Rappeler les règles des deux épreuves au vidéoprojecteur. Chaque équipe vérifie sa bande de fréquence : au capture the flag, toutes les équipes pilotent en même temps, et si deux équipes ont la même bande, deux rovers obéissent à la même télécommande.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (30 min)",
+    [
+     "Le parcours",
+     "Description :",
+     "Un rover à la fois. Chaque équipe court deux fois, et le meilleur temps compte. Les temps s'affichent au fur et à mesure.",
+     "Entre deux passages, l'équipe peut régler son rover, mais pas le reconstruire.",
+     "Modalité : Défi / hackathon chronométré"
+    ]
+   ],
+   [
+    "Activité 2 (20 min)",
+    [
+     "Le capture the flag",
+     "Description :",
+     "Toutes les équipes jouent en même temps sur la table, à la télécommande, en partant de la zone commune. Un échantillon ramené debout rapporte 2 points. Une équipe qui renverse l'échantillon perd 1 point, et l'échantillon est remis debout au centre, à la main. La partie se joue en trois manches, ou s'arrête au bout de 15 minutes, remise en place comprise.",
+     "Modalité : Défi / hackathon chronométré"
+    ]
+   ],
+   [
+    "Activité 3 (30 min)",
+    [
+     "Le bilan",
+     "Description :",
+     "Remise des résultats (5 min). Annoncer les deux classements, et nommer une réussite pour chaque équipe, pas seulement pour les gagnants.",
+     "Bilan d'équipe (15 min). Chaque équipe écrit sur des post-its une réussite, une chose à changer, et ce que les épreuves ont montré qu'on n'avait pas vu avant. Les post-its sont collés au tableau et regroupés.",
+     "Bilan du projet (10 min). Chacun colle une gommette sur son moment préféré du projet, de la S1 à la S12.",
+     "Modalité : Post-its & vote (dot-voting)"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Tour de table : en une phrase, chacun dit ce qu'il sait faire aujourd'hui et ne savait pas faire à la première séance.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Rangement du parcours et de la table. Photo de groupe avec les rovers si elle est prévue. Mot de fin.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Un seul passage au parcours par équipe · capture the flag en deux manches."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Au capture the flag, toutes les bandes de fréquence doivent être différentes. Le vérifier au lancement, pas à la première collision.",
+     "• Un rover qui s'éteint pendant l'épreuve prive son équipe de tout son travail. Vérifier les accus et prévoir des accus de secours.",
+     "• Le parcours peut s'étirer : deux passages par équipe au plus.",
+     "• Un rover qui casse pendant les épreuves est réparé si c'est rapide. Sinon, l'équipe continue avec ce qui marche, et on valorise quand même son travail."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ]
+ }
+}

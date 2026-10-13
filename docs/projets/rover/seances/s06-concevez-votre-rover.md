@@ -17,7 +17,7 @@
 **À vous.** La méthode :
 
 1. Pour chaque point du cahier des charges, cherchez la partie du rover qu'il touche : le châssis, la prise de l'échantillon, le support de tag, le programme.
-2. Chacun dessine comment le rover déplace l'échantillon sans le renverser : il le pousse, il le saisit, ou il le soulève.
+2. Chacun dessine comment le rover déplace l'échantillon sans le renverser : il le pousse, il le saisit, ou il le soulève. Pour saisir ou soulever, il faut un servomoteur, comme celui montré en séance 5.
 3. Choisissez-en une ensemble, et dessinez le rover entier.
 
 ## 2. Qui fait quoi

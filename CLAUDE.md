@@ -34,6 +34,10 @@ On parle de **« projet »**, jamais de « trimestre ». Dans le texte comme dan
 
 La méthode complète est dans la skill `.claude/skills/nouvelle-seance-maker-junior/`, à charger avant de commencer. Ses références LP (`references/redaction-lp.md`, `modalites.md`, `bloom.md`) se chargent au moment de rédiger, pas avant.
 
+## Relire et intégrer les retours
+
+Après une série de modifications : la skill `.claude/skills/relire-le-livre/` (cohérence de tout le livre). Quand l'utilisateur a modifié ou commenté le Google Doc d'un projet : la skill `.claude/skills/integrer-les-retours/`, à suivre **avant tout push vers le Doc**. Les retours y sont regroupés par famille, avec un traitement proposé pour chacune, et rien n'est appliqué sans accord.
+
 ## Vérifier
 
 ```bash

@@ -59,6 +59,7 @@ Le dépôt est la source, le Google Doc de chaque projet en est l'export. Leurs 
 .venv/bin/pip install -r outils/requirements.txt          # une fois
 .venv/bin/python outils/sync_gdoc.py diff rover [s01]     # ce qui diffère, et les commentaires ouverts
 .venv/bin/python outils/sync_gdoc.py push rover [s01]     # écrit le dépôt dans le Doc
+.venv/bin/python outils/sync_gdoc.py repondre rover ID "texte" [--resoudre]   # répond à un commentaire, le clôt
 ```
 
-Le push refuse d'écrire si le Doc a été modifié depuis le précédent : lancer `diff`, reporter dans la fiche ce qui doit l'être, puis `push --force`. Il faut les identifiants OAuth dans `~/.config/maker-junior/credentials.json`.
+À chaque push, le texte du Doc tel qu'il vient d'être écrit est gardé dans `animation/.gdoc/<projet>.json`, à commiter avec les fiches. `diff` s'en sert pour montrer, en premier, ce qui a été modifié dans le Doc depuis le dernier push : c'est ce que le prochain push effacerait. Le push refuse alors d'écrire et affiche ces modifications : les reporter dans la fiche si elles doivent rester, puis `push --force`. Il faut les identifiants OAuth dans `~/.config/maker-junior/credentials.json`.

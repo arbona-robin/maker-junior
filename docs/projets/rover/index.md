@@ -27,7 +27,7 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
   Vous dessinez votre rover d'équipe, vous vous répartissez le travail, et vous fabriquez ses pièces en carton et en 3D.
 
 - **[Séance 7 — Le servomoteur](seances/s07-commandez-un-servomoteur.md)**
-  Vous commandez un servomoteur à l'angle près, et vous décidez s'il sert votre rover.
+  Vous essayez le servomoteur, et vous le montez sur votre rover si votre croquis le prévoit.
 
 - **[Séance 8 — Pilotez votre rover en vitesse](seances/s08-pilotez-en-vitesse.md)**
   Votre télécommande envoie la vitesse avec chaque mot : plus vous penchez, plus le rover va vite.
