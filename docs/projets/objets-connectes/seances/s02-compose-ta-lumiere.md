@@ -93,7 +93,7 @@ strip.show()
 
 <span class="todo-media">[photo : la matrice qui affiche un visage]</span>
 
-**À toi : fais-la respirer.** Dans `toujours`, la lumière monte de 0 à 50, puis redescend : `set brightness` puis `show color` à chaque pas, une pause de 20 ms. La boucle `pour index variant de 0 à 50`, dans **Boucles**, compte les pas pour toi.
+**À toi : fais-la respirer.** Dans `toujours`, la lumière monte de 0 à 50, puis redescend : `set brightness`, `set color`, puis `show changes` à chaque pas, et une pause de 20 ms. La boucle `pour index variant de 0 à 50`, dans **Boucles**, compte les pas pour toi.
 
 `set brightness` ne change que les couleurs données après lui : redonne la couleur à chaque pas.
 
@@ -106,12 +106,14 @@ strip.show()
 basic.forever(function () {
     for (let index = 0; index <= 50; index++) {
         strip.setBrightness(index)
-        strip.showColor(0xff8000)
+        strip.setColor(0xff8000)
+        strip.show()
         basic.pause(20)
     }
     for (let index = 0; index <= 50; index++) {
         strip.setBrightness(50 - index)
-        strip.showColor(0xff8000)
+        strip.setColor(0xff8000)
+        strip.show()
         basic.pause(20)
     }
 })
