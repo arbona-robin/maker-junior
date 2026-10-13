@@ -72,6 +72,12 @@ for f in FICHES:
         if re.search(PROPRE_AU_ROVER, ligne):
             signaler("fiche générale", f, n, "code ou valeur propre au rover : sa place est dans la séance")
 
+# 2 bis. Matrice : on prépare (`set color`), puis on affiche (`show changes`). `show color` mélange les deux.
+for f in PAGES + FICHES:
+    for n, ligne in enumerate(lignes(f), 1):
+        if re.search(r"\.showColor\(", ligne):
+            signaler("matrice", f, n, "`show color` : écrire `set color` puis `show changes`")
+
 # 3. Ordre : un bloc DF-Driver utilisé avant l'installation de l'extension, dans la même fiche.
 for f in FICHES + PAGES:
     texte = lignes(f)

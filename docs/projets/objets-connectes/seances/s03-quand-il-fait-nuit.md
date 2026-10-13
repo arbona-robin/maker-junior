@@ -53,7 +53,8 @@ Retour dans ton projet `lampe`.
 ```blocks
 basic.forever(function () {
     if (input.lightLevel() < 40) {
-        strip.showColor(0xff8000)
+        strip.setColor(0xff8000)
+        strip.show()
     } else {
         strip.clear()
         strip.show()
@@ -82,7 +83,8 @@ Une variable, `allumee`, qui vaut `0` ou `1`, garde cet **état**. La lampe ne s
 ```blocks
 basic.forever(function () {
     if (input.lightLevel() < 40 && allumee == 0) {
-        strip.showColor(0xff8000)
+        strip.setColor(0xff8000)
+        strip.show()
         allumee = 1
     } else if (input.lightLevel() > 40 && allumee == 1) {
         strip.clear()

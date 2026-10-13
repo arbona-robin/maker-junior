@@ -51,7 +51,8 @@ Les blocs sont dans la catégorie **neopixel-extended**, en anglais : cherche-le
 ```blocks
 let strip = neopixelExtended.create(DigitalPin.P1, 64, neopixelExtended.Format.RGB)
 strip.setBrightness(50)
-strip.showColor(0xff0000)
+strip.setColor(0xff0000)
+strip.show()
 ```
 
 > [!CAUTION] La luminosité d'abord
@@ -67,7 +68,7 @@ strip.showColor(0xff0000)
 
 **Ce que tu vas obtenir :** ton image sur la matrice, puis une lumière qui respire, ou des images qui changent.
 
-Remplace `show color` par `set NeoPixel 8x8` : une grille de 8 × 8, une couleur par case. Puis `show changes`. Dans `au démarrage`, ajoute `set NeoPixel matrix layout to row by row` : ta matrice est câblée ligne par ligne.
+Remplace `set color` par `set NeoPixel 8x8` : une grille de 8 × 8, une couleur par case. Garde `show changes` après. Dans `au démarrage`, ajoute `set NeoPixel matrix layout to row by row` : ta matrice est câblée ligne par ligne.
 
 ```blocks
 let strip = neopixelExtended.create(DigitalPin.P1, 64, neopixelExtended.Format.RGB)

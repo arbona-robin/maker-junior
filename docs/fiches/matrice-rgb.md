@@ -65,9 +65,9 @@ let strip: neopixelExtended.Strip = null
 
 ## Préparer, puis afficher
 
-`set NeoPixel 8x8`, `set pixel color`, `rotate` préparent les couleurs. **Rien ne change sur la matrice avant `show changes`.** On prépare tout, puis on affiche une fois.
+`set color`, `set NeoPixel 8x8`, `set pixel color`, `rotate` préparent les couleurs. **Rien ne change sur la matrice avant `show changes`.** On prépare tout, puis on affiche une fois.
 
-`show color` et `show rainbow` font les deux d'un coup.
+`show color` et `show rainbow` préparent et affichent d'un coup. On leur préfère `set color` puis `show changes` : on voit où l'image part vers la matrice.
 
 ## Un ruban de 64 LED
 
