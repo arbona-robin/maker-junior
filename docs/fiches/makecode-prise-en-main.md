@@ -91,6 +91,19 @@ Une variable est une **boîte nommée** qui retient une valeur. Tu y ranges quel
 
 Deux blocs suffisent : `définir <nom> à …` pour y mettre une valeur, et le bloc `<nom>` lui-même pour la relire.
 
+## Répéter en comptant
+
+`pour index variant de 0 à 4`, dans **Boucles**, répète ce qu'il contient en comptant : `index` vaut 0 au premier tour, 1 au deuxième, et ainsi de suite jusqu'à 4. Glisse `index` dans un bloc, et chaque tour fait un peu autre chose.
+
+```blocks
+for (let index = 0; index <= 4; index++) {
+    led.plot(index, 2)
+    basic.pause(200)
+}
+```
+
+Les LED du milieu s'allument une à une, de gauche à droite.
+
 ## Les capteurs, et la décision
 
 Un capteur ne dit jamais « penche à gauche ». Il dit `-247`. Il faut donc **transformer un nombre en décision**, et c'est le même geste pour un thermostat, un détecteur de présence, un capteur de ligne ou une télécommande.

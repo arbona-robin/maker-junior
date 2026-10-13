@@ -40,6 +40,8 @@ Le premier bloc, dans `au démarrage`, dit où est branchée la matrice et combi
 
 À 50, la lumière est aussi plus douce, et c'est ce qu'on veut d'une lampe.
 
+`set brightness` ne change que les couleurs données après lui. Pour faire varier la lumière, redonne la couleur après chaque `set brightness`.
+
 Des couleurs fausses ou un scintillement en fin de séance : les accus faiblissent.
 
 ## Dessiner une image

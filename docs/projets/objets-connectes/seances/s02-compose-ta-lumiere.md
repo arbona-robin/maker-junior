@@ -65,7 +65,7 @@ strip.showColor(0xff0000)
 
 ## 3. Dessine et anime
 
-**Ce que tu vas obtenir :** ton image sur la matrice, qui défile ou qui change.
+**Ce que tu vas obtenir :** ton image sur la matrice, puis une lumière qui respire, ou des images qui changent.
 
 Remplace `show color` par `set NeoPixel 8x8` : une grille de 8 × 8, une couleur par case. Puis `show changes`. Dans `au démarrage`, ajoute `set NeoPixel matrix layout to row by row` : ta matrice est câblée ligne par ligne.
 
@@ -93,25 +93,36 @@ strip.show()
 
 <span class="todo-media">[photo : la matrice qui affiche un visage]</span>
 
-**À toi : fais-la défiler.** Dans `toujours` : `rotate pixels by 8`, `show changes`, une pause de 200 ms.
+**À toi : fais-la respirer.** Dans `toujours`, la lumière monte de 0 à 50, puis redescend : `set brightness` puis `show color` à chaque pas, une pause de 20 ms. La boucle `pour index variant de 0 à 50`, dans **Boucles**, compte les pas pour toi.
+
+`set brightness` ne change que les couleurs données après lui : redonne la couleur à chaque pas.
+
+→ [Répéter en comptant](../../../fiches/makecode-prise-en-main.md#repeter-en-comptant)
 
 <details markdown>
 <summary>La solution</summary>
 
 ```blocks
 basic.forever(function () {
-    strip.rotate(8)
-    strip.show()
-    basic.pause(200)
+    for (let index = 0; index <= 50; index++) {
+        strip.setBrightness(index)
+        strip.showColor(0xff8000)
+        basic.pause(20)
+    }
+    for (let index = 0; index <= 50; index++) {
+        strip.setBrightness(50 - index)
+        strip.showColor(0xff8000)
+        basic.pause(20)
+    }
 })
 let strip: neopixelExtended.Strip = null
 ```
 
-La matrice est un ruban de 64 LED, posé en 8 lignes : décaler de 8, c'est décaler d'une ligne. Essaie avec 1.
+`index` vaut 0, puis 1, puis 2… jusqu'à 50. Dans la seconde boucle, `50 - index` fait le chemin inverse.
 
 </details>
 
-<span class="todo-media">[vidéo : l'image qui défile ligne par ligne]</span>
+<span class="todo-media">[vidéo : la lampe qui respire]</span>
 
 **À toi : deux images.** Elles alternent, chacune une seconde.
 
@@ -161,5 +172,5 @@ Deux élastiques tiennent la matrice. Le papier calque devant adoucit la lumièr
 ## Va plus loin
 
 - **Un arc-en-ciel.** `show rainbow from 1 to 360`.
-- **Une respiration.** Dans une boucle, `set brightness` monte de 0 à 50, puis redescend, avec `show changes` à chaque pas.
+- **Fais-la défiler.** Dans `toujours` : `rotate pixels by 8`, `show changes`, une pause de 200 ms. Décaler de 8, c'est décaler d'une ligne : essaie avec 1.
 - **Ton bouton de cuivre.** Quand tu touches les bandes, la matrice change d'image.

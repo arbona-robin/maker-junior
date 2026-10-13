@@ -133,7 +133,7 @@ Le premier parcours demande 80 € d'achats : matrices, ruban de cuivre, visseri
 
 **Titre :** Compose la lumière de ta lampe
 
-**Notions :** alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée · boucle d'animation
+**Notions :** alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée · boucle d'animation · boucle qui compte
 
 **Livrable intermédiaire :** matrice câblée et fixée sur la lampe, une couleur choisie et une animation
 
