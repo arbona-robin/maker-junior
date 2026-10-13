@@ -18,7 +18,11 @@
 ![Le support de la lampe à plat : une bande de carton rainurée, deux bandes de cuivre collées en travers, le micro:bit tenu par deux élastiques](../../../assets/objets-connectes-s01/01-support-a-plat.jpg)
 </figure>
 
-<span class="todo-media">[plan de découpe du support]</span>
+<figure class="plan" markdown>
+![Plan de découpe du support de la lampe : une bande de carton de 285 sur 70 mm, pliée en cinq sections : un montant de 80 mm qui porte le micro:bit et deux pistes de cuivre, P2 et GND, le dessus de 40 mm avec les deux bandes de cuivre, un montant de 80 mm, la base de 65 mm, et un rabat de 20 mm](../../../assets/plans/lampe-support-v4.png)
+</figure>
+
+Imprime [le plan (PDF)](../../../assets/plans/lampe-support-v4.pdf) en A4, **à 100 %**. Trait plein : tu découpes. Pointillé : tu plies. Le rabat passe sous la première section, collé ou scotché.
 
 Plie le support le long des rainures. Le micro:bit se tient par deux élastiques, écran vers l'avant ; le boîtier de piles derrière, par deux élastiques aussi. Branche-le au micro:bit.
 

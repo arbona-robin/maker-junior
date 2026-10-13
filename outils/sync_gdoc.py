@@ -733,7 +733,7 @@ if __name__ == "__main__":
     doc_id = autre_doc or yaml.safe_load((ANIMATION / "export.yml").read_text())[projet]["doc"]
     docs, drive = connexion()
     if commande == "copie":
-        copie = drive.files().copy(fileId=doc_id, body={"name": "TEST sync, à supprimer"}).execute()
+        copie = drive.files().copy(fileId=doc_id, body={"name": "TEST sync, à supprimer"}, supportsAllDrives=True).execute()
         print(copie["id"])
     elif commande == "repondre":
         if len(args) < 4:

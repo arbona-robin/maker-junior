@@ -40,10 +40,10 @@ Un câble Dupont sur chaque broche, puis des pinces :
 
 **Ce que tu vas obtenir :** la matrice s'allume en rouge.
 
-Dans ton projet `lampe` : **Extensions** → tape `neopixel` → clique sur **neopixel-matrix-extension**.
+Dans ton projet `lampe` : **Extensions** → colle l'adresse `https://github.com/arbona-robin/pxt-neopixel-matrix-extension` → clique sur la carte **neopixel-extended**.
 
 <figure class="screenshot" markdown>
-![La fenêtre Extensions de MakeCode : neopixel tapé dans la recherche, et la carte neopixel-matrix-extension parmi les résultats](../../../assets/objets-connectes-s02/20-extension-neopixel.png)
+![La fenêtre Extensions de MakeCode : l'adresse de l'extension collée dans la recherche, et la carte neopixel-extended trouvée](../../../assets/objets-connectes-s02/20-extension-neopixel.png)
 </figure>
 
 Les blocs sont dans la catégorie **neopixel-extended**, en anglais : cherche-les tels qu'ils sont écrits. Dans `au démarrage` :
@@ -67,11 +67,12 @@ strip.showColor(0xff0000)
 
 **Ce que tu vas obtenir :** ton image sur la matrice, qui défile ou qui change.
 
-Remplace `show color` par `set NeoPixel 8x8` : une grille de 8 × 8, une couleur par case. Puis `show changes`.
+Remplace `show color` par `set NeoPixel 8x8` : une grille de 8 × 8, une couleur par case. Puis `show changes`. Dans `au démarrage`, ajoute `set NeoPixel matrix layout to row by row` : ta matrice est câblée ligne par ligne.
 
 ```blocks
 let strip = neopixelExtended.create(DigitalPin.P1, 64, neopixelExtended.Format.RGB)
 strip.setBrightness(50)
+strip.setMatrixLayout(neopixelExtended.MatrixLayout.RowByRow)
 strip.setMatrix64(
     neopixelExtended.rowOf8(0x000000, 0x000000, 0xffff00, 0xffff00, 0xffff00, 0xffff00, 0x000000, 0x000000),
     neopixelExtended.rowOf8(0x000000, 0xffff00, 0x000000, 0x000000, 0x000000, 0x000000, 0xffff00, 0x000000),
@@ -86,6 +87,9 @@ strip.show()
 ```
 
 `set NeoPixel 8x8` prépare l'image : rien ne change sur la matrice avant `show changes`. Une case laissée en gris s'allume en gris ; pour l'éteindre, choisis le noir.
+
+> [!TIP] Éteindre toutes les cases grises d'un coup
+> Passe en **JavaScript**, ouvre « Rechercher et remplacer » (`Ctrl` + `H`), remplace `0x888888` par `0x000000`, puis reviens aux **Blocs**.
 
 <span class="todo-media">[photo : la matrice qui affiche un visage]</span>
 

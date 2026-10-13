@@ -27,7 +27,7 @@ La matrice prend son énergie au pack. Le micro:bit ne lui envoie que le signal.
 
 ## L'extension
 
-MakeCode → **Extensions** → tape `neopixel` → clique sur **neopixel-matrix-extension**.
+MakeCode → **Extensions** → colle l'adresse `https://github.com/arbona-robin/pxt-neopixel-matrix-extension` → clique sur la carte **neopixel-extended**.
 
 Une catégorie **neopixel-extended** apparaît. Ses blocs sont en anglais : cherche-les tels qu'ils sont écrits.
 
@@ -75,7 +75,10 @@ La matrice est en réalité un ruban de 64 LED, numérotées de `0` à `63`, pos
 - `set matrix color at x y` allume une case par ses coordonnées, comme `allumer x y` sur l'écran du micro:bit. Le coin en haut à gauche est `0,0`.
 
 > [!TIP] Une ligne sur deux à l'envers ?
-> L'extension suppose que le ruban fait des allers-retours d'une ligne à l'autre. Si ta matrice est câblée autrement, `set NeoPixel matrix wiring` corrige.
+> Le ruban de ta matrice est câblé ligne par ligne, ou en allers-retours d'une ligne à l'autre. `set NeoPixel matrix layout`, dans `au démarrage`, dit lequel à l'extension : `row by row` pour les matrices de l'atelier.
+
+> [!TIP] Éteindre toutes les cases grises d'un coup
+> Passe en **JavaScript**, ouvre « Rechercher et remplacer » (`Ctrl` + `H`), remplace `0x888888` par `0x000000`, puis reviens aux **Blocs**.
 
 ## La couleur
 

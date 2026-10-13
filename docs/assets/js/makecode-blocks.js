@@ -29,7 +29,7 @@
             type: "renderblocks",
             id: id,
             code: pending[id].textContent,
-            options: { package: pending[id].textContent.indexOf("neopixelExtended") >= 0 ? "neopixel-extended=github:pasalt/pxt-neopixel-matrix-extension" : PACKAGE }
+            options: { package: pending[id].textContent.indexOf("neopixelExtended") >= 0 ? "neopixel-extended=github:arbona-robin/pxt-neopixel-matrix-extension#v2.1.3" : PACKAGE }
           }, ORIGIN);
         });
       } else if (m.type === "renderblocks") {

@@ -12,7 +12,7 @@ import struct
 
 LANGUE = "fr"
 EXTENSION = "motor=github:DFRobot/pxt-motor"
-MATRICE = "neopixel-extended=github:pasalt/pxt-neopixel-matrix-extension"
+MATRICE = "neopixel-extended=github:arbona-robin/pxt-neopixel-matrix-extension#v2.1.3"
 
 
 def extension(code: str) -> str:

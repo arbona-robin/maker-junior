@@ -46,8 +46,9 @@ Utile : avoir suivi le projet Rover. La radio, les capteurs, MakeCode et Tinkerc
 - 1 matrice RGB 8 × 8 WS2812
 - 1 boîtier 4 × AA d'accus NiMH, pour la matrice
 - 1 support de lampe en carton pré-découpé
-- Ruban de cuivre, 1 LED 5 mm
-- 3 câbles à pinces crocodile
+- Ruban de cuivre 6 mm, environ 25 cm, 1 LED 5 mm
+- 5 vis M3 × 10, 5 écrous, 5 rondelles
+- 3 câbles Dupont femelle / pince crocodile, côté matrice
 - 1 bac nominatif
 
 **Commun**
@@ -65,7 +66,7 @@ Utile : avoir suivi le projet Rover. La radio, les capteurs, MakeCode et Tinkerc
 
 ## Ressources numériques
 
-- MakeCode (makecode.microbit.org), gratuit et sans inscription, avec l'extension `neopixel-extended` ajoutée par son adresse (github.com/pasalt/pxt-neopixel-matrix-extension), blocs en anglais
+- MakeCode (makecode.microbit.org), gratuit et sans inscription, avec l'extension `neopixel-extended` ajoutée par son adresse (github.com/arbona-robin/pxt-neopixel-matrix-extension, copie qui gère les matrices câblées ligne par ligne), blocs en anglais
 - Chrome ou Edge, pour Afficher données et pour le pont USB
 - Tinkercad en mode classe (comptes créés par l'animateur, sans adresse personnelle des jeunes)
 - Slicer de l'imprimante sur le poste de l'animateur
@@ -93,11 +94,13 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 | Accus NiMH AAA | 24 | 2 € | 48 € | Proposé |
 | Matrice RGB 8 × 8 WS2812, lots de 3 | 4 | 10 € | 40 € | À acheter |
 | Bornes de connexion à levier, boîte de 50, pour le chantier | 1 | 19 € | 19 € | Proposé |
-| Ruban de cuivre adhésif conducteur, 10 mm × 20 m | 1 | 10 € | 10 € | À acheter |
+| Ruban de cuivre adhésif conducteur, 6 mm × 20 m | 1 | 10 € | 10 € | À acheter |
+| Vis M3 × 10, écrous et rondelles, 100 de chaque | 1 | 10 € | 10 € | À acheter |
+| Câbles Dupont femelle / pince crocodile, lots de 10 | 4 | 5 € | 20 € | À acheter |
 | Matrice RGB, lot de 3 de rechange | 1 | 10 € | 10 € | Proposé |
 | Adaptateur secteur USB 5 V, produits installés près d'une prise | 6 | 5 € | 30 € | Proposé |
 | Capteurs du chantier, selon l'inventaire | | | | Selon le catalogue |
-| *Sous-total électronique* | | | *921 €* | |
+| *Sous-total électronique* | | | *951 €* | |
 | **Équipement commun** | | | | |
 | Chargeur d'accus | 1 | 35 € | 35 € | Possédé |
 | Multimètre | 1 | 20 € | 20 € | Possédé |
@@ -116,7 +119,7 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 
 Un parcours coûte environ 178 €, soit 15 € par jeune : 100 € de consommables d'impression, de découpe et de fabrication, et 78 € de casse. La casse est calculée sur ce que les jeunes manipulent toute l'année (micro:bit, matrices, boîtiers et accus des lampes, soit 520 €).
 
-Le premier parcours demande 50 € d'achats : matrices et ruban de cuivre. Les matrices se réutilisent, les lampes restant à l'atelier. S'y ajoutent 59 € proposés (rechange, adaptateurs secteur, bornes à levier), les capteurs du chantier après inventaire, et 72 € de boîtiers et d'accus AAA si le stock n'en a pas.
+Le premier parcours demande 80 € d'achats : matrices, ruban de cuivre, visserie et câbles des lampes. Les matrices se réutilisent, les lampes restant à l'atelier. S'y ajoutent 59 € proposés (rechange, adaptateurs secteur, bornes à levier), les capteurs du chantier après inventaire, et 72 € de boîtiers et d'accus AAA si le stock n'en a pas.
 
 ## Séance 1 — Phase 1 — Découverte & prise en main
 

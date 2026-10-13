@@ -38,15 +38,15 @@ async function attendreTexte(page, motif) {
 }
 
 const CAPTURES = {
-  // S2 Objets connectés : la fenêtre Extensions, la recherche « neopixel », les cartes trouvées.
+  // S2 Objets connectés : la fenêtre Extensions, l'adresse de l'extension collée, la carte trouvée.
   async extension(page) {
     await page.goto("https://makecode.microbit.org/?lang=fr#editor", { waitUntil: "networkidle2", timeout: 120000 });
     await attendre(6000);
     await cliquerTexte(page, ".blocklyTreeRow, [role=treeitem]", "Extensions");
     const champ = await page.waitForSelector(".ui.modal input, .extensions-browser input, input[type=search]", { timeout: 30000 });
-    await champ.type("neopixel");
+    await champ.type("https://github.com/arbona-robin/pxt-neopixel-matrix-extension");
     await page.keyboard.press("Enter");
-    await attendreTexte(page, /neopixel-matrix-extension/i);
+    await attendreTexte(page, /neopixel-extended/i);
     // Les images des cartes arrivent après le texte, puis apparaissent en fondu.
     await page.waitForNetworkIdle({ idleTime: 3000, timeout: 60000 }).catch(() => {});
     // Sans affichage, le navigateur ne fait pas avancer le fondu : on force quelques images, puis on attend la fin.

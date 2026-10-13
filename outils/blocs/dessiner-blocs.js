@@ -16,7 +16,7 @@ const puppeteer = require("puppeteer-core");
 
 const LANGUE = "fr";
 const EXTENSION = "motor=github:DFRobot/pxt-motor";
-const MATRICE = "neopixel-extended=github:pasalt/pxt-neopixel-matrix-extension";
+const MATRICE = "neopixel-extended=github:arbona-robin/pxt-neopixel-matrix-extension#v2.1.3";
 // L'extension à charger : celle de la matrice si le code l'utilise, DF-Driver sinon.
 const extension = (code) => (code.includes("neopixelExtended") ? MATRICE : EXTENSION);
 const RACINE = path.resolve(__dirname, "../..");
