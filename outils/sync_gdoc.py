@@ -652,8 +652,11 @@ def push(docs, doc_id, projet, filtre, force):
     if not filtre:
         for nom in sorted(set(tables_du_doc(doc.doc)) - set(noms_fiches(projet)), reverse=True):
             el = tables_du_doc(doc.doc)[nom]
+            # Le saut de page qui précède le tableau part avec lui : on coupe depuis la fin du tableau d'avant.
+            avant = [t["endIndex"] for t in corps(doc.doc) if "table" in t and t["endIndex"] <= el["startIndex"]]
+            debut = max(avant) + 1 if avant else el["startIndex"]
             doc.ecrire([{"deleteContentRange": {"range": {
-                "startIndex": el["startIndex"], "endIndex": el["endIndex"]}}}])
+                "startIndex": debut, "endIndex": el["endIndex"]}}}])
             bilan.append(f"{nom} : supprimée, absente du dépôt")
 
     tables = tables_du_doc(doc.doc)
