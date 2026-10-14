@@ -1,0 +1,1706 @@
+{
+ "revision": "AHj4eMSzrb9lhYApbrLSUuDasVIQnrjxMPvG1F65b2c3048HM1UwtqqxlRZjVmNFMygCvFNv9h7y0q8Lprfn0JlSNGOhzDIc51AmG1M-Uss",
+ "fiches": {
+  "communication": [
+   [
+    "Titre",
+    [
+     "Invente et fabrique tes objets connectés"
+    ]
+   ],
+   [
+    "Accroche",
+    [
+     "Ta lampe s'allume toute seule à la nuit tombée, dans la couleur que tu as choisie, et d'un signal radio toutes les lampes du groupe s'allument en vague. Ensuite, ton équipe invente son propre objet connecté, de l'idée jusqu'à la démonstration."
+    ]
+   ],
+   [
+    "Description",
+    [
+     "Tu commences par ta lampe d'ambiance : tu poses son circuit en cuivre, tu programmes ses 64 LED de couleur, tu lui fais détecter la tombée de la nuit et tu dessines en 3D l'emblème qui la décore. Puis ton équipe invente un objet connecté qui sert à tout le monde : un panneau qui indique de loin si une salle est libre, une station météo à la fenêtre, un feu qui passe au rouge quand la salle devient trop bruyante, un coffre qui s'ouvre avec un code. Tu apprends comment marche un circuit électrique, comment un objet mesure, décide et agit seul, comment plusieurs objets se parlent par radio, et comment on dessine une pièce qui s'emboîte sur une autre. Tu programmes en blocs avec MakeCode et tu modélises avec Tinkercad. Tous les objets envoient leurs mesures sur un même tableau de bord, affiché sur grand écran. À la fin, ton équipe présente son objet sur une page web que tu gardes, et vous en faites la démonstration."
+    ]
+   ],
+   [
+    "Durée",
+    [
+     "1 h 45"
+    ]
+   ],
+   [
+    "Séances",
+    [
+     "10 séances"
+    ]
+   ],
+   [
+    "Âge",
+    [
+     "11–17 ans"
+    ]
+   ],
+   [
+    "Places",
+    [
+     "12 max."
+    ]
+   ],
+   [
+    "Lieu",
+    [
+     "La Plateforme"
+    ]
+   ],
+   [
+    "Visuels (légendes)",
+    [
+     "1. Une lampe en carton allumée dans la pénombre, la lumière de la matrice adoucie par le papier calque, l'emblème imprimé accroché. (à produire, parcours test de l'animateur)",
+     "2. Une LED posée à cheval sur deux bandes de cuivre, allumée par le micro:bit.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-s01/07-led-allumee-3v.jpg]",
+     "3. Douze lampes posées en ligne qui s'allument l'une après l'autre. (à produire en séance 5)",
+     "4. Un objet du chantier en fonctionnement, ses mesures affichées sur le tableau de bord. (à produire en séance 9)"
+    ]
+   ]
+  ],
+  "projet": [
+   [
+    "Titre du projet",
+    [
+     "Objets connectés"
+    ]
+   ],
+   [
+    "Objectif général",
+    [
+     "Fabriquer un objet connecté personnel qui mesure, décide et communique, puis concevoir en équipe un objet connecté, l'installer et le faire fonctionner dans ses conditions réelles."
+    ]
+   ],
+   [
+    "Livrable du parcours",
+    [
+     "Une lampe d'ambiance par jeune : un support en carton personnalisé, un circuit en ruban de cuivre, une matrice de LED RGB dont il a composé la lumière, un capteur qui l'allume à la tombée du jour, un emblème qu'il a dessiné et fait imprimer, et une liaison radio avec les lampes des autres. Puis un produit par équipe de deux ou trois, installé et visible sur le tableau de bord commun. Chaque équipe présente son produit et ses lampes sur une page web publiée : c'est ce que chaque jeune garde du parcours."
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de réaliser un circuit électrique fermé puis de le faire commander par un micro:bit, entrée et sortie identifiées, sans erreur de polarité",
+     "• Être capable de programmer un objet qui allume sa lumière seul à partir d'un seuil choisi d'après des mesures relevées, et qui ne réagit qu'au changement d'état",
+     "• Être capable de concevoir une pièce imprimée en 3D qui respecte des contraintes de dimension et s'imprime sans défaut, puis une pièce qui porte un composant existant",
+     "• Être capable de comparer une organisation radio centralisée et une organisation distribuée, en expliquant ce qui arrive quand un objet tombe en panne",
+     "• Être capable de concevoir en équipe un objet connecté, de le tester dans ses conditions réelles et de justifier ses choix techniques devant un public non spécialiste"
+    ]
+   ],
+   [
+    "Description du projet",
+    [
+     "Pendant les cinq premières séances, chaque jeune construit la même lampe d'ambiance, qu'il personnalise : couleurs, animation, emblème. En la construisant, il traverse toute la chaîne d'un objet connecté : un circuit électrique, de la lumière adressable, un capteur et un seuil, une pièce conçue en 3D, la radio. Les équipes de deux ou trois conçoivent ensuite un produit, choisi dans un catalogue ajusté à l'inventaire ou inventé par l'équipe, à taille réelle quand c'est possible. Tous les produits parlent le même protocole radio. Un pont USB recopie ce trafic vers un tableau de bord web, qui reconnaît chaque micro:bit et choisit l'affichage de chaque mesure d'après sa clé ; il supervise le système sans le commander : débranché, les objets continuent de fonctionner. Ils apprennent le circuit électrique et sa commande par une broche, la mesure et le seuil, l'état mémorisé, la conception d'une pièce pour une fonction, le message diffusé et le message adressé, l'alimentation d'un objet qui doit durer, le test des cas limites, et la présentation d'un choix technique sur une page web. Une notion par séance, présentée dans les dix premières minutes, pour que chacun avance ensuite à son rythme. Le rythme ne suit pas le découpage 3/6/3 : la phase 1 compte cinq séances, parce que la lampe est le socle technique de tout le chantier ; la phase 2 en compte trois, et la phase 3 deux, l'épreuve et l'installation étant réunies en séance 9."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Indispensable : aucun. Le parcours est accessible à des débutants complets.",
+     "Utile : avoir suivi le projet Rover. La radio, les capteurs, MakeCode et Tinkercad y ont été vus, et le parcours y fait référence sans en dépendre."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur numérique, maîtrisant MakeCode, le micro:bit, Tinkercad et un peu de soudure (préparation des matrices)."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• 1 micro:bit v2, alimenté par un boîtier 2 × AAA (de préférence) ou par l'USB",
+     "• 1 matrice RGB 8 × 8 WS2812",
+     "• 1 boîtier 4 × AA d'accus NiMH, pour la matrice",
+     "• 1 support de lampe en carton pré-découpé",
+     "• Ruban de cuivre 6 mm, environ 25 cm, 1 LED 5 mm",
+     "• 5 vis M3 × 10, 5 écrous, 5 rondelles",
+     "• 3 câbles Dupont femelle / pince crocodile, côté matrice",
+     "• 1 bac nominatif",
+     "Commun",
+     "• Bornes de connexion à levier, pour le chantier",
+     "• Câbles Dupont, fil souple multibrin",
+     "• Trois postes de découpe : outil de découpe, règle métallique à rebord, tapis",
+     "• Pied à coulisse, règles",
+     "• Imprimante 3D, filament PLA",
+     "• Papier calque, colle, ruban adhésif",
+     "• Chargeur d'accus, multimètre",
+     "• Pour le chantier : capteurs selon l'inventaire, servomoteurs, moteurs TT, cartes DFR0548, breadboards, adaptateurs secteur USB 5 V",
+     "• 1 micro:bit pour le pont USB",
+     "• La feuille d'équipe, imprimée recto verso, une par équipe : produit, vérifications, suivi d'impression, décisions. Source : outils/feuilles/feuille-equipe-objets.html, à réimprimer avec node outils/feuilles/imprimer.js si le cahier des charges change"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode (makecode.microbit.org), gratuit et sans inscription, avec l'extension neopixel-extended ajoutée par son adresse (github.com/arbona-robin/pxt-neopixel-matrix-extension, copie qui gère les matrices câblées ligne par ligne), blocs en anglais",
+     "• Chrome ou Edge, pour Afficher données et pour le pont USB",
+     "• Tinkercad en mode classe (comptes créés par l'animateur, sans adresse personnelle des jeunes)",
+     "• Slicer de l'imprimante sur le poste de l'animateur",
+     "• Le tableau de bord, une page web qui se configure d'après les clés reçues, et le programme du pont : voir pont.md",
+     "• 1 ordinateur par jeune",
+     "• Le livre en ligne, ouvert en écran partagé pendant l'atelier",
+     "• Gabarit de la page web de présentation (S10), commun à tous les parcours : docs/assets/gabarit-page.zip, un éditeur de texte et un navigateur"
+    ]
+   ],
+   [
+    "Budget",
+    [
+     "Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les prix unitaires de la fiche Rover.",
+     "Poste | Qté | Prix unitaire | Total | Statut",
+     "Électronique |  |  |  | ",
+     "micro:bit v2 (12 lampes, pont) | 13 | 20 € | 260 € | Possédé",
+     "Boîtier 4 × AA | 12 | 2 € | 24 € | Possédé",
+     "Accus NiMH AA | 48 | 3 € | 144 € | Possédé",
+     "Câble USB | 12 | 3 € | 36 € | Possédé",
+     "Carte DFRobot DFR0548, magasin du chantier | 12 | 12 € | 144 € | Possédé",
+     "Moteur TT, magasin du chantier | 24 | 4 € | 96 € | Possédé",
+     "Servomoteur, magasin du chantier | 12 | 3 € | 36 € | Possédé",
+     "LED 5 mm, résistances, pinces crocodile, câbles Dupont, breadboards, barrettes | 1 |  |  | Possédé",
+     "Boîtier 2 × AAA avec connecteur micro:bit | 12 | 2 € | 24 € | Proposé",
+     "Accus NiMH AAA | 24 | 2 € | 48 € | Proposé",
+     "Matrice RGB 8 × 8 WS2812, lots de 3 | 4 | 10 € | 40 € | À acheter",
+     "Bornes de connexion à levier, boîte de 50, pour le chantier | 1 | 19 € | 19 € | Proposé",
+     "Ruban de cuivre adhésif conducteur, 6 mm × 20 m | 1 | 10 € | 10 € | À acheter",
+     "Vis M3 × 10, écrous et rondelles, 100 de chaque | 1 | 10 € | 10 € | À acheter",
+     "Câbles Dupont femelle / pince crocodile, lots de 10 | 4 | 5 € | 20 € | À acheter",
+     "Matrice RGB, lot de 3 de rechange | 1 | 10 € | 10 € | Proposé",
+     "Adaptateur secteur USB 5 V, produits installés près d'une prise | 6 | 5 € | 30 € | Proposé",
+     "Capteurs du chantier, selon l'inventaire |  |  |  | Selon le catalogue",
+     "Sous-total électronique |  |  | 951 € | ",
+     "Équipement commun |  |  |  | ",
+     "Chargeur d'accus | 1 | 35 € | 35 € | Possédé",
+     "Multimètre | 1 | 20 € | 20 € | Possédé",
+     "Outil de découpe | 3 | 8 € | 24 € | Possédé",
+     "Règle métallique à rebord | 3 | 10 € | 30 € | Possédé",
+     "Tapis de découpe A3 | 3 | 12 € | 36 € | Possédé",
+     "Pied à coulisse | 1 | 15 € | 15 € | Proposé",
+     "Fer à souder et étain, pour la préparation des matrices | 1 | 30 € | 30 € | Proposé",
+     "Imprimante 3D | 1 |  |  | Possédé",
+     "Ordinateurs | 12 |  |  | Possédé",
+     "Par parcours |  |  |  | ",
+     "Filament PLA : emblèmes et pièces du chantier | 2 | 25 € | 50 € | À racheter",
+     "Découpe : lames de rechange | 1 | 10 € | 10 € | À racheter",
+     "Carton, colle, papier calque, ruban adhésif, élastiques | 1 | 40 € | 40 € | À racheter",
+     "Casse : 15 % de l'électronique des lampes | 1 | 78 € | 78 € | À racheter",
+     "Un parcours coûte environ 178 €, soit 15 € par jeune : 100 € de consommables d'impression, de découpe et de fabrication, et 78 € de casse. La casse est calculée sur ce que les jeunes manipulent toute l'année (micro:bit, matrices, boîtiers et accus des lampes, soit 520 €).",
+     "Le premier parcours demande 80 € d'achats : matrices, ruban de cuivre, visserie et câbles des lampes. Les matrices se réutilisent, les lampes restant à l'atelier. S'y ajoutent 59 € proposés (rechange, adaptateurs secteur, bornes à levier), les capteurs du chantier après inventaire, et 72 € de boîtiers et d'accus AAA si le stock n'en a pas."
+    ]
+   ],
+   [
+    "Séance 1 — Phase 1 — Découverte & prise en main",
+    [
+     "Titre : Fabrique ta lampe et allume-la",
+     "Notions : circuit fermé · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique · entrée analogique · seuil",
+     "Livrable intermédiaire : lampe montée, LED allumée puis clignotante par programme, bandes de cuivre utilisées comme bouton qui affiche une icône au toucher"
+    ]
+   ],
+   [
+    "Séance 2 — Phase 1 — Découverte & prise en main",
+    [
+     "Titre : Compose la lumière de ta lampe",
+     "Notions : alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée · boucle d'animation · boucle qui compte",
+     "Livrable intermédiaire : matrice câblée et fixée sur la lampe, une couleur choisie et une animation"
+    ]
+   ],
+   [
+    "Séance 3 — Phase 1 — Découverte & prise en main",
+    [
+     "Titre : Fais-la s'allumer quand il fait nuit",
+     "Notions : mesure brute · Afficher données · seuil · variable d'état · ne réagir qu'au changement",
+     "Livrable intermédiaire : lampe qui s'allume seule sous le seuil et s'éteint au-dessus"
+    ]
+   ],
+   [
+    "Séance 4 — Phase 1 — Découverte & prise en main",
+    [
+     "Titre : Dessine l'emblème de ta lampe",
+     "Notions : modélisation 3D · contrainte de conception · relief et creux · îlots détachés · impression additive et slicer",
+     "Livrable intermédiaire : emblème exporté en .STL, nommé selon la convention, imprimé par l'animateur avant la séance 5"
+    ]
+   ],
+   [
+    "Séance 5 — Phase 1 — Découverte & prise en main",
+    [
+     "Titre : Fais parler les lampes entre elles",
+     "Notions : une bande pour tous · message diffusé et message adressé · organisation centralisée et distribuée · ce qui arrive quand un élément tombe en panne",
+     "Livrable intermédiaire : lampe qui mesure, décide, agit, émet et reçoit ; vague réussie avec le chef, puis en relais au moins en groupe"
+    ]
+   ],
+   [
+    "Séance 6 — Phase 2 — Exploration & création",
+    [
+     "Titre : Choisissez votre produit",
+     "Notions : servomoteur et moteur à courant continu · choisir un composant pour une fonction · cahier des charges · contraintes d'implantation",
+     "Livrable intermédiaire : équipe formée, première partie de la feuille d'équipe remplie et validée, croquis, matériel réservé au magasin"
+    ]
+   ],
+   [
+    "Séance 7 — Phase 2 — Exploration & création",
+    [
+     "Titre : Construisez la structure de votre produit",
+     "Notions : CAO fonctionnelle · mesure de l'existant et jeu · orientation d'impression selon les efforts · support de capteur et fixation",
+     "Livrable intermédiaire : structure montée à blanc, pièces 3D envoyées à l'impression ; plus aucune impression après cette séance"
+    ]
+   ],
+   [
+    "Séance 8 — Phase 2 — Exploration & création",
+    [
+     "Titre : Faites fonctionner votre produit et montrez ses données",
+     "Notions : schéma de câblage · alimentation d'un objet qui dure · sobriété d'émission · protocole commun · chemin de la donnée · système et supervision",
+     "Livrable intermédiaire : produit fonctionnel en version brute, qui émet sur le protocole commun et apparaît en ligne sur le tableau de bord"
+    ]
+   ],
+   [
+    "Séance 9 — Phase 3 — Finalisation & valorisation",
+    [
+     "Titre : Testez et installez votre produit",
+     "Notions : vérification contre un cahier des charges · cas limites · test d'endurance · portée radio réelle · implantation · scénario de démonstration et plan B",
+     "Livrable intermédiaire : produit installé à son emplacement, stable sans intervention, photographié ; présentation d'une minute répétée, entretien réparti"
+    ]
+   ],
+   [
+    "Séance 10 — Phase 3 — Finalisation & valorisation",
+    [
+     "Titre : Présentez vos objets connectés",
+     "Notions : page web à partir d'un gabarit HTML · balise, titre, paragraphe, image · variable CSS · présenter et argumenter un choix technique · bilan de projet",
+     "Livrable intermédiaire : page de présentation de l'objet remplie, avec un choix justifié et les lampes de l'équipe ; démonstration menée"
+    ]
+   ]
+  ],
+  "s01": [
+   [
+    "Séance 1",
+    [
+     "Fabrique ta lampe et allume-la"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de réaliser un circuit fermé entre deux broches du micro:bit, LED dans le bon sens, et d'expliquer pourquoi elle ne s'allume que dans un sens",
+     "• Être capable de distinguer une broche en sortie d'une broche en entrée, en commandant une LED puis en lisant un toucher sur la même broche",
+     "• Être capable de choisir un seuil à partir de valeurs relevées pour déclencher un affichage"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Circuit fermé · conducteur et isolant · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique · entrée analogique · Afficher données · seuil."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Lampe montée, micro:bit et boîtier de piles en place. LED allumée par 3V, puis par le programme sur P2, puis clignotante. Bandes de cuivre utilisées comme bouton : une icône s'affiche au toucher. Valeurs au repos et au toucher relevées."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Aucun. C'est la première séance du parcours."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• 1 support de lampe en carton, deux bandes de cuivre collées",
+     "• 1 micro:bit v2 et son boîtier 2 × AAA, 4 élastiques",
+     "• 1 LED 5 mm",
+     "• 2 câbles à pinces crocodile",
+     "• Câble USB",
+     "• 1 bac nominatif",
+     "Commun",
+     "• LED de rechange",
+     "• Une lampe montée pour la démonstration"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• 1 ordinateur par jeune, MakeCode dans Chrome ou Edge, pour Afficher données",
+     "• Le livre en ligne, ouvert sur la page de la séance"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Présentation de la lampe et de ce qu'elle fera à la séance 5 : une lumière choisie, qui s'allume seule à la nuit tombée et parle aux autres lampes.",
+     "Démonstration sur la lampe montée : la LED posée sur les bandes reliées à 3V et GND s'allume ; retournée, elle s'éteint. Le circuit est une boucle, et la LED ne laisse passer le courant que dans un sens.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (25 min)",
+    [
+     "Monte ta lampe et allume la LED",
+     "Description :",
+     "Pliage du support, micro:bit tenu par deux élastiques à l'avant, boîtier de piles par deux élastiques à l'arrière. Les pattes de la LED sont repliées et enroulées en boucle, pour un meilleur contact avec le cuivre ; repérer la patte longue avant de les enrouler.",
+     "Une pince de 3V à une bande, une pince de GND à l'autre. La LED posée à cheval s'allume ; sinon, on la retourne. Le micro:bit sert ici de pile.",
+     "Point de contrôle animateur : LED allumée, et le jeune sait quelle patte est côté 3V.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (25 min)",
+    [
+     "Une sortie : le programme allume",
+     "Description :",
+     "La pince de 3V passe à 2. Sans programme, la LED s'éteint : une broche n'envoie rien tant qu'on ne le lui demande pas.",
+     "écrire sur la broche P2 la valeur 1 dans au démarrage : elle s'allume. On nomme la notion : P2 est une sortie, le programme décide.",
+     "Exercice : faire clignoter la LED. La page indique les catégories de blocs, la solution est repliée.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 3 (30 min)",
+    [
+     "Une entrée : les bandes deviennent un bouton",
+     "Description :",
+     "La LED est retirée, les pinces restent : P2 devient une entrée. série écrire valeur \"p2\" avec lire la broche analogique P2, dans toujours, puis Afficher données Appareil.",
+     "Un doigt posé à cheval sur les deux bandes fait chuter la valeur : environ 660 au repos, moins de 300 au toucher sur le montage de test. La peau conduit un peu, et ferme la boucle. Chacun note ses deux valeurs, et en déduit son seuil.",
+     "Exercice : afficher une icône quand la valeur passe sous le seuil. Catégories indiquées, solution repliée.",
+     "Point de contrôle animateur : l'icône s'affiche au toucher, et pas au repos.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "« Quelle différence entre la LED et le bouton, pour la broche P2 ? » La réponse attendue : une sortie, puis une entrée.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Lampe, LED et pinces dans le bac nominatif. Annonce : « la semaine prochaine, ta lampe reçoit 64 LED de couleur ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Une animation de plusieurs icônes au toucher, et un son · deux seuils, pour un toucher léger et un toucher appuyé."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Programme du bouton donné sans le seuil, à compléter d'après ses propres valeurs."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Les douze supports sont découpés, rainurés et équipés de leurs bandes de cuivre avant la séance.",
+     "• La LED est branchée sans résistance. Sur 3V et sur une broche du micro:bit, une LED jaune ou rouge le supporte. Elle ne se branche jamais sur le pack d'accus 4,8 V de la séance 2.",
+     "• Les deux pinces ne doivent pas se toucher quand elles sont sur 3V et GND : c'est un court-circuit de l'alimentation du micro:bit.",
+     "• Les valeurs au toucher varient d'une main à l'autre : chacun prend son seuil, comme pour la lumière en séance 3.",
+     "• Afficher données demande Chrome ou Edge, et le micro:bit branché en USB."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s02": [
+   [
+    "Séance 2",
+    [
+     "Compose la lumière de ta lampe"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de câbler une matrice RGB sur une alimentation séparée, masse commune comprise, validé au point de contrôle",
+     "• Être capable de dessiner une image sur la matrice et de l'afficher, en expliquant pourquoi rien ne change sans show",
+     "• Être capable de produire une animation personnelle, luminosité bridée"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Alimentation séparée et masse commune · une matrice est un ruban de 64 LED numérotées · couleur · préparer puis afficher · luminosité bridée · boucle d'animation · boucle qui compte (pour index)."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Matrice câblée et fixée à la lampe par des élastiques, papier calque devant. Une image dessinée et une animation, mémorisées dans le programme."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 1 : lampe montée, bandes de cuivre reliées à P2 et GND."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Sa lampe de la séance 1, son micro:bit et son boîtier 2 × AAA",
+     "• 1 matrice RGB 8 × 8 WS2812, barrettes soudées",
+     "• 1 boîtier 4 × AA d'accus NiMH chargés",
+     "• 3 câbles Dupont femelle-mâle, 4 câbles à pinces crocodile",
+     "• 2 élastiques, papier calque",
+     "Commun",
+     "• Une matrice de démonstration, branchée, une image dessinée",
+     "• Multimètre"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode, extension neopixel-extended ajoutée par son adresse : https://github.com/arbona-robin/pxt-neopixel-matrix-extension. C'est une copie de l'extension d'origine, qui ajoute le câblage ligne par ligne (bloc set NeoPixel matrix layout)",
+     "• Le livre en ligne, ouvert sur la page de la séance et la fiche « La matrice de LED RGB »"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Démonstration sur la matrice : un seul fil de données, et chacune des 64 LED prend la couleur qu'on veut. Au vidéoprojecteur, le bloc set NeoPixel 8x8 : une grille où l'on choisit une couleur par case. L'image dessinée dans la grille apparaît sur la matrice.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (20 min)",
+    [
+     "Câble ta matrice",
+     "Description :",
+     "La matrice a trois broches, repérées au dos : DI, G, V. Elle prend son énergie au pack d'accus, le micro:bit ne lui envoie que le signal.",
+     "Trois câbles Dupont sur les broches de la matrice, puis des pinces :",
+     "1. V au + du pack.",
+     "2. G au − du pack, et une seconde pince du − du pack au GND du micro:bit.",
+     "3. DI sur P1. P2 reste au bouton de cuivre.",
+     "La masse commune se dit et s'explique : le signal de P1 se mesure par rapport au GND du micro:bit. Si la matrice ne partage pas ce GND, elle reçoit un signal sans référence et ne fait rien.",
+     "Premier programme, avant de brancher le pack : NeoPixel strip at pin P1 with 64 Neopixel as RGB (GRB format), set brightness 50, set color rouge, show changes. Le couple « préparer, puis afficher » est là dès le premier programme.",
+     "Point de contrôle animateur : V et G dans le bon sens à la lecture du dos de la matrice, G relié au GND du micro:bit, luminosité à 50 dans le programme. Avant de brancher le pack.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (25 min)",
+    [
+     "Dessine ton image",
+     "Description :",
+     "set NeoPixel 8x8, une couleur par case, puis show changes. Sans show changes, rien ne s'affiche : le bloc 8 × 8 prépare l'image, show l'envoie à la matrice. C'est l'erreur la plus fréquente, à faire constater plutôt qu'à annoncer.",
+     "Les cases laissées en gris restent allumées en gris : pour éteindre une case, on choisit le noir.",
+     "Exercice libre : un motif, une icône, un visage.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 3 (35 min)",
+    [
+     "Anime-la, puis pose-la",
+     "Description :",
+     "La respiration : dans toujours, deux boucles pour index variant de 0 à 50, l'une qui monte la luminosité, l'autre qui la descend (50 - index). Montrer le piège : set brightness ne change que les couleurs données après lui, il faut redonner la couleur à chaque pas : set color prépare, show changes affiche, comme pour la grille.",
+     "Exercice : un cœur qui bat, un grand cœur 200 ms puis un petit 600 ms, chacun suivi de son show changes. Solution repliée dans la page. Ceux qui ont fini : des yeux qui regardent à gauche, à droite, et qui clignent.",
+     "Les dix dernières minutes : la matrice se fixe à la lampe par deux élastiques, papier calque devant. Le micro:bit reste à l'avant, écran vers la pièce : la séance 3 en aura besoin.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Lumière de la salle éteinte, toutes les lampes allumées. Chacun montre son animation.",
+     "Modalité : Mini-exposition / galerie (vernissage)"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Une pile sortie du boîtier, lampe dans le bac, accus en charge. Annonce : « la semaine prochaine, ta lampe s'allume toute seule quand il fait nuit ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "show rainbow · l'image qui défile avec rotate pixels by 8 (8 parce qu'une ligne compte 8 LED du ruban) · une case allumée par set matrix color at x y · changer d'image en touchant le bouton de cuivre de la séance 1."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Une image fournie à modifier, et le programme d'animation donné : il ne reste qu'à changer les couleurs."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Avant la séance : souder les barrettes de broches si les matrices arrivent avec des pastilles nues. Vérifier sur une image non symétrique (une LED en haut à gauche, une flèche) que la matrice affiche la grille du bloc. Les matrices rigides sont câblées ligne par ligne (set NeoPixel matrix layout to row by row), les souples en zigzag (snake).",
+     "• La luminosité se règle dans le premier programme, avant la première mise sous tension. 64 LED en blanc plein approchent les 4 A : la tension s'effondre, la carte redémarre ou les couleurs deviennent fausses. À 50 sur 255, quelques centaines de milliampères suffisent, et la lumière est plus douce.",
+     "• Des couleurs fausses ou un scintillement en fin de séance signalent des accus qui faiblissent, pas un module défectueux.",
+     "• Le signal entre par DI. Une matrice branchée par le connecteur DO ne s'allume pas et ne s'abîme pas.",
+     "• Les pinces du + et du − du pack ne doivent jamais se toucher : un court-circuit sur des accus NiMH chauffe vite. Une pile sortie du boîtier dès qu'on déplace la matrice.",
+     "• Les blocs de l'extension sont en anglais : les recopier tels qu'à l'écran, sans les traduire."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s03": [
+   [
+    "Séance 3",
+    [
+     "Fais-la s'allumer quand il fait nuit"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de relever les valeurs extrêmes d'un capteur de lumière et d'en déduire un seuil adapté à l'emplacement de sa lampe",
+     "• Être capable d'utiliser une variable d'état pour que la lampe ne réagisse qu'au passage du seuil, sans redémarrer son animation en boucle"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Mesure brute · Afficher données · seuil · variable d'état · ne réagir qu'au changement."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Une lampe qui s'allume seule quand il fait sombre et s'éteint quand la lumière revient, sans clignoter ni redémarrer son animation. Valeurs extrêmes et seuil relevés."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 2 : matrice câblée, une ambiance programmée."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Sa lampe, son micro:bit, ses deux boîtiers d'accus chargés",
+     "• Câble USB",
+     "Commun",
+     "• Pour la démonstration : un capteur de mouvement PIR et une sonde d'humidité du sol, s'ils sont dans l'inventaire",
+     "• Une lampe de poche"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode dans Chrome ou Edge, pour Afficher données",
+     "• Le livre en ligne, ouvert sur la page de la séance et la fiche « Prendre en main MakeCode », section capteurs"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Tour d'horizon des capteurs. Ceux que la carte porte déjà : luminosité, température, accéléromètre, boussole, microphone, logo tactile. Ceux qu'on branche : le PIR et la sonde d'humidité, présentés en démonstration, qui serviront aux produits du chantier.",
+     "Puis la méthode du jour, démontrée : afficher la valeur brute dans Afficher données, et regarder comment elle varie quand on agit sur le capteur. Rappel pour ceux qui ont fait le projet Rover : c'est la méthode de l'accéléromètre en séance 4.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (20 min)",
+    [
+     "Observe",
+     "Description :",
+     "série écrire valeur \"lumiere\" avec niveau d'intensité lumineuse, dans toujours. Le capteur de lumière du micro:bit est son écran : la carte reste écran vers l'extérieur, et l'écran n'affiche rien pendant la mesure.",
+     "On couvre la carte avec la main, on l'approche de la fenêtre, on éteint la salle, on allume la lampe de poche. Chacun note la valeur dans la salle éclairée, dans la pénombre et dans le noir.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (25 min)",
+    [
+     "Décide",
+     "Description :",
+     "Chacun choisit son seuil, entre sa valeur de pénombre et sa valeur de salle éclairée. Les lampes ne seront pas posées au même endroit : il n'y a pas de bon seuil commun.",
+     "Premier programme : si la lumière est sous le seuil, afficher l'ambiance ; sinon, éteindre la matrice. Essai en couvrant la carte.",
+     "Le piège arrive seul. L'ambiance de la séance 2 a une animation : à chaque tour de toujours, elle redémarre au début, et la lampe hoquette.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 3 (35 min)",
+    [
+     "Ne réagis qu'au changement",
+     "Description :",
+     "La parade, présentée au groupe en cinq minutes : une variable allumee, qui vaut 0 ou 1. On ne déclenche l'allumage que si la lumière passe sous le seuil et que la lampe était éteinte ; on met alors allumee à 1. Même chose dans l'autre sens.",
+     "Le raisonnement est nommé : on s'arme, on se désarme. Il servira à toutes les alertes des produits du chantier.",
+     "Puis le second piège, qui arrive chez ceux dont la matrice éclaire le micro:bit : la lampe s'allume, le capteur voit sa lumière, elle s'éteint, et ainsi de suite. La réponse est d'abord physique : le micro:bit regarde la pièce, pas la lampe. L'hystérésis est la réponse logicielle, en variante +.",
+     "Point de contrôle animateur : lampe couverte, elle s'allume une fois ; découverte, elle s'éteint une fois.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Chacun donne son seuil et l'endroit où il compte poser sa lampe. On compare : pourquoi les seuils sont-ils si différents ?",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Lampe dans le bac, accus en charge. Annonce : « la semaine prochaine, tu dessines l'emblème de ta lampe ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Hystérésis : deux seuils différents, un pour allumer, un pour éteindre · moyenne de plusieurs mesures · allumage en fondu, avec un son du haut-parleur de la carte."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Seuil fourni par l'animateur à partir de ses mesures · structure du programme donnée, à compléter."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Le niveau de lumière se lit par l'écran du micro:bit. Un programme qui affiche une icône pendant la mesure fausse la valeur.",
+     "• Afficher données demande Chrome ou Edge, et le micro:bit branché en USB.",
+     "• Une salle très éclairée ou ensoleillée sature le capteur à 255 : prévoir de tirer les rideaux pour le relevé de la pénombre.",
+     "• Le micro:bit tourné vers la lampe oscille. Le dire au lancement de l'activité 3, pas avant : le constater fait partie de la séance."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s04": [
+   [
+    "Séance 4",
+    [
+     "Dessine l'emblème de ta lampe"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de modéliser dans Tinkercad un emblème personnel qui respecte les contraintes imposées (50 × 50 mm au plus, 3 mm d'épaisseur, trou de 5 mm), exporté en .STL",
+     "• Être capable de repérer avant l'export ce qui ferait rater l'impression : îlot détaché, forme qui flotte"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Modélisation 3D : poser, coter, percer, aligner, regrouper · contrainte de conception · relief et creux · îlots détachés · impression additive, couches, slicer."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Emblème exporté en .STL, nommé lampe-<prénom>.stl, déposé dans le dossier partagé. Imprimé par l'animateur avant la séance 5, accroché à la lampe par un élastique."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Aucun en 3D. Ceux qui ont fait la plaque du projet Rover connaissent déjà les gestes."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• 1 ordinateur",
+     "Commun",
+     "• Un emblème d'exemple, imprimé et accroché à une lampe",
+     "• Imprimante 3D, PLA"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• Tinkercad en mode classe, projet vide",
+     "• Le slicer en ligne (Kiri:Moto), au vidéoprojecteur",
+     "• Le livre en ligne, fiche « Modéliser et imprimer en 3D »",
+     "• Le dossier partagé des fichiers .STL"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "L'emblème d'exemple accroché à la lampe par un élastique. Les contraintes au tableau : 50 × 50 mm au plus, 3 mm d'épaisseur, un trou de 5 mm avec 3 mm de matière autour. Tous les emblèmes partent sur un seul plateau : un emblème hors cotes ne s'imprime pas.",
+     "À démontrer au lancement : poser une forme et taper ses cotes, passer une forme en perçage, aligner, regrouper.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (55 min)",
+    [
+     "Dessine ton emblème",
+     "Description :",
+     "Depuis un projet vide dans la classe Tinkercad. Une forme de base (forme simple ou Scribble), un motif en relief ou en creux, le trou d'accroche. Vue de face avant chaque regroupement : un relief posé, un creux qui traverse.",
+     "Vérification avant l'export : les îlots détachés (intérieur des lettres fermées en creux), et rien qui flotte.",
+     "Point de contrôle animateur : cotes, trou et matière autour, rien de détaché, fichier bien nommé. Validé avant l'export.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (25 min)",
+    [
+     "De l'écran à l'objet",
+     "Description :",
+     "Au vidéoprojecteur, sur un emblème du groupe (10 min) : le principe additif, couche par couche ; le slicer qui tranche la pièce ; la durée affichée ; ce que devient un îlot détaché. Puis le plateau : les emblèmes du groupe disposés ensemble, la durée totale lue. Les impressions sont lancées par l'animateur après la séance.",
+     "Ceux qui ont fini passent à la variante + (15 min).",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Chacun dit ce que représente son emblème, et ce qui a été le plus difficile à dessiner.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Fichiers déposés, ordinateurs fermés, lampes dans les bacs. Annonce : « la semaine prochaine, ton emblème est là, et les lampes se parlent ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Un relief à deux hauteurs · des motifs en creux qui laissent passer la lumière de la matrice."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Une base fournie dans la classe Tinkercad, trou d'accroche compris, à personnaliser d'un motif."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Douze emblèmes à imprimer en une semaine : lire la durée totale au slicer en fin de séance. Un emblème de 3 mm d'épaisseur reste court à imprimer.",
+     "• Le texte en creux crée des îlots : c'est le défaut le plus fréquent, à vérifier au point de contrôle.",
+     "• Tinkercad en mode classe : vérifier avant la séance que les comptes de la classe sont actifs."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s05": [
+   [
+    "Séance 5",
+    [
+     "Fais parler les lampes entre elles"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de programmer une lampe qui réagit à un message diffusé à toutes, et à un message dont la valeur désigne son numéro",
+     "• Être capable de comparer une vague menée par un chef d'orchestre et une vague en relais, en expliquant ce qui arrive quand une lampe est éteinte"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Une bande pour tous · message diffusé et message adressé · organisation centralisée et distribuée · ce qui arrive quand un élément tombe en panne."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Lampe avec son emblème accroché, qui réagit au message diffusé tous. Vague réussie avec le chef, puis en relais au moins en groupe de trois ou quatre. Avec les séances 3 et 4, la lampe mesure, décide, agit, émet et reçoit."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 3 : lampe qui s'allume seule. Séance 4 : emblème imprimé par l'animateur entre les séances."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Sa lampe, son micro:bit, ses deux boîtiers d'accus chargés",
+     "• Son emblème imprimé, un élastique",
+     "Commun",
+     "• Le micro:bit chef d'orchestre de l'animateur, numéro 0",
+     "• Étiquettes numérotées de 1 à 12, une par lampe"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode, catégorie Radio",
+     "• Le livre en ligne, fiche « Prendre en main MakeCode », section radio"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Les emblèmes (5 min) : chacun accroche le sien. Lecture rapide des pièces : les couches visibles, la première couche, ce qui a bavé.",
+     "Le protocole (5 min) : pour que deux machines se comprennent, il leur faut le même canal et le même vocabulaire. Rappel du projet Rover pour ceux qui l'ont fait : chacun avait sa bande de fréquence, et sa télécommande ne parlait qu'à son rover. Ici, tout le monde est sur la même bande, la 40 : chaque lampe entend tous les messages. Chaque lampe reçoit son numéro, de 1 à 12, collé sur la lampe.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (20 min)",
+    [
+     "Le message diffusé",
+     "Description :",
+     "Le projet lampe est dupliqué en lampe-radio, et le contenu de toujours retiré : sinon le mode nuit allume toutes les lampes dans le noir et on ne voit plus rien. L'ambiance reste.",
+     "Bouton A : envoyer tous = 1. Bouton B : envoyer tous = 0. À la réception de tous, la lampe allume son ambiance ou s'éteint. Un seul appui, et toutes les lampes répondent. On éteint la lumière de la salle. C'est un message diffusé.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (25 min)",
+    [
+     "La vague, avec un chef",
+     "Description :",
+     "Une seule clé, tour, dont la valeur est le numéro de la lampe qui doit s'allumer. Une lampe qui reçoit tour = son numéro s'allume 1 seconde, puis s'éteint. Toutes entendent le message, une seule réagit : c'est un message adressé, et l'adresse est dans la valeur.",
+     "Le micro:bit de l'animateur, le chef, envoie tour = 1, puis 2, puis 3, une seconde d'écart. On éteint le chef au milieu : plus rien ne se passe.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 3 (35 min)",
+    [
+     "La vague, en relais",
+     "Description :",
+     "Plus de chef. Chaque lampe, quand elle a fini, envoie tour = son numéro + 1. Un seul programme, identique partout, chaque lampe ne connaissant que son numéro. La première est lancée au bouton A. Par groupes de trois ou quatre d'abord, numéros consécutifs.",
+     "Puis on éteint une lampe du milieu : la chaîne s'arrête. On compare avec le chef : la panne du chef arrête tout, la panne d'une lampe arrête la suite.",
+     "Le bouquet pour finir (10 min) : une tentative à douze, lumière éteinte.",
+     "Point de contrôle animateur : chaque lampe réagit à tous et à son tour ; la vague en relais passe dans son groupe.",
+     "Modalité : Défi / hackathon chronométré"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "« Lequel préférez-vous, le chef ou le relais, et pourquoi ? » Chacun se place d'un côté de la salle et défend son choix.",
+     "Modalité : Débat mouvant (4 coins)"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Lampes dans les bacs, accus en charge. Fin de la lampe : le chantier commence la semaine prochaine. Nommer devant le groupe ce que chaque lampe sait faire maintenant.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "La parade du relais : la lampe qui a passé le tour attend 2 secondes, et saute au numéro d'après si elle n'a rien entendu · une couleur envoyée à une seule lampe, avec l'adresse dans la clé (lampe7) · le mode nuit et la radio dans le même programme, avec le logo pour changer de mode."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Programme de réception fourni, à compléter du numéro · la vague en relais à deux lampes seulement."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Douze cartes sur une bande : pas d'émission continue dans toujours. On émet à l'appui ou à la fin d'un tour, jamais en boucle.",
+     "• Le simulateur ne suit pas la bande de fréquence : les essais se font sur les cartes.",
+     "• La bande 40 sera aussi celle du chantier et du tableau de bord. Ne pas la changer ensuite."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s06": [
+   [
+    "Séance 6",
+    [
+     "Choisissez votre produit"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de différencier un servomoteur et un moteur à courant continu, et de choisir l'un, l'autre ou aucun selon la fonction du produit",
+     "• Être capable de compléter en équipe le cahier des charges de son produit, en vérifiant sur place l'emplacement et contre les exigences communes ce que le produit devra faire"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Servomoteur et moteur à courant continu · choisir un composant pour une fonction · cahier des charges · contraintes d'implantation."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Équipes de deux ou trois constituées. Par équipe : la première partie du cahier des charges remplie et validée par l'animateur, un croquis, la liste du matériel réservée au magasin, l'emplacement vérifié."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 5 : lampe terminée."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par jeune",
+     "• Papier, crayon",
+     "Commun",
+     "• Le magasin : capteurs inventoriés, servomoteurs, moteurs TT, cartes DFR0548, breadboards, posés sur une table et manipulables pendant toute la séance",
+     "• Un servomoteur et un moteur TT montés en démonstration",
+     "• Le pont USB et le tableau de bord, projeté",
+     "• Le catalogue imprimé, et la feuille d'équipe imprimée recto verso, une par équipe",
+     "• Un mètre ruban, et un micro:bit émetteur pour tester la portée radio sur place"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• La page du catalogue des produits, au vidéoprojecteur",
+     "• Le livre en ligne"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Le changement de phase : chacun a sa lampe, on passe à des objets pour le lieu, en équipe. Le tableau de bord projeté montre déjà quelques micro:bit de test : c'est là que les produits apparaîtront, chacun avec ses mesures.",
+     "Les deux effecteurs que la lampe n'a pas utilisés. Le servomoteur va à un angle et le tient : on le force, il résiste et revient. Le moteur à courant continu tourne sans savoir où il en est, et il demande une carte de puissance (la DFR0548, que les anciens du projet Rover connaissent).",
+     "Aucun n'est obligatoire : on choisit un composant parce que le produit le demande.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (20 min)",
+    [
+     "Le magasin",
+     "Description :",
+     "Manipulation libre de la table du magasin. Chaque capteur porte une étiquette : ce qu'il mesure, ce qu'il renvoie, comment il se branche. Ceux qui veulent essaient le servomoteur à la main avec un programme fourni.",
+     "En parallèle, chacun lit le catalogue et note ses deux produits préférés, ou une idée à lui. Une idée inventée se vérifie sur les quatre conditions du catalogue : elle sert à quelqu'un d'autre, elle mesure et agit ou prévient, elle se construit avec le magasin, elle parle la langue commune.",
+     "Modalité : Atelier en rotation (stations)"
+    ]
+   ],
+   [
+    "Activité 2 (15 min)",
+    [
+     "Les équipes",
+     "Description :",
+     "Tour des envies, produit par produit : ceux du catalogue et les idées inventées, au même titre. Les équipes se forment par envie de produit, deux ou trois jeunes, un produit par équipe. L'animateur garde la main sur les équipes déséquilibrées.",
+     "Modalité : Post-its & vote (dot-voting)"
+    ]
+   ],
+   [
+    "Activité 3 (45 min)",
+    [
+     "Le cahier des charges",
+     "Description :",
+     "Le cahier des charges du produit se lit à l'écran ; la feuille d'équipe se remplit. La première partie, « Votre produit », se remplit, une ligne par question : à quoi il sert, pour qui, où, comment il est alimenté, ce qu'il mesure et avec quelles clés, ce qu'il fait au seuil. La seconde se lit ensemble : ce que tout produit doit faire, et comment on le vérifiera en séance 9. Une idée qui ne pourra pas tout cocher change maintenant.",
+     "Puis un croquis du produit et la liste du matériel, que l'équipe réserve au magasin.",
+     "L'emplacement se vérifie sur place, pas sur plan : une prise à proximité, une fixation possible, et la portée radio depuis l'endroit visé, testée avec un micro:bit émetteur et le tableau de bord.",
+     "Point de contrôle animateur : la première partie remplie, l'emplacement vu, le matériel disponible au magasin. Un produit qui demande un composant absent change maintenant, pas en séance 8. Un produit inventé trop ambitieux se réduit à une mesure et une action.",
+     "Modalité : Prototype papier / storyboard"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Chaque équipe lit son cahier des charges en 30 secondes. Les autres posent une question.",
+     "Modalité : Présentation / démonstration orale"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Feuille d'équipe et croquis dans le bac d'équipe. Annonce : « la semaine prochaine, vous construisez la structure ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Un deuxième message radio, une alerte en plus de la mesure · un produit qui écoute aussi les messages des autres."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Un produit du catalogue choisi avec la première partie du cahier des charges pré-remplie, à adapter à l'emplacement."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Le catalogue dépend de l'inventaire des capteurs et effecteurs : retirer avant la séance tout produit dont un composant manque. Une idée inventée passe par la même vérification, sur la table du magasin.",
+     "• Le pont USB et le tableau de bord sont prêts et testés avant la séance : voir pont.md. Le mode démo du tableau de bord suffit pour le lancement si aucun micro:bit de test n'est prêt. Les emplacements possibles pour les produits (prises, fixations, portée radio) sont repérés à l'avance.",
+     "• Composer les équipes à la main si nécessaire : un jeune seul, ou une équipe d'amis sans personne qui ait fini sa lampe.",
+     "• Le sort des produits après le parcours se décide avec la structure avant cette séance : installé à demeure, un produit demande une alimentation secteur et une fixation durable."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s07": [
+   [
+    "Séance 7",
+    [
+     "Construisez la structure de votre produit"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de concevoir les pièces qui portent ou fixent un composant, à partir de cotes mesurées, et de les orienter à l'impression selon l'effort qu'elles subiront",
+     "• Être capable de monter à blanc la structure du produit à l'échelle de son emplacement"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "CAO fonctionnelle · mesure de l'existant et jeu · support de capteur et fixation · orientation d'impression selon les efforts · gel des impressions."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Structure du produit montée à blanc, en carton ou en récupération, à taille réelle quand c'est possible. Pièces 3D exportées, nommées <equipe>-<piece>.stl, et parties à l'impression."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 6 : cahier des charges validé, matériel réservé."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par équipe",
+     "• Le matériel réservé au magasin",
+     "• Le bac d'équipe",
+     "Commun",
+     "• Trois postes de découpe : outil de découpe, règle métallique à rebord, tapis",
+     "• Carton, bac de récupération, colle, ruban adhésif, bornes à levier",
+     "• Pieds à coulisse",
+     "• Imprimante 3D, PLA standard",
+     "• Deux pièces cassées pour la démonstration : l'une rompue entre ses couches, l'autre imprimée dans le bon sens"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• Tinkercad en mode classe",
+     "• Kiri:Moto, pour estimer la durée des pièces",
+     "• Le livre en ligne, fiche « Modéliser et imprimer en 3D »"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Une pièce décorative peut être approximative, une pièce qui porte quelque chose doit tenir. Démonstration avec les deux pièces cassées : une pièce imprimée casse presque toujours entre ses couches. On l'oriente pour que l'effort soit dans le plan des couches.",
+     "La nouveauté : la pièce doit s'ajuster sur un composant qui existe. On le mesure, et on prévoit du jeu. Annonce : c'est la dernière séance où l'on imprime.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (40 min)",
+    [
+     "Les pièces qui portent",
+     "Description :",
+     "Chaque équipe liste les pièces à imprimer : supports de capteur, fixations, charnières, boîtier. Tout ce que le carton fait bien reste en carton.",
+     "Mesure des composants à porter, modélisation, durée estimée dans Kiri:Moto. Chaque pièce s'oriente avant l'export : où est l'effort, dans quel sens sont les couches ?",
+     "Point de contrôle animateur : chaque pièce a sa fonction, ses cotes et son orientation. Total d'impression de l'équipe sous 3 h.",
+     "Modalité : Pair-programming (binôme sur 1 poste)"
+    ]
+   ],
+   [
+    "Activité 2 (40 min)",
+    [
+     "La structure à blanc",
+     "Description :",
+     "En parallèle des pièces : la structure en carton ou en récupération, à taille réelle quand c'est possible, en maquette quand le sujet l'exige. Les composants sont posés à leur place, sans câblage.",
+     "Découpe par roulement sur les trois postes. L'équipe se partage : un ou deux à la CAO, un ou deux à la structure, et l'on échange à mi-temps.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Chaque équipe montre sa structure et dit quelle pièce est la plus critique, et pourquoi.",
+     "Modalité : Présentation / démonstration orale"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Fichiers déposés, structure dans le bac ou sur l'étagère de l'équipe. Les impressions sont lancées par l'animateur après la séance. Annonce : « la semaine prochaine, votre produit fonctionne ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Une charnière ou une pièce mobile imprimée d'un seul tenant · une pièce partagée trouvée en ligne, modifiée et créditée."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Supports de capteur génériques fournis dans la classe Tinkercad, à adapter · structure entièrement en carton, sans pièce imprimée."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Gel des impressions à la fin de cette séance. Une pièce oubliée se fait en carton ou en récupération.",
+     "• Les impressions de toutes les équipes tiennent dans la semaine : faire le compte des durées en clôture et faire simplifier si nécessaire.",
+     "• Découpe : règle à rebord, doigts derrière le rebord, protection sur la lame dès qu'on la pose. Trois postes pour douze jeunes, par roulement.",
+     "• Une structure à taille réelle prend de la place : prévoir où elle attend entre deux séances."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s08": [
+   [
+    "Séance 8",
+    [
+     "Faites fonctionner votre produit et montrez ses données"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de dessiner le schéma de câblage de son produit et de le câbler conformément, alimentation choisie selon l'emplacement",
+     "• Être capable de programmer un produit qui émet ses mesures selon le protocole commun, à un rythme sobre, vérifié sur le tableau de bord",
+     "• Être capable de décrire le chemin d'une donnée, du capteur à son affichage sur le tableau de bord"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Schéma de câblage · alimentation d'un objet qui dure · sobriété d'émission · protocole commun · chemin de la donnée · système et supervision."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Produit qui fonctionne en version brute, câblé selon son schéma. Il émet ses clés sur la bande 40, numéro de série compris, toutes les 5 à 10 secondes. Il apparaît en ligne sur le tableau de bord, avec l'affichage qui correspond à ses clés et le nom choisi par l'équipe."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 7 : structure montée à blanc, pièces imprimées."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par équipe",
+     "• La structure et les pièces imprimées",
+     "• Le matériel réservé au magasin, un micro:bit, son boîtier d'accus",
+     "• Papier pour le schéma",
+     "Commun",
+     "• Bornes à levier, câbles Dupont, pinces crocodile, breadboards, fil souple",
+     "• Adaptateurs secteur USB 5 V",
+     "• Le pont USB, branché sur le poste de l'animateur, et le tableau de bord projeté",
+     "• Multimètre"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• MakeCode, et les extensions demandées par les composants du produit",
+     "• Le tableau de bord, dans Chrome ou Edge sur le poste de l'animateur, et le pont : voir pont.md",
+     "• Le catalogue, pour la langue commune et les clés connues",
+     "• Le livre en ligne, fiches « Câbler un circuit » et « Prendre en main MakeCode »"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Un schéma de câblage se lit avant de câbler : un exemple au tableau, avec la masse commune, déjà vue sur la lampe.",
+     "L'énergie : un produit qui doit tenir des semaines ne s'alimente pas comme une démonstration. Secteur USB pour un produit fixe près d'une prise, accus pour un produit mobile. Un micro:bit qui émet sans arrêt vide un jeu d'accus en quelques jours ; en émettant toutes les 5 à 10 secondes et en éteignant l'écran, il tient bien plus longtemps.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (60 min)",
+    [
+     "Le produit fonctionne",
+     "Description :",
+     "1. Le schéma de câblage, dessiné à la main avant de toucher un fil : composants, broches, alimentation, masse commune.",
+     "2. Le câblage, propre et repérable : un fil par fonction, étiqueté si possible.",
+     "3. Le programme : la mesure, la décision, l'action.",
+     "4. L'émission selon la langue commune : bande 40, numéro de série émis, une clé par mesure, choisie dans les clés connues quand l'une convient, toutes les 5 à 10 secondes.",
+     "Point de contrôle animateur : schéma conforme au câblage, masse commune, alimentation choisie, émission espacée. Avant la première mise sous tension pour tout ce qui comporte un moteur.",
+     "Modalité : Pair-programming (binôme sur 1 poste)"
+    ]
+   ],
+   [
+    "Activité 2 (20 min)",
+    [
+     "Le tableau de bord",
+     "Description :",
+     "Démonstration au vidéoprojecteur (5 min). Le pont branché en USB recopie le trafic radio vers le navigateur. Chaque micro:bit apparaît dès son premier message, chaque clé avec son affichage : jauge, voyant, compteur, ou courbe pour une clé inconnue. Puis on débranche le pont devant le groupe : le tableau de bord se fige, mais les produits continuent de fonctionner. Le système et sa supervision sont deux choses différentes.",
+     "Chaque équipe vérifie que son micro:bit est en ligne, donne-lui son nom dans le tableau de bord, et regarde si l'affichage convient à sa mesure. Sinon, elle change de clé.",
+     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Le tableau de bord projeté, tous les produits en ligne. Chaque équipe suit le chemin de sa donnée à voix haute : capteur, micro:bit, radio, pont, navigateur, affichage.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Produit éteint, accus en charge, schéma dans le bac d'équipe. Annonce : « la semaine prochaine, votre produit va à sa place ».",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Un interrupteur sur le tableau de bord : une clé inter suivie de la lettre de l'équipe, que le produit écoute aussi. Le produit fonctionne sans, l'ordre ne fait que forcer un état · plusieurs mesures, une clé chacune."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Programme d'émission fourni, à compléter de la mesure et de la clé."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Le tableau de bord et le pont se testent sur le poste cible avant la séance.",
+     "• Moteurs et servomoteurs passent par la DFR0548 ou par leur propre alimentation, jamais par une broche du micro:bit.",
+     "• Un adaptateur secteur USB alimente le micro:bit par son câble USB. Il ne se branche jamais en même temps qu'un boîtier d'accus.",
+     "• Une clé fait 8 caractères au plus. Au-delà, elle est tronquée sans prévenir. Le bloc radio régler le numéro de série de transmission est le plus souvent oublié : sans lui, le tableau de bord ne sait pas d'où vient le message."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s09": [
+   [
+    "Séance 9",
+    [
+     "Testez et installez votre produit"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de vérifier son produit contre le cahier des charges et sur des cas limites choisis à l'avance, et de corriger au moins un défaut constaté",
+     "• Être capable d'installer son produit à son emplacement et de valider la liaison radio depuis la position finale",
+     "• Être capable de planifier la démonstration de son produit, plan B compris"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Cas limites · test d'endurance · portée radio réelle · implantation · scénario de démonstration et plan B."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "Produit installé à son emplacement, alimentation définitive, message reçu par le tableau de bord depuis la position finale. Feuille d'équipe cochée. Liste des cas limites testés, avec le résultat. Photos du produit installé, pour la page web de la séance 10. Présentation d'une minute écrite et répétée, rôles répartis, un plan B par produit, entretien réparti."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 8 : produit fonctionnel, qui émet sur le protocole commun."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par équipe",
+     "• Le produit, son schéma, son alimentation définitive",
+     "• Matériel de fixation selon l'emplacement : vis, colliers, double face, crochets",
+     "Commun",
+     "• Le pont USB, à sa place définitive",
+     "• Carton et feutres pour la signalétique",
+     "• Un chronomètre"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• Le tableau de bord, projeté",
+     "• Le livre en ligne"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Tester, c'est chercher ce qui ne devrait pas arriver. Exemples au tableau : le capteur débranché, personne qui passe pendant une heure, deux produits qui émettent en même temps, un produit trop loin. Chaque équipe écrit ses trois cas limites avant de tester.",
+     "Modalité : Carte mentale / mind map"
+    ]
+   ],
+   [
+    "Activité 1 (30 min)",
+    [
+     "Mets-le à l'épreuve",
+     "Description :",
+     "Chaque équipe coche sa feuille d'équipe, exigence par exigence, puis passe ses trois cas limites, note ce qui se passe, corrige ce qu'elle peut. Le produit reste allumé pendant toute la séance pour l'exigence d'endurance : est-il encore là à la fin ?",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (25 min)",
+    [
+     "Installe-le",
+     "Description :",
+     "Le produit va à son emplacement définitif. Réglages sur place, et vérification que le message arrive au tableau de bord depuis la position finale. C'est ici qu'on découvre ce que les murs font aux ondes : si le message n'arrive pas, on déplace le produit, ou le pont.",
+     "Photos du produit installé et en fonctionnement, sans visage : elles serviront à la page web de la séance 10.",
+     "Signalétique : un carton à côté du produit, « conçu et fabriqué par… », et ce qu'il fait en une phrase.",
+     "Point de contrôle animateur : chaque produit installé est vu sur le tableau de bord depuis sa place.",
+     "Modalité : Production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 3 (25 min)",
+    [
+     "Répète",
+     "Description :",
+     "Le scénario de la démonstration, écrit ensemble : l'ordre de visite des produits. Une minute de présentation par équipe : ce que fait le produit, pour qui, et un choix technique expliqué. Les rôles : qui parle, qui démontre, qui dépanne. Et un plan B par produit : que dire et que montrer si ça tombe en panne devant le public. Puis l'entretien : qui recharge les accus, qui vérifie que le produit est en ligne, à qui signaler une panne.",
+     "Répétition générale au chronomètre, dans l'ordre du scénario.",
+     "Modalité : Jeu de rôle / simulation"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Chaque équipe dit si son produit a tenu toute la séance, et le cas limite qui l'a le plus surprise.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Les produits installés restent en place, alimentés. Le reste dans les bacs. Annonce de la démonstration et de son public.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Un produit qui signale lui-même sa panne au tableau de bord : capteur muet, accus faibles · un test de portée cartographié, salle par salle."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Cas limites fournis par l'animateur · présentation réduite à trois phrases écrites à l'avance."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• La séance est chargée : l'épreuve et l'installation y sont réunies. Si le temps manque, la répétition prime sur la correction des défauts mineurs, qui se disent en plan B.",
+     "• Un produit installé près d'un passage ne doit gêner ni la circulation, ni une issue de secours, ni un usage du lieu.",
+     "• Fixations : rien de percé ou collé à demeure sans l'accord de la structure.",
+     "• Produits sur accus : accus pleins la veille de la démonstration."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ],
+  "s10": [
+   [
+    "Séance 10",
+    [
+     "Présentez vos objets connectés"
+    ]
+   ],
+   [
+    "Objectifs pédagogiques",
+    [
+     "• Être capable de compléter un gabarit HTML pour produire la page de présentation de son objet, qui s'affiche sans erreur dans le navigateur",
+     "• Être capable de justifier un choix technique par le cahier des charges, à l'écrit sur la page puis à l'oral devant une personne qui n'y connaît rien"
+    ]
+   ],
+   [
+    "Notions abordées",
+    [
+     "Page web : un fichier texte que le navigateur affiche · balise ouvrante et fermante · titre, paragraphe, image · variable CSS · présenter et argumenter un choix technique · bilan de projet."
+    ]
+   ],
+   [
+    "Livrable attendu",
+    [
+     "La page de présentation de l'objet, remplie et ouverte dans le navigateur : nom de l'objet et de l'équipe, photos du produit installé, ce qu'il mesure et ce qu'on voit sur le tableau de bord, un choix justifié, les lampes de l'équipe. Démonstration menée selon le scénario de la séance 9."
+    ]
+   ],
+   [
+    "Prérequis",
+    [
+     "Séance 9 : produits installés, photos prises, scénario et présentations répétés."
+    ]
+   ],
+   [
+    "Ressources humaines",
+    [
+     "1 animateur."
+    ]
+   ],
+   [
+    "Matériel",
+    [
+     "Par équipe",
+     "• Le produit installé, alimenté",
+     "Commun",
+     "• Le tableau de bord sur grand écran, pont branché",
+     "• Les lampes de la phase 1, allumées",
+     "• Un téléphone pour les photos manquantes"
+    ]
+   ],
+   [
+    "Ressources numériques",
+    [
+     "• Le gabarit commun à tous les parcours gabarit-page.zip, téléchargeable depuis la page élève : index.html, style.css et un dossier images avec quatre emplacements de photo",
+     "• Un éditeur de texte et un navigateur",
+     "• Les photos de l'équipe, prises en séance 9, et celles des lampes",
+     "• Les cahiers des charges de la séance 6"
+    ]
+   ],
+   [
+    "Lancement (10 min)",
+    [
+     "Vérification des produits, un par un, sur le tableau de bord : les dépanneurs réparent ce qui peut l'être, le reste passe en plan B.",
+     "Puis le gabarit projeté dans le navigateur, et le même fichier dans l'éditeur : chaque bloc de texte à gauche correspond à un élément de la page à droite.",
+     "Modalité : Démonstration commentée"
+    ]
+   ],
+   [
+    "Activité 1 (50 min)",
+    [
+     "La page de votre objet",
+     "Description :",
+     "Le gabarit (10 min). Une balise ouvre, une balise ferme, le texte est entre les deux. Changer le titre, enregistrer, recharger : le titre change. Remplacer une photo : le fichier dans images, son nom dans src, une description dans alt. Changer --couleur-principale en tête de style.css.",
+     "La page (40 min). Les trois sections du gabarit : à quoi sert l'objet, ce qu'il mesure jusqu'au tableau de bord, un choix justifié par le cahier des charges. Puis une quatrième, copiée sur les autres, pour les lampes de l'équipe. Pour le choix, « on a mis le capteur en hauteur parce que la salle est grande », et non « on a mis le capteur en hauteur ».",
+     "Point de contrôle animateur : chaque page s'ouvre dans le navigateur, avec les photos de l'équipe et un choix justifié.",
+     "Modalité : Tutoriel guidé pas à pas, puis production individuelle en autonomie"
+    ]
+   ],
+   [
+    "Activité 2 (30 min)",
+    [
+     "La démonstration",
+     "Description :",
+     "Visite menée par les jeunes, dans l'ordre du scénario. À chaque produit, l'équipe présente en une minute, démontre, projette sa page, et répond aux questions. La vague des lampes ouvre la visite si l'éclairage le permet.",
+     "Modalité : Présentation / démonstration orale"
+    ]
+   ],
+   [
+    "Rétrospective (10 min)",
+    [
+     "Le bilan du projet : chacun dit ce qu'il a fabriqué de plus difficile, et ce qu'il changerait.",
+     "Modalité : Tour de table / partage oral"
+    ]
+   ],
+   [
+    "Clôture (5 min)",
+    [
+     "Pages enregistrées et copiées là où l'animateur les récupère. Rangement du magasin. Annonce du projet suivant. Nommer une réussite de chaque équipe.",
+     "Modalité : Rituel de clôture"
+    ]
+   ],
+   [
+    "Variante +",
+    [
+     "Changer la police et l'arrondi dans « TES RÉGLAGES » · une section de plus, avec son lien dans le menu · une vidéo de l'objet en fonctionnement · présenter le système entier, en débranchant le pont devant le public."
+    ]
+   ],
+   [
+    "Variante −",
+    [
+     "Seuls les textes sont à remplacer, les photos d'exemple restent · photos de l'équipe déjà placées dans images, sous les mêmes noms que les photos d'exemple."
+    ]
+   ],
+   [
+    "Points de vigilance",
+    [
+     "• Les pages sont publiées : pas de nom de famille ni de visage. Le vérifier avant de prendre les photos.",
+     "• Les photos de téléphone sont lourdes et peuvent contenir la position GPS. Les réduire avant de les mettre dans le dossier.",
+     "• Le public se fixe avec la structure. La démonstration se déroule de la même façon devant le groupe seul ou devant des invités.",
+     "• Accus pleins, pont et tableau de bord testés avant la démonstration."
+    ]
+   ],
+   [
+    "Bilan après séance",
+    [
+     "—"
+    ]
+   ],
+   [
+    "Adaptations pour la prochaine fois",
+    [
+     "—"
+    ]
+   ]
+  ]
+ }
+}
