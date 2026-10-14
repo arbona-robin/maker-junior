@@ -655,14 +655,16 @@ def push(docs, doc_id, projet, filtre, force):
             # Le saut de page qui précède le tableau part avec lui : on coupe depuis la fin du tableau d'avant.
             avant = [t["endIndex"] for t in corps(doc.doc) if "table" in t and t["endIndex"] <= el["startIndex"]]
             debut = max(avant) + 1 if avant else el["startIndex"]
+            # Le paragraphe vide qui suit part aussi, sauf le dernier du document, qu'on ne peut pas supprimer.
+            fin = min(el["endIndex"] + 1, corps(doc.doc)[-1]["endIndex"] - 1)
             doc.ecrire([{"deleteContentRange": {"range": {
-                "startIndex": debut, "endIndex": el["endIndex"]}}}])
+                "startIndex": debut, "endIndex": fin}}}])
             bilan.append(f"{nom} : supprimée, absente du dépôt")
 
     tables = tables_du_doc(doc.doc)
     seances = sorted(n for n in tables if n.startswith("s"))
-    modele = tables[seances[0]]
-    prefixe = "\n".join(lignes_cellule(rangs(modele)[0]["tableCells"][0])).split(" · ")[0]
+    # Un projet sans fiche séance (communication et projet seuls) n'a pas de modèle : rien à créer.
+    prefixe = "\n".join(lignes_cellule(rangs(tables[seances[0]])[0]["tableCells"][0])).split(" · ")[0] if seances else None
 
     for nom in noms_fiches(projet):
         if filtre and nom != filtre:
