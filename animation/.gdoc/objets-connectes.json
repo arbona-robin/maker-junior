@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMQQsEtSlmI_Cf3Ol-TISjjHhYrm4LOE0AW7WoyyMcGegnzDEd-xVCJNPeGX8rNmZiSVbKbAUhG9yssW8zwYyaO3OQAXCdvgNUqpc8U",
+ "revision": "AHj4eMRDM6I6fXehcTAr-IvMaxLp5S_CFUpNKIUfOxqopBk-pzhg6bF9jF6pgjC6rxTNP2IaTBNySHS0_I8WS84g2ZV1SFiYsZgt3iCYOoQ",
  "fiches": {
   "communication": [
    [
@@ -53,14 +53,12 @@
    [
     "Visuels (légendes)",
     [
-     "1. La lampe en carton allumée, la lumière de la matrice adoucie par une feuille de papier, le pochoir imprimé devant, son motif éclairé.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/01-lampe-pochoir-eclaire.jpg]",
-     "2. La matrice de 64 LED qui affiche un visage, l'ordinateur derrière.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-matrice-visage.jpg]",
+     "1. La matrice de 64 LED qui affiche un visage, l'ordinateur derrière.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/01-matrice-visage.jpg]",
+     "2. Le programme MakeCode qui dessine ce visage : une grille de 8 × 8 cases, une couleur par LED.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-programme-visage.png]",
      "3. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/03-tableau-de-bord.jpg]",
-     "4. Le pochoir imprimé en 3D, qui repart en porte-clés, à côté de la feuille de papier qui adoucit la lumière.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/04-pochoir-imprime.jpg]"
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/03-tableau-de-bord.jpg]"
     ]
    ]
   ],
