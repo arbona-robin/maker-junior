@@ -75,9 +75,6 @@ Moteurs entre les rabats, axes parallèles, `M1` à gauche. Deux élastiques cro
 ![Vue de dessus des deux moteurs positionnés sur le châssis](../../../assets/rover-s01/04-moteurs-positionnes.jpg)
 <figcaption>Vu de dessus : axes parallèles, <code>M1</code> à gauche.</figcaption>
 </figure>
-<figure markdown>
-![Les rabats latéraux relevés autour des moteurs](../../../assets/rover-s01/05-rabats-lateraux-releves.jpg)
-</figure>
 </div>
 
 <figure markdown>
@@ -97,9 +94,6 @@ Carte sur l'étage du haut, accus par-dessus, un élastique. Fils ni coincés ni
 </figure>
 <figure markdown>
 ![Le pack d'accus posé, un élastique tendu au-dessus](../../../assets/rover-s01/08-batterie-pose-elastique.jpg)
-</figure>
-<figure markdown>
-![Le pack d'accus sanglé par un élastique](../../../assets/rover-s01/09-batterie-fixee.jpg)
 </figure>
 </div>
 
