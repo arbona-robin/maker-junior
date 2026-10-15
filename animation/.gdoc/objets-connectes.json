@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMSNwwsCecbi0vjzju-PvgxovkFwmuhPSbDP5MFrCJl6BjQpjlyGQg--l6J0CrjcU0He17GBJcSpDYqGfMMrvaUWjDz4FE7hKxmnXek",
+ "revision": "AHj4eMR62BokFmBc1tHW1HhkFnP9JJaxmCewHM7mFxCti7z6ATOciEExdZBaHD4rww4hpCj_VgTMBy1wICI6rzccZwbobnt_qIHWg9uAhdk",
  "fiches": {
   "communication": [
    [
@@ -206,8 +206,8 @@
     "Séance 2 — Phase 1 — Découverte & prise en main",
     [
      "Titre : Compose la lumière de ta lampe",
-     "Notions : relier les deux faces par une vis · alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée · boucle d'animation · boucle qui compte",
-     "Livrable intermédiaire : lampe terminée (pistes, vis, micro:bit vissé), matrice câblée et fixée, une image et une lumière qui respire"
+     "Notions : relier les deux faces par une vis · alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée",
+     "Livrable intermédiaire : lampe terminée (pistes, vis, micro:bit vissé), matrice câblée et fixée, une image dessinée sur la matrice"
     ]
    ],
    [
@@ -426,20 +426,19 @@
     "Objectifs pédagogiques",
     [
      "• Être capable de terminer le montage de sa lampe (pistes, vis, micro:bit) et d'y câbler une matrice RGB sur une alimentation séparée, masse commune comprise, validé au point de contrôle",
-     "• Être capable de dessiner une image sur la matrice et de l'afficher, en expliquant pourquoi rien ne change sans show",
-     "• Être capable de produire une animation personnelle, luminosité bridée"
+     "• Être capable de dessiner une image sur la matrice et de l'afficher, en expliquant pourquoi rien ne change sans show"
     ]
    ],
    [
     "Notions abordées",
     [
-     "Relier les deux faces du carton par une vis · alimentation séparée et masse commune · une matrice est un ruban de 64 LED numérotées · couleur · préparer puis afficher · luminosité bridée · boucle d'animation · boucle qui compte (pour index)."
+     "Relier les deux faces du carton par une vis · alimentation séparée et masse commune · une matrice est un ruban de 64 LED numérotées · couleur · préparer puis afficher · luminosité bridée."
     ]
    ],
    [
     "Livrable attendu",
     [
-     "Lampe terminée : pistes intérieures et vis en place, micro:bit vissé sur ses entretoises, matrice câblée et tenue par un élastique. Une image dessinée et une lumière qui respire, mémorisées dans le programme."
+     "Lampe terminée : pistes intérieures et vis en place, micro:bit vissé sur ses entretoises, matrice câblée et tenue par un élastique. Une image dessinée, mémorisée dans le programme."
     ]
    ],
    [
@@ -486,7 +485,7 @@
     ]
    ],
    [
-    "Activité 1 (35 min)",
+    "Activité 1 (50 min)",
     [
      "Termine ta lampe et câble la matrice",
      "Description :",
@@ -505,22 +504,13 @@
     ]
    ],
    [
-    "Activité 2 (20 min)",
+    "Activité 2 (30 min)",
     [
      "Dessine ton image",
      "Description :",
      "set NeoPixel 8x8, une couleur par case, puis show changes. Sans show changes, rien ne s'affiche : le bloc 8 × 8 prépare l'image, show l'envoie à la matrice. C'est l'erreur la plus fréquente, à faire constater plutôt qu'à annoncer.",
      "Les cases laissées en gris restent allumées en gris : pour éteindre une case, on choisit le noir.",
-     "Exercice libre : un motif, une icône, un visage.",
-     "Modalité : Production individuelle en autonomie"
-    ]
-   ],
-   [
-    "Activité 3 (25 min)",
-    [
-     "Fais-la respirer",
-     "Description :",
-     "La respiration : dans toujours, deux boucles pour index variant de 0 à 50, l'une qui monte la luminosité, l'autre qui la descend (50 - index). Montrer le piège : set brightness ne change que les couleurs données après lui, il faut redonner la couleur à chaque pas : set color prépare, show changes affiche, comme pour la grille.",
+     "Exercice libre : un motif, une icône, un visage. Ceux qui ont fini passent à la variante +.",
      "Le micro:bit reste à l'avant, écran vers la pièce : la séance 3 en aura besoin.",
      "Modalité : Production individuelle en autonomie"
     ]
@@ -528,7 +518,7 @@
    [
     "Rétrospective (10 min)",
     [
-     "Lumière de la salle éteinte, toutes les lampes allumées. Chacun montre son animation.",
+     "Lumière de la salle éteinte, toutes les lampes allumées. Chacun montre son image.",
      "Modalité : Mini-exposition / galerie (vernissage)"
     ]
    ],
@@ -548,7 +538,7 @@
    [
     "Variante −",
     [
-     "Une image fournie à modifier, et le programme d'animation donné : il ne reste qu'à changer les couleurs."
+     "Une image fournie à modifier : il ne reste qu'à changer les couleurs."
     ]
    ],
    [
@@ -690,7 +680,7 @@
    [
     "Variante +",
     [
-     "Hystérésis : deux seuils différents, un pour allumer, un pour éteindre · moyenne de plusieurs mesures · allumage en fondu, avec un son du haut-parleur de la carte."
+     "Hystérésis : deux seuils différents, un pour allumer, un pour éteindre · moyenne de plusieurs mesures · réveil en douceur : une variable intensite qui monte d'un cran à chaque tour de toujours jusqu'à 50, avec une pause de 30 ms pendant la montée, et qui repart à 0 quand la lampe s'éteint."
     ]
    ],
    [
