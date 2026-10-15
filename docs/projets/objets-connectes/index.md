@@ -1,8 +1,10 @@
 # Projet Objets connectés — invente et fabrique tes objets connectés
 
-Ta lampe s'allume toute seule à la nuit tombée, dans la couleur que tu as choisie, et d'un signal radio toutes les lampes du groupe s'allument en vague. Ensuite, ton équipe invente son propre objet connecté, de l'idée jusqu'à la démonstration.
+Ta lampe s'allume toute seule à la nuit tombée, dans la couleur que tu as choisie, et tu la commandes à distance, depuis un tableau de bord qui affiche toutes les lampes du groupe. Ensuite, ton équipe invente son propre objet connecté, de l'idée jusqu'à la démonstration.
 
 Le parcours se fait en deux temps. D'abord ta lampe, que tu construis seul : un circuit, de la lumière, un capteur, une pièce en 3D, la radio. Ensuite, à deux ou trois, un objet qui sert à tout le monde, et qui envoie ses mesures au tableau de bord comme tous les autres.
+
+<video controls playsinline preload="metadata" src="../../assets/objets-connectes-communication/video-lampe-tableau-de-bord.mp4"></video>
 
 ## Les séances
 
@@ -17,11 +19,11 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 3 — Fais-la s'allumer quand il fait nuit](seances/s03-quand-il-fait-nuit.md)**
   Ta lampe mesure la lumière, et s'allume seule sous le seuil que tu as choisi.
 
-- **[Séance 4 — Dessine l'emblème de ta lampe](seances/s04-dessine-ton-embleme.md)**
-  Tu dessines en 3D l'emblème qui décore ta lampe.
+- **[Séance 4 — Dessine le pochoir de ta lampe](seances/s04-dessine-ton-pochoir.md)**
+  Tu dessines en 3D le pochoir que ta lampe éclaire, et qui repart avec toi en porte-clés.
 
-- **[Séance 5 — Fais parler les lampes entre elles](seances/s05-fais-parler-les-lampes.md)**
-  Ta lampe parle par radio aux autres lampes, et la vague passe de lampe en lampe.
+- **[Séance 5 — Mets ta lampe en ligne](seances/s05-mets-ta-lampe-en-ligne.md)**
+  Ta lampe envoie ses mesures au tableau de bord, et on la met en marche depuis le grand écran.
 
 - **[Séance 6 — Choisissez votre produit](seances/s06-choisissez-votre-produit.md)**
   Vous formez votre équipe, vous choisissez votre objet et vous écrivez ce qu'il devra faire.
