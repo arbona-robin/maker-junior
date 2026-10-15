@@ -12,6 +12,10 @@ Ta télécommande n'envoie pas encore ses cinq mots ? Termine d'abord la [séanc
 
 ### Ton rover écoute
 
+<figure markdown>
+![De la télécommande aux moteurs : 1, la télécommande mesure l'inclinaison avec l'accéléromètre ; 2, elle compare au seuil ; 3, elle envoie le mot avancer par radio, bande 15 ; 4, le rover, sur la même bande, reçoit le mot et appelle sa fonction avancer ; 5, la carte DFR0548 reçoit les commandes Motor M1 et M2 ; 6, les moteurs tournent](../../../assets/rover-s04/30-schema-chaine-commande.png)
+</figure>
+
 Dans MakeCode, ouvre ton projet `rover`.
 
 Dans `au démarrage`, règle la même bande de fréquence que ta télécommande :

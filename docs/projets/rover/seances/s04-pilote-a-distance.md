@@ -134,6 +134,10 @@ Le premier test vrai gagne, les suivants ne sont même pas lus.
 
 **Ce que tu vas obtenir :** à chaque inclinaison, ta télécommande envoie par radio le mot du protocole. Ton rover le recevra en séance 5.
 
+<figure markdown>
+![De la télécommande aux moteurs : 1, la télécommande mesure l'inclinaison avec l'accéléromètre ; 2, elle compare au seuil ; 3, elle envoie le mot avancer par radio, bande 15 ; 4, le rover, sur la même bande, reçoit le mot et appelle sa fonction avancer ; 5, la carte DFR0548 reçoit les commandes Motor M1 et M2 ; 6, les moteurs tournent](../../../assets/rover-s04/30-schema-chaine-commande.png)
+</figure>
+
 Dans la salle, une douzaine de télécommandes émettent en même temps. Pour ne pas piloter le rover du voisin, chacun prend **sa bande de fréquence** : le numéro de ton poste. Dans `au démarrage`, `radio régler la bande de fréquence`, dans **Radio** :
 
 ```blocks

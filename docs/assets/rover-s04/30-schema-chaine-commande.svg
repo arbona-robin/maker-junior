@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200mm" height="120mm" viewBox="0 0 200 120" font-family="Helvetica, Arial, sans-serif">
+  <title>De l'inclinaison de la télécommande aux moteurs du rover</title>
+  <rect width="200" height="120" fill="#fff"/>
+
+  <!-- La télécommande -->
+  <text x="34" y="10" font-size="3.6" text-anchor="middle" font-weight="bold">Ta télécommande</text>
+  <rect x="8" y="14" width="52" height="64" rx="2" fill="#1d2433" stroke="#333" stroke-width="0.6"/>
+  <g font-size="2.9" fill="#fff">
+    <text x="12" y="23" font-weight="bold">1. Elle mesure</text>
+    <text x="12" y="27.5" fill="#c9d1e6">l'accéléromètre :</text>
+    <text x="12" y="31.5" fill="#c9d1e6">y = −350, penchée en avant</text>
+    <text x="12" y="41" font-weight="bold">2. Elle décide</text>
+    <text x="12" y="45.5" fill="#c9d1e6">y &lt; −200 ? oui :</text>
+    <text x="12" y="49.5" fill="#c9d1e6">le seuil est franchi</text>
+    <text x="12" y="59" font-weight="bold">3. Elle envoie l'ordre</text>
+    <text x="12" y="63.5" fill="#c9d1e6">envoyer la chaîne</text>
+    <text x="12" y="67.5" fill="#f9c74f">"avancer"</text>
+  </g>
+
+  <!-- La radio -->
+  <g fill="none" stroke="#999" stroke-width="0.5">
+    <path d="M64 40 A8 8 0 0 1 64 54"/><path d="M67 37 A12 12 0 0 1 67 57"/>
+    <path d="M100 40 A8 8 0 0 0 100 54"/><path d="M97 37 A12 12 0 0 0 97 57"/>
+  </g>
+  <path d="M62 47 H102" stroke="#f9a825" stroke-width="1.4"/>
+  <path d="M104 47 l-4 -2.2 v4.4 z" fill="#f9a825"/>
+  <text x="83" y="42" font-size="3.4" text-anchor="middle" fill="#b07800" font-weight="bold">"avancer"</text>
+  <text x="83" y="54" font-size="2.8" text-anchor="middle" fill="#555">radio, bande 15</text>
+
+  <!-- Le rover -->
+  <text x="150" y="10" font-size="3.6" text-anchor="middle" font-weight="bold">Ton rover</text>
+  <rect x="106" y="14" width="88" height="96" rx="2" fill="#f4efe6" stroke="#333" stroke-width="0.6"/>
+
+  <rect x="112" y="18" width="52" height="30" rx="2" fill="#1d2433"/>
+  <g font-size="2.9" fill="#fff">
+    <text x="116" y="26" font-weight="bold">4. Il écoute et obéit</text>
+    <text x="116" y="30.5" fill="#c9d1e6">quand une donnée est reçue :</text>
+    <text x="116" y="34.5" fill="#c9d1e6">si "avancer",</text>
+    <text x="116" y="38.5" fill="#c9d1e6">appel avancer</text>
+  </g>
+  <text x="138" y="45" font-size="2.6" text-anchor="middle" fill="#8a94ad">micro:bit, bande 15 aussi</text>
+
+  <path d="M138 48 V58" stroke="#2e7d32" stroke-width="1.4"/>
+  <path d="M138 60 l-2.2 -4 h4.4 z" fill="#2e7d32"/>
+
+  <rect x="112" y="61" width="52" height="20" rx="2" fill="#2f5d3a"/>
+  <g font-size="2.9" fill="#fff">
+    <text x="116" y="68" font-weight="bold">5. La carte DFR0548</text>
+    <text x="116" y="72.5" fill="#d4e8d8">Motor M1 dir CW speed 110</text>
+    <text x="116" y="76.5" fill="#d4e8d8">Motor M2 dir CW speed 110</text>
+  </g>
+
+  <path d="M128 81 V90" stroke="#d32f2f" stroke-width="1.2"/>
+  <path d="M148 81 V90" stroke="#d32f2f" stroke-width="1.2"/>
+  <g>
+    <circle cx="128" cy="96" r="6" fill="#f9c74f" stroke="#333" stroke-width="0.5"/>
+    <circle cx="128" cy="96" r="2" fill="#333"/>
+    <circle cx="148" cy="96" r="6" fill="#f9c74f" stroke="#333" stroke-width="0.5"/>
+    <circle cx="148" cy="96" r="2" fill="#333"/>
+  </g>
+  <text x="128" y="106" font-size="2.6" text-anchor="middle">M1</text>
+  <text x="148" y="106" font-size="2.6" text-anchor="middle">M2</text>
+  <text x="170" y="94" font-size="2.9" font-weight="bold">6. Les</text>
+  <text x="170" y="98" font-size="2.9" font-weight="bold">moteurs</text>
+  <text x="170" y="102" font-size="2.9" font-weight="bold">tournent</text>
+
+  <!-- À retenir -->
+  <rect x="8" y="84" width="92" height="22" rx="2" fill="#f4f4f4" stroke="#ccc" stroke-width="0.4"/>
+  <g font-size="2.9">
+    <text x="12" y="91">La télécommande décide, le rover obéit.</text>
+    <text x="12" y="96">Même bande des deux côtés.</text>
+    <text x="12" y="101">Le mot arrive au caractère près.</text>
+  </g>
+
+  <!-- Légende -->
+  <g font-size="3">
+    <line x1="10" y1="115" x2="18" y2="115" stroke="#f9a825" stroke-width="1.4"/>
+    <text x="21" y="116">l'ordre, par radio</text>
+    <line x1="70" y1="115" x2="78" y2="115" stroke="#2e7d32" stroke-width="1.4"/>
+    <text x="81" y="116">le micro:bit commande la carte</text>
+    <line x1="140" y1="115" x2="148" y2="115" stroke="#d32f2f" stroke-width="1.2"/>
+    <text x="151" y="116">la carte alimente les moteurs</text>
+  </g>
+</svg>
