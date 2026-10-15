@@ -2,7 +2,7 @@
 
 1. **[Termine ta lampe](#1-termine-ta-lampe)** : les pistes de cuivre, les vis, le micro:bit et la matrice en place.
 2. **[Allume-la](#2-allume-la)** : la matrice s'allume en rouge.
-3. **[Dessine et anime](#3-dessine-et-anime)** : ton image, puis une lumière qui respire.
+3. **[Dessine ton image](#3-dessine-ton-image)** : ton image sur la matrice.
 
 ## 1. Termine ta lampe
 
@@ -153,9 +153,9 @@ strip.show()
 > [!TIP] Rien ne s'allume ?
 > `DI` sur l'écrou de l'anneau `1` ? Le fil `−` du pack bien serré sous la rondelle de `GND` ?
 
-## 3. Dessine et anime
+## 3. Dessine ton image
 
-**Ce que tu vas obtenir :** ton image sur la matrice, puis une lumière qui respire.
+**Ce que tu vas obtenir :** ton image sur la matrice.
 
 Remplace `set color` par `set NeoPixel 8x8` : une grille de 8 × 8, une couleur par case. Garde `show changes` après. Dans `au démarrage`, ajoute `set NeoPixel matrix layout to row by row` : ta matrice est câblée ligne par ligne.
 
@@ -184,39 +184,6 @@ strip.show()
 <figure markdown>
 ![La lampe allumée affiche un visage souriant en blanc ; derrière, MakeCode montre la même grille dans le bloc set NeoPixel 8x8](../../../assets/objets-connectes-s02/03-matrice-visage.jpg)
 </figure>
-
-**À toi : fais-la respirer.** Dans `toujours`, la lumière monte de 0 à 50, puis redescend : `set brightness`, `set color`, puis `show changes` à chaque pas, et une pause de 20 ms. La boucle `pour index variant de 0 à 50`, dans **Boucles**, compte les pas pour toi.
-
-`set brightness` ne change que les couleurs données après lui : redonne la couleur à chaque pas.
-
-→ [Répéter en comptant](../../../fiches/makecode-prise-en-main.md#repeter-en-comptant)
-
-<details markdown>
-<summary>La solution</summary>
-
-```blocks
-basic.forever(function () {
-    for (let index = 0; index <= 50; index++) {
-        strip.setBrightness(index)
-        strip.setColor(0xff8c00)
-        strip.show()
-        basic.pause(20)
-    }
-    for (let index = 0; index <= 50; index++) {
-        strip.setBrightness(50 - index)
-        strip.setColor(0xff8c00)
-        strip.show()
-        basic.pause(20)
-    }
-})
-let strip: neopixelExtended.Strip = null
-```
-
-`index` vaut 0, puis 1, puis 2… jusqu'à 50. Dans la seconde boucle, `50 - index` fait le chemin inverse.
-
-</details>
-
-<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s02/video-respiration.mp4"></video>
 
 ## Va plus loin
 

@@ -133,4 +133,35 @@ Si ta matrice éclaire l'écran du micro:bit, la lampe se voit elle-même : elle
 ## Va plus loin
 
 - **Deux seuils.** À la limite, la valeur oscille et la lampe clignote. Un seuil pour s'allumer (`40`), un autre pour s'éteindre (`60`) : entre les deux, elle ne bouge pas.
-- **Un réveil en douceur.** La luminosité monte petit à petit à l'allumage, avec un son.
+
+### Un réveil en douceur
+
+À l'allumage, la lumière monte de 0 à 50 au lieu d'apparaître d'un coup. Une variable `intensite` monte d'un cran à chaque tour de `toujours`, jusqu'à 50, avec `set brightness`. Elle repart à 0 quand la lampe s'éteint. Une courte pause pendant la montée la rend visible : allonge-la pour un réveil plus lent.
+
+<details markdown>
+<summary>La solution</summary>
+
+```blocks
+basic.forever(function () {
+    if (active == 1 && input.lightLevel() < 40) {
+        if (intensite < 50) {
+            intensite = intensite + 1
+            basic.pause(30)
+        }
+        strip.setBrightness(intensite)
+        strip.setColor(0xff8c00)
+        strip.show()
+    } else {
+        intensite = 0
+        strip.clear()
+        strip.show()
+    }
+})
+let intensite = 0
+let active = 0
+let strip: neopixelExtended.Strip = null
+```
+
+`set brightness` ne change que les couleurs données après lui : il passe avant `set color`.
+
+</details>

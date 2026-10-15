@@ -135,9 +135,9 @@ Le premier parcours demande 86 € d'achats : matrices, ruban de cuivre, visseri
 
 **Titre :** Compose la lumière de ta lampe
 
-**Notions :** relier les deux faces par une vis · alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée · boucle d'animation · boucle qui compte
+**Notions :** relier les deux faces par une vis · alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée
 
-**Livrable intermédiaire :** lampe terminée (pistes, vis, micro:bit vissé), matrice câblée et fixée, une image et une lumière qui respire
+**Livrable intermédiaire :** lampe terminée (pistes, vis, micro:bit vissé), matrice câblée et fixée, une image dessinée sur la matrice
 
 ## Séance 3 — Phase 1 — Découverte & prise en main
 
