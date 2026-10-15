@@ -47,10 +47,7 @@ Sur place, vérifiez :
 
 - une prise à proximité, si votre produit est sur secteur
 - comment il sera fixé
-- que la radio passe : posez un micro:bit émetteur à l'emplacement, et regardez le tableau de bord
-
-> [!TIP] La radio ne passe pas ?
-> Les murs arrêtent les ondes. Changez d'emplacement maintenant, pas en séance 9.
+- que la radio passe : posez un micro:bit émetteur à l'emplacement, et regardez le tableau de bord. Si elle ne passe pas, changez d'emplacement maintenant, pas en séance 9 : les murs arrêtent les ondes.
 
 > [!IMPORTANT] Point de contrôle
 > Faites valider votre feuille d'équipe, votre emplacement et votre matériel.

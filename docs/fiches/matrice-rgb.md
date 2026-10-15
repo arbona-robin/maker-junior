@@ -92,8 +92,7 @@ La matrice est en réalité un ruban de 64 LED, numérotées de `0` à `63`, pos
 - `rotate pixels by 8` décale tout d'une ligne ; `by 1`, d'une seule LED. Dans une boucle, l'image défile.
 - `set matrix color at x y` allume une case par ses coordonnées, comme `allumer x y` sur l'écran du micro:bit. Le coin en haut à gauche est `0,0`.
 
-> [!TIP] Une ligne sur deux à l'envers ?
-> Le ruban de ta matrice est câblé ligne par ligne, ou en allers-retours d'une ligne à l'autre. `set NeoPixel matrix layout`, dans `au démarrage`, dit lequel à l'extension : `row by row` pour les matrices de l'atelier.
+Une ligne sur deux à l'envers ? Le ruban de ta matrice est câblé ligne par ligne, ou en allers-retours d'une ligne à l'autre. `set NeoPixel matrix layout`, dans `au démarrage`, dit lequel à l'extension : `row by row` pour les matrices de l'atelier.
 
 > [!TIP] Éteindre toutes les cases grises d'un coup
 > Passe en **JavaScript**, ouvre « Rechercher et remplacer » (`Ctrl` + `H`), remplace `0x888888` par `0x000000`, puis reviens aux **Blocs**.

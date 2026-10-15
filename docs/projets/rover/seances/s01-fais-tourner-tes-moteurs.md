@@ -40,10 +40,10 @@ Tire sur chaque fil : s'il ressort, resserre.
 
 ### Le pack d'accus
 
-Rouge sur `+`, noir sur `−`, dans le petit bornier marqué `3.5~5.5V`.
-
 > [!CAUTION] La polarité ne se rattrape pas
 > Une inversion peut détruire la carte. Vérifie deux fois.
+
+Rouge sur `+`, noir sur `−`, dans le petit bornier marqué `3.5~5.5V`.
 
 > [!IMPORTANT] Point de contrôle
 > Fais valider ton câblage avant de mettre sous tension.

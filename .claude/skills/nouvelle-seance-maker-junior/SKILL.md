@@ -249,6 +249,7 @@ git show 8fa3561:docs/projets/rover/seances/s01-base-motrice.md
 - **La page se suit en ne lisant que les titres et les images.** Si ce n'est pas le cas, ce sont les titres ou les images qu'il faut revoir, pas le texte qu'il faut allonger.
 - **Un pas = une action, à l'impératif.** Une ou deux phrases. Pas de transition entre les pas.
 - **Une consigne se dit une fois.** Si elle est déjà dans un encadré, le texte n'y revient pas.
+- **Jamais deux encadrés à la suite.** Empilés, ils ne se lisent plus : l'œil les saute tous. Chacun se place au moment où il sert, séparé du suivant par un pas ou une image ; une astuce qui ne sert qu'à l'exercice entre dans sa solution.
 - **Les encadrés sont courts aussi.** `[!NOTE]` : deux lignes. `[!CAUTION]` : une ligne par règle, sans justification ; la justification est dans la fiche.
 - **Au doute, renvoyer à la fiche** plutôt qu'expliquer dans la séance.
 - **Relire en coupant.** Pour chaque phrase : si je l'enlève, le jeune fait-il le pas moins bien ? Sinon, l'enlever.

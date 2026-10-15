@@ -117,10 +117,11 @@ radio.onReceivedString(function (receivedString) {
 
 Téléverse les deux programmes, débranche l'USB, passe sur accus. On pilote sur la table de robotique, nulle part ailleurs.
 
-> [!TIP] Le contrôle en un coup d'œil
-> Penche ta télécommande et regarde **les deux écrans**.
->
-> Même point des deux côtés : le message passe. Point allumé seulement sur la télécommande : le rover n'entend pas : vérifie ta bande de fréquence. Le point reste au centre des deux côtés : ce sont tes seuils.
+Penche ta télécommande et regarde **les deux écrans** :
+
+- même point des deux côtés : le message passe
+- point allumé seulement sur la télécommande : le rover n'entend pas, vérifie ta bande de fréquence
+- point au centre des deux côtés : ce sont tes seuils
 
 > [!IMPORTANT] Point de contrôle
 > Montre ton rover à l'animateur : il avance, recule, tourne et s'arrête à la télécommande.

@@ -19,15 +19,12 @@ Un produit hors ligne : on le répare si on peut, sinon c'est le plan B.
 
 **Ce que vous allez obtenir :** la page de votre objet, qui s'ouvre dans le navigateur, avec vos photos et un choix justifié.
 
-Trois sections : à quoi il sert, ce qu'il mesure jusqu'au tableau de bord, votre meilleure idée. Remplacez les textes d'exemple.
-
-> [!NOTE] Un choix, une raison
-> Pas « on a mis le capteur en hauteur ». Plutôt : « on a mis le capteur en hauteur parce que la salle est grande. »
-
-Ajoutez une section pour vos lampes, avec leur couleur, leur animation, leur pochoir : → [Ajouter une section](../../../fiches/faire-une-page-web.md#ajouter-une-section)
+Trois sections : à quoi il sert, ce qu'il mesure jusqu'au tableau de bord, votre meilleure idée. Remplacez les textes d'exemple. Pour votre meilleure idée, donnez la raison : pas « on a mis le capteur en hauteur », mais « on l'a mis en hauteur parce que la salle est grande ».
 
 > [!CAUTION] Avant de mettre une photo
 > Pas de visage ni de nom de famille.
+
+Ajoutez une section pour vos lampes, avec leur couleur, leur animation, leur pochoir : → [Ajouter une section](../../../fiches/faire-une-page-web.md#ajouter-une-section)
 
 > [!IMPORTANT] Point de contrôle
 > Votre page s'ouvre dans le navigateur, avec vos photos et votre choix justifié.

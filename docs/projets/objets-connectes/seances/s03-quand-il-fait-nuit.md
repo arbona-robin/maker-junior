@@ -52,7 +52,7 @@ Ton seuil est entre la pénombre et la salle éclairée. Il dépend de l'endroit
 
 Retour dans ton projet `lampe`.
 
-**À toi.** Dans `toujours` : si la lumière est sous ton seuil, allume ton ambiance. Sinon, éteins la matrice avec `clear all colors` et `show changes`.
+**À toi.** Dans `toujours` : si la lumière est sous ton seuil, allume toute la matrice d'une couleur avec `set color`, dans **neopixel-extended**, puis `show changes`. Sinon, éteins la matrice avec `clear all colors` et `show changes`.
 
 <details markdown>
 <summary>La solution</summary>

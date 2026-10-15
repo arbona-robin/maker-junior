@@ -32,8 +32,7 @@ Laissez votre produit allumé toute la séance : est-il encore là à la fin ?
 > [!CAUTION] Avant de fixer
 > Rien de percé ni collé sans l'accord de l'animateur. Le produit ne gêne ni le passage ni une sortie.
 
-> [!TIP] Le message n'arrive pas ?
-> Les murs affaiblissent les ondes. Montez la puissance d'émission, déplacez le produit de quelques mètres, ou demandez à déplacer le pont.
+Fixez-le, puis vérifiez qu'il apparaît sur le tableau de bord depuis sa place. Sinon, montez la puissance d'émission, déplacez-le de quelques mètres, ou demandez à déplacer le pont : les murs affaiblissent les ondes.
 
 > [!IMPORTANT] Point de contrôle
 > Votre produit est installé, et vu sur le tableau de bord depuis sa place.

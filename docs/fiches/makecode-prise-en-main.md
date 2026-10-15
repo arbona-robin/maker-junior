@@ -263,15 +263,12 @@ Deux cartes ne se parlent que si elles émettent **au même endroit du spectre**
 radio.setFrequencyBand(15)
 ```
 
-Le numéro va de `0` à `83`, un mégahertz par pas à partir de 2400 : la bande `15` est à 2415 MHz. Par défaut, une carte neuve est sur la bande `7`.
+Le numéro va de `0` à `83`, un mégahertz par pas à partir de 2400 : la bande `15` est à 2415 MHz. Par défaut, une carte neuve est sur la bande `7`. Le réglage ne s'applique qu'à une vraie carte : dans le simulateur du navigateur, le bloc ne fait rien.
 
 > [!NOTE] Bande ou groupe ?
 > `radio définir groupe` trie aussi les conversations, mais toutes les cartes restent sur la même fréquence : elles s'entendent et filtrent à l'arrivée. Quand une salle entière émet en continu, les messages se gênent quoi qu'il arrive. La bande sépare vraiment les cartes : c'est elle qu'on utilise ici.
 >
 > Ni l'une ni l'autre ne rend la liaison plus sûre : n'importe qui peut se régler sur la tienne et écouter.
-
-> [!CAUTION] Le simulateur ne suit pas
-> La bande de fréquence ne s'applique qu'à une vraie carte. Dans le simulateur du navigateur, le bloc ne fait rien.
 
 ### La puissance et la portée
 
@@ -436,8 +433,7 @@ Dans `toujours`, un `si mode = 0 … sinon si mode = 1 …` choisit ce que fait 
 > [!NOTE] Pourquoi un témoin
 > Une carte dans le mauvais mode n'obéit plus à ce qu'on attend d'elle. Sans témoin, on croit à une panne.
 
-> [!TIP] Deux programmes, c'est aussi une solution
-> Un projet par mode, téléversé selon le besoin. Plus simple à écrire, plus lent à changer : il faut l'ordinateur.
+Autre solution : un projet par mode, téléversé selon le besoin. Plus simple à écrire, plus lent à changer : il faut l'ordinateur.
 
 ## Blocs, JavaScript, Python
 
