@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMR62BokFmBc1tHW1HhkFnP9JJaxmCewHM7mFxCti7z6ATOciEExdZBaHD4rww4hpCj_VgTMBy1wICI6rzccZwbobnt_qIHWg9uAhdk",
+ "revision": "AHj4eMS3QnnPKXH1QZmzPBusygZA6746GCqxOEOGZS5p5-DlIZWn-dpLotX09mD9DjnZq3WLx88zGvkx4-QdK7tnSMrSvzzH0VNHh1tpdhg",
  "fiches": {
   "communication": [
    [
@@ -497,7 +497,7 @@
      "3. V sur le fil + du pack.",
      "La masse commune se dit et s'explique : le signal de P1 se mesure par rapport au GND du micro:bit. Si la matrice ne partage pas ce GND, elle reçoit un signal sans référence et ne fait rien. Ici, elle est assurée par l'écrou de GND, qui réunit le micro:bit, la matrice et le pack.",
      "La matrice se pose sur le second montant, tenue par un élastique ; le pack va à l'intérieur, sur la base.",
-     "Premier programme, avant de brancher le pack : NeoPixel strip at pin P1 with 64 Neopixel as RGB (GRB format), set brightness 50, set color rouge, show changes. Le couple « préparer, puis afficher » est là dès le premier programme.",
+     "Premier programme, avant de brancher le pack : NeoPixel strip at pin P1 with 64 Neopixel as RGB (GRB format), set brightness 50, set NeoPixel matrix layout to row by row, puis directement l'image de l'activité 2.",
      "Chaque jeune vérifie seul, au multimètre en mode continuité, que chaque bande est reliée à son anneau : une pointe sur la vis de la bande, l'autre sur l'anneau. Le mode continuité se montre au lancement.",
      "Point de contrôle animateur : le jeune refait sa vérification au multimètre devant l'animateur, deux bips. V et G dans le bon sens à la lecture du dos de la matrice, le fil − du pack sous la rondelle de GND, luminosité à 50 dans le programme. Avant de mettre les piles.",
      "Modalité : Démonstration commentée, puis production individuelle en autonomie"
