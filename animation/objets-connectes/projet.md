@@ -127,9 +127,9 @@ Le premier parcours demande 86 € d'achats : matrices, ruban de cuivre, visseri
 
 **Titre :** Fabrique ta lampe et allume-la
 
-**Notions :** découpe au plan · circuit fermé · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique · entrée analogique · seuil
+**Notions :** découpe au plan · circuit fermé · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique
 
-**Livrable intermédiaire :** support découpé et plié, deux bandes de cuivre collées, LED allumée puis clignotante par programme, bandes de cuivre utilisées comme bouton qui affiche une icône au toucher
+**Livrable intermédiaire :** support découpé et plié, deux bandes de cuivre collées, LED allumée puis clignotante par programme
 
 ## Séance 2 — Phase 1 — Découverte & prise en main
 
@@ -143,7 +143,7 @@ Le premier parcours demande 86 € d'achats : matrices, ruban de cuivre, visseri
 
 **Titre :** Fais-la s'allumer quand il fait nuit
 
-**Notions :** mesure brute · Afficher données · seuil · variable d'état · interrupteur à bascule
+**Notions :** mesure brute · Afficher données · seuil · broche en entrée · variable d'état · interrupteur à bascule
 
 **Livrable intermédiaire :** lampe qui s'allume seule sous le seuil et s'éteint au-dessus, mise en marche ou en veille par son bouton en cuivre
 

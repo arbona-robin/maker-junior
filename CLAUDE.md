@@ -8,7 +8,7 @@ Site MkDocs Material. `docs/` est publié, `animation/` ne l'est pas.
 |---|---|---|
 | Qui lit | Les jeunes | Toi, la hiérarchie, les partenaires |
 | Publié | Sur le site | Non — GitHub seulement |
-| Registre | Tutoiement, notice IKEA, ~800 mots par séance | Opératoire, chiffré, honnête |
+| Registre | Tutoiement, notice IKEA, ~600 mots par séance (code des blocs non compté) | Opératoire, chiffré, honnête |
 | Format | Libre | Gabarit La Plateforme, sections figées |
 
 **Budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel, bilan d'atelier : dans `animation/`, jamais dans `docs/`.**

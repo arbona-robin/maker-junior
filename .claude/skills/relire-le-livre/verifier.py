@@ -169,7 +169,8 @@ for f in TOUT:
                 continue
             chemin = os.path.normpath(os.path.join(base, cible))
             # Les <video> ont un « ../ » de plus : MkDocs ne réécrit pas leur chemin.
-            if "<video" in ligne:
+            # Sauf sur un index.md, déjà publié dans le dossier de sa page.
+            if "<video" in ligne and os.path.basename(f) != "index.md":
                 chemin = os.path.normpath(os.path.join(base, "x", cible))
             if not os.path.exists(chemin):
                 signaler("médias manquants", f, n, f"introuvable : {cible}")

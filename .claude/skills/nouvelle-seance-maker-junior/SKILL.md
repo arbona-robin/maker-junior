@@ -22,7 +22,7 @@ Le dépôt produit deux choses à partir du même travail, et les confondre est 
 |---|---|---|
 | Qui lit | Les jeunes | Toi, ta hiérarchie, tes partenaires |
 | Publié | Sur le site | Non — GitHub seulement |
-| Registre | Tutoiement, notice IKEA, ~800 mots | Opératoire, chiffré, honnête |
+| Registre | Tutoiement, notice IKEA, ~600 mots | Opératoire, chiffré, honnête |
 | Format | Libre | Gabarit LP, sections figées |
 
 Budget, ressources humaines, objectifs en langage Bloom, planning prévisionnel, bilan d'atelier : **tout ça vit dans `animation/` et n'entre jamais dans `docs/`.** **Durée** et **Prérequis** non plus — ce sont des champs du gabarit LP. La page élève s'ouvre sur le plan de la séance (§6) ; pas sur un bandeau de métadonnées. Le guide LP le dit lui-même de l'objectif général : « c'est pour vous et vos partenaires, pas pour les jeunes ».
@@ -217,13 +217,13 @@ Ce qui n'a pas encore été photographié prend un emplacement réservé, visibl
 
 **La direction, c'est la notice IKEA.** L'image montre ; le texte ne dit que ce que l'image ne peut pas dire : un nom de bloc, une valeur, une consigne de sécurité.
 
-**L'objectif chiffré : environ 800 mots affichés pour une séance de 1 h 45.** La S1 du rover en fait 758, un tiers de sa première version (voir §7 pour la mesure).
+**L'objectif chiffré : environ 600 mots affichés pour une séance de 1 h 45**, sans le code des blocs, qui s'affiche en image. La S1 du rover en fait 516, les séances individuelles du rover entre 470 et 720 (voir §7 pour la mesure).
 
 Pourquoi : quand il y a trop de texte, les jeunes ne lisent pas. La masse paraît insurmontable et la page n'est plus ouverte. C'était le bilan de la première S1 du rover : notice peu utilisée. Tout y était nouveau, le livre compris, et l'autonomie viendra avec les séances. Mais la page était de toute façon beaucoup trop verbeuse.
 
 La page se lit **pendant l'atelier, en écran partagé** : le livre d'un côté, MakeCode ou le montage de l'autre.
 
-**La S1 du rover est l'exemple** : longueur, pas, encadrés, légendes. Sa première version (commit `8fa3561`, 2 436 mots affichés) montre ce qu'on a coupé pour y arriver :
+**La S1 du rover est l'exemple** : longueur, pas, encadrés, légendes. Sa première version (commit `8fa3561`, 2 436 mots à l'ancienne mesure, code compris) montre ce qu'on a coupé pour y arriver :
 
 ```bash
 git show 8fa3561:docs/projets/rover/seances/s01-base-motrice.md
@@ -335,9 +335,9 @@ Mesurer le texte **affiché** de la page élève — sans balises, chemins ni te
 python3 .claude/skills/nouvelle-seance-maker-junior/mots-affiches.py docs/projets/<projet>/seances/sNN-*.md
 ```
 
-Au-delà d'environ 800 mots pour 1 h 45 (S1 du rover : 758), relire §6 et couper avant de livrer. Annoncer le chiffre à l'utilisateur.
+Au-delà d'environ 600 mots pour 1 h 45 (S1 du rover : 516), relire §6 et couper avant de livrer. Annoncer le chiffre à l'utilisateur.
 
-Couper ne veut pas dire tout réduire à une ligne. Une méthode en trois pas (prendre le bloc, l'afficher, ajuster le seuil) et la raison d'un bloc qui surprend (`effacer l'écran` en tête de boucle) restent : sans elles le jeune décroche. Une première coupe de la S4 à 540 mots était trop forte. Si une page dépasse encore après coupe, une étape entière peut passer à la séance suivante, quand celle-ci a de la place : c'est ce qui a mis le récepteur radio du rover en S5. Vérifier ensuite que les médias résolvent réellement, ce que la construction ne teste pas :
+Couper ne veut pas dire tout réduire à une ligne. Une méthode en trois pas (prendre le bloc, l'afficher, ajuster le seuil) et la raison d'un bloc qui surprend (`effacer l'écran` en tête de boucle) restent : sans elles le jeune décroche. Une première coupe de la S4 du rover, d'un tiers, était trop forte. Si une page dépasse encore après coupe, une étape entière peut passer à la séance suivante, quand celle-ci a de la place : c'est ce qui a mis le récepteur radio du rover en S5. Vérifier ensuite que les médias résolvent réellement, ce que la construction ne teste pas :
 
 ```bash
 python3 - <<'PY'

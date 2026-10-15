@@ -2,7 +2,6 @@
 
 1. **[Monte ta lampe et allume la LED](#1-monte-ta-lampe-et-allume-la-led)** : le micro:bit sert de pile, la LED s'allume.
 2. **[Le programme commande la LED](#2-le-programme-commande-la-led)** : la LED clignote.
-3. **[Les bandes deviennent un bouton](#3-les-bandes-deviennent-un-bouton)** : tu touches le cuivre, une icône s'affiche.
 
 ## 1. Monte ta lampe et allume la LED
 
@@ -136,62 +135,6 @@ basic.forever(function () {
 > [!TIP] Ça marche si…
 > La LED clignote, au rythme d'une demi-seconde.
 
-## 3. Les bandes deviennent un bouton
-
-**Ce que tu vas obtenir :**
-
-<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s01/video-toucher-coeur.mp4"></video>
-
-Enlève la LED. Garde les deux pinces : une sur `GND`, une sur `2`. Cette fois, `P2` est une **entrée** : le programme lit ce qui y arrive.
-
-Dans `toujours` : `série écrire valeur`, dans **Avancé** → **Communication Série**, avec `lire la broche analogique P2`, dans **Broches**. Nomme la valeur `p2`.
-
-```blocks
-basic.forever(function () {
-    serial.writeValue("p2", pins.analogReadPin(AnalogPin.P2))
-})
-```
-
-Téléverse, USB branché, puis **Afficher données Appareil**. Pose un doigt à cheval sur les deux bandes, et regarde la courbe.
-
-<figure class="screenshot" markdown>
-![La courbe de p2 : autour de 660 au repos, elle tombe vers 280 à chaque fois que le doigt touche les bandes](../../../assets/objets-connectes-s01/24-afficher-donnees-toucher.png)
-</figure>
-
-Ton doigt relie les deux bandes : la valeur chute. Note ta valeur au repos et ta valeur quand tu touches.
-
-**À toi.** Quand la valeur passe sous un seuil choisi entre tes deux valeurs, le micro:bit affiche une icône. Il te faut `si … alors` et une comparaison, dans **Logique**, et `montrer l'icône`, dans **Base**.
-
-<details markdown>
-<summary>La solution</summary>
-
-```blocks
-basic.forever(function () {
-    if (pins.analogReadPin(AnalogPin.P2) < 300) {
-        basic.showIcon(IconNames.Heart)
-    } else {
-        basic.clearScreen()
-    }
-})
-```
-
-`300` est le seuil de ce montage. Prends le tien, d'après tes valeurs.
-
-</details>
-
-> [!IMPORTANT] Point de contrôle
-> Montre ton bouton en cuivre à l'animateur : l'icône au toucher, rien au repos.
-
-Le micro:bit a ce test tout fait : `lorsque la broche P2 est activée`, dans **Entrée**. Il compare lui-même la valeur à un seuil, et se déclenche une fois à chaque toucher : ici, le cœur s'affiche une seconde, puis s'efface. Tu t'en serviras en séance 3.
-
-```blocks
-input.onPinPressed(TouchPin.P2, function () {
-    basic.showIcon(IconNames.Heart)
-    basic.pause(1000)
-    basic.clearScreen()
-})
-```
-
 ## Va plus loin
 
-- **Une animation et un son.** Quand on touche les bandes, plusieurs icônes à la suite, et un son, dans **Musique**.
+- **Un signal en morse.** Trois éclairs courts, trois longs, trois courts : SOS. Seules les pauses changent.

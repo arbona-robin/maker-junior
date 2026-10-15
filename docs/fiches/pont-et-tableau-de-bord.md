@@ -7,6 +7,10 @@ Le tableau de bord affiche les mesures de tes micro:bit et commande leurs interr
 
 Le pont écoute la bande `40` et recopie chaque message radio dans le câble USB. Dans l'autre sens, il envoie à la radio les ordres des interrupteurs.
 
+<figure markdown>
+![Le chemin d'un message : la lampe 7 envoie lum et inter7 par radio au pont, toutes les 5 secondes ; le pont, branché en USB, les passe au tableau de bord ; dans l'autre sens, le tableau de bord envoie inter7 = 0, que toutes les lampes entendent et auquel seule la 7 réagit. Pont débranché, l'écran se fige, la lampe continue seule.](../assets/objets-connectes-s05/03-schema-chemin-message.png)
+</figure>
+
 ## Programme le pont
 
 MakeCode → **Nouveau projet** `pont` → onglet **JavaScript** → colle ce code → **Télécharger**.

@@ -82,7 +82,7 @@ let strip: neopixelExtended.Strip = null
 
 La lampe doit **se souvenir** si elle est en marche ou en veille. C'est le rôle d'une variable : `active`, qui vaut `1` en marche, `0` en veille.
 
-`lorsque la broche P2 est activée`, dans **Entrée**, se déclenche une seule fois à chaque toucher des deux bandes. À chaque toucher, `active` bascule : `0` devient `1`, `1` devient `0`.
+Tes bandes de cuivre deviennent un bouton : un doigt posé à cheval sur les deux ferme le circuit entre `P2` et `GND`. Cette fois, `P2` est une **entrée**. `lorsque la broche P2 est activée`, dans **Entrée**, se déclenche une seule fois à chaque toucher des deux bandes. À chaque toucher, `active` bascule : `0` devient `1`, `1` devient `0`.
 
 **À toi.**
 

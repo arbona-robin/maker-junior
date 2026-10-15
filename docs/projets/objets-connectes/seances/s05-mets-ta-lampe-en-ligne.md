@@ -12,6 +12,10 @@
 ![Le tableau de bord : un bloc par micro:bit en ligne, avec son nom et ses mesures en jauge, en courbe, en voyant ou en interrupteur, et à droite le journal des messages reçus](../../../assets/objets-connectes-s06/20-tableau-de-bord.png)
 </figure>
 
+<figure markdown>
+![Le chemin d'un message : la lampe 7 envoie lum et inter7 par radio au pont, toutes les 5 secondes ; le pont, branché en USB, les passe au tableau de bord ; dans l'autre sens, le tableau de bord envoie inter7 = 0, que toutes les lampes entendent et auquel seule la 7 réagit. Pont débranché, l'écran se fige, la lampe continue seule.](../../../assets/objets-connectes-s05/03-schema-chemin-message.png)
+</figure>
+
 Si tu veux, pose ton pochoir devant la matrice, sous l'élastique, la feuille de papier derrière.
 
 L'animateur te donne un numéro, de 1 à 12. Colle-le sur ta lampe.

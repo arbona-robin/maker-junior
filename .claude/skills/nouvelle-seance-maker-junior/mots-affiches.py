@@ -1,6 +1,7 @@
 """Compte les mots affichés d'une page Markdown : sans alt, chemins, balises ni syntaxe."""
 import re, sys
 s = sys.stdin.read() if len(sys.argv) < 2 else open(sys.argv[1]).read()
+s = re.sub(r'(?ms)^```blocks\n.*?^```', ' ', s)      # programmes MakeCode : affichés en image
 s = re.sub(r'!\[[^\]]*\]\([^)]*\)', ' ', s)          # images (alt non affiché)
 s = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', s)        # liens -> texte
 s = re.sub(r'\[!(NOTE|TIP|CAUTION|IMPORTANT|WARNING)\]', ' ', s)
