@@ -1,13 +1,13 @@
 # Séance 8 — Faites fonctionner votre produit et montrez ses données
 
-> [!NOTE] Nouveau concept : le chemin de la donnée
-> Une mesure va du capteur au micro:bit, puis par radio au **pont**, un micro:bit branché à l'ordinateur de l'animateur, et enfin au tableau de bord. L'animateur le montre en début de séance.
+> [!NOTE] Nouveau concept : la puissance et la portée
+> Plus un micro:bit émet fort, plus il porte loin, et plus il vide ses accus. Sur le tableau de bord, les barres de chaque carte montrent la force du signal reçu par le pont. L'animateur le montre en début de séance.
 >
-> → [La langue commune](../catalogue.md#la-langue-commune)
+> → [La puissance et la portée](../../../fiches/makecode-prise-en-main.md#la-puissance-et-la-portee)
 
 1. **[Câblez](#1-cablez)** : selon votre schéma, alimentation comprise.
 2. **[Programmez et émettez](#2-programmez-et-emettez)** : votre produit mesure, décide, agit, et envoie ses mesures.
-3. **[Sur le tableau de bord](#3-sur-le-tableau-de-bord)** : votre micro:bit en ligne, ses mesures affichées.
+3. **[Sur le tableau de bord](#3-sur-le-tableau-de-bord)** : votre micro:bit en ligne, ses mesures affichées, sa puissance réglée.
 
 ## 1. Câblez
 
@@ -40,7 +40,7 @@ Un fil par fonction, étiqueté.
 
 Comme la lampe : la mesure, la décision avec un seuil, et un état si votre produit déclenche une alerte, puis l'action.
 
-Pour émettre : la bande `40`, et `radio régler le numéro de série de transmission`, dans **Radio**, pour que le tableau de bord reconnaisse votre micro:bit. Puis une clé par mesure, toutes les 5 à 10 secondes. Par exemple, pour une température :
+Pour émettre, comme vos lampes en séance 5 : la bande `40`, `radio régler le numéro de série de transmission`, puis une clé par mesure, toutes les 5 à 10 secondes. Par exemple, pour une température :
 
 ```blocks
 radio.setFrequencyBand(40)
@@ -71,8 +71,12 @@ Votre micro:bit apparaît dès son premier message. Donnez-lui le nom de votre p
 > [!TIP] Il n'apparaît pas ?
 > `radio régler le numéro de série de transmission` est-il dans `au démarrage` ? La bande est-elle la `40` ?
 
-Débranchez le pont : le tableau de bord se fige, mais vos produits continuent de fonctionner.
+### Réglez la puissance
+
+`radio définir puissance de transmission`, dans **Radio**, dans `au démarrage` : de `0` à `7`. Essayez `7`, puis `1`, et regardez les barres de votre carte.
+
+Gardez la puissance la plus basse qui laisse **au moins deux barres**. Vous la vérifierez depuis l'emplacement, en séance 9.
 
 ## Va plus loin
 
-- **Un interrupteur sur le tableau de bord.** Une clé `inter` suivie de la lettre de votre équipe (`interA`) s'affiche comme un interrupteur. Votre produit l'écoute aussi, avec `quand une donnée est reçue par radio`. Il doit fonctionner sans : l'ordre ne fait que forcer un état.
+- **Un interrupteur sur le tableau de bord.** Comme pour vos lampes : une clé `inter` suivie de la lettre de votre équipe (`interA`) s'affiche comme un interrupteur, et votre produit l'écoute avec `quand une donnée est reçue par radio`. Il doit fonctionner sans : l'ordre ne fait que forcer un état.

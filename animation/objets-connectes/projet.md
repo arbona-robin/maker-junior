@@ -14,7 +14,7 @@ Fabriquer un objet connecté personnel qui mesure, décide et communique, puis c
 
 ## Livrable du parcours
 
-Une lampe d'ambiance par jeune : un support en carton personnalisé, un circuit en ruban de cuivre, une matrice de LED RGB dont il a composé la lumière, un capteur qui l'allume à la tombée du jour, un emblème qu'il a dessiné et fait imprimer, et une liaison radio avec les lampes des autres. Puis un produit par équipe de deux ou trois, installé et visible sur le tableau de bord commun. Chaque équipe présente son produit et ses lampes sur une page web publiée : c'est ce que chaque jeune garde du parcours.
+Une lampe d'ambiance par jeune : un support en carton personnalisé, un circuit en ruban de cuivre, une matrice de LED RGB dont il a composé la lumière, un capteur qui l'allume à la tombée du jour, un pochoir qu'il a dessiné et fait imprimer, que la matrice éclaire et qu'il emporte ensuite en porte-clés, et une liaison radio avec les lampes des autres. Puis un produit par équipe de deux ou trois, installé et visible sur le tableau de bord commun. Chaque équipe présente son produit et ses lampes sur une page web publiée : c'est ce que chaque jeune garde du parcours.
 
 ## Objectifs pédagogiques
 
@@ -26,7 +26,7 @@ Une lampe d'ambiance par jeune : un support en carton personnalisé, un circuit 
 
 ## Description du projet
 
-Pendant les cinq premières séances, chaque jeune construit la même lampe d'ambiance, qu'il personnalise : couleurs, animation, emblème. En la construisant, il traverse toute la chaîne d'un objet connecté : un circuit électrique, de la lumière adressable, un capteur et un seuil, une pièce conçue en 3D, la radio. Les équipes de deux ou trois conçoivent ensuite un produit, choisi dans un catalogue ajusté à l'inventaire ou inventé par l'équipe, à taille réelle quand c'est possible. Tous les produits parlent le même protocole radio. Un pont USB recopie ce trafic vers un tableau de bord web, qui reconnaît chaque micro:bit et choisit l'affichage de chaque mesure d'après sa clé ; il supervise le système sans le commander : débranché, les objets continuent de fonctionner. Ils apprennent le circuit électrique et sa commande par une broche, la mesure et le seuil, l'état mémorisé, la conception d'une pièce pour une fonction, le message diffusé et le message adressé, l'alimentation d'un objet qui doit durer, le test des cas limites, et la présentation d'un choix technique sur une page web. Une notion par séance, présentée dans les dix premières minutes, pour que chacun avance ensuite à son rythme. Le rythme ne suit pas le découpage 3/6/3 : la phase 1 compte cinq séances, parce que la lampe est le socle technique de tout le chantier ; la phase 2 en compte trois, et la phase 3 deux, l'épreuve et l'installation étant réunies en séance 9.
+Pendant les cinq premières séances, chaque jeune construit la même lampe d'ambiance, qu'il personnalise : couleurs, animation, pochoir. En la construisant, il traverse toute la chaîne d'un objet connecté : un circuit électrique, de la lumière adressable, un capteur et un seuil, une pièce conçue en 3D, la radio. Les équipes de deux ou trois conçoivent ensuite un produit, choisi dans un catalogue ajusté à l'inventaire ou inventé par l'équipe, à taille réelle quand c'est possible. Tous les produits parlent le même protocole radio. Un pont USB recopie ce trafic vers un tableau de bord web, qui reconnaît chaque micro:bit et choisit l'affichage de chaque mesure d'après sa clé ; il supervise le système sans le commander : débranché, les objets continuent de fonctionner. Ils apprennent le circuit électrique et sa commande par une broche, la mesure et le seuil, l'état mémorisé, la conception d'une pièce pour une fonction, l'émission selon un protocole commun et l'ordre adressé, l'alimentation d'un objet qui doit durer, le test des cas limites, et la présentation d'un choix technique sur une page web. Une notion par séance, présentée dans les dix premières minutes, pour que chacun avance ensuite à son rythme. Le rythme ne suit pas le découpage 3/6/3 : la phase 1 compte cinq séances, parce que la lampe est le socle technique de tout le chantier ; la phase 2 en compte trois, et la phase 3 deux, l'épreuve et l'installation étant réunies en séance 9.
 
 ## Prérequis
 
@@ -114,7 +114,7 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 | Imprimante 3D | 1 | | | Possédé |
 | Ordinateurs | 12 | | | Possédé |
 | **Par parcours** | | | | |
-| Filament PLA : emblèmes et pièces du chantier | 2 | 25 € | 50 € | À racheter |
+| Filament PLA : pochoirs et pièces du chantier | 2 | 25 € | 50 € | À racheter |
 | Découpe : lames de rechange | 1 | 10 € | 10 € | À racheter |
 | Carton, colle, papier, ruban adhésif, élastiques | 1 | 40 € | 40 € | À racheter |
 | Casse : 15 % de l'électronique des lampes | 1 | 78 € | 78 € | À racheter |
@@ -149,19 +149,19 @@ Le premier parcours demande 86 € d'achats : matrices, ruban de cuivre, visseri
 
 ## Séance 4 — Phase 1 — Découverte & prise en main
 
-**Titre :** Dessine l'emblème de ta lampe
+**Titre :** Dessine le pochoir de ta lampe
 
-**Notions :** modélisation 3D · contrainte de conception · relief et creux · îlots détachés · impression additive et slicer
+**Notions :** modélisation 3D · contrainte de conception · pochoir · îlots et ponts · finesse imprimable · impression additive et slicer
 
-**Livrable intermédiaire :** emblème exporté en `.STL`, nommé selon la convention, imprimé par l'animateur avant la séance 5
+**Livrable intermédiaire :** pochoir de 40 × 40 mm exporté en `.STL`, nommé selon la convention, imprimé par l'animateur avant la séance 5 ; il repart avec le jeune en porte-clés
 
 ## Séance 5 — Phase 1 — Découverte & prise en main
 
-**Titre :** Fais parler les lampes entre elles
+**Titre :** Mets ta lampe en ligne
 
-**Notions :** une bande pour tous · message diffusé et message adressé · organisation centralisée et distribuée · ce qui arrive quand un élément tombe en panne
+**Notions :** protocole commun : bande, numéro de série, clé · rythme d'émission · message adressé : l'adresse dans la clé · un état changé depuis deux endroits · supervision : le système fonctionne sans le tableau de bord
 
-**Livrable intermédiaire :** lampe qui mesure, décide, agit, émet et reçoit ; vague réussie avec le chef, puis en relais au moins en groupe
+**Livrable intermédiaire :** lampe en ligne sur le tableau de bord, qui émet sa lumière et son état, passe en marche ou en veille depuis l'écran, et continue pont débranché
 
 ## Séance 6 — Phase 2 — Exploration & création
 
@@ -183,7 +183,7 @@ Le premier parcours demande 86 € d'achats : matrices, ruban de cuivre, visseri
 
 **Titre :** Faites fonctionner votre produit et montrez ses données
 
-**Notions :** schéma de câblage · alimentation d'un objet qui dure · sobriété d'émission · protocole commun · chemin de la donnée · système et supervision
+**Notions :** schéma de câblage · alimentation d'un objet qui dure · sobriété d'émission · puissance d'émission et portée · force du signal
 
 **Livrable intermédiaire :** produit fonctionnel en version brute, qui émet sur le protocole commun et apparaît en ligne sur le tableau de bord
 

@@ -105,8 +105,8 @@ nav:
       - "Séance 1 — Fabrique ta lampe et allume-la": projets/objets-connectes/seances/s01-fabrique-ta-lampe.md
       - "Séance 2 — Compose la lumière de ta lampe": projets/objets-connectes/seances/s02-compose-ta-lumiere.md
       - "Séance 3 — Fais-la s'allumer quand il fait nuit": projets/objets-connectes/seances/s03-quand-il-fait-nuit.md
-      - "Séance 4 — Dessine l'emblème de ta lampe": projets/objets-connectes/seances/s04-dessine-ton-embleme.md
-      - "Séance 5 — Fais parler les lampes entre elles": projets/objets-connectes/seances/s05-fais-parler-les-lampes.md
+      - "Séance 4 — Dessine le pochoir de ta lampe": projets/objets-connectes/seances/s04-dessine-ton-pochoir.md
+      - "Séance 5 — Mets ta lampe en ligne": projets/objets-connectes/seances/s05-mets-ta-lampe-en-ligne.md
       - "Séance 6 — Choisissez votre produit": projets/objets-connectes/seances/s06-choisissez-votre-produit.md
       - "Séance 7 — Construisez la structure de votre produit": projets/objets-connectes/seances/s07-construisez-la-structure.md
       - "Séance 8 — Faites fonctionner votre produit et montrez ses données": projets/objets-connectes/seances/s08-faites-le-fonctionner.md
@@ -122,6 +122,7 @@ nav:
       - "La carte DFR0548 et ses blocs": fiches/carte-dfr0548.md
       - "Rouler droit et tourner": fiches/rouler-droit.md
       - "Prendre en main MakeCode": fiches/makecode-prise-en-main.md
+      - "Installer le pont et le tableau de bord": fiches/pont-et-tableau-de-bord.md
       - "Modéliser et imprimer en 3D": fiches/modeliser-imprimer-3d.md
       - "Faire une page web": fiches/faire-une-page-web.md
       - "Déboguer": fiches/deboguer.md

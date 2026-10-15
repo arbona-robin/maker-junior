@@ -38,12 +38,10 @@ Deux mesures du même genre : `temp` et `tempext`. Les deux s'affichent en jauge
 
 Un micro:bit qui n'a rien envoyé depuis 30 secondes apparaît **hors ligne**.
 
-Les clés `tous` et `tour` appartiennent aux lampes : le tableau de bord les ignore.
-
 <details markdown>
 <summary>Pour aller plus loin : un interrupteur sur le tableau de bord</summary>
 
-Une clé qui commence par `inter`, suivie de la lettre de votre équipe (`interA`), s'affiche comme un interrupteur. Quand on le bascule sur le tableau de bord, le pont envoie la même clé avec la nouvelle valeur, `0` ou `1`.
+Une clé qui commence par `inter`, suivie de la lettre de votre équipe (`interA`), s'affiche comme un interrupteur : c'est ce que font les lampes, avec leur numéro (`inter7`). Quand on le bascule sur le tableau de bord, le pont envoie la même clé avec la nouvelle valeur, `0` ou `1`.
 
 Votre produit l'écoute avec `quand une donnée est reçue`. Il doit fonctionner sans : l'ordre du tableau de bord ne fait que forcer un état.
 

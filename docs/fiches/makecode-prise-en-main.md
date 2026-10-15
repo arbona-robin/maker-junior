@@ -273,6 +273,20 @@ Le numéro va de `0` à `83`, un mégahertz par pas à partir de 2400 : la bande
 > [!CAUTION] Le simulateur ne suit pas
 > La bande de fréquence ne s'applique qu'à une vraie carte. Dans le simulateur du navigateur, le bloc ne fait rien.
 
+### La puissance et la portée
+
+La **puissance d'émission** se règle de `0` à `7`, dans `au démarrage`. Par défaut, une carte émet à `6`.
+
+```blocks
+radio.setTransmitPower(4)
+```
+
+Plus de puissance, c'est plus de portée, mais des accus qui se vident plus vite. Les murs, le métal et les corps affaiblissent le signal.
+
+La carte qui reçoit mesure la **force du signal**, en dBm : autour de `-40` tout près, `-100` à la limite. Sur le tableau de bord, elle s'affiche en haut de chaque carte, en dBm et en barres.
+
+Le bon réglage : la puissance la plus basse qui garde au moins deux barres depuis l'emplacement.
+
 ### Envoyer, recevoir
 
 Trois façons d'envoyer un message. En face, trois blocs portent le même nom, `quand une donnée est reçue par radio` : chacun n'entend que son type de message.
@@ -332,8 +346,17 @@ Deux clés qui commencent pareil deviennent **le même message**. Le programme e
 
 Quand toutes les cartes sont sur la même bande, elles entendent **tous** les messages.
 
-- Un message **diffusé** concerne tout le monde : `tous` = `1`, et toutes les lampes s'allument.
-- Un message **adressé** ne concerne qu'une carte. L'adresse peut être dans la valeur : `tour` = `7` est pour la lampe 7, chaque carte compare la valeur à son numéro. Elle peut aussi être dans la clé : `lampe7`, comparée avec `joindre` (**Texte**).
+- Un message **diffusé** concerne tout le monde : chaque carte qui l'entend réagit.
+- Un message **adressé** ne concerne qu'une carte. L'adresse est dans la clé : `inter7` est pour la lampe 7. Toutes l'entendent, et chacune ne réagit qu'à sa propre clé.
+
+```blocks
+radio.onReceivedValue(function (name, value) {
+    if (name == "inter7") {
+        active = value
+    }
+})
+let active = 0
+```
 
 ### Se mettre d'accord avant de coder
 

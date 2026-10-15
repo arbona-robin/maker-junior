@@ -1,125 +1,115 @@
-# Séance 5 — Fais parler les lampes entre elles
+# Séance 5 — Mets ta lampe en ligne
 
-1. **[Le message pour tous](#1-le-message-pour-tous)** : un appui, et toutes les lampes s'allument.
-2. **[La vague, avec un chef](#2-la-vague-avec-un-chef)** : le chef appelle les lampes une par une.
-3. **[La vague, en relais](#3-la-vague-en-relais)** : chaque lampe passe le tour à la suivante.
+1. **[Ta lampe émet](#1-ta-lampe-emet)** : sur le grand écran, ta lampe a sa carte, avec sa lumière et son interrupteur.
+2. **[Le tableau de bord la commande](#2-le-tableau-de-bord-la-commande)** : on bascule l'interrupteur à l'écran, ta lampe passe en marche ou en veille.
+3. **[Sans le pont](#3-sans-le-pont)** : le tableau de bord débranché, ta lampe continue.
 
-## 1. Le message pour tous
+## 1. Ta lampe émet
 
-**Ce que tu vas obtenir :** tu appuies sur `A`, toutes les lampes de la salle s'allument ; sur `B`, elles s'éteignent.
+**Ce que tu vas obtenir :** ta carte sur le tableau de bord, avec la lumière que mesure ta lampe et un interrupteur.
 
-Accroche ton emblème à la lampe, par un élastique dans son trou.
+<figure class="screenshot" markdown>
+![Le tableau de bord : un bloc par micro:bit en ligne, avec son nom et ses mesures en jauge, en courbe, en voyant ou en interrupteur, et à droite le journal des messages reçus](../../../assets/objets-connectes-s06/20-tableau-de-bord.png)
+</figure>
 
-<span class="todo-media">[photo : l'emblème imprimé accroché à la lampe par un élastique]</span>
+Si tu veux, pose ton pochoir devant la matrice, sous l'élastique, la feuille de papier derrière.
 
 L'animateur te donne un numéro, de 1 à 12. Colle-le sur ta lampe.
 
-Duplique ton projet `lampe` en `lampe-radio`, et vide le bloc `toujours` : ton ambiance reste, le mode nuit s'en va.
-
-Toutes les lampes sont sur la **bande 40** : chacune entend tous les messages. Dans `au démarrage`, la bande, dans **Radio**, et ton numéro dans une variable :
+Reprends ton projet `lampe`. Dans `au démarrage`, sous ce qui y est déjà, ajoute `radio régler la bande de fréquence` à `40` et `radio régler le numéro de série de transmission` à **vrai**, dans **Radio**. Le tableau de bord reconnaît ta carte à son numéro de série.
 
 ```blocks
 radio.setFrequencyBand(40)
-numero = 7
+radio.setTransmitSerialNumber(true)
 ```
 
-**À toi.** Bouton `A` : envoie `tous` = `1`. Bouton `B` : envoie `tous` = `0`. Quand ta lampe reçoit `tous`, elle allume son ambiance ou s'éteint. Il te faut `envoyer la valeur … = …` et `quand une donnée est reçue par radio`, dans **Radio**.
+**À toi.** Ajoute un second `toujours`. Toutes les 5 secondes, il envoie deux valeurs avec `envoyer la valeur … = …`, dans **Radio** :
+
+- `lum` = `niveau d'intensité lumineuse`
+- `inter` suivi de ton numéro, `inter7` pour la lampe 7 = `active`
 
 <details markdown>
 <summary>La solution</summary>
 
 ```blocks
-input.onButtonPressed(Button.A, function () {
-    radio.sendValue("tous", 1)
+basic.forever(function () {
+    radio.sendValue("lum", input.lightLevel())
+    radio.sendValue("inter7", active)
+    basic.pause(5000)
 })
-input.onButtonPressed(Button.B, function () {
-    radio.sendValue("tous", 0)
-})
-radio.onReceivedValue(function (name, value) {
-    if (name == "tous") {
-        if (value == 1) {
-            strip.setColor(0xff8c00)
-            strip.show()
-        } else {
-            strip.clear()
-            strip.show()
-        }
-    }
-})
-let strip: neopixelExtended.Strip = null
+let active = 0
 ```
+
+Deux `toujours` tournent en même temps : le premier décide de la lumière, le second émet.
 
 </details>
 
-→ [Envoyer, recevoir](../../../fiches/makecode-prise-en-main.md#envoyer-recevoir)
+Téléverse. Sur le grand écran, ta carte apparaît : clique sur son nom pour le remplacer par le tien.
 
-## 2. La vague, avec un chef
+> [!TIP] Ça marche si…
+> `lum` baisse quand tu couvres ta lampe, et `inter7` suit ton interrupteur en cuivre, en 5 secondes au plus. Pas de carte ? Vérifie la bande `40` et le numéro de série dans `au démarrage`.
 
-**Ce que tu vas obtenir :** les lampes s'allument l'une après l'autre, appelées par le micro:bit de l'animateur.
+→ [La langue commune](../catalogue.md#la-langue-commune)
 
-Une seule clé : `tour`. Sa valeur est le numéro de la lampe qui s'allume. Toutes les lampes entendent `tour` = `7`, une seule réagit : la 7. L'adresse est dans la valeur.
+## 2. Le tableau de bord la commande
 
-**À toi.** Quand ta lampe reçoit `tour` = ton numéro, elle s'allume 1 seconde, puis s'éteint.
+**Ce que tu vas obtenir :** on bascule l'interrupteur de ta carte sur le grand écran, ta lampe passe en marche ou en veille.
 
-<details markdown>
-<summary>La solution</summary>
+Quand on bascule l'interrupteur, le pont envoie `inter7` = `1` ou `0`. Toutes les lampes l'entendent : seule la 7 doit réagir. L'adresse est dans la clé.
 
-```blocks
-radio.onReceivedValue(function (name, value) {
-    if (name == "tour" && value == numero) {
-        strip.setColor(0xff8c00)
-        strip.show()
-        basic.pause(1000)
-        strip.clear()
-        strip.show()
-    }
-})
-let numero = 0
-let strip: neopixelExtended.Strip = null
-```
+**À toi.** Prends le `quand une donnée est reçue par radio` qui apporte `nom` et `valeur`. Si `nom` = `inter7`, `définir active à valeur`.
 
-</details>
+`nom` est un texte. Pour le comparer, prends dans **Logique** le bloc d'égalité à **cases blanches**.
 
-Ici, la pause est dans le gestionnaire : d'habitude à éviter, elle passe parce qu'un seul message arrive à la fois.
-
-Le chef envoie `tour` = 1, puis 2, puis 3…
-
-<span class="todo-media">[vidéo : la vague menée par le chef, six lampes]</span>
-
-## 3. La vague, en relais
-
-**Ce que tu vas obtenir :** la vague passe de lampe en lampe, sans chef.
-
-**À toi.** Après ta seconde allumée, envoie `tour` = ton numéro + 1. La première lampe démarre au bouton `A`.
+<figure class="screenshot" markdown>
+![La section Comparaison de la catégorie Logique : deux blocs d'égalité et d'infériorité sur des zéros, et en dessous le bloc d'égalité sur deux cases de texte vides](../../../assets/rover-s04/24-comparaison-de-textes.png)
+</figure>
 
 <details markdown>
 <summary>La solution</summary>
 
 ```blocks
 radio.onReceivedValue(function (name, value) {
-    if (name == "tour" && value == numero) {
-        strip.setColor(0xff8c00)
-        strip.show()
-        basic.pause(1000)
-        strip.clear()
-        strip.show()
-        radio.sendValue("tour", numero + 1)
+    if (name == "inter7") {
+        active = value
     }
 })
-let numero = 0
-let strip: neopixelExtended.Strip = null
+let active = 0
 ```
 
 </details>
 
-Essayez à trois ou quatre, numéros qui se suivent. Puis éteignez une lampe au milieu : que se passe-t-il ? Et avec le chef, que se passait-il ?
+> [!TIP] Ça marche si…
+> Pose un papier sur l'écran de ton micro:bit. L'interrupteur basculé à l'écran, ta lampe s'allume ; rebasculé, elle s'éteint.
+
+## 3. Sans le pont
+
+**Ce que tu vas obtenir :** ta lampe fonctionne sans le tableau de bord.
+
+L'animateur débranche le pont. Le tableau de bord affiche « Pont débranché » et se fige.
+
+Touche le cuivre, couvre ta lampe : elle marche toujours.
 
 > [!IMPORTANT] Point de contrôle
-> Ta lampe réagit à `tous` et à son tour, et la vague passe dans ton groupe.
-
-Pour finir : les douze lampes, lumière éteinte.
+> Ta carte est en ligne, l'interrupteur de l'écran met ta lampe en marche et en veille, et pont débranché, elle continue.
 
 ## Va plus loin
 
-- **Réparer la chaîne.** Après avoir passé le tour, attends 2 secondes. Si tu n'as pas entendu le `tour` suivant, envoie `tour` = ton numéro + 2.
-- **Une couleur pour une seule lampe.** L'adresse dans la clé : `lampe7` veut dire « pour la lampe 7 ». À la réception, compare `nom` à `lampe` suivi de ton numéro, avec `joindre` (**Texte**). Une clé fait 8 caractères au plus.
+- **Tout de suite quand ça change.** Quand tu touches le cuivre, envoie `inter7` = `active` aussitôt, sans attendre les 5 secondes : l'interrupteur de l'écran suit sans délai.
+- **Une deuxième mesure.** Ajoute `temp` = `température (°C)`, dans **Entrée** : le tableau de bord l'affiche en jauge.
+- **Chez toi.** Avec un deuxième micro:bit en pont, ta lampe a son tableau de bord. → [Installer le pont et le tableau de bord](../../../fiches/pont-et-tableau-de-bord.md)
+
+### Éclaire ton pochoir
+
+Coupe une feuille de papier au format de la matrice : posée entre la matrice et le pochoir, elle fond la lumière des LED.
+
+<div class="photo-row" markdown>
+![Le pochoir imprimé « Ro », avec son toit, à côté d'une feuille de papier coupée au format de la matrice](../../../assets/objets-connectes-s05/01-papier-et-pochoir.jpg)
+![La matrice sans pochoir : seules les LED derrière le motif sont allumées, une rangée bleue pour le toit, un bloc blanc pour le prénom](../../../assets/objets-connectes-s05/02-leds-derriere-le-pochoir.jpg)
+</div>
+
+Dans ton `toujours`, remplace `set color` par `set NeoPixel 8x8` : n'allume que les LED derrière ton pochoir, une couleur par partie, et laisse les autres en noir.
+
+<figure markdown>
+![Le pochoir posé sur la lampe, sous l'élastique : le prénom et le toit s'éclairent chacun de leur couleur](../../../assets/objets-connectes-s04/01-pochoir-eclaire.jpg)
+</figure>

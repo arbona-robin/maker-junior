@@ -28,6 +28,10 @@ Les références qui ne dépendent pas d'une séance. Les pages de séance y ren
 
     L'interface, le téléversement, les fonctions, les variables, les capteurs et la radio.
 
+- **[Installer le pont et le tableau de bord](pont-et-tableau-de-bord.md)**
+
+    Le programme du pont, le tableau de bord, et quoi vérifier quand rien ne s'affiche.
+
 - **[Modéliser et imprimer en 3D](modeliser-imprimer-3d.md)**
 
     Dessiner dans Tinkercad, exporter, et ce que l'imprimante peut faire.

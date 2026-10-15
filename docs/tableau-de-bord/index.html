@@ -114,6 +114,8 @@
   .barres { display: flex; align-items: flex-end; gap: 2px; height: 16px; }
   .barres span { width: 4px; background: var(--eteint); border-radius: 1px; }
   .barres span.on { background: var(--ok); }
+  .signal { display: flex; align-items: flex-end; gap: 6px; }
+  .dbm { font-size: 0.78rem; color: var(--doux); font-variant-numeric: tabular-nums; }
   .mesures { display: flex; flex-wrap: wrap; gap: 12px; }
   .mesure { flex: 1 1 120px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
   .cle { font-size: 0.8rem; color: var(--doux); font-family: ui-monospace, Menlo, monospace; }
@@ -131,6 +133,7 @@
   }
   .interrupteur.on { background: var(--ok); }
   .interrupteur.on::after { left: 33px; }
+  .interrupteur.attente { opacity: 0.5; }
   svg { display: block; }
   aside {
     display: flex;
@@ -151,7 +154,6 @@
     white-space: pre;
   }
   .log .sys { color: #ffcc80; }
-  .log .ignore { color: #6b7385; }
   body.projection header .secondaire, body.projection aside { display: none; }
   body.projection main { grid-template-columns: 1fr; }
   body.projection .carte { flex-basis: 380px; }
@@ -176,7 +178,7 @@
 
 <main>
   <section class="grille" id="grille">
-    <p class="vide" id="vide">Aucun micro:bit pour l'instant. Branche le pont et clique sur « Connecter le pont », ou lance le mode démo.</p>
+    <p class="vide" id="vide">Aucun micro:bit pour l'instant. Branche le pont et clique sur « Connecter le pont », ou lance le mode démo.<br>Ferme d'abord l'onglet MakeCode : resté ouvert, il prend une partie des messages du pont.</p>
   </section>
   <aside>
     <div class="outils-log">
@@ -195,14 +197,16 @@
   Le pont (un micro:bit branché en USB) envoie une ligne par message radio reçu :
       numéro de série,clé,valeur,signal
   La page renvoie au pont une ligne « clé,valeur » quand on bascule un interrupteur.
+  L'interrupteur bascule aussitôt, en attente, puis prend la valeur que la carte renvoie
+  à son message suivant : l'état réel, que l'ordre soit passé ou non.
 
   Chaque clé choisit son affichage d'après son début (voir AFFICHAGES).
   Un micro:bit sans message depuis 30 secondes passe hors ligne, en fin de grille.
 */
 
 const HORS_LIGNE_MS = 30000;
+const ATTENTE_MS = 12000;   // deux émissions de 5 s manquées : l'ordre n'est pas passé
 const LOG_MAX = 500;
-const IGNOREES = ["tous", "tour"];
 
 const AFFICHAGES = [
   { debut: "temp", type: "jauge", min: -10, max: 40, unite: "°C" },
@@ -265,10 +269,15 @@ function journal(texte, classe, serie) {
 
 function recevoir(ligne) {
   const parties = ligne.trim().split(",");
-  if (parties.length < 3) return;
   const [serie, cle, valeurTexte, signalTexte] = parties;
   const valeur = parseFloat(valeurTexte);
-  if (Number.isNaN(valeur)) return;
+  // Une ligne abîmée en route créerait un faux micro:bit : on la refuse plutôt.
+  // Le numéro de série tient sur 32 bits : au-delà, ce sont deux lignes collées.
+  const serieValide = /^-?\d+$/.test(serie) && Math.abs(Number(serie)) <= 4294967295;
+  if (parties.length !== 4 || !serieValide || !/^[A-Za-z0-9]{1,8}$/.test(cle) || Number.isNaN(valeur)) {
+    if (ligne.trim()) journal("Ligne illisible : " + ligne.trim(), "sys");
+    return;
+  }
   const signal = parseInt(signalTexte, 10);
 
   let m = microbits.get(serie);
@@ -287,15 +296,11 @@ function recevoir(ligne) {
   if (revenu) journal("De retour en ligne : " + nom, "sys", serie);
   m.etaitHorsLigne = false;
 
-  if (IGNOREES.includes(cle)) {
-    journal(nom + "  " + cle + " = " + valeur + "  (lampes)", "ignore", serie);
-    rendre();
-    return;
-  }
   journal(nom + "  " + cle + " = " + valeur, "", serie);
 
   let k = m.cles.get(cle);
   if (!k) { k = { valeurs: [], min: valeur, max: valeur }; m.cles.set(cle, k); }
+  k.attente = null;   // la carte a répondu : sa valeur remplace l'état demandé
   k.valeurs.push(valeur);
   if (k.valeurs.length > 60) k.valeurs.shift();
   k.min = Math.min(k.min, valeur);
@@ -308,7 +313,7 @@ function recevoir(ligne) {
 function barres(signal) {
   // -100 dBm (faible) à -40 dBm (fort) → 0 à 4 barres
   const n = signal == null ? 0 : Math.max(0, Math.min(4, Math.round((signal + 100) / 15)));
-  return '<div class="barres" title="' + (signal == null ? "" : signal + " dBm") + '">' +
+  return (signal == null ? "" : '<span class="dbm">' + signal + " dBm</span>") + '<div class="barres">' +
     [1, 2, 3, 4].map((i) => '<span class="' + (i <= n ? "on" : "") + '" style="height:' + (i * 4) + 'px"></span>').join("") +
     "</div>";
 }
@@ -353,8 +358,14 @@ function widget(cle, k, serie) {
   else if (a.type === "nombre") corps = '<span class="grand">' + arrondi(v) + '</span><span class="meta">' + a.unite + "</span>";
   else if (a.type === "compteur") corps = '<span class="grand">' + Math.round(v) + "</span>";
   else if (a.type === "voyant") corps = '<div class="voyant ' + (v ? "on" : "") + '"></div><span class="meta">' + (v ? "allumé" : "éteint") + "</span>";
-  else if (a.type === "interrupteur") corps = '<button class="interrupteur ' + (v ? "on" : "") +
-    '" data-cle="' + cle + '" data-valeur="' + (v ? 0 : 1) + '" aria-label="Basculer ' + cle + '"></button><span class="meta">' + (v ? "allumé" : "éteint") + "</span>";
+  else if (a.type === "interrupteur") {
+    const e = k.attente ? k.attente.valeur : v;
+    const etat = !k.attente ? (e ? "allumé" : "éteint")
+      : Date.now() - k.attente.t > ATTENTE_MS ? "sans réponse" : "envoyé…";
+    corps = '<button class="interrupteur ' + (e ? "on" : "") + (k.attente ? " attente" : "") +
+      '" data-cle="' + cle + '" data-serie="' + serie + '" data-valeur="' + (e ? 0 : 1) +
+      '" aria-label="Basculer ' + cle + '"></button><span class="meta">' + etat + "</span>";
+  }
   else corps = courbe(k.valeurs) + '<span class="valeur">' + arrondi(v) + (a.unite ? " " + a.unite : "") + "</span>";
   return '<div class="mesure"><span class="cle">' + cle + "</span>" + corps + "</div>";
 }
@@ -385,6 +396,7 @@ function rendre() {
       const nom = carte.querySelector(".nom");
       nom.dataset.serie = m.serie;
       if (m.serie !== "0") nom.contentEditable = "true";
+      nom.addEventListener("focus", () => getSelection().selectAllChildren(nom));   // un clic, et on tape le nouveau nom
       nom.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); nom.blur(); } });
       nom.addEventListener("blur", () => {
         const texte = nom.textContent.trim();
@@ -403,8 +415,13 @@ function rendre() {
       : (hors ? "Hors ligne, dernier message " : "En ligne, dernier message ") + depuis(maintenant - m.dernier) + " · n° " + m.serie;
     carte.querySelector(".mesures").innerHTML =
       [...m.cles.entries()].map(([cle, k]) => widget(cle, k, m.serie)).join("");
-    grille.appendChild(carte);   // replace la carte dans l'ordre du tri
   });
+
+  // Replacer les cartes dans l'ordre du tri, seulement s'il a changé, et jamais pendant
+  // qu'on renomme : déplacer la carte ferait perdre le curseur au milieu de la frappe.
+  const voulu = liste.map((m) => grille.querySelector('.carte[data-serie="' + m.serie + '"]'));
+  const actuel = [...grille.querySelectorAll(".carte")];
+  if (!enEdition && voulu.some((c, i) => c !== actuel[i])) voulu.forEach((c) => grille.appendChild(c));
 
   // Passage hors ligne, une seule fois dans le journal
   microbits.forEach((m) => {
@@ -455,7 +472,8 @@ async function connecter() {
   const decodeur = new TextDecoderStream();
   port.readable.pipeTo(decodeur.writable).catch(() => {});
   const lecteur = decodeur.readable.getReader();
-  let tampon = "";
+  // La première ligne lue peut avoir commencé avant la connexion : on la jette.
+  let tampon = "", premiere = true;
   try {
     while (true) {
       const { value, done } = await lecteur.read();
@@ -463,6 +481,7 @@ async function connecter() {
       tampon += value;
       const lignes = tampon.split(/\r?\n/);
       tampon = lignes.pop();
+      if (premiere && lignes.length) { lignes.shift(); premiere = false; }
       lignes.forEach(recevoir);
     }
   } catch (e) {
@@ -502,13 +521,16 @@ const DEMO = [
   { serie: "-102", nom: "Sémaphore du bruit", f: (t) => [["son", Math.max(0, 60 + 50 * Math.sin(t / 7) + 30 * Math.random())]] },
   { serie: "-103", nom: "Compteur de passages", f: (t) => [["presence", Math.random() < 0.3 ? 1 : 0], ["compte", Math.floor(t / 9)]] },
   { serie: "-104", nom: "Salle B", f: (t) => [["etat", Math.floor(t / 30) % 2], ["interA", demoInter]] },
+  { serie: "-106", nom: "Lampe 7", f: (t) => [["lum", 40 + 30 * Math.sin(t / 20)], ["inter7", demoLampe]] },
   { serie: "-105", nom: "Capteur bavard", f: (t) => [["vibra", Math.round(300 + 200 * Math.sin(t / 5))]], arret: 40 },
   { serie: "-107", nom: "Moniteur d'imprimante", f: (t) => [["accel", 1000 + Math.round(150 * Math.random())], ["incl", Math.round(30 * Math.sin(t / 15))]] },
 ];
-let demoInter = 0, demoT = 0;
+let demoInter = 0, demoLampe = 1, demoT = 0;
 
 function simulerOrdre(cle, valeur) {
-  if (cle === "interA") { demoInter = valeur; recevoir("-104,interA," + valeur + ",-55"); }
+  // Comme une vraie carte : l'état change tout de suite, la page ne le saura qu'à l'émission suivante.
+  if (cle === "interA") demoInter = valeur;
+  if (cle === "inter7") demoLampe = valeur;
 }
 
 function basculerDemo() {
@@ -530,7 +552,6 @@ function basculerDemo() {
       const signal = -45 - i * 12 - Math.round(Math.random() * 6);
       d.f(demoT).forEach(([cle, v]) => recevoir(d.serie + "," + cle + "," + v.toFixed(1) + "," + signal));
     });
-    if (demoT % 20 === 0) recevoir("-106,tour,3,-60");
   };
   for (let i = 0; i < 3; i++) tick();
   demo = setInterval(tick, 2000);
@@ -553,7 +574,12 @@ $("effacer").addEventListener("click", () => { $("log").textContent = ""; });
 $("filtre").addEventListener("change", () => { $("log").textContent = ""; });
 $("grille").addEventListener("click", (e) => {
   const b = e.target.closest(".interrupteur");
-  if (b) envoyer(b.dataset.cle, Number(b.dataset.valeur));
+  if (!b) return;
+  const valeur = Number(b.dataset.valeur);
+  const k = microbits.get(b.dataset.serie).cles.get(b.dataset.cle);
+  k.attente = { valeur, t: Date.now() };
+  rendre();
+  envoyer(b.dataset.cle, valeur);
 });
 if ("serial" in navigator) {
   navigator.serial.addEventListener("disconnect", pontDebranche);

@@ -17,7 +17,7 @@
 ![Le tableau de bord : un bloc par micro:bit en ligne, avec son nom et ses mesures en jauge, en courbe ou en voyant, et à droite le journal des messages reçus](../../../assets/objets-connectes-s06/20-tableau-de-bord.png)
 </figure>
 
-C'est sur ce tableau de bord que tous les produits afficheront leurs mesures.
+Comme vos lampes, tous les produits afficheront leurs mesures sur ce tableau de bord.
 
 Au magasin, chaque composant porte une étiquette : ce qu'il mesure ou ce qu'il fait, et comment il se branche. Manipule ce qui t'intéresse.
 

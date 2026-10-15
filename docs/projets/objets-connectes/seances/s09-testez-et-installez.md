@@ -33,7 +33,7 @@ Laissez votre produit allumé toute la séance : est-il encore là à la fin ?
 > Rien de percé ni collé sans l'accord de l'animateur. Le produit ne gêne ni le passage ni une sortie.
 
 > [!TIP] Le message n'arrive pas ?
-> Les murs arrêtent les ondes. Déplacez le produit de quelques mètres, ou demandez à déplacer le pont.
+> Les murs affaiblissent les ondes. Montez la puissance d'émission, déplacez le produit de quelques mètres, ou demandez à déplacer le pont.
 
 > [!IMPORTANT] Point de contrôle
 > Votre produit est installé, et vu sur le tableau de bord depuis sa place.

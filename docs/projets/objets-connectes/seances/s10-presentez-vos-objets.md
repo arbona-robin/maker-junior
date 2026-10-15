@@ -24,7 +24,7 @@ Trois sections : à quoi il sert, ce qu'il mesure jusqu'au tableau de bord, votr
 > [!NOTE] Un choix, une raison
 > Pas « on a mis le capteur en hauteur ». Plutôt : « on a mis le capteur en hauteur parce que la salle est grande. »
 
-Ajoutez une section pour vos lampes, avec leur couleur, leur animation, leur emblème : → [Ajouter une section](../../../fiches/faire-une-page-web.md#ajouter-une-section)
+Ajoutez une section pour vos lampes, avec leur couleur, leur animation, leur pochoir : → [Ajouter une section](../../../fiches/faire-une-page-web.md#ajouter-une-section)
 
 > [!CAUTION] Avant de mettre une photo
 > Pas de visage ni de nom de famille.
