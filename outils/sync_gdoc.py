@@ -587,7 +587,7 @@ def poser(doc, marqueurs):
     )])
 
 
-def largeurs(lignes, total=310, souple=30):
+def largeurs(lignes, total=382, souple=30):
     """Largeur des colonnes d'un tableau imbriqué, en points. Les colonnes courtes
     prennent ce qu'il leur faut, les longues se partagent le reste."""
     longueurs = [max(len(texte_runs(r[i])) for r in lignes) for i in range(len(lignes[0]))]

@@ -1,23 +1,23 @@
 {
- "revision": "AHj4eMRDM6I6fXehcTAr-IvMaxLp5S_CFUpNKIUfOxqopBk-pzhg6bF9jF6pgjC6rxTNP2IaTBNySHS0_I8WS84g2ZV1SFiYsZgt3iCYOoQ",
+ "revision": "AHj4eMQFYaUZ32qGB4rG_2nb2Cu8yu01Va43fipW66PljiLfC13SHmohNzKxQjjkWlkglrR2DiIDSqv0gx-WvXwjuzWSkIJ-ovYJXG3WLOA",
  "fiches": {
   "communication": [
    [
     "Titre",
     [
-     "Invente et fabrique tes objets connectés"
+     "Fabrique ta lampe et invente ton objet connecté"
     ]
    ],
    [
     "Accroche",
     [
-     "Ta lampe s'allume toute seule à la nuit tombée, dans la couleur que tu as choisie, et tu la commandes à distance, depuis un tableau de bord qui affiche toutes les lampes du groupe. Ensuite, ton équipe invente son propre objet connecté, de l'idée jusqu'à la démonstration."
+     "Tu fabriques ta propre lampe : elle s'allume seule à la nuit tombée, et tu la pilotes à distance. Ensuite, en équipe, tu imagines un objet utile pour le lieu, tu le construis et tu l'installes."
     ]
    ],
    [
     "Description",
     [
-     "Tu commences par ta lampe d'ambiance : tu poses son circuit en cuivre, tu programmes ses 64 LED de couleur, tu lui fais détecter la tombée de la nuit et tu dessines en 3D le pochoir qu'elle éclaire, que tu emportes ensuite en porte-clés. Puis ton équipe invente un objet connecté qui sert à tout le monde : un panneau qui indique de loin si une salle est libre, une station météo à la fenêtre, un feu qui passe au rouge quand la salle devient trop bruyante, un coffre qui s'ouvre avec un code. Tu apprends comment marche un circuit électrique, comment un objet mesure, décide et agit seul, comment plusieurs objets se parlent par radio, et comment on dessine une pièce qui s'emboîte sur une autre. Tu programmes en blocs avec MakeCode et tu modélises avec Tinkercad. Tous les objets envoient leurs mesures sur un même tableau de bord, affiché sur grand écran. À la fin, ton équipe présente son objet sur une page web que tu gardes, et vous en faites la démonstration."
+     "La lampe est ton premier chantier. Tu traces son support en carton, tu fabriques son circuit en cuivre, tu programmes ses LED, les mêmes que celles des rubans lumineux, chacune de la couleur que tu choisis, puis le capteur qui l'allume à la nuit tombée, et tu dessines en 3D le pochoir qu'elle éclaire. Avec elle, tu passes par toutes les étapes d'un objet connecté. Ensuite, à deux ou trois, vous partez d'un besoin réel du lieu et vous inventez l'objet qui y répond. Tu apprends à suivre un schéma électrique, à programmer une mesure et une décision, à faire communiquer des objets par radio, à concevoir une pièce adaptée à un montage, et à tester avant d'installer. Tu apprends aussi à répartir le travail dans une équipe et à expliquer tes choix devant un public. Au bout du parcours, votre objet fonctionne à sa place, et il a sa page web."
     ]
    ],
    [
@@ -53,12 +53,14 @@
    [
     "Visuels (légendes)",
     [
-     "1. La matrice de 64 LED qui affiche un visage, l'ordinateur derrière.",
+     "1. La lampe allumée qui affiche un visage, l'ordinateur derrière.",
      "[image https://maker.arbona.dev/assets/objets-connectes-communication/01-matrice-visage.jpg]",
-     "2. Le programme MakeCode qui dessine ce visage : une grille de 8 × 8 cases, une couleur par LED.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-programme-visage.png]",
-     "3. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/03-tableau-de-bord.jpg]"
+     "2. Des mains qui découpent le support de la lampe à la règle et au cutter, le plan posé sur le carton.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-decoupe-a-la-regle.jpg]",
+     "3. Le programme MakeCode qui dessine ce visage : une grille de 8 × 8 cases, une couleur par LED.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/03-programme-visage.png]",
+     "4. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/04-tableau-de-bord.jpg]"
     ]
    ]
   ],
