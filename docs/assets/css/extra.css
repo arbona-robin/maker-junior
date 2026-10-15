@@ -40,6 +40,13 @@
   width: 100%;
   max-width: min(34rem, 100%);
   display: block;
+  margin-inline: auto;
+}
+
+/* Une vidéo en portrait tient dans l'écran : sa hauteur est bornée, sa largeur suit. */
+.md-typeset video.portrait {
+  width: auto;
+  max-height: 70vh;
 }
 
 /* A step's illustration sits at reading width, not full bleed. */

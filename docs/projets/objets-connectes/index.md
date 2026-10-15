@@ -4,7 +4,7 @@ Ta lampe s'allume toute seule à la nuit tombée, dans la couleur que tu as choi
 
 Le parcours se fait en deux temps. D'abord ta lampe, que tu construis seul : un circuit, de la lumière, un capteur, une pièce en 3D, la radio. Ensuite, à deux ou trois, un objet qui sert à tout le monde, et qui envoie ses mesures au tableau de bord comme tous les autres.
 
-<video controls playsinline preload="metadata" src="../../assets/objets-connectes-communication/video-lampe-tableau-de-bord.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../assets/objets-connectes-communication/video-lampe-tableau-de-bord.mp4"></video>
 
 ## Les séances
 

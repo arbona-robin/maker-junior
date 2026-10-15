@@ -8,7 +8,7 @@
 
 **Ce que tu vas obtenir :**
 
-<video controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s02/video-coeur.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s02/video-coeur.mp4"></video>
 
 Tout le câblage de ta lampe tient sur ce schéma. Garde-le sous les yeux pendant le montage.
 
@@ -216,7 +216,7 @@ let strip: neopixelExtended.Strip = null
 
 </details>
 
-<video controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s02/video-respiration.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s02/video-respiration.mp4"></video>
 
 ## Va plus loin
 

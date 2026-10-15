@@ -140,7 +140,7 @@ basic.forever(function () {
 
 **Ce que tu vas obtenir :**
 
-<video controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s01/video-toucher-coeur.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s01/video-toucher-coeur.mp4"></video>
 
 Enlève la LED. Garde les deux pinces : une sur `GND`, une sur `2`. Cette fois, `P2` est une **entrée** : le programme lit ce qui y arrive.
 

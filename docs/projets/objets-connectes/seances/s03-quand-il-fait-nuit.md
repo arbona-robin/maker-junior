@@ -8,7 +8,7 @@
 
 **Ce que tu vas obtenir :** tes valeurs, de la salle éclairée au noir, et ton seuil.
 
-<video controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s03/video-main-courbe.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s03/video-main-courbe.mp4"></video>
 
 Le micro:bit mesure la lumière avec **son écran** : `niveau d'intensité lumineuse`, dans **Entrée**, de `0` (noir) à `255` (pleine lumière).
 
@@ -48,7 +48,7 @@ Ton seuil est entre la pénombre et la salle éclairée. Il dépend de l'endroit
 
 **Ce que tu vas obtenir :** tu couvres la carte, la matrice s'allume ; tu la découvres, elle s'éteint.
 
-<video controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s03/video-doigt-allume.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s03/video-doigt-allume.mp4"></video>
 
 Retour dans ton projet `lampe`.
 
@@ -78,7 +78,7 @@ let strip: neopixelExtended.Strip = null
 
 **Ce que tu vas obtenir :** tu touches les bandes de cuivre, une coche s'affiche et la lampe se met en marche ; tu les touches encore, une croix, et elle passe en veille.
 
-<video controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s03/video-interrupteur.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s03/video-interrupteur.mp4"></video>
 
 La lampe doit **se souvenir** si elle est en marche ou en veille. C'est le rôle d'une variable : `active`, qui vaut `1` en marche, `0` en veille.
 

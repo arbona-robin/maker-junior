@@ -129,7 +129,7 @@ Pose ton rover **sur l'arrière, roues en l'air**, dans la boîte de test. Lance
 Un moteur tourne à l'envers : c'est normal. Inverse ses deux fils, ou passe son bloc en `CCW`.
 
 <figure markdown>
-<video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-rover-roule.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-rover-roule.mp4"></video>
 <figcaption>USB débranché : le programme vit dans la carte.</figcaption>
 </figure>
 

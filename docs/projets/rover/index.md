@@ -4,7 +4,7 @@ Un rover, ça ne s'achète pas : ça se fabrique, ça se câble, ça se programm
 
 Le parcours se fait en deux temps. D'abord ton rover à toi, que tu montes et programmes seul. Ensuite, à deux ou trois, un rover conçu pour des missions précises, en carton et avec des pièces que vous dessinez et imprimez en 3D.
 
-<video controls playsinline preload="metadata" src="../../assets/rover-communication/video-rovers-sur-la-table.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../assets/rover-communication/video-rovers-sur-la-table.mp4"></video>
 
 ## Les séances
 

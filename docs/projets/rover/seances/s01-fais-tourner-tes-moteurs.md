@@ -119,7 +119,7 @@ basic.forever(function () {
 **Ce que tu vas obtenir :**
 
 <figure markdown>
-<video controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-test-moteurs.mp4"></video>
+<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/rover-s01/video-test-moteurs.mp4"></video>
 </figure>
 
 ### Ajoute l'extension DF-Driver

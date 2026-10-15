@@ -36,10 +36,9 @@ La Plateforme
 
 ## Visuels (légendes)
 
-1. La lampe en carton allumée, la lumière de la matrice adoucie par une feuille de papier, le pochoir imprimé devant, son motif éclairé. *(disponible : `docs/assets/objets-connectes-communication/01-lampe-pochoir-eclaire.jpg`)*
-2. La matrice de 64 LED qui affiche un visage, l'ordinateur derrière. *(disponible : `docs/assets/objets-connectes-communication/02-matrice-visage.jpg`)*
+1. La matrice de 64 LED qui affiche un visage, l'ordinateur derrière. *(disponible : `docs/assets/objets-connectes-communication/01-matrice-visage.jpg`)*
+2. Le programme MakeCode qui dessine ce visage : une grille de 8 × 8 cases, une couleur par LED. *(disponible : `docs/assets/objets-connectes-communication/02-programme-visage.png`)*
 3. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs. *(disponible : `docs/assets/objets-connectes-communication/03-tableau-de-bord.jpg`)*
-4. Le pochoir imprimé en 3D, qui repart en porte-clés, à côté de la feuille de papier qui adoucit la lumière. *(disponible : `docs/assets/objets-connectes-communication/04-pochoir-imprime.jpg`)*
 
 ---
 
