@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMR_J7DzX1CObeJTm_PBXjMp4WpD6VyAzd8Yrr7VIoV1GMXW5CnE7X7xjDTa5rNh13xvHcbNQ-fscEbXqFwFCr9aVabOpnpCyXL7diE",
+ "revision": "AHj4eMRbmakeeVNGM0lFw9X8o61LBKgrOsUVfoaP4GEucht8jNy9OFpLs_hPKIBMDToVBHOApA9uwP_fjZ3j4KhP5U_4ufuL9sSshKcehVw",
  "fiches": {
   "communication": [
    [
@@ -55,8 +55,8 @@
     [
      "1. Des rovers sur la table de robotique, leurs pilotes autour, en pleine séance de pilotage.",
      "[image https://maker.arbona.dev/assets/rover-communication/01-rovers-sur-la-table.jpg]",
-     "2. Des mains qui découpent le carton à la règle métallique à rebord, sur le tapis de découpe.",
-     "[image https://maker.arbona.dev/assets/rover-s01/02-decoupe-regle-a-rebord.jpg]",
+     "2. Des mains qui posent les moteurs jaunes dans le châssis en carton plié, sur le tapis de découpe, la carte électronique à côté.",
+     "[image https://maker.arbona.dev/assets/rover-s01/04-moteurs-positionnes.jpg]",
      "3. L'écran de MakeCode avec un programme en blocs colorés.",
      "[image https://maker.arbona.dev/assets/rover-s01/27-programme-moteurs.png]",
      "4. Le plateau de l'imprimante 3D couvert des plaques jaunes du groupe, chacune avec son prénom ou son motif.",
