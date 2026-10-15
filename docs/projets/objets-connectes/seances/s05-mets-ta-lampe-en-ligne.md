@@ -16,8 +16,6 @@
 ![Le chemin d'un message : la lampe 7 envoie lum et inter7 par radio au pont, toutes les 5 secondes ; le pont, branché en USB, les passe au tableau de bord ; dans l'autre sens, le tableau de bord envoie inter7 = 0, que toutes les lampes entendent et auquel seule la 7 réagit. Pont débranché, l'écran se fige, la lampe continue seule.](../../../assets/objets-connectes-s05/03-schema-chemin-message.png)
 </figure>
 
-Si tu veux, pose ton pochoir devant la matrice, sous l'élastique, la feuille de papier derrière.
-
 Ta lampe prend le numéro de ton poste : c'est lui qui la distingue des autres.
 
 Reprends ton projet `lampe`. Dans `au démarrage`, sous ce qui y est déjà, ajoute `radio régler la bande de fréquence` à `40` et `radio régler le numéro de série de transmission` à **vrai**, dans **Radio**. Le tableau de bord reconnaît ta carte à son numéro de série.
@@ -100,12 +98,11 @@ Touche le cuivre, couvre ta lampe : elle marche toujours.
 ## Va plus loin
 
 - **Tout de suite quand ça change.** Quand tu touches le cuivre, envoie `inter7` = `active` aussitôt, sans attendre les 5 secondes : l'interrupteur de l'écran suit sans délai.
-- **Une deuxième mesure.** Ajoute `temp` = `température (°C)`, dans **Entrée** : le tableau de bord l'affiche en jauge.
 - **Chez toi.** Avec un deuxième micro:bit en pont, ta lampe a son tableau de bord. → [Installer le pont et le tableau de bord](../../../fiches/pont-et-tableau-de-bord.md)
 
 ### Éclaire ton pochoir
 
-Coupe une feuille de papier au format de la matrice : posée entre la matrice et le pochoir, elle fond la lumière des LED.
+Si tu as le temps, pose ton pochoir devant la matrice, sous l'élastique. Coupe une feuille de papier au format de la matrice : posée entre la matrice et le pochoir, elle fond la lumière des LED.
 
 <div class="photo-row" markdown>
 

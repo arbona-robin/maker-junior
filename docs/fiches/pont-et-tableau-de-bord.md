@@ -13,7 +13,35 @@ Le pont écoute la bande `40` et recopie chaque message radio dans le câble USB
 
 ## Programme le pont
 
-MakeCode → **Nouveau projet** `pont` → onglet **JavaScript** → colle ce code → **Télécharger**.
+MakeCode → **Nouveau projet** `pont`, puis assemble ces blocs → **Télécharger**.
+
+```blocks
+radio.setFrequencyBand(40)
+basic.showIcon(IconNames.Yes)
+```
+
+```blocks
+radio.onReceivedValue(function (name, value) {
+    serial.writeLine(
+        radio.receivedPacket(RadioPacketProperty.SerialNumber) + "," +
+        name + "," + value + "," +
+        radio.receivedPacket(RadioPacketProperty.SignalStrength))
+    led.toggle(2, 2)
+})
+```
+
+```blocks
+serial.onDataReceived(serial.delimiters(Delimiters.NewLine), function () {
+    let parties = serial.readUntil(serial.delimiters(Delimiters.NewLine)).split(",")
+    if (parties.length == 2) {
+        radio.sendValue(parties[0], parseFloat(parties[1]))
+        led.toggle(0, 0)
+    }
+})
+```
+
+<details markdown>
+<summary>Plus rapide : le code à coller dans l'onglet JavaScript</summary>
 
 ```ts
 // Le pont : recopie la radio sur le port série, et l'inverse pour les interrupteurs.
@@ -38,6 +66,8 @@ serial.onDataReceived(serial.delimiters(Delimiters.NewLine), function () {
     }
 })
 ```
+
+</details>
 
 Le point central de l'écran clignote à chaque message reçu, le coin en haut à gauche à chaque ordre envoyé.
 
