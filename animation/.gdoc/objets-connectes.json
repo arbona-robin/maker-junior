@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMS3QnnPKXH1QZmzPBusygZA6746GCqxOEOGZS5p5-DlIZWn-dpLotX09mD9DjnZq3WLx88zGvkx4-QdK7tnSMrSvzzH0VNHh1tpdhg",
+ "revision": "AHj4eMTIPXwn-vIT6cADE_6rYhcZellh29oS1jbBM--ztoSMQZNyIvGiTeIYIx8Hu4oKckiBk_zGMcSuDPaiOQfYQAf0C0Kxy-lrv4tWld4",
  "fiches": {
   "communication": [
    [
@@ -902,8 +902,7 @@
      "• Son pochoir imprimé",
      "Commun",
      "• Le pont : un micro:bit programmé, branché en USB à l'ordinateur de l'animateur",
-     "• Vidéoprojecteur ou grand écran",
-     "• Étiquettes numérotées de 1 à 12, une par lampe"
+     "• Vidéoprojecteur ou grand écran"
     ]
    ],
    [
@@ -918,7 +917,7 @@
     "Lancement (10 min)",
     [
      "Remise des pochoirs, nominative (5 min). Chacun regarde le sien de près : les couches visibles, la première couche, ce qui a bavé. On fait circuler deux ou trois rebuts du plateau (un îlot tombé, une ouverture bouchée) et on les relie à la vérification faite en séance 4 : est-ce que tout tient, est-ce que tout s'imprime ? Qui le souhaite pose son pochoir devant sa matrice, sous l'élastique, la feuille de papier derrière.",
-     "Le tableau de bord au grand écran, en mode démo (5 min). Une carte par micro:bit, ses mesures, un interrupteur. Le chemin d'une mesure, au vidéoprojecteur, avec le schéma de la page élève : la lampe, la radio, le pont, l'écran, et l'ordre qui redescend. Pour que l'écran comprenne tout le monde, une langue commune : la bande 40, le numéro de série, une clé courte par mesure, une émission toutes les 5 secondes. Chaque lampe reçoit son numéro, de 1 à 12, collé sur la lampe.",
+     "Le tableau de bord au grand écran, en mode démo (5 min). Une carte par micro:bit, ses mesures, un interrupteur. Le chemin d'une mesure, au vidéoprojecteur, avec le schéma de la page élève : la lampe, la radio, le pont, l'écran, et l'ordre qui redescend. Pour que l'écran comprenne tout le monde, une langue commune : la bande 40, le numéro de série, une clé courte par mesure, une émission toutes les 5 secondes. Chaque lampe prend le numéro de son poste.",
      "Modalité : Démonstration commentée"
     ]
    ],
@@ -982,7 +981,7 @@
     "Points de vigilance",
     [
      "• Douze cartes sur une bande : la pause de 5 secondes dans la boucle d'émission n'est pas négociable. Sans elle, les messages se gênent et les accus se vident.",
-     "• Une clé par lampe : deux lampes avec le même numéro se commandent ensemble. Vérifier les étiquettes et les clés au point de contrôle.",
+     "• Une clé par lampe : deux lampes avec le même numéro se commandent ensemble. Vérifier au point de contrôle que la clé porte bien le numéro du poste.",
      "• Le numéro de série oublié dans au démarrage fait apparaître une carte « Sans numéro de série » : c'est le premier réflexe à vérifier.",
      "• Le simulateur ne suit pas la bande de fréquence : les essais se font sur les cartes.",
      "• La séance est courte en code mais dense en idées : protocole, deux boucles, adresse dans la clé, supervision. Le schéma du chemin d'un message reste affiché pendant toute la séance, et on y revient à chaque étape avant d'écrire du code.",
