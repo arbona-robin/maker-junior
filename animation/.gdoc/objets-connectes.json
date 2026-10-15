@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMR8MhGY4EBz1CTnA8Srxinc8LKkCF0Tz0pHfhQAw5Xn5wZzbRO6JPUAY-WE0rC1JDpkNEuRRJQXQHfR7uaiNv9b0YZprg-iO8SCBE4",
+ "revision": "AHj4eMSNwwsCecbi0vjzju-PvgxovkFwmuhPSbDP5MFrCJl6BjQpjlyGQg--l6J0CrjcU0He17GBJcSpDYqGfMMrvaUWjDz4FE7hKxmnXek",
  "fiches": {
   "communication": [
    [
@@ -198,8 +198,8 @@
     "Séance 1 — Phase 1 — Découverte & prise en main",
     [
      "Titre : Fabrique ta lampe et allume-la",
-     "Notions : découpe au plan · circuit fermé · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique · entrée analogique · seuil",
-     "Livrable intermédiaire : support découpé et plié, deux bandes de cuivre collées, LED allumée puis clignotante par programme, bandes de cuivre utilisées comme bouton qui affiche une icône au toucher"
+     "Notions : découpe au plan · circuit fermé · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique",
+     "Livrable intermédiaire : support découpé et plié, deux bandes de cuivre collées, LED allumée puis clignotante par programme"
     ]
    ],
    [
@@ -214,7 +214,7 @@
     "Séance 3 — Phase 1 — Découverte & prise en main",
     [
      "Titre : Fais-la s'allumer quand il fait nuit",
-     "Notions : mesure brute · Afficher données · seuil · variable d'état · interrupteur à bascule",
+     "Notions : mesure brute · Afficher données · seuil · broche en entrée · variable d'état · interrupteur à bascule",
      "Livrable intermédiaire : lampe qui s'allume seule sous le seuil et s'éteint au-dessus, mise en marche ou en veille par son bouton en cuivre"
     ]
    ],
@@ -286,20 +286,19 @@
     "Objectifs pédagogiques",
     [
      "• Être capable de réaliser un circuit fermé entre deux broches du micro:bit, LED dans le bon sens, et d'expliquer pourquoi elle ne s'allume que dans un sens",
-     "• Être capable de distinguer une broche en sortie d'une broche en entrée, en commandant une LED puis en lisant un toucher sur la même broche",
-     "• Être capable de choisir un seuil à partir de valeurs relevées pour déclencher un affichage"
+     "• Être capable de programmer une broche en sortie pour allumer, éteindre et faire clignoter une LED, en distinguant l'alimentation par 3V de la commande par le programme"
     ]
    ],
    [
     "Notions abordées",
     [
-     "Découpe au plan et à la règle · circuit fermé · conducteur et isolant · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique · entrée analogique · Afficher données · seuil."
+     "Découpe au plan et à la règle · circuit fermé · conducteur et isolant · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique."
     ]
    ],
    [
     "Livrable attendu",
     [
-     "Support découpé au plan et plié, deux bandes de cuivre collées sur le dessus, micro:bit tenu par deux élastiques. LED allumée par 3V, puis par le programme sur P2, puis clignotante. Bandes de cuivre utilisées comme bouton : une icône s'affiche au toucher. Valeurs au repos et au toucher relevées."
+     "Support découpé au plan et plié, deux bandes de cuivre collées sur le dessus, micro:bit tenu par deux élastiques. LED allumée par 3V, puis par le programme sur P2, puis clignotante."
     ]
    ],
    [
@@ -335,7 +334,7 @@
    [
     "Ressources numériques",
     [
-     "• 1 ordinateur par jeune, MakeCode dans Chrome ou Edge, pour Afficher données",
+     "• 1 ordinateur par jeune, MakeCode",
      "• Le livre en ligne, ouvert sur la page de la séance"
     ]
    ],
@@ -348,7 +347,7 @@
     ]
    ],
    [
-    "Activité 1 (35 min)",
+    "Activité 1 (50 min)",
     [
      "Monte ta lampe et allume la LED",
      "Description :",
@@ -359,7 +358,7 @@
     ]
    ],
    [
-    "Activité 2 (25 min)",
+    "Activité 2 (30 min)",
     [
      "Une sortie : le programme allume",
      "Description :",
@@ -370,21 +369,9 @@
     ]
    ],
    [
-    "Activité 3 (20 min)",
-    [
-     "Une entrée : les bandes deviennent un bouton",
-     "Description :",
-     "La LED est retirée, les pinces restent : P2 devient une entrée. série écrire valeur \"p2\" avec lire la broche analogique P2, dans toujours, puis Afficher données Appareil.",
-     "Un doigt posé à cheval sur les deux bandes fait chuter la valeur : environ 660 au repos, moins de 300 au toucher sur le montage de test. La peau conduit un peu, et ferme la boucle. Chacun note ses deux valeurs, et en déduit son seuil.",
-     "Exercice : afficher une icône quand la valeur passe sous le seuil. Catégories indiquées, solution repliée. Puis on montre que le micro:bit a ce test tout fait : lorsque la broche P2 est activée, qui compare lui-même à un seuil et se déclenche une fois par toucher. Il servira d'interrupteur en séance 3.",
-     "Point de contrôle animateur : l'icône s'affiche au toucher, et pas au repos.",
-     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
-    ]
-   ],
-   [
     "Rétrospective (10 min)",
     [
-     "« Quelle différence entre la LED et le bouton, pour la broche P2 ? » La réponse attendue : une sortie, puis une entrée.",
+     "« Qu'est-ce qui allumait la LED la première fois, et la seconde ? » La réponse attendue : 3V l'alimente toujours, P2 seulement quand le programme le décide.",
      "Modalité : Tour de table / partage oral"
     ]
    ],
@@ -398,13 +385,13 @@
    [
     "Variante +",
     [
-     "Une animation de plusieurs icônes au toucher, et un son · deux seuils, pour un toucher léger et un toucher appuyé."
+     "Un signal en morse : SOS, trois éclairs courts, trois longs, trois courts, en ne changeant que les pauses."
     ]
    ],
    [
     "Variante −",
     [
-     "Programme du bouton donné sans le seuil, à compléter d'après ses propres valeurs."
+     "Programme du clignotement donné sans les pauses, à compléter."
     ]
    ],
    [
@@ -412,9 +399,7 @@
     [
      "• Les plans sont imprimés à 100 % avant la séance : la bande mesure 70 mm de large à la règle. Les douze jeunes découpent sur trois postes, à tour de rôle : le pliage et les bandes de cuivre occupent ceux qui attendent.",
      "• La LED est branchée sans résistance. Sur 3V et sur une broche du micro:bit, une LED jaune ou rouge le supporte. Elle ne se branche jamais sur le pack d'accus 4,8 V de la séance 2.",
-     "• Les deux pinces ne doivent pas se toucher quand elles sont sur 3V et GND : c'est un court-circuit de l'alimentation du micro:bit.",
-     "• Les valeurs au toucher varient d'une main à l'autre : chacun prend son seuil, comme pour la lumière en séance 3.",
-     "• Afficher données demande Chrome ou Edge, et le micro:bit branché en USB."
+     "• Les deux pinces ne doivent pas se toucher quand elles sont sur 3V et GND : c'est un court-circuit de l'alimentation du micro:bit."
     ]
    ],
    [
@@ -609,7 +594,7 @@
    [
     "Notions abordées",
     [
-     "Mesure brute · Afficher données · seuil · variable d'état · interrupteur à bascule · événement lorsque la broche P2 est activée."
+     "Mesure brute · Afficher données · seuil · broche en entrée : le toucher ferme le circuit · variable d'état · interrupteur à bascule · événement lorsque la broche P2 est activée."
     ]
    ],
    [
@@ -681,8 +666,8 @@
     [
      "Ton interrupteur en cuivre",
      "Description :",
-     "Les bandes de cuivre de la séance 1 deviennent un interrupteur. Présenté au groupe en cinq minutes : une variable active, qui vaut 0 (veille) ou 1 (marche). lorsque la broche P2 est activée se déclenche une fois par toucher ; à chaque fois, active bascule, avec une coche ou une croix une seconde sur l'écran, puis effacer l'écran. Dans toujours, la lampe ne s'allume que si elle est active et qu'il fait sombre ; sinon, elle s'éteint.",
-     "La variable se voit : la lampe se souvient de son état entre deux touchers. C'est ce qui manquait à la lecture analogique de la séance 1, qui ne disait que « on touche » ou « on ne touche pas ».",
+     "Les bandes de cuivre deviennent un bouton : un doigt posé à cheval ferme le circuit entre P2 et GND, la peau conduit un peu. P2, la sortie de la LED en séance 1, devient une entrée. Présenté au groupe en cinq minutes : une variable active, qui vaut 0 (veille) ou 1 (marche). lorsque la broche P2 est activée se déclenche une fois par toucher ; à chaque fois, active bascule, avec une coche ou une croix une seconde sur l'écran, puis effacer l'écran. Dans toujours, la lampe ne s'allume que si elle est active et qu'il fait sombre ; sinon, elle s'éteint.",
+     "La variable se voit : la lampe se souvient de son état entre deux touchers.",
      "Puis le second piège, qui arrive chez ceux dont la matrice éclaire le micro:bit : la lampe s'allume, le capteur voit sa lumière, elle s'éteint, et ainsi de suite. La réponse est d'abord physique : le micro:bit regarde la pièce, pas la lampe. L'hystérésis est la réponse logicielle, en variante +.",
      "Point de contrôle animateur : un toucher, une coche, et la lampe s'allume quand on couvre la carte ; un autre toucher, une croix, et elle reste éteinte même couverte.",
      "Modalité : Démonstration commentée, puis production individuelle en autonomie"
@@ -943,7 +928,7 @@
     "Lancement (10 min)",
     [
      "Remise des pochoirs, nominative (5 min). Chacun regarde le sien de près : les couches visibles, la première couche, ce qui a bavé. On fait circuler deux ou trois rebuts du plateau (un îlot tombé, une ouverture bouchée) et on les relie à la vérification faite en séance 4 : est-ce que tout tient, est-ce que tout s'imprime ? Qui le souhaite pose son pochoir devant sa matrice, sous l'élastique, la feuille de papier derrière.",
-     "Le tableau de bord au grand écran, en mode démo (5 min). Une carte par micro:bit, ses mesures, un interrupteur. Le chemin d'une mesure : la lampe, la radio, le pont, l'écran. Pour que l'écran comprenne tout le monde, une langue commune : la bande 40, le numéro de série, une clé courte par mesure, une émission toutes les 5 secondes. Chaque lampe reçoit son numéro, de 1 à 12, collé sur la lampe.",
+     "Le tableau de bord au grand écran, en mode démo (5 min). Une carte par micro:bit, ses mesures, un interrupteur. Le chemin d'une mesure, au vidéoprojecteur, avec le schéma de la page élève : la lampe, la radio, le pont, l'écran, et l'ordre qui redescend. Pour que l'écran comprenne tout le monde, une langue commune : la bande 40, le numéro de série, une clé courte par mesure, une émission toutes les 5 secondes. Chaque lampe reçoit son numéro, de 1 à 12, collé sur la lampe.",
      "Modalité : Démonstration commentée"
     ]
    ],
@@ -1010,6 +995,7 @@
      "• Une clé par lampe : deux lampes avec le même numéro se commandent ensemble. Vérifier les étiquettes et les clés au point de contrôle.",
      "• Le numéro de série oublié dans au démarrage fait apparaître une carte « Sans numéro de série » : c'est le premier réflexe à vérifier.",
      "• Le simulateur ne suit pas la bande de fréquence : les essais se font sur les cartes.",
+     "• La séance est courte en code mais dense en idées : protocole, deux boucles, adresse dans la clé, supervision. Le schéma du chemin d'un message reste affiché pendant toute la séance, et on y revient à chaque étape avant d'écrire du code.",
      "• La bande 40 sera aussi celle du chantier. Ne pas la changer ensuite.",
      "• Le pont se prépare avant la séance : programme, connexion, essai avec un micro:bit de test."
     ]
