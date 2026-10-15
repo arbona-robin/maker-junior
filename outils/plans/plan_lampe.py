@@ -2,7 +2,7 @@
 
     python3 outils/plans/plan_lampe.py
 
-Écrit docs/assets/plans/lampe-support-v4.svg, puis le PDF (A4 paysage, à imprimer à 100 %)
+Écrit docs/assets/plans/lampe-support-v5.svg, puis le PDF (A4 paysage, à imprimer à 100 %)
 et le PNG de la page, avec Inkscape. Contraintes : le dessus de 40 mm porte les bandes de cuivre,
 les deux montants sont égaux, la base contient le boîtier 4 × AA (65 mm au moins), le rabat fait
 20 mm au moins, et le tout tient en 285 mm sur un A4. Les cotes sont en millimètres : changer SECTIONS
@@ -22,7 +22,7 @@ PAGE = (297, 210)  # A4 paysage : la bande tient en 285 mm, marges comprises
 MARGE_X, HAUT = 6, 80  # le plan est centré verticalement autour de HAUT
 
 RACINE = Path(__file__).resolve().parent.parent.parent
-SORTIE = RACINE / "docs/assets/plans/lampe-support-v4"
+SORTIE = RACINE / "docs/assets/plans/lampe-support-v5"
 INKSCAPE = "/Applications/Inkscape.app/Contents/MacOS/inkscape"
 
 ROUGE, GRIS, VIOLET = "#ff4d4d", "#6e6e6e", "#8f8fc2"
@@ -46,6 +46,7 @@ def cote_h(x1, x2, y, texte, couleur=ROUGE, fond=GRIS):
 
 CUIVRE = "#e08a4f"
 PISTE = 6  # largeur du ruban de cuivre, en mm
+DEPASSE = 6  # la piste dépasse l'anneau du micro:bit de ce côté, pour que la rondelle et l'écrou portent sur le cuivre
 
 
 def circuit(x0, y0):
@@ -71,13 +72,14 @@ def circuit(x0, y0):
     ax = bx + 4
     for nom, dy in anneaux.items():
         m.append(f'<circle cx="{ax}" cy="{by + dy}" r="2" fill="none" stroke="#555" stroke-width="0.3"/>'
-                 f'<text x="{ax - 4}" y="{by + dy + 1.2}" font-size="2.6" fill="#555" text-anchor="end" '
+                 f'<text x="{ax - DEPASSE - 1}" y="{by + dy + 1.2}" font-size="2.6" fill="#555" text-anchor="end" '
                  f'font-family="Helvetica, Arial, sans-serif">{nom}</text>')
     def piste(xa, xb, y, nom):
+        # Le nom et la longueur à couper sont écrits sur la piste, entre les deux vis.
         return (f'<rect x="{xa:.2f}" y="{y - PISTE / 2:.2f}" width="{xb - xa:.2f}" height="{PISTE}" '
                 f'fill="{CUIVRE}" fill-opacity="0.5"/>'
-                f'<text x="{xa + 3:.2f}" y="{y + 1.2:.2f}" font-size="2.8" fill="#7a3d12" '
-                f'font-family="Helvetica, Arial, sans-serif">{nom}</text>')
+                f'<text x="{xa + DEPASSE + 4:.2f}" y="{y + 1.2:.2f}" font-size="2.8" fill="#7a3d12" '
+                f'font-family="Helvetica, Arial, sans-serif">{nom} · {xb - xa:.0f} mm</text>')
     def vis(x, y):
         return (f'<circle cx="{x:.2f}" cy="{y:.2f}" r="1.6" fill="#fff" stroke="#000" stroke-width="0.35"/>'
                 f'<line x1="{x - 1:.2f}" y1="{y:.2f}" x2="{x + 1:.2f}" y2="{y:.2f}" stroke="#000" stroke-width="0.3"/>'
@@ -86,14 +88,21 @@ def circuit(x0, y0):
     bande_p2, bande_gnd = dessus + 9, dessus + 25  # les bandes tactiles, côté extérieur
     fin = x0 + 80 + 40 + 80  # le bas du second montant
     # Les pistes, côté intérieur.
-    m.append(piste(ax, bande_p2 + 3, y_de("2"), "P2"))
-    m.append(piste(ax, bande_gnd + 3, y_de("GND"), "GND"))
+    m.append(piste(ax - DEPASSE, bande_p2 + 3, y_de("2"), "P2"))
+    m.append(piste(ax - DEPASSE, bande_gnd + 3, y_de("GND"), "GND"))
     # Les bandes tactiles du dessus, côté extérieur : en contour.
     for bxb, nom in ((bande_p2, "bouton"), (bande_gnd, "masse")):
         m.append(f'<rect x="{bxb - PISTE / 2}" y="{y0 + 4}" width="{PISTE}" height="{LARGEUR - 8}" fill="none" '
                  f'stroke="{CUIVRE}" stroke-width="0.5" stroke-dasharray="1.2,0.8"/>'
                  f'<text x="{bxb}" y="{y0 + 3}" font-size="2.6" fill="#7a3d12" text-anchor="middle" '
-                 f'font-family="Helvetica, Arial, sans-serif">{nom}</text>')
+                 f'font-family="Helvetica, Arial, sans-serif">{nom}</text>'
+                 f'<text x="{bxb + 1}" y="{y0 + 44}" font-size="2.6" fill="#7a3d12" text-anchor="middle" '
+                 f'font-family="Helvetica, Arial, sans-serif" transform="rotate(-90 {bxb + 1} {y0 + 44})">'
+                 f'{LARGEUR - 8:.0f} mm</text>')
+    # Leur place, depuis le pli : sous le plan, deux cotes.
+    for k, bxb in enumerate((bande_p2, bande_gnd)):
+        m.append(cote_h(dessus, bxb - PISTE / 2, y0 + LARGEUR + 15 + 7 * k, f"{bxb - PISTE / 2 - dessus:.0f} mm",
+                        CUIVRE, "#b5652f"))
     # Les vis : trois dans les anneaux du micro:bit, une par bande tactile, et les bornes en bas du second montant.
     for nom in ("2", "1", "GND"):  # la vis de l'anneau 1 tient le micro:bit, et l'écrou reçoit la pince DI
         m.append(vis(ax, y_de(nom)))
@@ -130,7 +139,7 @@ def plan():
                     f'<line x1="{xl - 1.5}" y1="{y0 + LARGEUR}" x2="{xl + 1.5}" y2="{y0 + LARGEUR}" stroke="{ROUGE}" stroke-width="0.25"/>'
                     + etiquette(xl + 9, y0 + LARGEUR / 2 + 1.5, f"{LARGEUR} mm"))
     # La légende et le contrôle d'échelle.
-    ylg = y0 + LARGEUR + 24
+    ylg = y0 + LARGEUR + 34
     morceaux.append(
         f'<line x1="{x0}" y1="{ylg}" x2="{x0 + 12}" y2="{ylg}" stroke="#000" stroke-width="0.35"/>'
         f'<text x="{x0 + 15}" y="{ylg + 1.3}" font-size="3.8" font-family="Helvetica, Arial, sans-serif">on découpe</text>'
@@ -140,14 +149,17 @@ def plan():
         f'Le rabat passe sous la première section, collé ou scotché. Le plan se colle sur la face intérieure : '
         f'les pistes de cuivre aussi.</text>'
         f'<text x="{x0}" y="{ylg + 15}" font-size="3.8" font-family="Helvetica, Arial, sans-serif">'
-        f'Les trous des vis se marquent avec le micro:bit lui-même, à travers ses anneaux.</text>'
+        f'Séance 1 : percer à la punaise, depuis l\'intérieur, les vis des deux bandes, puis coller les bandes '
+        f'sur la face extérieure, sur les trous.</text>'
         f'<text x="{x0}" y="{ylg + 21}" font-size="3.8" font-family="Helvetica, Arial, sans-serif">'
+        f'Séance 2 : coller les pistes, agrandir chaque trou à la punaise, visser.</text>'
+        f'<text x="{x0}" y="{ylg + 27}" font-size="3.8" font-family="Helvetica, Arial, sans-serif">'
         f'Sur l\'écrou 1 : la pince DI de la matrice. Sur l\'écrou GND : la pince G, et le − du pack sous la rondelle. '
         f'Le + du pack : la pince V.</text>'
-        f'<text x="{x0}" y="{ylg + 27}" font-size="3.8" font-family="Helvetica, Arial, sans-serif">'
+        f'<text x="{x0}" y="{ylg + 33}" font-size="3.8" font-family="Helvetica, Arial, sans-serif">'
         f'Imprimer en A4 paysage, à 100 % : vérifier à la règle que la bande fait {LARGEUR} mm de large.</text>'
-        f'<text x="{PAGE[0] - MARGE_X}" y="{ylg + 27}" font-size="3.4" fill="#777" text-anchor="end" '
-        f'font-family="Helvetica, Arial, sans-serif">Support de la lampe · v4 · échelle 1</text>')
+        f'<text x="{PAGE[0] - MARGE_X}" y="{ylg + 33}" font-size="3.4" fill="#777" text-anchor="end" '
+        f'font-family="Helvetica, Arial, sans-serif">Support de la lampe · v5 · échelle 1</text>')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{PAGE[0]}mm" height="{PAGE[1]}mm" '
             f'viewBox="0 0 {PAGE[0]} {PAGE[1]}"><rect width="100%" height="100%" fill="#fff"/>'
             + "".join(morceaux) + "</svg>\n")

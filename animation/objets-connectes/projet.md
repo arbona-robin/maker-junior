@@ -44,10 +44,10 @@ Utile : avoir suivi le projet Rover. La radio, les capteurs, MakeCode et Tinkerc
 
 - 1 micro:bit v2, alimenté par un boîtier 2 × AAA (de préférence) ou par l'USB
 - 1 matrice RGB 8 × 8 WS2812
-- 1 boîtier 4 × AA d'accus NiMH, pour la matrice
-- 1 support de lampe en carton pré-découpé
-- Ruban de cuivre 6 mm, environ 25 cm, 1 LED 5 mm
-- 5 vis M3 × 10, 5 écrous, 5 rondelles
+- 1 boîtier 4 × AA, pour la matrice : trois accus NiMH et une fausse pile imprimée en 3D, entourée de ruban de cuivre (modèle : `docs/assets/objets-connectes-s02/fausse-pile-aa.stl`, généré par `outils/plans/fausse_pile.py`)
+- 1 plan du support imprimé à 100 % et un carton de 285 × 70 mm, découpés par le jeune en séance 1
+- Ruban de cuivre 6 mm, environ 30 cm (deux bandes de 62 mm, deux pistes de 70 et 86 mm), 1 LED 5 mm
+- 5 vis M3 × 10, 5 écrous, 5 rondelles, 3 entretoises en plastique M3 pour le micro:bit
 - 3 câbles Dupont femelle / pince crocodile, côté matrice
 - 1 bac nominatif
 
@@ -58,7 +58,7 @@ Utile : avoir suivi le projet Rover. La radio, les capteurs, MakeCode et Tinkerc
 - Trois postes de découpe : outil de découpe, règle métallique à rebord, tapis
 - Pied à coulisse, règles
 - Imprimante 3D, filament PLA
-- Papier calque, colle, ruban adhésif
+- Papier, colle, ruban adhésif
 - Chargeur d'accus, multimètre
 - Pour le chantier : capteurs selon l'inventaire, servomoteurs, moteurs TT, cartes DFR0548, breadboards, adaptateurs secteur USB 5 V
 - 1 micro:bit pour le pont USB
@@ -96,14 +96,16 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 | Bornes de connexion à levier, boîte de 50, pour le chantier | 1 | 19 € | 19 € | Proposé |
 | Ruban de cuivre adhésif conducteur, 6 mm × 20 m | 1 | 10 € | 10 € | À acheter |
 | Vis M3 × 10, écrous et rondelles, 100 de chaque | 1 | 10 € | 10 € | À acheter |
+| Entretoises en plastique M3, lot de 50 | 1 | 6 € | 6 € | À acheter |
 | Câbles Dupont femelle / pince crocodile, lots de 10 | 4 | 5 € | 20 € | À acheter |
 | Matrice RGB, lot de 3 de rechange | 1 | 10 € | 10 € | Proposé |
 | Adaptateur secteur USB 5 V, produits installés près d'une prise | 6 | 5 € | 30 € | Proposé |
 | Capteurs du chantier, selon l'inventaire | | | | Selon le catalogue |
-| *Sous-total électronique* | | | *951 €* | |
+| *Sous-total électronique* | | | *957 €* | |
 | **Équipement commun** | | | | |
 | Chargeur d'accus | 1 | 35 € | 35 € | Possédé |
 | Multimètre | 1 | 20 € | 20 € | Possédé |
+| Multimètre supplémentaire, pour les vérifications de la séance 2 | 2 | 15 € | 30 € | Proposé |
 | Outil de découpe | 3 | 8 € | 24 € | Possédé |
 | Règle métallique à rebord | 3 | 10 € | 30 € | Possédé |
 | Tapis de découpe A3 | 3 | 12 € | 36 € | Possédé |
@@ -114,36 +116,36 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 | **Par parcours** | | | | |
 | Filament PLA : emblèmes et pièces du chantier | 2 | 25 € | 50 € | À racheter |
 | Découpe : lames de rechange | 1 | 10 € | 10 € | À racheter |
-| Carton, colle, papier calque, ruban adhésif, élastiques | 1 | 40 € | 40 € | À racheter |
+| Carton, colle, papier, ruban adhésif, élastiques | 1 | 40 € | 40 € | À racheter |
 | Casse : 15 % de l'électronique des lampes | 1 | 78 € | 78 € | À racheter |
 
 Un parcours coûte environ 178 €, soit 15 € par jeune : 100 € de consommables d'impression, de découpe et de fabrication, et 78 € de casse. La casse est calculée sur ce que les jeunes manipulent toute l'année (micro:bit, matrices, boîtiers et accus des lampes, soit 520 €).
 
-Le premier parcours demande 80 € d'achats : matrices, ruban de cuivre, visserie et câbles des lampes. Les matrices se réutilisent, les lampes restant à l'atelier. S'y ajoutent 59 € proposés (rechange, adaptateurs secteur, bornes à levier), les capteurs du chantier après inventaire, et 72 € de boîtiers et d'accus AAA si le stock n'en a pas.
+Le premier parcours demande 86 € d'achats : matrices, ruban de cuivre, visserie, entretoises et câbles des lampes. Les matrices se réutilisent, les lampes restant à l'atelier. S'y ajoutent 89 € proposés (rechange, adaptateurs secteur, bornes à levier, deux multimètres), les capteurs du chantier après inventaire, et 72 € de boîtiers et d'accus AAA si le stock n'en a pas.
 
 ## Séance 1 — Phase 1 — Découverte & prise en main
 
 **Titre :** Fabrique ta lampe et allume-la
 
-**Notions :** circuit fermé · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique · entrée analogique · seuil
+**Notions :** découpe au plan · circuit fermé · polarité de la LED · le micro:bit comme source d'énergie · sortie numérique · entrée analogique · seuil
 
-**Livrable intermédiaire :** lampe montée, LED allumée puis clignotante par programme, bandes de cuivre utilisées comme bouton qui affiche une icône au toucher
+**Livrable intermédiaire :** support découpé et plié, deux bandes de cuivre collées, LED allumée puis clignotante par programme, bandes de cuivre utilisées comme bouton qui affiche une icône au toucher
 
 ## Séance 2 — Phase 1 — Découverte & prise en main
 
 **Titre :** Compose la lumière de ta lampe
 
-**Notions :** alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée · boucle d'animation · boucle qui compte
+**Notions :** relier les deux faces par une vis · alimentation séparée et masse commune · une matrice est un ruban de LED numérotées · préparer puis afficher · luminosité bridée · boucle d'animation · boucle qui compte
 
-**Livrable intermédiaire :** matrice câblée et fixée sur la lampe, une couleur choisie et une animation
+**Livrable intermédiaire :** lampe terminée (pistes, vis, micro:bit vissé), matrice câblée et fixée, une image et une lumière qui respire
 
 ## Séance 3 — Phase 1 — Découverte & prise en main
 
 **Titre :** Fais-la s'allumer quand il fait nuit
 
-**Notions :** mesure brute · Afficher données · seuil · variable d'état · ne réagir qu'au changement
+**Notions :** mesure brute · Afficher données · seuil · variable d'état · interrupteur à bascule
 
-**Livrable intermédiaire :** lampe qui s'allume seule sous le seuil et s'éteint au-dessus
+**Livrable intermédiaire :** lampe qui s'allume seule sous le seuil et s'éteint au-dessus, mise en marche ou en veille par son bouton en cuivre
 
 ## Séance 4 — Phase 1 — Découverte & prise en main
 

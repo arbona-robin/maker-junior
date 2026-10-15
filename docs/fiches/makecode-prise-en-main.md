@@ -91,6 +91,25 @@ Une variable est une **boîte nommée** qui retient une valeur. Tu y ranges quel
 
 Deux blocs suffisent : `définir <nom> à …` pour y mettre une valeur, et le bloc `<nom>` lui-même pour la relire.
 
+## Un interrupteur : basculer un état
+
+Un même bouton allume puis éteint : à chaque appui, une variable passe de `0` à `1`, ou de `1` à `0`. Elle retient l'**état**, et le reste du programme le lit.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    if (marche == 0) {
+        marche = 1
+        basic.showIcon(IconNames.Yes)
+    } else {
+        marche = 0
+        basic.showIcon(IconNames.No)
+    }
+})
+let marche = 0
+```
+
+Ailleurs dans le programme, `si marche = 1` décide de ce qui se passe en marche. Les bandes de cuivre font aussi un bouton : `lorsque la broche P2 est activée`, dans **Entrée**, se déclenche une fois à chaque toucher, quand le doigt relie `P2` et `GND`.
+
 ## Répéter en comptant
 
 `pour index variant de 0 à 4`, dans **Boucles**, répète ce qu'il contient en comptant : `index` vaut 0 au premier tour, 1 au deuxième, et ainsi de suite jusqu'à 4. Glisse `index` dans un bloc, et chaque tour fait un peu autre chose.
@@ -150,7 +169,7 @@ Il mesure une accélération sur trois axes, en **mg** (millièmes de g). À pla
 
 Le micro:bit mesure la lumière avec **son écran**. `niveau d'intensité lumineuse`, dans **Entrée**, va de `0` (noir) à `255` (pleine lumière).
 
-Deux conséquences : l'écran doit voir la pièce, et il ne doit rien afficher pendant la mesure. Une icône allumée fausse la valeur.
+Trois conséquences : l'écran doit voir la pièce, il ne doit rien afficher pendant la mesure, et on ne le touche pas. Une icône allumée ou un doigt posé sur la carte fausse la valeur : pour faire de l'ombre, la main passe au-dessus sans toucher, ou un objet se pose devant.
 
 > [!CAUTION] Un objet qui se voit lui-même
 > Si la lumière de ta lampe arrive sur l'écran du micro:bit, elle s'allume, se voit, s'éteint, et recommence.
@@ -196,7 +215,7 @@ L'ordre compte : le premier test vrai gagne, les suivants ne sont même pas lus.
 
 ### 4. Ne réagis qu'au changement
 
-Dans `toujours`, la décision se prend plusieurs fois par seconde. Si l'action est longue (une animation, un son, un message radio), elle redémarre à chaque tour.
+Dans `toujours`, la décision se prend plusieurs fois par seconde. Si l'action ne doit arriver qu'une fois (un son, un message radio), elle se répète à chaque tour.
 
 La parade est une **variable d'état** : elle garde en mémoire ce que l'objet fait déjà.
 

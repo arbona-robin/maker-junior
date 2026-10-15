@@ -51,6 +51,7 @@ INTERDITS = [
     (r"^## Ce que (tu dois|vous devez) avoir", "checklist de fin supprimée du livre", PAGES),
     (r"\btrimestre\b", "on dit « projet »", TOUT),
     (r"temps écoulé \(ms\)", "le bloc s'appelle « temps d’exécution (ms) »", TOUT),
+    (r"lorsque le pin", "le bloc s'appelle « lorsque la broche P2 est activée »", TOUT),
     (r"quand une chaîne est reçue", "le bloc s'appelle « quand une donnée est reçue par radio »", TOUT),
     (r"ne mesure pas", "consigne retirée : « compte les carreaux » suffit", PAGES + FICHES),
 ]
@@ -77,6 +78,15 @@ for f in PAGES + FICHES:
     for n, ligne in enumerate(lignes(f), 1):
         if re.search(r"\.showColor\(", ligne):
             signaler("matrice", f, n, "`show color` : écrire `set color` puis `show changes`")
+
+# 2 ter. Matrice : une couleur choisie dans la palette de l'extension, sinon le jeune ne peut pas la reproduire en blocs.
+PALETTE = set("FFFFFF FFF1E6 FFE4B5 FFD700 FFA500 FF8C00 FF4500 E60026 FFB6C1 FF69C1 FF1493 DA70D6 BA55D3 8A2BE2 4B0082 2E0854 E6E6FA B0C4DE 87CEEB 00BFFF 1E90FF 0000CD 191970 000080 E0FFFF AFEEEE 40E0D0 00CED1 008B8B 2E8B57 006400 003300 F0FFF0 ADFF2F 7FFF00 32CD32 228B22 9ACD32 6B8E23 556B2F FFFFE0 FFFACD FFEFD5 FFDAB9 D2B48C A0522D 8B4513 1A1A1A FAFAFA E0E0E0 B8B8B8 909090 686868 404040 202020 000000 0000FF 00FF00 00FFFF FF0000 FF00FF FFFF00".split())
+for f in PAGES + FICHES:
+    for n, ligne in enumerate(lignes(f), 1):
+        if "neopixelExtended" in ligne or "strip." in ligne:
+            for c in re.findall(r"0x([0-9a-fA-F]{6})", ligne):
+                if c.upper() not in PALETTE:
+                    signaler("matrice", f, n, f"0x{c} n'est pas dans la palette de l'extension")
 
 # 3. Ordre : un bloc DF-Driver utilisé avant l'installation de l'extension, dans la même fiche.
 for f in FICHES + PAGES:

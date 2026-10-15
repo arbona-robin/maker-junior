@@ -11,19 +11,35 @@
 | Broche | Va sur |
 |---|---|
 | `V` | Le `+` du pack d'accus |
-| `G` | Le `−` du pack d'accus, **et** le `GND` du micro:bit |
+| `G` | Le `GND` du micro:bit, où arrive aussi le `−` du pack d'accus |
 | `DI` | Une broche du micro:bit, `P1` sur la lampe |
 
 La matrice prend son énergie au pack. Le micro:bit ne lui envoie que le signal.
 
 <figure class="plan" markdown>
-![Schéma du montage : le + du pack va sur V de la matrice ; le − du pack va sur G et sur le GND du micro:bit, c'est la masse commune ; P1 va sur DI ; P2 et GND vont aux deux bandes de cuivre ; le micro:bit est alimenté par son boîtier 2 × AAA](../assets/objets-connectes-s02/03-schema-montage.png)
+![Schéma du montage : le + du pack, trois accus et une fausse pile, va sur V de la matrice ; P1 va sur DI par l'écrou 1 ; P2 va à la bande bouton par sa piste et sa vis ; GND va à la bande masse par sa piste, et l'écrou GND réunit G de la matrice et le − du pack, c'est la masse commune ; le micro:bit est alimenté par son boîtier 2 × AAA](../assets/objets-connectes-s02/03-schema-montage.png)
 </figure>
 
 > [!CAUTION] Lis le dos de la carte
 > L'ordre des broches change d'un modèle à l'autre. Le signal entre par `DI`. Par `DO`, la matrice ne s'allume pas.
 
 → [Câbler un circuit : la masse commune](cabler-un-circuit.md#la-masse-commune)
+
+## Trois accus et une fausse pile
+
+La matrice lit son signal par rapport à sa propre alimentation : elle ne compte un `1` que si `DI` dépasse environ 70 % de la tension de son pack.
+
+| Pack de la matrice | Tension | Un `1` doit dépasser |
+|---|---|---|
+| 4 accus | 4,8 V | 3,4 V |
+| 3 accus | 3,6 V | 2,5 V |
+
+Le micro:bit, lui, envoie la tension qui l'alimente : 3,3 V en USB, environ 2,6 V sur son boîtier de deux accus. Sur piles, avec quatre accus dans le pack, son signal est trop faible et la matrice reste éteinte. Avec trois, il passe.
+
+Le boîtier a quatre places : la quatrième reçoit une **fausse pile**, un cylindre imprimé en 3D ([modèle `.stl`](../assets/objets-connectes-s02/fausse-pile-aa.stl)) avec un téton côté `+`. Une bande de ruban de cuivre, **d'un seul tenant**, court dans sa rainure d'un bout à l'autre : elle relie les deux contacts du boîtier, comme le ferait une pile, sans fournir de tension.
+
+> [!TIP] La lampe s'éteint quand les accus s'usent ?
+> Recharge ceux du micro:bit en premier : c'est son signal qui faiblit.
 
 ## L'extension
 

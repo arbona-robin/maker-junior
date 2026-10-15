@@ -2,11 +2,13 @@
 
 1. **[Regarde les valeurs](#1-regarde-les-valeurs)** : tu sais ce que mesure ta carte, du plein jour au noir, et tu choisis ton seuil.
 2. **[La décision](#2-la-decision)** : sous ton seuil, la lampe s'allume ; au-dessus, elle s'éteint.
-3. **[Une seule fois](#3-une-seule-fois)** : couverte, la lampe s'allume une fois, sans hoqueter.
+3. **[Ton interrupteur en cuivre](#3-ton-interrupteur-en-cuivre)** : tu touches les bandes, la lampe passe en marche ou en veille.
 
 ## 1. Regarde les valeurs
 
 **Ce que tu vas obtenir :** tes valeurs, de la salle éclairée au noir, et ton seuil.
+
+<video controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s03/video-main-courbe.mp4"></video>
 
 Le micro:bit mesure la lumière avec **son écran** : `niveau d'intensité lumineuse`, dans **Entrée**, de `0` (noir) à `255` (pleine lumière).
 
@@ -21,10 +23,13 @@ basic.forever(function () {
 
 Téléverse, USB branché, puis **Afficher données Appareil**.
 
-<span class="todo-media">[capture : la courbe de la lumière dans Afficher données, avec un creux quand la main couvre la carte]</span>
+<figure class="screenshot" markdown>
+![La courbe de la lumière dans Afficher données : autour de 190 dans la salle éclairée, elle plonge vers 0 chaque fois que la main couvre la carte](../../../assets/objets-connectes-s03/10-courbe-lumiere.png)
+</figure>
 
-> [!CAUTION] L'écran reste éteint
-> Le capteur, c'est l'écran. Une icône affichée pendant la mesure fausse la valeur.
+> [!CAUTION] L'écran reste éteint, et tu ne le touches pas
+> - Le capteur, c'est l'écran. Une icône affichée pendant la mesure fausse la valeur.
+> - Pour faire de l'ombre, passe la main au-dessus sans toucher la carte, ou pose un objet devant : un carton, une feuille. Un doigt sur la carte rend la valeur erratique.
 
 Remplis ce tableau :
 
@@ -43,6 +48,8 @@ Ton seuil est entre la pénombre et la salle éclairée. Il dépend de l'endroit
 
 **Ce que tu vas obtenir :** tu couvres la carte, la matrice s'allume ; tu la découvres, elle s'éteint.
 
+<video controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s03/video-doigt-allume.mp4"></video>
+
 Retour dans ton projet `lampe`.
 
 **À toi.** Dans `toujours` : si la lumière est sous ton seuil, allume ton ambiance. Sinon, éteins la matrice avec `clear all colors` et `show changes`.
@@ -53,7 +60,7 @@ Retour dans ton projet `lampe`.
 ```blocks
 basic.forever(function () {
     if (input.lightLevel() < 40) {
-        strip.setColor(0xff8000)
+        strip.setColor(0xff8c00)
         strip.show()
     } else {
         strip.clear()
@@ -67,45 +74,61 @@ let strip: neopixelExtended.Strip = null
 
 </details>
 
-## 3. Une seule fois
+## 3. Ton interrupteur en cuivre
 
-**Ce que tu vas obtenir :** couverte, ta lampe s'allume une fois ; découverte, elle s'éteint une fois.
+**Ce que tu vas obtenir :** tu touches les bandes de cuivre, une coche s'affiche et la lampe se met en marche ; tu les touches encore, une croix, et elle passe en veille.
 
-Si ton ambiance est une animation, elle redémarre au début à chaque tour de `toujours` : la lampe hoquette. Il faut qu'elle se souvienne si elle est déjà allumée.
+<video controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s03/video-interrupteur.mp4"></video>
 
-Une variable, `allumee`, qui vaut `0` ou `1`, garde cet **état**. La lampe ne s'allume que s'il fait sombre **et** qu'elle était éteinte ; puis `allumee` passe à `1`. Même chose dans l'autre sens.
+La lampe doit **se souvenir** si elle est en marche ou en veille. C'est le rôle d'une variable : `active`, qui vaut `1` en marche, `0` en veille.
 
-**À toi.** Ajoute la variable `allumee` à ton programme. Une variable se crée dans **Variables** → **Créer une variable…**.
+`lorsque la broche P2 est activée`, dans **Entrée**, se déclenche une seule fois à chaque toucher des deux bandes. À chaque toucher, `active` bascule : `0` devient `1`, `1` devient `0`.
+
+**À toi.**
+
+1. Crée la variable `active` : **Variables** → **Créer une variable…**.
+2. Dans `lorsque la broche P2 est activée` : si `active` vaut `0`, mets-la à `1` et montre une coche ; sinon, mets-la à `0` et montre une croix. Une seconde, puis `effacer l'écran`.
+3. Dans `toujours`, la lampe ne s'allume que si elle est active **et** qu'il fait sombre. Sinon, elle s'éteint.
 
 <details markdown>
 <summary>La solution</summary>
 
 ```blocks
+input.onPinPressed(TouchPin.P2, function () {
+    if (active == 0) {
+        active = 1
+        basic.showIcon(IconNames.Yes)
+    } else {
+        active = 0
+        basic.showIcon(IconNames.No)
+    }
+    basic.pause(1000)
+    basic.clearScreen()
+})
 basic.forever(function () {
-    if (input.lightLevel() < 40 && allumee == 0) {
-        strip.setColor(0xff8000)
+    if (active == 1 && input.lightLevel() < 40) {
+        strip.setColor(0xff8c00)
         strip.show()
-        allumee = 1
-    } else if (input.lightLevel() > 40 && allumee == 1) {
+    } else {
         strip.clear()
         strip.show()
-        allumee = 0
     }
 })
-let allumee = 0
+let active = 0
 let strip: neopixelExtended.Strip = null
 ```
 
-→ [Ne réagis qu'au changement](../../../fiches/makecode-prise-en-main.md#4-ne-reagis-quau-changement)
+→ [Un interrupteur : basculer un état](../../../fiches/makecode-prise-en-main.md#un-interrupteur-basculer-un-etat)
 
 </details>
 
+> [!TIP] La lampe clignote quand tu la touches ?
+> La coche et la croix s'affichent sur l'écran, et l'écran est aussi le capteur de lumière : pendant cette seconde, la mesure est fausse. `effacer l'écran` juste après, et tout rentre dans l'ordre.
+
 Si ta matrice éclaire l'écran du micro:bit, la lampe se voit elle-même : elle s'allume, mesure sa propre lumière, s'éteint, et recommence. L'écran du micro:bit regarde la pièce, pas la lampe.
 
-<span class="todo-media">[photo : la lampe, micro:bit à l'avant, écran tourné vers la pièce]</span>
-
 > [!IMPORTANT] Point de contrôle
-> Couvre ta lampe : elle s'allume une fois. Découvre-la : elle s'éteint une fois.
+> Touche les bandes : une coche, et la lampe s'allume quand tu couvres la carte. Touche encore : une croix, et elle reste éteinte, même couverte.
 
 ## Va plus loin
 

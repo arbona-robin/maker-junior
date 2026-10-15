@@ -28,6 +28,10 @@ Pattes enroulées en boucle : elles touchent mieux une piste de cuivre. Repère 
 - Une piste se colle d'un seul tenant. Dans un angle, **plie** le ruban sur lui-même.
 - Si l'adhésif n'est pas conducteur, deux morceaux superposés ne font pas contact : c'est pour ça qu'on plie au lieu de recouper.
 
+## Relier les deux faces du carton
+
+Une piste d'un côté, une bande de l'autre : une vis les relie. Agrandis le trou à la punaise, à travers le cuivre et le carton. La tête de la vis sur une face, une rondelle et l'écrou sur l'autre, serré sans écraser le carton : c'est la rondelle qui appuie sur le cuivre.
+
 ## Les câbles à pinces
 
 Une pince sur la piste, l'autre sur une broche. Ils se branchent et se débranchent sans rien abîmer.

@@ -36,7 +36,7 @@ La Plateforme
 
 ## Visuels (légendes)
 
-1. Une lampe en carton allumée dans la pénombre, la lumière de la matrice adoucie par le papier calque, l'emblème imprimé accroché. *(à produire, parcours test de l'animateur)*
+1. Une lampe en carton allumée dans la pénombre, la lumière de la matrice adoucie par une feuille de papier, l'emblème imprimé accroché. *(à produire, parcours test de l'animateur)*
 2. Une LED posée à cheval sur deux bandes de cuivre, allumée par le micro:bit. *(disponible : `docs/assets/objets-connectes-s01/07-led-allumee-3v.jpg`)*
 3. Douze lampes posées en ligne qui s'allument l'une après l'autre. *(à produire en séance 5)*
 4. Un objet du chantier en fonctionnement, ses mesures affichées sur le tableau de bord. *(à produire en séance 9)*

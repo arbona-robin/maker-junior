@@ -8,7 +8,7 @@
     <path d="M50 28 H140" stroke="#d32f2f"/>
     <!-- − du pack : vers G et vers GND du micro:bit -->
     <path d="M30 60 V135 H120 V118" stroke="#222"/>
-    <path d="M30 66 H125 V40 H140" stroke="#222"/>
+    <path d="M120 118 V40 H140" stroke="#222"/>
     <!-- P1 vers DI -->
     <path d="M110 94 H132 V55 H140" stroke="#f9a825"/>
     <!-- P2 vers la bande A -->
@@ -20,7 +20,6 @@
     <path d="M60 106 H70" stroke="#222"/>
   </g>
   <g fill="#222">
-    <circle cx="30" cy="66" r="1.6"/>
     <circle cx="120" cy="118" r="1.6"/>
   </g>
 
@@ -32,11 +31,11 @@
     <line x1="26" y1="37" x2="26" y2="43" stroke-width="1.6"/><line x1="29" y1="34" x2="29" y2="46"/>
     <line x1="29" y1="40" x2="34" y2="40"/>
     <line x1="34" y1="37" x2="34" y2="43" stroke-width="1.6"/><line x1="37" y1="34" x2="37" y2="46"/>
-    <line x1="37" y1="40" x2="42" y2="40"/>
-    <line x1="42" y1="37" x2="42" y2="43" stroke-width="1.6"/><line x1="45" y1="34" x2="45" y2="46"/>
+    <line x1="37" y1="40" x2="45" y2="40"/>
+    <rect x="40" y="38" width="5" height="4" fill="none" stroke-dasharray="0.8,0.6" stroke-width="0.4"/>
   </g>
-  <text x="30" y="26" font-size="3" text-anchor="middle">Pack 4 × AA NiMH</text>
-  <text x="30" y="54" font-size="2.8" text-anchor="middle" fill="#555">4,8 à 5,2 V</text>
+  <text x="30" y="26" font-size="3" text-anchor="middle">Pack : 3 accus + fausse pile</text>
+  <text x="30" y="54" font-size="2.8" text-anchor="middle" fill="#555">3,6 V</text>
   <text x="52" y="26.5" font-size="3.4" fill="#d32f2f" font-weight="bold">+</text>
   <text x="32" y="64" font-size="3.4" font-weight="bold">−</text>
 
@@ -88,7 +87,9 @@
   <!-- Bandes de cuivre de la séance 1 -->
   <rect x="150" y="99" width="42" height="6" fill="#c87533"/>
   <rect x="150" y="115" width="42" height="6" fill="#c87533"/>
-  <text x="171" y="96.5" font-size="2.8" text-anchor="middle">bouton de cuivre (séance 1)</text>
+  <text x="171" y="96.5" font-size="2.8" text-anchor="middle">bandes du dessus</text>
+  <text x="171" y="103.2" font-size="2.6" text-anchor="middle" fill="#fff">bouton</text>
+  <text x="171" y="119.2" font-size="2.6" text-anchor="middle" fill="#fff">masse</text>
 
   <!-- Fils internes des boîtiers : du + de la dernière pile au +, du − de la première au − -->
   <g fill="none" stroke-width="1" stroke-linejoin="round">
@@ -100,8 +101,13 @@
 
   <!-- Annotations -->
   <text x="95" y="25" font-size="2.8" text-anchor="middle" fill="#d32f2f">alimentation de la matrice</text>
-  <text x="78" y="64" font-size="2.8" text-anchor="middle">masse commune</text>
+  <text x="118" y="60" font-size="2.8" text-anchor="end">masse commune</text>
   <text x="134" y="72" font-size="2.8" fill="#b28704">signal</text>
+  <text x="122" y="92.5" font-size="2.4" fill="#b28704">écrou 1</text>
+  <text x="42.5" y="49" font-size="2" text-anchor="middle" fill="#555">fausse pile</text>
+  <text x="131" y="100.5" font-size="2.4" fill="#2e7d32" text-anchor="middle">piste P2 et vis</text>
+  <text x="137" y="116.5" font-size="2.4" text-anchor="middle">piste GND et vis</text>
+  <text x="121" y="124" font-size="2.4">écrou GND</text>
 
   <!-- Légende -->
   <g font-size="2.8">

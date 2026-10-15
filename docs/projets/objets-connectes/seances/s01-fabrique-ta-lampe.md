@@ -14,29 +14,49 @@
 
 ### Le support
 
-<figure markdown>
-![Le support de la lampe à plat : une bande de carton rainurée, deux bandes de cuivre collées en travers, le micro:bit tenu par deux élastiques](../../../assets/objets-connectes-s01/01-support-a-plat.jpg)
-</figure>
-
 <figure class="plan" markdown>
-![Plan de découpe du support de la lampe : une bande de carton de 285 sur 70 mm, pliée en cinq sections : un montant de 80 mm qui porte le micro:bit et deux pistes de cuivre, P2 et GND, le dessus de 40 mm avec les deux bandes de cuivre, un montant de 80 mm, la base de 65 mm, et un rabat de 20 mm](../../../assets/plans/lampe-support-v4.png)
+![Plan de découpe du support de la lampe : une bande de carton de 285 sur 70 mm, pliée en cinq sections : un montant de 80 mm qui porte le micro:bit et deux pistes de cuivre, P2 de 70 mm et GND de 86 mm, le dessus de 40 mm avec deux bandes de cuivre de 62 mm, à 6 et 22 mm du pli, un montant de 80 mm, la base de 65 mm, et un rabat de 20 mm](../../../assets/plans/lampe-support-v5.png)
 </figure>
 
-Imprime [le plan (PDF)](../../../assets/plans/lampe-support-v4.pdf) en A4, **à 100 %**. Trait plein : tu découpes. Pointillé : tu plies. Le rabat passe sous la première section, collé ou scotché.
+Imprime [le plan (PDF)](../../../assets/plans/lampe-support-v5.pdf) en A4, **à 100 %**. Colle-le sur le carton : la face imprimée sera l'intérieur de ta lampe.
 
-Plie le support le long des rainures. Le micro:bit se tient par deux élastiques, écran vers l'avant ; le boîtier de piles derrière, par deux élastiques aussi. Branche-le au micro:bit.
+<figure markdown>
+![Le plan imprimé posé sur le carton, sur le tapis de découpe, avec la règle à rebord et l'outil de découpe](../../../assets/objets-connectes-s01/01-plan-sur-carton.jpg)
+</figure>
+
+Trait plein : tu découpes, à la règle. Pointillé : tu plies. Le rabat passe sous la première section, collé ou scotché.
+
+> [!CAUTION] L'outil de découpe
+> - Règle métallique **à rebord**, toujours.
+> - Doigts **posés sur la règle, derrière le rebord**.
+> - **Plusieurs passes légères**, sans forcer.
+> - **Protection de lame remise** dès que tu poses l'outil.
 
 <div class="photo-row" markdown>
 
 <figure markdown>
-![Le support monté, vu de trois quarts : les deux bandes de cuivre sur le dessus, le micro:bit en bas, devant](../../../assets/objets-connectes-s01/02-support-monte.jpg)
+![Les deux mains sur la règle à rebord, l'outil de découpe suit le trait du plan](../../../assets/objets-connectes-s01/02-decoupe-a-la-regle.jpg)
 </figure>
 
 <figure markdown>
-![Le dos du support : le boîtier de piles tenu par deux élastiques](../../../assets/objets-connectes-s01/03-dos-boitier-piles.jpg)
+![Le support découpé et plié, face imprimée à l'intérieur](../../../assets/objets-connectes-s01/03-support-plie.jpg)
 </figure>
 
 </div>
+
+→ [Tracer, découper, plier le carton](../../../fiches/carton-tracer-decouper-plier.md)
+
+### Les deux bandes de cuivre
+
+Sur le dessus, deux vis sont dessinées, une par bande. Pique chacune avec une punaise, depuis l'intérieur : les trous traversent le carton.
+
+Retourne le support. Colle une bande de cuivre de 62 mm sur chaque trou, face extérieure : la bande `bouton` et la bande `masse`.
+
+<figure markdown>
+![Les deux bandes de cuivre collées sur le dessus, face extérieure ; la pointe de la punaise ressort au milieu d'une bande](../../../assets/objets-connectes-s01/11-bandes-exterieures.jpg)
+</figure>
+
+Le micro:bit se pose sur le premier montant, écran vers l'extérieur, tenu par deux élastiques. Il sera vissé à la séance 2.
 
 ### La LED
 
@@ -53,11 +73,11 @@ Une pince sur `3V`, une pince sur `GND`, et l'autre bout de chacune sur une band
 <div class="photo-row" markdown>
 
 <figure markdown>
-![Une pince verte sur la broche GND, une pince rouge sur la broche 3V](../../../assets/objets-connectes-s01/05-pinces-3v-gnd.jpg)
+![Une pince verte sur la broche GND, une pince rouge sur la broche 3V du micro:bit](../../../assets/objets-connectes-s01/05-pinces-3v-gnd.jpg)
 </figure>
 
 <figure markdown>
-![Les deux pinces vont des broches du micro:bit aux deux bandes de cuivre, une pince par bande](../../../assets/objets-connectes-s01/06-bandes-reliees-3v-gnd.jpg)
+![Les deux pinces au bout des deux bandes de cuivre, une pince par bande](../../../assets/objets-connectes-s01/06-bandes-reliees-3v-gnd.jpg)
 </figure>
 
 </div>
@@ -161,6 +181,16 @@ basic.forever(function () {
 
 > [!IMPORTANT] Point de contrôle
 > Montre ton bouton en cuivre à l'animateur : l'icône au toucher, rien au repos.
+
+Le micro:bit a ce test tout fait : `lorsque la broche P2 est activée`, dans **Entrée**. Il compare lui-même la valeur à un seuil, et se déclenche une fois à chaque toucher : ici, le cœur s'affiche une seconde, puis s'efface. Tu t'en serviras en séance 3.
+
+```blocks
+input.onPinPressed(TouchPin.P2, function () {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(1000)
+    basic.clearScreen()
+})
+```
 
 ## Va plus loin
 

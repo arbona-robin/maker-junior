@@ -38,7 +38,7 @@ input.onButtonPressed(Button.B, function () {
 radio.onReceivedValue(function (name, value) {
     if (name == "tous") {
         if (value == 1) {
-            strip.setColor(0xff8000)
+            strip.setColor(0xff8c00)
             strip.show()
         } else {
             strip.clear()
@@ -67,7 +67,7 @@ Une seule clé : `tour`. Sa valeur est le numéro de la lampe qui s'allume. Tout
 ```blocks
 radio.onReceivedValue(function (name, value) {
     if (name == "tour" && value == numero) {
-        strip.setColor(0xff8000)
+        strip.setColor(0xff8c00)
         strip.show()
         basic.pause(1000)
         strip.clear()
@@ -98,7 +98,7 @@ Le chef envoie `tour` = 1, puis 2, puis 3…
 ```blocks
 radio.onReceivedValue(function (name, value) {
     if (name == "tour" && value == numero) {
-        strip.setColor(0xff8000)
+        strip.setColor(0xff8c00)
         strip.show()
         basic.pause(1000)
         strip.clear()
