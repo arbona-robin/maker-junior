@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMQFYaUZ32qGB4rG_2nb2Cu8yu01Va43fipW66PljiLfC13SHmohNzKxQjjkWlkglrR2DiIDSqv0gx-WvXwjuzWSkIJ-ovYJXG3WLOA",
+ "revision": "AHj4eMR8MhGY4EBz1CTnA8Srxinc8LKkCF0Tz0pHfhQAw5Xn5wZzbRO6JPUAY-WE0rC1JDpkNEuRRJQXQHfR7uaiNv9b0YZprg-iO8SCBE4",
  "fiches": {
   "communication": [
    [
@@ -55,12 +55,10 @@
     [
      "1. La lampe allumée qui affiche un visage, l'ordinateur derrière.",
      "[image https://maker.arbona.dev/assets/objets-connectes-communication/01-matrice-visage.jpg]",
-     "2. Des mains qui découpent le support de la lampe à la règle et au cutter, le plan posé sur le carton.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-decoupe-a-la-regle.jpg]",
-     "3. Le programme MakeCode qui dessine ce visage : une grille de 8 × 8 cases, une couleur par LED.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/03-programme-visage.png]",
-     "4. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/04-tableau-de-bord.jpg]"
+     "2. Le programme MakeCode qui dessine ce visage : une grille de 8 × 8 cases, une couleur par LED.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-programme-visage.png]",
+     "3. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/03-tableau-de-bord.jpg]"
     ]
    ]
   ],
