@@ -51,6 +51,7 @@ SCOPES = [
 ]
 VARIABLE = re.compile(r"^Activité \d+$|^Séance \d+ — ")
 TAILLE = {"magnitude": 10, "unit": "PT"}
+CADRE = (300, 225)  # les images tiennent dans ce cadre, en points : la largeur de la colonne pour une photo en paysage
 BLANC = {"color": {"rgbColor": {"red": 1, "green": 1, "blue": 1}}}
 TRAIT = {"color": {"color": {"rgbColor": {"red": 0.8, "green": 0.8, "blue": 0.8}}},
          "width": {"magnitude": 0.75, "unit": "PT"}, "dashStyle": "SOLID"}
@@ -228,8 +229,12 @@ def texte_paragraphe(para):
 def memoriser_images(doc):
     IMAGES.clear()
     for k, o in doc["tabs"][0]["documentTab"].get("inlineObjects", {}).items():
-        props = o["inlineObjectProperties"]["embeddedObject"].get("imageProperties", {})
-        IMAGES[k] = props.get("sourceUri", "?")
+        objet = o["inlineObjectProperties"]["embeddedObject"]
+        url = objet.get("imageProperties", {}).get("sourceUri", "?")
+        # Une image qui ne remplit pas le cadre (ancienne taille) compte comme différente : le push la remet.
+        l, h = (objet.get("size", {}).get(c, {}).get("magnitude", 0) for c in ("width", "height"))
+        bonne = (abs(l - CADRE[0]) < 1 and h <= CADRE[1] + 1) or (abs(h - CADRE[1]) < 1 and l <= CADRE[0] + 1)
+        IMAGES[k] = url if bonne else url + " (à redimensionner)"
 
 
 def lignes_cellule(cellule):
@@ -575,7 +580,8 @@ def poser(doc, marqueurs):
     doc.ecrire([r for p, m, url in images for r in (
         {"deleteContentRange": {"range": {"startIndex": p, "endIndex": p + u16(m)}}},
         {"insertInlineImage": {"uri": url, "location": {"index": p},
-                               "objectSize": {"height": {"magnitude": 150, "unit": "PT"}}}},
+                               "objectSize": {"width": {"magnitude": CADRE[0], "unit": "PT"},
+                                              "height": {"magnitude": CADRE[1], "unit": "PT"}}}},
     )])
 
 
