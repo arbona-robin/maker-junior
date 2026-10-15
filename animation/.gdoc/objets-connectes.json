@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMSW9uuTAACQwSy_WyQou1M-lAv2O7MgMO-qF3lycVw7DvjSopip-epOb5OmQ695D7sQ11jWaBtoh_Bnq-NgwAsj__0d4Fbysj7SoWw",
+ "revision": "AHj4eMQQsEtSlmI_Cf3Ol-TISjjHhYrm4LOE0AW7WoyyMcGegnzDEd-xVCJNPeGX8rNmZiSVbKbAUhG9yssW8zwYyaO3OQAXCdvgNUqpc8U",
  "fiches": {
   "communication": [
    [
@@ -11,13 +11,13 @@
    [
     "Accroche",
     [
-     "Ta lampe s'allume toute seule à la nuit tombée, dans la couleur que tu as choisie, et d'un signal radio toutes les lampes du groupe s'allument en vague. Ensuite, ton équipe invente son propre objet connecté, de l'idée jusqu'à la démonstration."
+     "Ta lampe s'allume toute seule à la nuit tombée, dans la couleur que tu as choisie, et tu la commandes à distance, depuis un tableau de bord qui affiche toutes les lampes du groupe. Ensuite, ton équipe invente son propre objet connecté, de l'idée jusqu'à la démonstration."
     ]
    ],
    [
     "Description",
     [
-     "Tu commences par ta lampe d'ambiance : tu poses son circuit en cuivre, tu programmes ses 64 LED de couleur, tu lui fais détecter la tombée de la nuit et tu dessines en 3D l'emblème qui la décore. Puis ton équipe invente un objet connecté qui sert à tout le monde : un panneau qui indique de loin si une salle est libre, une station météo à la fenêtre, un feu qui passe au rouge quand la salle devient trop bruyante, un coffre qui s'ouvre avec un code. Tu apprends comment marche un circuit électrique, comment un objet mesure, décide et agit seul, comment plusieurs objets se parlent par radio, et comment on dessine une pièce qui s'emboîte sur une autre. Tu programmes en blocs avec MakeCode et tu modélises avec Tinkercad. Tous les objets envoient leurs mesures sur un même tableau de bord, affiché sur grand écran. À la fin, ton équipe présente son objet sur une page web que tu gardes, et vous en faites la démonstration."
+     "Tu commences par ta lampe d'ambiance : tu poses son circuit en cuivre, tu programmes ses 64 LED de couleur, tu lui fais détecter la tombée de la nuit et tu dessines en 3D le pochoir qu'elle éclaire, que tu emportes ensuite en porte-clés. Puis ton équipe invente un objet connecté qui sert à tout le monde : un panneau qui indique de loin si une salle est libre, une station météo à la fenêtre, un feu qui passe au rouge quand la salle devient trop bruyante, un coffre qui s'ouvre avec un code. Tu apprends comment marche un circuit électrique, comment un objet mesure, décide et agit seul, comment plusieurs objets se parlent par radio, et comment on dessine une pièce qui s'emboîte sur une autre. Tu programmes en blocs avec MakeCode et tu modélises avec Tinkercad. Tous les objets envoient leurs mesures sur un même tableau de bord, affiché sur grand écran. À la fin, ton équipe présente son objet sur une page web que tu gardes, et vous en faites la démonstration."
     ]
    ],
    [
@@ -53,11 +53,14 @@
    [
     "Visuels (légendes)",
     [
-     "1. Une lampe en carton allumée dans la pénombre, la lumière de la matrice adoucie par une feuille de papier, l'emblème imprimé accroché. (à produire, parcours test de l'animateur)",
-     "2. Une LED posée à cheval sur deux bandes de cuivre, allumée par le micro:bit.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-s01/07-led-allumee-3v.jpg]",
-     "3. Douze lampes posées en ligne qui s'allument l'une après l'autre. (à produire en séance 5)",
-     "4. Un objet du chantier en fonctionnement, ses mesures affichées sur le tableau de bord. (à produire en séance 9)"
+     "1. La lampe en carton allumée, la lumière de la matrice adoucie par une feuille de papier, le pochoir imprimé devant, son motif éclairé.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/01-lampe-pochoir-eclaire.jpg]",
+     "2. La matrice de 64 LED qui affiche un visage, l'ordinateur derrière.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-matrice-visage.jpg]",
+     "3. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/03-tableau-de-bord.jpg]",
+     "4. Le pochoir imprimé en 3D, qui repart en porte-clés, à côté de la feuille de papier qui adoucit la lumière.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/04-pochoir-imprime.jpg]"
     ]
    ]
   ],
@@ -77,7 +80,7 @@
    [
     "Livrable du parcours",
     [
-     "Une lampe d'ambiance par jeune : un support en carton personnalisé, un circuit en ruban de cuivre, une matrice de LED RGB dont il a composé la lumière, un capteur qui l'allume à la tombée du jour, un emblème qu'il a dessiné et fait imprimer, et une liaison radio avec les lampes des autres. Puis un produit par équipe de deux ou trois, installé et visible sur le tableau de bord commun. Chaque équipe présente son produit et ses lampes sur une page web publiée : c'est ce que chaque jeune garde du parcours."
+     "Une lampe d'ambiance par jeune : un support en carton personnalisé, un circuit en ruban de cuivre, une matrice de LED RGB dont il a composé la lumière, un capteur qui l'allume à la tombée du jour, un pochoir qu'il a dessiné et fait imprimer, que la matrice éclaire et qu'il emporte ensuite en porte-clés, et une liaison radio avec les lampes des autres. Puis un produit par équipe de deux ou trois, installé et visible sur le tableau de bord commun. Chaque équipe présente son produit et ses lampes sur une page web publiée : c'est ce que chaque jeune garde du parcours."
     ]
    ],
    [
@@ -93,7 +96,7 @@
    [
     "Description du projet",
     [
-     "Pendant les cinq premières séances, chaque jeune construit la même lampe d'ambiance, qu'il personnalise : couleurs, animation, emblème. En la construisant, il traverse toute la chaîne d'un objet connecté : un circuit électrique, de la lumière adressable, un capteur et un seuil, une pièce conçue en 3D, la radio. Les équipes de deux ou trois conçoivent ensuite un produit, choisi dans un catalogue ajusté à l'inventaire ou inventé par l'équipe, à taille réelle quand c'est possible. Tous les produits parlent le même protocole radio. Un pont USB recopie ce trafic vers un tableau de bord web, qui reconnaît chaque micro:bit et choisit l'affichage de chaque mesure d'après sa clé ; il supervise le système sans le commander : débranché, les objets continuent de fonctionner. Ils apprennent le circuit électrique et sa commande par une broche, la mesure et le seuil, l'état mémorisé, la conception d'une pièce pour une fonction, le message diffusé et le message adressé, l'alimentation d'un objet qui doit durer, le test des cas limites, et la présentation d'un choix technique sur une page web. Une notion par séance, présentée dans les dix premières minutes, pour que chacun avance ensuite à son rythme. Le rythme ne suit pas le découpage 3/6/3 : la phase 1 compte cinq séances, parce que la lampe est le socle technique de tout le chantier ; la phase 2 en compte trois, et la phase 3 deux, l'épreuve et l'installation étant réunies en séance 9."
+     "Pendant les cinq premières séances, chaque jeune construit la même lampe d'ambiance, qu'il personnalise : couleurs, animation, pochoir. En la construisant, il traverse toute la chaîne d'un objet connecté : un circuit électrique, de la lumière adressable, un capteur et un seuil, une pièce conçue en 3D, la radio. Les équipes de deux ou trois conçoivent ensuite un produit, choisi dans un catalogue ajusté à l'inventaire ou inventé par l'équipe, à taille réelle quand c'est possible. Tous les produits parlent le même protocole radio. Un pont USB recopie ce trafic vers un tableau de bord web, qui reconnaît chaque micro:bit et choisit l'affichage de chaque mesure d'après sa clé ; il supervise le système sans le commander : débranché, les objets continuent de fonctionner. Ils apprennent le circuit électrique et sa commande par une broche, la mesure et le seuil, l'état mémorisé, la conception d'une pièce pour une fonction, l'émission selon un protocole commun et l'ordre adressé, l'alimentation d'un objet qui doit durer, le test des cas limites, et la présentation d'un choix technique sur une page web. Une notion par séance, présentée dans les dix premières minutes, pour que chacun avance ensuite à son rythme. Le rythme ne suit pas le découpage 3/6/3 : la phase 1 compte cinq séances, parce que la lampe est le socle technique de tout le chantier ; la phase 2 en compte trois, et la phase 3 deux, l'épreuve et l'installation étant réunies en séance 9."
     ]
    ],
    [
@@ -185,7 +188,7 @@
      "Imprimante 3D | 1 |  |  | Possédé",
      "Ordinateurs | 12 |  |  | Possédé",
      "Par parcours |  |  |  | ",
-     "Filament PLA : emblèmes et pièces du chantier | 2 | 25 € | 50 € | À racheter",
+     "Filament PLA : pochoirs et pièces du chantier | 2 | 25 € | 50 € | À racheter",
      "Découpe : lames de rechange | 1 | 10 € | 10 € | À racheter",
      "Carton, colle, papier, ruban adhésif, élastiques | 1 | 40 € | 40 € | À racheter",
      "Casse : 15 % de l'électronique des lampes | 1 | 78 € | 78 € | À racheter",
@@ -220,17 +223,17 @@
    [
     "Séance 4 — Phase 1 — Découverte & prise en main",
     [
-     "Titre : Dessine l'emblème de ta lampe",
-     "Notions : modélisation 3D · contrainte de conception · relief et creux · îlots détachés · impression additive et slicer",
-     "Livrable intermédiaire : emblème exporté en .STL, nommé selon la convention, imprimé par l'animateur avant la séance 5"
+     "Titre : Dessine le pochoir de ta lampe",
+     "Notions : modélisation 3D · contrainte de conception · pochoir · îlots et ponts · finesse imprimable · impression additive et slicer",
+     "Livrable intermédiaire : pochoir de 40 × 40 mm exporté en .STL, nommé selon la convention, imprimé par l'animateur avant la séance 5 ; il repart avec le jeune en porte-clés"
     ]
    ],
    [
     "Séance 5 — Phase 1 — Découverte & prise en main",
     [
-     "Titre : Fais parler les lampes entre elles",
-     "Notions : une bande pour tous · message diffusé et message adressé · organisation centralisée et distribuée · ce qui arrive quand un élément tombe en panne",
-     "Livrable intermédiaire : lampe qui mesure, décide, agit, émet et reçoit ; vague réussie avec le chef, puis en relais au moins en groupe"
+     "Titre : Mets ta lampe en ligne",
+     "Notions : protocole commun : bande, numéro de série, clé · rythme d'émission · message adressé : l'adresse dans la clé · un état changé depuis deux endroits · supervision : le système fonctionne sans le tableau de bord",
+     "Livrable intermédiaire : lampe en ligne sur le tableau de bord, qui émet sa lumière et son état, passe en marche ou en veille depuis l'écran, et continue pont débranché"
     ]
    ],
    [
@@ -253,7 +256,7 @@
     "Séance 8 — Phase 2 — Exploration & création",
     [
      "Titre : Faites fonctionner votre produit et montrez ses données",
-     "Notions : schéma de câblage · alimentation d'un objet qui dure · sobriété d'émission · protocole commun · chemin de la donnée · système et supervision",
+     "Notions : schéma de câblage · alimentation d'un objet qui dure · sobriété d'émission · puissance d'émission et portée · force du signal",
      "Livrable intermédiaire : produit fonctionnel en version brute, qui émet sur le protocole commun et apparaît en ligne sur le tableau de bord"
     ]
    ],
@@ -341,7 +344,7 @@
    [
     "Lancement (10 min)",
     [
-     "Présentation de la lampe et de ce qu'elle fera à la séance 5 : une lumière choisie, qui s'allume seule à la nuit tombée et parle aux autres lampes.",
+     "Présentation de la lampe et de ce qu'elle fera à la séance 5 : une lumière choisie, qui s'allume seule à la nuit tombée, et qu'on commande à distance depuis un tableau de bord.",
      "Démonstration sur la lampe montée : la LED posée sur les bandes reliées à 3V et GND s'allume ; retournée, elle s'éteint. Le circuit est une boucle, et la LED ne laisse passer le courant que dans un sens.",
      "Modalité : Démonstration commentée"
     ]
@@ -697,7 +700,7 @@
    [
     "Clôture (5 min)",
     [
-     "Lampe dans le bac, accus en charge. Annonce : « la semaine prochaine, tu dessines l'emblème de ta lampe ».",
+     "Lampe dans le bac, accus en charge. Annonce : « la semaine prochaine, tu dessines le pochoir de ta lampe ».",
      "Modalité : Rituel de clôture"
     ]
    ],
@@ -741,26 +744,27 @@
    [
     "Séance 4",
     [
-     "Dessine l'emblème de ta lampe"
+     "Dessine le pochoir de ta lampe"
     ]
    ],
    [
     "Objectifs pédagogiques",
     [
-     "• Être capable de modéliser dans Tinkercad un emblème personnel qui respecte les contraintes imposées (50 × 50 mm au plus, 3 mm d'épaisseur, trou de 5 mm), exporté en .STL",
-     "• Être capable de repérer avant l'export ce qui ferait rater l'impression : îlot détaché, forme qui flotte"
+     "• Être capable de modéliser dans Tinkercad un pochoir personnel qui respecte les contraintes imposées (40 × 40 × 2 mm, ouvertures de 2 mm et ponts de 1,5 mm au moins, trou de 3 mm), exporté en .STL",
+     "• Être capable de repérer les îlots qu'un motif découpé détache, et de les retenir par des ponts avant l'export",
+     "• Être capable de décrire le trajet d'un modèle 3D jusqu'à l'objet imprimé, en nommant le rôle du slicer et le principe additif"
     ]
    ],
    [
     "Notions abordées",
     [
-     "Modélisation 3D : poser, coter, percer, aligner, regrouper · contrainte de conception · relief et creux · îlots détachés · impression additive, couches, slicer."
+     "Modélisation 3D : poser, coter, percer, aligner, regrouper · contrainte de conception · pochoir : ce qui traverse laisse passer la lumière · îlots et ponts · finesse minimale imprimable · impression additive, couches, slicer."
     ]
    ],
    [
     "Livrable attendu",
     [
-     "Emblème exporté en .STL, nommé lampe-<prénom>.stl, déposé dans le dossier partagé. Imprimé par l'animateur avant la séance 5, accroché à la lampe par un élastique."
+     "Pochoir exporté en .STL, nommé prenom-pochoir.stl, déposé dans le dossier partagé. Imprimé par l'animateur avant la séance 5, sur un seul plateau. Le jeune peut le poser devant sa matrice, et il repart avec lui en porte-clés."
     ]
    ],
    [
@@ -781,15 +785,16 @@
      "Par jeune",
      "• 1 ordinateur",
      "Commun",
-     "• Un emblème d'exemple, imprimé et accroché à une lampe",
-     "• Imprimante 3D, PLA"
+     "• Un pochoir d'exemple, posé devant la matrice d'une lampe allumée",
+     "• Imprimante 3D, PLA",
+     "• Une pièce imprimée ratée à effeuiller (démonstration des couches)"
     ]
    ],
    [
     "Ressources numériques",
     [
-     "• Tinkercad en mode classe, projet vide",
-     "• Le slicer en ligne (Kiri:Moto), au vidéoprojecteur",
+     "• Tinkercad, comptes préparés en mode classe, code de classe à communiquer en séance, sans adresse personnelle des jeunes",
+     "• Le slicer en ligne (Kiri:Moto), sur le poste animateur, et un pochoir d'exemple à y charger",
      "• Le livre en ligne, fiche « Modéliser et imprimer en 3D »",
      "• Le dossier partagé des fichiers .STL"
     ]
@@ -797,19 +802,21 @@
    [
     "Lancement (10 min)",
     [
-     "L'emblème d'exemple accroché à la lampe par un élastique. Les contraintes au tableau : 50 × 50 mm au plus, 3 mm d'épaisseur, un trou de 5 mm avec 3 mm de matière autour. Tous les emblèmes partent sur un seul plateau : un emblème hors cotes ne s'imprime pas.",
-     "À démontrer au lancement : poser une forme et taper ses cotes, passer une forme en perçage, aligner, regrouper.",
+     "Le pochoir d'exemple, devant la matrice allumée : le motif s'éclaire. Chacun pourra le poser sur sa lampe, puis l'emporter en porte-clés. Les contraintes au tableau : 40 × 40 × 2 mm, des ouvertures de 2 mm et des ponts de 1,5 mm au moins, un trou de 3 mm qui ne touche pas le bord. Les douze pochoirs partent sur un seul plateau de 180 × 180 mm : un pochoir hors cotes ne s'imprime pas.",
+     "Les gestes de la CAO sont démontrés au vidéoprojecteur, jeunes loin de leur ordinateur : poser une forme et taper ses cotes, ajouter du texte, l'aligner, le passer en perçage et vérifier en vue de face qu'il traverse, regrouper, ajouter une forme. Puis la connexion à la classe Tinkercad, tous ensemble ; ensuite chacun avance à son rythme.",
      "Modalité : Démonstration commentée"
     ]
    ],
    [
     "Activité 1 (55 min)",
     [
-     "Dessine ton emblème",
+     "Dessine ton pochoir",
      "Description :",
-     "Depuis un projet vide dans la classe Tinkercad. Une forme de base (forme simple ou Scribble), un motif en relief ou en creux, le trou d'accroche. Vue de face avant chaque regroupement : un relief posé, un creux qui traverse.",
-     "Vérification avant l'export : les îlots détachés (intérieur des lettres fermées en creux), et rien qui flotte.",
-     "Point de contrôle animateur : cotes, trou et matière autour, rien de détaché, fichier bien nommé. Validé avant l'export.",
+     "Chacun part d'un projet vide dans la classe Tinkercad : une Boîte de 40 × 40 × 2 mm, le trou de porte-clés de 3 mm dans un coin, le texte en perçage qui traverse la plaque, puis tout regroupé. Une fois les îlots traités, une forme de la palette en perçage à côté du texte. Le texte agrandi : un motif large se lit mieux une fois éclairé.",
+     "La vérification avant export est le moment pédagogique de l'activité. Plutôt qu'annoncer le piège d'avance, on fait raisonner : l'imprimante empile des couches et ne pose rien dans le vide. Deux questions : est-ce que tout tient ? est-ce que tout s'imprime ? Si non, on modifie.",
+     "Le cas qui tombe à tous les coups : le centre des lettres fermées (R, o, A) n'est plus relié à rien et tombe. Deux solutions au choix du jeune : un pont, petite Boîte pleine de 1,5 mm au moins, comme sur les lettres des pochoirs de peinture ; ou la lettre évidée en entier par un cylindre en perçage. Le pont se pose après le premier regroupement, puis on regroupe à nouveau : posé dans le même groupe que le texte, il serait percé avec lui.",
+     "Export en .STL, nommé selon la convention, déposé dans le dossier partagé.",
+     "Point de contrôle animateur : 40 × 40 × 2 mm, chaque îlot tenu par un pont ou évidé, ouvertures et ponts assez larges, trou qui ne touche pas le bord, fichier bien nommé et terminé par .stl. Validé avant l'export : après, le pochoir part tel quel.",
      "Modalité : Production individuelle en autonomie"
     ]
    ],
@@ -818,43 +825,48 @@
     [
      "De l'écran à l'objet",
      "Description :",
-     "Au vidéoprojecteur, sur un emblème du groupe (10 min) : le principe additif, couche par couche ; le slicer qui tranche la pièce ; la durée affichée ; ce que devient un îlot détaché. Puis le plateau : les emblèmes du groupe disposés ensemble, la durée totale lue. Les impressions sont lancées par l'animateur après la séance.",
-     "Ceux qui ont fini passent à la variante + (15 min).",
+     "Le principe additif (10 min) : on n'enlève pas de la matière, on empile des couches de plastique fondu. Une pièce ratée passe de main en main et s'effeuille.",
+     "Le slicer en ligne est montré à l'écran sur un pochoir du groupe. La machine ne comprend pas le modèle, elle comprend des déplacements : le slicer tranche l'objet et écrit la liste des mouvements. Aperçu couche par couche au curseur : ce que devient un îlot sans pont, une ouverture trop fine. La durée affichée. Enfin le plateau : les pochoirs du groupe disposés ensemble, en grille de 4 × 3, la durée totale lue. Les impressions sont lancées par l'animateur après la séance.",
+     "Le reste du temps, chacun termine son pochoir ; ceux qui ont fini passent à la variante +.",
      "Modalité : Démonstration commentée, puis production individuelle en autonomie"
     ]
    ],
    [
     "Rétrospective (10 min)",
     [
-     "Chacun dit ce que représente son emblème, et ce qui a été le plus difficile à dessiner.",
+     "Chacun dit ce que représente son pochoir, et où il a dû ajouter un pont.",
      "Modalité : Tour de table / partage oral"
     ]
    ],
    [
     "Clôture (5 min)",
     [
-     "Fichiers déposés, ordinateurs fermés, lampes dans les bacs. Annonce : « la semaine prochaine, ton emblème est là, et les lampes se parlent ».",
+     "Fichiers déposés, ordinateurs fermés, lampes dans les bacs. Annonce : « la semaine prochaine, ton pochoir est là, et ta lampe passe en ligne ».",
      "Modalité : Rituel de clôture"
     ]
    ],
    [
     "Variante +",
     [
-     "Un relief à deux hauteurs · des motifs en creux qui laissent passer la lumière de la matrice."
+     "Une forme dessinée à main levée avec Scribble, en perçage, puis les deux questions à nouveau."
     ]
    ],
    [
     "Variante −",
     [
-     "Une base fournie dans la classe Tinkercad, trou d'accroche compris, à personnaliser d'un motif."
+     "Une plaque fournie dans la classe Tinkercad, trou de porte-clés compris, à percer d'un motif ; une police pochoir, qui a déjà ses ponts."
     ]
    ],
    [
     "Points de vigilance",
     [
-     "• Douze emblèmes à imprimer en une semaine : lire la durée totale au slicer en fin de séance. Un emblème de 3 mm d'épaisseur reste court à imprimer.",
-     "• Le texte en creux crée des îlots : c'est le défaut le plus fréquent, à vérifier au point de contrôle.",
-     "• Tinkercad en mode classe : vérifier avant la séance que les comptes de la classe sont actifs."
+     "• Les douze pochoirs tiennent sur un plateau de 180 × 180 mm, en grille de 4 × 3, à 40 × 40 mm chacun. Lire la durée totale au slicer en fin de séance : à 2 mm d'épaisseur, le plateau reste court à imprimer.",
+     "• Le texte découpé crée des îlots : c'est le défaut le plus fréquent, à vérifier au point de contrôle.",
+     "• Une ouverture de moins de 2 mm se bouche à l'impression, un pont de moins de 1,5 mm casse au démoulage.",
+     "• Tinkercad en mode classe : vérifier avant la séance que les comptes de la classe sont actifs.",
+     "• Prévoir la transmission des fichiers : mal cadrée, cette étape mange dix minutes. Filet de sécurité : l'animateur peut se connecter à la classe Tinkercad et exporter lui-même les pochoirs manquants.",
+     "• L'extension .stl saute au téléchargement selon le navigateur : le vérifier au point de contrôle.",
+     "• Le trou de porte-clés ne touche pas le bord : sans matière autour, le pochoir casse au premier arrachement de clés."
     ]
    ],
    [
@@ -874,32 +886,33 @@
    [
     "Séance 5",
     [
-     "Fais parler les lampes entre elles"
+     "Mets ta lampe en ligne"
     ]
    ],
    [
     "Objectifs pédagogiques",
     [
-     "• Être capable de programmer une lampe qui réagit à un message diffusé à toutes, et à un message dont la valeur désigne son numéro",
-     "• Être capable de comparer une vague menée par un chef d'orchestre et une vague en relais, en expliquant ce qui arrive quand une lampe est éteinte"
+     "• Être capable de programmer une lampe qui émet ses mesures selon le protocole commun (bande, numéro de série, clé, une émission toutes les 5 secondes), vérifiable par sa carte en ligne sur le tableau de bord",
+     "• Être capable de programmer la réception d'un ordre adressé par sa clé, qui change l'état de la lampe comme le fait l'interrupteur en cuivre",
+     "• Être capable d'expliquer la différence entre superviser et faire fonctionner, en constatant que la lampe continue quand le pont est débranché"
     ]
    ],
    [
     "Notions abordées",
     [
-     "Une bande pour tous · message diffusé et message adressé · organisation centralisée et distribuée · ce qui arrive quand un élément tombe en panne."
+     "Protocole commun : bande, numéro de série, clé, valeur · rythme d'émission · deux boucles qui tournent en même temps · message adressé : l'adresse dans la clé · un état changé depuis deux endroits · supervision : le système fonctionne sans le tableau de bord."
     ]
    ],
    [
     "Livrable attendu",
     [
-     "Lampe avec son emblème accroché, qui réagit au message diffusé tous. Vague réussie avec le chef, puis en relais au moins en groupe de trois ou quatre. Avec les séances 3 et 4, la lampe mesure, décide, agit, émet et reçoit."
+     "Lampe en ligne sur le tableau de bord, qui émet lum et inter<numéro> toutes les 5 secondes, passe en marche ou en veille depuis l'interrupteur de l'écran, et continue de fonctionner pont débranché. Avec les séances 3 et 4, la lampe mesure, décide, agit, émet et reçoit un ordre."
     ]
    ],
    [
     "Prérequis",
     [
-     "Séance 3 : lampe qui s'allume seule. Séance 4 : emblème imprimé par l'animateur entre les séances."
+     "Séance 3 : lampe qui s'allume seule, interrupteur en cuivre et variable active. Séance 4 : pochoir imprimé par l'animateur entre les séances."
     ]
    ],
    [
@@ -913,9 +926,10 @@
     [
      "Par jeune",
      "• Sa lampe, son micro:bit, ses deux boîtiers d'accus chargés",
-     "• Son emblème imprimé, un élastique",
+     "• Son pochoir imprimé",
      "Commun",
-     "• Le micro:bit chef d'orchestre de l'animateur, numéro 0",
+     "• Le pont : un micro:bit programmé, branché en USB à l'ordinateur de l'animateur",
+     "• Vidéoprojecteur ou grand écran",
      "• Étiquettes numérotées de 1 à 12, une par lampe"
     ]
    ],
@@ -923,81 +937,83 @@
     "Ressources numériques",
     [
      "• MakeCode, catégorie Radio",
-     "• Le livre en ligne, fiche « Prendre en main MakeCode », section radio"
+     "• Le tableau de bord, ouvert dans Chrome ou Edge, pont connecté : préparation dans pont.md",
+     "• Le livre en ligne : le catalogue, section « La langue commune »"
     ]
    ],
    [
     "Lancement (10 min)",
     [
-     "Les emblèmes (5 min) : chacun accroche le sien. Lecture rapide des pièces : les couches visibles, la première couche, ce qui a bavé.",
-     "Le protocole (5 min) : pour que deux machines se comprennent, il leur faut le même canal et le même vocabulaire. Rappel du projet Rover pour ceux qui l'ont fait : chacun avait sa bande de fréquence, et sa télécommande ne parlait qu'à son rover. Ici, tout le monde est sur la même bande, la 40 : chaque lampe entend tous les messages. Chaque lampe reçoit son numéro, de 1 à 12, collé sur la lampe.",
+     "Remise des pochoirs, nominative (5 min). Chacun regarde le sien de près : les couches visibles, la première couche, ce qui a bavé. On fait circuler deux ou trois rebuts du plateau (un îlot tombé, une ouverture bouchée) et on les relie à la vérification faite en séance 4 : est-ce que tout tient, est-ce que tout s'imprime ? Qui le souhaite pose son pochoir devant sa matrice, sous l'élastique, la feuille de papier derrière.",
+     "Le tableau de bord au grand écran, en mode démo (5 min). Une carte par micro:bit, ses mesures, un interrupteur. Le chemin d'une mesure : la lampe, la radio, le pont, l'écran. Pour que l'écran comprenne tout le monde, une langue commune : la bande 40, le numéro de série, une clé courte par mesure, une émission toutes les 5 secondes. Chaque lampe reçoit son numéro, de 1 à 12, collé sur la lampe.",
      "Modalité : Démonstration commentée"
     ]
    ],
    [
-    "Activité 1 (20 min)",
+    "Activité 1 (35 min)",
     [
-     "Le message diffusé",
+     "Ta lampe émet",
      "Description :",
-     "Le projet lampe est dupliqué en lampe-radio, et le contenu de toujours retiré : sinon le mode nuit allume toutes les lampes dans le noir et on ne voit plus rien. L'ambiance reste.",
-     "Bouton A : envoyer tous = 1. Bouton B : envoyer tous = 0. À la réception de tous, la lampe allume son ambiance ou s'éteint. Un seul appui, et toutes les lampes répondent. On éteint la lumière de la salle. C'est un message diffusé.",
+     "Dans le projet lampe de la séance 3, mode nuit et cuivre compris. La bande et le numéro de série dans au démarrage. Un second toujours envoie lum et inter<numéro> = active, puis attend 5 secondes : deux boucles tournent en même temps, l'une décide, l'autre émet.",
+     "Chaque carte apparaît au grand écran dès le premier message. Le jeune la renomme d'un clic. lum bouge quand on couvre la lampe ; l'interrupteur suit le cuivre, avec jusqu'à 5 secondes de retard : c'est le rythme d'émission, à faire constater plutôt qu'à expliquer.",
      "Modalité : Production individuelle en autonomie"
     ]
    ],
    [
-    "Activité 2 (25 min)",
+    "Activité 2 (30 min)",
     [
-     "La vague, avec un chef",
+     "Le tableau de bord la commande",
      "Description :",
-     "Une seule clé, tour, dont la valeur est le numéro de la lampe qui doit s'allumer. Une lampe qui reçoit tour = son numéro s'allume 1 seconde, puis s'éteint. Toutes entendent le message, une seule réagit : c'est un message adressé, et l'adresse est dans la valeur.",
-     "Le micro:bit de l'animateur, le chef, envoie tour = 1, puis 2, puis 3, une seconde d'écart. On éteint le chef au milieu : plus rien ne se passe.",
-     "Modalité : Production individuelle en autonomie"
+     "Quand on bascule un interrupteur à l'écran, le pont envoie la même clé avec la nouvelle valeur. Toutes les lampes l'entendent, une seule réagit : l'adresse est dans la clé. La lampe met active à la valeur reçue, sans autre changement : le cuivre reste celui de la séance 3. Un même état se change depuis deux endroits, et l'écran affiche toujours l'état réel.",
+     "La démonstration pour finir (10 min) : lumière de la salle éteinte, toutes les lampes en marche s'allument. Depuis le grand écran, l'animateur, puis quelques jeunes, les mettent en veille une par une, puis les rallument. Si la pénombre n'est pas possible, chacun pose un papier sur l'écran de son micro:bit : le capteur se croit dans le noir.",
+     "Modalité : Production individuelle en autonomie, puis démonstration commentée"
     ]
    ],
    [
-    "Activité 3 (35 min)",
+    "Activité 3 (15 min)",
     [
-     "La vague, en relais",
+     "Sans le pont",
      "Description :",
-     "Plus de chef. Chaque lampe, quand elle a fini, envoie tour = son numéro + 1. Un seul programme, identique partout, chaque lampe ne connaissant que son numéro. La première est lancée au bouton A. Par groupes de trois ou quatre d'abord, numéros consécutifs.",
-     "Puis on éteint une lampe du milieu : la chaîne s'arrête. On compare avec le chef : la panne du chef arrête tout, la panne d'une lampe arrête la suite.",
-     "Le bouquet pour finir (10 min) : une tentative à douze, lumière éteinte.",
-     "Point de contrôle animateur : chaque lampe réagit à tous et à son tour ; la vague en relais passe dans son groupe.",
-     "Modalité : Défi / hackathon chronométré"
+     "L'animateur débranche le pont. Le tableau de bord affiche « Pont débranché » et se fige. Chacun touche son cuivre, couvre sa lampe : elle marche toujours. Le tableau de bord supervise, il ne fait rien fonctionner. C'est l'exigence d'autonomie que tous les produits du chantier devront tenir.",
+     "Point de contrôle animateur : chaque lampe en ligne sous son nom, lum et inter<numéro> affichés, l'interrupteur de l'écran la met en marche et en veille, et pont débranché, elle continue.",
+     "Modalité : Démonstration commentée"
     ]
    ],
    [
     "Rétrospective (10 min)",
     [
-     "« Lequel préférez-vous, le chef ou le relais, et pourquoi ? » Chacun se place d'un côté de la salle et défend son choix.",
-     "Modalité : Débat mouvant (4 coins)"
+     "« Le tableau de bord tombe en panne : qu'est-ce qui s'arrête, qu'est-ce qui continue ? » Puis : « à quoi la lampe 7 reconnaît-elle un ordre qui lui est destiné ? »",
+     "Modalité : Tour de table / partage oral"
     ]
    ],
    [
     "Clôture (5 min)",
     [
-     "Lampes dans les bacs, accus en charge. Fin de la lampe : le chantier commence la semaine prochaine. Nommer devant le groupe ce que chaque lampe sait faire maintenant.",
+     "Lampes dans les bacs, accus en charge. Fin de la lampe : le chantier commence la semaine prochaine. Nommer devant le groupe ce que chaque lampe sait faire maintenant : mesurer, décider, agir, émettre, recevoir un ordre.",
      "Modalité : Rituel de clôture"
     ]
    ],
    [
     "Variante +",
     [
-     "La parade du relais : la lampe qui a passé le tour attend 2 secondes, et saute au numéro d'après si elle n'a rien entendu · une couleur envoyée à une seule lampe, avec l'adresse dans la clé (lampe7) · le mode nuit et la radio dans le même programme, avec le logo pour changer de mode."
+     "inter<numéro> envoyé aussitôt qu'on touche le cuivre, sans attendre les 5 secondes · une deuxième mesure, temp, affichée en jauge · le pochoir éclairé : une feuille de papier au format de la matrice entre la matrice et le pochoir, et set NeoPixel 8x8 qui n'allume que les LED derrière le motif, une couleur par partie."
     ]
    ],
    [
     "Variante −",
     [
-     "Programme de réception fourni, à compléter du numéro · la vague en relais à deux lampes seulement."
+     "Le second toujours fourni, à compléter de son numéro · la réception fournie, à compléter de son numéro."
     ]
    ],
    [
     "Points de vigilance",
     [
-     "• Douze cartes sur une bande : pas d'émission continue dans toujours. On émet à l'appui ou à la fin d'un tour, jamais en boucle.",
+     "• Douze cartes sur une bande : la pause de 5 secondes dans la boucle d'émission n'est pas négociable. Sans elle, les messages se gênent et les accus se vident.",
+     "• Une clé par lampe : deux lampes avec le même numéro se commandent ensemble. Vérifier les étiquettes et les clés au point de contrôle.",
+     "• Le numéro de série oublié dans au démarrage fait apparaître une carte « Sans numéro de série » : c'est le premier réflexe à vérifier.",
      "• Le simulateur ne suit pas la bande de fréquence : les essais se font sur les cartes.",
-     "• La bande 40 sera aussi celle du chantier et du tableau de bord. Ne pas la changer ensuite."
+     "• La bande 40 sera aussi celle du chantier. Ne pas la changer ensuite.",
+     "• Le pont se prépare avant la séance : programme, connexion, essai avec un micro:bit de test."
     ]
    ],
    [
@@ -1074,7 +1090,7 @@
    [
     "Lancement (10 min)",
     [
-     "Le changement de phase : chacun a sa lampe, on passe à des objets pour le lieu, en équipe. Le tableau de bord projeté montre déjà quelques micro:bit de test : c'est là que les produits apparaîtront, chacun avec ses mesures.",
+     "Le changement de phase : chacun a sa lampe, on passe à des objets pour le lieu, en équipe. Le tableau de bord projeté montre les lampes de la séance 5 : c'est là que les produits apparaîtront, chacun avec ses mesures.",
      "Les deux effecteurs que la lampe n'a pas utilisés. Le servomoteur va à un angle et le tient : on le force, il résiste et revient. Le moteur à courant continu tourne sans savoir où il en est, et il demande une carte de puissance (la DFR0548, que les anciens du projet Rover connaissent).",
      "Aucun n'est obligatoire : on choisit un composant parce que le produit le demande.",
      "Modalité : Démonstration commentée"
@@ -1308,19 +1324,19 @@
     [
      "• Être capable de dessiner le schéma de câblage de son produit et de le câbler conformément, alimentation choisie selon l'emplacement",
      "• Être capable de programmer un produit qui émet ses mesures selon le protocole commun, à un rythme sobre, vérifié sur le tableau de bord",
-     "• Être capable de décrire le chemin d'une donnée, du capteur à son affichage sur le tableau de bord"
+     "• Être capable de régler la puissance d'émission de son produit au plus bas qui garde la liaison, en lisant la force du signal sur le tableau de bord"
     ]
    ],
    [
     "Notions abordées",
     [
-     "Schéma de câblage · alimentation d'un objet qui dure · sobriété d'émission · protocole commun · chemin de la donnée · système et supervision."
+     "Schéma de câblage · alimentation d'un objet qui dure · sobriété d'émission · puissance d'émission et portée · force du signal."
     ]
    ],
    [
     "Livrable attendu",
     [
-     "Produit qui fonctionne en version brute, câblé selon son schéma. Il émet ses clés sur la bande 40, numéro de série compris, toutes les 5 à 10 secondes. Il apparaît en ligne sur le tableau de bord, avec l'affichage qui correspond à ses clés et le nom choisi par l'équipe."
+     "Produit qui fonctionne en version brute, câblé selon son schéma. Il émet ses clés sur la bande 40, numéro de série compris, toutes les 5 à 10 secondes. Il apparaît en ligne sur le tableau de bord, avec l'affichage qui correspond à ses clés et le nom choisi par l'équipe, à la puissance d'émission la plus basse qui garde deux barres."
     ]
    ],
    [
@@ -1363,6 +1379,7 @@
     [
      "Un schéma de câblage se lit avant de câbler : un exemple au tableau, avec la masse commune, déjà vue sur la lampe.",
      "L'énergie : un produit qui doit tenir des semaines ne s'alimente pas comme une démonstration. Secteur USB pour un produit fixe près d'une prise, accus pour un produit mobile. Un micro:bit qui émet sans arrêt vide un jeu d'accus en quelques jours ; en émettant toutes les 5 à 10 secondes et en éteignant l'écran, il tient bien plus longtemps.",
+     "La puissance et la portée, au grand écran : un micro:bit émet à 7, l'animateur s'éloigne avec, et les barres de sa carte baissent. Le même à 0 passe hors ligne à quelques mètres. Plus fort, c'est plus loin, et plus d'accus.",
      "Modalité : Démonstration commentée"
     ]
    ],
@@ -1384,15 +1401,15 @@
     [
      "Le tableau de bord",
      "Description :",
-     "Démonstration au vidéoprojecteur (5 min). Le pont branché en USB recopie le trafic radio vers le navigateur. Chaque micro:bit apparaît dès son premier message, chaque clé avec son affichage : jauge, voyant, compteur, ou courbe pour une clé inconnue. Puis on débranche le pont devant le groupe : le tableau de bord se fige, mais les produits continuent de fonctionner. Le système et sa supervision sont deux choses différentes.",
-     "Chaque équipe vérifie que son micro:bit est en ligne, donne-lui son nom dans le tableau de bord, et regarde si l'affichage convient à sa mesure. Sinon, elle change de clé.",
-     "Modalité : Démonstration commentée, puis production individuelle en autonomie"
+     "Le tableau de bord est connu depuis la séance 5. Chaque équipe vérifie que son micro:bit est en ligne, lui donne son nom, et regarde si l'affichage convient à sa mesure. Sinon, elle change de clé.",
+     "Puis la puissance : radio définir puissance de transmission, de 0 à 7. L'équipe essaie 7, puis 1, et regarde les barres de sa carte. Elle garde la plus basse qui laisse deux barres. Le réglage définitif se fait depuis l'emplacement, en séance 9.",
+     "Modalité : Pair-programming (binôme sur 1 poste)"
     ]
    ],
    [
     "Rétrospective (10 min)",
     [
-     "Le tableau de bord projeté, tous les produits en ligne. Chaque équipe suit le chemin de sa donnée à voix haute : capteur, micro:bit, radio, pont, navigateur, affichage.",
+     "Le tableau de bord projeté, tous les produits en ligne. Chaque équipe dit la puissance qu'elle a choisie, et ce qu'elle gagne à ne pas émettre plus fort.",
      "Modalité : Tour de table / partage oral"
     ]
    ],
@@ -1421,6 +1438,7 @@
      "• Le tableau de bord et le pont se testent sur le poste cible avant la séance.",
      "• Moteurs et servomoteurs passent par la DFR0548 ou par leur propre alimentation, jamais par une broche du micro:bit.",
      "• Un adaptateur secteur USB alimente le micro:bit par son câble USB. Il ne se branche jamais en même temps qu'un boîtier d'accus.",
+     "• Une puissance trop basse fait passer la carte hors ligne par moments : c'est le signe qu'il faut monter d'un cran.",
      "• Une clé fait 8 caractères au plus. Au-delà, elle est tronquée sans prévenir. Le bloc radio régler le numéro de série de transmission est le plus souvent oublié : sans lui, le tableau de bord ne sait pas d'où vient le message."
     ]
    ],
@@ -1663,7 +1681,7 @@
     [
      "La démonstration",
      "Description :",
-     "Visite menée par les jeunes, dans l'ordre du scénario. À chaque produit, l'équipe présente en une minute, démontre, projette sa page, et répond aux questions. La vague des lampes ouvre la visite si l'éclairage le permet.",
+     "Visite menée par les jeunes, dans l'ordre du scénario. À chaque produit, l'équipe présente en une minute, démontre, projette sa page, et répond aux questions. Les douze lampes, en ligne sur le tableau de bord, ouvrent la visite si l'éclairage le permet.",
      "Modalité : Présentation / démonstration orale"
     ]
    ],
