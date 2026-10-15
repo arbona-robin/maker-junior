@@ -384,7 +384,9 @@ def modifie_dans_le_doc(doc, projet, filtre):
             if k not in m or k not in a:
                 lignes.append(f"  {k} : {'supprimée' if k not in m else 'ajoutée'} dans le Doc")
                 continue
-            ua, um = unites(a[k][1]), unites(m[k][1])
+            # La taille d'une image n'est pas une modification du Doc : seul son contenu compte ici.
+            ua = unites([l.replace(" (à redimensionner)", "") for l in a[k][1]])
+            um = unites([l.replace(" (à redimensionner)", "") for l in m[k][1]])
             if ua != um or a[k][0] != m[k][0]:
                 lignes.append(f"  {k}")
                 lignes += [f"    {'avant' if l[0] == '-' else 'Doc  '} {l[2:]}"
