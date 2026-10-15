@@ -18,7 +18,7 @@
 
 Si tu veux, pose ton pochoir devant la matrice, sous l'élastique, la feuille de papier derrière.
 
-L'animateur te donne un numéro, de 1 à 12. Colle-le sur ta lampe.
+Ta lampe prend le numéro de ton poste : c'est lui qui la distingue des autres.
 
 Reprends ton projet `lampe`. Dans `au démarrage`, sous ce qui y est déjà, ajoute `radio régler la bande de fréquence` à `40` et `radio régler le numéro de série de transmission` à **vrai**, dans **Radio**. Le tableau de bord reconnaît ta carte à son numéro de série.
 
@@ -108,8 +108,17 @@ Touche le cuivre, couvre ta lampe : elle marche toujours.
 Coupe une feuille de papier au format de la matrice : posée entre la matrice et le pochoir, elle fond la lumière des LED.
 
 <div class="photo-row" markdown>
+
+<figure markdown>
 ![Le pochoir imprimé « Ro », avec son toit, à côté d'une feuille de papier coupée au format de la matrice](../../../assets/objets-connectes-s05/01-papier-et-pochoir.jpg)
+<figcaption>La feuille, au format de la matrice, et le pochoir.</figcaption>
+</figure>
+
+<figure markdown>
 ![La matrice sans pochoir : seules les LED derrière le motif sont allumées, une rangée bleue pour le toit, un bloc blanc pour le prénom](../../../assets/objets-connectes-s05/02-leds-derriere-le-pochoir.jpg)
+<figcaption>Sans le pochoir : seules les LED derrière le motif s'allument.</figcaption>
+</figure>
+
 </div>
 
 Dans ton `toujours`, remplace `set color` par `set NeoPixel 8x8` : n'allume que les LED derrière ton pochoir, une couleur par partie, et laisse les autres en noir.

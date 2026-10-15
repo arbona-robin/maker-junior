@@ -69,9 +69,11 @@ Moteurs entre les rabats, axes parallèles, `M1` à gauche. Deux élastiques cro
 <div class="photo-row" markdown>
 <figure markdown>
 ![Le châssis plié avec les deux moteurs TT posés](../../../assets/rover-s01/03-chassis-plie-moteurs.jpg)
+<figcaption>Les moteurs entre les rabats.</figcaption>
 </figure>
 <figure markdown>
 ![Vue de dessus des deux moteurs positionnés sur le châssis](../../../assets/rover-s01/04-moteurs-positionnes.jpg)
+<figcaption>Vu de dessus : axes parallèles, <code>M1</code> à gauche.</figcaption>
 </figure>
 <figure markdown>
 ![Les rabats latéraux relevés autour des moteurs](../../../assets/rover-s01/05-rabats-lateraux-releves.jpg)
@@ -80,6 +82,7 @@ Moteurs entre les rabats, axes parallèles, `M1` à gauche. Deux élastiques cro
 
 <figure markdown>
 ![Les moteurs bloqués par deux élastiques croisés](../../../assets/rover-s01/06-moteurs-bloques-elastiques.jpg)
+<figcaption>Deux élastiques croisés.</figcaption>
 </figure>
 
 Appuie sur un axe : si le moteur bouge dans son logement, resserre.
@@ -106,6 +109,7 @@ Languette arrière rabattue dessous et scotchée : c'est ta roue folle. Enfonce 
 
 <figure markdown>
 ![La languette arrière rabattue sous le châssis et maintenue au ruban adhésif](../../../assets/rover-s01/10-languette-arriere-scotchee.jpg)
+<figcaption>La languette scotchée dessous : ta roue folle.</figcaption>
 </figure>
 
 <div class="photo-row" markdown>

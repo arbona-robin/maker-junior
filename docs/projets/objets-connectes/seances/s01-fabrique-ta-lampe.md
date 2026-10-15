@@ -53,6 +53,7 @@ Retourne le support. Colle une bande de cuivre de 62 mm sur chaque trou, face ex
 
 <figure markdown>
 ![Les deux bandes de cuivre collées sur le dessus, face extérieure ; la pointe de la punaise ressort au milieu d'une bande](../../../assets/objets-connectes-s01/11-bandes-exterieures.jpg)
+<figcaption>La pointe de la punaise marque le trou : la bande se colle dessus.</figcaption>
 </figure>
 
 Le micro:bit se pose sur le premier montant, écran vers l'extérieur, tenu par deux élastiques. Il sera vissé à la séance 2.
@@ -61,6 +62,7 @@ Le micro:bit se pose sur le premier montant, écran vers l'extérieur, tenu par 
 
 <figure markdown>
 ![Une LED jaune dont les deux pattes sont repliées et enroulées en boucle](../../../assets/objets-connectes-s01/04-led-pattes-enroulees.jpg)
+<figcaption>Repère la patte longue avant d'enrouler : c'est le <code>+</code>.</figcaption>
 </figure>
 
 Repère la **patte longue** : c'est le `+`. Puis replie et enroule chaque patte en boucle : elle touchera mieux le cuivre.

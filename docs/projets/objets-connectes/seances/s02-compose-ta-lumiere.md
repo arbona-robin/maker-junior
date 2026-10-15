@@ -24,10 +24,12 @@ Tout le câblage de ta lampe tient sur ce schéma. Garde-le sous les yeux pendan
 
 <figure markdown>
 ![Avant : le premier prototype, micro:bit et pack d'accus noyés sous les câbles à pinces](../../../assets/objets-connectes-s02/00-avant-neuf-cables.jpg)
+<figcaption>Avant : neuf câbles.</figcaption>
 </figure>
 
 <figure markdown>
 ![Après : la lampe montée, la matrice sur son montant, trois câbles seulement](../../../assets/objets-connectes-s02/14-apres-trois-cables.jpg)
+<figcaption>Après : trois câbles.</figcaption>
 </figure>
 
 </div>
@@ -88,10 +90,12 @@ D'abord, glisse le fil `−` du pack sous la rondelle de l'écrou de `GND`, et r
 
 <figure markdown>
 ![Le fil noir du pack glissé sous la rondelle de l'écrou GND](../../../assets/objets-connectes-s02/10-moins-du-pack.jpg)
+<figcaption>Le fil <code>−</code> du pack, sous la rondelle de <code>GND</code>.</figcaption>
 </figure>
 
 <figure markdown>
 ![La face intérieure : une pince jaune sur l'écrou de l'anneau 1, une pince noire sur l'écrou de GND](../../../assets/objets-connectes-s02/09-pinces-ecrous.jpg)
+<figcaption><code>DI</code> sur l'écrou de l'anneau <code>1</code>, <code>G</code> sur l'écrou de <code>GND</code>.</figcaption>
 </figure>
 
 </div>
