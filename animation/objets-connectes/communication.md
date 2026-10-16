@@ -12,7 +12,7 @@ Tu fabriques ta propre lampe : elle s'allume seule à la nuit tombée, et tu la 
 
 ## Description
 
-La lampe est ton premier chantier. Tu traces son support en carton et tu fabriques son circuit en cuivre. Tu programmes ses LED, les mêmes que celles des rubans lumineux, dans les couleurs que tu choisis. Un capteur l'allume à la nuit tombée. Enfin, tu dessines en 3D le pochoir qu'elle éclaire. En la fabriquant, tu découvres chaque étape de la création d'un objet connecté. Ensuite, en équipe, vous créez un objet de votre choix qui répond à un besoin réel. Cette fois, c'est vous qui décidez : vous dessinez le plan, vous câblez, vous programmez et vous testez, avec tout ce que la lampe vous a appris. Vous vous partagez les rôles, et vous présentez vos idées devant un public. Au bout du parcours, votre objet est installé et fonctionne pour de vrai, et il a sa page web.
+La lampe est ton premier chantier. Tu traces son support en carton et tu fabriques son circuit en cuivre. Tu programmes ses LED, les mêmes que celles des rubans lumineux, dans les couleurs que tu choisis. Un capteur l'allume à la nuit tombée. Enfin, tu dessines en 3D le pochoir qu'elle éclaire. En la fabriquant, tu découvres chaque étape de la création d'un objet connecté. Ensuite, en équipe, vous créez un objet de votre choix qui répond à un besoin réel. Cette fois, c'est vous qui décidez : vous dessinez le plan, vous câblez, vous programmez et vous testez, avec tout ce que la lampe vous a appris. Vous vous partagez les rôles. Au bout du parcours, votre objet est installé et fonctionne pour de vrai, et il a sa propre page web, qui le présente comme un vrai produit.
 
 ## Durée
 
