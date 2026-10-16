@@ -4,15 +4,15 @@ Gabarit : [`animation/gabarits/communication.md`](../gabarits/communication.md) 
 
 ## Titre
 
-Fabrique ta lampe et invente ton objet connecté
+Fabrique ta lampe pixel et invente ton objet connecté
 
 ## Accroche
 
-Tu fabriques ta propre lampe : elle s'allume seule à la nuit tombée, et tu la pilotes à distance. Ensuite, en équipe, tu imagines un objet utile pour le lieu, tu le construis et tu l'installes.
+Une lampe qui affiche tes dessins en pixel art, s'allume toute seule quand la nuit tombe et se commande depuis un écran : c'est toi qui la fabriques. Ensuite, en équipe, vous inventez votre propre objet connecté, et vous l'installez pour de vrai.
 
 ## Description
 
-La lampe est ton premier chantier. Tu traces son support en carton et tu fabriques son circuit en cuivre. Tu programmes ses LED, les mêmes que celles des rubans lumineux, dans les couleurs que tu choisis. Un capteur l'allume à la nuit tombée. Enfin, tu dessines en 3D le pochoir qu'elle éclaire. En la fabriquant, tu découvres chaque étape de la création d'un objet connecté. Ensuite, en équipe, vous créez un objet de votre choix qui répond à un besoin réel. Cette fois, c'est vous qui décidez : vous dessinez le plan, vous câblez, vous programmez et vous testez, avec tout ce que la lampe vous a appris. Vous vous partagez les rôles. Au bout du parcours, votre objet est installé et fonctionne pour de vrai, et il a sa propre page web, qui le présente comme un vrai produit.
+La lampe est ton premier chantier. Tu traces son support en carton et tu fabriques son circuit en cuivre. Tu programmes ses 64 LED, les mêmes que celles des rubans lumineux, et tu y dessines tes images en pixel art. Un capteur l'allume à la nuit tombée. Enfin, tu dessines en 3D le pochoir qu'elle éclaire. En la fabriquant, tu découvres chaque étape de la création d'un objet connecté. Ensuite, en équipe, vous créez un objet de votre choix qui répond à un besoin réel. Cette fois, c'est vous qui décidez : vous dessinez le plan, vous câblez, vous programmez et vous testez, avec tout ce que la lampe vous a appris. Vous vous partagez les rôles. Au bout du parcours, votre objet est installé et fonctionne pour de vrai, et il a sa propre page web, qui le présente comme un vrai produit.
 
 ## Durée
 

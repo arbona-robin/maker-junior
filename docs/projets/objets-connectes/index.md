@@ -1,6 +1,6 @@
-# Projet Objets connectés — fabrique ta lampe et invente ton objet connecté
+# Projet Objets connectés — fabrique ta lampe pixel et invente ton objet connecté
 
-Tu fabriques ta propre lampe : elle s'allume seule à la nuit tombée, et tu la pilotes à distance. Ensuite, en équipe, tu imagines un objet utile pour le lieu, tu le construis et tu l'installes.
+Une lampe qui affiche tes dessins en pixel art, s'allume toute seule quand la nuit tombe et se commande depuis un écran : c'est toi qui la fabriques. Ensuite, en équipe, vous inventez votre propre objet connecté, et vous l'installez pour de vrai.
 
 Le parcours se fait en deux temps. D'abord ta lampe, que tu construis seul : un circuit, de la lumière, un capteur, une pièce en 3D, la radio. Ensuite, à deux ou trois, un objet qui sert à tout le monde, et qui envoie ses mesures au tableau de bord comme tous les autres.
 

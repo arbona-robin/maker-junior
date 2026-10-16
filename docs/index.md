@@ -20,7 +20,7 @@ Il sert à trois moments :
 
 - **[Projet Objets connectés](projets/objets-connectes/index.md)**
 
-    Fabrique ta lampe et invente ton objet connecté.
+    Fabrique ta lampe pixel et invente ton objet connecté.
 
 - **[Fiches](fiches/index.md)**
 
