@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMS-YOPbKWBD13rQIstZaNLxOXqp6nflRNXP6bM5J75PV64YA71lUTw-2XJmBYRjB1g4mY_mreBm7EhmvHpeLXw6D52tuQlgbDDpCZ0",
+ "revision": "AHj4eMQ3ICGEPrtRMkwLY5wlXGMsfi5IHRvHecAOoFPhBaUpQugACzT0WArcdMtToVTKJY3yeC6xxPOoNZZT2e-lTuhw5nwYh98KXxZZSfA",
  "fiches": {
   "communication": [
    [
@@ -53,11 +53,11 @@
    [
     "Visuels (légendes)",
     [
-     "1. Quatre lampes allumées sur la table de l'atelier, chacune de sa couleur, les jeunes autour.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/01-lampes-sur-la-table.jpg]",
-     "2. La lampe allumée qui affiche un visage, l'ordinateur derrière.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-matrice-visage.jpg]",
-     "3. Le programme MakeCode qui dessine ce visage : une grille de 8 × 8 cases, une couleur par LED.",
+     "1. La lampe pixel allumée : un visage en pixel art, chaque point de couleur net derrière le diffuseur imprimé en 3D.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/01-lampe-pixel.jpg]",
+     "2. Quatre lampes allumées sur la table de l'atelier, chacune de sa couleur, les jeunes autour.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-lampes-sur-la-table.jpg]",
+     "3. Le programme MakeCode qui dessine un visage : une grille de 8 × 8 cases, une couleur par LED.",
      "[image https://maker.arbona.dev/assets/objets-connectes-communication/03-programme-visage.png]",
      "4. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs.",
      "[image https://maker.arbona.dev/assets/objets-connectes-communication/04-tableau-de-bord.jpg]"
