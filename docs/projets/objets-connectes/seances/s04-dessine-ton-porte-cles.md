@@ -116,4 +116,4 @@ Nomme le fichier `prenom-pixel.stl` et dépose-le où l'animateur te l'indique.
 
 ## Va plus loin
 
-- **En relief sur une plaque.** Plutôt qu'une silhouette : une plaque de 40 × 40 × 2 mm, et tes pixels posés dessus. Rien ne peut tomber, et les cases vides se lisent en creux.
+- **En relief sur une plaque.** Plutôt qu'une silhouette : une plaque de 40 × 40 × 2 mm, et tes pixels posés dessus, à 2 et 1 mm en damier. Rien ne peut tomber, et les cases vides se lisent en creux.
