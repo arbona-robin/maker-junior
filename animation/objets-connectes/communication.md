@@ -37,7 +37,7 @@ La Plateforme
 ## Visuels (légendes)
 
 1. La lampe pixel allumée : un visage en pixel art, chaque point de couleur net derrière le diffuseur imprimé en 3D. *(disponible : `docs/assets/objets-connectes-communication/01-lampe-pixel.jpg`)*
-2. Quatre lampes allumées sur la table de l'atelier, chacune de sa couleur, les jeunes autour. *(disponible : `docs/assets/objets-connectes-communication/02-lampes-sur-la-table.jpg`)*
+2. Quatre lampes pixel allumées sur la table de l'atelier, chacune avec son visage, les jeunes autour. *(disponible : `docs/assets/objets-connectes-communication/02-lampes-pixel-sur-la-table.jpg`)*
 3. Le programme MakeCode qui dessine un visage : une grille de 8 × 8 cases, une couleur par LED. *(disponible : `docs/assets/objets-connectes-communication/03-programme-visage.png`)*
 4. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs. *(disponible : `docs/assets/objets-connectes-communication/04-tableau-de-bord.jpg`)*
 
