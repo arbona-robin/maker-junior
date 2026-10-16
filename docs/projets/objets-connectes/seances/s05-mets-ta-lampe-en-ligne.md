@@ -57,6 +57,8 @@ Téléverse. Sur le grand écran, ta carte apparaît : clique sur son nom pour l
 
 **Ce que tu vas obtenir :** on bascule l'interrupteur de ta carte sur le grand écran, ta lampe passe en marche ou en veille.
 
+<video class="portrait" controls playsinline preload="metadata" src="../../../../assets/objets-connectes-s05/video-tableau-de-bord.mp4"></video>
+
 Quand on bascule l'interrupteur, le pont envoie `inter7` = `1` ou `0`. Toutes les lampes l'entendent : seule la 7 doit réagir. L'adresse est dans la clé.
 
 **À toi.** Prends le `quand une donnée est reçue par radio` qui apporte `nom` et `valeur`. Si `nom` = `inter7`, `définir active à valeur`.
