@@ -36,9 +36,10 @@ La Plateforme
 
 ## Visuels (légendes)
 
-1. La lampe allumée qui affiche un visage, l'ordinateur derrière. *(disponible : `docs/assets/objets-connectes-communication/01-matrice-visage.jpg`)*
-2. Le programme MakeCode qui dessine ce visage : une grille de 8 × 8 cases, une couleur par LED. *(disponible : `docs/assets/objets-connectes-communication/02-programme-visage.png`)*
-3. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs. *(disponible : `docs/assets/objets-connectes-communication/03-tableau-de-bord.jpg`)*
+1. Quatre lampes allumées sur la table de l'atelier, chacune de sa couleur, les jeunes autour. *(disponible : `docs/assets/objets-connectes-communication/01-lampes-sur-la-table.jpg`)*
+2. La lampe allumée qui affiche un visage, l'ordinateur derrière. *(disponible : `docs/assets/objets-connectes-communication/02-matrice-visage.jpg`)*
+3. Le programme MakeCode qui dessine ce visage : une grille de 8 × 8 cases, une couleur par LED. *(disponible : `docs/assets/objets-connectes-communication/03-programme-visage.png`)*
+4. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs. *(disponible : `docs/assets/objets-connectes-communication/04-tableau-de-bord.jpg`)*
 
 ---
 
