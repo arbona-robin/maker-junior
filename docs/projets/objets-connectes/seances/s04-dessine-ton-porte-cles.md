@@ -57,6 +57,12 @@ Sélectionne un pixel sur deux, en damier, en maintenant <kbd>Maj</kbd>. Règle 
 ![La grille en vue 3D : un pixel sur deux passé en orange et descendu à 3 mm, avec la palette de couleurs ouverte](../../../assets/objets-connectes-s04/24-damier-hauteur-3.png)
 </figure>
 
+Ton porte-clés peut prendre deux formes : en silhouette, ou en relief sur une plaque. Dans les deux cas, chaque pixel touche un voisin par un côté.
+
+<figure markdown>
+![Vu de dessus : à gauche, le smiley en relief sur une plaque ; au milieu, le smiley en silhouette avec sa patte de porte-clés ; à droite, deux pixels qui ne se touchent que par un coin, puis le pixel ajouté qui les relie par un côté](../../../assets/objets-connectes-s04/25-silhouette-relief-piege.png)
+</figure>
+
 ## 2. Ton dessin
 
 **Ce que tu vas obtenir :** ton personnage pixel, comme sur ta lampe.
@@ -64,14 +70,10 @@ Sélectionne un pixel sur deux, en damier, en maintenant <kbd>Maj</kbd>. Règle 
 Reprends le dessin de ta lampe, ou invente-le. Supprime les pixels éteints : il ne reste que ton dessin.
 
 <figure class="screenshot" markdown>
-![Un smiley en damier rouge et orange : les yeux et la bouche sont des cases vides, une Boîte de 10 × 10 mm attend au-dessus](../../../assets/objets-connectes-s04/25-smiley.png)
+![Un smiley en damier rouge et orange : les yeux et la bouche sont des cases vides, une Boîte de 10 × 10 mm attend au-dessus](../../../assets/objets-connectes-s04/26-smiley.png)
 </figure>
 
 **Chaque pixel touche un voisin par un côté.** Deux pixels qui ne se touchent que par un coin cassent à la première chute.
-
-<figure markdown>
-![Vu de dessus : à gauche, le smiley en relief sur une plaque ; au milieu, le smiley en silhouette avec sa patte de porte-clés ; à droite, deux pixels qui ne se touchent que par un coin, puis le pixel ajouté qui les relie par un côté](../../../assets/objets-connectes-s04/26-silhouette-relief-piege.png)
-</figure>
 
 ### La patte de porte-clés
 
