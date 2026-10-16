@@ -62,7 +62,7 @@ Sélectionne un pixel sur deux, en damier, en maintenant <kbd>Maj</kbd>. Règle 
 Ton porte-clés peut prendre deux formes. En silhouette, seuls les pixels existent : chacun doit toucher un voisin par un côté. En relief sur une plaque, la plaque tient tout : les pixels peuvent être séparés.
 
 <figure markdown>
-![Vu de dessus : à gauche, le smiley en relief sur une plaque ; au milieu, le smiley en silhouette avec sa patte de porte-clés ; à droite, deux pixels qui ne se touchent que par un coin, puis le pixel ajouté qui les relie par un côté](../../../assets/objets-connectes-s04/25-silhouette-relief-piege.png)
+![Vu de dessus : à gauche, le smiley en silhouette avec sa patte de porte-clés ; au milieu, en alternative, le smiley en relief sur une plaque ; à droite, deux pixels qui ne se touchent que par un coin, puis le pixel ajouté qui les relie par un côté](../../../assets/objets-connectes-s04/25-silhouette-relief-piege.png)
 </figure>
 
 ## 2. Ton dessin
