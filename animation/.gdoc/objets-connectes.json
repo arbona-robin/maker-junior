@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMTdDhwTWMKeDZR6DpAPSynVbUbz1SJx3qYEPMjYWbfu7WuVvd4qFU-Zk45rYsZIa1_tu98pUhLwQRVegCnK7eis4j5njiBZ0DD_GZ4",
+ "revision": "AHj4eMQM7Yf7pYdfLCYED_jKFhlbZWZSq1S-Xj5dtcbiLMZwIVbRpE5GUQCGc8wMGOT5fqIde9kQufpn1hYBnNRkVR_q26F21EIrSSTxsmQ",
  "fiches": {
   "communication": [
    [
@@ -17,7 +17,7 @@
    [
     "Description",
     [
-     "La lampe est ton premier chantier. Tu traces son support en carton et tu fabriques son circuit en cuivre. Tu programmes ses 64 LED, les mêmes que celles des rubans lumineux, et tu y dessines tes images en pixel art. Un capteur l'allume à la nuit tombée. Enfin, tu dessines en 3D le pochoir qu'elle éclaire. En la fabriquant, tu découvres chaque étape de la création d'un objet connecté. Ensuite, en équipe, vous créez un objet de votre choix qui répond à un besoin réel. Cette fois, c'est vous qui décidez : vous dessinez le plan, vous câblez, vous programmez et vous testez, avec tout ce que la lampe vous a appris. Vous vous partagez les rôles. Au bout du parcours, votre objet est installé et fonctionne pour de vrai, et il a sa propre page web, qui le présente comme un vrai produit."
+     "La lampe est ton premier chantier. Tu traces son support en carton et tu fabriques son circuit en cuivre. Tu programmes ses 64 LED, les mêmes que celles des rubans lumineux, et tu y dessines tes images en pixel art. Un capteur l'allume à la nuit tombée. Enfin, tu dessines en 3D ton personnage pixel, que tu emportes en porte-clés. En la fabriquant, tu découvres chaque étape de la création d'un objet connecté. Ensuite, en équipe, vous créez un objet de votre choix qui répond à un besoin réel. Cette fois, c'est vous qui décidez : vous dessinez le plan, vous câblez, vous programmez et vous testez, avec tout ce que la lampe vous a appris. Vous vous partagez les rôles. Au bout du parcours, votre objet est installé et fonctionne pour de vrai, et il a sa propre page web, qui le présente comme un vrai produit."
     ]
    ],
    [
@@ -80,7 +80,7 @@
    [
     "Livrable du parcours",
     [
-     "Une lampe d'ambiance par jeune : un support en carton personnalisé, un circuit en ruban de cuivre, une matrice de LED RGB dont il a composé la lumière, un capteur qui l'allume à la tombée du jour, un pochoir qu'il a dessiné et fait imprimer, que la matrice éclaire et qu'il emporte ensuite en porte-clés, et une liaison radio avec les lampes des autres. Puis un produit par équipe de deux ou trois, installé et visible sur le tableau de bord commun. Chaque équipe présente son produit et ses lampes sur une page web publiée : c'est ce que chaque jeune garde du parcours."
+     "Une lampe d'ambiance par jeune : un support en carton personnalisé, un circuit en ruban de cuivre, une matrice de LED RGB dont il a composé la lumière, un capteur qui l'allume à la tombée du jour, un porte-clés pixel qu'il a dessiné en 3D d'après l'image de sa lampe, et qu'il emporte, et une liaison radio avec les lampes des autres. Puis un produit par équipe de deux ou trois, installé et visible sur le tableau de bord commun. Chaque équipe présente son produit et ses lampes sur une page web publiée : c'est ce que chaque jeune garde du parcours."
     ]
    ],
    [
@@ -96,7 +96,7 @@
    [
     "Description du projet",
     [
-     "Pendant les cinq premières séances, chaque jeune construit la même lampe d'ambiance, qu'il personnalise : couleurs, animation, pochoir. En la construisant, il traverse toute la chaîne d'un objet connecté : un circuit électrique, de la lumière adressable, un capteur et un seuil, une pièce conçue en 3D, la radio. Les équipes de deux ou trois conçoivent ensuite un produit, choisi dans un catalogue ajusté à l'inventaire ou inventé par l'équipe, à taille réelle quand c'est possible. Tous les produits parlent le même protocole radio. Un pont USB recopie ce trafic vers un tableau de bord web, qui reconnaît chaque micro:bit et choisit l'affichage de chaque mesure d'après sa clé ; il supervise le système sans le commander : débranché, les objets continuent de fonctionner. Ils apprennent le circuit électrique et sa commande par une broche, la mesure et le seuil, l'état mémorisé, la conception d'une pièce pour une fonction, l'émission selon un protocole commun et l'ordre adressé, l'alimentation d'un objet qui doit durer, le test des cas limites, et la présentation d'un choix technique sur une page web. Une notion par séance, présentée dans les dix premières minutes, pour que chacun avance ensuite à son rythme. Le rythme ne suit pas le découpage 3/6/3 : la phase 1 compte cinq séances, parce que la lampe est le socle technique de tout le chantier ; la phase 2 en compte trois, et la phase 3 deux, l'épreuve et l'installation étant réunies en séance 9."
+     "Pendant les cinq premières séances, chaque jeune construit la même lampe d'ambiance, qu'il personnalise : couleurs, images en pixel art, porte-clés. En la construisant, il traverse toute la chaîne d'un objet connecté : un circuit électrique, de la lumière adressable, un capteur et un seuil, une pièce conçue en 3D, la radio. Les équipes de deux ou trois conçoivent ensuite un produit, choisi dans un catalogue ajusté à l'inventaire ou inventé par l'équipe, à taille réelle quand c'est possible. Tous les produits parlent le même protocole radio. Un pont USB recopie ce trafic vers un tableau de bord web, qui reconnaît chaque micro:bit et choisit l'affichage de chaque mesure d'après sa clé ; il supervise le système sans le commander : débranché, les objets continuent de fonctionner. Ils apprennent le circuit électrique et sa commande par une broche, la mesure et le seuil, l'état mémorisé, la conception d'une pièce pour une fonction, l'émission selon un protocole commun et l'ordre adressé, l'alimentation d'un objet qui doit durer, le test des cas limites, et la présentation d'un choix technique sur une page web. Une notion par séance, présentée dans les dix premières minutes, pour que chacun avance ensuite à son rythme. Le rythme ne suit pas le découpage 3/6/3 : la phase 1 compte cinq séances, parce que la lampe est le socle technique de tout le chantier ; la phase 2 en compte trois, et la phase 3 deux, l'épreuve et l'installation étant réunies en séance 9."
     ]
    ],
    [
@@ -188,7 +188,7 @@
      "Imprimante 3D | 1 |  |  | Possédé",
      "Ordinateurs | 12 |  |  | Possédé",
      "Par parcours |  |  |  | ",
-     "Filament PLA : pochoirs et pièces du chantier | 2 | 25 € | 50 € | À racheter",
+     "Filament PLA : porte-clés et pièces du chantier | 2 | 25 € | 50 € | À racheter",
      "Découpe : lames de rechange | 1 | 10 € | 10 € | À racheter",
      "Carton, colle, papier, ruban adhésif, élastiques | 1 | 40 € | 40 € | À racheter",
      "Casse : 15 % de l'électronique des lampes | 1 | 78 € | 78 € | À racheter",
@@ -223,9 +223,9 @@
    [
     "Séance 4 — Phase 1 — Découverte & prise en main",
     [
-     "Titre : Dessine le pochoir de ta lampe",
-     "Notions : modélisation 3D · contrainte de conception · pochoir · îlots et ponts · finesse imprimable · impression additive et slicer",
-     "Livrable intermédiaire : pochoir de 40 × 40 mm exporté en .STL, nommé selon la convention, imprimé par l'animateur avant la séance 5 ; il repart avec le jeune en porte-clés"
+     "Titre : Dessine ton porte-clés pixel",
+     "Notions : modélisation 3D · grille d'accrochage, dupliquer, aligner · contrainte de conception · une pièce tient par ses faces · impression additive et slicer",
+     "Livrable intermédiaire : porte-clés pixel de 8 × 8 pixels au plus exporté en .STL, nommé selon la convention, imprimé par l'animateur avant la séance 5 ; le jeune l'emporte"
     ]
    ],
    [
@@ -675,7 +675,7 @@
    [
     "Clôture (5 min)",
     [
-     "Lampe dans le bac, accus en charge. Annonce : « la semaine prochaine, tu dessines le pochoir de ta lampe ».",
+     "Lampe dans le bac, accus en charge. Annonce : « la semaine prochaine, tu dessines ton porte-clés pixel ».",
      "Modalité : Rituel de clôture"
     ]
    ],
@@ -719,33 +719,33 @@
    [
     "Séance 4",
     [
-     "Dessine le pochoir de ta lampe"
+     "Dessine ton porte-clés pixel"
     ]
    ],
    [
     "Objectifs pédagogiques",
     [
-     "• Être capable de modéliser dans Tinkercad un pochoir personnel qui respecte les contraintes imposées (40 × 40 × 2 mm, ouvertures de 2 mm et ponts de 1,5 mm au moins, trou de 3 mm), exporté en .STL",
-     "• Être capable de repérer les îlots qu'un motif découpé détache, et de les retenir par des ponts avant l'export",
+     "• Être capable de modéliser dans Tinkercad un porte-clés pixel personnel qui respecte les contraintes imposées (pixels de 5 × 5 mm, 8 × 8 pixels au plus, patte de 10 × 10 × 2 mm percée de 3 mm), exporté en .STL",
+     "• Être capable de construire une pièce répétitive en dupliquant et en alignant une forme sur une grille d'accrochage",
      "• Être capable de décrire le trajet d'un modèle 3D jusqu'à l'objet imprimé, en nommant le rôle du slicer et le principe additif"
     ]
    ],
    [
     "Notions abordées",
     [
-     "Modélisation 3D : poser, coter, percer, aligner, regrouper · contrainte de conception · pochoir : ce qui traverse laisse passer la lumière · îlots et ponts · finesse minimale imprimable · impression additive, couches, slicer."
+     "Modélisation 3D : poser, coter, dupliquer, aligner, percer, regrouper · grille d'accrochage · contrainte de conception · une pièce tient si chaque partie touche sa voisine par une face · relief pour lire un dessin d'une seule couleur · impression additive, couches, slicer."
     ]
    ],
    [
     "Livrable attendu",
     [
-     "Pochoir exporté en .STL, nommé prenom-pochoir.stl, déposé dans le dossier partagé. Imprimé par l'animateur avant la séance 5, sur un seul plateau. Le jeune peut le poser devant sa matrice, et il repart avec lui en porte-clés."
+     "Porte-clés pixel exporté en .STL, nommé prenom-pixel.stl, déposé dans le dossier partagé. Imprimé par l'animateur avant la séance 5, les douze sur un seul plateau. Il reprend le dessin de la lampe, et le jeune l'emporte."
     ]
    ],
    [
     "Prérequis",
     [
-     "Aucun en 3D. Ceux qui ont fait la plaque du projet Rover connaissent déjà les gestes."
+     "Séance 2 : une image dessinée sur la matrice. Aucun prérequis en 3D ; ceux qui ont fait la plaque du projet Rover connaissent déjà les gestes."
     ]
    ],
    [
@@ -760,7 +760,7 @@
      "Par jeune",
      "• 1 ordinateur",
      "Commun",
-     "• Un pochoir d'exemple, posé devant la matrice d'une lampe allumée",
+     "• Un porte-clés pixel d'exemple, imprimé, et une lampe qui affiche le même dessin",
      "• Imprimante 3D, PLA",
      "• Une pièce imprimée ratée à effeuiller (démonstration des couches)"
     ]
@@ -769,7 +769,7 @@
     "Ressources numériques",
     [
      "• Tinkercad, comptes préparés en mode classe, code de classe à communiquer en séance, sans adresse personnelle des jeunes",
-     "• Le slicer en ligne (Kiri:Moto), sur le poste animateur, et un pochoir d'exemple à y charger",
+     "• Le slicer en ligne (Kiri:Moto), sur le poste animateur, et un porte-clés d'exemple à y charger",
      "• Le livre en ligne, fiche « Modéliser et imprimer en 3D »",
      "• Le dossier partagé des fichiers .STL"
     ]
@@ -777,21 +777,21 @@
    [
     "Lancement (10 min)",
     [
-     "Le pochoir d'exemple, devant la matrice allumée : le motif s'éclaire. Chacun pourra le poser sur sa lampe, puis l'emporter en porte-clés. Les contraintes au tableau : 40 × 40 × 2 mm, des ouvertures de 2 mm et des ponts de 1,5 mm au moins, un trou de 3 mm qui ne touche pas le bord. Les douze pochoirs partent sur un seul plateau de 180 × 180 mm : un pochoir hors cotes ne s'imprime pas.",
-     "Les gestes de la CAO sont démontrés au vidéoprojecteur, jeunes loin de leur ordinateur : poser une forme et taper ses cotes, ajouter du texte, l'aligner, le passer en perçage et vérifier en vue de face qu'il traverse, regrouper, ajouter une forme. Puis la connexion à la classe Tinkercad, tous ensemble ; ensuite chacun avance à son rythme.",
+     "Le porte-clés d'exemple, à côté de la lampe qui affiche le même dessin : le pixel art passe de la lumière à l'objet qu'on tient dans la main. Les contraintes au tableau : un pixel fait 5 × 5 mm, le dessin 8 × 8 pixels au plus, la patte 10 × 10 × 2 mm, percée de 3 mm. Les douze porte-clés partent sur un seul plateau de 180 × 180 mm : un porte-clés hors cotes ne s'imprime pas.",
+     "Les gestes de la CAO sont démontrés au vidéoprojecteur, jeunes loin de leur ordinateur : régler la grille d'accrochage, poser une Boîte et taper ses cotes, la dupliquer et la décaler d'une case, sélectionner plusieurs formes, aligner, passer en perçage, regrouper. Puis la connexion à la classe Tinkercad, tous ensemble ; ensuite chacun avance à son rythme.",
      "Modalité : Démonstration commentée"
     ]
    ],
    [
     "Activité 1 (55 min)",
     [
-     "Dessine ton pochoir",
+     "Dessine ton porte-clés",
      "Description :",
-     "Chacun part d'un projet vide dans la classe Tinkercad : une Boîte de 40 × 40 × 2 mm, le trou de porte-clés de 3 mm dans un coin, le texte en perçage qui traverse la plaque, puis tout regroupé. Une fois les îlots traités, une forme de la palette en perçage à côté du texte. Le texte agrandi : un motif large se lit mieux une fois éclairé.",
-     "La vérification avant export est le moment pédagogique de l'activité. Plutôt qu'annoncer le piège d'avance, on fait raisonner : l'imprimante empile des couches et ne pose rien dans le vide. Deux questions : est-ce que tout tient ? est-ce que tout s'imprime ? Si non, on modifie.",
-     "Le cas qui tombe à tous les coups : le centre des lettres fermées (R, o, A) n'est plus relié à rien et tombe. Deux solutions au choix du jeune : un pont, petite Boîte pleine de 1,5 mm au moins, comme sur les lettres des pochoirs de peinture ; ou la lettre évidée en entier par un cylindre en perçage. Le pont se pose après le premier regroupement, puis on regroupe à nouveau : posé dans le même groupe que le texte, il serait percé avec lui.",
+     "Chacun part d'un projet vide dans la classe Tinkercad. La grille d'accrochage à 5 mm, une Boîte de 5 × 5 × 4 mm, dupliquée en rangée de 8, puis en grille de 8 × 8 : la grille de la lampe. Un pixel sur deux passe à 3 mm de haut, en damier : une fois imprimé d'une seule couleur, ce relief fait ressortir chaque pixel. Puis le dessin, celui de la lampe ou un autre, en supprimant les pixels éteints. Enfin la patte de 10 × 10 × 2 mm, collée au dessin, et son trou : un cylindre de 3 mm, centré par Aligner, passé en perçage.",
+     "La vérification avant export est le moment pédagogique de l'activité. Plutôt qu'annoncer le piège d'avance, on fait raisonner : l'imprimante empile des couches et ne pose rien dans le vide, et une pièce ne tient que par ses faces. Est-ce que tout tient ?",
+     "Le cas qui tombe à tous les coups : deux pixels qui ne se touchent que par un coin, en diagonale. À l'écran, la pièce paraît entière ; imprimée, elle casse à cet endroit. Un pixel de plus les relie par un côté. Le schéma de la page élève le montre.",
      "Export en .STL, nommé selon la convention, déposé dans le dossier partagé.",
-     "Point de contrôle animateur : 40 × 40 × 2 mm, chaque îlot tenu par un pont ou évidé, ouvertures et ponts assez larges, trou qui ne touche pas le bord, fichier bien nommé et terminé par .stl. Validé avant l'export : après, le pochoir part tel quel.",
+     "Point de contrôle animateur : pixels de 5 × 5 mm, 8 × 8 au plus, chaque pixel relié à un voisin par un côté, patte collée au dessin et percée de part en part, fichier bien nommé et terminé par .stl. Validé avant l'export : après, le porte-clés part tel quel.",
      "Modalité : Production individuelle en autonomie"
     ]
    ],
@@ -801,47 +801,47 @@
      "De l'écran à l'objet",
      "Description :",
      "Le principe additif (10 min) : on n'enlève pas de la matière, on empile des couches de plastique fondu. Une pièce ratée passe de main en main et s'effeuille.",
-     "Le slicer en ligne est montré à l'écran sur un pochoir du groupe. La machine ne comprend pas le modèle, elle comprend des déplacements : le slicer tranche l'objet et écrit la liste des mouvements. Aperçu couche par couche au curseur : ce que devient un îlot sans pont, une ouverture trop fine. La durée affichée. Enfin le plateau : les pochoirs du groupe disposés ensemble, en grille de 4 × 3, la durée totale lue. Les impressions sont lancées par l'animateur après la séance.",
-     "Le reste du temps, chacun termine son pochoir ; ceux qui ont fini passent à la variante +.",
+     "Le slicer en ligne est montré à l'écran sur un porte-clés du groupe. La machine ne comprend pas le modèle, elle comprend des déplacements : le slicer tranche l'objet et écrit la liste des mouvements. Aperçu couche par couche au curseur : les deux hauteurs du damier, les pixels reliés par un seul coin. La durée affichée. Enfin le plateau : les porte-clés du groupe disposés ensemble, en grille de 4 × 3, la durée totale lue. Les impressions sont lancées par l'animateur après la séance.",
+     "Le reste du temps, chacun termine son porte-clés ; ceux qui ont fini passent à la variante +.",
      "Modalité : Démonstration commentée, puis production individuelle en autonomie"
     ]
    ],
    [
     "Rétrospective (10 min)",
     [
-     "Chacun dit ce que représente son pochoir, et où il a dû ajouter un pont.",
+     "Chacun montre son dessin et dit où il a dû ajouter un pixel pour que tout tienne.",
      "Modalité : Tour de table / partage oral"
     ]
    ],
    [
     "Clôture (5 min)",
     [
-     "Fichiers déposés, ordinateurs fermés, lampes dans les bacs. Annonce : « la semaine prochaine, ton pochoir est là, et ta lampe passe en ligne ».",
+     "Fichiers déposés, ordinateurs fermés, lampes dans les bacs. Annonce : « la semaine prochaine, ton porte-clés est là, et ta lampe passe en ligne ».",
      "Modalité : Rituel de clôture"
     ]
    ],
    [
     "Variante +",
     [
-     "Une forme dessinée à main levée avec Scribble, en perçage, puis les deux questions à nouveau."
+     "La version en relief sur une plaque : une plaque de 40 × 40 × 2 mm, les pixels posés dessus."
     ]
    ],
    [
     "Variante −",
     [
-     "Une plaque fournie dans la classe Tinkercad, trou de porte-clés compris, à percer d'un motif ; une police pochoir, qui a déjà ses ponts."
+     "La grille de 8 × 8 en damier fournie dans la classe Tinkercad : il ne reste qu'à supprimer les pixels éteints et à poser la patte."
     ]
    ],
    [
     "Points de vigilance",
     [
-     "• Les douze pochoirs tiennent sur un plateau de 180 × 180 mm, en grille de 4 × 3, à 40 × 40 mm chacun. Lire la durée totale au slicer en fin de séance : à 2 mm d'épaisseur, le plateau reste court à imprimer.",
-     "• Le texte découpé crée des îlots : c'est le défaut le plus fréquent, à vérifier au point de contrôle.",
-     "• Une ouverture de moins de 2 mm se bouche à l'impression, un pont de moins de 1,5 mm casse au démoulage.",
+     "• Les douze porte-clés tiennent sur un plateau de 180 × 180 mm, en grille de 4 × 3 : 40 × 50 mm chacun avec la patte. Lire la durée totale au slicer en fin de séance.",
+     "• Deux pixels reliés par un seul coin : c'est le défaut le plus fréquent, à vérifier au point de contrôle.",
+     "• La grille d'accrochage reste à 5 mm pour les pixels, puis passe à 0,1 mm pour centrer le trou dans la patte : la remettre à 5 mm ensuite, sinon les pixels ajoutés tombent de travers.",
+     "• Sélectionner un pixel sur deux à la main est long : montrer la sélection avec <kbd>Maj</kbd>, ou fournir la grille en damier en variante −.",
      "• Tinkercad en mode classe : vérifier avant la séance que les comptes de la classe sont actifs.",
-     "• Prévoir la transmission des fichiers : mal cadrée, cette étape mange dix minutes. Filet de sécurité : l'animateur peut se connecter à la classe Tinkercad et exporter lui-même les pochoirs manquants.",
-     "• L'extension .stl saute au téléchargement selon le navigateur : le vérifier au point de contrôle.",
-     "• Le trou de porte-clés ne touche pas le bord : sans matière autour, le pochoir casse au premier arrachement de clés."
+     "• Prévoir la transmission des fichiers : mal cadrée, cette étape mange dix minutes. Filet de sécurité : l'animateur peut se connecter à la classe Tinkercad et exporter lui-même les porte-clés manquants.",
+     "• L'extension .stl saute au téléchargement selon le navigateur : le vérifier au point de contrôle."
     ]
    ],
    [
@@ -887,7 +887,7 @@
    [
     "Prérequis",
     [
-     "Séance 3 : lampe qui s'allume seule, interrupteur en cuivre et variable active. Séance 4 : pochoir imprimé par l'animateur entre les séances."
+     "Séance 3 : lampe qui s'allume seule, interrupteur en cuivre et variable active. Séance 4 : porte-clés pixel imprimé par l'animateur entre les séances."
     ]
    ],
    [
@@ -901,7 +901,7 @@
     [
      "Par jeune",
      "• Sa lampe, son micro:bit, ses deux boîtiers d'accus chargés",
-     "• Son pochoir imprimé",
+     "• Son porte-clés pixel imprimé",
      "Commun",
      "• Le pont : un micro:bit programmé, branché en USB à l'ordinateur de l'animateur",
      "• Vidéoprojecteur ou grand écran"
@@ -918,7 +918,7 @@
    [
     "Lancement (10 min)",
     [
-     "Remise des pochoirs, nominative (5 min). Chacun regarde le sien de près : les couches visibles, la première couche, ce qui a bavé. On fait circuler deux ou trois rebuts du plateau (un îlot tombé, une ouverture bouchée) et on les relie à la vérification faite en séance 4 : est-ce que tout tient, est-ce que tout s'imprime ? Le pochoir ne se pose sur la lampe qu'en fin de séance, s'il reste du temps.",
+     "Remise des porte-clés, nominative (5 min). Chacun regarde le sien de près : les couches visibles, la première couche, ce qui a bavé. On fait circuler deux ou trois rebuts du plateau (un pixel cassé au coin, une pièce décollée) et on les relie à la vérification faite en séance 4 : est-ce que tout tient, est-ce que tout s'imprime ?",
      "Le tableau de bord au grand écran, en mode démo (5 min). Une carte par micro:bit, ses mesures, un interrupteur. Le chemin d'une mesure, au vidéoprojecteur, avec le schéma de la page élève : la lampe, la radio, le pont, l'écran, et l'ordre qui redescend. Pour que l'écran comprenne tout le monde, une langue commune : la bande 40, le numéro de série, une clé courte par mesure, une émission toutes les 5 secondes. Chaque lampe prend le numéro de son poste.",
      "Modalité : Démonstration commentée"
     ]
@@ -949,7 +949,6 @@
      "Sans le pont",
      "Description :",
      "L'animateur débranche le pont. Le tableau de bord affiche « Pont débranché » et se fige. Chacun touche son cuivre, couvre sa lampe : elle marche toujours. Le tableau de bord supervise, il ne fait rien fonctionner. C'est l'exigence d'autonomie que tous les produits du chantier devront tenir.",
-     "S'il reste du temps, chacun pose son pochoir devant sa matrice, sous l'élastique, la feuille de papier derrière.",
      "Point de contrôle animateur : chaque lampe en ligne sous son nom, lum et inter<numéro> affichés, l'interrupteur de l'écran la met en marche et en veille, et pont débranché, elle continue.",
      "Modalité : Démonstration commentée"
     ]
@@ -971,7 +970,7 @@
    [
     "Variante +",
     [
-     "inter<numéro> envoyé aussitôt qu'on touche le cuivre, sans attendre les 5 secondes · le pochoir éclairé, en fin de séance s'il reste du temps : une feuille de papier au format de la matrice entre la matrice et le pochoir, et set NeoPixel 8x8 qui n'allume que les LED derrière le motif, une couleur par partie."
+     "inter<numéro> envoyé aussitôt qu'on touche le cuivre, sans attendre les 5 secondes."
     ]
    ],
    [
