@@ -1,5 +1,5 @@
 {
- "revision": "AHj4eMQ3ICGEPrtRMkwLY5wlXGMsfi5IHRvHecAOoFPhBaUpQugACzT0WArcdMtToVTKJY3yeC6xxPOoNZZT2e-lTuhw5nwYh98KXxZZSfA",
+ "revision": "AHj4eMTdDhwTWMKeDZR6DpAPSynVbUbz1SJx3qYEPMjYWbfu7WuVvd4qFU-Zk45rYsZIa1_tu98pUhLwQRVegCnK7eis4j5njiBZ0DD_GZ4",
  "fiches": {
   "communication": [
    [
@@ -55,8 +55,8 @@
     [
      "1. La lampe pixel allumée : un visage en pixel art, chaque point de couleur net derrière le diffuseur imprimé en 3D.",
      "[image https://maker.arbona.dev/assets/objets-connectes-communication/01-lampe-pixel.jpg]",
-     "2. Quatre lampes allumées sur la table de l'atelier, chacune de sa couleur, les jeunes autour.",
-     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-lampes-sur-la-table.jpg]",
+     "2. Quatre lampes pixel allumées sur la table de l'atelier, chacune avec son visage, les jeunes autour.",
+     "[image https://maker.arbona.dev/assets/objets-connectes-communication/02-lampes-pixel-sur-la-table.jpg]",
      "3. Le programme MakeCode qui dessine un visage : une grille de 8 × 8 cases, une couleur par LED.",
      "[image https://maker.arbona.dev/assets/objets-connectes-communication/03-programme-visage.png]",
      "4. Le tableau de bord : une carte par objet, ses mesures en jauge, en courbe, en voyant, et ses interrupteurs.",
