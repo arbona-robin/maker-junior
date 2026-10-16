@@ -12,7 +12,7 @@ Une lampe qui affiche tes dessins en pixel art, s'allume toute seule quand la nu
 
 ## Description
 
-La lampe est ton premier chantier. Tu traces son support en carton et tu fabriques son circuit en cuivre. Tu programmes ses 64 LED, les mêmes que celles des rubans lumineux, et tu y dessines tes images en pixel art. Un capteur l'allume à la nuit tombée. Enfin, tu dessines en 3D le pochoir qu'elle éclaire. En la fabriquant, tu découvres chaque étape de la création d'un objet connecté. Ensuite, en équipe, vous créez un objet de votre choix qui répond à un besoin réel. Cette fois, c'est vous qui décidez : vous dessinez le plan, vous câblez, vous programmez et vous testez, avec tout ce que la lampe vous a appris. Vous vous partagez les rôles. Au bout du parcours, votre objet est installé et fonctionne pour de vrai, et il a sa propre page web, qui le présente comme un vrai produit.
+La lampe est ton premier chantier. Tu traces son support en carton et tu fabriques son circuit en cuivre. Tu programmes ses 64 LED, les mêmes que celles des rubans lumineux, et tu y dessines tes images en pixel art. Un capteur l'allume à la nuit tombée. Enfin, tu dessines en 3D ton personnage pixel, que tu emportes en porte-clés. En la fabriquant, tu découvres chaque étape de la création d'un objet connecté. Ensuite, en équipe, vous créez un objet de votre choix qui répond à un besoin réel. Cette fois, c'est vous qui décidez : vous dessinez le plan, vous câblez, vous programmez et vous testez, avec tout ce que la lampe vous a appris. Vous vous partagez les rôles. Au bout du parcours, votre objet est installé et fonctionne pour de vrai, et il a sa propre page web, qui le présente comme un vrai produit.
 
 ## Durée
 

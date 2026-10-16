@@ -19,8 +19,8 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 3 — Fais-la s'allumer quand il fait nuit](seances/s03-quand-il-fait-nuit.md)**
   Ta lampe mesure la lumière, et s'allume seule sous le seuil que tu as choisi.
 
-- **[Séance 4 — Dessine le pochoir de ta lampe](seances/s04-dessine-ton-pochoir.md)**
-  Tu dessines en 3D le pochoir que ta lampe éclaire, et qui repart avec toi en porte-clés.
+- **[Séance 4 — Dessine ton porte-clés pixel](seances/s04-dessine-ton-porte-cles.md)**
+  Tu dessines en 3D ton personnage pixel, celui de ta lampe, et il repart avec toi en porte-clés.
 
 - **[Séance 5 — Mets ta lampe en ligne](seances/s05-mets-ta-lampe-en-ligne.md)**
   Ta lampe envoie ses mesures au tableau de bord, et on la met en marche depuis le grand écran.

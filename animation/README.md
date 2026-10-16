@@ -40,7 +40,7 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 - [Séance 1 — Fabrique ta lampe et allume-la](objets-connectes/s01.md)
 - [Séance 2 — Compose la lumière de ta lampe](objets-connectes/s02.md)
 - [Séance 3 — Fais-la s'allumer quand il fait nuit](objets-connectes/s03.md)
-- [Séance 4 — Dessine le pochoir de ta lampe](objets-connectes/s04.md)
+- [Séance 4 — Dessine ton porte-clés pixel](objets-connectes/s04.md)
 - [Séance 5 — Mets ta lampe en ligne](objets-connectes/s05.md)
 - [Séance 6 — Choisissez votre produit](objets-connectes/s06.md)
 - [Séance 7 — Construisez la structure de votre produit](objets-connectes/s07.md)

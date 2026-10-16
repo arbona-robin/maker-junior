@@ -24,7 +24,7 @@ Trois sections : à quoi il sert, ce qu'il mesure jusqu'au tableau de bord, votr
 > [!CAUTION] Avant de mettre une photo
 > Pas de visage ni de nom de famille.
 
-Ajoutez une section pour vos lampes, avec leur couleur, leur animation, leur pochoir : → [Ajouter une section](../../../fiches/faire-une-page-web.md#ajouter-une-section)
+Ajoutez une section pour vos lampes, avec leurs images en pixel art et leurs porte-clés : → [Ajouter une section](../../../fiches/faire-une-page-web.md#ajouter-une-section)
 
 > [!IMPORTANT] Point de contrôle
 > Votre page s'ouvre dans le navigateur, avec vos photos et votre choix justifié.
