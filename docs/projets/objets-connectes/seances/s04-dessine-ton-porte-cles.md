@@ -8,7 +8,9 @@
 
 **Ce que tu vas obtenir :**
 
-<span class="todo-media">[photo : le porte-clés pixel imprimé, à côté de la lampe qui affiche le même dessin]</span>
+<figure markdown>
+![Le porte-clés smiley imprimé en blanc, encore sur le plateau de l'imprimante : un pixel sur deux plus haut que l'autre, la patte et son trou au-dessus](../../../assets/objets-connectes-s04/01-porte-cles-imprime.jpg)
+</figure>
 
 ### Rejoins la classe Tinkercad
 
