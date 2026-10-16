@@ -57,7 +57,7 @@ Sélectionne un pixel sur deux, en damier, en maintenant <kbd>Maj</kbd>. Règle 
 ![La grille en vue 3D : un pixel sur deux passé en orange et descendu à 3 mm, avec la palette de couleurs ouverte](../../../assets/objets-connectes-s04/24-damier-hauteur-3.png)
 </figure>
 
-Ton porte-clés peut prendre deux formes : en silhouette, ou en relief sur une plaque. Dans les deux cas, chaque pixel touche un voisin par un côté.
+Ton porte-clés peut prendre deux formes. En silhouette, seuls les pixels existent : chacun doit toucher un voisin par un côté. En relief sur une plaque, la plaque tient tout : les pixels peuvent être séparés.
 
 <figure markdown>
 ![Vu de dessus : à gauche, le smiley en relief sur une plaque ; au milieu, le smiley en silhouette avec sa patte de porte-clés ; à droite, deux pixels qui ne se touchent que par un coin, puis le pixel ajouté qui les relie par un côté](../../../assets/objets-connectes-s04/25-silhouette-relief-piege.png)
@@ -73,7 +73,7 @@ Reprends le dessin de ta lampe, ou invente-le. Supprime les pixels éteints : il
 ![Un smiley en damier rouge et orange : les yeux et la bouche sont des cases vides, une Boîte de 10 × 10 mm attend au-dessus](../../../assets/objets-connectes-s04/26-smiley.png)
 </figure>
 
-**Chaque pixel touche un voisin par un côté.** Deux pixels qui ne se touchent que par un coin cassent à la première chute.
+**En silhouette, chaque pixel touche un voisin par un côté.** Deux pixels qui ne se touchent que par un coin cassent à la première chute.
 
 ### La patte de porte-clés
 
@@ -116,4 +116,4 @@ Nomme le fichier `prenom-pixel.stl` et dépose-le où l'animateur te l'indique.
 
 ## Va plus loin
 
-- **En relief sur une plaque.** Plutôt qu'une silhouette : une plaque de 40 × 40 × 2 mm, et tes pixels posés dessus, à 2 et 1 mm en damier. Rien ne peut tomber, et les cases vides se lisent en creux.
+- **En relief sur une plaque.** Plutôt qu'une silhouette : une plaque de 40 × 40 × 2 mm, et tes pixels posés dessus, à 2 et 1 mm en damier. Les pixels tiennent par la plaque, même séparés, et les cases vides se lisent en creux.
