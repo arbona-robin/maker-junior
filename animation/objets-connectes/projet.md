@@ -90,38 +90,37 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 | Moteur TT, magasin du chantier | 24 | 4 € | 96 € | Possédé |
 | Servomoteur, magasin du chantier | 12 | 3 € | 36 € | Possédé |
 | LED 5 mm, résistances, pinces crocodile, câbles Dupont, breadboards, barrettes | 1 | | | Possédé |
-| Boîtier 2 × AAA avec connecteur micro:bit | 12 | 2 € | 24 € | Proposé |
-| Accus NiMH AAA | 24 | 2 € | 48 € | Proposé |
-| Matrice RGB 8 × 8 WS2812, lots de 3 | 4 | 10 € | 40 € | À acheter |
+| Boîtier 2 × AAA avec connecteur micro:bit | 12 | 2 € | 24 € | Possédé |
+| Accus NiMH AAA | 24 | 3 € | 72 € | Possédé |
+| Matrice RGB 8 × 8 WS2812, lots de 3, prix majoré | 4 | 15 € | 60 € | À acheter |
 | Bornes de connexion à levier, boîte de 50, pour le chantier | 1 | 19 € | 19 € | Proposé |
 | Ruban de cuivre adhésif conducteur, 6 mm × 20 m | 1 | 10 € | 10 € | À acheter |
 | Vis M3 × 10, écrous et rondelles, 100 de chaque | 1 | 10 € | 10 € | À acheter |
 | Entretoises en plastique M3, lot de 50 | 1 | 6 € | 6 € | À acheter |
 | Câbles Dupont femelle / pince crocodile, lots de 10 | 4 | 5 € | 20 € | À acheter |
-| Matrice RGB, lot de 3 de rechange | 1 | 10 € | 10 € | Proposé |
+| Matrice RGB, lot de 3 de rechange | 1 | 15 € | 15 € | Proposé |
 | Adaptateur secteur USB 5 V, produits installés près d'une prise | 6 | 5 € | 30 € | Proposé |
 | Capteurs du chantier, selon l'inventaire | | | | Selon le catalogue |
-| *Sous-total électronique* | | | *957 €* | |
+| *Sous-total électronique* | | | *1 006 €* | |
 | **Équipement commun** | | | | |
 | Chargeur d'accus | 1 | 35 € | 35 € | Possédé |
 | Multimètre | 1 | 20 € | 20 € | Possédé |
-| Multimètre supplémentaire, pour les vérifications de la séance 2 | 2 | 15 € | 30 € | Proposé |
 | Outil de découpe | 3 | 8 € | 24 € | Possédé |
 | Règle métallique à rebord | 3 | 10 € | 30 € | Possédé |
 | Tapis de découpe A3 | 3 | 12 € | 36 € | Possédé |
 | Pied à coulisse | 1 | 15 € | 15 € | Proposé |
-| Fer à souder et étain, pour la préparation des matrices | 1 | 30 € | 30 € | Proposé |
+| Fer à souder et étain, pour la préparation des matrices | 1 | 30 € | 30 € | Possédé |
 | Imprimante 3D | 1 | | | Possédé |
 | Ordinateurs | 12 | | | Possédé |
 | **Par parcours** | | | | |
-| Filament PLA : porte-clés et pièces du chantier | 2 | 25 € | 50 € | À racheter |
+| Filament PLA : porte-clés et pièces du chantier | 1 | 25 € | 25 € | À racheter |
 | Découpe : lames de rechange | 1 | 10 € | 10 € | À racheter |
 | Carton, colle, papier, ruban adhésif, élastiques | 1 | 40 € | 40 € | À racheter |
-| Casse : 15 % de l'électronique des lampes | 1 | 78 € | 78 € | À racheter |
+| Casse : 15 % de l'électronique des lampes | 1 | 85 € | 85 € | À racheter |
 
-Un parcours coûte environ 178 €, soit 15 € par jeune : 100 € de consommables d'impression, de découpe et de fabrication, et 78 € de casse. La casse est calculée sur ce que les jeunes manipulent toute l'année (micro:bit, matrices, boîtiers et accus des lampes, soit 520 €).
+Un parcours coûte environ 160 €, soit 13 € par jeune : 75 € de consommables d'impression, de découpe et de fabrication, et 85 € de casse. La casse est calculée sur ce que les jeunes manipulent toute l'année (micro:bit, matrices, boîtiers et accus des lampes, soit 564 €).
 
-Le premier parcours demande 86 € d'achats : matrices, ruban de cuivre, visserie, entretoises et câbles des lampes. Les matrices se réutilisent, les lampes restant à l'atelier. S'y ajoutent 89 € proposés (rechange, adaptateurs secteur, bornes à levier, deux multimètres), les capteurs du chantier après inventaire, et 72 € de boîtiers et d'accus AAA si le stock n'en a pas.
+Le premier parcours demande 106 € d'achats : matrices, ruban de cuivre, visserie, entretoises et câbles des lampes. Les matrices se réutilisent, les lampes restant à l'atelier. S'y ajoutent 79 € proposés (rechange, adaptateurs secteur, bornes à levier, pied à coulisse) et les capteurs du chantier après inventaire. Les boîtiers et les accus AAA viennent du stock du parcours Rover.
 
 ## Séance 1 — Phase 1 — Découverte & prise en main
 
