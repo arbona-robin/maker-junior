@@ -5,22 +5,40 @@
 >
 > → [Partir d'une esquisse](../../../fiches/modeliser-imprimer-3d.md#partir-dune-esquisse)
 
-1. **[Votre rover sur le papier](#1-votre-rover-sur-le-papier)** : un croquis d'équipe, qui répond au cahier des charges.
-2. **[Qui fait quoi](#2-qui-fait-quoi)** : chacun fabrique sa part, en carton ou en 3D.
+1. **[Découvrez le cahier des charges](#1-decouvrez-le-cahier-des-charges)** : ce que votre rover d'équipe devra faire.
+2. **[Formez votre équipe](#2-formez-votre-equipe)** : à deux ou trois, avec votre numéro.
+3. **[Votre rover sur le papier](#3-votre-rover-sur-le-papier)** : un croquis d'équipe, qui répond au cahier des charges.
+4. **[Qui fait quoi](#4-qui-fait-quoi)** : chacun fabrique sa part, en carton ou en 3D.
 
-## 1. Votre rover sur le papier
+## 1. Découvrez le cahier des charges
 
-**Ce que vous allez obtenir :** un croquis d'équipe, vu de dessus et de côté, avec le tag, les moteurs, les accus, et la façon dont votre rover déplace l'échantillon.
+**Ce que tu vas obtenir :** tu sais ce que ton rover ne sait pas encore faire.
+
+<figure markdown>
+![Le plan incliné en carton, l'échantillon posé debout en haut de la pente, et au premier plan un rover qui porte un tag](../../../assets/rover-s06/01-plan-incline-echantillon-tag.jpg)
+</figure>
 
 → [Le cahier des charges](../cahier-des-charges.md)
+
+Pose ton rover sur la pente, puis fais-lui pousser l'échantillon. Réussit-il les deux ?
+
+Pour saisir ou soulever l'échantillon, il existe un moteur qui va à un angle et s'y tient : le **servomoteur**. L'animateur te le montre ; tu apprendras à le programmer en séance 7.
+
+## 2. Formez votre équipe
+
+Formez votre équipe, à deux ou trois. L'animateur donne à chacune son numéro : c'est à la fois l'id de votre tag, votre bande à la télécommande et votre groupe sur la table. Écrivez-le sur votre [feuille d'équipe](../../../assets/rover-cahier-des-charges/feuille-equipe-rover.pdf), avec vos noms.
+
+## 3. Votre rover sur le papier
+
+**Ce que vous allez obtenir :** un croquis d'équipe, vu de dessus et de côté, avec le tag, les moteurs, les accus, et la façon dont votre rover déplace l'échantillon.
 
 **À vous.** La méthode :
 
 1. Pour chaque point du cahier des charges, cherchez la partie du rover qu'il touche : le châssis, la prise de l'échantillon, le support de tag, le programme.
-2. Chacun dessine comment le rover déplace l'échantillon sans le renverser : il le pousse, il le saisit, ou il le soulève. Pour saisir ou soulever, il faut un servomoteur, comme celui montré en séance 5.
+2. Chacun dessine comment le rover déplace l'échantillon sans le renverser : il le pousse, il le saisit, ou il le soulève. Pour saisir ou soulever, il faut un servomoteur.
 3. Choisissez-en une ensemble, et dessinez le rover entier.
 
-## 2. Qui fait quoi
+## 4. Qui fait quoi
 
 **Ce que vous allez obtenir :** chacun sait ce qu'il fabrique, et s'y met.
 

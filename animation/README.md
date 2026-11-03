@@ -24,7 +24,7 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 - [Séance 2 — Fabrique ton rover et fais-le rouler droit](rover/s02.md)
 - [Séance 3 — Ta plaque, et les mouvements de ton rover](rover/s03.md)
 - [Séance 4 — Fabrique ta télécommande](rover/s04.md)
-- [Séance 5 — Pilote ton rover, formez votre équipe](rover/s05.md)
+- [Séance 5 — Pilote ton rover](rover/s05.md)
 - [Séance 6 — Concevez votre rover](rover/s06.md)
 - [Séance 7 — Le servomoteur](rover/s07.md)
 - [Séance 8 — Pilotez votre rover en vitesse](rover/s08.md)

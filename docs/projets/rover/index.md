@@ -22,11 +22,11 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 4 — Fabrique ta télécommande](seances/s04-pilote-a-distance.md)**
   Tu poses ta plaque imprimée, et tu fais de ta seconde carte une télécommande qui envoie ses ordres par radio.
 
-- **[Séance 5 — Pilote ton rover, formez votre équipe](seances/s05-formez-votre-equipe.md)**
-  Ton rover obéit à ta télécommande. Puis vous découvrez le cahier des charges, le parcours et la pente, et vous formez votre équipe.
+- **[Séance 5 — Pilote ton rover](seances/s05-pilote-ton-rover.md)**
+  Ton rover reçoit les mots de ta télécommande et leur obéit.
 
 - **[Séance 6 — Concevez votre rover](seances/s06-concevez-votre-rover.md)**
-  Vous dessinez votre rover d'équipe, vous vous répartissez le travail, et vous fabriquez ses pièces en carton et en 3D.
+  Vous découvrez le cahier des charges, le parcours et la pente, et vous formez votre équipe. Puis vous dessinez votre rover, vous vous répartissez le travail, et vous fabriquez ses pièces en carton et en 3D.
 
 - **[Séance 7 — Le servomoteur](seances/s07-commandez-un-servomoteur.md)**
   Vous essayez le servomoteur, et vous le montez sur votre rover si votre croquis le prévoit.
