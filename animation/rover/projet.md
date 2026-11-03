@@ -156,19 +156,19 @@ Le matériel déjà possédé vaut 1 185 €, sans compter l'imprimante 3D, les 
 
 ## Séance 5 — Phase 2 — Exploration & création
 
-**Titre :** Pilote ton rover, formez votre équipe
+**Titre :** Pilote ton rover
 
-**Notions :** comparaison de textes · gestionnaire d'événement `quand une donnée est reçue par radio` · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S3 · lecture d'un cahier des charges · distinction entre caractéristique vérifiée et épreuve courue · composition d'une équipe
+**Notions :** comparaison de textes · gestionnaire d'événement `quand une donnée est reçue par radio` · témoin visuel comme instrument de débogage · réemploi des cinq fonctions de la S3
 
-**Livrable intermédiaire :** rover individuel piloté par radio, équipes de 2 ou 3 constituées avec leur numéro, cahier des charges lu. Fin du temps individuel.
+**Livrable intermédiaire :** rover individuel piloté par radio. Fin du temps individuel.
 
 ## Séance 6 — Phase 2 — Exploration & création
 
 **Titre :** Concevez votre rover
 
-**Notions :** esquisse : révolution, extrusion, esquisse libre · contrainte de conception · croquis de solution · répartition des rôles · choix du procédé : carton, impression, récupération · pièces partagées, auteur cité · durée d'impression estimée dans Kiri:Moto · budget d'impression
+**Notions :** lecture d'un cahier des charges · distinction entre caractéristique vérifiée et épreuve courue · composition d'une équipe · esquisse : révolution, extrusion, esquisse libre · contrainte de conception · croquis de solution · répartition des rôles · choix du procédé : carton, impression, récupération · pièces partagées, auteur cité · durée d'impression estimée dans Kiri:Moto · budget d'impression
 
-**Livrable intermédiaire :** croquis d'équipe, rôles répartis, châssis carton commencé avec son support de tag, premières pièces 3D dessinées et notées dans le suivi d'impression
+**Livrable intermédiaire :** équipes de 2 ou 3 constituées avec leur numéro, croquis d'équipe, rôles répartis, fabrication commencée : châssis carton ou première pièce 3D notée dans le suivi d'impression
 
 ## Séance 7 — Phase 2 — Exploration & création
 
