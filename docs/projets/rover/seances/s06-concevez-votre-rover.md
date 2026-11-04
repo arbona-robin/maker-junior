@@ -74,3 +74,25 @@ Votre équipe a **3 h d'impression** pour tout le projet. Lisez la durée de cha
 
 > [!TIP] Le test des proportions
 > Posez l'échantillon à côté de votre prototype. Tout tient dans 25 × 25 × 20 cm ?
+
+### Le programme
+
+Ton programme de télécommande ou de rover a disparu ? Repars de celui-ci. Ouvre-le dans MakeCode : il s'ajoute à tes projets. Puis remplace la bande `15` par votre numéro d'équipe, sur la télécommande comme sur le rover.
+
+<details markdown>
+<summary>La télécommande</summary>
+
+<div class="makecode-editeur"><iframe src="https://makecode.microbit.org/?lang=fr#pub:_imWMpETa0FmM" loading="lazy" allowfullscreen sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div>
+
+→ [Ouvrir dans MakeCode](https://makecode.microbit.org/?lang=fr#pub:_imWMpETa0FmM){ target="_blank" }
+
+</details>
+
+<details markdown>
+<summary>Le rover</summary>
+
+<div class="makecode-editeur"><iframe src="https://makecode.microbit.org/?lang=fr#pub:_3WCgjydRV3Wd" loading="lazy" allowfullscreen sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div>
+
+→ [Ouvrir dans MakeCode](https://makecode.microbit.org/?lang=fr#pub:_3WCgjydRV3Wd){ target="_blank" }
+
+</details>
