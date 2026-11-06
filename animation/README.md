@@ -49,6 +49,10 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 - [Séance 10 — Présentez vos objets connectés](objets-connectes/s10.md)
 - [Le pont et le tableau de bord](objets-connectes/pont.md)
 
+## Jeu d'arcade (en préparation)
+
+- [Notes de préparation](arcade/notes-de-preparation.md) : choix techniques, séances communes envisagées, tutoriels, pièges constatés
+
 Une fiche de séance est créée avant l'atelier, complétée après : les sections « Bilan » et « Adaptations pour la prochaine fois » se remplissent une fois la séance passée, et nourrissent la fiche suivante.
 
 ## Export vers le Google Doc
