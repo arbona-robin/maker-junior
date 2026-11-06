@@ -29,9 +29,18 @@ Le thème est libre : un vaisseau, un dragon, un oiseau, un poisson. Pas d'idée
 
 Il regarde vers la droite : c'est de ce côté qu'il tirera. La **Galerie** propose des dessins tout faits, mais un dessin à toi rend ton jeu unique.
 
+### Place-le à gauche de l'écran
+
+<figure markdown>
+![L'écran de la console : x va de 0 à 160 vers la droite, y de 0 à 120 vers le bas, le point 0, 0 en haut à gauche. Le héros est placé en x 20, y 60](../../../assets/arcade-s01/21-axes-ecran.png)
+<figcaption>x se compte vers la droite, y vers le bas, à partir du coin en haut à gauche.</figcaption>
+</figure>
+
 ### Fais-le bouger et tirer
 
-Dans `déplacer vaisseau avec les boutons`, **vx** vaut 0 : ton héros ne bouge que de haut en bas. Plus tard, c'est ton bras qui le pilotera, avec le micro:bit au poignet.
+Dans `déplacer heros avec les boutons`, **vx** vaut 0 : ton héros ne bouge que de haut en bas. Plus tard, c'est ton bras qui le pilotera, avec le micro:bit au poignet.
+
+Essaie avant d'ajouter `rester à l'écran` : ton héros sort de l'écran par le haut ou par le bas.
 
 La touche **espace** du clavier est le bouton A de la console.
 
@@ -40,7 +49,7 @@ La touche **espace** du clavier est le bouton A de la console.
 
 ```blocks
 scene.setBackgroundColor(15)
-let vaisseau = sprites.create(img`
+let heros = sprites.create(img`
     . . . . . . . . . . . . . . . .
     . . . . 8 8 8 . . . . . . . . .
     . . . . 8 9 8 8 . . . . . . . .
@@ -58,15 +67,15 @@ let vaisseau = sprites.create(img`
     . . . . 8 8 8 . . . . . . . . .
     . . . . . . . . . . . . . . . .
     `, SpriteKind.Player)
-vaisseau.setPosition(20, 60)
-controller.moveSprite(vaisseau, 0, 100)
-vaisseau.setStayInScreen(true)
+heros.setPosition(20, 60)
+controller.moveSprite(heros, 0, 100)
+heros.setStayInScreen(true)
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     let tir = sprites.createProjectileFromSprite(img`
         . 5 5 .
         5 4 4 5
         . 5 5 .
-        `, vaisseau, 150, 0)
+        `, heros, 150, 0)
 })
 ```
 
@@ -81,14 +90,14 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 - Sa vitesse **vx** est négative : il va vers la gauche.
 - La **destruction automatique** efface l'ennemi sorti de l'écran. Sans elle, ils s'accumulent hors de l'écran et le jeu ralentit.
-- Dans `quand sprite de type Projectile chevauche otherSprite de type Enemy`, **sprite** est le tir, **otherSprite** l'ennemi touché.
+- Dans `quand sprite de type Projectile chevauche otherSprite de type Enemy`, **sprite** est le tir, **otherSprite** l'ennemi touché. Glisse le **otherSprite** rouge, en haut du bloc, dans le second `détruire`.
 
 <details markdown>
 <summary>Bloqué ? Le programme complet</summary>
 
 ```blocks
 scene.setBackgroundColor(15)
-let vaisseau = sprites.create(img`
+let heros = sprites.create(img`
     . . . . . . . . . . . . . . . .
     . . . . 8 8 8 . . . . . . . . .
     . . . . 8 9 8 8 . . . . . . . .
@@ -106,15 +115,15 @@ let vaisseau = sprites.create(img`
     . . . . 8 8 8 . . . . . . . . .
     . . . . . . . . . . . . . . . .
     `, SpriteKind.Player)
-vaisseau.setPosition(20, 60)
-controller.moveSprite(vaisseau, 0, 100)
-vaisseau.setStayInScreen(true)
+heros.setPosition(20, 60)
+controller.moveSprite(heros, 0, 100)
+heros.setStayInScreen(true)
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     let tir = sprites.createProjectileFromSprite(img`
         . 5 5 .
         5 4 4 5
         . 5 5 .
-        `, vaisseau, 150, 0)
+        `, heros, 150, 0)
 })
 game.onUpdateInterval(900, function () {
     let ennemi = sprites.create(img`
@@ -158,7 +167,7 @@ Change la couleur du fond dans `définir couleur d'arrière-plan`, puis teste : 
 
 ### Copie le lien de ton jeu
 
-Clique sur **Terminé** à la fin du tutoriel, puis sur **Partager** en haut de l'écran. Donne un nom à ton jeu et copie le lien.
+Clique sur **Terminé** à la fin du tutoriel, puis sur **Partager** en haut de l'écran. Donne un nom à ton jeu et copie le lien. Pas besoin de compte.
 
 > [!IMPORTANT] Point de contrôle
 > Montre ton jeu à l'animateur, avec son lien copié.
