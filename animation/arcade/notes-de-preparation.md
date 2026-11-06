@@ -30,6 +30,8 @@ Ce que les 5 à 6 séances doivent contenir, en plus du jeu :
 - mettre le micro:bit en situation avec l'accéléromètre : fixé sur une planche d'équilibre, un volant, une raquette, un sac de frappe ;
 - peut-être Tinkercad et l'impression 3D, comme sur les autres parcours : capuchons de boutons, coque de manette, support qui fixe le micro:bit sur l'objet.
 
+Piste pour la manette commune : un pédalier, joué avec les deux pieds. Une plaque en bascule sur un cylindre porte le micro:bit, et son inclinaison commande haut et bas. Un interrupteur au pied commande le tir. Le vaisseau ne bouge plus qu'en vertical.
+
 Le boss du jeu de tir peut faire le lien vers le projet : il introduit un état du jeu (phases), un compteur propre à un sprite, une nouvelle sorte de sprite.
 
 ## Après : jeux et manettes physiques
