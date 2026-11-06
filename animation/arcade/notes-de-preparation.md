@@ -53,31 +53,35 @@ L'animateur montre un concept quelques minutes en début de séance, le reste du
 
 Points à vérifier au premier essai du bracelet : le câble USB part du poignet (longueur, débranchement sur un geste brusque), et les fils du bouton peuvent sauter des pinces crocodile quand le bras bouge.
 
-## Après : jeux et manettes physiques
+## Les familles de jeux du projet (S6)
 
-Pistes de jeux, toutes faisables avec les notions du jeu de tir, chacune avec sa manette :
+| Famille | Jeux | Manette | Ce qui est nouveau par rapport au jeu de tir |
+|---|---|---|---|
+| Plateforme | sauter, ramasser, éviter | bracelet + bouton | gravité et saut, plan des tuiles, caméra |
+| Course et évitement | obstacles qui défilent, le joueur esquive | planche d'équilibre, skate, volant, accéléromètre | presque rien : c'est le jeu de tir sans le tir. Seul le score au temps de survie est nouveau |
+| Rythme et réaction | danse, batterie, piano, tape-taupe | contacts en carton : tapis, pads, touches, boutons | un signal qui arrive en cadence, une fenêtre de temps pour appuyer, plusieurs contacts |
 
-| Jeu | Manette |
-|---|---|
-| Danse (flèches qui tombent, sprite personnalisé) | Tapis à contacts au sol |
-| Batterie, piano | Pads ou touches en carton |
-| Course d'obstacles | Planche d'équilibre ou skate, accéléromètre |
-| Tape-taupe | Boutons maison |
-| Course d'athlétisme | Pédales ou frappe alternée |
-| Skee-ball, boxe, pêche, funambule | Accéléromètre dans l'objet |
+Danse, batterie et piano sont le même jeu sous un autre habillage : un sprite descend à vitesse fixe, on marque si on appuie quand il passe sur la ligne. Le tape-taupe en est la version la plus simple : un sprite apparaît au hasard, on marque si on appuie avant qu'il disparaisse.
 
-Sans carte d'extension, seules P0, P1 et P2 sont faciles d'accès : 3 contacts au plus. La carte DFR0548 peut servir de carte d'extension. Un interrupteur sur P0 demande `pins.setAudioPinEnabled(false)`.
+Une quatrième famille reste possible, les jeux de geste (boxe, skee-ball, pêche) : le micro:bit détecte un mouvement brusque plutôt qu'une inclinaison.
 
-Il manque des notions pour un jeu de plateforme ou d'aventure : gravité et saut, plan des tuiles, caméra. D'où les tutoriels, un par type de jeu, qui partent du jeu de tir et n'ajoutent que ce qui manque.
+### Les contacts
+
+Sans carte d'extension, seules P0, P1 et P2 sont faciles d'accès : 3 contacts. La DFR0548 donne accès à 9 broches (P0, P1, P2, P8, P12 à P16), mais demande sa propre alimentation (3,5 à 5,5 V) : bonne pour un piano ou une batterie sur la table, pas pour un bracelet. Les boutons A, B et le logo du micro:bit s'ajoutent si le micro:bit est fixé sur la manette. Un interrupteur sur P0 demande `pins.setAudioPinEnabled(false)`.
+
+Le plafond réel est l'extension : la page relais transmet les 7 boutons de la console Arcade (gauche, droite, haut, bas, A, B, menu), soit 6 touches utiles. Six notes suffisent pour un piano en gamme pentatonique (do, ré, mi, sol, la, do aigu), où rien ne sonne faux.
+
+Évolution possible de l'extension, gardée pour le tutoriel rythme : un bloc « quand la manette envoie [mot] », pour des mots libres (`t1` à `t9`, `coup`, `pied`). C'est le principe des messages radio du Rover. Trois points à régler : l'extension annonce à la page relais les mots qu'elle écoute (les autres déclenchent toujours l'alerte des lettres perdues), le bloc se déclenche une fois par appui et pas à chaque mot répété, et les boutons de la phase commune restent inchangés.
 
 ## Les tutoriels
 
-Hébergés sur GitHub, en français, ouverts par un lien. Le dépôt apporte aussi les blocs Manette à chaque tutoriel.
+Hébergés sur GitHub, en français, ouverts par un lien. Le dépôt apporte aussi les blocs Manette à chaque tutoriel. Chacun part du jeu de tir et n'ajoute que ce qui manque.
 
 | Tutoriel | Lien | État |
 |---|---|---|
-| Jeu de plateforme (13 étapes) | https://arcade.makecode.com/?lang=fr#tutorial:https://github.com/arbona-robin/tutoriels-arcade/plateforme | Testé. Le jeu final avec manette : https://arcade.makecode.com/_dm7fipEA3PX7 |
-| Course d'obstacles, danse, tape-taupe | — | À écrire |
+| Plateforme (13 étapes) | https://arcade.makecode.com/?lang=fr#tutorial:https://github.com/arbona-robin/tutoriels-arcade/plateforme | Testé. Le jeu final avec manette : https://arcade.makecode.com/_dm7fipEA3PX7 |
+| Course et évitement | — | À écrire, court : centré sur le score au temps de survie |
+| Rythme et réaction | — | À écrire : le tape-taupe d'abord, puis le signal qui descend vers la ligne |
 
 Le tutoriel plateforme : niveau déjà dessiné, l'élève dessine lui-même les murs des plateformes. Héros, gravité, caméra, saut, pièces, lave, drapeau, puis la manette. Une partie filmée en GIF ouvre le tutoriel.
 
@@ -101,7 +105,8 @@ Inclinaison pour les directions, A et B, le logo pour le menu.
 ## À trancher ou à faire
 
 - Le plan coté commun du bouton de tir, et le temps d'impression des capuchons pour tout le groupe.
-- Les tutoriels course d'obstacles, danse, tape-taupe.
+- Les tutoriels course et évitement, rythme et réaction.
+- Le bloc « quand la manette envoie [mot] » dans l'extension et la page relais, avec le tutoriel rythme.
 - Une fiche de référence par notion : gravité et saut, plan des tuiles, caméra, interrupteur maison.
 - La page relais sur le site, ou sur GitHub Pages, plutôt qu'en local.
 - Un test automatique de la chaîne avant chaque séance, dans `outils/`.
