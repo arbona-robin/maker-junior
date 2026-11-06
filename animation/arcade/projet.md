@@ -38,8 +38,6 @@ Utile : avoir suivi le projet Rover ou Objets connectés. MakeCode, le micro:bit
 
 1 animateur numérique, maîtrisant MakeCode Arcade, MakeCode micro:bit et Tinkercad.
 
-Un second adulte est utile en S5 (découpe et câblage du bouton de tir), en S8 (fabrication des manettes d'équipe, outils de découpe en libre accès) et en S12 (salle d'arcade, accueil des joueurs).
-
 ## Matériel
 
 **Par jeune**
@@ -57,7 +55,7 @@ Un second adulte est utile en S5 (découpe et câblage du bouton de tir), en S8 
 - Colle, ruban adhésif, papier aluminium
 - Imprimante 3D et filament
 - Pour les manettes d'équipe : cartes DFR0548 (9 broches, pour les jeux de rythme), pinces crocodile, matériaux de récupération en bac commun
-- Écouteurs, pour la séance musique
+- Casques, pour la séance musique
 
 ## Ressources numériques
 
@@ -90,7 +88,7 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 | Tapis de découpe A3 | 3 | 12 € | 36 € | Possédé |
 | Imprimante 3D | 1 | | | Possédé |
 | Ordinateurs | 12 | | | Possédé |
-| Écouteurs filaires | 12 | 5 € | 60 € | Proposé |
+| Casques | 12 | | | Possédé |
 | **Par parcours** | | | | |
 | Filament PLA : capuchons et pièces des manettes d'équipe | 1 | 15 € | 15 € | À racheter |
 | Carton, papier aluminium, colle, ruban adhésif | 1 | 30 € | 30 € | À racheter |
@@ -99,7 +97,7 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 
 Un parcours coûte environ 98 €, soit 8 € par jeune : 55 € de consommables et 43 € de casse.
 
-Le premier parcours demande 48 € d'achats, les câbles micro-USB de 2 m. S'y ajoutent 60 € proposés pour les écouteurs de la séance musique.
+Le premier parcours demande 48 € d'achats, les câbles micro-USB de 2 m.
 
 ## Séance 1 — Phase 1 — Découverte & prise en main
 
