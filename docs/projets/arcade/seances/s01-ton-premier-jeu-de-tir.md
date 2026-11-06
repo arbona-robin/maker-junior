@@ -12,7 +12,7 @@
 
 ## 1. Ouvre ton parcours
 
-Dans Chrome, ouvre **[le parcours du jeu de tir](https://arcade.makecode.com/--skillmap?lang=fr#github:arbona-robin/tutoriels-arcade/jeu-de-tir)**, puis la première activité, **Ton premier jeu de tir**.
+Dans Chrome, ouvre **[le parcours du jeu de tir](https://arcade.makecode.com/--skillmap?lang=fr#github:arbona-robin/tutoriels-arcade/jeu-de-tir)**, clique sur l'activité **Ton premier jeu de tir**, puis sur **Démarrage**.
 
 Le tutoriel te guide pas à pas. Cette page te donne le programme de chaque étape, si tu bloques.
 
