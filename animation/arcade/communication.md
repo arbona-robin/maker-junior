@@ -1,6 +1,6 @@
 # Jeu d'arcade — Fiche Communication
 
-Gabarit : [`animation/gabarits/communication.md`](../gabarits/communication.md) · Notes : [`notes-de-preparation.md`](notes-de-preparation.md)
+Gabarit : [`animation/gabarits/communication.md`](../gabarits/communication.md) · Fiche projet : [`projet.md`](projet.md) · Notes : [`notes-de-preparation.md`](notes-de-preparation.md)
 
 ## Titre
 

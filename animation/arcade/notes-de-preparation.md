@@ -76,6 +76,21 @@ Le plafond réel est l'extension : la page relais transmet les 7 boutons de la c
 
 ## Les tutoriels
 
+### En séance : la notion, puis le tutoriel
+
+Chaque notion est présentée en dix minutes, puis chacun avance à son rythme dans un tutoriel MakeCode, l'animateur circule. Les tutoriels portent la consigne pas à pas : l'animateur, très sollicité, gagne du temps pour aider, et les jeunes gagnent en autonomie. Chaque tutoriel reste court, 10 à 12 étapes : refaire un long tutoriel lasse vite.
+
+Le jeu de tir est une skillmap (parcours de tutoriels enchaînés, Arcade seulement) de trois activités, une par séance : S1 le vaisseau, les ennemis et le tir ; S2 le décor, le score et les vies ; S3 les blocs Manette. Le code et les dessins passent d'une activité à la suivante (`allowcodecarryover`, actif par défaut). Adresse : `arcade.makecode.com/--skillmap#github:arbona-robin/tutoriels-arcade/<fichier>`.
+
+La progression est enregistrée dans le navigateur. Chaque jeune garde le même poste d'une séance à l'autre. Si un travail est perdu malgré tout :
+
+- chaque activité de la skillmap démarre aussi sans le travail précédent, à partir du code de référence de la séance : le jeune perd ses dessins, pas la séance ;
+- en fin de séance, chacun copie le lien de partage de son jeu, ou l'exporte : on le rouvre et on continue.
+
+La manette micro:bit (S3) se programme dans MakeCode micro:bit, où les skillmaps n'existent pas : un tutoriel séparé, dans un dépôt `tutoriels-microbit`. Le même dépôt pourra porter des tutoriels pour les premières séances du Rover et de la lampe pixel.
+
+### Les tutoriels du dépôt
+
 Hébergés sur GitHub, en français, ouverts par un lien. Le dépôt apporte aussi les blocs Manette à chaque tutoriel. Chacun part du jeu de tir et n'ajoute que ce qui manque.
 
 | Tutoriel | Lien | État |
@@ -107,7 +122,8 @@ Inclinaison pour les directions, A et B, le logo pour le menu.
 
 - Le plan coté commun du bouton de tir et du capuchon, et le temps d'impression des capuchons pour tout le groupe.
 - Un câble micro-USB de 2 m par poste, pour le micro:bit au poignet.
-- Les tutoriels course et évitement, rythme et réaction.
+- La skillmap du jeu de tir (trois activités) et le tutoriel micro:bit de la manette.
+- Les tutoriels course et évitement, rythme et réflexes.
 - L'extension : musique du jeu conservée, et bloc « quand la manette envoie [mot] » avec la page relais, au moment du tutoriel rythme.
 - Une fiche de référence par notion : gravité et saut, plan des tuiles, caméra, interrupteur maison.
 - La page relais en ligne (site ou GitHub Pages), à la préparation des séances.
