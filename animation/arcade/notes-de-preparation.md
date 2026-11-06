@@ -4,9 +4,9 @@ Troisième projet de l'année, en préparation. Rien n'est encore publié dans `
 
 ## L'idée
 
-Un jeu MakeCode Arcade, joué avec une manette micro:bit que les jeunes programment et fabriquent. Comme les autres projets : 5 à 6 séances où tout le monde construit la même chose, puis un projet seul ou en groupe. Code, fabrication numérique et électronique dans chaque partie.
+Un jeu MakeCode Arcade, joué avec une manette micro:bit que les jeunes programment et fabriquent. Comme les autres projets : des séances où tout le monde construit la même chose, puis un projet en équipe. Code, fabrication numérique et électronique dans chaque partie.
 
-Un collègue anime un parcours jeu vidéo sous Unity et Unreal Engine. La différence doit se voir dès la première séance : ici, le jeu sort de l'écran. Le micro:bit n'est pas seulement une manette tenue en main, il est mis en situation dans un objet fabriqué, et c'est l'objet qui joue.
+Un collègue anime un parcours jeu vidéo sous Unity et Unreal Engine. La différence doit se voir dès la première séance : ici, le jeu sort de l'écran. On joue avec un geste et un bouton qu'on a fabriqué, puis, en équipe, avec une manette inventée pour son jeu.
 
 ## Les choix techniques
 
@@ -19,20 +19,39 @@ Un collègue anime un parcours jeu vidéo sous Unity et Unreal Engine. La diffé
 | Sons seulement sur la manette | Le jeu se tait dès que la manette envoie son premier message |
 | Mots courts | Les tampons série du micro:bit font 20 octets par défaut |
 
-## Les séances communes
+## Le découpage
 
-Le jeu de tir (publié : https://arcade.makecode.com/_6XEcLbKsE53d) : un vaisseau, des ennemis, le score et les vies, un écran de démarrage, un décor dessiné qui défile. A tire, B active un bouclier (piste « aller plus loin »). La manette fait bip au tir, réagit aux ennemis détruits et aux chocs, affiche les vies.
+11 séances. Le jeu de tir sert de base commune (publié : https://arcade.makecode.com/_6XEcLbKsE53d). La manette commune est le micro:bit porté au poignet dans le bracelet du kit, avec un bouton de tir en carton. Pas de pièce imprimée lourde par jeune : seul un petit capuchon de bouton, quelques minutes d'impression chacun.
 
-Ce que les 5 à 6 séances doivent contenir, en plus du jeu :
+### Phase 1 : chacun construit le même jeu et la même manette
 
-- fabriquer un interrupteur en carton (aluminium, carton, pinces) branché sur P0, P1 ou P2 ;
-- programmer la télécommande : le micro:bit envoie ses mots, reçoit les réactions ;
-- mettre le micro:bit en situation avec l'accéléromètre : fixé sur une planche d'équilibre, un volant, une raquette, un sac de frappe ;
-- peut-être Tinkercad et l'impression 3D, comme sur les autres parcours : capuchons de boutons, coque de manette, support qui fixe le micro:bit sur l'objet.
+| Séance | Titre | Notions | Livrable |
+|---|---|---|---|
+| S1 | Ton premier jeu de tir | sprite dessiné · déplacement au clavier · projectile · ennemis au hasard · collision entre deux sortes de sprites | vaisseau qui tire sur des ennemis, jouable au clavier |
+| S2 | Finis ton jeu : décor, score, vies | score et vies · écran de démarrage · fin de partie · décor dessiné qui défile · difficulté qui augmente avec le score | jeu complet et rejouable au clavier |
+| S3 | Ta manette micro:bit | liaison série · protocole d'un mot par ligne · page relais · boutons A et B · réactions de la manette · fermer MakeCode avant de jouer | jeu joué avec le micro:bit en main, qui sonne et affiche les vies |
+| S4 | Dessine ton bouton de tir | modélisation 3D dans Tinkercad à partir d'un plan coté commun · contrainte de conception : le capuchon appuie sur le contact et tient dessus · personnalisation · impression additive et slicer | capuchon exporté en `.STL`, imprimé par l'animateur avant S5 |
+| S5 | Ta manette : le bracelet et le bouton de tir | découpe au plan coté · circuit fermé · interrupteur carton et aluminium · broche en entrée avec résistance de tirage · micro:bit au poignet · rotation de l'avant-bras pour haut et bas · zone morte | bouton monté avec son capuchon, jeu joué au bracelet et au bouton. Fin du temps individuel |
 
-Piste pour la manette commune : un pédalier, joué avec les deux pieds. Une plaque en bascule sur un cylindre porte le micro:bit, et son inclinaison commande haut et bas. Un interrupteur au pied commande le tir. Le vaisseau ne bouge plus qu'en vertical.
+### Phase 2 : en équipe, un jeu et sa manette
 
-Le boss du jeu de tir peut faire le lien vers le projet : il introduit un état du jeu (phases), un compteur propre à un sprite, une nouvelle sorte de sprite.
+L'animateur montre un concept quelques minutes en début de séance, le reste du temps appartient à l'équipe.
+
+| Séance | Titre | Concept | Livrable |
+|---|---|---|---|
+| S6 | Choisissez votre jeu | cahier des charges · couple jeu et manette · 3 contacts au plus sans carte d'extension · rôles · croquis | équipes formées, jeu et manette choisis, croquis, tutoriel du type de jeu lancé |
+| S7 | Le cœur de votre jeu | gravité, plan des tuiles, caméra, ou les notions du tutoriel choisi | prototype jouable au clavier |
+| S8 | Fabriquez votre manette | un contact par broche · l'accéléromètre dans l'objet · une ou deux pièces imprimées si la manette en a besoin | manette fabriquée et câblée, qui envoie ses mots |
+| S9 | Le boss, ou les niveaux | état du jeu et phases · compteur propre à un sprite · nouvelle sorte de sprite | jeu avec une progression : boss, niveaux ou vagues |
+| S10 | Faites jouer les autres | test par une autre équipe · régler la difficulté et les réactions de la manette | jeu corrigé après un test croisé |
+
+### Phase 3 : valorisation
+
+| Séance | Titre | Livrable |
+|---|---|---|
+| S11 | La salle d'arcade | bornes installées, jeux joués par d'autres jeunes ou les familles, avec leur lien de partage |
+
+Points à vérifier au premier essai du bracelet : le câble USB part du poignet (longueur, débranchement sur un geste brusque), et les fils du bouton peuvent sauter des pinces crocodile quand le bras bouge.
 
 ## Après : jeux et manettes physiques
 
@@ -81,8 +100,7 @@ Inclinaison pour les directions, A et B, le logo pour le menu.
 
 ## À trancher ou à faire
 
-- L'ordre des séances communes : où placer l'interrupteur en carton, l'accéléromètre en situation et l'impression 3D.
-- Tinkercad ou non dans ce parcours.
+- Le plan coté commun du bouton de tir, et le temps d'impression des capuchons pour tout le groupe.
 - Les tutoriels course d'obstacles, danse, tape-taupe.
 - Une fiche de référence par notion : gravité et saut, plan des tuiles, caméra, interrupteur maison.
 - La page relais sur le site, ou sur GitHub Pages, plutôt qu'en local.
