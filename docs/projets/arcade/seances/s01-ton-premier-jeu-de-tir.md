@@ -27,6 +27,8 @@ Le tutoriel te guide pas à pas. Cette page te donne le programme de chaque éta
 
 Le thème est libre : un vaisseau, un dragon, un oiseau, un poisson. Pas d'idée ? Un vaisseau spatial.
 
+Renomme sa variable : petite flèche de `mySprite`, **Renommer la variable...**, `heros`. Une variable est un nom qui te permet de retrouver ton héros dans les autres blocs.
+
 Il regarde vers la droite : c'est de ce côté qu'il tirera. La **Galerie** propose des dessins tout faits, mais un dessin à toi rend ton jeu unique.
 
 ### Place-le à gauche de l'écran
@@ -88,6 +90,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 **Ce que tu vas obtenir :** un ennemi arrive de la droite toutes les 900 ms, à une hauteur au hasard. Touché par un tir, il explose.
 
+- L'ennemi a sa propre variable : petite flèche de `mySprite`, **Nouvelle variable...**, `ennemi`. Avec `heros`, chaque ennemi prendrait la place de ton héros, et les flèches feraient bouger le dernier ennemi.
 - Sa vitesse **vx** est négative : il va vers la gauche.
 - La **destruction automatique** efface l'ennemi sorti de l'écran. Sans elle, ils s'accumulent hors de l'écran et le jeu ralentit.
 - Dans `quand sprite de type Projectile chevauche otherSprite de type Enemy`, **sprite** est le tir, **otherSprite** l'ennemi touché. Glisse le **otherSprite** rouge, en haut du bloc, dans le second `détruire`.
