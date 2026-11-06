@@ -51,7 +51,8 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 
 ## Jeu d'arcade (en préparation)
 
-- [Notes de préparation](arcade/notes-de-preparation.md) : choix techniques, découpage en 11 séances, tutoriels, pièges constatés
+- [Fiche communication](arcade/communication.md)
+- [Notes de préparation](arcade/notes-de-preparation.md) : choix techniques, découpage en 12 séances, familles de jeux, tutoriels, pièges constatés
 
 Une fiche de séance est créée avant l'atelier, complétée après : les sections « Bilan » et « Adaptations pour la prochaine fois » se remplissent une fois la séance passée, et nourrissent la fiche suivante.
 
