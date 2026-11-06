@@ -103,7 +103,7 @@ Le premier parcours demande 48 € d'achats, les câbles micro-USB de 2 m.
 
 **Titre :** Ton premier jeu de tir
 
-**Notions :** sprite et pixel art : vaisseau, ennemis, projectile, avec un vrai temps de dessin · déplacement au clavier · projectile · ennemis qui apparaissent au hasard · collision entre deux sortes de sprites · skillmap, activité 1
+**Notions :** sprite et sorte de sprite · pixel art : héros, tir, ennemis, avec un temps de dessin à part · déplacement de haut en bas · projectile · événement à intervalle régulier, position au hasard · destruction automatique · collision entre deux sortes de sprites · skillmap, activité 1
 
 **Livrable intermédiaire :** vaisseau qui tire sur des ennemis, jouable au clavier, lien de partage copié en fin de séance
 

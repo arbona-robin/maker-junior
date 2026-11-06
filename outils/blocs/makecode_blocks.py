@@ -15,8 +15,15 @@ EXTENSION = "motor=github:DFRobot/pxt-motor"
 MATRICE = "neopixel-extended=github:arbona-robin/pxt-neopixel-matrix-extension#v2.1.3"
 
 
+MANETTE = "tutoriels-arcade=github:arbona-robin/tutoriels-arcade#v0.2.0"
+ARCADE = re.compile(r"\b(sprites|controller|scene)\.")
+
+
 def extension(code: str) -> str:
-    """L'extension à charger : celle de la matrice si le code l'utilise, DF-Driver sinon."""
+    """Même choix que dans dessiner-blocs.js : pour Arcade, la manette si le code l'utilise ;
+    pour le micro:bit, la matrice si le code l'utilise, DF-Driver sinon."""
+    if ARCADE.search(code):
+        return MANETTE if "manette." in code else ""
     return MATRICE if "neopixelExtended" in code else EXTENSION
 DOSSIER = "assets/blocks"
 BLOC = re.compile(r"^```blocks\n(.*?)\n```[ \t]*$", re.M | re.S)

@@ -114,7 +114,7 @@ Inclinaison pour les directions, A et B, le logo pour le menu.
 
 - Un onglet MakeCode resté connecté au micro:bit vole des caractères sur la liaison série : mots tronqués, manette qui répond mal. La page relais affiche une alerte. Consigne à prévoir dans les séances : fermer MakeCode avant de connecter la manette.
 - Le micro:bit qui défile un long texte pendant qu'il reçoit fait déborder son tampon : la manette se fige, une LED allumée au centre.
-- Après une modification sur GitHub, MakeCode garde l'ancienne version du tutoriel en cache. Seule une version créée depuis MakeCode, avec un compte GitHub, vide ce cache.
+- Dès qu'un dépôt a un tag, MakeCode charge le dernier tag, pas le dernier commit : chaque publication de tutoriel demande un nouveau tag (`v0.2.0`, `v0.3.0`…) avec la même version dans `pxt.json`. MakeCode garde en plus la liste des tags en cache plusieurs heures : un tutoriel ou une skillmap poussés le jour même peuvent afficher « Aucun contenu chargé ». Une version créée depuis MakeCode, avec un compte GitHub, vide ce cache tout de suite. Publier les tutoriels au moins la veille de la séance.
 - Certains blocs restent en anglais dans l'éditeur Arcade en français : « camera suit sprite », « location », « Player ».
 - Pour figer la version de MakeCode pendant le parcours : les adresses versionnées (`arcade.makecode.com/v3/`), ou une copie hébergée (`pxt staticpkg`).
 

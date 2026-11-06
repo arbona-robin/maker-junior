@@ -76,6 +76,7 @@ extra_javascript:
 
 hooks:
   - outils/blocs/makecode_blocks.py
+  - outils/liens_externes.py
 
 extra:
   social:
@@ -114,6 +115,9 @@ nav:
       - "Séance 10 — Présentez vos objets connectés": projets/objets-connectes/seances/s10-presentez-vos-objets.md
       - "Le catalogue des produits": projets/objets-connectes/catalogue.md
       - "Le cahier des charges": projets/objets-connectes/cahier-des-charges.md
+  - Projet Jeu d'arcade:
+      - projets/arcade/index.md
+      - "Séance 1 — Ton premier jeu de tir": projets/arcade/seances/s01-ton-premier-jeu-de-tir.md
   - Fiches:
       - fiches/index.md
       - "Tracer, découper, plier le carton": fiches/carton-tracer-decouper-plier.md

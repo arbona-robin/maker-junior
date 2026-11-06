@@ -22,6 +22,10 @@ Il sert à trois moments :
 
     Fabrique ta lampe pixel et invente ton objet connecté.
 
+- **[Projet Jeu d'arcade](projets/arcade/index.md)**
+
+    Invente ton jeu d'arcade et fabrique ses commandes.
+
 - **[Fiches](fiches/index.md)**
 
     Les références qui ne dépendent pas d'une séance : le carton, les circuits, la carte, la matrice, MakeCode, la 3D, le débogage. On y renvoie depuis les séances.
