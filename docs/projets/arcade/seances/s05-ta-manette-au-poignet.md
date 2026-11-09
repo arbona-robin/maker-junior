@@ -48,7 +48,9 @@ Le jeu ne voit pas la différence : il reçoit `A`, que tu appuies sur le bouton
 
 Glisse ton micro:bit dans le bracelet, et le bracelet à ton poignet.
 
-<span class="todo-media">[photo : le micro:bit au poignet dans son bracelet, le câble USB, la main sur le bouton de tir]</span>
+<figure markdown>
+![Le micro:bit au poignet dans son bracelet, le câble USB vers la main, la pince rouge sur l'anneau 1 et la noire sur GND, reliées au bouton FEU ! posé sur la table](../../../assets/arcade-s05/02-manette-au-poignet.jpg)
+</figure>
 
 ### Mesure ton geste
 
