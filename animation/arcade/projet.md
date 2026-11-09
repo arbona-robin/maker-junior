@@ -119,7 +119,7 @@ Le premier parcours demande 48 € d'achats, les câbles micro-USB de 2 m.
 
 **Titre :** Ta manette micro:bit
 
-**Notions :** liaison série · protocole d'un mot par ligne · page relais · boutons A et B · réactions de la manette (`bip`, `bien`, `mal`, vies affichées) · fermer MakeCode avant de jouer · tutoriel micro:bit de la manette, skillmap activité 3
+**Notions :** liaison série · protocole d'un mot par ligne · seuil d'inclinaison · deux boucles en même temps · réactions de la manette (`bien`, `mal`, vies) · page relais · fermer MakeCode avant de jouer · tutoriel micro:bit de la manette, skillmap activité 3. B, le logo et les autres réactions sont en « va plus loin »
 
 **Livrable intermédiaire :** jeu joué avec le micro:bit en main, qui sonne et affiche les vies
 

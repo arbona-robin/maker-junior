@@ -23,6 +23,9 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 2 — Finis ton jeu : décor, score, vies](seances/s02-finis-ton-jeu.md)**
   Ton jeu a un écran de démarrage, un score, des vies, et un décor que tu dessines, qui défile derrière ton héros.
 
+- **[Séance 3 — Ta manette micro:bit](seances/s03-ta-manette-microbit.md)**
+  Ton micro:bit devient ta manette : tu l'inclines pour monter et descendre, et il réagit à ce qui se passe dans le jeu.
+
 ## Le matériel
 
 - MakeCode Arcade, dans Chrome
