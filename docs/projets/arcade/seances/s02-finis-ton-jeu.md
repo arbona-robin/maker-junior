@@ -5,10 +5,16 @@
 3. **[Le décor](#3-le-decor)** : des planètes, des nuages ou des étoiles défilent derrière ton héros.
 4. **[Ton décor en pixel art, et le nouveau lien](#4-ton-decor-en-pixel-art-et-le-nouveau-lien)** : ton décor est dessiné, et tu as copié le nouveau lien de ton jeu.
 
+<div class="gif-row" markdown>
 <figure markdown>
-![Le jeu à la fin de la séance : le héros tire sur les ennemis, le score monte en haut à droite, les trois vies sont en haut à gauche, et des planètes défilent lentement derrière](../../../assets/arcade-s02/20-jeu-complet.gif)
-<figcaption>Ton jeu à la fin de la séance.</figcaption>
+![Le jeu complet dans l'espace : le héros tire sur les ennemis, le score et les vies sont affichés, des planètes et des cœurs défilent](../../../assets/arcade-s02/20-jeu-complet.gif)
 </figure>
+<figure markdown>
+![Le jeu complet sous la mer : un poisson tire sur des poissons ennemis, des algues défilent au fond, un cœur traverse l'écran](../../../assets/arcade-s02/21-jeu-complet-sous-la-mer.gif)
+</figure>
+</div>
+
+Ton jeu à la fin de la séance, dans l'espace ou sous la mer.
 
 ## 1. Ouvre l'activité 2
 

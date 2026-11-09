@@ -141,3 +141,23 @@
   height: 100%;
   border: 0;
 }
+
+/* Animated game captures (GIF), side by side and centred, pixel art kept sharp. */
+.gif-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.2em 0;
+}
+
+.gif-row figure {
+  margin: 0;
+}
+
+.md-typeset .gif-row figure img,
+.md-typeset figure img[src$=".gif"] {
+  width: 320px;
+  max-width: 100%;
+  image-rendering: pixelated;
+}

@@ -5,12 +5,12 @@
 3. **[Les ennemis](#3-les-ennemis)** : des ennemis foncent sur toi et explosent quand tu les touches.
 4. **[Tes dessins, et le lien de ton jeu](#4-tes-dessins-et-le-lien-de-ton-jeu)** : ton jeu porte tes dessins, et tu as copié son lien.
 
-<div class="photo-row" markdown>
+<div class="gif-row" markdown>
 <figure markdown>
 ![Le jeu de tir dans l'espace : le vaisseau à gauche monte et descend, tire, et les ennemis rouges qui arrivent de la droite explosent quand ils sont touchés](../../../assets/arcade-s01/20-jeu-de-tir.gif)
 </figure>
 <figure markdown>
-![Le même jeu sous la mer : un poisson tire sur des poissons ennemis, des algues défilent au fond, un cœur traverse l'écran](../../../assets/arcade-s01/22-jeu-sous-la-mer.gif)
+![Le même jeu sous la mer : un poisson tire sur des poissons ennemis qui arrivent de la droite](../../../assets/arcade-s01/22-jeu-sous-la-mer.gif)
 </figure>
 </div>
 

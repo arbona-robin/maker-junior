@@ -4,12 +4,12 @@ Un jeu d'arcade, tu sais y jouer. Ici, tu le crées : tes personnages, tes nivea
 
 Le parcours se fait en deux temps. D'abord un jeu de tir, que tu dessines et programmes, avec sa manette : un micro:bit au poignet et un bouton de tir en carton. Ensuite, seul ou en équipe, ton propre jeu (de plateforme, de course, de rythme, de réflexes ou de sport) et les commandes qui vont avec.
 
-<div class="photo-row" markdown>
+<div class="gif-row" markdown>
 <figure markdown>
-![Le jeu de tir dans l'espace : un vaisseau à gauche tire sur des ennemis qui arrivent de la droite](../../assets/arcade-s01/20-jeu-de-tir.gif)
+![Le jeu complet dans l'espace : le héros tire sur les ennemis, le score et les vies sont affichés, des planètes et des cœurs défilent](../../assets/arcade-s02/20-jeu-complet.gif)
 </figure>
 <figure markdown>
-![Le même jeu sous la mer : un poisson tire sur des poissons ennemis, devant des algues](../../assets/arcade-s01/22-jeu-sous-la-mer.gif)
+![Le jeu complet sous la mer : un poisson tire sur des poissons ennemis, des algues défilent au fond, un cœur traverse l'écran](../../assets/arcade-s02/21-jeu-complet-sous-la-mer.gif)
 </figure>
 </div>
 
