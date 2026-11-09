@@ -7,7 +7,7 @@
 
 ## 1. Ton jeu parle à ta manette
 
-**Ce que tu vas obtenir :** ton jeu envoie `bien` à chaque ennemi détruit, `mal` quand tu es touché, et le nombre de tes vies.
+**Ce que tu vas obtenir :** ton jeu envoie tes vies dès le départ, puis `bien` à chaque ennemi détruit, `mal` quand tu es touché, et tes vies à chaque changement.
 
 Ouvre **[le parcours du jeu de tir](https://arcade.makecode.com/--skillmap?lang=fr#github:arbona-robin/tutoriels-arcade/jeu-de-tir)**, puis l'activité **Ta manette réagit**. Les blocs sont dans la catégorie **Manette**.
 
@@ -39,6 +39,7 @@ heros.setPosition(20, 60)
 controller.moveSprite(heros, 0, 100)
 heros.setStayInScreen(true)
 info.setLife(3)
+manette.afficher(info.life())
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     let tir = sprites.createProjectileFromSprite(img`
         . 5 5 .
