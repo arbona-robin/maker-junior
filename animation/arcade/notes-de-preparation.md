@@ -87,7 +87,7 @@ La progression est enregistrée dans le navigateur. Chaque jeune garde le même 
 - chaque activité de la skillmap démarre aussi sans le travail précédent, à partir du code de référence de la séance : le jeune perd ses dessins, pas la séance ;
 - en fin de séance, chacun copie le lien de partage de son jeu, ou l'exporte : on le rouvre et on continue.
 
-La manette micro:bit (S3) se programme dans MakeCode micro:bit, où les skillmaps n'existent pas : un tutoriel séparé, dans un dépôt `tutoriels-microbit`. Le même dépôt pourra porter des tutoriels pour les premières séances du Rover et de la lampe pixel.
+La manette micro:bit (S3) se programme dans MakeCode micro:bit, où les skillmaps n'existent pas : un tutoriel séparé, dans le dépôt [arbona-robin/tutoriels-microbit](https://github.com/arbona-robin/tutoriels-microbit). L'éditeur micro:bit affiche un bandeau « Contenu non approuvé » sur tout tutoriel venu d'un dépôt GitHub hors de la liste de Microsoft : sans conséquence. Le même dépôt pourra porter des tutoriels pour les premières séances du Rover et de la lampe pixel.
 
 ### Les tutoriels du dépôt
 
