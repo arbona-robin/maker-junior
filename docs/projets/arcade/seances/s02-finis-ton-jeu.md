@@ -262,5 +262,7 @@ Clique sur **Terminé** à la fin du tutoriel, puis sur **Partager** : copie le 
 
 ## Va plus loin
 
+- **Équilibre ton jeu.** Trop facile ? Baisse la chance du cœur, augmente la vitesse des ennemis (-60 au lieu de -40), ou fais-les apparaître plus souvent (600 ms au lieu de 900). Trop dur ? Fais l'inverse. Fais tester ton jeu à un voisin.
+- **Un deuxième type d'ennemi.** Un autre `quand mise à jour du jeu chaque … ms`, avec un autre dessin et une autre vitesse : un ennemi rare et très rapide, par exemple. Garde le type **Enemy** : tes blocs `chevauche` marchent déjà pour lui.
 - **Des ennemis qui accélèrent.** Remplace le -40 de `définir ennemi vx` par un calcul de **Maths** : -40 moins `score` × 2. Plus tu marques de points, plus ils vont vite.
-- **Un décor plus riche.** Un deuxième élément de décor, dans un autre `quand mise à jour du jeu`, avec un autre dessin et une autre vitesse : les plus lents paraissent les plus loin.
+- **Un décor plus riche.** Un deuxième élément de décor, avec un autre dessin et une autre vitesse : les plus lents paraissent les plus loin.
