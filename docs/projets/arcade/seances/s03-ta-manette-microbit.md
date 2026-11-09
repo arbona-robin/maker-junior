@@ -1,24 +1,25 @@
 # Séance 3 — Ta manette micro:bit
 
-1. **[Programme ta manette](#1-programme-ta-manette)** : ton micro:bit envoie haut, bas et A, et réagit aux mots du jeu.
-2. **[Ton jeu parle à ta manette](#2-ton-jeu-parle-a-ta-manette)** : ton jeu envoie bien, mal et tes vies.
-3. **[Joue avec ta manette](#3-joue-avec-ta-manette)** : tu joues à ton jeu avec ton micro:bit en main.
+1. **[Ta manette envoie tes gestes](#1-ta-manette-envoie-tes-gestes)** : ton micro:bit envoie haut, bas et A.
+2. **[Joue avec ta manette](#2-joue-avec-ta-manette)** : ton héros suit ta manette.
+3. **[Ton jeu parle à ta manette](#3-ton-jeu-parle-a-ta-manette)** : ton jeu envoie bien, mal et tes vies.
+4. **[Ta manette écoute ton jeu](#4-ta-manette-ecoute-ton-jeu)** : ta manette sonne, s'allume et affiche tes vies.
 
-## 1. Programme ta manette
+## 1. Ta manette envoie tes gestes
 
-**Ce que tu vas obtenir :** ton micro:bit envoie un mot à chaque geste (haut, bas, A), et joue un son ou affiche une icône pour chaque mot reçu du jeu.
+**Ce que tu vas obtenir :** ton micro:bit envoie `haut` quand tu l'inclines vers l'avant, `bas` vers l'arrière, et `A` quand tu appuies sur A.
 
-Dans Chrome, ouvre **[le tutoriel de la manette](https://makecode.microbit.org/?lang=fr#tutorial:https://github.com/arbona-robin/tutoriels-microbit/manette)**.
+Dans Chrome, ouvre **[le tutoriel de la manette](https://makecode.microbit.org/?lang=fr#tutorial:https://github.com/arbona-robin/tutoriels-microbit/manette)**, jusqu'à l'étape **Teste ta manette**.
 
-- Ta manette et ton jeu se parlent par **mots**, un par ligne : `haut`, `bas`, `A` de la manette vers le jeu, `bien`, `mal` et un chiffre du jeu vers la manette.
-- Les blocs `série` sont dans **Avancé** → **Communication série**.
-- Deux `toujours` tournent en même temps : l'un envoie tes gestes, l'autre écoute le jeu.
+Tu commences par regarder les valeurs de l'accéléromètre dans **Afficher données Appareil**, pour choisir tes seuils.
+
+> [!NOTE] La liaison série, deux fois
+> Elle t'a d'abord montré les valeurs de ton accéléromètre dans MakeCode. Maintenant, elle transporte tes mots vers le jeu. Un seul programme peut l'utiliser à la fois.
 
 <details markdown>
-<summary>Bloqué ? Le programme de la manette</summary>
+<summary>Bloqué ? Le programme de cette étape</summary>
 
 ```blocks
-serial.setRxBufferSize(128)
 basic.forever(function () {
     if (input.acceleration(Dimension.Y) < -300) {
         serial.writeLine("haut")
@@ -30,32 +31,32 @@ basic.forever(function () {
     }
     basic.pause(20)
 })
-basic.forever(function () {
-    let mot = serial.readUntil(serial.delimiters(Delimiters.NewLine))
-    if (mot == "bien") {
-        music.play(music.tonePlayable(1319, music.beat(BeatFraction.Sixteenth)), music.PlaybackMode.InBackground)
-        basic.showIcon(IconNames.Yes)
-    } else if (mot == "mal") {
-        music.play(music.tonePlayable(131, music.beat(BeatFraction.Quarter)), music.PlaybackMode.InBackground)
-        basic.showIcon(IconNames.No)
-    } else {
-        basic.showString(mot)
-    }
-})
 ```
 
 </details>
 
-Branche ton micro:bit et clique sur **Télécharger**.
+## 2. Joue avec ta manette
 
-## 2. Ton jeu parle à ta manette
+**Ce que tu vas obtenir :** ton héros monte et descend quand tu inclines ta manette, et tire quand tu appuies sur A.
+
+> [!CAUTION] Déconnecte MakeCode
+> Dans l'onglet du tutoriel : **⋯** à côté de **Télécharger**, puis **Déconnecter**. Sinon, MakeCode garde la liaison série et vole des lettres aux mots de ta manette.
+
+1. Ouvre **[la page relais](../../../relais/index.html)** dans Chrome.
+2. Colle le lien de ton jeu de la séance 2, puis clique sur **Charger**.
+3. Clique sur **Connecter la manette** et choisis ton micro:bit dans la liste.
+
+> [!TIP] Ça marche si…
+> Ton héros suit ta manette. Trop sensible, ou pas assez ? Change tes seuils dans le tutoriel.
+
+## 3. Ton jeu parle à ta manette
 
 **Ce que tu vas obtenir :** ton jeu envoie `bien` à chaque ennemi détruit, `mal` quand tu es touché, et le nombre de tes vies.
 
 Ouvre **[le parcours du jeu de tir](https://arcade.makecode.com/--skillmap?lang=fr#github:arbona-robin/tutoriels-arcade/jeu-de-tir)**, puis l'activité **Ta manette réagit**. Les blocs sont dans la catégorie **Manette**.
 
 <details markdown>
-<summary>Bloqué ? Le programme complet</summary>
+<summary>Bloqué ? Le programme du jeu</summary>
 
 ```blocks
 game.splash("Mon jeu de tir", "Appuie sur A pour jouer")
@@ -167,23 +168,53 @@ game.onUpdateInterval(3000, function () {
 
 </details>
 
-À la fin, clique sur **Partager** et copie le lien de ton jeu.
+À la fin, clique sur **Partager** et copie le nouveau lien de ton jeu.
 
-## 3. Joue avec ta manette
+## 4. Ta manette écoute ton jeu
 
-**Ce que tu vas obtenir :** ton héros monte et descend quand tu inclines ta manette, et tire quand tu appuies sur A.
+**Ce que tu vas obtenir :** ta manette joue un son et affiche une icône à chaque ennemi détruit et à chaque choc, et affiche tes vies.
 
-> [!CAUTION] Ferme l'onglet MakeCode micro:bit
-> Tant qu'il est ouvert, il garde la liaison avec ton micro:bit et vole des lettres aux mots de ta manette.
+Reviens dans l'onglet du tutoriel de la manette, et reprends après **Teste ta manette**.
 
-1. Ouvre **[la page relais](../../../relais/index.html)** dans Chrome.
-2. Colle le lien de ton jeu, puis clique sur **Charger**.
-3. Clique sur **Connecter la manette** et choisis ton micro:bit dans la liste.
+- Un deuxième `toujours` écoute le jeu pendant que le premier envoie tes gestes.
+- `série lire jusque nouvelle ligne` attend un mot et le range dans la variable `mot`.
 
-La page relais transmet les mots de ta manette à ton jeu, et ceux de ton jeu à ta manette. Le jeu se tait : les sons, c'est ta manette qui les joue.
+<details markdown>
+<summary>Bloqué ? Le programme complet de la manette</summary>
+
+```blocks
+serial.setRxBufferSize(128)
+basic.forever(function () {
+    if (input.acceleration(Dimension.Y) < -300) {
+        serial.writeLine("haut")
+    } else if (input.acceleration(Dimension.Y) > 300) {
+        serial.writeLine("bas")
+    }
+    if (input.buttonIsPressed(Button.A)) {
+        serial.writeLine("A")
+    }
+    basic.pause(20)
+})
+basic.forever(function () {
+    let mot = serial.readUntil(serial.delimiters(Delimiters.NewLine))
+    if (mot == "bien") {
+        music.play(music.tonePlayable(1319, music.beat(BeatFraction.Sixteenth)), music.PlaybackMode.InBackground)
+        basic.showIcon(IconNames.Yes)
+    } else if (mot == "mal") {
+        music.play(music.tonePlayable(131, music.beat(BeatFraction.Quarter)), music.PlaybackMode.InBackground)
+        basic.showIcon(IconNames.No)
+    } else {
+        basic.showString(mot)
+    }
+})
+```
+
+</details>
+
+Télécharge, déconnecte MakeCode, puis colle le nouveau lien de ton jeu dans la page relais et rejoue.
 
 > [!TIP] Ça marche si…
-> Ton héros suit ta manette, et ta manette affiche ✔ à chaque ennemi détruit et tes vies quand tu es touché.
+> Ta manette affiche ✔ à chaque ennemi détruit, et tes vies quand tu es touché.
 
 > [!IMPORTANT] Point de contrôle
 > Joue une partie devant l'animateur, avec ta manette.
