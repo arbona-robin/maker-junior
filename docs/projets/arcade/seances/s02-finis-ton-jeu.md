@@ -1,7 +1,7 @@
 # Séance 2 — Finis ton jeu : décor, score, vies
 
 1. **[Ouvre l'activité 2](#1-ouvre-lactivite-2)** : ton jeu de la séance 1 est ouvert dans l'activité **Finis ton jeu**.
-2. **[Le démarrage, le score et les vies](#2-le-demarrage-le-score-et-les-vies)** : ton jeu attend le joueur, compte les points, et s'arrête quand il n'a plus de vie.
+2. **[Le démarrage, le score et les vies](#2-le-demarrage-le-score-et-les-vies)** : ton jeu attend le joueur, compte les points, offre parfois un cœur, et s'arrête quand il n'a plus de vie.
 3. **[Le décor](#3-le-decor)** : des planètes, des nuages ou des étoiles défilent derrière ton héros.
 4. **[Ton décor en pixel art, et le nouveau lien](#4-ton-decor-en-pixel-art-et-le-nouveau-lien)** : ton décor est dessiné, et tu as copié le nouveau lien de ton jeu.
 
@@ -28,6 +28,13 @@ Ouvre **[le parcours du jeu de tir](https://arcade.makecode.com/--skillmap?lang=
 - Dans `quand sprite de type Player chevauche otherSprite de type Enemy`, **sprite** est ton héros, **otherSprite** l'ennemi qui l'a touché.
 
 À 0 vie, la partie s'arrête toute seule.
+
+### Le cœur bonus
+
+De temps en temps, un cœur traverse l'écran. Ton héros qui le touche gagne une vie.
+
+- Chaque seconde, `si 15 % chance` décide s'il apparaît : `% chance` est dans **Maths**, `si alors` dans **Logique**.
+- Le cœur est de type **Food** : c'est ce qui le distingue des ennemis dans le bloc `chevauche`.
 
 <details markdown>
 <summary>Bloqué ? Le programme de cette étape</summary>
@@ -89,12 +96,32 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     info.changeLifeBy(-1)
     scene.cameraShake(4, 500)
 })
+game.onUpdateInterval(1000, function () {
+    if (Math.percentChance(15)) {
+        let coeur = sprites.create(img`
+            . 2 2 . . 2 2 .
+            2 3 2 2 2 2 2 2
+            2 3 2 2 2 2 2 2
+            2 2 2 2 2 2 2 2
+            . 2 2 2 2 2 2 .
+            . . 2 2 2 2 . .
+            . . . 2 2 . . .
+            `, SpriteKind.Food)
+        coeur.setPosition(160, randint(10, 110))
+        coeur.vx = -30
+        coeur.setFlag(SpriteFlag.AutoDestroy, true)
+    }
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite)
+    info.changeLifeBy(1)
+})
 ```
 
 </details>
 
 > [!TIP] Ça marche si…
-> Le score monte à chaque ennemi détruit, et la partie s'arrête au troisième ennemi qui te touche.
+> Le score monte à chaque ennemi détruit, un cœur attrapé ajoute une vie, et la partie s'arrête quand tu n'en as plus.
 
 ## 3. Le décor
 
@@ -166,6 +193,26 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     info.changeLifeBy(-1)
     scene.cameraShake(4, 500)
 })
+game.onUpdateInterval(1000, function () {
+    if (Math.percentChance(15)) {
+        let coeur = sprites.create(img`
+            . 2 2 . . 2 2 .
+            2 3 2 2 2 2 2 2
+            2 3 2 2 2 2 2 2
+            2 2 2 2 2 2 2 2
+            . 2 2 2 2 2 2 .
+            . . 2 2 2 2 . .
+            . . . 2 2 . . .
+            `, SpriteKind.Food)
+        coeur.setPosition(160, randint(10, 110))
+        coeur.vx = -30
+        coeur.setFlag(SpriteFlag.AutoDestroy, true)
+    }
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite)
+    info.changeLifeBy(1)
+})
 game.onUpdateInterval(3000, function () {
     let decor = sprites.create(img`
         . . . . . . . . . . . . . . . . . . . . . . . .
@@ -200,7 +247,7 @@ game.onUpdateInterval(3000, function () {
 
 ## 4. Ton décor en pixel art, et le nouveau lien
 
-Retouche ton élément de décor, et change la couleur du fond si besoin. Vérifie que tes ennemis se voient bien devant.
+Retouche ton cœur et ton élément de décor, et change la couleur du fond si besoin. Vérifie que tes ennemis se voient bien devant.
 
 Clique sur **Terminé** à la fin du tutoriel, puis sur **Partager** : copie le nouveau lien de ton jeu.
 
