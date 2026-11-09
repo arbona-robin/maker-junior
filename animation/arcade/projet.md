@@ -111,7 +111,7 @@ Le premier parcours demande 48 € d'achats, les câbles micro-USB de 2 m.
 
 **Titre :** Finis ton jeu : décor, score, vies
 
-**Notions :** pixel art du décor, avec un vrai temps de dessin · score et vies · écran de démarrage · fin de partie · décor qui défile · difficulté qui augmente avec le score · skillmap, activité 2
+**Notions :** écran de démarrage · score · vies et fin de partie · collision entre le héros et un ennemi · décor en sprites qui défilent : nouvelle variable, profondeur `z`, sprite fantôme · pixel art du décor, avec un temps de dessin à part · skillmap, activité 2. Les ennemis qui accélèrent avec le score sont en « va plus loin »
 
 **Livrable intermédiaire :** jeu complet et rejouable au clavier
 

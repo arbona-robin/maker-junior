@@ -54,6 +54,7 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 - [Fiche communication](arcade/communication.md)
 - [Fiche synthèse de projet](arcade/projet.md) : planning prévisionnel des 12 séances et budget
 - [Séance 1 — Ton premier jeu de tir](arcade/s01.md)
+- [Séance 2 — Finis ton jeu : décor, score, vies](arcade/s02.md)
 - [Notes de préparation](arcade/notes-de-preparation.md) : choix techniques, découpage en 12 séances, familles de jeux, tutoriels, pièges constatés
 
 Une fiche de séance est créée avant l'atelier, complétée après : les sections « Bilan » et « Adaptations pour la prochaine fois » se remplissent une fois la séance passée, et nourrissent la fiche suivante.

@@ -15,6 +15,9 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 1 — Ton premier jeu de tir](seances/s01-ton-premier-jeu-de-tir.md)**
   Tu dessines ton héros et tes ennemis, puis tu programmes ton héros pour qu'il tire sur les ennemis qui foncent sur lui.
 
+- **[Séance 2 — Finis ton jeu : décor, score, vies](seances/s02-finis-ton-jeu.md)**
+  Ton jeu a un écran de démarrage, un score, des vies, et un décor que tu dessines, qui défile derrière ton héros.
+
 ## Le matériel
 
 - MakeCode Arcade, dans Chrome

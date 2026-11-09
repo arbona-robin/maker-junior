@@ -118,6 +118,7 @@ nav:
   - Projet Jeu d'arcade:
       - projets/arcade/index.md
       - "Séance 1 — Ton premier jeu de tir": projets/arcade/seances/s01-ton-premier-jeu-de-tir.md
+      - "Séance 2 — Finis ton jeu : décor, score, vies": projets/arcade/seances/s02-finis-ton-jeu.md
   - Fiches:
       - fiches/index.md
       - "Tracer, découper, plier le carton": fiches/carton-tracer-decouper-plier.md
