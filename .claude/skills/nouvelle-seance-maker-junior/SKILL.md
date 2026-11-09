@@ -159,7 +159,9 @@ magick photo.HEIC -auto-orient -strip -resize '2000x2000>' -quality 85 sortie.jp
 # Capture Retina : moitié de résolution, le texte reste net
 magick capture.png -strip -resize '1638x>' sortie.png
 
-# Vidéo : H.264 720p, 8 bits, sans audio (bruit d'atelier, voix)
+# Vidéo : H.264 720p, 8 bits, sans audio (bruit d'atelier, voix).
+# Sauf quand le son est l'information (le bip d'un multimètre) : remplacer -an par -c:a aac -b:a 96k.
+# Une vidéo tournée en portrait prend class="portrait" dans la page : sa hauteur reste dans l'écran.
 # -pix_fmt yuv420p est indispensable : les vidéos d'iPhone sont en 10 bits,
 # et un H.264 10 bits ne se lit pas sur la plupart des Android.
 ffmpeg -i video.MOV -vf scale=-2:720 -c:v libx264 -profile:v high -level 3.1 \
