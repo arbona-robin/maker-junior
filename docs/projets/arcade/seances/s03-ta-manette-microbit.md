@@ -9,9 +9,30 @@
 
 **Ce que tu vas obtenir :** ton micro:bit envoie `haut` quand tu l'inclines vers l'avant, `bas` vers l'arrière, et `A` quand tu appuies sur A.
 
-Dans Chrome, ouvre **[le tutoriel de la manette](https://makecode.microbit.org/?lang=fr#tutorial:https://github.com/arbona-robin/tutoriels-microbit/manette)**, jusqu'à l'étape **Teste ta manette**.
+### Regarde ton accéléromètre
 
-Tu commences par regarder les valeurs de l'accéléromètre dans **Afficher données Appareil**, pour choisir tes seuils.
+**Regarde les chiffres avant de décider.** Nouveau projet MakeCode micro:bit, nommé `accelerometre`. Dans `toujours`, écris la valeur `y` de l'accéléromètre (avant, arrière).
+
+`série écrire valeur` est dans **Avancé** → **Communication Série**, `accélération (mg)` dans **Entrée**.
+
+```blocks
+basic.forever(function () {
+    serial.writeValue("y", input.acceleration(Dimension.Y))
+})
+```
+
+Télécharge, garde le câble branché, puis clique sur **Afficher données Appareil**. Incline ta carte et regarde la courbe de `y`.
+
+| Tu inclines la carte | La courbe monte ou descend ? | À partir de quelle valeur est-elle vraiment penchée ? |
+|---|---|---|
+| Vers l'avant | | |
+| Vers l'arrière | | |
+
+Ces deux valeurs sont tes **seuils**.
+
+### Programme ta manette
+
+Ouvre **[le tutoriel de la manette](https://makecode.microbit.org/?lang=fr#tutorial:https://github.com/arbona-robin/tutoriels-microbit/manette)**, jusqu'à l'étape **Teste ta manette**.
 
 > [!NOTE] La liaison série, deux fois
 > Elle t'a d'abord montré les valeurs de ton accéléromètre dans MakeCode. Maintenant, elle transporte tes mots vers le jeu. Un seul programme peut l'utiliser à la fois.
