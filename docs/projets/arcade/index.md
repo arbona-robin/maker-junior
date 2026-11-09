@@ -26,9 +26,12 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 3 — Ta manette micro:bit](seances/s03-ta-manette-microbit.md)**
   Ton micro:bit devient ta manette : tu l'inclines pour monter et descendre, et il réagit à ce qui se passe dans le jeu.
 
+- **[Séance 4 — Dessine ton bouton de tir](seances/s04-dessine-ton-bouton-de-tir.md)**
+  Tu adaptes un capuchon de bouton d'arcade en 3D, puis tu fabriques ton bouton de tir en carton et en cuivre.
+
 ## Le matériel
 
 - MakeCode Arcade, dans Chrome
 - 1 micro:bit v2 et son bracelet
-- du carton, du papier aluminium, des pinces crocodile
+- du carton, du ruban de cuivre, des élastiques, des pinces crocodile
 - une imprimante 3D

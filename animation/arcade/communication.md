@@ -38,7 +38,7 @@ La Plateforme
 
 1. Un jeune qui joue sur grand écran, le micro:bit au poignet, l'autre main sur le gros bouton de tir en carton. *(à prendre)*
 2. L'écran de MakeCode Arcade : le jeu de tir à gauche, les blocs colorés à droite. *(à prendre)*
-3. Le bouton de tir ouvert : les deux cartons, l'aluminium, l'écarteur percé, et le capuchon imprimé à côté. *(à prendre)*
+3. Le bouton de tir déplié : la pièce de carton, ses deux bandes de cuivre, et le capuchon imprimé à côté. *(à prendre)*
 4. Des commandes d'équipe en action, un tapis de danse en carton ou un punching-ball, des jeunes qui jouent. *(à prendre)*
 
 ---

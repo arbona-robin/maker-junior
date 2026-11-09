@@ -19,14 +19,14 @@ Deux jeux. Le jeu de tir que chaque jeune programme et dessine pendant les cinq 
 ## Objectifs pédagogiques
 
 - Être capable de programmer en blocs un jeu d'arcade complet (sprites, collisions, score, vies, fin de partie) en suivant un tutoriel, puis de le modifier sans aide
-- Être capable de réaliser un interrupteur en carton et aluminium et de le faire lire par une broche du micro:bit, contact vérifié à l'appui et au relâchement
-- Être capable de modéliser une pièce qui respecte un plan coté, le capuchon s'emboîtant sur le bouton sans reprise
+- Être capable de réaliser un interrupteur en carton et cuivre d'après un plan et de le faire lire par une broche du micro:bit, contact vérifié à l'appui et au relâchement
+- Être capable d'adapter une pièce 3D existante à une cote imposée et de la personnaliser, le capuchon tenant dans les 40 mm du bouton
 - Être capable d'expliquer le dialogue entre la manette et le jeu (mots envoyés, réactions reçues) et de l'adapter à une manette de son invention
 - Être capable de concevoir un jeu et ses commandes, de le faire tester par d'autres joueurs et de justifier les modifications apportées après le test
 
 ## Description du projet
 
-Pendant les cinq premières séances, chaque jeune construit le même jeu de tir dans MakeCode Arcade, dont il dessine les personnages et le décor en pixel art, puis la manette pour y jouer : un micro:bit porté au poignet, que l'on incline pour se déplacer, et un bouton de tir en carton surmonté d'un capuchon modélisé dans Tinkercad. La manette parle au jeu par la liaison série, à travers une page relais, et réagit à ce qui s'y passe : elle sonne et affiche les vies. Ensuite, seul ou en équipe, chacun choisit une famille de jeux (plateforme, course, rythme, réflexes, sport) et invente les commandes qui vont avec, en carton, en récupération ou en impression 3D. Ils apprennent la programmation par blocs et la logique d'un jeu, le pixel art, le circuit fermé et la lecture d'une broche, l'accéléromètre comme commande, la modélisation sur plan coté, le dialogue entre deux programmes selon un protocole, et le test par d'autres joueurs. Chaque notion est présentée dans les dix premières minutes, puis chacun avance à son rythme dans un tutoriel MakeCode : les tutoriels portent la consigne pas à pas, l'animateur circule. Le parcours se termine par une salle d'arcade où les jeux sont joués par d'autres.
+Pendant les cinq premières séances, chaque jeune construit le même jeu de tir dans MakeCode Arcade, dont il dessine les personnages et le décor en pixel art, puis la manette pour y jouer : un micro:bit porté au poignet, que l'on incline pour se déplacer, et un bouton de tir en carton et cuivre, surmonté d'un capuchon adapté dans Tinkercad à partir d'un modèle existant. La manette parle au jeu par la liaison série, à travers une page relais, et réagit à ce qui s'y passe : elle sonne et affiche les vies. Ensuite, seul ou en équipe, chacun choisit une famille de jeux (plateforme, course, rythme, réflexes, sport) et invente les commandes qui vont avec, en carton, en récupération ou en impression 3D. Ils apprennent la programmation par blocs et la logique d'un jeu, le pixel art, le circuit fermé et la lecture d'une broche, l'accéléromètre comme commande, la modélisation sur plan coté, le dialogue entre deux programmes selon un protocole, et le test par d'autres joueurs. Chaque notion est présentée dans les dix premières minutes, puis chacun avance à son rythme dans un tutoriel MakeCode : les tutoriels portent la consigne pas à pas, l'animateur circule. Le parcours se termine par une salle d'arcade où les jeux sont joués par d'autres.
 
 ## Prérequis
 
@@ -44,15 +44,16 @@ Utile : avoir suivi le projet Rover ou Objets connectés. MakeCode, le micro:bit
 
 - 1 micro:bit v2 et son bracelet
 - 1 câble micro-USB de 2 m, pour jouer le micro:bit au poignet
-- Le bouton de tir : carton, papier aluminium, 2 pinces crocodile
+- Le bouton de tir : carton, 2 bandes de ruban de cuivre de 6 mm, 2 élastiques, 2 pinces crocodile
 - Le capuchon imprimé du bouton, que le jeune emporte
 - 1 ordinateur, le même à chaque séance : la progression des tutoriels est enregistrée dans son navigateur
 
 **Commun**
 
 - Trois postes de découpe, chacun avec un outil de découpe, une règle métallique à rebord et un tapis de découpe
-- Le plan coté du bouton de tir et du capuchon, imprimé
-- Colle, ruban adhésif, papier aluminium
+- Le plan coté du bouton de tir, imprimé (quatre par A4)
+- Colle, ruban adhésif, ruban de cuivre de 6 mm, élastiques
+- Multimètres, pour tester les boutons
 - Imprimante 3D et filament
 - Pour les manettes d'équipe : cartes DFR0548 (9 broches, pour les jeux de rythme), pinces crocodile, matériaux de récupération en bac commun
 - Casques, pour la séance musique
@@ -91,7 +92,7 @@ Pour 12 jeunes. Prix indicatifs TTC. Le matériel « Possédé » reprend les pr
 | Casques | 12 | | | Possédé |
 | **Par parcours** | | | | |
 | Filament PLA : capuchons et pièces des manettes d'équipe | 1 | 15 € | 15 € | À racheter |
-| Carton, papier aluminium, colle, ruban adhésif | 1 | 30 € | 30 € | À racheter |
+| Carton, colle, ruban adhésif, élastiques ; ruban de cuivre, du stock des Objets connectés | 1 | 30 € | 30 € | À racheter |
 | Découpe : lames de rechange | 1 | 10 € | 10 € | À racheter |
 | Casse : 15 % des micro:bit et câbles manipulés, 288 € | 1 | 43 € | 43 € | À racheter |
 
@@ -127,15 +128,15 @@ Le premier parcours demande 48 € d'achats, les câbles micro-USB de 2 m.
 
 **Titre :** Dessine ton bouton de tir
 
-**Notions :** modélisation 3D dans Tinkercad à partir d'un plan coté commun · contrainte de conception : le capuchon appuie sur le contact et tient dessus · personnalisation : emblème, initiale · impression additive et slicer
+**Notions :** importer et modifier une pièce qui existe : un capuchon de bouton d'arcade fourni à 52 mm, ramené à 40 mm par le calcul de l'échelle · couper avec une forme en Perçage · contrainte de conception : 40 mm au plus, dessous plat · personnalisation · interrupteur en carton d'après un plan : deux bandes de cuivre face à face, une charnière qui fait ressort · test de continuité au multimètre
 
-**Livrable intermédiaire :** capuchon exporté en `.STL`, nommé selon la convention, imprimé par l'animateur avant S5
+**Livrable intermédiaire :** capuchon exporté en `.STL`, imprimé par l'animateur avant S5 ; bouton en carton qui fait contact à l'appui
 
 ## Séance 5 — Phase 1 — Découverte & prise en main
 
 **Titre :** Ta manette : le bracelet et le bouton de tir
 
-**Notions :** découpe au plan coté · circuit fermé · interrupteur carton et aluminium : deux cartons garnis d'aluminium, un écarteur en carton percé au centre, le capuchon collé au-dessus du trou · broche en entrée avec résistance de tirage · micro:bit au poignet · rotation de l'avant-bras pour haut et bas · zone morte
+**Notions :** capuchon imprimé collé sur le bouton · le bouton branché sur une broche : P1 ou P2, broche en entrée avec résistance de tirage · micro:bit au poignet · rotation de l'avant-bras pour haut et bas · zone morte
 
 **Livrable intermédiaire :** bouton monté avec son capuchon, jeu joué au bracelet et au bouton. Fin du temps individuel.
 

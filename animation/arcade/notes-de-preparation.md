@@ -21,7 +21,7 @@ Un collègue anime un parcours jeu vidéo sous Unity et Unreal Engine. La diffé
 
 ## Le découpage
 
-12 séances, dont une ajustable (S10) : c'est elle qu'on retire si le projet n'en compte que 11. Le jeu de tir sert de base commune (publié : https://arcade.makecode.com/_6XEcLbKsE53d). La manette commune est le micro:bit porté au poignet dans le bracelet du kit, avec un bouton de tir en carton. Pas de pièce imprimée lourde par jeune : seul un petit capuchon de bouton, quelques minutes d'impression chacun.
+12 séances, dont une ajustable (S10) : c'est elle qu'on retire si le projet n'en compte que 11. Le jeu de tir sert de base commune (publié : https://arcade.makecode.com/_6XEcLbKsE53d). La manette commune est le micro:bit porté au poignet dans le bracelet du kit, avec un bouton de tir en carton. Le bouton est une seule pièce de carton pliée, deux bandes de ruban de cuivre face à face, une charnière qui fait ressort (plan : `outils/plans/plan_bouton.py`). Son capuchon part d'un modèle fourni trop grand (`outils/plans/capuchon_bouton.py`, FreeCAD), que chaque jeune met à l'échelle et personnalise dans Tinkercad : pas de pièce imprimée lourde par jeune.
 
 ### Phase 1 : chacun construit le même jeu et la même manette
 
@@ -30,8 +30,8 @@ Un collègue anime un parcours jeu vidéo sous Unity et Unreal Engine. La diffé
 | S1 | Ton premier jeu de tir | pixel art : vaisseau, ennemis, projectile, avec un vrai temps de dessin · déplacement au clavier · projectile · ennemis au hasard · collision entre deux sortes de sprites | vaisseau qui tire sur des ennemis, jouable au clavier |
 | S2 | Finis ton jeu : décor, score, vies | écran de démarrage · score et vies · fin de partie · décor en sprites qui défilent derrière le héros (profondeur `z`, fantôme), sans extension · pixel art du décor, avec un temps de dessin à part · ennemis qui accélèrent en « va plus loin » | jeu complet et rejouable au clavier |
 | S3 | Ta manette micro:bit | liaison série · protocole d'un mot par ligne · page relais · boutons A et B · réactions de la manette · fermer MakeCode avant de jouer | jeu joué avec le micro:bit en main, qui sonne et affiche les vies |
-| S4 | Dessine ton bouton de tir | modélisation 3D dans Tinkercad à partir d'un plan coté commun · contrainte de conception : le capuchon appuie sur le contact et tient dessus · personnalisation · impression additive et slicer | capuchon exporté en `.STL`, imprimé par l'animateur avant S5 |
-| S5 | Ta manette : le bracelet et le bouton de tir | découpe au plan coté · circuit fermé · interrupteur carton et aluminium, sur le modèle du bouton géant Makey Makey : deux cartons garnis d'aluminium, un écarteur en carton percé au centre, le capuchon collé au-dessus du trou · broche en entrée avec résistance de tirage · micro:bit au poignet · rotation de l'avant-bras pour haut et bas · zone morte | bouton monté avec son capuchon, jeu joué au bracelet et au bouton. Fin du temps individuel |
+| S4 | Dessine ton bouton de tir | importer une pièce qui existe : capuchon de bouton d'arcade fourni à 52 mm, ramené à 40 mm par le calcul de l'échelle · couper avec une forme en Perçage · personnalisation · bouton en carton d'après un plan · test de continuité au multimètre | capuchon exporté en `.STL`, imprimé avant S5 ; bouton en carton qui fait contact |
+| S5 | Ta manette : le bracelet et le bouton de tir | capuchon collé · bouton branché sur P1 ou P2, broche en entrée avec résistance de tirage · micro:bit au poignet · rotation de l'avant-bras pour haut et bas · zone morte | jeu joué au bracelet et au bouton. Fin du temps individuel |
 
 ### Phase 2 : en équipe, un jeu et sa manette
 
@@ -120,7 +120,7 @@ Inclinaison pour les directions, A et B, le logo pour le menu.
 
 ## À trancher ou à faire
 
-- Le plan coté commun du bouton de tir et du capuchon, et le temps d'impression des capuchons pour tout le groupe.
+- Le temps d'impression des capuchons pour tout le groupe, à lire au slicer.
 - Un câble micro-USB de 2 m par poste, pour le micro:bit au poignet.
 - La skillmap du jeu de tir (trois activités) et le tutoriel micro:bit de la manette.
 - Les tutoriels course et évitement, rythme et réflexes.

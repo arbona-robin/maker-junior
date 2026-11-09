@@ -112,6 +112,17 @@ Des milliers de pièces sont partagées dans la galerie de Tinkercad. Cherche pa
 
 Coche **Copie autorisée** : tu ne vois plus que les pièces que tu as le droit de copier et de modifier. Garde le nom de leur auteur, pour le citer.
 
+### Importer et modifier une pièce
+
+Une pièce trouvée en ligne ou fournie par l'animateur arrive en fichier `.STL`. **Importer**, en haut à droite, puis choisis le fichier.
+
+- **Les unités** : un fichier dessiné en pouces arrive 25,4 fois trop petit. En cas de doute, regarde les cotes affichées.
+- **L'échelle** : la taille voulue divisée par la taille affichée, × 100. Elle change toutes les cotes ensemble, sans déformer la pièce.
+- **Couper** : pose une forme en **Perçage** sur la partie à enlever, sélectionne les deux, puis **Regrouper**.
+- **Ajouter** : pose une forme **Solide** (un texte, un cylindre), puis **Regrouper**.
+
+Si la pièce vient de quelqu'un d'autre, garde le nom de son auteur pour le citer.
+
 ### S'ajuster sur une pièce qui existe
 
 Une pièce qui coiffe, entoure ou porte un composant se dessine à partir de **ses cotes réelles**.
