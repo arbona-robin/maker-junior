@@ -42,9 +42,13 @@ L'échelle, c'est la taille voulue divisée par la taille actuelle, en pourcenta
 
 ## 2. Ton capuchon à toi
 
-**Ce que tu vas obtenir :** ton capuchon personnalisé, regroupé en une seule pièce, exporté en `.STL`.
+**Ce que tu vas obtenir :** ton capuchon personnalisé, regroupé en une seule pièce, exporté en `.STL`, puis imprimé.
 
-La forme et le texte sont à toi. Deux contraintes : **40 mm de diamètre au plus**, sinon il dépasse de ton bouton, et **le dessous plat**, pour le coller.
+<figure markdown>
+![Un capuchon imprimé en blanc, encore sur le plateau de l'imprimante : le dôme au sommet plat, le mot FEU ! et une petite étoile creusés](../../../assets/arcade-s04/04-capuchon-imprime.jpg)
+</figure>
+
+La forme et le texte sont à toi. Deux contraintes : **40 mm de diamètre au plus**, sinon il dépasse de ton bouton, et **le dessous plat**, pour qu'il repose bien à plat sur ton bouton.
 
 L'exemple qui suit aplatit le sommet du dôme, puis y pose un texte.
 
@@ -147,7 +151,7 @@ Une pince dans chaque encoche : elle y mord le bout d'une seule bande. Le multim
 > [!TIP] Ça marche si…
 > Le multimètre affiche OL au repos, et bipe quand tu appuies. Il bipe sans que tu appuies ? Desserre les élastiques, ou vérifie qu'une pince ne mord pas les deux faces.
 
-Ton capuchon s'imprime pendant la semaine : tu le colles sur ton bouton à la séance 5.
+Ton capuchon s'imprime pendant la semaine : tu le montes sur ton bouton à la séance 5.
 
 ## Va plus loin
 

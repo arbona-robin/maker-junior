@@ -29,6 +29,9 @@ Chaque séance est publiée avant l'atelier, et reste en ligne après.
 - **[Séance 4 — Dessine ton bouton de tir](seances/s04-dessine-ton-bouton-de-tir.md)**
   Tu adaptes un capuchon de bouton d'arcade en 3D, puis tu fabriques ton bouton de tir en carton et en cuivre.
 
+- **[Séance 5 — Ta manette : le bracelet et le bouton de tir](seances/s05-ta-manette-au-poignet.md)**
+  Ton micro:bit passe au poignet, ton bouton de tir se branche, et tu joues avec ton bras et ton bouton.
+
 ## Le matériel
 
 - MakeCode Arcade, dans Chrome

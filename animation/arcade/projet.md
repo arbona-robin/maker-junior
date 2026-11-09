@@ -136,7 +136,7 @@ Le premier parcours demande 48 € d'achats, les câbles micro-USB de 2 m.
 
 **Titre :** Ta manette : le bracelet et le bouton de tir
 
-**Notions :** capuchon imprimé collé sur le bouton · le bouton branché sur une broche : P1 ou P2, broche en entrée avec résistance de tirage · micro:bit au poignet · rotation de l'avant-bras pour haut et bas · zone morte
+**Notions :** capuchon tenu sur le bouton par les élastiques · le bouton branché entre P1 et GND, lu comme une broche pressée · condition « ou » · micro:bit au poignet : l'axe qui bouge quand on tourne l'avant-bras, mesuré · seuils et zone morte
 
 **Livrable intermédiaire :** bouton monté avec son capuchon, jeu joué au bracelet et au bouton. Fin du temps individuel.
 

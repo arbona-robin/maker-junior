@@ -57,6 +57,7 @@ Les conseils de rédaction champ par champ, la liste des modalités pédagogique
 - [Séance 2 — Finis ton jeu : décor, score, vies](arcade/s02.md)
 - [Séance 3 — Ta manette micro:bit](arcade/s03.md)
 - [Séance 4 — Dessine ton bouton de tir](arcade/s04.md)
+- [Séance 5 — Ta manette : le bracelet et le bouton de tir](arcade/s05.md)
 - [Notes de préparation](arcade/notes-de-preparation.md) : choix techniques, découpage en 12 séances, familles de jeux, tutoriels, pièges constatés
 
 Une fiche de séance est créée avant l'atelier, complétée après : les sections « Bilan » et « Adaptations pour la prochaine fois » se remplissent une fois la séance passée, et nourrissent la fiche suivante.

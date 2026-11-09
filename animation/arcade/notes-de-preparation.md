@@ -31,7 +31,7 @@ Un collègue anime un parcours jeu vidéo sous Unity et Unreal Engine. La diffé
 | S2 | Finis ton jeu : décor, score, vies | écran de démarrage · score et vies · fin de partie · décor en sprites qui défilent derrière le héros (profondeur `z`, fantôme), sans extension · pixel art du décor, avec un temps de dessin à part · ennemis qui accélèrent en « va plus loin » | jeu complet et rejouable au clavier |
 | S3 | Ta manette micro:bit | liaison série · protocole d'un mot par ligne · page relais · boutons A et B · réactions de la manette · fermer MakeCode avant de jouer | jeu joué avec le micro:bit en main, qui sonne et affiche les vies |
 | S4 | Dessine ton bouton de tir | importer une pièce qui existe : capuchon de bouton d'arcade fourni à 52 mm, ramené à 40 mm par le calcul de l'échelle · couper avec une forme en Perçage · personnalisation · bouton en carton d'après un plan · test de continuité au multimètre | capuchon exporté en `.STL`, imprimé avant S5 ; bouton en carton qui fait contact |
-| S5 | Ta manette : le bracelet et le bouton de tir | capuchon collé · bouton branché sur P1 ou P2, broche en entrée avec résistance de tirage · micro:bit au poignet · rotation de l'avant-bras pour haut et bas · zone morte | jeu joué au bracelet et au bouton. Fin du temps individuel |
+| S5 | Ta manette : le bracelet et le bouton de tir | capuchon tenu par les élastiques · bouton entre P1 et GND, lu comme une broche pressée, condition « ou » · micro:bit au poignet, axe et seuils mesurés de nouveau · zone morte | jeu joué au bracelet et au bouton. Fin du temps individuel |
 
 ### Phase 2 : en équipe, un jeu et sa manette
 

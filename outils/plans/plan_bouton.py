@@ -106,7 +106,7 @@ def plan():
     lignes = [
         "Découpe le contour, plie aux deux pointillés : la face du bas vient sous la face du haut, côté imprimé dedans.",
         "Colle le ruban de cuivre côté imprimé, sur les deux bandes orange : elles se retrouvent face à face, sans se toucher.",
-        "Deux élastiques tiennent le bouton fermé. Le capuchon se colle de l'autre côté, sur le cercle.",
+        "Deux élastiques tiennent le bouton fermé, et le capuchon posé de l'autre côté, sur le cercle.",
         "Chaque pince mord une encoche : elle n'y touche que le bout de la bande d'en face.",
     ]
     morceaux.append(f'<line x1="22" y1="{yl - 9}" x2="34" y2="{yl - 9}" stroke="#000" stroke-width="0.35"/>'
