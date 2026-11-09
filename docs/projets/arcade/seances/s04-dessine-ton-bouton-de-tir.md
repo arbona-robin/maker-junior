@@ -74,7 +74,7 @@ Sélectionne tout, **Regroupe**, puis **Exporter** → **La forme sélectionnée
 **Ce que tu vas obtenir :** un bouton plié, avec deux bandes de cuivre face à face qui se touchent quand tu appuies.
 
 <figure markdown>
-![Le plan du bouton de tir, quatre par page : une pièce de 55 × 89 mm, deux plis rapprochés au milieu qui forment la charnière, une bande de cuivre de 40 mm sur chaque face, sortant à droite en haut et à gauche en bas, et le cercle du capuchon de 40 mm sur la face du haut](../../../assets/plans/bouton-de-tir-v1.png)
+![Le plan du bouton de tir, quatre par page : une pièce de 55 × 89 mm, deux plis rapprochés au milieu qui forment la charnière, une bande de cuivre de 40 mm sur chaque face, l'une depuis le bord gauche, l'autre depuis le bord droit, une encoche en face du bout de chaque bande, et le cercle du capuchon de 40 mm sur la face du haut](../../../assets/plans/bouton-de-tir-v1.png)
 <figcaption>[Le plan à imprimer](../../../assets/plans/bouton-de-tir-v1.pdf), en A4 à 100 %, quatre boutons par page.</figcaption>
 </figure>
 
@@ -88,18 +88,26 @@ Sélectionne tout, **Regroupe**, puis **Exporter** → **La forme sélectionnée
 2. Colle le ruban de cuivre côté imprimé, sur les deux bandes orange.
 3. Plie à la charnière, côté imprimé dedans, et tiens le bouton fermé avec deux élastiques.
 
-<span class="todo-media">[photo : le bouton découpé au plan, déplié, ses deux bandes de cuivre collées]</span>
-
-<span class="todo-media">[photo : le bouton plié, tenu par ses élastiques, une pince à droite, l'autre à gauche]</span>
+<div class="photo-row" markdown>
+<figure markdown>
+![Le bouton déplié : la pièce de carton, une bande de cuivre sur chaque face, une encoche sur chaque face en face du bout de l'autre bande, les plis de la charnière au milieu](../../../assets/arcade-s04/01-bouton-deplie.jpg)
+</figure>
+<figure markdown>
+![Le bouton plié : à travers l'encoche, on voit le bout de la bande de cuivre de la face d'en dessous](../../../assets/arcade-s04/02-bouton-plie.jpg)
+</figure>
+<figure markdown>
+![Le bouton fermé par deux élastiques, le bout de chaque bande visible dans son encoche](../../../assets/arcade-s04/03-bouton-ferme.jpg)
+</figure>
+</div>
 
 ### Teste-le
 
-Une pince sur chaque bande, à droite et à gauche. Le multimètre, en continuité, bipe quand les deux bandes se touchent.
+Une pince dans chaque encoche : elle y mord le bout d'une seule bande. Le multimètre, en continuité, bipe quand les deux bandes se touchent.
 
 <video controls playsinline preload="metadata" src="../../../../assets/arcade-s04/video-test-multimetre.mp4"></video>
 
 > [!TIP] Ça marche si…
-> Le multimètre affiche OL au repos, et bipe quand tu appuies. Il bipe sans que tu appuies ? Desserre les élastiques.
+> Le multimètre affiche OL au repos, et bipe quand tu appuies. Il bipe sans que tu appuies ? Desserre les élastiques, ou vérifie qu'une pince ne mord pas les deux faces.
 
 Ton capuchon s'imprime pendant la semaine : tu le colles sur ton bouton à la séance 5.
 

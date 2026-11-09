@@ -21,7 +21,7 @@ Un collègue anime un parcours jeu vidéo sous Unity et Unreal Engine. La diffé
 
 ## Le découpage
 
-12 séances, dont une ajustable (S10) : c'est elle qu'on retire si le projet n'en compte que 11. Le jeu de tir sert de base commune (publié : https://arcade.makecode.com/_6XEcLbKsE53d). La manette commune est le micro:bit porté au poignet dans le bracelet du kit, avec un bouton de tir en carton. Le bouton est une seule pièce de carton pliée, deux bandes de ruban de cuivre face à face, une charnière qui fait ressort (plan : `outils/plans/plan_bouton.py`). Son capuchon part d'un modèle fourni trop grand (`outils/plans/capuchon_bouton.py`, FreeCAD), que chaque jeune met à l'échelle et personnalise dans Tinkercad : pas de pièce imprimée lourde par jeune.
+12 séances, dont une ajustable (S10) : c'est elle qu'on retire si le projet n'en compte que 11. Le jeu de tir sert de base commune (publié : https://arcade.makecode.com/_6XEcLbKsE53d). La manette commune est le micro:bit porté au poignet dans le bracelet du kit, avec un bouton de tir en carton. Le bouton est une seule pièce de carton pliée, deux bandes de ruban de cuivre face à face, une charnière qui fait ressort, une encoche par face où la pince mord le bout d'une seule bande (plan : `outils/plans/plan_bouton.py`). Son capuchon part d'un modèle fourni trop grand (`outils/plans/capuchon_bouton.py`, FreeCAD), que chaque jeune met à l'échelle et personnalise dans Tinkercad : pas de pièce imprimée lourde par jeune.
 
 ### Phase 1 : chacun construit le même jeu et la même manette
 

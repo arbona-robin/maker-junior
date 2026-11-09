@@ -8,8 +8,9 @@ et le PNG de la page, avec Inkscape.
 Le bouton est une seule pièce de carton, pliée en deux faces. Deux plis rapprochés forment une
 charnière, qui écarte les faces au repos et les ramène après l'appui. Une bande de ruban de cuivre
 sur chaque face, côté intérieur (celui du plan imprimé) : une fois plié, elles se font face et se
-chevauchent sous le capuchon. Chaque bande sort par un bord opposé, où mord la pince crocodile,
-et s'arrête loin de l'autre bord, pour que la pince ne touche jamais les deux bandes.
+chevauchent sous le capuchon. Chaque bande va jusqu'à un bord, la bande du haut à gauche, celle du
+bas à droite. En face de son bout, une encoche dans l'autre face : la pince crocodile y mord la
+bande seule, sans jamais toucher l'autre.
 
 Même code graphique que les plans de la lampe et du châssis : trait plein noir, on découpe ;
 pointillé, on plie ; cotes en rouge, étiquettes grises ; cuivre en orange.
@@ -22,7 +23,8 @@ LARGEUR = 55      # largeur de la pièce, en mm
 FACE = 42         # hauteur d'une face : le capuchon de 40 mm y tient
 CHARNIERE = 5     # écart entre les deux plis
 PISTE = 6         # largeur du ruban de cuivre
-RETRAIT = 15      # chaque bande s'arrête à 15 mm du bord opposé à sa pince
+BANDE = 40        # longueur de chaque bande : elles se chevauchent sur 2 × 40 - 55 = 25 mm
+ENCOCHE = (8, 10) # profondeur et hauteur de l'encoche, où mord la pince
 CAPUCHON = 40     # diamètre du capuchon
 
 HAUTEUR = 2 * FACE + CHARNIERE
@@ -59,36 +61,43 @@ def cote_v(x, y1, y2, texte):
 
 def piece(x0, y0, cotes):
     m = []
-    # Le contour : on découpe.
-    m.append(f'<rect x="{x0}" y="{y0}" width="{LARGEUR}" height="{HAUTEUR}" fill="none" stroke="#000" stroke-width="0.35"/>')
+    ya = y0 + FACE / 2                         # la bande du haut
+    yb = y0 + FACE + CHARNIERE + FACE / 2      # la bande du bas
+    ep, eh = ENCOCHE
+    # Le contour, avec ses deux encoches : la face du haut à droite, la face du bas à gauche.
+    d = (f"M {x0} {y0} H {x0 + LARGEUR} V {ya - eh / 2} H {x0 + LARGEUR - ep} V {ya + eh / 2} H {x0 + LARGEUR} "
+         f"V {y0 + HAUTEUR} H {x0} V {yb + eh / 2} H {x0 + ep} V {yb - eh / 2} H {x0} Z")
+    m.append(f'<path d="{d}" fill="none" stroke="#000" stroke-width="0.35"/>')
     # Les deux plis de la charnière.
     for y in (y0 + FACE, y0 + FACE + CHARNIERE):
         m.append(f'<line x1="{x0}" y1="{y}" x2="{x0 + LARGEUR}" y2="{y}" stroke="#000" stroke-width="0.3" stroke-dasharray="1.6,1.2"/>')
-    # Les bandes de cuivre, côté imprimé. Celle du haut sort à droite, celle du bas à gauche.
-    ya = y0 + FACE / 2
-    yb = y0 + FACE + CHARNIERE + FACE / 2
-    for xa, xb, y, pince in ((x0 + RETRAIT, x0 + LARGEUR, ya, "droite"), (x0, x0 + LARGEUR - RETRAIT, yb, "gauche")):
+    # Les bandes de cuivre, côté imprimé : celle du haut part du bord gauche, celle du bas du bord droit.
+    for xa, xb, y, xp, ancre in ((x0, x0 + BANDE, ya, x0 - 2.5, "end"),
+                                 (x0 + LARGEUR - BANDE, x0 + LARGEUR, yb, x0 + LARGEUR + 2.5, "start")):
         m.append(f'<rect x="{xa}" y="{y - PISTE / 2}" width="{xb - xa}" height="{PISTE}" fill="{CUIVRE}" fill-opacity="0.55"/>'
                  f'<text x="{(xa + xb) / 2}" y="{y + 1.1}" font-size="2.6" fill="{BRUN}" text-anchor="middle" {POLICE}>'
                  f'cuivre · {xb - xa:.0f} mm</text>')
-        xp = x0 + LARGEUR + 2.5 if pince == "droite" else x0 - 2.5
-        m.append(f'<text x="{xp}" y="{y + 1}" font-size="2.6" fill="{BRUN}" text-anchor="{"start" if pince == "droite" else "end"}" {POLICE}>pince</text>')
+    # Où mordent les pinces, une fois plié : à travers chaque encoche, sur le bout de la bande d'en face.
+    m.append(f'<text x="{x0 + LARGEUR + 2}" y="{ya + 1}" font-size="2.6" fill="{BRUN}" {POLICE}>pince</text>'
+             f'<text x="{x0 - 2}" y="{yb + 1}" font-size="2.6" fill="{BRUN}" text-anchor="end" {POLICE}>pince</text>')
     # La place du capuchon, de l'autre côté, au-dessus du chevauchement des bandes.
-    cx = x0 + (RETRAIT + LARGEUR - RETRAIT) / 2
+    cx = x0 + LARGEUR / 2
     m.append(f'<circle cx="{cx}" cy="{ya}" r="{CAPUCHON / 2}" fill="none" stroke="#555" stroke-width="0.3" stroke-dasharray="0.8,0.8"/>'
              f'<text x="{cx}" y="{ya - CAPUCHON / 2 + 4.5}" font-size="2.5" fill="#555" text-anchor="middle" {POLICE}>capuchon, de l\'autre côté</text>')
     m.append(f'<text x="{x0 + LARGEUR / 2}" y="{y0 + FACE + CHARNIERE / 2 + 0.9}" font-size="2.4" fill="#555" text-anchor="middle" {POLICE}>charnière</text>')
     if cotes:
         m.append(cote_h(x0, x0 + LARGEUR, y0 - 5, f"{LARGEUR} mm"))
-        m.append(cote_v(x0 - 12, y0, y0 + FACE, f"{FACE} mm"))
-        m.append(cote_v(x0 - 12, y0 + FACE, y0 + FACE + CHARNIERE, f"{CHARNIERE}"))
-        m.append(cote_v(x0 - 12, y0 + FACE + CHARNIERE, y0 + HAUTEUR, f"{FACE} mm"))
+        m.append(cote_v(x0 - 30, y0, y0 + FACE, f"{FACE} mm"))
+        m.append(cote_v(x0 - 30, y0 + FACE, y0 + FACE + CHARNIERE, f"{CHARNIERE}"))
+        m.append(cote_v(x0 - 30, y0 + FACE + CHARNIERE, y0 + HAUTEUR, f"{FACE} mm"))
+        m.append(f'<text x="{x0 + LARGEUR + 2}" y="{ya + 9}" font-size="2.6" fill="{ROUGE}" {POLICE}>encoche</text>'
+                 f'<text x="{x0 + LARGEUR + 2}" y="{ya + 12.5}" font-size="2.6" fill="{ROUGE}" {POLICE}>{ep} × {eh} mm</text>')
     return m
 
 
 def plan():
     morceaux = []
-    xs = (40, 125)
+    xs = (45, 135)
     ys = (28, 140)
     for i, y in enumerate(ys):
         for j, x in enumerate(xs):
@@ -98,7 +107,7 @@ def plan():
         "Découpe le contour, plie aux deux pointillés : la face du bas vient sous la face du haut, côté imprimé dedans.",
         "Colle le ruban de cuivre côté imprimé, sur les deux bandes orange : elles se retrouvent face à face, sans se toucher.",
         "Deux élastiques tiennent le bouton fermé. Le capuchon se colle de l'autre côté, sur le cercle.",
-        "Une pince mord le cuivre à droite, l'autre à gauche, jamais du côté où le cuivre s'arrête avant le bord.",
+        "Chaque pince mord une encoche : elle n'y touche que le bout de la bande d'en face.",
     ]
     morceaux.append(f'<line x1="22" y1="{yl - 9}" x2="34" y2="{yl - 9}" stroke="#000" stroke-width="0.35"/>'
                     f'<text x="37" y="{yl - 7.7}" font-size="3.6" {POLICE}>on découpe</text>'
