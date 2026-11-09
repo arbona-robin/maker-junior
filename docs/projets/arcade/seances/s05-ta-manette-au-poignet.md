@@ -10,7 +10,7 @@
 **Ce que tu vas obtenir :**
 
 <figure markdown>
-![Le bouton monté : le capuchon blanc FEU ! posé sur le bouton en carton, tenu par deux élastiques qui passent par-dessus, une pince noire en haut et une rouge en bas, chacune dans son encoche](../../../assets/arcade-s05/01-bouton-monte.jpg)
+![Le bouton monté : le capuchon blanc FEU ! posé sur le bouton en carton, tenu par deux élastiques qui passent par-dessus, une pince rouge à gauche et une noire à droite, chacune dans son encoche](../../../assets/arcade-s05/01-bouton-monte.jpg)
 </figure>
 
 Pose ton capuchon sur le cercle de ton bouton, et fais passer les deux élastiques par-dessus : ils tiennent le bouton fermé et le capuchon en place.
