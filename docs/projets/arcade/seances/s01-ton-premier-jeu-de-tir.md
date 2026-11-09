@@ -22,8 +22,8 @@ Dans Chrome, ouvre **[le parcours du jeu de tir](https://arcade.makecode.com/--s
 
 Le tutoriel te guide pas à pas. Cette page te donne le programme de chaque étape, si tu bloques.
 
-> [!NOTE] Ton jeu reste sur cet ordinateur
-> Ta progression est enregistrée dans le navigateur. À chaque séance, reprends le même poste.
+> [!NOTE] Tout ton jeu se fait dans le parcours
+> Dessins compris, jusqu'à **Terminé** : l'activité suivante reprend ton jeu tel quel. Ce que tu modifies ailleurs n'y passe pas. Ta progression reste sur cet ordinateur : reprends le même poste à chaque séance.
 
 ## 2. Ton héros et son tir
 
