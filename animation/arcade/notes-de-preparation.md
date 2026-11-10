@@ -16,7 +16,7 @@ Un collègue anime un parcours jeu vidéo sous Unity et Unreal Engine. La diffé
 | Micro:bit en USB, page relais WebSerial | MakeCode Arcade ne lit pas la liaison série. La page lit le micro:bit et transmet au simulateur du jeu. Chrome ou Edge seulement |
 | Extension Arcade « Manette » | La manette appuie sur les boutons du clavier : le jeu se construit et se teste au clavier, la manette se branche après, sans toucher au jeu |
 | Vocabulaire générique du jeu vers la manette | `bip`, `bien`, `mal`, `alerte`, `gagne`, `perdu`, et un chiffre de 0 à 9. Le jeu dit ce qui se passe, chaque manette choisit sa réaction : le code de la première partie resservira dans le projet |
-| Effets sonores sur la manette | La manette joue les effets (tir, impact, vie perdue). Le jeu garde sa musique de fond : l'extension, qui coupe aujourd'hui tout le son, est à modifier |
+| Effets sonores sur la manette | La manette joue les effets (tir, impact, vie perdue). Le jeu garde tous ses sons, musique de fond comprise : l'extension ne coupe plus le son du jeu quand la manette se connecte |
 | Mots courts | Les tampons série du micro:bit font 20 octets par défaut |
 
 ## Le découpage
@@ -72,7 +72,7 @@ Sans carte d'extension, seules P0, P1 et P2 sont faciles d'accès : 3 contacts. 
 
 Le plafond réel est l'extension : la page relais transmet les 7 boutons de la console Arcade (gauche, droite, haut, bas, A, B, menu), soit 6 touches utiles. Six notes suffisent pour un piano en gamme pentatonique (do, ré, mi, sol, la, do aigu), où rien ne sonne faux.
 
-Évolutions de l'extension, gardées pour le tutoriel rythme. D'abord la musique : le jeu garde sa musique de fond et seuls les effets passent à la manette, au lieu de couper tout le son du jeu dès que la manette se connecte. Ensuite un bloc « quand la manette envoie [mot] », pour des mots libres (`t1` à `t9`, `coup`, `doux`, `fort`). C'est le principe des messages radio du Rover. Trois points à régler : l'extension annonce à la page relais les mots qu'elle écoute (les autres déclenchent toujours l'alerte des lettres perdues), le bloc se déclenche une fois par appui et pas à chaque mot répété, et les boutons de la phase commune restent inchangés.
+Évolution de l'extension, gardée pour le tutoriel rythme : un bloc « quand la manette envoie [mot] », pour des mots libres (`t1` à `t9`, `coup`, `doux`, `fort`). C'est le principe des messages radio du Rover. Trois points à régler : l'extension annonce à la page relais les mots qu'elle écoute (les autres déclenchent toujours l'alerte des lettres perdues), le bloc se déclenche une fois par appui et pas à chaque mot répété, et les boutons de la phase commune restent inchangés.
 
 ## Les tutoriels
 
@@ -125,7 +125,7 @@ Inclinaison pour les directions, A et B, le logo pour le menu.
 - Un câble micro-USB de 2 m par poste, pour le micro:bit au poignet.
 - La skillmap du jeu de tir (trois activités) et le tutoriel micro:bit de la manette.
 - Les tutoriels course et évitement, rythme et réflexes.
-- L'extension : musique du jeu conservée, et bloc « quand la manette envoie [mot] » avec la page relais, au moment du tutoriel rythme.
+- L'extension : bloc « quand la manette envoie [mot] » avec la page relais, au moment du tutoriel rythme.
 - Une fiche de référence par notion : gravité et saut, plan des tuiles, caméra, interrupteur maison.
 - La page relais en ligne (site ou GitHub Pages), à la préparation des séances.
 - Un test automatique de la chaîne avant chaque séance, dans `outils/`.
