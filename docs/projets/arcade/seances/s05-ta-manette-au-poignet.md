@@ -108,6 +108,5 @@ Ouvre **[la page relais](../../../relais/index.html)**, colle le lien de ton jeu
 
 ## Va plus loin
 
-- **Un deuxième bouton.** Un second bouton en carton sur `P2`, qui envoie `B`. Dans ton jeu, `quand bouton B est appuyé` peut déclencher un pouvoir : un tir en éventail, un bouclier.
 - **La musique de ton jeu.** Dans ton jeu, dans **Musique**, glisse le bloc `jouer` dans `au démarrage` et règle-le sur **en boucle en arrière-plan**. Clique sur sa mélodie : tu la composes note par note. Ta manette joue ses bips par-dessus.
-- **Ta manette à ta main.** Le bouton à gauche pour un droitier, ou fixé sur un pupitre en carton : trouve la position où tu joues le mieux.
+- **Un deuxième bouton.** Un second bouton en carton sur `P2`, qui envoie `B`. Dans ton jeu, `quand bouton B est appuyé` peut déclencher un pouvoir : un tir en éventail, un bouclier.
