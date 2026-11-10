@@ -7,7 +7,7 @@
 
 ## 1. Ton jeu parle à ta manette
 
-**Ce que tu vas obtenir :** ton jeu envoie tes vies dès le départ, puis `bien` à chaque ennemi détruit, `mal` quand tu es touché, et tes vies à chaque changement.
+**Ce que tu vas obtenir :** ton jeu envoie tes vies dès le départ, `bip` à chaque tir, `bien` à chaque ennemi détruit, `mal` quand tu es touché, et tes vies à chaque changement.
 
 Ouvre **[le parcours du jeu de tir](https://arcade.makecode.com/--skillmap?lang=fr#github:arbona-robin/tutoriels-arcade/jeu-de-tir)**, puis l'activité **Ta manette réagit**. Les blocs sont dans la catégorie **Manette**.
 
@@ -46,6 +46,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         5 4 4 5
         . 5 5 .
         `, heros, 150, 0)
+    manette.reagir(ReactionManette.Bip)
 })
 game.onUpdateInterval(900, function () {
     let ennemi = sprites.create(img`
@@ -152,17 +153,21 @@ Ces deux valeurs sont tes **seuils**. Note-les, puis ferme cet onglet.
 
 ## 3. Programme ta manette
 
-**Ce que tu vas obtenir :** ton micro:bit envoie `haut`, `bas` et `A`, et joue un son ou affiche une icône pour chaque mot reçu du jeu.
+**Ce que tu vas obtenir :** ton micro:bit envoie `haut`, `bas` et `A`, joue un son pour `bip`, `bien` et `mal`, et affiche tes vies.
 
 Ouvre **[le tutoriel de la manette](https://makecode.microbit.org/?lang=fr#tutorial:https://github.com/arbona-robin/tutoriels-microbit/manette)**, avec tes seuils sous la main.
 
 > [!NOTE] La liaison série, deux fois
 > Elle t'a d'abord montré les valeurs de ton accéléromètre dans MakeCode. Maintenant, elle transporte les mots entre ta manette et ton jeu. Un seul programme peut l'utiliser à la fois.
 
+Ta manette a trois boucles `toujours`, une par tâche : une envoie tes gestes, une écoute le jeu, une affiche. Afficher prend du temps : dans la boucle d'écoute, les sons arriveraient en retard, puis tous d'un coup.
+
 <details markdown>
 <summary>Bloqué ? Le programme de la manette</summary>
 
 ```blocks
+let mot = ""
+let ecran = ""
 serial.setRxBufferSize(128)
 basic.forever(function () {
     if (input.acceleration(Dimension.Y) < -300) {
@@ -176,16 +181,19 @@ basic.forever(function () {
     basic.pause(20)
 })
 basic.forever(function () {
-    let mot = serial.readUntil(serial.delimiters(Delimiters.NewLine))
-    if (mot == "bien") {
-        music.play(music.tonePlayable(1319, music.beat(BeatFraction.Sixteenth)), music.PlaybackMode.InBackground)
-        basic.showIcon(IconNames.Yes)
+    mot = serial.readUntil(serial.delimiters(Delimiters.NewLine))
+    if (mot == "bip") {
+        music.play(music.tonePlayable(Note.G5, music.beat(BeatFraction.Sixteenth)), music.PlaybackMode.InBackground)
+    } else if (mot == "bien") {
+        music.play(music.tonePlayable(Note.C5, music.beat(BeatFraction.Sixteenth)), music.PlaybackMode.InBackground)
     } else if (mot == "mal") {
-        music.play(music.tonePlayable(131, music.beat(BeatFraction.Quarter)), music.PlaybackMode.InBackground)
-        basic.showIcon(IconNames.No)
+        music.play(music.tonePlayable(Note.C3, music.beat(BeatFraction.Quarter)), music.PlaybackMode.InBackground)
     } else {
-        basic.showString(mot)
+        ecran = mot
     }
+})
+basic.forever(function () {
+    basic.showString(ecran)
 })
 ```
 
@@ -205,12 +213,12 @@ basic.forever(function () {
 3. Clique sur **Connecter la manette** et choisis ton micro:bit dans la liste.
 
 > [!TIP] Ça marche si…
-> Ton héros monte et descend avec ta manette, et ta manette affiche ✔ à chaque ennemi détruit et tes vies quand tu es touché. Trop sensible, ou pas assez ? Rouvre le projet **Ta manette** dans MakeCode, change tes seuils, télécharge, et referme l'onglet.
+> Ton héros monte et descend avec ta manette, ta manette sonne à chaque tir et à chaque ennemi détruit, et affiche tes vies. Trop sensible, ou pas assez ? Rouvre le projet **Ta manette** dans MakeCode, change tes seuils, télécharge, et referme l'onglet.
 
 > [!IMPORTANT] Point de contrôle
 > Joue une partie devant l'animateur, avec ta manette.
 
 ## Va plus loin
 
-- **Un bip à chaque tir.** Dans ton jeu, ajoute `manette réagir bip` dans `quand bouton A est appuyé`. Dans ta manette, ajoute un `sinon si mot = "bip"` qui joue une note courte.
-- **Tes sons à toi.** Change les tonalités et les icônes de ta manette : chaque manette réagit à sa façon aux mêmes mots.
+- **Tes sons à toi.** Change les notes de ta manette : chaque manette réagit à sa façon aux mêmes mots.
+- **Une alerte.** Dans ton jeu, `manette réagir alerte` tous les 10 points. Dans ta manette, un `sinon si mot = "alerte"` avec une mélodie.
