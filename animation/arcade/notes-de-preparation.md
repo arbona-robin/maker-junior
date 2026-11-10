@@ -74,6 +74,8 @@ Le plafond réel est l'extension : la page relais transmet les 7 boutons de la c
 
 Évolution de l'extension, gardée pour le tutoriel rythme : un bloc « quand la manette envoie [mot] », pour des mots libres (`t1` à `t9`, `coup`, `doux`, `fort`). C'est le principe des messages radio du Rover. Trois points à régler : l'extension annonce à la page relais les mots qu'elle écoute (les autres déclenchent toujours l'alerte des lettres perdues), le bloc se déclenche une fois par appui et pas à chaque mot répété, et les boutons de la phase commune restent inchangés.
 
+Le jeu à deux joueurs passe par la même révision : deux manettes branchées en USB, deux boutons « Connecter » dans la page relais, le numéro du joueur dans les mots échangés, et les boutons du joueur 2 d'Arcade. Pas de récepteur radio : il reçoit les mots de toutes les manettes à la fois (100 par seconde à deux, un toutes les 20 ms chacune), sa file radio ne garde que quelques messages, et ceux qui débordent se perdent sans prévenir. La radio ne se justifie que pour un objet lancé ou frappé, où le câble gêne : on l'ajoute alors sans changer le jeu ni l'extension.
+
 ## Les tutoriels
 
 ### En séance : la notion, puis le tutoriel
