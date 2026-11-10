@@ -43,6 +43,11 @@
   margin-inline: auto;
 }
 
+/* Une vidéo d'appoint, presque carrée : affichée plus petite, à la largeur d'une illustration. */
+.md-typeset video.reduite {
+  max-width: min(24rem, 100%);
+}
+
 /* Une vidéo en portrait tient dans l'écran : sa hauteur est bornée, sa largeur suit. */
 .md-typeset video.portrait {
   width: auto;

@@ -96,7 +96,7 @@ Télécharge, puis ferme tous les onglets MakeCode micro:bit.
 
 **Ce que tu vas obtenir :** ta partie, jouée au poignet et au bouton.
 
-<video controls playsinline preload="metadata" src="../../../../assets/arcade-s05/video-jeu-au-poignet.mp4"></video>
+<video class="reduite" controls playsinline preload="metadata" src="../../../../assets/arcade-s05/video-jeu-au-poignet.mp4"></video>
 
 Ouvre **[la page relais](../../../relais/index.html)**, colle le lien de ton jeu, **Charger**, puis **Connecter la manette**.
 

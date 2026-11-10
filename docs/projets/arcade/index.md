@@ -15,7 +15,7 @@ Le parcours se fait en deux temps. D'abord un jeu de tir, que tu dessines et pro
 
 Et le jeu joué avec sa manette : le micro:bit au poignet pour monter et descendre, le bouton de tir en carton pour tirer.
 
-<video controls playsinline preload="metadata" src="../../assets/arcade-s05/video-jeu-au-poignet.mp4"></video>
+<video class="reduite" controls playsinline preload="metadata" src="../../assets/arcade-s05/video-jeu-au-poignet.mp4"></video>
 
 ## Les séances
 
