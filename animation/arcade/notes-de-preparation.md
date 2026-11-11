@@ -64,7 +64,7 @@ Points à vérifier au premier essai du bracelet : le câble USB part du poignet
 | Réaction | jeu de réflexes | tape-taupe | boutons en carton | un signal qui apparaît au hasard, un compte à rebours |
 | Geste | jeu de sport | boxe, skee-ball, pêche, tennis | l'objet frappé, lancé ou secoué, micro:bit dedans | la force du mouvement, à doser : la manette envoie 2 ou 3 niveaux (`doux`, `moyen`, `fort`) |
 
-Rythme et réflexes partagent une mécanique (un signal, appuyer au bon moment) et un tutoriel : le tape-taupe d'abord, puis le signal qui descend. Danse, batterie et piano ne diffèrent que par l'habillage. Le sport reprend la même mécanique, seule la manette change : au skee-ball, un lancer trop doux reste court, un lancer trop fort sort de la piste.
+Rythme et réflexes partagent une mécanique (un signal, appuyer au bon moment), mais chacun a son tutoriel. Danse, batterie et piano ne diffèrent que par l'habillage. Le sport reprend la même mécanique, seule la manette change : au skee-ball, un lancer trop doux reste court, un lancer trop fort sort de la piste.
 
 ### Les contacts
 
@@ -95,13 +95,16 @@ La manette micro:bit (S3) se programme dans MakeCode micro:bit, où les skillmap
 
 Hébergés sur GitHub, en français, ouverts par un lien. Le dépôt apporte aussi les blocs Manette à chaque tutoriel. Chacun part du jeu de tir et n'ajoute que ce qui manque.
 
+Un tutoriel de famille n'enseigne que les notions nouvelles : le jeune sait déjà faire un jeu (score, vies, sons, écran de démarrage), on le lui rappelle en une ligne. Les images restent stylisées, une forme simple plutôt qu'un personnage fini : le jeune ne s'enferme pas dans le jeu du tutoriel et invente le sien.
+
 | Tutoriel | Lien | État |
 |---|---|---|
 | Plateforme (13 étapes) | https://arcade.makecode.com/?lang=fr#tutorial:https://github.com/arbona-robin/tutoriels-arcade/plateforme | Testé. Le jeu final avec manette : https://arcade.makecode.com/_dm7fipEA3PX7 |
 | Course et évitement | — | À écrire, court : centré sur le score au temps de survie |
-| Rythme et réflexes | — | À écrire : le tape-taupe d'abord, puis le signal qui descend vers la ligne. Sert aussi au jeu de sport |
+| Réflexes | — | À écrire. Tape-taupe en colonne de trois trous, jouable avec la manette des séances 3 et 5. Notions : position au hasard par le calcul, sortir puis attendre (`toujours`, `pause`, animation), saut de trou en trou borné par `min` et `max`, frappe testée à l'appui (`chevauche`), z et rotation, compte à rebours. Terrain : un trou dans 53 × 40, agrandi à 160 × 120 et copié-collé bord à bord. Référence : `sources/reflexes/taupe.ts.txt` |
+| Rythme | — | À écrire : le signal qui descend vers la ligne. Sert aussi au jeu de sport |
 
-Le tutoriel plateforme : niveau déjà dessiné, l'élève dessine lui-même les murs des plateformes. Héros, gravité, caméra, saut, pièces, lave, drapeau, puis la manette. Une partie filmée en GIF ouvre le tutoriel.
+Le tutoriel plateforme est à reprendre dans le même esprit : les notions nouvelles seulement, des formes simples. Aujourd'hui : niveau déjà dessiné, l'élève dessine lui-même les murs des plateformes. Héros, gravité, caméra, saut, pièces, lave, drapeau, puis la manette. Une partie filmée en GIF ouvre le tutoriel.
 
 ## Les manettes publiées
 
